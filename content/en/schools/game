@@ -1,16 +1,31 @@
 //TITLE:	The Game
 //DESCRIPTION:	An overview of the games played by competing robots in the current and past Student Robotics competitions.
-//KEYWORDS:	event, competition, race, track, rules
+//KEYWORDS:	event, competition, race, track, rules, slots, zone, zones
 //CONTENT_TYPE:	markdown
+
 
 The game
 ========
 
-The 2013 competition will see over thirty teams vying for the prestigious title of Student Robotics Champion.
-The challenge this year, entitled *A Strange Game*, will see an ambitious and quirky mix of robots all looking to dominate a game of noughts and crosses.
-Each robot, equipped with six rather large cardboard boxes, will attempt to take-over squares in a 3x3 grid in the centre of an arena.
-The more squares owned in a row or column, the more points a robot scores.
-For details about the game, the scoring method and more, head over to [this year's competition rules](/docs/rules).
+<img src="/images/content/slots-zones.png" alt="An image of the slots and zones in the centre of the SR2014 arena" class="right" />
+The 2014 [competition](/events/competition) will see over fifty teams vying for the prestigious title of Student Robotics Champion.
+This year's game, *Slots*, sees an interesting new dimension added to the game as the tokens have a right-way-up.
+
+Many [teams](/teams) have taken on the challenge of turning over their tokens, which start upside-down, to score points.
+Those that haven't built turning mechanisms as well as those which want to score further points will do so by:
+
+* moving their tokens into one of eight ''slots'' in the centre of the arena, each of which can hold only one token
+* moving their tokens into one of four ''zones'', also in the centre of the arena, with the goal of having the most tokens in a zone
+
+Full details about the game, the scoring method and more, head over to [this year's competition rules](/docs/rules).
+
+2013
+----
+
+The 2013 competition, *A Strange Game*, saw thirty teams build robots looking to dominate a game of noughts and crosses.
+Each robot, equipped with six rather large cardboard boxes, attempted to take-over squares in a 3x3 grid in the centre of an arena.
+The more squares owned in a row or column, the more points a robot would score.
+For further details about the game see the [full rules](/resources/2013/rulebook.pdf).
 
 2012
 ----
