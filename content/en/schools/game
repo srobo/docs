@@ -3,18 +3,24 @@
 //KEYWORDS:	event, competition, race, track, rules, slots, zone, zones
 //CONTENT_TYPE:	markdown
 
-Sunny Side Up {#2016}
-=====================
+The Game {#2017}
+================
+
+The Student Robotics 2017 game is in development and will be announced at [Kickstart](/events/kickstart).
+
+
+[2016](#2016) {#2016}
+---------------------
 
 <img src="/images/content/arena-2016.png" alt="A diagram of the arena for the SR2016 game" class="right" />
 
-In the 2016 game, *Sunny Side Up*, the robots are challenged to turn tokens so that their side faces upwards.
-Additional points can be scored by moving suitably turned tokens into the robots' corner zone.
+In the 2016 game, *Sunny Side Up*, the robots were challenged to turn tokens so that their side faced upwards.
+Additional points could be scored by moving suitably turned tokens into the robots' corner zone.
 
-There are a limited number of tokens in the arena and any robot may move or turn any token.
-As a result robots will compete with each other to turn (and re-turn) tokens to score points.
+There were a limited number of tokens in the arena and any robot could move or turn any token.
+As a result robots competed with each other to turn (and re-turn) tokens to score points.
 
-For more information, including details of the prizes and the regulations, see the [full rules](/docs/rules).
+Full details about Sunny Side Up, the scoring method and more, are available in the [rulebook](/resources/2016/rulebook.pdf).
 
 [2015](#2015) {#2015}
 ---------------------
@@ -24,7 +30,6 @@ For more information, including details of the prizes and the regulations, see t
 The 2015 game, *Capture the Flag*, took simplicity to the extreme. Robots scored points by moving flags into their scoring zone. The robot with the most flags at the end scored the most points. Simple.
 
 We made things a little more tricky by adding barriers between teams' zones. However, this seemingly simple game proved to be quite a challenge to our 2015 robots and just goes to show you should never underestimate the importance of reliability in a design.
-
 
 The [full rules](/resources/2015/rulebook.pdf) contain further details of the game, prizes and regulations of the 2015 game.
 
