@@ -1,21 +1,46 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+baseurl: /docs
+url: https://studentrobotics.org
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Student Robotics
+description: >
+  Student Robotics is an exciting annual competition challenging people aged
+  16-18 to assemble a team and build fully autonomous robots.
 
-# Build settings
 markdown: kramdown
+collections:
+  - events
+
+gems:
+  - jekyll-paginate
+
+links:
+  compete: //docs.google.com/forms/d/1Ryg2cfAxfwMOBnT01aj-fzsp51F3B182S5e53ye8aMw/viewform
+  volunteer: //docs.google.com/forms/d/1MIGf3P30dw0QAtP8OkxK2v7VRDEAN_54JoZHCVMbqDY/viewform
+
+navigation:
+  - about
+  - compete
+  - volunteer
+
+emails:
+  teams: teams@studentrobotics.org
+  fundraising: fundraising@studentrobotics.org
+  volunteers: volunteer-recruitment@studentrobotics.org
+  pr: pr@studentrobotics.org
+  info: info@studentrobotics.org
+
+social:
+  facebook-official: //facebook.com/StudentRobotics
+  twitter: //twitter.com/studentrobotics
+  youtube: //youtube.com/StudentRobotics
+  github: //github.com/srobo
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - _env/
+  - _docs/
+  - vendor/
