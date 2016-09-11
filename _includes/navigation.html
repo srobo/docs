@@ -1,0 +1,21 @@
+<nav class="{{ include.class }}">
+  <div class="{{ include.class }} mobile-navigation">
+    <ul>
+      <li><a id="navigation_toggle" href="#"><i class="fa fa-fw fa-bars"></i></a></li>
+    </ul>
+  </div>
+  <ul id="navigation" class="full-navigation">
+    <li>
+      <a class="page-link" href="/ide">IDE</a>
+    </li>
+    <li>
+      <a class="page-link" href="/docs">Documentation</a>
+    </li>
+    <li>
+      <a class="page-link" href="{{ '/compete' | prepend: site.baseurl }}">Compete</a>
+    </li>
+    <li>
+      <a class="page-link" href="{{ '/volunteer' | prepend: site.baseurl }}">Volunteer</a>
+    </li>
+  </ul>
+</nav>
