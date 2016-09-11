@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Getting Code on the Robot
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Ruggeduino custom firmware
 ---
 
@@ -300,4 +300,3 @@ ser = serial.Serial( R.ruggeduinos[RUGGEDUINO_ID].path )
 ~~~~~
 
 Refer to the [pyserial documentation](http://pyserial.sourceforge.net/) for more information on how to use pyserial.
-

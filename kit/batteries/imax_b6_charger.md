@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: The iMAX B6 Charger
 ---
 
@@ -99,4 +99,3 @@ Charger beeps and displays `CONNECTION BREAK` during charging
 	Ensure that both are fully inserted and press the following buttons to resume charging:
 
 	`Batt.Type/Stop` &rarr; `Start/Enter` for 3 seconds &rarr; `Start/Enter`
-
