@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: The HobbyKing HKE4 Charger
 ---
 

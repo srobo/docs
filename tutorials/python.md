@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Python: A whirlwind tour"
 ---
 

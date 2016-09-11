@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: The shortcuts menu in the IDE
 ---
 

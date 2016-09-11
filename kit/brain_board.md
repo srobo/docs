@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Brain Board
 ---
 
@@ -11,4 +11,3 @@ The Odroid U3 Brain Board provided with your kit is what runs the code you write
 and controls the other peripheral boards.
 
 It can be controlled remotely through the [tablet](/docs/kit/tablet).
-
