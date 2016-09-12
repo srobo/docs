@@ -13,7 +13,7 @@ which also offers descriptions of what each one does.
 The settings page is available via the [shortcuts menu](/docs/IDE/shortcuts_menu) in the tab-bar:
 
 ![An image of the tab-bar, with the shortcuts menu open and the
-  User Settings option highlighted](/images/content/ide/shortcuts-settings.png
+  User Settings option highlighted]({{ site.baseurl }}/images/content/ide/shortcuts-settings.png
  "The User Settings option on the shortcuts menu.")
 
 Some settings are only available (and will otherwise appear disabled)

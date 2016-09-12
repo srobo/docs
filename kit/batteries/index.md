@@ -6,7 +6,7 @@ title: Batteries and Charging
 Batteries and Charging
 ======================
 
-![Three cell, 2200mAh, lithium-ion polymer battery](/images/content/kit/battery.png "Three cell, 2200mAh, lithium-ion polymer battery")
+![Three cell, 2200mAh, lithium-ion polymer battery]({{ site.baseurl }}/images/content/kit/battery.png "Three cell, 2200mAh, lithium-ion polymer battery")
 
 The electronics kit contains two lithium-ion polymer (LiPo) batteries.
 These are similar to those used in laptops, and are small and light for the amount of energy they contain.

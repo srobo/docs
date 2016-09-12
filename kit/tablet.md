@@ -9,7 +9,7 @@ Tablet
 The tablet provided with your kit allows you to interface with and debug your
 robot.
 
-![An image of the tablet](/images/content/kit/tablet-cropped.png "The Tablet")
+![An image of the tablet]({{ site.baseurl }}/images/content/kit/tablet-cropped.png "The Tablet")
 
 Connecting to the robot
 -----------------------
@@ -20,7 +20,7 @@ make this happen:
 
  * Ensure WiFi on the tablet is turned on (but not connected)
 
-![WiFi status](/images/content/kit/tablet/wifi_status.png "WiFi status")
+![WiFi status]({{ site.baseurl }}/images/content/kit/tablet/wifi_status.png "WiFi status")
 
  * Connect one of the USB WiFi dongles to the kit
  * Connect a USB stick containing your `robot.zip` to the kit

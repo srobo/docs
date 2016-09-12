@@ -6,15 +6,15 @@ title: Servo Board
 Servo Board
 ===========
 
-<a href="/images/content/kit/sbv4.png">
-	<img src="/images/content/kit/sbv4.png" alt="A photo of a servo board" title="The Servo Board, click to view larger" width="250px" class="right" />
+<a href="{{ site.baseurl }}/images/content/kit/sbv4.png">
+	<img src="{{ site.baseurl }}/images/content/kit/sbv4.png" alt="A photo of a servo board" title="The Servo Board, click to view larger" width="250px" class="right" />
 </a>
 The Servo Board can be used to control up to 12 RC servos.
 Many devices are available that can be controlled as servos, such as RC motor speed controllers, and these can also be used with the board.
 
 Board Diagram
 -------------
-<img src="/images/content/kit/servo_board_v4_diagram.png" alt="A diagram of a servo board" />
+<img src="{{ site.baseurl }}/images/content/kit/servo_board_v4_diagram.png" alt="A diagram of a servo board" />
 
 <!--
 Indicators

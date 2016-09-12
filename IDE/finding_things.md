@@ -19,13 +19,13 @@ Searches are done using the search page, which can be launched from the
 shortcuts menu.
 
 ![An image of the tab-bar, with the shortcuts menu open and the
-  Search option highlighted](/images/content/ide/shortcuts-search.png
+  Search option highlighted]({{ site.baseurl }}/images/content/ide/shortcuts-search.png
  "The Search option on the shortcuts menu.")
 
 Initially, the search page will just have some search controls.
 You can start a search using the button, or by pressing enter once you've typed a query.
 
-![An image of the search page, before a search has been started](/images/content/ide/search-empty.png
+![An image of the search page, before a search has been started]({{ site.baseurl }}/images/content/ide/search-empty.png
  "Initially, the search page will just have a search box.")
 
 Searches will look for the entire phrase, appearing exactly as typed,
@@ -37,5 +37,5 @@ For example, the following search for "bacon" found a project,
 a file and several mentions inside files:
 
 ![An image of samples search results,
-  showing some from each category](/images/content/ide/search-bacon.png
+  showing some from each category]({{ site.baseurl }}/images/content/ide/search-bacon.png
  "Mmm, bacon.")
