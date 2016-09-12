@@ -1,0 +1,22 @@
+$info: $sr-blue;
+$error: #BF433A;
+
+%message {
+  padding: 1em 1em;
+  border-top: 1px solid $sr-grey;
+  border-bottom: 1px solid $sr-grey;
+}
+
+.info {
+  @extend %message;
+  background: transparentize($info, 0.8);
+  border-color: $info;
+  color: $info;
+}
+
+.warning {
+  @extend %message;
+  background: transparentize($error, 0.8);
+  border-color: $error;
+  color: $error;
+}
