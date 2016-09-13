@@ -19,7 +19,7 @@ The Ruggeduino needs only to be connected to the kit over USB as it uses this fo
 
 ## Board Diagram
 
-![Ruggeduino diagram](/images/content/kit/ruggeduino_diagram.png "The Ruggeduino")
+![Ruggeduino diagram]({{ site.baseurl }}/images/content/kit/ruggeduino_diagram.png "The Ruggeduino")
 
 ## Indicators
 

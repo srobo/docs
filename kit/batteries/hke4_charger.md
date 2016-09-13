@@ -6,7 +6,7 @@ title: The HobbyKing HKE4 Charger
 HobbyKing HKE4 Chargers
 =======================
 
-![hobby king e4 charger](/images/content/kit/battery_charger_HKE4.png "A HobbyKing E4 battery charger")
+![hobby king e4 charger]({{ site.baseurl }}/images/content/kit/battery_charger_HKE4.png "A HobbyKing E4 battery charger")
 
 Some kits will contain a black HobbyKing HKE4 charger.
 This charger is simpler and easier to use than the iMAX B6 charger,
@@ -17,7 +17,7 @@ The charging lead is terminated with 4mm bullet connectors, which present a very
 [Charger Diagram](#ChargerDiagram) {#ChargerDiagram}
 ------------------
 
-![hobby king e4 charger diagram](/images/content/kit/battery_charger_hke4_diagram.png "HKE4 battery charger diagram")
+![hobby king e4 charger diagram]({{ site.baseurl }}/images/content/kit/battery_charger_hke4_diagram.png "HKE4 battery charger diagram")
 
 [Charging Instructions](#ChargingInstructions) {#ChargingInstructions}
 ------------------

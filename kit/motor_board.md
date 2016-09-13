@@ -6,7 +6,7 @@ title: Motor Board
 Motor Board
 ===========
 
-<img src="/images/content/kit/mcv4b.png" alt="A phot of an un-cased motor board" title="An un-cased motor board" class="right" />
+<img src="{{ site.baseurl }}/images/content/kit/mcv4b.png" alt="A phot of an un-cased motor board" title="An un-cased motor board" class="right" />
 The Motor Board can be used to control two 12V DC motors. Your kit contains two of these boards to allow you to control up to four motors. These can be used for moving your robot, although don't feel you are limited to using them for this purpose.
 
 The speed and direction of the two outputs are controlled independently through the USB interface.
@@ -17,7 +17,7 @@ If the board does not have power applied to the power connector then the kit wil
 Board Diagram
 -------------
 
-![motor board diagram](/images/content/kit/mcv4b_board_diagram.png "The Motor Board")
+![motor board diagram]({{ site.baseurl }}/images/content/kit/mcv4b_board_diagram.png "The Motor Board")
 
 Indicators
 ----------

@@ -6,8 +6,8 @@ title: Power Board
 Power Board
 ===========
 
-<a href="/images/content/kit/pbv4.png">
-	<img src="/images/content/kit/pbv4.png" alt="A photo of a power board" title="The Power Board, click to view larger" width="250px" class="right" />
+<a href="{{ site.baseurl }}/images/content/kit/pbv4.png">
+	<img src="{{ site.baseurl }}/images/content/kit/pbv4.png" alt="A photo of a power board" title="The Power Board, click to view larger" width="250px" class="right" />
 </a>
 The Power Board distributes power to the SR kit from the battery. It provides
 six individual general-purpose power outputs along with a separate power connector
@@ -18,7 +18,7 @@ the Start button which is used to start your robot code running.
 
 [Board Diagram](#BoardDiagram) {#BoardDiagram}
 ----------
-<img src="/images/content/kit/power_board_v4_diagram.png" alt="A diagram of a power board" />
+<img src="{{ site.baseurl }}/images/content/kit/power_board_v4_diagram.png" alt="A diagram of a power board" />
 
 Connectors
 ----------

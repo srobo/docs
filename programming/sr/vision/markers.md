@@ -6,7 +6,7 @@ title: Markers
 Markers
 =======
 
-<img src="/images/content/marker-0.png" alt="An Example Marker: Arena marker 0" class="right" />
+<img src="{{ site.baseurl }}/images/content/marker-0.png" alt="An Example Marker: Arena marker 0" class="right" />
 An example *libkoki* marker is given to the right; this one is *arena-0*.
 There is a dot in the top-left corner of the black border.  This corner is known as the *principal corner*, and its location is important if measuring the marker's orientation about the Z-axis.
 There is also some text in the bottom-left corner of the black border.

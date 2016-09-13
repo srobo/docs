@@ -28,7 +28,7 @@ select the file in the file list (hold Ctrl and click the file name)
 and then click the "View log" link on the left.
 This will open the log page for the selected file:
 
-![An image of the log for a single file](/images/content/ide/file-log.png
+![An image of the log for a single file]({{ site.baseurl }}/images/content/ide/file-log.png
  "The log view shows the messages given to describe the changes to a file,
   as well as links to view the file at a historic version, or to see the changes a version made.")
 
@@ -56,14 +56,14 @@ If you want to see the contents of a project at a given time in the past,
 open the project and then use the calender in the bottom left of the projects page:
 
 ![An image of the projects page calender,
-  with the revision selector closed](/images/content/ide/projpage-calender-closed.png
+  with the revision selector closed]({{ site.baseurl }}/images/content/ide/projpage-calender-closed.png
  "The calender on the projects page, before a date has been selected.")
 
 The dates with blue backgrounds are days on which changes were made,
 and the date in bold is the current date.
 
 ![An image of the projects page calender,
-  with a date selected and the revision selector open](/images/content/ide/projpage-calender-open.png
+  with a date selected and the revision selector open]({{ site.baseurl }}/images/content/ide/projpage-calender-open.png
  "Choosing a version from the calender on the projects page, after a date has been selected.")
 
 Clicking on a day that has changes will cause the versions for that day to be shown in the drop-down box.
