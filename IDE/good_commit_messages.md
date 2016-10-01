@@ -16,12 +16,12 @@ There are 2 parts to a good commit message:
 And there should be a blank line between them.
 Here's an example:
 
-<pre class="not-code">
+~~~~~ not-code
 Added function to get nearest blob of colour
 
 A refactoring that returns a blob object that is the nearest one visible to
 the vision software; makes blob selection/targeting easier.
-</pre>
+~~~~~
 
 How much you should write depends on how much code you've written.
 More information on what to write can be found on [this website](http://lbrandy.com/blog/2009/03/writing-better-commit-messages/).

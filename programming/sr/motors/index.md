@@ -21,12 +21,12 @@ When you have more than one Motor Board connected to your kit they will be order
 The SR Part Code of each detected Motor Board is also printed to the log when your robot starts.
 It will look something like this:
 
-<pre class="not-code">
+~~~~~ not-code
 Found the following devices:
  - Motors:
     0: Motor( serialnum = "SR0XJ1F" )
     1: Motor( serialnum = "SR0A123" )
-</pre>
+~~~~~
 
 
 However, like `ruggeduinos` and `servos`, `motors` is actually a dictionary.

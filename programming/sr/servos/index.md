@@ -22,11 +22,11 @@ they will be ordered based upon their serial number.
 The SR Part Code of each detected motor board is also printed to the log when your robot starts.
 It will look something like this:
 
-<pre class="not-code">
+~~~~~ not-code
 Found the following devices:
  - Servos:
     0: Servo( serialnum = "SR0LG31" )
-</pre>
+~~~~~
 
 
 However, like `motors` and `ruggeduinos`, `servos` is actually a dictionary.

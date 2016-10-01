@@ -228,11 +228,11 @@ for i in [1, 2, 3]:
 
 The above would output:
 
-<pre class="not-code">
+~~~~~ not-code
 1
 2
 3
-</pre>
+~~~~~
 
 Then there's the [`range()`](http://docs.python.org/library/functions.html#range) function.
 The `range()` function returns a `list` with its contents dependent on the arguments passed to it.

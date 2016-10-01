@@ -22,9 +22,9 @@ You can click on the name of each file to view it,
 
 The formatting of the errors is as follows:
 
-<pre class="not-code">
+~~~~~ not-code
 line: [severity] message
-</pre>
+~~~~~
 
 So an error on the second line of a file,
  where you've used a variable without declaring it,
@@ -36,6 +36,6 @@ print bacon
 ~~~~~
 
 Would show up as:
-<pre class="not-code">
+~~~~~ not-code
 2: [E] Undefined variable 'bacon'
-</pre>
+~~~~~

@@ -139,10 +139,10 @@ print 4 == 2
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 True
 False
-</pre>
+~~~~~
 
 `<` and `==` are operators, just like `+` or `*`, which return booleans. Others include `<=` (less than or equal to), `>`, `>=` and `!=` (not equal to) (see the [Operators](#operators) appendix). You can also use `and`, `or`, and `not`.
 
@@ -161,11 +161,11 @@ print "Python rocks!"
 
 If you typed "Tim" at the prompt, this example would output:
 
-<pre class="not-code">
+~~~~~ not-code
 Hello Tim.
 You've got an email.
 Python rocks!
-</pre>
+~~~~~
 
 Having another `if` in the `else` block is very common:
 
@@ -194,9 +194,9 @@ else:
 
 Both output:
 
-<pre class="not-code">
+~~~~~ not-code
 We might be able to afford the tall ship...
-</pre>
+~~~~~
 
 [Concept: Code blocks and indentation](#concept-code-blocks-and-indentation) {#concept-code-blocks-and-indentation}
 --------------------------------------
@@ -229,11 +229,11 @@ print "Python rocks."
 
 Output (for "Tim" as before):
 
-<pre class="not-code">
+~~~~~ not-code
 Hello Tim.
 You've got an email!
 Python rocks.
-</pre>
+~~~~~
 
 To find the limits of an `if` statement, just scan straight down until you encounter another statement on the same indent level. Play around with this example until you understand what's happening.
 
@@ -281,11 +281,11 @@ print shopping_list[3]
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 Bread
 PNP Transistors
 Magazine
-</pre>
+~~~~~
 
 Notice that the indices start at 0, not 1. There is a sensible, technical explanation for this that is beyond this tutorial's scope. Also note that because of this, the last element of this four-element list is at index 3. Attempting to retrieve `shopping_list[4]` would cause an error.
 
@@ -327,7 +327,7 @@ print "Zero!"
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 10
 9
 8
@@ -340,7 +340,7 @@ Half way there!
 2
 1
 Zero!
-</pre>
+~~~~~
 
 The condition is the same as it would be in an `if` statement, and the block of code to put in the loop is denoted in the same way, too.
 
@@ -357,12 +357,12 @@ for x in shopping_list:
 
 The code is executed once for each item in the list, with `x` set to each item in turn. So, the output of this example is:
 
-<pre class="not-code">
+~~~~~ not-code
 [ ] Bread
 [ ] Milk
 [ ] PNP Transistors
 [ ] Newspaper
-</pre>
+~~~~~
 
 Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in (see the [Calling functions](#calling-functions) section). It tells us the index of each value we loop over. An example with numbers:
 
@@ -377,9 +377,9 @@ print prices
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 [4.8, 6.0, 2.4, 1.7999999999999998]
-</pre>
+~~~~~
 
 Exercises: Lists and Loops
 --------------------------
@@ -421,30 +421,30 @@ print str
 
 Write a program that asks the user for a number, and then prints a triangle of that height, with its right angle at the bottom left. For example, given the number 3, the program should output:
 
-<pre class="not-code">
+~~~~~ not-code
 *
 **
 ***
-</pre>
+~~~~~
 
 Try the same, but with the right angle in the top-right, like so (again, for input 3):
 
-<pre class="not-code">
+~~~~~ not-code
 ***
  **
   *
-</pre>
+~~~~~
 
 **Extension:** print out a tree shape of the given size. For example, a tree of size 4 would look like this:
 
-<pre class="not-code">
+~~~~~ not-code
    *
   ***
  *****
 *******
    *
    *
-</pre>
+~~~~~
 
 [Calling functions](#calling-functions) {#calling-functions}
 -------------------
@@ -469,9 +469,9 @@ print len(my_list)
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 3
-</pre>
+~~~~~
 
 Combined with the `range` function, which returns a list of numbers in a certain range, you get a list of indices for the list (you might want to look back at that second `for` example).
 
@@ -482,9 +482,9 @@ print range(len(my_list))
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 [0, 1, 2]
-</pre>
+~~~~~
 
 The `range` function can also take multiple parameters:
 
@@ -496,11 +496,11 @@ print range(1, 10, 2)     # odd numbers from 1 to 10
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 [0, 1, 2, 3, 4]
 [2, 3, 4]
 [1, 3, 5, 7, 9]
-</pre>
+~~~~~
 
 There are many built-in functions supplied with Python (see [appendix](#built-in-functions)). Most are in 'modules', collections of functions which have to be imported. For example, the `math` module contains mathematical functions. To use the `sin` function, we must import it:
 
@@ -600,10 +600,10 @@ print "Outside foo(), x =", x
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 In foo(), x = 3
 Outside foo(), x = 2
-</pre>
+~~~~~
 
 This can get quite confusing, so it's best to avoid giving variables inside functions ('local' variables) the same identifier as those outside. If you want to get information out of a function, `return` it.
 
@@ -703,11 +703,11 @@ print x == 2 and y == 3 or z == 2  # needs brackets for clarity!
 
 Output:
 
-<pre class="not-code">
+~~~~~ not-code
 False
 True
 True
-</pre>
+~~~~~
 
 When more than one boolean operator is used in an expression, `not` is performed first (as it works on a single operand). After this, `and` is done before `or`, but you should use brackets instead of relying on that fact, for readability. So, the last line of the example should read:
 

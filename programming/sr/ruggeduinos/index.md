@@ -26,11 +26,11 @@ they will be ordered based upon their serial number.
 The serial number of each detected Ruggeduino is printed to the log when your robot starts.
 It will look something like this:
 
-<pre class="not-code">
+~~~~~ not-code
 Found the following devices:
  - Ruggeduinos:
     0: Ruggeduino( serialnum = "752303138333517171B1" )
-</pre>
+~~~~~
 
 In addition, like `motors`, `ruggeduinos` is actually a dictionary.
 As a result, in `ruggeduinos` you can also use the Ruggeduino serial number as a key.

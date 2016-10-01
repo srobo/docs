@@ -28,12 +28,12 @@ foo "Hello World!"  # should be foo("Hello World!")
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
 File "<stdin>", line 4
     foo "Hello World!"
                      ^
 SyntaxError: invalid syntax
-</pre>
+~~~~~
 
 The output shows a problem with the fourth line,
  where we've forgotten to place brackets around the string parameter.
@@ -56,11 +56,11 @@ print X     # wrong case
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
 Traceback (most recent call last):
   File "<stdin>", line 2, in <module>
 NameError: name 'X' is not defined
-</pre>
+~~~~~
 
 This error has occurred because the variable was defined as `x`, but referenced as `X` in uppercase.
 As previously alluded to, Python distinguishes between cases, so these are two different variables.
@@ -81,11 +81,11 @@ print a[3]
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
 Traceback (most recent call in last):
   File "<stdin>", line 1, in <module>
 IndexError: list index out of range
-</pre>
+~~~~~
 
 This example illustrates a common cause.
 As `a` has three elements, you'd expect it to have a third element.
@@ -104,12 +104,12 @@ do_some_stuff()
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
   File "<stdin>", line 2
     do_some_stuff()
                 ^
 IndentationError: expected an indented block
-</pre>
+~~~~~
 
 ## [Type Error](#TypeError) {#TypeError}
 
