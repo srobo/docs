@@ -62,7 +62,16 @@
   }
 
   img {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
+    width: initial;
+
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
   }
 
   iframe.video {
