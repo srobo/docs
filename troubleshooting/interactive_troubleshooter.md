@@ -3,6 +3,7 @@ layout: page
 title: Interactive Troubleshooter
 requires_jquery: true
 extra_js: interactive_troubleshooter
+extra_css: interactive_troubleshooter
 ---
 
 # Interactive Troubleshooter

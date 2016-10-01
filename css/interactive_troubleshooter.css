@@ -1,0 +1,37 @@
+div.doc #resetbtnattop {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+div.doc #troubleshooter_network_error {
+    display: none;
+}
+
+div.doc p.message {
+    font-style: italic !important;
+    margin-left: 40px !important;
+}
+
+div.doc img {
+    margin-top: 10px;
+}
+
+div.doc .question {
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+div.doc .question label {
+    padding: 4px 8px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+div.doc .question label > * {
+    vertical-align: middle !important;
+}
+
+div.doc .question label > input[type=radio] {
+    margin-right: 10px;
+}

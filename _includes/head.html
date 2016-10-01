@@ -8,5 +8,12 @@
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+
+  {% if page.extra_css %}
+    {% for css_file in page.extra_css %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ css_file }}.css">
+    {% endfor %}
+  {% endif %}
+
   <link rel="shortcut icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" />
 </head>
