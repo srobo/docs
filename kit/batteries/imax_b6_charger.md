@@ -1,6 +1,36 @@
 ---
 layout: page
 title: The iMAX B6 Charger
+custom_css: >
+    @font-face {
+        font-family: "Register";
+        src: url("../../fonts/register.ttf");
+    }
+
+    table.charger_lcd {
+        font-family: "Register";
+        font-size: 24pt;
+        line-height: 0.8em;
+        background-color: #007dc2;
+        color: white;
+        width: 298pt;
+        text-align: center;
+        border-style: solid;
+        border-width: 16pt 10pt;
+        border-color: #007dc2;
+        text-align: left;
+        margin: 0 auto;
+    }
+    table.charger_lcd td {
+        border-right: 1px solid #007dc2;
+        border-color: #007dc2;
+        border-style: solid solid none none;
+        border-width: 1px;
+        padding: 2px 10px;
+    }
+    table.charger_lcd td:last-child {
+        border-right: none;
+    }
 ---
 
 iMAX B6 Chargers
