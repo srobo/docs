@@ -92,6 +92,18 @@
     }
   }
 
+  dl {
+    margin: 1.2em 0 1.2em 0.5em;
+
+    dd {
+      margin-left: 2em;
+      margin-bottom: 0.5em;
+    }
+    dt {
+      font-weight: bold;
+    }
+  }
+
   table {
     font-size: 0.8em;
     margin: 0 auto;
