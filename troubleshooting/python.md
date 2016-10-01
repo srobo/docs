@@ -19,7 +19,7 @@ When your program runs on the robot, the output of `print` statements and any er
 This error message appears when you have entered a statement that doesn't obey the forms of the language.
 For example:
 
-~~~~~ .python
+~~~~~ python
 def foo(s):
 	print s
 
@@ -49,7 +49,7 @@ Other causes of syntax errors to look out for are:
 
 ## [Name Error](#NameError) {#NameError}
 
-~~~~~ .python
+~~~~~ python
 x = 5
 print X     # wrong case
 ~~~~~
@@ -73,7 +73,7 @@ This would list the functions that the error occurred in, if it was inside a fun
 If you try to access an element of a list that does not exist, you'll get this error.
 For example:
 
-~~~~~ .python
+~~~~~ python
 a = ["Molly", "Polly", "Dolly"]
 print a[0]
 print a[3]
@@ -97,7 +97,7 @@ So, the last element in the array is actually number 2, and element number 3 doe
 If you forget to indent some code, **or mix tabs and spaces**, you will get an indentation error.
 For example:
 
-~~~~~ .python
+~~~~~ python
 if x < 5:
 do_some_stuff()
 ~~~~~
@@ -120,7 +120,7 @@ use these variables, you have to make sure that the types match.
 
 This means that you cannot do something like this:
 
-~~~~~ .python
+~~~~~ python
 a = "36"
 b = 48
 c = a + b
@@ -130,7 +130,7 @@ Here `a` is a string, and adding it to `b`, which is an integer, is not a valid
 operation. You either have to turn the `a` into an integer by doing `int(a)` or
 turn `b` into a string by doing `str(b)`.
 
-~~~~~ .python
+~~~~~ python
 d = int(a) + b  # 84
 e = a + str(b)  # "3648"
 ~~~~~

@@ -18,7 +18,7 @@ Therefore, if the robot can see a marker that is at a fixed location in the aren
 
 The `sr.robot` library provides all of this power through a single function, `R.see`:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 R = Robot()
 markers = R.see()
@@ -30,7 +30,7 @@ A detailed description of the attributes of Marker objects is provided [later in
 
 Here's an example that will repeatedly print out the distance to each token side marker that the robot can see:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 R = Robot()
 
@@ -49,7 +49,7 @@ while True:
 By default, the `R.see` function will take a photo at a resolution of 800x600.
 The resolution that this image is taken at can be changed using the optional `res` argument:
 
-~~~~~ .python
+~~~~~ python
 # Take a photo at 1280 x 1024
 markers = R.see( res=(1280,1024) )
 ~~~~~
@@ -229,7 +229,7 @@ polar
 
     For example, the following code displays the polar coordinate of a `Point` object `p`:
 
-    ~~~~~ .python
+    ~~~~~ python
     print "length", p.polar.length
     print "rot_x", p.polar.rot_x
     print "rot_y", p.polar.rot_y

@@ -23,7 +23,7 @@ If your browser isn't compatible, another good online interpreter can be found a
 
 Whichever you choose, test it with this classic one line program:
 
-~~~~~ .python
+~~~~~ python
 print "Hello World!"
 ~~~~~
 
@@ -36,7 +36,7 @@ Statements
 
 A statement is a line of code that does something. A program is a list of statements. For example:
 
-~~~~~ .python
+~~~~~ python
 x = 5
 y = (x * 2) + 4
 print "Number of bees:", y - 2
@@ -57,7 +57,7 @@ Placing a hash (`#`) in your program ignores anything after the hash.
 
 For example:
 
-~~~~~ .python
+~~~~~ python
 # This is a comment
 print "This isn't."  # But this is!
 ~~~~~
@@ -66,7 +66,7 @@ You should use comments whenever you think that it is not completely clear what 
 
 Comments are also useful for temporarily removing statements from your code, for testing:
 
-~~~~~ .python
+~~~~~ python
 x = 42
 #x = x - 4
 print "The answer is", x
@@ -81,14 +81,14 @@ Variables store values for later use, as in the first example. They can store ma
 
 To set a variable, simply give its name (see [Identifiers], below), followed by `=` and a value. For example:
 
-~~~~~ .python
+~~~~~ python
 x = 8
 my_string = "Tall ship"
 ~~~~~
 
 You can ask the user to put some text into a variable with the `raw_input` function (we'll cover functions in more detail later):
 
-~~~~~ .python
+~~~~~ python
 name = raw_input("What is your name?")
 ~~~~~
 
@@ -108,7 +108,7 @@ Exercises: Variables and Mathematics
 
 The first two lines of this program put two numbers entered by the user into variables `a` and `b`. (The `input` function is like `raw_input`, but returns a number (e.g. `42`) when you enter one, rather than a string (like `"42"`).) Replace the comment with code that averages the numbers and puts them in a variable called `average`.
 
-~~~~~ .python
+~~~~~ python
 a = input("Enter first number: ")
 b = input("Enter second number: ")
 
@@ -132,7 +132,7 @@ Booleans and `if` statements
 
 A boolean value is either `True` or `False`. For example:
 
-~~~~~ .python
+~~~~~ python
 print 42 > 5
 print 4 == 2
 ~~~~~
@@ -148,7 +148,7 @@ False
 
 `if` statements execute code only if their condition is true. The code to include in the `if` is denoted by a number of indented lines (see the concept section on [code blocks][block]). To indent a line, press the tab key or insert four spaces at the start. You can also include an `else` statement, which is executed if the condition is false. For example:
 
-~~~~~ .python
+~~~~~ python
 name = raw_input("What is your name?")
 if name == "Tim":
 	print "Hello Tim."
@@ -169,7 +169,7 @@ Python rocks!
 
 Having another `if` in the `else` block is very common:
 
-~~~~~ .python
+~~~~~ python
 price = 50000 * 1.3
 if price < 60000:
 	print "We can afford the tall ship!"
@@ -182,7 +182,7 @@ else:
 
 So common that there's a special keyword, `elif`, for the purpose. So, the following piece of code is equivalent to the last:
 
-~~~~~ .python
+~~~~~ python
 price = 50000 * 1.3
 if price < 60000:
 	print "We can afford the tall ship!"
@@ -207,7 +207,7 @@ In most other programming languages, if you don't indent your code it will run j
 
 A group of consecutive statements that are all indented by the same distance is called a block. `if` statements, as well as functions and loops, all refer to the block that follows them, which must be indented further than that statement. An example is in order. Let's expand the first `if` example:
 
-~~~~~ .python
+~~~~~ python
 name = raw_input("What is your name?")
 email = "Bank of Nigeria: Tax Refund"
 if name == "Tim":
@@ -246,7 +246,7 @@ Exercises: `if` Statements and Blocks
 
 Without running it, work out what output the following code will give:
 
-~~~~~ .python
+~~~~~ python
 some_text = "Duct Tape"
 if 5 > 4:
 	print "Maths works."
@@ -271,7 +271,7 @@ Lists
 
 Lists store more than one value in a single variable, and allow you to set and retrieve values by their position ('index') in the list. For example:
 
-~~~~~ .python
+~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 print shopping_list[0]
 shopping_list[3] = "Magazine"
@@ -291,14 +291,14 @@ Notice that the indices start at 0, not 1. There is a sensible, technical explan
 
 You can find out the length of a list with the `len` function, like so:
 
-~~~~~ .python
+~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 print "There are", len(shopping_list), "items on your list."
 ~~~~~
 
 Finally, you can add a value to the end of a list with the `append` method:
 
-~~~~~ .python
+~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 shopping_list.append("Mince pies in October")
 print shopping_list
@@ -313,7 +313,7 @@ There are various other useful data structures that are beyond the scope of this
 
 The `while` loop is the most basic type of loop. It repeats the statements in the loop while a condition is true. For example:
 
-~~~~~ .python
+~~~~~ python
 x = 10
 while x > 0:
 	print x
@@ -349,7 +349,7 @@ The condition is the same as it would be in an `if` statement, and the block of 
 
 The most common application of loops is in conjunction with lists. The `for` loop is designed specifically for that purpose. For example:
 
-~~~~~ .python
+~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 for x in shopping_list:
 	print "[ ]", x
@@ -366,7 +366,7 @@ The code is executed once for each item in the list, with `x` set to each item i
 
 Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in (see the [Calling functions](#calling-functions) section). It tells us the index of each value we loop over. An example with numbers:
 
-~~~~~ .python
+~~~~~ python
 prices = [4, 5, 2, 1.50]
 # Add VAT
 for index, value in enumerate(prices):
@@ -391,7 +391,7 @@ Write a program which calculates the average of a list of numbers. You can speci
 **Extension:**
 You can tell when a user has not entered anything at a `raw_input` prompt when it returns the empty string, `""`. Otherwise, it returns a string (like "42.5"), which you can turn into a number with the `float` function. For example:
 
-~~~~~ .python
+~~~~~ python
 var = raw_input("Enter a number: ")
 if var == "":
 	print "You didn't enter anything!"
@@ -413,7 +413,7 @@ Write a program which prints a list of numbers from 0 to 100, but replace number
 
 You can combine (or 'concatenate') strings in Python with the `+` operator:
 
-~~~~~ .python
+~~~~~ python
 str = "Hello "
 str = str + "World!"
 print str
@@ -451,7 +451,7 @@ Try the same, but with the right angle in the top-right, like so (again, for inp
 
 Functions are pre-written bits of code that can be run ('called') at any point. The simplest functions take no parameters and return nothing. For example, the `exit` function ends your program prematurely:
 
-~~~~~ .python
+~~~~~ python
 x = 10
 while x > 0:
 	print x
@@ -462,7 +462,7 @@ while x > 0:
 
 This will output the numbers 10 to 6, and then stop. Not very useful. However, most functions take input values ('parameters') and output something useful (a 'return value'). For example, the `len` function returns the length of the given list:
 
-~~~~~ .python
+~~~~~ python
 my_list = [42, "BOOMERANG!!!", [0, 3]]
 print len(my_list)
 ~~~~~
@@ -475,7 +475,7 @@ Output:
 
 Combined with the `range` function, which returns a list of numbers in a certain range, you get a list of indices for the list (you might want to look back at that second `for` example).
 
-~~~~~ .python
+~~~~~ python
 my_list = [42, "BOOMERANG!!!", [0, 3]]
 print range(len(my_list))
 ~~~~~
@@ -488,7 +488,7 @@ Output:
 
 The `range` function can also take multiple parameters:
 
-~~~~~ .python
+~~~~~ python
 print range(5)            # numbers from 0 to 4.
 print range(2, 5)         # numbers from 2 to 4.
 print range(1, 10, 2)     # odd numbers from 1 to 10
@@ -504,7 +504,7 @@ Output:
 
 There are many built-in functions supplied with Python (see [appendix](#built-in-functions)). Most are in 'modules', collections of functions which have to be imported. For example, the `math` module contains mathematical functions. To use the `sin` function, we must import it:
 
-~~~~~ .python
+~~~~~ python
 import math
 
 print math.sin(math.pi / 2)
@@ -515,7 +515,7 @@ Defining functions
 
 Of course, you'll want to make your own functions. To do this, you precede a block of code with a `def` statement, specifying an [identifier] for the function, and any parameters you might want. For example:
 
-~~~~~ .python
+~~~~~ python
 def annoy(num_times):
 	for i in range(num_times):
 		print "Na na na-na na!"
@@ -527,7 +527,7 @@ The output would be three annoying lines of `Na na na-na na!`.
 
 To return a value, use the `return` statement. A rather trivial example:
 
-~~~~~ .python
+~~~~~ python
 def multiply(x, y):
 	return x * y
 
@@ -538,7 +538,7 @@ print multiply(2, 3)
 
 Without functions, most programs would be very hard to read and maintain. Here's an example (admittedly a little contrived):
 
-~~~~~ .python
+~~~~~ python
 my_string = "All bees like cheese when they're wearing hats."
 x = 0
 for c in my_string:
@@ -555,7 +555,7 @@ Before we explain the example, try and figure out what it does. What do `x` and 
 
 Now, let's refine it with functions:
 
-~~~~~ .python
+~~~~~ python
 def count_letter(string, l):
 	x = 0
 	for c in string:
@@ -587,7 +587,7 @@ Concept: Scope
 
 When you set a variable inside a function, it will only keep its value inside that function. For example:
 
-~~~~~ .python
+~~~~~ python
 x = 2
 
 def foo():
@@ -622,7 +622,7 @@ You'll need the functions contained in the `math` module (<http://docs.python.or
 
 **Extension:** you can return multiple values from a function like so:
 
-~~~~~ .python
+~~~~~ python
 def foo():
 	return 1, 2, 3
 
@@ -678,7 +678,7 @@ These return a boolean (`True` or `False`) value, and are used in `if` statement
 `in`
 :   returns true if the string on the left is contained in the string on the right. For example:
 
-~~~~~ .python
+~~~~~ python
 if "car" in "Scarzy's hair":
 	print "Of course."
 ~~~~~
@@ -687,7 +687,7 @@ if "car" in "Scarzy's hair":
 
 These operators are `and`, `or`, and `not`. They are done after both arithmetic and comparisons. They're pretty self-explanatory, with an example:
 
-~~~~~ .python
+~~~~~ python
 x = 5
 y = 8
 z = 2
@@ -711,7 +711,7 @@ True
 
 When more than one boolean operator is used in an expression, `not` is performed first (as it works on a single operand). After this, `and` is done before `or`, but you should use brackets instead of relying on that fact, for readability. So, the last line of the example should read:
 
-~~~~~ .python
+~~~~~ python
 print (x == 2 and y == 3) or z == 2
 ~~~~~
 
@@ -723,7 +723,7 @@ A lot of functions are defined for you by Python. Those listed at <http://docs.p
 
 Others are contained in modules. To use a function from a module, you must `import` that module, like so:
 
-~~~~~ .python
+~~~~~ python
 import math
 print math.sqrt(4)
 ~~~~~

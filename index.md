@@ -18,7 +18,7 @@ Under the [tutorials](/docs/tutorials/) section,
 
 Within this documentation, you will come across a number of black boxes like this:
 
-~~~~~ .python
+~~~~~ python
 # code example
 ~~~~~
 

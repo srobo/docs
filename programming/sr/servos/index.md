@@ -10,7 +10,7 @@ The `servos` object is used to control a collection of Servo Boards.
 Similar to `motors` and `ruggeduinos`, `servos` can be used like a list.
 To do something with the **first Servo Board**, you would use:
 
-~~~~~ .python
+~~~~~ python
 R.servos[0].something...
 ~~~~~
 
@@ -34,7 +34,7 @@ As a result, in `servos` you can also use the SR Part Code of the Servo Board as
 For example, if you had a board that was labelled "SR0LG31",
 you could do this instead:
 
-~~~~~ .python
+~~~~~ python
 R.servos["SR0LG31"].something...
 ~~~~~
 
@@ -43,7 +43,7 @@ Setting servo positions
 
 The position of servos can range from `-100` to `100` inclusive:
 
-~~~~~ .python
+~~~~~ python
 # R.servos[SERVO_BOARD_ID][SERVO_NUMBER] = POS
 
 # set servo 1's position (on the first Servo Board connected, board 0) to 20
@@ -59,7 +59,7 @@ It is important that you use integers (whole numbers, such as `10` instead of
 
 You can read the last value a servo was set to using similar code:
 
-~~~~~ .python
+~~~~~ python
 # get the last setting of the second servo on the first Servo Board
 lastSetting = R.servos[0][1]
 ~~~~~

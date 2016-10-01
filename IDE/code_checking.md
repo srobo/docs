@@ -30,7 +30,7 @@ So an error on the second line of a file,
  where you've used a variable without declaring it,
  such as:
 
-~~~~~ .python
+~~~~~ python
 import sr.robot
 print bacon
 ~~~~~

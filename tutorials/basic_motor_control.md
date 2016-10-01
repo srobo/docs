@@ -106,7 +106,7 @@ Doing this is actually very easy; the only thing you need to realise is that a p
 
 Here's the code:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 import time
 
@@ -160,7 +160,7 @@ Our aim is to do the forwards and backwards bit (as above), but, before we loop 
 
 Here's the code:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 import time
 
@@ -221,7 +221,7 @@ The `for` loop will iterate over the `list` (i.e. take each element in turn)
  and make it available in the loop's body as the variable after the the `for` keyword.
 Here's an example:
 
-~~~~~ .python
+~~~~~ python
 for i in [1, 2, 3]:
 	print i
 ~~~~~

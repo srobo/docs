@@ -10,7 +10,7 @@ The `motors` object is used to control a collection of Motor Boards.
 Similar to `ruggeduinos` and `servos`, `motors` can be used like a list.
 To do something with the **first Motor Board**, you would use:
 
-~~~~~ .python
+~~~~~ python
 R.motors[0].something...
 ~~~~~
 
@@ -34,7 +34,7 @@ As a result, in `motors` you can also use the SR Part Code of the Motor Board as
 For example, if you had a board that was labelled "SR0A123",
 you could do this instead:
 
-~~~~~ .python
+~~~~~ python
 R.motors["SR0A123"].something...
 ~~~~~
 
@@ -43,7 +43,7 @@ Setting motor power
 
 Motor power is controlled using [PWM](http://en.wikipedia.org/wiki/Pulse-width_modulation) with 100% power being a [duty cycle](http://en.wikipedia.org/wiki/Duty_cycle) of 1. You set the power with an integer value between -100 and 100 inclusive (where a negative value puts the motor in reverse). The field to change the output power is `power`. As each Motor Board has two outputs you will need to specify which output you want to control:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 import time
 
@@ -69,7 +69,7 @@ R.motors[0].m1.power = 0
 
 You can read the current power value for a motor using the same field:
 
-~~~~~ .python
+~~~~~ python
 # get the current output power of Motor Board 0, channel 0
 currentTarget = R.motors[0].m0.power
 ~~~~~
@@ -79,7 +79,7 @@ Stopping the motors
 
 When you set the motor power to 0, this signals the Motor Board to actively stop that motor from turning.
 
-~~~~~ .python
+~~~~~ python
 # store the motor in a local variable because typing it out gets really boring
 molly = R.motors[0].m0
 
@@ -92,7 +92,7 @@ molly.power = 0
 However, you may also want to allow the motors to gently coast to a halt.
 This can be achieved by setting the `use_brake` field of the individual motor.
 
-~~~~~ .python
+~~~~~ python
 # set braking mode
 molly.use_brake = False
 
