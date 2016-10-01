@@ -1,0 +1,467 @@
+{
+    "askiffixed_question": {
+        "question": "Has this fixed your problem?",
+        "answers": [
+            {
+                "answer": "Yes"
+            },
+            {
+                "answer": "No"
+            }
+        ]
+    },
+    "questions": {
+        "": {
+            "question": "Which piece of kit seems to be the issue?",
+            "answers": [
+                {
+                    "answer": "Power Board",
+                    "nextquestion": "power-board-function-checks"
+                },
+                {
+                    "answer": "Motor Board and Motors",
+                    "nextquestion": "motor-board-function-check"
+                },
+                {
+                    "answer": "Servo Board and Servos",
+                    "nextquestion": "servo-board-function-check"
+                },
+                {
+                    "answer": "Ruggeduino",
+                    "nextquestion": "io-board-function-check"
+                },
+                {
+                    "answer": "Batteries",
+                    "nextquestion": "battery-damage-check"
+                },
+                {
+                    "answer": "Vision",
+                    "nextquestion": "vision"
+                },
+                {
+                    "answer": "IDE",
+                    "nextquestion": "ide"
+                }
+            ]
+        },
+        "power-board-function-checks": {
+            "question": "Choose the option that best describes your situation.",
+            "answers": [
+                {
+                    "answer": "My Power Board isn't doing anything",
+                    "nextquestion": "power-board-switch-check"
+                },
+                {
+                    "answer": "My Power Board is beeping",
+                    "message": "This means that the board's current limit has been triggered. Try connecting fewer things to the board, or change your code so that your motors turn on more slowly."
+                }
+            ]
+        },
+        "power-board-switch-check": {
+           "question": "Is the external On|Off switch connected?",
+           "answers": [
+               {
+                   "answer": "Yes",
+                   "nextquestion": "power-board-power-check"
+               },
+               {
+                   "answer": "No",
+                   "message": "There is an external On|Off switch connector. If you are not connecting a switch, you must connect a loop of wire between the two terminals. See the preparation section in <a href=\"ROOT_URL/docs/kit/assembly\" target=\"_blank\">kit assembly</a> for more details."
+               }
+           ]
+        },
+        "power-board-power-check": {
+            "question": "Is the battery plugged in and charged?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "battery-damage-check"
+                },
+                {
+                    "answer": "No",
+                    "message": "Check the &lsquo;Charging Batteries&rsquo; section of the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">battery</a> documentation and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "askiffixed": true,
+                    "nextquestion": "battery-damage-check"
+                }
+            ]
+        },
+        "battery-damage-check": {
+            "question": "Does the battery have any bulges in it? <img title=\"Three cell, 2200mAh, lithium-ion polymer battery\" alt=\"An image of a three cell, 2200mAh, lithium-ion polymer battery, similar to those in the kits\" src=\"ROOT_URL/images/content/kit/battery.png\" />",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "You should immediately disconnect the battery, place it in a dry container &mdash; preferably outside &mdash; and post a message on the <a href=\"/forums\" target=\"_blank\">forums</a> to discuss how to dispose of it."
+                },
+                {
+                    "answer": "No",
+                    "nextquestion": "is-battery-charged"
+                }
+            ]
+        },
+        "is-battery-charged": {
+            "question": "Are your batteries definitely charged up?<br />Try plugging them into your charger and waiting for 'battery full' sound.",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "both-batteries"
+                },
+                {
+                    "answer": "No",
+                    "message": "It is important that you keep your batteries charged so that they don't run down too low. Consult the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">documentation</a> and make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "askiffixed": true,
+                    "nextquestion": "both-batteries"
+                }
+            ]
+        },
+        "both-batteries": {
+            "question": "Try using your other battery. Does this fix the issue?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "There may be a problem with the specific battery, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                },
+                {
+                    "answer": "No",
+                    "message": "There may be a problem with your Power Board or Charger, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                }
+            ]
+        },
+        "io-board-function-check": {
+            "question": "Choose the option that best describes your situation.<br/><img src=\"ROOT_URL/images/content/kit/ruggeduino_diagram.png\" />",
+            "answers": [
+                {
+                    "answer": "My Ruggeduino isn't doing anything",
+                    "nextquestion": "io-board-led"
+                },
+                {
+                    "answer": "My external peripherals aren't working as I expected.",
+                    "nextquestion": "io-peripherals"
+                }
+            ]
+        },
+        "io-board-led": {
+            "question": "Is the Power light on your Ruggeduino on?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "io-board-usb"
+                },
+                {
+                    "answer": "No",
+                    "nextquestion": "io-board-power"
+                }
+            ]
+        },
+        "io-board-power": {
+            "question": "Is the Ruggeduino connected to the USB hub?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "io-board-usb"
+                },
+                {
+                    "answer": "No",
+                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/docs/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
+                    "askiffixed": true,
+                    "nextquestion": "io-board-dead"
+                }
+            ]
+        },
+        "io-board-dead": {
+            "question": "Is there any apparent damage to your Ruggeduino (check the pins for visible deformation)?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "There is an issue with your Ruggeduino, you should post a message on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                },
+                {
+                    "answer": "No",
+                    "message": "There may be an issue with your power connector, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                }
+            ]
+        },
+        "io-board-usb": {
+            "question": "Is the Ruggeduino connected to the Power Board via an appropriately connected USB Hub?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "io-peripherals"
+                },
+                {
+                    "answer": "No",
+                    "message": "You should connect up your Ruggeduino to the Power Board as described.",
+                    "askiffixed": true,
+                    "nextquestion": "io-peripherals"
+                }
+            ]
+        },
+        "io-peripherals": {
+            "question": "There could be an issue with one of your external peripherals, please verify they are connected properly, and consider testing them independently.",
+            "answers": [
+                {
+                    "answer": "My peripherals are fine",
+                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/docs/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                },
+                {
+                    "answer": "I need help with my peripherals",
+                    "message": "Consider asking about this hardware on the <a href=\"/forums\" target=\"_blank\">forums</a>, and check the manual or contact the manufacturer of your peripheral."
+                }
+            ]
+        },
+        "motor-board-function-check": {
+            "question": "Choose the option that best describes your situation.<br /><img src=\"ROOT_URL/images/content/kit/motor_and_camcon.png\" />",
+            "answers": [
+                {
+                    "answer": "Nothing is happening",
+                    "nextquestion": "motor-board-led"
+                },
+                {
+                    "answer": "My motors are not behaving the same as each other.",
+                    "nextquestion": "motor-force"
+                },
+                {
+                    "answer": "My motors are not doing what I expected",
+                    "nextquestion": "motor-more-than-one"
+                }
+            ]
+        },
+        "motor-force": {
+            "question": "No two Motors are exactly the same, and the <a href=\"//en.wikipedia.org/wiki/Pulse-width_modulation\">Pulse-Width Modulated</a> nature of the power supply can lead to different behaviours from different motors, but there are some things we can check.<br />Is your battery charged? Less charge means lower voltage means less torque.<br /><img src=\"ROOT_URL/images/content/kit/battery.png\" />",
+            "answers": [
+                {
+                    "answer": "The Battery is definitely charged",
+                    "nextquestion": "motor-count"
+                },
+                {
+                    "answer": "The Battery isn't charged",
+                    "message": "<a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">Charge your batteries</a> and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-count"
+                }
+            ]
+        },
+        "motor-count": {
+            "question": "Are you trying to control more than one motor at the same time?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "motor-more-than-one"
+                },
+                {
+                    "answer": "No",
+                    "nextquestion": "motor-programming-direction"
+                }
+            ]
+        },
+        "motor-more-than-one": {
+            "question": "Select the option that best describes you situation.",
+            "answers": [
+                {
+                    "answer": "Some of the Motors aren't spinning.",
+                    "message": "You may well have mixed up a Motor index in your code &mdash; double check your Motor indexing.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-programming"
+                },
+                {
+                    "answer": "Some of the Motors spin in the wrong direction",
+                    "message": "Check the Motors are orientated correctly, and <abbr title=\"turn negative, ie: multiply by -1\">negate</abbr> the values you pass to Motors if you notice it is spinning in the wrong direction.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-programming"
+                },
+                {
+                    "answer": "The Motors are all spinning at different speeds",
+                    "message": "Double check your code for discrepancies, however, it is worth noting that no two Motors will give you exactly the same output, and you will need to account for this in your code.<br />Ensuring your batteries are charged will result in <strong>predictable</strong> operation, and allow you to cope with the issue.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-programming"
+                }
+            ]
+        },
+        "motor-board-led": {
+            "question": "What colour is the the Power light on your Motor Board?<br /><img src=\"ROOT_URL/images/content/kit/mcv4b_board_diagram.png\" />",
+            "answers": [
+                {
+                    "answer": "Green",
+                    "nextquestion": "motor-board-usb"
+                },
+                {
+                    "answer": "Red",
+                    "message": "The <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/docs/kit/assembly#Connections\" target=\"_blank\">in the docs</a>.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-board-usb"
+                },
+                {
+                    "answer": "Off",
+                    "nextquestion": "motor-board-power"
+                }
+            ]
+        },
+        "motor-board-power": {
+            "question": "Is the Motor Board connected to power?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "motor-board-usb"
+                },
+                {
+                    "answer": "No",
+                    "message": "Connect the Motor to the Power Board as described <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">in the docs</a>.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-board-usb"
+                }
+            ]
+        },
+        "motor-board-usb": {
+            "question": "Is the Motor Board connected with a USB to an appropriately connected USB Hub?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "motor-programming"
+                },
+                {
+                    "answer": "No",
+                    "message": "Connect the Motor up with USB cables.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-programming"
+                }
+            ]
+        },
+        "motor-programming-direction": {
+            "question": "Does the Motor spin in the wrong direction?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "Try giving a negative value to the Motor, as this will cause it to spin in the opposite direction.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-programming"
+                },
+                {
+                    "answer": "No",
+                    "nextquestion": "motor-programming"
+                }
+            ]
+        },
+        "motor-programming": {
+            "question": "Please test the Motor with the <a href=\"ROOT_URL/docs/kit/tablet\" target=\"_blank\">tablet</a>. Does the Motor respond to the tablet?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "There may be an issue with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                },
+                {
+                    "answer": "No",
+                    "message": "There may be an issue with your Motor Board, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                }
+            ]
+        },
+        "servo-board-function-check": {
+            "question": "Choose the option that best describes your situation.",
+            "answers": [
+                {
+                    "answer": "Nothing is happening",
+                    "nextquestion": "servo-board-led"
+                },
+                {
+                    "answer": "The Servos aren't doing what I expected",
+                    "message": "Check that the servo is orientated correctly as described in <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">the docs</a>, and check whether it is a continuous Servo.",
+                    "askiffixed": true,
+                    "nextquestion": "servo-programming"
+                }
+            ]
+        },
+        "servo-board-led": {
+            "question": "Is the Power light on your Servo Board on?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "servo-board-usb"
+                },
+                {
+                    "answer": "No",
+                    "nextquestion": "servo-board-power"
+                }
+            ]
+        },
+        "servo-board-power": {
+            "question": "Is the Servo Board connected to power?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "servo-board-usb"
+                },
+                {
+                    "answer": "No",
+                    "message": "Connect the Servo to power as described <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">in the Docs</a>.",
+                    "askiffixed": true,
+                    "nextquestion": "servo-board-usb"
+                }
+            ]
+        },
+        "servo-board-usb": {
+            "question": "Is the Servo Board connected to the Power Board via an appropriately connected USB Hub?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "nextquestion": "servo-programming"
+                },
+                {
+                    "answer": "No",
+                    "message": "You should connect up your Servo Board to the Power Board as described.",
+                    "askiffixed": true,
+                    "nextquestion": "servo-programming"
+                }
+            ]
+        },
+        "servo-programming": {
+            "question": "Please test the Servo with the <a href=\"ROOT_URL/docs/kit/tablet\" target=\"_blank\">tablet</a>. Does the Servo respond to the tablet?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "There may be an issue with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                },
+                {
+                    "answer": "No",
+                    "message": "There may be an issue with your servo or Servo Board. Try using a different servo if you can, otherwise consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                }
+            ]
+        },
+        "vision": {
+            "question": "Choose the option that best describes your situation.",
+            "answers": [
+                {
+                    "answer": "Markers don't get picked up.",
+                    "nextquestion": "vision-markers-dont-get-picked-up"
+                },
+                {
+                    "answer": "The camera takes a long time to take a photo.",
+                    "message": "Try reducing the resolution in your code, you'll have to find an optimum resolution for your robot to get the best speed and detail."
+                }
+            ]
+        },
+        "vision-markers-dont-get-picked-up": {
+            "question": "Does the Webcam work if you plug it into a computer?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "Make sure the marker is flat, well-lit and there a visible border around the pattern, and if your robot is moving you should check the camera is not shaking.<br />If you still cannot pickup any markers there could be a problem with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                },
+                {
+                    "answer": "No",
+                    "message": "There may be an issue with your Webcam, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                }
+            ]
+        },
+        "ide": {
+            "question": "Choose the option that best describes your situation.",
+            "answers": [
+                {
+                    "answer": "My code does not check correctly.",
+                    "message": "Click on the 'Error' tab to see detailed explanations of the errors."
+                },
+                {
+                    "answer": "My latest code is not exported to the zip file.",
+                    "message": "Make sure you've pressed save before pressing export."
+                }
+            ]
+        }
+    }
+}
