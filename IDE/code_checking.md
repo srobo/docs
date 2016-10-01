@@ -36,6 +36,7 @@ print bacon
 ~~~~~
 
 Would show up as:
+
 ~~~~~ not-code
 2: [E] Undefined variable 'bacon'
 ~~~~~
