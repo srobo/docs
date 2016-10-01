@@ -120,20 +120,20 @@ use these variables, you have to make sure that the types match.
 
 This means that you cannot do something like this:
 
-```python
+~~~~~ .python
 a = "36"
 b = 48
 c = a + b
-```
+~~~~~
 
 Here `a` is a string, and adding it to `b`, which is an integer, is not a valid
 operation. You either have to turn the `a` into an integer by doing `int(a)` or
 turn `b` into a string by doing `str(b)`.
 
-```python
+~~~~~ .python
 d = int(a) + b  # 84
 e = a + str(b)  # "3648"
-```
+~~~~~
 
 If you make a mistake while interacting with variables of different types,
 you'll get a `TypeError` containing some information about how to fix the
