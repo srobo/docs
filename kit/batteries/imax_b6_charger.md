@@ -29,7 +29,7 @@ This list must be followed carefully each time a battery is connected to the cha
 
 <table class="charger_lcd">
 <tr><td>PROGRAM SELECT</td></tr>
-<tr><td style="text-align: right;">LiPo BATT</td></tr>
+<tr><td>&nbsp; &nbsp; &nbsp; &nbsp;LiPo BATT</td></tr>
 </table>
 
 If it does not repeatedly press `Batt.Type/Stop` until it does.
