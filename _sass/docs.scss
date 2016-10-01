@@ -91,4 +91,37 @@
       margin: 0.8em 0;
     }
   }
+
+  table {
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 40%;
+
+    @include media-query("medium") {
+      width: auto;
+    }
+
+    th, td {
+      padding: 0.5em;
+    }
+
+    thead {
+      color: $sr-blue;
+    }
+
+    th {
+      text-align: left;
+      border-bottom: 2px solid $sr-blue;
+    }
+
+    tr {
+      background: white;
+
+      &:nth-child(even) {
+        background: $sr-grey;
+      }
+    }
+  }
 }
