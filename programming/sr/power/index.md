@@ -32,25 +32,25 @@ The discharge curve is roughly linear between 11.4V and 10.4V.
 [Power Outputs](#outputs) {#outputs}
 -------
 
-The power board has six power outputs, numbered `0` to `5`.
-These map to the outputs labelled on the board as follows:
+Each of the power board's six outputs has a constant whose name closely
+ matches the name of the output:
 
-* `0` : H0
-* `1` : H1
-* `2` : L0
-* `3` : L1
-* `4` : L2
-* `5` : L3
+* H0 : `OUT_H0`
+* H1 : `OUT_H1`
+* L0 : `OUT_L0`
+* L1 : `OUT_L1`
+* L2 : `OUT_L2`
+* L3 : `OUT_L3`
 
 While they are all turned on when your code starts running,
  you can control whether each output is turned on or off like so:
 
 ~~~~~ .python
 # Turn output H0 off
-R.power.output[0] = False
+R.power.output[OUT_H0] = False
 
 # Turn output L0 on
-R.power.output[2] = True
+R.power.output[OUT_L0] = True
 ~~~~~
 
 An exception is raised if you try to set an output index which doesn't exist.
