@@ -37,7 +37,7 @@ you can do this using the self service side of the [user management page](/userm
 
 ### Other Problems
 If your team-leader was unable to resolve your account issue,
-you can ask them to [contact us](/about/contactus) for more help.
+you can ask them to email <accounts@studentrobotics.org> for more help.
 
 [User management for Team Leaders](#UserManagement) {#UserManagement}
 ====================
