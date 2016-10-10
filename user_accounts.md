@@ -6,7 +6,7 @@ title: User Accounts
 # User Accounts
 
 Your User Account can be used to access the various online services that we host.
-These include the [forums](/forum), [IDE](/ide) and, for [team-leaders](/schools/team-leaders),
+These include the [forums](/forum), [IDE](/ide) and, for team-leaders,
 a [user management interface](/userman) (see [below](#UserManagement)).
 
 ### Getting an Account
@@ -37,7 +37,7 @@ you can do this using the self service side of the [user management page](/userm
 
 ### Other Problems
 If your team-leader was unable to resolve your account issue,
-you can ask them to [contact us](/about/contactus) for more help.
+you can ask them to email <accounts@studentrobotics.org> for more help.
 
 [User management for Team Leaders](#UserManagement) {#UserManagement}
 ====================

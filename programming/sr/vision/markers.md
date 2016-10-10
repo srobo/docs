@@ -16,23 +16,7 @@ Let's break that down:
 `(v0.5)` tells you the version of the marker, it is important the latest version is used; and
 `'ARENA'` is just a human-readable description of what the marker is for.
 
-The table below lists the *libkoki* markers that your robot will know about and what their meaning is:
-
-
-| Use         | Range | Size          |
-|-------------|-------|---------------|
-| Arena       | 00-27 | 250mm x 250mm |
-| Robots      | 28-31 | 100mm x 100mm |
-| Tokens      | 32-49 | 200mm x 200mm |
-
-
-You can download all of these markers, as PDFs, in a single [ZIP file](/resources/2016/markers/sr-dev-markers-2016.zip).
-Alternatively, you may download individual markers [here](/resources/2016/markers/).
-The *Arena* and *Token* markers, due to their size, need to be printed on A3 paper.
-*Robot* markers can be printed on A4 paper.
-Please make sure your system is not scaling the PDFs when printing them.
-You can easily check this by measuring the width of the grey border around the markers and comparing it with the table above.
-Any differences will make the distance estimations inaccurate.
+<div class="info">A link to download the SR2017 markers will be added to this page once the game has been announced.</div>
 
 Note that a different set of markers will be used for the competition (by adding 100 to all of the markers above).
 This is not something you need to worry about, though.

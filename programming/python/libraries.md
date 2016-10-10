@@ -71,6 +71,6 @@ The following python libraries are installed and available for use in your robot
  * [ZeroMQ 13.0.2](http://zeromq.org/bindings:python)
 
 [^1]: A maintained fork of [PIL](http://www.pythonware.com/products/pil/)
-[^2]: No relation to [Kickstart](/events/kickstart)
+[^2]: No relation to our Kickstart event
 
 If you wish to use a library that isn't listed above, get in contact with us on the forums and have a chat with us about it.
