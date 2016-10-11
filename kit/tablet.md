@@ -75,7 +75,7 @@ The stop button is currently not functional.
 
 ### Set up screen
 
-![The tablet app's set up screen](/images/content/kit/tablet/set-up-screen.png)
+![The tablet app's set up screen]({{ site.baseurl }}/images/content/kit/tablet/set-up-screen.png)
 
 This screen allows you to select the starting zone of your robot, as well as
 whether it is running in development mode or competition mode. Changing the
@@ -90,7 +90,7 @@ You cannot use this screen when code is running.
 
 ### Logs screen
 
-![The tablet app's logs screen](/images/content/kit/tablet/logs-screen.png)
+![The tablet app's logs screen]({{ site.baseurl }}/images/content/kit/tablet/logs-screen.png)
 
 This screen allows you to see all messages from your code sent by `print`
 statements (and anything else that outputs to standard output or standard
