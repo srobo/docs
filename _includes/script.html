@@ -1,3 +1,15 @@
+{% if page.requires_jquery %}
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"
+          integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+          crossorigin="anonymous"></script>
+{% endif %}
+
+{% if page.extra_js %}
+  {% for js_file in page.extra_js %}
+    <script src='{{ site.baseurl }}/js/{{ js_file }}.js' type="text/javascript"></script>
+  {% endfor %}
+{% endif %}
+
 <!-- Piwik -->
 <script type="text/javascript">
   var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.studentrobotics.org/piwik/" : "http://www.studentrobotics.org/piwik/");

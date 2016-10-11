@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Interactive Troubleshooter
+requires_jquery: true
+extra_js: interactive_troubleshooter
+extra_css: interactive_troubleshooter
 ---
 
 # Interactive Troubleshooter
@@ -10,4 +13,7 @@ title: Interactive Troubleshooter
 
 ## Unable to retrieve questions &mdash; please try refreshing your browser in a few moments. {#troubleshooter_network_error}
 
-<script src="/js/interactive_troubleshooter.js"></script>
+<script type="text/javascript">
+    var ROOT_URL = '{{ site.baseurl }}';
+    var TroubleshooterDataURL = '{{ site.baseurl }}/resources/troubleshooter/data.json';
+</script>
