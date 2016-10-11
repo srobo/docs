@@ -6,7 +6,7 @@ title: User Accounts
 # User Accounts
 
 Your User Account can be used to access the various online services that we host.
-These include the [forums](/forum), [IDE](/ide) and, for [team-leaders](/schools/team-leaders),
+These include the [forums](/forum), [IDE](/ide) and, for team-leaders,
 a [user management interface](/userman) (see [below](#UserManagement)).
 
 ### Getting an Account
