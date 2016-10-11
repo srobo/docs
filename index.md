@@ -16,9 +16,9 @@ Under the [tutorials](/docs/tutorials/) section,
  where everything is arranged alphabetically in the aforementioned sub-sections.
 
 
-Within this documentation, you will come across a number of black boxes like this:
+Within this documentation, you will come across a number of boxes like this:
 
-~~~~~ .python
+~~~~~ python
 # code example
 ~~~~~
 

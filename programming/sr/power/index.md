@@ -9,7 +9,7 @@ Power
 There are a few things that can be done with the power board, namely current and voltage sensing, and beeping.
 As there is only one power board, it is not accessed like a list like `motors` for example:
 
-~~~~~ .python
+~~~~~ python
 R.power.something...
 ~~~~~
 
@@ -19,7 +19,7 @@ R.power.something...
 The power board can report both the battery voltage, in Volts, and the current being drawn from it, in Amps.
 You can access these values like so:
 
-~~~~~ .python
+~~~~~ python
 # Print the battery voltage and current to the log
 print R.power.battery.voltage, R.power.battery.current
 ~~~~~
@@ -45,7 +45,7 @@ Each of the power board's six outputs has a constant whose name closely
 While they are all turned on when your code starts running,
  you can control whether each output is turned on or off like so:
 
-~~~~~ .python
+~~~~~ python
 # Turn output H0 off
 R.power.output[OUT_H0] = False
 
@@ -63,7 +63,7 @@ The power board has a piezo buzzer which can beep.
 
 The beep function accepts 1 or 2 parameters, `duration` is compulsory and is measured in milliseconds. `note` is optional, but must be one string of `a-g` or `uc`. `frequency` is also optional, and should be an integer. One of `note` and `frequency`, must be given. If both are given, `note` is used.
 
-~~~~~ .python
+~~~~~ python
 # Beep for 0.5s in D.
 R.power.beep(500, note='d')
 

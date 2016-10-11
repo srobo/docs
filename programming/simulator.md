@@ -51,14 +51,14 @@ The simulator requires three libraries: [pygame][], [PyPyBox2D][], and [PyYAML][
 The easiest way to install these is through your distribution's package manager (although PyPyBox2D is only available through `pip`).
 For example, on Ubuntu, you might run the following commands (the Python development tools are required for `pip` to install PyPyBox2D):
 
-~~~~~ .bash
+~~~~~ bash
 $ sudo apt-get install python-dev python-pip python-pygame python-yaml
 $ sudo pip install pypybox2d
 ~~~~~
 
 To run a test program, open a terminal in the `robot-sim` directory from the ZIP and run:
 
-~~~~~ .bash
+~~~~~ bash
 $ python run.py test.py
 ~~~~~
 
@@ -95,7 +95,7 @@ Servos are not supported in the simulator.
 
 Instead of servos, the robot is equipped with a grabber, capable of picking up a token which is in front of the robot and within 0.4 metres of the robot's centre. To pick up a token, call the `R.grab` method:
 
-~~~~~ .python
+~~~~~ python
 success = R.grab()
 ~~~~~
 
@@ -156,7 +156,7 @@ timestamp
 
 For example, the following code lists all of the markers the robot can see:
 
-~~~~~ .python
+~~~~~ python
 markers = R.see()
 print "I can see", len(markers), "markers:"
 

@@ -10,7 +10,7 @@ Student Robotics has written a module &mdash; `sr.robot`  &mdash; which is used 
 It handles all the low-level interactions so you don't have to.
 To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
 
-~~~~~ .python
+~~~~~ python
 R.motors[0].m0.power = -30
 ~~~~~
 
@@ -18,7 +18,7 @@ R.motors[0].m0.power = -30
 
 To gain access to all of this functionality, all you need to do is write:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 ~~~~~
 
@@ -27,7 +27,7 @@ This imports the Student Robotics module that we've written to interface with ou
 
 Then, within the `sr.robot` module, there is a `Robot` class that should be instantiated, as follows:
 
-~~~~~ .python
+~~~~~ python
 from sr.robot import *
 R = Robot()
 ~~~~~
@@ -44,7 +44,7 @@ They can be used in your code just like the example above.
 Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should be accessed as such.
 Here are some examples:
 
-~~~~~ .python
+~~~~~ python
 R.motors[0].m0.power = 50   # WILL work, if motor 0 exists
 R.motors[1].m0.power = -20  # WILL work, if motor 1 exists
 R.motors.m0.power = 42      # WON'T WORK
@@ -74,7 +74,7 @@ usbkey
 
     An example of how the `usbkey` attribute might be used:
 
-    ~~~~~ .python
+    ~~~~~ python
     from sr.robot import *
     import os
 
@@ -91,7 +91,7 @@ usbkey
 
 Normally the Robot object is initialised with the following:
 
-~~~~~ .python
+~~~~~ python
 R = Robot()
 ~~~~~
 
@@ -102,7 +102,7 @@ However if you want to:
 
 Then Robot initialisation can be broken up as follows (this example is equivalent to the previous code excerpt):
 
-~~~~~ .python
+~~~~~ python
 R = Robot.setup()
 
 # Setup phase.

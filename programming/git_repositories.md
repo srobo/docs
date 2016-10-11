@@ -8,9 +8,9 @@ Git Repositories
 
 We strongly recommend that you develop your code within the IDE.  However, we appreciate that this can be limiting for some users.  Therefore, we provide access to the git repositories that the IDE stores your code in.  You can access your git repository by pointing your git client at a URL of the form:
 
-<pre class="not-code">
+~~~~~ not-code
 https://USERNAME@www.studentrobotics.org/robogit/TEAMTLA/PROJNAME.git
-</pre>
+~~~~~
 
 Replace:
 
@@ -25,8 +25,8 @@ Example
 
 If dave from team SRZ has a project called "armadillo", then one of their team members might clone it like so:
 
-<pre class="not-code">
+~~~~~ not-code
 git clone https://dave@www.studentrobotics.org/robogit/SRZ/armadillo.git
-</pre>
+~~~~~
 
 *[TLA]: Three Letter Acronym

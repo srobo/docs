@@ -19,7 +19,7 @@ When your program runs on the robot, the output of `print` statements and any er
 This error message appears when you have entered a statement that doesn't obey the forms of the language.
 For example:
 
-~~~~~ .python
+~~~~~ python
 def foo(s):
 	print s
 
@@ -28,12 +28,12 @@ foo "Hello World!"  # should be foo("Hello World!")
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
 File "<stdin>", line 4
     foo "Hello World!"
                      ^
 SyntaxError: invalid syntax
-</pre>
+~~~~~
 
 The output shows a problem with the fourth line,
  where we've forgotten to place brackets around the string parameter.
@@ -49,18 +49,18 @@ Other causes of syntax errors to look out for are:
 
 ## [Name Error](#NameError) {#NameError}
 
-~~~~~ .python
+~~~~~ python
 x = 5
 print X     # wrong case
 ~~~~~
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
 Traceback (most recent call last):
   File "<stdin>", line 2, in <module>
 NameError: name 'X' is not defined
-</pre>
+~~~~~
 
 This error has occurred because the variable was defined as `x`, but referenced as `X` in uppercase.
 As previously alluded to, Python distinguishes between cases, so these are two different variables.
@@ -73,7 +73,7 @@ This would list the functions that the error occurred in, if it was inside a fun
 If you try to access an element of a list that does not exist, you'll get this error.
 For example:
 
-~~~~~ .python
+~~~~~ python
 a = ["Molly", "Polly", "Dolly"]
 print a[0]
 print a[3]
@@ -81,11 +81,11 @@ print a[3]
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
 Traceback (most recent call in last):
   File "<stdin>", line 1, in <module>
 IndexError: list index out of range
-</pre>
+~~~~~
 
 This example illustrates a common cause.
 As `a` has three elements, you'd expect it to have a third element.
@@ -97,19 +97,19 @@ So, the last element in the array is actually number 2, and element number 3 doe
 If you forget to indent some code, **or mix tabs and spaces**, you will get an indentation error.
 For example:
 
-~~~~~ .python
+~~~~~ python
 if x < 5:
 do_some_stuff()
 ~~~~~
 
 Error:
 
-<pre class="not-code">
+~~~~~ not-code
   File "<stdin>", line 2
     do_some_stuff()
                 ^
 IndentationError: expected an indented block
-</pre>
+~~~~~
 
 ## [Type Error](#TypeError) {#TypeError}
 
@@ -120,20 +120,20 @@ use these variables, you have to make sure that the types match.
 
 This means that you cannot do something like this:
 
-```python
+~~~~~ python
 a = "36"
 b = 48
 c = a + b
-```
+~~~~~
 
 Here `a` is a string, and adding it to `b`, which is an integer, is not a valid
 operation. You either have to turn the `a` into an integer by doing `int(a)` or
 turn `b` into a string by doing `str(b)`.
 
-```python
+~~~~~ python
 d = int(a) + b  # 84
 e = a + str(b)  # "3648"
-```
+~~~~~
 
 If you make a mistake while interacting with variables of different types,
 you'll get a `TypeError` containing some information about how to fix the
