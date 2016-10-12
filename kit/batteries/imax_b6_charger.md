@@ -21,6 +21,9 @@ custom_css: >
         text-align: left;
         margin: 0 auto;
     }
+    table.charger_lcd tr {
+        background-color: initial !important;
+    }
     table.charger_lcd td {
         border-right: 1px solid #007dc2;
         border-color: #007dc2;
