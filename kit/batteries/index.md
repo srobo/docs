@@ -11,7 +11,7 @@ Batteries and Charging
 The electronics kit contains two lithium-ion polymer (LiPo) batteries.
 These are similar to those used in laptops, and are small and light for the amount of energy they contain.
 This is great for your robot but it is vital to treat such a high concentration of energy with respect.
-If you do not, there is a serious risk of fire, injury, and even death.
+If you do not, there is a serious risk of fire and injury.
 To avoid this, you should follow the safety information on this page closely, at all times.
 
 Your kit will come with several pieces of battery related equipment:
@@ -21,12 +21,18 @@ Your kit will come with several pieces of battery related equipment:
 3. One battery charging bag.
 
 You must **not** use any batteries, chargers, bags or cables not explicitly authorised by Student Robotics.
-If in doubt, please contact <info@studentrobotics.org>.
+If you have any doubts or wish to request permission to use a battery, charger, charging bag or battery cable not provided by Student Robotics, please contact <{{ site.emails.kit-support }}>.
 
-If damaged, LiPo batteries will swell and appear to bulge in their casing.  If
-you notice that a battery has swollen, you should immediately disconnect it, and
-place it in a dry container, preferably outside. Contact
-<info@studentrobotics.org> to discuss how to dispose of it.
+<div class="warning">
+<ul>
+  <li>Never leave batteries unattended when they are in use or charging.</li>
+  <li>Always place the batteries in the provided charging bag when charging or storing.</li>
+  <li>Always follow the charging checklist precisely to make sure the charger is correctly configured. See the <a href="#charging-batteries">Charging Batteries</a> section for more details.</li>
+  <li>Always leave the charging leads connected to the battery charger at all times.</li>
+  <li>Do not charge or use a damaged battery.</li>
+  <li>If a battery has any cuts, nicks, exposed copper on wires or is bulging to the point of no longer being squishy, contact <a href="mailto:{{ site.emails.kit-support }}">{{ site.emails.kit-support }}</a> immediately.</li>
+</ul>
+</div>
 
 Storing Batteries
 -----------------
@@ -46,8 +52,8 @@ Operating Batteries
 -------------------
 
 To use your batteries, you must connect them to the Student Robotics power
-board. Do not tamper with the cable, or power any other electronics with the
-battery.
+board. Do not tamper with the cable or connect the batteries to anything other
+than the power board (or the charger when charging).
 
 During operation, the battery is protected by over-current protection and a fuse
 in the power board. If any equipment is short circuited, the over-current
@@ -55,14 +61,15 @@ protection will activate - protecting the battery. In extreme circumstances the
 fuse may blow to prevent damage to the battery. This is an important safety
 feature: do **not**, under any circumstances, bypass the fuse. The fuse is not
 user serviceable and if the fuse has blown then the power board must be replaced.
+If you suspect the fuse has blown then please contact
+<{{ site.emails.kit-support }}> straight away.
 
 Mechanical damage to a battery can be dangerous, and a puncture or large force
 applied to a battery causes a serious risk of fire. To avoid this, your battery
 should be shielded from mechanical damage while you operate it. Secure your
 battery to your robot, so that it does not move or fall off while the robot
-moves (we provide velcro to help this). You should also build a compartment for
-the battery to be placed in, so that accidental collisions do not damage the
-battery.
+moves. You should also build a compartment for the battery to be placed in, so
+that accidental collisions do not damage the battery.
 
 ### Flat Batteries
 
@@ -85,18 +92,4 @@ Student Robotics provides two different kinds of chargers with our kit, the
 [HobbyKing HKE4](/docs/kit/batteries/hke4_charger). You should only use the battery
 charger provided by Student Robotics to charge the batteries provided in the
 kit. For precise instructions on how to charge your batteries with the provided
-charger, please see the charger specific documentation page, observing the
-following precautions:
-
-<div class="warning">
-<p>
-LiPo batteries can get hot or catch fire when charging and in use.
-</p>
-<ul>
-  <li>Never leave in use or charging batteries unattended</li>
-  <li>Always place the battery in the provided charging bag, and ensure the velcro is sealed</li>
-  <li>Always follow the charging checklist precisely to make sure the charger is correctly configured</li>
-  <li>Leave the charging leads connected to the battery charger at all times</li>
-  <li>Do not charge a damaged battery</li>
-</ul>
-</div>
+charger, please see the charger specific documentation page.

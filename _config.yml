@@ -24,10 +24,8 @@ navigation:
 
 emails:
   teams: teams@studentrobotics.org
-  fundraising: fundraising@studentrobotics.org
-  volunteers: volunteer-recruitment@studentrobotics.org
-  pr: pr@studentrobotics.org
   info: info@studentrobotics.org
+  kit-support: kit-support@studentrobotics.org
 
 social:
   facebook-official: //facebook.com/StudentRobotics
