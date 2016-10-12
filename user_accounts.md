@@ -24,7 +24,7 @@ you will receive an email with a link to activate your account.
 
 Please allow at least 10 minutes for the email to be sent,
 however if you've been waiting longer than this you should check with your team-leader that the account was created,
-and ask them to email <accounts@studentrobotics.org> if the problem remains.
+and ask them to email <{{ site.emails.accounts }}> if the problem remains.
 
 ### Forgotten Something?
 If you forget your user name or password, you should contact your team-leader,
@@ -37,7 +37,7 @@ you can do this using the self service side of the [user management page](/userm
 
 ### Other Problems
 If your team-leader was unable to resolve your account issue,
-you can ask them to email <accounts@studentrobotics.org> for more help.
+you can ask them to email <{{ site.emails.accounts }}> for more help.
 
 [User management for Team Leaders](#UserManagement) {#UserManagement}
 ====================
@@ -72,4 +72,4 @@ fields in this window and then click 'Submit'.
 
 We are unable to recover passwords once they have been set. If competitors
 forget passwords, please reset their password using the process above. If you
-forget your own, please contact <accounts@studentrobotics.org>.
+forget your own, please contact <{{ site.emails.accounts }}>.
