@@ -167,9 +167,9 @@ for m in markers:
         print " - Arena marker {0} is {1} metres away".format(m.info.offset, m.dist)
 ~~~~~
 
-[windows-zip]: /resources/simulator/simulator-windows.zip
-[linux-zip]: /resources/simulator/simulator-linux.zip
-[macosx-zip]: /resources/simulator/simulator-macosx.zip
+[windows-zip]: {{ site.baseurl }}/resources/simulator/simulator-windows.zip
+[linux-zip]: {{ site.baseurl }}/resources/simulator/simulator-linux.zip
+[macosx-zip]: {{ site.baseurl }}/resources/simulator/simulator-macosx.zip
 [pygame]: http://pygame.org/
 [pypybox2d]: https://pypi.python.org/pypi/pypybox2d/2.1-r331
 [pyyaml]: https://pypi.python.org/pypi/PyYAML/
