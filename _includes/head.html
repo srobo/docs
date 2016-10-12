@@ -15,5 +15,11 @@
     {% endfor %}
   {% endif %}
 
+  {% if page.custom_css %}
+    <style type="text/css">
+      {{ page.custom_css }}
+    </style>
+  {% endif %}
+
   <link rel="shortcut icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" />
 </head>
