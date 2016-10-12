@@ -51,7 +51,7 @@ There are three steps that you will need to go through to implement and use your
 
 ### Step 1: Add your command to the Ruggeduino firmware
 
-To extend the SR firmware, you will need to first download its [source code](/resources/kit/ruggeduino-fw.ino), and edit it in the Arduino IDE.
+To extend the SR firmware, you will need to first download its [source code]({{ site.baseurl }}/resources/kit/ruggeduino-fw.ino), and edit it in the Arduino IDE.
 When the SR ruggeduino python library wants the ruggeduino to run a command, it sends it a single character to tell it which command to run.
 You'll find a `switch` statement in the `loop()` function that processes this command character:
 
