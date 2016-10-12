@@ -55,7 +55,7 @@ To plug the motor into the kit,
  and connect the other ends to the _CamCon_ connector.
 Like so:
 
-![Motor connected to CamCon](/images/content/kit/motor_and_camcon.png)
+![Motor connected to CamCon]({{ site.baseurl }}/images/content/kit/motor_and_camcon.png)
 
 <div class="info">You may want to insulate the motor's terminals with some insulation tape (or heat shrink tubing if you've got it) like in the image above.</div>
 
