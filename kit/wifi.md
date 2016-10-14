@@ -1,83 +1,54 @@
 ---
 layout: page
-title: Tablet
+title: WiFi
 ---
 
-Tablet
-======
+WiFi
+====
 
-The tablet provided with your kit allows you to interface with and debug your
-robot.
+The WiFi dongles provided with your kit allow you to interface with and debug your robot.
+You can connect to your robot either using the tablet provided with your kit or any WiFi
+capable device of your own (laptop, tablet, phone, etc.)
 
-![An image of the tablet]({{ site.baseurl }}/images/content/kit/tablet-cropped.png "The Tablet")
+Connecting to Your Robot
+------------------------
 
-Connecting to the robot
------------------------
+First, ensure that the WiFi dongles supplied with your kit are plugged into your robot.
+Once you have the WiFi dongles connected, plug in a USB memory stick and turn your robot on.
 
-Once the robot is turned on the tablet should automatically connect to
-your robot's WiFi if it is available. Here are the steps to follow to
-make this happen:
+During the boot process you should notice a green LED begin to flash on one of the WiFi dongles.
+Your robot has now set up its very own WiFi network! It'll be called `robot-XXX`, where `XXX` is
+your team's TLA.
 
- * Ensure WiFi on the tablet is turned on (but not connected)
+You can now connect to your robot in the same way you normally connect to a WiFi network.
+You will need a WiFi key to be able to connect and you can find this inside any robot.zip
+that you have exported from the IDE. Just unzip the robot.zip and have a look inside `wifi.yaml`.
 
-![WiFi status]({{ site.baseurl }}/images/content/kit/tablet/wifi_status.png "WiFi status")
+Note that, because the information for your robot's WiFi network is stored inside the robot.zip,
+the WiFi network will disappear when you unplug the USB memory stick. It will reappear a few moments
+after you plug the USB memory stick into your robot.
 
- * Connect one of the USB WiFi dongles to the kit
- * Connect a USB stick containing your `robot.zip` to the kit
- * Turn on the kit
+If you are having any problems connecting to your robot, just head on over to the [forum](/forum)
+and ask for help.
 
-The robot's WiFi will appear at some point while the robot is booting,
-and before the start LED begins to flash.
+Interacting With Your Robot
+---------------------------
 
-If there is a problem you can manually connect to the robot by
-finding your WiFi key from the `wifi.yaml` file inside the `robot.zip` from the
-IDE which should be on your memory stick.
-Note that because the information for the WiFi is stored in the `robot.zip`,
-the WiFi will turn off when you un-plug the USB stick.
+Once you have a WiFi connection, visit `http://robot.sr` in a web browser to see the robot interface.
 
-If you are still experiencing problems, you should ask a question on the [forum](/forum).
-
-<div class="warning">
-If the tablet is already connected to a WiFi access point before turning on the
-robot, it will not automatically switch to the robot access point. You will
-need to do that yourselves by either disconnecting from the original access
-point or by selecting the robot one in the WiFi settings screen on the tablet.
-</div>
-
-Starting the app
--------------
-
-Once you have a WiFi connection, you can open the "Student Robotics" app which
-will open the browser and display the tablet interface for your robot. If you
-are experiencing problems with the app, you can try connecting to the robot
-manually by opening the "Chrome Shell" app from the apps list and navigating to
-`http://robot.sr/`.
+The robot interface gives you the ability to remotely start the code on your robot,
+as well as view the logs.
 
 <div class="info" markdown="1">
-You can also access the same interface using any other WiFi device connected
-to the robot's access point. Simply connect to your robot's WiFi and then
-visit `http://robot.sr/` in a web browser.
+The stop button that appears after starting your code is currently not functional.
 </div>
 
-Using the app
--------------
+### Setting up the Robot's Environment
 
-The tablet app allows you to run the code on your robot, as well as view the
-logs.
+![The robot interface's set up screen]({{ site.baseurl }}/images/content/kit/tablet/set-up-screen.png)
 
-In all screens, you can use the "hamburger menu" (the three horizontal lines)
-to select a different screen, and the play button to start your robot's code.
-This will turn into a stop button when code is running.
-
-<div class="info" markdown="1">
-The stop button is currently not functional.
-</div>
-
-### Set up screen
-
-![The tablet app's set up screen]({{ site.baseurl }}/images/content/kit/tablet/set-up-screen.png)
-
-This screen allows you to select the starting zone of your robot, as well as
+When you first navigate to the robot interface you are presented with the Set up page.
+This page allows you to select the starting zone of your robot, as well as
 whether it is running in development mode or competition mode. Changing the
 starting zone allows you to test how your robot handles being started in a
 different zone.
@@ -88,9 +59,9 @@ should keep your robot in development mode.
 
 You cannot use this screen when code is running.
 
-### Logs screen
+### Logs Screen
 
-![The tablet app's logs screen]({{ site.baseurl }}/images/content/kit/tablet/logs-screen.png)
+![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/tablet/logs-screen.png)
 
 This screen allows you to see all messages from your code sent by `print`
 statements (and anything else that outputs to standard output or standard
