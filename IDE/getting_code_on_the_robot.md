@@ -21,7 +21,7 @@ You can follow these steps when you've got some code you'd like to run:
 3. _Safely remove_ the memory stick
 4. Plug it into your robot's USB hub
 
-Now you can turn on your robot (or kit) and press the _run_ button. Errors and the output of your `print` statements will be written to [the log file](/docs/troubleshooting/python#ReadingTheLogs).
+Now you can turn on your robot (or kit) and press the _run_ button. Errors and the output of your `print` statements will be written to [the log file](/docs/troubleshooting/python#ReadingTheLogs). You can also view the log output live by connceting to your robot's [WiFi](/docs/kit/wifi).
 
 <div class="info">
 To re-run your program, simply remove the USB stick and plug it back in again. There's no need to restart the robot.
