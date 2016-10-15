@@ -37,8 +37,9 @@ Explain it to someone else
 
 Check the log file for errors
 :   If your program has an error in it, it will stop running or not run at all.
-    Check [the log file](/docs/troubleshooting/python#ReadingTheLogs) on your
-    [tablet](/docs/kit/tablet) or USB stick to see any error reports.
+    Check [the log file](/docs/troubleshooting/python#ReadingTheLogs) either through the
+    robot [WiFi](/docs/kit/wifi) interface or look at the log file on the USB stick to
+    see any error reports.
 
 Print all the things
 :   Adding [`print` statements](/docs/python/tutorial/inputoutput.html)
@@ -49,8 +50,9 @@ Print all the things
     of the reason our boards are covered in them.
 
     On the robots the output from any `print` statements will end up
-    in [the log file](/docs/troubleshooting/python#ReadingTheLogs) on the
-    [tablets](/docs/kit/tablet) and USB stick.
+    in [the log file](/docs/troubleshooting/python#ReadingTheLogs), which can
+    be viewed either in the robot [WiFi](/docs/kit/wifi) interface or on
+    the USB stick.
 
 Check the docs
 :   It's very easy to end up thinking that you know how something works

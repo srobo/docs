@@ -21,10 +21,10 @@ The boards provided are as follows; more details can be found on their individua
  * [Ruggeduino (including two screw shields)](/docs/kit/ruggeduino)
  * [Servo Board](/docs/kit/servo_board)
 
-The Tablet
-----------
+The Tablet and WiFi
+-------------------
 
-Each kit comes with a [tablet](/docs/kit/tablet) which is used to interface with your robot.
+The kit can be controlled over [WiFi](/docs/kit/wifi). You can use either your own device or the tablet provided.
 
 Ancillary Parts
 ---------------
