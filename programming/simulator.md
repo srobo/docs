@@ -118,14 +118,6 @@ info
     marker_type
     :   the type of object the marker is attached to (either `MARKER_TOKEN` or `MARKER_ARENA`).
 
-        <div class="warning" markdown="1">
-        Note that the marker type for the 2016 tokens is `MARKER_TOKEN`, not `MARKER_TOKEN_TOP`, `MARKER_TOKEN_SIDE` or `MARKER_TOKEN_BOTTOM` as it is in [the real SR API](/docs/programming/sr/vision/#MarkerInfo).
-        </div>
-
-        <div class="warning" markdown="1">
-        Note that the property `token_net` in [the real SR API](/docs/programming/sr/vision/#MarkerInfo) is not supported in the simulator.
-        </div>
-
     offset
     :   offset of the numeric code of the marker from the lowest numbered marker of its type.
         For example: markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.
