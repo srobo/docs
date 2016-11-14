@@ -1,4 +1,5 @@
 ---
+redirect_from: /user_accounts
 layout: page
 title: User Accounts
 ---
