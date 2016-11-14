@@ -13,9 +13,9 @@ When shipping a complete kit (rather than a single part) it should be shipped in
 Once all of the parts of the kit are safely packed into the Really Useful Box please tape up the lid and handles as shown in the photo below (to be added).
 
 ## Arranging a Courier
-Arranging for a courier to collect the kit/package and deliver it can be done quickly and easily via a range of websites. The sections below outline how this is done for a selection of couriers. For all of these couriers, they will come and collect the package from the collection address you specify.
+Arranging for a courier to collect the kit/package and deliver it can be done quickly and easily through multiple websites. The steps below outline how this is done. For the couriers listed, they will come and collect the package from the collection address you specify.
 
-Since the kits contain lithium polymer batteries there are some restrictions around shipping. We have confirmed that the couriers listed below are happy with shipping packages containing the size and quantity of batteries provided in the kit. Detailed step-by-step instructions for other couriers will be added to this page in due course.
+Since the kits contain lithium polymer batteries there are some restrictions around shipping. We have confirmed that the couriers listed below are happy with shipping packages containing the size and quantity of batteries provided in the kit. Step-by-step instructions for more couriers will be added to this page in due course.
 
 ### Kit Details
 
