@@ -12,6 +12,7 @@ collections:
 
 gems:
   - jekyll-paginate
+  - jekyll-redirect-from
 
 links:
   compete: //docs.google.com/forms/d/1Ryg2cfAxfwMOBnT01aj-fzsp51F3B182S5e53ye8aMw/viewform
