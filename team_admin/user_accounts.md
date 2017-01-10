@@ -59,6 +59,20 @@ confirm their email address within two days, you'll get an email saying
 that their registration expired; if this happens, you will need to
 re-register them.
 
+#### Team Leaders
+
+When an account is created it starts off as a competitor account. In order to
+allow your fellow team leaders to have full access to the user management pages
+(among other things), you should change them to being a team leader account.
+
+You can change the type of an account in the [user management page](/userman):
+
+1. Select the user in question from the list on the left hand side
+1. Under 'Type' change the selection to 'Team Leader'
+1. Click 'Submit' to save the changes
+
+Feel free to add as many team leader accounts as you like, there's no upper limit.
+
 ### Account maintenance
 
 If you need to update any user account data, find their username,
