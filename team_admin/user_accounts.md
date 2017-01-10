@@ -71,7 +71,7 @@ You can change the type of an account in the [user management page](/userman):
 1. Under 'Type' change the selection to 'Team Leader'
 1. Click 'Submit' to save the changes
 
-Feel free to add as many team leader accounts as you like, there's no upper limit.
+Feel free to add as many team leader accounts as you like; there's no upper limit.
 
 ### Account maintenance
 
