@@ -71,5 +71,5 @@ If you wish to edit their details, including changing their password, alter the
 fields in this window and then click 'Submit'.
 
 We are unable to recover passwords once they have been set. If users
-forget passwords, please reset their password using the process above. If you
-forget your own, please contact <{{ site.emails.accounts }}>.
+forget passwords, please reset their password using the process above.
+If you forget your own, please contact <{{ site.emails.accounts }}>.
