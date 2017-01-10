@@ -66,8 +66,8 @@ reset their password or so forth, first log into the [user management page](/use
 
 Once there, you should find the users name in the list of registered
 users on the left, as well as their username. To check or update their details,
-click on their name, and their registration details will appear to the right. If
-you wish to edit their details, including changing their password, alter the
+click on their name, and their registration details will appear to the right.
+If you wish to edit their details, including changing their password, alter the
 fields in this window and then click 'Submit'.
 
 We are unable to recover passwords once they have been set. If users
