@@ -62,8 +62,7 @@ re-register them.
 ### Account maintenance
 
 If you need to update any competitor account data, find their username,
-reset their password or so forth, first log into the [user management
-page](/userman).
+reset their password or so forth, first log into the [user management page](/userman).
 
 Once there, you should find the competitors name in the list of registered
 users on the left, as well as their username. To check or update their details,
