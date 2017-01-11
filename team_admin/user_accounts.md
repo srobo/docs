@@ -48,7 +48,7 @@ you can ask them to email <{{ site.emails.accounts }}> for more help.
 To create user accounts, visit the [user management page](/userman), and
 log in. In a column on the left, you'll see a list of users currently
 registered for your team.  At the bottom is a link marked 'Register users'.
-Click on this, and you'll be presented with a form for user user details.
+Click on this, and you'll be presented with a form for user details.
 Fill this in (adding rows as appropriate), click submit, and we'll begin the
 account creation process.
 
