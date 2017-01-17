@@ -35,6 +35,7 @@ Interacting With Your Robot
 ---------------------------
 
 Once you have a WiFi connection, visit `http://robot.sr` in a web browser to see the robot interface.
+If you are using the tablet provided with your kit you will need to use `Chrome Shell` rather than the default web browser.
 
 The robot interface gives you the ability to remotely start the code on your robot,
 as well as view the logs.
