@@ -3,8 +3,8 @@ layout: page
 title: Documentation
 ---
 
-Documentation
-=============
+Introduction
+============
 
 There are a number of sections in the documentation,
  offering help for the [IDE](/docs/IDE/),

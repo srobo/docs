@@ -17,3 +17,18 @@
 .question {
   font-weight: bold;
 }
+
+.header-card {
+  background: $sr-blue;
+  padding: $spacing;
+
+  @include media-query("medium") {
+    padding: $spacing 0;
+  }
+
+  h1 {
+    font-family: $hero-font-family;
+    color: $sr-white;
+    margin-bottom: 0;
+  }
+}
