@@ -40,7 +40,7 @@ As well as the aforementioned boards the kit also contains the following items.
 | Tablet charger         | 1   | USB Mains Adapter                                                     | N/A                                         |
 | USB Memory Stick       | 1   | Kingston Datatraveler G2 2GB or G3 8GB                                | N/A (discontinued)                          |
 | Standard USB cable     | 3   | Standard USB A to B connector                                         | N/A                                         | For connecting the ruggeduino (via a hub) and USB hubs to the ODROID
-| Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and ODROID to the power board; and for connecting the tablet to the charger
+| Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the ODROID; and for connecting the tablet to the charger
 | Red Hook-up Wire       | 1   | 3m<br />0.5mm<sup>2</sup><br />4A                                     | [RS 361-614][RS-361-614]                    | General purpose wire
 | Black Hook-up Wire     | 1   | 3m<br />0.5mm<sup>2</sup><br />4A                                     | [RS 361-579][RS-361-579]                    | General purpose wire
 | Blue Hook-up Wire      | 1   | 3m<br />0.5mm<sup>2</sup><br />4A                                     | [RS 361-585][RS-361-585]                    | General purpose wire
