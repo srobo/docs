@@ -21,10 +21,10 @@ The boards provided are as follows; more details can be found on their individua
  * [Ruggeduino (including two screw shields)](/docs/kit/ruggeduino)
  * [Servo Board](/docs/kit/servo_board)
 
-The Tablet and WiFi
+The WiFi
 -------------------
 
-The kit can be controlled over [WiFi](/docs/kit/wifi). You can use either your own device or the tablet provided.
+The kit can be controlled over [WiFi](/docs/kit/wifi). You can use any device to connect to the WiFi.
 
 Ancillary Parts
 ---------------
@@ -37,10 +37,9 @@ As well as the aforementioned boards the kit also contains the following items.
 | Battery Charger        | 1   | iMAX B6 or HobbyKing E4                                               | N/A                                         | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
 | USB Hub                | 2   | 7-Port                                                                | [StarTech ST7202USBGB][ST7202USBGB]         | The hub does *not* require a power cable
 | USB WiFi Adapter       | 2   | 300Mbps Mini Wireless N USB Adapter                                   | [TP-Link TL-WN823N][TL-WN823N]              |
-| Tablet charger         | 1   | USB Mains Adapter                                                     | N/A                                         |
 | USB Memory Stick       | 1   | Kingston Datatraveler G2 2GB or G3 8GB                                | N/A (discontinued)                          |
 | Standard USB cable     | 3   | Standard USB A to B connector                                         | N/A                                         | For connecting the ruggeduino (via a hub) and USB hubs to the ODROID
-| Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the ODROID; and for connecting the tablet to the charger
+| Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the ODROID
 | Red Hook-up Wire       | 1   | 3m<br />0.5mm<sup>2</sup><br />4A                                     | [RS 361-614][RS-361-614]                    | General purpose wire
 | Black Hook-up Wire     | 1   | 3m<br />0.5mm<sup>2</sup><br />4A                                     | [RS 361-579][RS-361-579]                    | General purpose wire
 | Blue Hook-up Wire      | 1   | 3m<br />0.5mm<sup>2</sup><br />4A                                     | [RS 361-585][RS-361-585]                    | General purpose wire

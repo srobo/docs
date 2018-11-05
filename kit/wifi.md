@@ -7,8 +7,7 @@ WiFi
 ====
 
 The WiFi dongles provided with your kit allow you to interface with and debug your robot.
-You can connect to your robot either using the tablet provided with your kit or any WiFi
-capable device of your own (laptop, tablet, phone, etc.)
+You can connect to your robot using any WiFi capable device (laptop, tablet, phone, etc.)
 
 Connecting to Your Robot
 ------------------------
@@ -35,7 +34,6 @@ Interacting With Your Robot
 ---------------------------
 
 Once you have a WiFi connection, visit `http://robot.sr` in a web browser to see the robot interface.
-If you are using the tablet provided with your kit you will need to use `Chrome Shell` rather than the default web browser.
 
 The robot interface gives you the ability to remotely start the code on your robot,
 as well as view the logs.
