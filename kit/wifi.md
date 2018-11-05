@@ -46,7 +46,7 @@ The stop button that appears after starting your code is currently not functiona
 
 ### Setting up the Robot's Environment
 
-![The robot interface's set up screen]({{ site.baseurl }}/images/content/kit/tablet/set-up-screen.png)
+![The robot interface's set up screen]({{ site.baseurl }}/images/content/kit/remote-interfaceg/set-up-screen.png)
 
 When you first navigate to the robot interface you are presented with the Set up page.
 This page allows you to select the starting zone of your robot, as well as
@@ -62,7 +62,7 @@ You cannot use this screen when code is running.
 
 ### Logs Screen
 
-![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/tablet/logs-screen.png)
+![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/remote-interfaceg/logs-screen.png)
 
 This screen allows you to see all messages from your code sent by `print`
 statements (and anything else that outputs to standard output or standard
