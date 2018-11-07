@@ -7,8 +7,7 @@ WiFi
 ====
 
 The WiFi dongles provided with your kit allow you to interface with and debug your robot.
-You can connect to your robot either using the tablet provided with your kit or any WiFi
-capable device of your own (laptop, tablet, phone, etc.)
+You can connect to your robot using any WiFi capable device (laptop, tablet, phone, etc.)
 
 Connecting to Your Robot
 ------------------------
@@ -35,7 +34,6 @@ Interacting With Your Robot
 ---------------------------
 
 Once you have a WiFi connection, visit `http://robot.sr` in a web browser to see the robot interface.
-If you are using the tablet provided with your kit you will need to use `Chrome Shell` rather than the default web browser.
 
 The robot interface gives you the ability to remotely start the code on your robot,
 as well as view the logs.
@@ -46,7 +44,7 @@ The stop button that appears after starting your code is currently not functiona
 
 ### Setting up the Robot's Environment
 
-![The robot interface's set up screen]({{ site.baseurl }}/images/content/kit/tablet/set-up-screen.png)
+![The robot interface's set up screen]({{ site.baseurl }}/images/content/kit/remote-interface/set-up-screen.png)
 
 When you first navigate to the robot interface you are presented with the Set up page.
 This page allows you to select the starting zone of your robot, as well as
@@ -62,7 +60,7 @@ You cannot use this screen when code is running.
 
 ### Logs Screen
 
-![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/tablet/logs-screen.png)
+![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/remote-interface/logs-screen.png)
 
 This screen allows you to see all messages from your code sent by `print`
 statements (and anything else that outputs to standard output or standard
