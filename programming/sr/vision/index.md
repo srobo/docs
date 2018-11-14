@@ -28,7 +28,7 @@ When called, this function takes a photo through the webcam and searches for mar
 It returns a list of `Marker` objects, each of which describes one of the markers that were found in the image.
 A detailed description of the attributes of Marker objects is provided [later in this page](#Marker).
 
-Here's an example that will repeatedly print out the distance to each token marker that the robot can see:
+Here's an example that will repeatedly print out the distance to each arena marker that the robot can see:
 
 ~~~~~ python
 from sr.robot import *
@@ -39,7 +39,7 @@ while True:
     print "I can see", len(markers), "markers:"
 
     for m in markers:
-        if m.info.marker_type in (MARKER_TOKEN_A, MARKER_TOKEN_B, MARKER_TOKEN_C):
+        if m.info.marker_type == MARKER_ARENA:
             print " - Marker #{0} is {1} metres away".format( m.info.code, m.dist )
 ~~~~~
 
@@ -172,16 +172,11 @@ marker_type
     One of:
 
     * `MARKER_ARENA`
-    * `MARKER_ROBOT`
-    * `MARKER_TOKEN_A`
-    * `MARKER_TOKEN_B`
-    * `MARKER_TOKEN_C`
+    * (other marker types based on this year's game will be documented soon)
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.
     For example: markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.
-    Due to the arrangement of the ids for the token markers, this value is only defined for the
-    `MARKER_ARENA` and `MARKER_ROBOT` type tokens.
 
 size
 :   The size of the marker in metres.
