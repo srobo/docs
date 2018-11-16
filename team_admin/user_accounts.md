@@ -61,6 +61,8 @@ re-register them.
 
 #### Team Leaders
 
+Team leaders are the adults responsible for the competitors.
+
 When an account is created it starts off as a competitor account. In order to
 allow your fellow team leaders to have full access to the user management pages
 (among other things), you should change them to being a team leader account.
