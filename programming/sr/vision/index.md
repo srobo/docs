@@ -172,7 +172,7 @@ marker_type
     One of:
 
     * `MARKER_ARENA`
-    * (other marker types based on this year's game will be documented soon)
+    * `MARKER_TOKEN`
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.
