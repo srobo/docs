@@ -102,7 +102,7 @@ Use the `Inc.`/`Dec.` buttons until it reads `11.1V(3S)`.
 Hold `Start/Enter` for 3 seconds to confirm. The charger will try to detect the battery. It *must* show:
 
 <table class="charger_lcd">
-<tr><td>R:3SER&nbsp;&nbsp;S:3SER</td></tr>
+<tr><td>R:&nbsp;3SER&nbsp;&nbsp;S:&nbsp;3SER</td></tr>
 <tr><td>CONFIRM(ENTER)</td></tr>
 </table>
 
