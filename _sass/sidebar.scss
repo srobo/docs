@@ -1,7 +1,7 @@
 
 $link-left-padding: 1em;
 $indent-space: 1em;
-$vertical-line-offset: 0.4em;
+$vertical-line-offset: 0.3em;
 
 @mixin category($nesting-depth) {
   &>li:before {
@@ -14,7 +14,7 @@ $vertical-line-offset: 0.4em;
     border-left: solid 1px #cccccc;
   }
   &>li > a {
-    padding-left: ($nesting-depth * $indent-space);
+    margin-left: ($nesting-depth * $indent-space);
   }
 }
 
@@ -31,7 +31,7 @@ $vertical-line-offset: 0.4em;
 
     a {
       display: block;
-      border-radius: 5px;
+      border-radius: 4px;
       &:hover {
         background-color: #0000FF10;
       }
@@ -58,6 +58,11 @@ $vertical-line-offset: 0.4em;
   // Sub-Sub-Category
   & > li > ul > li > ul {
     @include category(2);
+  }
+
+  // Sub-Sub-Sub-Category
+  & > li > ul > li > ul > li > ul {
+    @include category(3);
   }
 
   @media (max-width: 992px) {
