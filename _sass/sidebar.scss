@@ -1,7 +1,7 @@
 
-$link-left-padding: 1em;
+$link-left-padding: 0.5em;
 $indent-space: 1em;
-$vertical-line-offset: 0.3em;
+$vertical-line-offset: -0.3em;
 
 @mixin category($nesting-depth) {
   &>li:before {
@@ -25,7 +25,6 @@ $vertical-line-offset: 0.3em;
   }
   li {
     font-size: $foxtrot;
-    list-style: square inside;
     list-style-type: none;
     position: relative;
 
@@ -44,9 +43,14 @@ $vertical-line-offset: 0.3em;
   }
   // Category
   & > li {
-    a {
+    @include category(0);
+    & > a {
+      border-bottom: solid 1px #cccccc;
       padding-left: 0;
       font-weight: bold;
+      padding-bottom: 1px;
+      margin-top: 1px;
+      margin-bottom: 2px;
     }
   }
 
