@@ -1,0 +1,24 @@
+<div class="mobile-navbar" id="mobile_navbar">
+  <div class="navbar-header">
+    <a href="/"><img class="logo" href="/"
+         src="{{ '/images/logo-text.svg' | prepend: site.baseurl }}"
+         alt="Student Robotics"/></a>
+  </div>
+  <div class="navbar-nav">
+    <ul>
+      <li>
+        <a class="page-link" href="/ide">IDE</a>
+      </li>
+      <li>
+        <a class="page-link" href="{{ site.baseurl }}">Documentation</a>
+      </li>
+      <li>
+        <a class="page-link" href="/compete">Compete</a>
+      </li>
+      <li>
+        <a class="page-link" href="/volunteer">Volunteer</a>
+      </li>
+    </ul>
+  </div>
+  {% include sidebar.html %}
+</div>

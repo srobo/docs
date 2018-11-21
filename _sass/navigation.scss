@@ -60,47 +60,6 @@
   }
 }
 
-.side-navigation {
-  @extend .navigation;
-  margin: 0;
-  padding: 0;
-
-  p {
-    display: inline-block;
-    margin-bottom: 0;
-
-    &.link-icon {
-      color: gray;
-      margin-right: 10px;
-    }
-  }
-
-  span {
-    display: block;
-    margin-bottom: 5px;
-
-    &.link-title {
-      text-decoration: underline;
-    }
-
-    &.link-description {
-      color: gray;
-      font-size: 0.7em;
-    }
-  }
-
-  a {
-    align-items: center;
-    display: flex;
-    padding: 10px;
-    position: relative;
-
-    &:hover {
-      background: darken(white, 5%);
-    }
-  }
-}
-
 .full-navigation {
   &.mobile-collapsed {
     @extend .desktop-only;
@@ -120,5 +79,68 @@
 
   ul {
     width: auto;
+  }
+}
+
+$mobile-sidebar-width: 17em;
+
+.content.navbar-deployed {
+  position: relative;
+  @include media-query("medium") {
+    left: 0;
+  }
+  left: $mobile-sidebar-width;
+}
+
+.mobile-navbar {
+  display: none;
+  position:fixed;
+  width: $mobile-sidebar-width;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  background: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 5px #00000060;
+
+  &.navbar-deployed {
+    display: block;
+  }
+
+  .navbar-header {
+    margin: 0;
+    padding: 15px;
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .back-arrow {
+    display: inline;
+  }
+
+  & > .sidebar {
+    padding: 5px;
+  }
+
+  .page-link {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: $main-font-family;
+    font-size: $foxtrot;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 7px;
+    text-transform: uppercase;
+    background-color: $sr-blue;
+    &:hover {
+      background-color: lighten($sr-blue, 10)
+    }
   }
 }

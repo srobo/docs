@@ -68,9 +68,5 @@ $vertical-line-offset: -0.3em;
   & > li > ul > li > ul > li > ul {
     @include category(3);
   }
-
-  @media (max-width: 992px) {
-      margin: auto;
-      padding: auto;
-  }
 }
+

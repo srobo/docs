@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-<div class="header-card">
-  <div class="fixed-width">
-    <h1>Documentation</h1>
-  </div>
-</div>
-<div class="main">
-  <div class="row fixed-width">
-    <div class="column m-3-12">
-      {% include sidebar.html %}
-    </div>
-    <div class="column m-9-12 doc">
-      {{ content }}
+
+  <div class="header-card">
+    <div class="fixed-width">
+      <h1>Documentation</h1>
     </div>
   </div>
+
+  <div class="main">
+    <div class="row fixed-width">
+      <div class="column m-3-12 desktop-only">
+        {% include sidebar.html %}
+      </div>
+      <div class="column m-9-12 doc">
+        {{ content }}
+      </div>
+    </div>
 </div>
