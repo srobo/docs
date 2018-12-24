@@ -2,7 +2,6 @@
 <ul class="sidebar">
   {% for heading in site.data.sidebar_tree.tree %}
     {% assign category_diff = clean_url | split:heading.url | first %}
-    {% unless category_diff %}{% assign category_diff = '' %}{% endunless %}
     {% assign fullpage = heading.url | append: '/' %}
     <li class="{% if category_diff == '' %}expanded{% endif %} {% if clean_url == fullpage %}selected{% endif %}">
       <a href="{{ heading.url | prepend: site.baseurl }}">{{heading.title}}</a>
