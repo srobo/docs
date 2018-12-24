@@ -4,7 +4,6 @@ gem 'rake'
 gem 'neat'
 gem 'kramdown'
 gem 'jekyll'
-gem 'jekyll-paginate'
 gem 'jekyll-redirect-from'
 
 # Avoid polling on windows
