@@ -60,28 +60,6 @@
   }
 }
 
-.full-navigation {
-  &.mobile-collapsed {
-    @extend .desktop-only;
-  }
-  &:not(.mobile-collapsed) {
-    animation: fadein 0.5s;
-  }
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.mobile-navigation {
-  @extend .mobile-only;
-
-  ul {
-    width: auto;
-  }
-}
-
 .side-navigation {
   @extend .navigation;
   margin: 0;
@@ -120,5 +98,27 @@
     &:hover {
       background: darken(white, 5%);
     }
+  }
+}
+
+.full-navigation {
+  &.mobile-collapsed {
+    @extend .desktop-only;
+  }
+  &:not(.mobile-collapsed) {
+    animation: fadein 0.5s;
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.mobile-navigation {
+  @extend .mobile-only;
+
+  ul {
+    width: auto;
   }
 }
