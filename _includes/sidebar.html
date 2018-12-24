@@ -1,19 +1,26 @@
+{% assign clean_url = page.url | replace: '.html', '/' %}
 <ul class="sidebar">
   {% for heading in site.data.sidebar_tree.tree %}
-    <li {% if page.url contains heading.url+'/' %}class="selected"{% endif %}>
+    {% assign category_diff = clean_url | split:heading.url | first %}
+    {% unless category_diff %}{% assign category_diff = '' %}{% endunless %}
+    {% assign fullpage = heading.url | append: '/' %}
+    <li class="{% if category_diff == '' %}expanded{% endif %} {% if clean_url == fullpage %}selected{% endif %}">
       <a href="{{ heading.url | prepend: site.baseurl }}">{{heading.title}}</a>
       <ul>
       {% for subheading in heading.tree %}
-        <li>
+        {% assign fullpage = subheading.url | append: '/' %}
+        <li{% if clean_url == fullpage %} class="selected" {% endif %}>
           <a href="{{ subheading.url | prepend: site.baseurl }}">{{subheading.title}}</a>
           <ul>
           {% for subsubheading in subheading.tree %}
-            <li>
+            {% assign fullpage = subsubheading.url | append: '/' %}
+            <li{% if clean_url == fullpage %} class="selected" {% endif %}>
               <a href="{{ subsubheading.url | prepend: site.baseurl }}">{{subsubheading.title}}</a>
               <ul>
                 {% for subsubsubheading in subsubheading.tree %}
-                  <li>
-                    <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
+                  {% assign fullpage = subsubsubheading.url | append: '/' %}
+                    <li{% if clean_url == fullpage %} class="selected" {% endif %}>
+                      <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
                   </li>
                 {% endfor %}
               </ul>

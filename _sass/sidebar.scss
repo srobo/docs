@@ -3,6 +3,11 @@ $link-left-padding: 0.5em;
 $indent-space: 1em;
 $vertical-line-offset: -0.3em;
 
+@mixin selected {
+    background-color: #0000FF10;
+    color: $sr-blue;
+}
+
 @mixin category($nesting-depth) {
   &>li:before {
     position:absolute;
@@ -15,6 +20,9 @@ $vertical-line-offset: -0.3em;
   }
   &>li > a {
     margin-left: ($nesting-depth * $indent-space);
+  }
+  &>li.selected > a {
+    @include selected
   }
 }
 
@@ -51,6 +59,9 @@ $vertical-line-offset: -0.3em;
       padding-bottom: 1px;
       margin-top: 1px;
       margin-bottom: 2px;
+    }
+    &.selected > a {
+      @include selected
     }
   }
 

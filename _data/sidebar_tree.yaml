@@ -1,7 +1,7 @@
 tree:
-  - url: /
+  - url: 
     title: Introduction
-  - url: /IDE/
+  - url: /IDE
     title: IDE
     tree:
     - url: /IDE/creating_a_project
@@ -16,12 +16,12 @@ tree:
       title: Shortcuts Menu
     - url: /IDE/version_control
       title: Version Control
-  - url: /kit/
+  - url: /kit
     title: Kits
     tree:
     - url: /kit/assembly
       title: Assembly
-    - url: /kit/batteries/
+    - url: /kit/batteries
       title: Batteries
       tree:
       - url: /kit/batteries/hke4_charger
@@ -40,31 +40,31 @@ tree:
       title: Servo Board
     - url: /kit/wifi
       title: WiFi
-  - url: /programming/
+  - url: /programming
     title: Programming
     tree:
-    - url: /programming/python/
+    - url: /programming/python
       title: Python
       tree:
       - url: /programming/python/functions
         title: Functions
       - url: /programming/python/libraries
         title: Libraries
-    - url: /programming/sr/
+    - url: /programming/sr
       title: sr
       tree:
-      - url: /programming/sr/motors/
+      - url: /programming/sr/motors
         title: Motors
-      - url: /programming/sr/power/
+      - url: /programming/sr/power
         title: Power
-      - url: /programming/sr/ruggeduinos/
+      - url: /programming/sr/ruggeduinos
         title: Ruggeduinos
         tree:
         - url: /programming/sr/ruggeduinos/custom_firmware
           title: Custom Firmware
-      - url: /programming/sr/servos/
+      - url: /programming/sr/servos
         title: Servos
-      - url: /programming/sr/vision/
+      - url: /programming/sr/vision
         title: Vision
         tree:
         - url: /programming/sr/vision/markers
@@ -73,23 +73,23 @@ tree:
       title: Git Repositories
     - url: /programming/simulator
       title: Simulator
-  - url: /rules/
+  - url: /rules
     title: Rules
-  - url: /troubleshooting/
+  - url: /troubleshooting
     title: Troubleshooting
     tree:
     - url: /troubleshooting/python
       title: Python
     - url: /troubleshooting/interactive_troubleshooter
       title: Interactive Troubleshooter
-  - url: /tutorials/
+  - url: /tutorials
     title: Tutorials
     tree:
     - url: /tutorials/basic_motor_control
       title: Basic Motor Control
     - url: /tutorials/python
       title: Python
-  - url: /team_admin/
+  - url: /team_admin
     title: Team Admin
     tree:
     - url: /team_admin/user_accounts
