@@ -68,5 +68,10 @@ $vertical-line-offset: -0.3em;
   & > li > ul > li > ul > li > ul {
     @include category(3);
   }
+  .mobile-only & > li:not(.expanded) > ul {
+    display: none;
+  }
 }
-
+.mobile-only {
+  background-color: white;
+}
