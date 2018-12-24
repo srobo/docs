@@ -6,6 +6,7 @@ $vertical-line-offset: -0.3em;
 @mixin selected {
     background-color: #0000FF10;
     color: $sr-blue;
+    font-weight: bold;
 }
 
 @mixin category($nesting-depth) {
