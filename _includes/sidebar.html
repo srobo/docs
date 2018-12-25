@@ -5,16 +5,19 @@
     {% assign fullpage = heading.url | append: '/' %}
     <li class="{% if category_diff == '' %}expanded{% endif %} {% if clean_url == fullpage %}selected{% endif %}">
       <a href="{{ heading.url | prepend: site.baseurl }}">{{heading.title}}</a>
+      {% if heading.tree %}
       <ul>
       {% for subheading in heading.tree %}
         {% assign fullpage = subheading.url | append: '/' %}
         <li{% if clean_url == fullpage %} class="selected" {% endif %}>
           <a href="{{ subheading.url | prepend: site.baseurl }}">{{subheading.title}}</a>
+          {% if subheading.tree %}
           <ul>
           {% for subsubheading in subheading.tree %}
             {% assign fullpage = subsubheading.url | append: '/' %}
             <li{% if clean_url == fullpage %} class="selected" {% endif %}>
               <a href="{{ subsubheading.url | prepend: site.baseurl }}">{{subsubheading.title}}</a>
+              {% if subsubheading.tree %}
               <ul>
                 {% for subsubsubheading in subsubheading.tree %}
                   {% assign fullpage = subsubsubheading.url | append: '/' %}
@@ -23,12 +26,15 @@
                   </li>
                 {% endfor %}
               </ul>
+              {% endif %}
             </li>
           {% endfor %}
           </ul>
+          {% endif %}
         </li>
       {% endfor %}
       </ul>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
