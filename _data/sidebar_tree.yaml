@@ -1,9 +1,11 @@
 tree:
-  - url: 
+  - url: /
     title: Introduction
   - url: /IDE
     title: IDE
     tree:
+    - url: /IDE/code_checking
+      title: Code Checking
     - url: /IDE/creating_a_project
       title: Code a Project
     - url: /IDE/finding_things
