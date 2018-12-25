@@ -12,7 +12,7 @@ $vertical-line-offset: -0.3em;
   li {
     font-size: $foxtrot;
     list-style-type: none;
-    position: relative;
+    padding-right: 8px;
     a {
       display: block;
       border-radius: 4px;
