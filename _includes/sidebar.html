@@ -1,91 +1,40 @@
+{% assign clean_url = page.url | replace: '.html', '/' %}
 <ul class="sidebar">
-  <li>
-    <a href="{{ '/' | prepend: site.baseurl }}">Introduction</a>
-  </li>
-  <li>
-    <a href="{{ '/IDE/' | prepend: site.baseurl }}">IDE</a>
-    <ul>
-      <li><a href="{{ '/IDE/code_checking' | prepend: site.baseurl }}">Code Checking</a></li>
-      <li><a href="{{ '/IDE/creating_a_project' | prepend: site.baseurl }}">Code a Project</a></li>
-      <li><a href="{{ '/IDE/finding_things' | prepend: site.baseurl }}">Finding Things</a></li>
-      <li><a href="{{ '/IDE/getting_code_on_the_robot' | prepend: site.baseurl }}">Getting Code on the Robot</a></li>
-      <li><a href="{{ '/IDE/good_commit_messages' | prepend: site.baseurl }}">Good Commit Messages</a></li>
-      <li><a href="{{ '/IDE/shortcuts_menu' | prepend: site.baseurl }}">Shortcuts Menu</a></li>
-      <li><a href="{{ '/IDE/version_control' | prepend: site.baseurl }}">Version Control</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="{{ '/kit/' | prepend: site.baseurl }}">Kits</a>
-    <ul>
-      <li><a href="{{ '/kit/assembly' | prepend: site.baseurl }}">Assembly</a></li>
-      <li>
-        <a href="{{ '/kit/batteries/' | prepend: site.baseurl }}">Batteries</a>
-        <ul>
-          <li><a href="{{ '/kit/batteries/hke4_charger' | prepend: site.baseurl }}">HKE4 Charger</a></li>
-          <li><a href="{{ '/kit/batteries/imax_b6_charger' | prepend: site.baseurl }}">IMAX B6 Charger</a></li>
-        </ul>
-      </li>
-      <li><a href="{{ '/kit/brain_board' | prepend: site.baseurl }}">Brain Board</a></li>
-      <li><a href="{{ '/kit/motor_board' | prepend: site.baseurl }}">Motor Board</a></li>
-      <li><a href="{{ '/kit/power_board' | prepend: site.baseurl }}">Power Board</a></li>
-      <li><a href="{{ '/kit/ruggeduino' | prepend: site.baseurl }}">Ruggeduino</a></li>
-      <li><a href="{{ '/kit/servo_board' | prepend: site.baseurl }}">Servo Board</a></li>
-      <li><a href="{{ '/kit/wifi' | prepend: site.baseurl }}">WiFi</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="{{ '/programming/' | prepend: site.baseurl }}">Programming</a>
-    <ul>
-      <li>
-        <a href="{{ '/programming/python/' | prepend: site.baseurl }}">Python</a>
-        <ul>
-          <li><a href="{{ '/programming/python/functions' | prepend: site.baseurl }}">Functions</a></li>
-          <li><a href="{{ '/programming/python/libraries' | prepend: site.baseurl }}">Libraries</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="{{ '/programming/sr/' | prepend: site.baseurl }}">sr</a>
-        <ul>
-          <li><a href="{{ '/programming/sr/motors/' | prepend: site.baseurl }}">Motors</a></li>
-          <li><a href="{{ '/programming/sr/power/' | prepend: site.baseurl }}">Power</a></li>
-          <li>
-            <a href="{{ '/programming/sr/ruggeduinos/' | prepend: site.baseurl }}">Ruggeduinos</a>
-            <ul>
-              <li><a href="{{ '/programming/sr/ruggeduinos/custom_firmware' | prepend: site.baseurl }}">Custom Firmware</a></li>
-            </ul>
-          </li>
-          <li><a href="{{ '/programming/sr/servos/' | prepend: site.baseurl }}">Servos</a></li>
-          <li>
-            <a href="{{ '/programming/sr/vision/' | prepend: site.baseurl }}">Vision</a>
-            <ul>
-              <li><a href="{{ '/programming/sr/vision/markers' | prepend: site.baseurl }}">Markers</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="{{ '/programming/git_repositories' | prepend: site.baseurl }}">Git Repositories</a></li>
-      <li><a href="{{ '/programming/simulator' | prepend: site.baseurl }}">Simulator</a></li>
-    </ul>
-  </li>
-  <li><a href="{{ '/rules/' | prepend: site.baseurl }}">Rules</a></li>
-  <li>
-    <a href="{{ '/troubleshooting/' | prepend: site.baseurl }}">Troubleshooting</a>
-    <ul>
-      <li><a href="{{ '/troubleshooting/python' | prepend: site.baseurl }}">Python</a></li>
-      <li><a href="{{ '/troubleshooting/interactive_troubleshooter' | prepend: site.baseurl }}">Interactive Troubleshooter</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="{{ '/tutorials/' | prepend: site.baseurl }}">Tutorials</a>
-    <ul>
-      <li><a href="{{ '/tutorials/basic_motor_control' | prepend: site.baseurl }}">Basic Motor Control</a></li>
-      <li><a href="{{ '/tutorials/python' | prepend: site.baseurl }}">Python</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="{{ '/team_admin/' | prepend: site.baseurl }}">Team Admin</a>
-    <ul>
-      <li><a href="{{ '/team_admin/user_accounts' | prepend: site.baseurl }}">User Accounts</a></li>
-      <li><a href="{{ '/team_admin/kit_shipping' | prepend: site.baseurl }}">Kit Shipping</a></li>
-    </ul>
+  {% for heading in site.data.sidebar_tree.tree %}
+    {% assign category_diff = clean_url | split:heading.url | first %}
+    {% assign fullpage = heading.url | append: '/' %}
+    <li class="{% if category_diff == '' %}expanded{% endif %} {% if clean_url == fullpage %}selected{% endif %}">
+      <a href="{{ heading.url | prepend: site.baseurl }}">{{heading.title}}</a>
+      {% if heading.tree %}
+      <ul>
+      {% for subheading in heading.tree %}
+        {% assign fullpage = subheading.url | append: '/' %}
+        <li{% if clean_url == fullpage %} class="selected" {% endif %}>
+          <a href="{{ subheading.url | prepend: site.baseurl }}">{{subheading.title}}</a>
+          {% if subheading.tree %}
+          <ul>
+          {% for subsubheading in subheading.tree %}
+            {% assign fullpage = subsubheading.url | append: '/' %}
+            <li{% if clean_url == fullpage %} class="selected" {% endif %}>
+              <a href="{{ subsubheading.url | prepend: site.baseurl }}">{{subsubheading.title}}</a>
+              {% if subsubheading.tree %}
+              <ul>
+                {% for subsubsubheading in subsubheading.tree %}
+                  {% assign fullpage = subsubsubheading.url | append: '/' %}
+                    <li{% if clean_url == fullpage %} class="selected" {% endif %}>
+                      <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
 </ul>
