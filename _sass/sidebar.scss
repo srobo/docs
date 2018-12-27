@@ -1,5 +1,3 @@
-$link-left-padding: 0.5em;
-
 .sidebar {
   ul {
 	  position: relative;
@@ -19,7 +17,7 @@ $link-left-padding: 0.5em;
       }
       &::before {
         content: "";
-        padding-left: $link-left-padding;
+        padding-left: 0.5em;
       }
       text-decoration: none;
     }
