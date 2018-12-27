@@ -25,15 +25,13 @@ $link-left-padding: 0.5em;
     }
   }
   // Category
-  & > li {
-    & > a {
-      border-bottom: solid 1px #cccccc;
-      padding-left: 0;
-      font-weight: bold;
-      padding-bottom: 1px;
-      margin-top: 1px;
-      margin-bottom: 2px;
-    }
+  & > li > a {
+    border-bottom: solid 1px #cccccc;
+    padding-left: 0;
+    font-weight: bold;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 2px;
   }
 
   li.selected > a {
