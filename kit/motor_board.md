@@ -19,6 +19,11 @@ Board Diagram
 
 ![motor board diagram]({{ site.baseurl }}/images/content/kit/mcv4b_board_diagram.png "The Motor Board")
 
+<div class="info">
+The serial and expansion connectors labelled in the above diagram are not currently used by any part of our kit and we don't typically provide support for their use.
+We strongly advise that you do not connect anything to these ports unless you understand their purpose, since incorrect use can damage the kit.
+</div>
+
 Indicators
 ----------
 
