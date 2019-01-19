@@ -16,6 +16,8 @@ tree:
       title: Good Commit Messages
     - url: /IDE/shortcuts_menu
       title: Shortcuts Menu
+    - url: /IDE/user_settings
+      title: User Settings
     - url: /IDE/version_control
       title: Version Control
   - url: /kit
