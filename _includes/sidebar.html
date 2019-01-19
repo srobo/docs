@@ -1,3 +1,8 @@
+{% comment %}
+This file performs two tasks:
+ - Generate the structure of the sidebar
+ - Highlight the item in the sidebar (via target the url matching the current url)
+{% endcomment %}
 {% assign clean_url = page.url | replace: '.html', '' %}
 <ul class="sidebar">
   {% for heading in site.data.sidebar_tree.tree %}

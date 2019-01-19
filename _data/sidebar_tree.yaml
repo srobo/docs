@@ -1,3 +1,5 @@
+# Note: urls here must match the actual target urls exactly in order for menu
+# highlighting to work.
 tree:
   - url: /
     title: Introduction
