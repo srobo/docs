@@ -1,27 +1,41 @@
-{% assign clean_url = page.url | replace: '.html', '/' %}
+{% comment %}
+This file performs two tasks:
+- Generate the structure of the sidebar.
+- Highlight the item in the sidebar.
+
+Highlighting items from the sidebar:
+
+Items are highlighted by checking if their url from  _data/sidebar_tree.yaml
+matches a simplified version of the actual page url. (From
+'/kit/batteries/hke4_charger.html' to 'kit batteries hke4_charger', That is,
+the '.html' is removed, '/' is replaced by ' ', and the leading and tailing ' '
+characters are stripped.)
+
+{% endcomment %}
+{% assign clean_url = page.url | remove: '.html' | replace: '/' ' ' | strip %}
 <ul class="sidebar">
   {% for heading in site.data.sidebar_tree.tree %}
     {% assign category_diff = clean_url | split:heading.url | first %}
-    {% assign fullpage = heading.url | append: '/' %}
+    {% assign fullpage = heading.url | replace: '/' ' ' | strip %}
     <li class="{% if category_diff == '' %}expanded{% endif %} {% if clean_url == fullpage %}selected{% endif %}">
       <a href="{{ heading.url | prepend: site.baseurl }}">{{heading.title}}</a>
       {% if heading.tree %}
       <ul>
       {% for subheading in heading.tree %}
-        {% assign fullpage = subheading.url | append: '/' %}
+        {% assign fullpage = subheading.url | replace: '/' ' ' | strip %}
         <li{% if clean_url == fullpage %} class="selected" {% endif %}>
           <a href="{{ subheading.url | prepend: site.baseurl }}">{{subheading.title}}</a>
           {% if subheading.tree %}
           <ul>
           {% for subsubheading in subheading.tree %}
-            {% assign fullpage = subsubheading.url | append: '/' %}
+            {% assign fullpage = subsubheading.url | replace: '/' ' ' | strip %}
             <li{% if clean_url == fullpage %} class="selected" {% endif %}>
               <a href="{{ subsubheading.url | prepend: site.baseurl }}">{{subsubheading.title}}</a>
               {% if subsubheading.tree %}
               <ul>
                 {% for subsubsubheading in subsubheading.tree %}
-                  {% assign fullpage = subsubsubheading.url | append: '/' %}
-                    <li{% if clean_url == fullpage %} class="selected" {% endif %}>
+                  {% assign fullpage = subsubsubheading.url | replace: '/' ' ' | strip %}
+                  <li{% if clean_url == fullpage %} class="selected" {% endif %}>
                       <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
                   </li>
                 {% endfor %}
