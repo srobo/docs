@@ -21,8 +21,8 @@
               <ul>
                 {% for subsubsubheading in subsubheading.tree %}
                   {% assign fullpage = subsubsubheading.url %}
-                    <li{% if clean_url == fullpage %} class="selected" {% endif %}>
-                      <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
+                  <li{% if clean_url == fullpage %} class="selected" {% endif %}>
+                    <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
                   </li>
                 {% endfor %}
               </ul>
