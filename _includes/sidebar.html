@@ -7,7 +7,7 @@ This file performs two tasks:
 <ul class="sidebar">
   {% for heading in site.data.sidebar_tree.tree %}
     {% assign category_diff = clean_url | split:heading.url | first %}
-    <li class="{% if category_diff == '' %}expanded{% endif %} {% if clean_url == heading.url %}selected{% endif %}">
+    <li class="{% if category_diff == '' or clean_url==heading.url %}expanded{% endif %} {% if clean_url == heading.url %}selected{% endif %}">
       <a href="{{ heading.url | prepend: site.baseurl }}">{{heading.title}}</a>
       {% if heading.tree %}
       <ul>
