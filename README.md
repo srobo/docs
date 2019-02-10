@@ -6,10 +6,10 @@ The Student Robotics public documentation.
 
 1. [Install Ruby][install-ruby]
 
-2. Install Bundler and Rake
+2. Install Bundler (1.x) and Rake
 
     ``` shell
-    $ gem install bundler rake
+    $ gem install 'bundler:~>1' rake
     ```
 
 3. Start the app in development mode
