@@ -7,4 +7,4 @@ gem 'jekyll'
 gem 'jekyll-redirect-from'
 
 # Avoid polling on windows
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'wdm', '>= 0.1.0'
