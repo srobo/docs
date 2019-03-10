@@ -87,6 +87,11 @@ The case measures 83x99x24mm. Don't forget that the cables will stick out.
 
 [^2]: If overall current limit is exceeded, the Power Board will turn off and start beeping.
 
+Notes
+-----
+
+There is an internal ring buffer that stores a queue of buzzes for the Piezo buzzer. If the number of buzzes queued exceeds 32, the buffer may overflow and cause your code to crash. This is a known issue with the board.
+
 
 Designs
 -------
