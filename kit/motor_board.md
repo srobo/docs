@@ -22,12 +22,13 @@ Board Diagram
 Indicators
 ----------
 
-| LED                    | Meaning                 | Initial power-up state
-|------------------------|-------------------------|------------------------------
-| Power                  | The board is powered    | On
-| M{0,1} Speed/Direction | Brightness indicates speed, colour indicates direction | Off
-| USB Power              | The USB interface is powered | On
-| USB Data               | Data is being transferred to/from the board | Off
+| LED                    | Colour     | Meaning                                                | Initial power-up state |
+|------------------------|------------|--------------------------------------------------------|------------------------|
+| Power                  | Green      | The board is powered                                   | On                     |
+| Power                  | Red        | If lit, the polarity is wrong for Power In             | Off                    |
+| M{0,1} Speed/Direction | Red / Blue | Brightness indicates speed, colour indicates direction | Off                    |
+| USB Power              | Green      | The USB interface is powered                           | On                     |
+| USB Data               | Red        | Data is being transferred to/from the board            | Off                    |
 
 Case Dimensions
 ---------------
