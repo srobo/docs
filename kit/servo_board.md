@@ -26,7 +26,6 @@ Indicators
 | Aux On        | There is auxiliary power on the board.                                                           | Off                    |
 | Status        | The board has successfully booted.                                                               | On                     |
 | Error         | An error has occurred. This often indicates a disconnection of the 12V connector.                | Off                    |
-| Outputs 00-11 | Currently unimplemented in firmware.                                                             | Off                    |
 
 Connectors
 ----------
