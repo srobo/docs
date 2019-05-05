@@ -16,14 +16,17 @@ Board Diagram
 -------------
 <img src="{{ site.baseurl }}/images/content/kit/servo_board_v4_diagram.png" alt="A diagram of a servo board" />
 
-<!--
 Indicators
 ----------
 
-|   LED           | Meaning                | Initial power-up state
-|-----------------|------------------------|----------------------
-| Power           | The board is powered   | On
--->
+| LED           | Meaning                                                                                          | Initial power-up state |
+| ------------- | ------------------------------------------------------------------------------------------------ | ---------------------- |
+| Power         | The board is powered over USB.                                                                   | On                     |
+| 5.5V On       | There is 5.5V power on the board. This usually indicates that the 12V connector rail is powered. | Off                    |
+| Aux On        | There is auxiliary power on the board.                                                           | Off                    |
+| Status        | The board has successfully booted.                                                               | On                     |
+| Error         | An error has occurred. This often indicates a disconnection of the 12V connector.                | Off                    |
+| Outputs 00-11 | Currently unimplemented in firmware.                                                             | Off                    |
 
 Connectors
 ----------
