@@ -58,5 +58,5 @@ You can access the schematics and source code of the firmware on the servo board
 You do not need this information to use the board but it may be of interest to some people.
 
 * [Full Schematics]({{ site.baseurl }}/resources/kit/servo-schematic.pdf)
-* [Firmware source](https://www.studentrobotics.org/cgit/boards/servo-v4-fw.git/)
-* [Hardware designs](https://www.studentrobotics.org/cgit/boards/servo-v4-hw.git/)
+* [Firmware source](https://github.com/srobo/servo-v4-fw)
+* [Hardware designs](https://github.com/srobo/servo-v4-hw)
