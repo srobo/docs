@@ -13,8 +13,21 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
-The Student Robotics 2017 game is in development and will be announced at [Kickstart](/events/kickstart).
+[2017](#2017)
+---------------------
 
+<img src="{{ site.baseurl }}/images/content/rules/arena-2017.png" alt="A diagram of the arena for the SR2017 game" class="left" />
+
+The 2017 game, *Easy as ABC*, featured three kinds of tokens ("A", "B" and "C").
+Robots had to collect tokens and return them to their scoring zone, though for
+maximum points a robot had to choose which tokens to collect.
+
+All tokens were initially worth a single point, however "B" tokens were worth an
+additional point provided that the robot had also collected an "A" token. "C"
+tokens were worth two extra points if the robot had also collected at least one
+of each "A" and "B" tokens.
+
+Full details about the game and available prizes remain available in the [rulebook]({{ site.baseurl }}/resources/2017/rulebook.pdf).
 
 [2016](#2016)
 ---------------------
