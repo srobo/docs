@@ -2,7 +2,7 @@
 layout: page
 title: Rules archive
 description: An overview of the games played by competing robots in the current and past Student Robotics competitions.
-keywords:    event, competition, race, track, rules, slots, zone, zones
+keywords: race, track, game, rules, slots, zone, zones
 ---
 
 The Game {#2017}
