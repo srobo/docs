@@ -13,6 +13,23 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2019](#2019)
+---------------------
+
+<img src="{{ site.baseurl }}/images/content/rules/arena-2019.png" alt="A diagram of the arena for the SR2019 game" class="right" />
+
+The 2019 game, *Caldera*, challenged robots to control scoring zones with tokens
+while navigating an arena with raised platforms. Twenty-five scoring zones were
+arranged in a grid, varying in value from two points for each of the outermost
+16, a ring of eight on a raised "volcano" worth seven points apiece, to the the
+central "caldera" which was worth thirty points.
+
+Robots could claim one of the scoring zones by placing more of their tokens in it
+than any opposing robot. Additionally the value of any scoring zone could be
+multiplied by careful position of the robot at the end of the match.
+
+Full details of the 2019 game are available in the [rulebook]({{ site.baseurl }}/resources/2019/rulebook.pdf).
+
 [2017](#2017)
 ---------------------
 
