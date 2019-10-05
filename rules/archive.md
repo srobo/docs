@@ -8,6 +8,11 @@ keywords: race, track, game, rules, slots, zone, zones
 Game Rules Archive
 ==================
 
+This page describes the games from previous SR competitions. The rules for the
+current competition year are available from the [main rules page][rules-page].
+
+[rules-page]: {{ site.baseurl }}/rules/
+
 The Student Robotics 2017 game is in development and will be announced at [Kickstart](/events/kickstart).
 
 

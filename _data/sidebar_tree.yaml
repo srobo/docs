@@ -81,6 +81,9 @@ tree:
       title: Simulator
   - url: /rules/
     title: Rules
+    tree:
+    - url: /rules/archive
+      title: Game Rules Archive
   - url: /troubleshooting/
     title: Troubleshooting
     tree:
