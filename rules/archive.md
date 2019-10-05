@@ -75,7 +75,7 @@ The [full rules]({{ site.baseurl }}/resources/2012/rulebook.pdf) of the 2012 gam
 ---------------------
 
 <img src="{{ site.baseurl }}/images/content/rules/arena-2011.png" alt="A diagram of the SR2011 arena" class="right" />
-In 2011 the competition game involved a track-based arena with some scattered baked bean tins to pick up.
+In 2011 the competition game, *Tin-Can Rally*, involved a track-based arena with some scattered baked bean tins to pick up.
 The arena can be seen in the diagram to the right.
 Full details about the game played in 2011 are available in the [rules]({{ site.baseurl }}/resources/2011/rulebook.pdf).
 
