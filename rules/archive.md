@@ -12,7 +12,7 @@ The Student Robotics 2017 game is in development and will be announced at [Kicks
 [2016](#2016) {#2016}
 ---------------------
 
-<img src="/images/content/arena-2016.png" alt="A diagram of the arena for the SR2016 game" class="right" />
+<img src="/images/content/rules/arena-2016.png" alt="A diagram of the arena for the SR2016 game" class="right" />
 
 In the 2016 game, *Sunny Side Up*, the robots were challenged to turn tokens so that their side faced upwards.
 Additional points could be scored by moving suitably turned tokens into the robots' corner zone.
@@ -25,7 +25,7 @@ Full details about Sunny Side Up, the scoring method and more, are available in 
 [2015](#2015) {#2015}
 ---------------------
 
-<img src="/images/content/arena-2015.png" alt="A diagram of the arena for the SR2015 game" class="left" />
+<img src="/images/content/rules/arena-2015.png" alt="A diagram of the arena for the SR2015 game" class="left" />
 
 The 2015 game, *Capture the Flag*, took simplicity to the extreme. Robots scored points by moving flags into their scoring zone. The robot with the most flags at the end scored the most points. Simple.
 
@@ -36,7 +36,7 @@ The [full rules](/resources/2015/rulebook.pdf) contain further details of the ga
 [2014](#2014) {#2014}
 ---------------------
 
-<img src="/images/content/slots-zones.png" alt="An image of the slots and zones in the centre of the SR2014 arena" class="right" />
+<img src="/images/content/rules/slots-zones.png" alt="An image of the slots and zones in the centre of the SR2014 arena" class="right" />
 The 2014 game, *Slots*, saw an interesting new dimension added to the game as the tokens had a right-way-up.
 
 Points could be scored by:
@@ -67,7 +67,7 @@ The [full rules](/resources/2012/rulebook.pdf) of the 2012 game are available fo
 [2011](#2011) {#2011}
 ---------------------
 
-<img src="/images/content/arena.png" alt="A diagram of the SR2011 arena" class="right" />
+<img src="/images/content/rules/arena.png" alt="A diagram of the SR2011 arena" class="right" />
 In 2011 the competition game involved a track-based arena with some scattered baked bean tins to pick up.
 The arena can be seen in the diagram to the right.
 Full details about the game played in 2011 are available in the [rules](/resources/2011/rulebook.pdf).
