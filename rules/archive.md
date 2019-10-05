@@ -1,0 +1,76 @@
+//TITLE:	The Game
+//DESCRIPTION:	An overview of the games played by competing robots in the current and past Student Robotics competitions.
+//KEYWORDS:	event, competition, race, track, rules, slots, zone, zones
+//CONTENT_TYPE:	markdown
+
+The Game {#2017}
+================
+
+The Student Robotics 2017 game is in development and will be announced at [Kickstart](/events/kickstart).
+
+
+[2016](#2016) {#2016}
+---------------------
+
+<img src="/images/content/rules/arena-2016.png" alt="A diagram of the arena for the SR2016 game" class="right" />
+
+In the 2016 game, *Sunny Side Up*, the robots were challenged to turn tokens so that their side faced upwards.
+Additional points could be scored by moving suitably turned tokens into the robots' corner zone.
+
+There were a limited number of tokens in the arena and any robot could move or turn any token.
+As a result robots competed with each other to turn (and re-turn) tokens to score points.
+
+Full details about Sunny Side Up, the scoring method and more, are available in the [rulebook](/resources/2016/rulebook.pdf).
+
+[2015](#2015) {#2015}
+---------------------
+
+<img src="/images/content/rules/arena-2015.png" alt="A diagram of the arena for the SR2015 game" class="left" />
+
+The 2015 game, *Capture the Flag*, took simplicity to the extreme. Robots scored points by moving flags into their scoring zone. The robot with the most flags at the end scored the most points. Simple.
+
+We made things a little more tricky by adding barriers between teams' zones. However, this seemingly simple game proved to be quite a challenge to our 2015 robots and just goes to show you should never underestimate the importance of reliability in a design.
+
+The [full rules](/resources/2015/rulebook.pdf) contain further details of the game, prizes and regulations of the 2015 game.
+
+[2014](#2014) {#2014}
+---------------------
+
+<img src="/images/content/rules/slots-zones.png" alt="An image of the slots and zones in the centre of the SR2014 arena" class="right" />
+The 2014 game, *Slots*, saw an interesting new dimension added to the game as the tokens had a right-way-up.
+
+Points could be scored by:
+
+ * righting the tokens (which started upside-down)
+ * moving them into either:
+    * a slot (which could hold one token)
+    * a zone (with the aim of having the most tokens in a zone)
+
+Full details about the game, the scoring method and more, remain available in the [rulebook](/resources/2014/rulebook.pdf).
+
+[2013](#2013) {#2013}
+---------------------
+
+The 2013 competition, *A Strange Game*, saw thirty teams build robots looking to dominate a game of noughts and crosses.
+Each robot, equipped with six rather large cardboard boxes, attempted to take-over squares in a 3x3 grid in the centre of an arena.
+The more squares owned in a row or column, the more points a robot would score.
+For further details about the game see the [full rules](/resources/2013/rulebook.pdf).
+
+[2012](#2012) {#2012}
+---------------------
+
+The 2012 competition, *Pirate Plunder*, considerably increased the scope for interesting activity compared to our previous games.
+Autonomous robots raced to collect cube-shaped tokens and get them back to the bucket in their home zone.
+Robots could also steal each other's buckets, leading to an variety of possible tactics.
+The [full rules](/resources/2012/rulebook.pdf) of the 2012 game are available for those interested.
+
+[2011](#2011) {#2011}
+---------------------
+
+<img src="/images/content/rules/arena.png" alt="A diagram of the SR2011 arena" class="right" />
+In 2011 the competition game involved a track-based arena with some scattered baked bean tins to pick up.
+The arena can be seen in the diagram to the right.
+Full details about the game played in 2011 are available in the [rules](/resources/2011/rulebook.pdf).
+
+Further event details and the results are available from the
+ [news article](/news/2011-05-04_sr2011_comp_happened) posted shortly afterwards.
