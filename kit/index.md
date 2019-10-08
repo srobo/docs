@@ -42,8 +42,9 @@ As well as the aforementioned boards the kit also contains the following items.
 | Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the ODROID
 | Blue Hook-up Wire      | 1   | 2.5m<br />0.5mm<sup>2</sup><br />4A                                   | [RS 361-585][RS-361-585]                    | General purpose wire
 | Yellow Hook-up Wire    | 1   | 2.5m<br />0.5mm<sup>2</sup><br />4A                                   | [RS 361-636][RS-361-636]                    | General purpose wire
-| Red Power Wire         | 1   | 5m<br />1mm<sup>2</sup><br />10A                                      | [RS 361-759][RS-361-759]                    | To connect power from the power board to the motor/servo boards
-| Black Power Wire       | 1   | 5m<br />1mm<sup>2</sup><br />10A                                      | [RS 361-715][RS-361-715]                    | To connect power from the power board to the motor/servo boards
+| Green Power Wire       | 1   | 2.5m<br />1mm<sup>2</sup><br />10A                                    | [RS 748-2042][RS-748-2042]                    | To connect the motors to the motor boards only
+| Red Power Wire         | 1   | 2.5m<br />1mm<sup>2</sup><br />10A                                    | [RS 361-759][RS-361-759]                    | To connect power from the power board to the motor/servo boards
+| Black Power Wire       | 1   | 2.5m<br />1mm<sup>2</sup><br />10A                                    | [RS 361-715][RS-361-715]                    | To connect power from the power board to the motor/servo boards
 | CamCon                 | 10  | 2 way<br />7.5mm<br />12A                                             | [Farnell 3882275][F-3882275]                | To connect 12V from the power board to the motor and servo boards
 | MiniCamCon             | 7   | 2 way<br />5mm<br />12A                                               | [Farnell 3881854][F-3881854]                | To connect motors to the motor boards, and to connect an external power switch
 | MicroCamCon            | 1   | 2 way<br />3.81mm<br />12A                                            | [Farnell 1717047][F-1717047]                | To connect a 5V component to the power board or to connect an external start button
@@ -61,9 +62,7 @@ As well as the aforementioned boards the kit also contains the following items.
 [F-2103271]: http://www.xgoat.com/p/farnell/2103271
 [RS-361-715]: http://www.xgoat.com/p/rs/361-715
 [RS-361-759]: http://www.xgoat.com/p/rs/361-759
-[RS-361-721]: http://www.xgoat.com/p/rs/361-721
-[RS-361-579]: http://www.xgoat.com/p/rs/361-579
-[RS-361-614]: http://www.xgoat.com/p/rs/361-614
+[RS-748-2042]: http://www.xgoat.com/p/rs/748-2042
 [RS-361-585]: http://www.xgoat.com/p/rs/361-585
 [RS-361-636]: http://www.xgoat.com/p/rs/361-636
 [EB-230435]: http://www.ebuyer.com/230435-logitech-c270-hd-webcam-720p-hd-video-960-000582
