@@ -71,6 +71,11 @@ battery to your robot, so that it does not move or fall off while the robot
 moves. You should also build a compartment for the battery to be placed in, so
 that accidental collisions do not damage the battery.
 
+<div class="info">
+The smaller lead is only used for voltage measurement when charging and should
+be left disconnected when the battery is connected to the robot kit.
+</div>
+
 ### Flat Batteries
 
 When the battery has been almost completely discharged, the Power Board will
