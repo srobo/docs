@@ -6,7 +6,7 @@ title: Python
 Python
 ======
 
-Student Robotics robots are all programmed in [Python 2.7.5](http://www.python.org); 
+Student Robotics robots are all programmed in [Python 2.7](http://www.python.org); 
 to program a robot, it is important that you have a basic understanding of Python. 
 
 There are a number of tutorials out there which might help you to learn to program in Python:
