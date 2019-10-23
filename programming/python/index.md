@@ -20,7 +20,7 @@ There are a number of tutorials out there which might help you to learn to progr
     there is a lot there and it may be a little overwhelming.
 
 * A number of tutorials for beginners are linked to from [here](http://wiki.python.org/moin/BeginnersGuide/NonProgrammers).
-    [Byte of Python](http://www.swaroopch.com/notes/Python_en:Functions) seems like a good one.
+    [Byte of Python](https://python.swaroopch.com/) seems like a good one.
 
 * A number of tutorials for people that have programmed before are linked to from [here](http://wiki.python.org/moin/BeginnersGuide/Programmers).
     [Dive Into Python](http://diveintopython.org/toc/index.html)
