@@ -37,7 +37,7 @@ As well as the aforementioned boards the kit also contains the following items.
 | Battery Charger        | 1   | iMAX B6 or HobbyKing E4                                               | N/A                                         | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
 | USB Hub                | 2   | 7-Port                                                                | [StarTech ST7202USBGB][ST7202USBGB]         | The hub does *not* require a power cable
 | USB WiFi Adapter       | 2   | 300Mbps Mini Wireless N USB Adapter                                   | [TP-Link TL-WN823N][TL-WN823N]              |
-| USB Memory Stick       | 1   | Kingston Datatraveler 16Gb SE9H                                       | [DTSE9H/16GB][DTSE9H-16GB]                         |
+| USB Memory Stick       | 1   | Kingston Datatraveler 16GB SE9H                                       | [DTSE9H/16GB][DTSE9H-16GB]                         |
 | Standard USB cable     | 3   | Standard USB A to B connector                                         | N/A                                         | For connecting the ruggeduino (via a hub) and USB hubs to the ODROID
 | Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the ODROID
 | Blue Hook-up Wire      | 1   | 2.5m<br />0.5mm<sup>2</sup><br />4A                                   | [RS 361-585][RS-361-585]                    | General purpose wire
