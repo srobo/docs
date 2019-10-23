@@ -172,7 +172,8 @@ marker_type
     One of:
 
     * `MARKER_ARENA`
-    * `MARKER_TOKEN`
+    * `MARKER_TOKEN_SILVER`
+    * `MARKER_TOKEN_GOLD`
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.
