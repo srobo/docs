@@ -57,5 +57,5 @@ You can access the schematics and source code of the firmware on the motor board
 You do not need this information to use the board but it may be of interest to some people.
 
  * [Full Schematics]({{ site.baseurl }}/resources/kit/motor-schematic.pdf)
- * [Firmware Source](https://www.studentrobotics.org/cgit/boards/motor-v4-fw.git/)
- * [Hardware Designs](https://www.studentrobotics.org/cgit/boards/motor-v4-hw.git/)
+ * [Firmware Source](https://github.com/srobo/motor-v4-fw)
+ * [Hardware Designs](https://github.com/srobo/motor-v4-hw)
