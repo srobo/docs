@@ -35,7 +35,7 @@ Board                                   | Power
 [Ruggeduino](/docs/kit/ruggeduino)      | via USB
 [Servo Board](/docs/kit/servo_board)    | 12V
 
-In order to connect the Motor and Servo Boards to the Power Board, you will need to create a power cables.
+In order to connect the Motor and Servo Boards to the Power Board, you will need to create some power cables.
 This should be done using the provided red and black _power wire_ (this is the thicker wire provided in the kit)
  and a pair of green CamCon connectors. The green power wire should only be used to connect motors to the motor board. 
 _Remember you **must** use black wire for any ground connections as defined in the [Rules](/docs/rules)._
