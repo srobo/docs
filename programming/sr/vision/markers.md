@@ -16,11 +16,11 @@ Let's break that down:
 `(v0.5)` tells you the version of the marker, it is important the latest version is used; and
 `'ARENA'` is just a human-readable description of what the marker is for.
 
-Details of the types and size of markers used in the SR2019 game can be found in the [rules](/docs/rules).
+Details of the types and size of markers used in the SR2020 game can be found in the [rules](/docs/rules).
 
 You can download all of the markers as a single [ZIP file](/docs/resources/2020/sr-dev-markers-sr2020.zip)
 or individually from the [git repo](https://github.com/srobo/game-markers/tree/master/SR2020/dev).
-All the markers, due to their size, need to be printed on A3 paper.
+The arena markers, due to their size, need to be printed on A3 paper. Token markers can be printed on A4.
 You must ensure that your PDF viewer is not resizing the documents when printing.
 This can be checked by measuring the grey box around the marker and comparing this to the size defined in the rules.
 If the printed marker is not the correct size then the distance information reported by the vision API will be wrong.
