@@ -20,7 +20,7 @@ There are a number of tutorials out there which might help you to learn to progr
     there is a lot there and it may be a little overwhelming.
 
 * A number of tutorials for beginners are linked to from [here](http://wiki.python.org/moin/BeginnersGuide/NonProgrammers).
-    [Byte of Python](https://python.swaroopch.com/) seems like a good one.
+    [Wikibooks Tutorial](https://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_2.6) seems like a good one.
 
 * A number of tutorials for people that have programmed before are linked to from [here](http://wiki.python.org/moin/BeginnersGuide/Programmers).
     [Google's Python Class](https://developers.google.com/edu/python) looks to be a good tutorial which has some lecture videos to go with it.
