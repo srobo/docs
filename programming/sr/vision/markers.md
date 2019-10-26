@@ -20,7 +20,10 @@ Details of the types and size of markers used in the SR2020 game can be found in
 
 You can download all of the markers as a single [ZIP file](/docs/resources/2020/sr-dev-markers-sr2020.zip)
 or individually from the [git repo](https://github.com/srobo/game-markers/tree/master/SR2020/dev).
-The arena markers, due to their size, need to be printed on A3 paper. Token markers can be printed on A4.
+The arena markers, due to their size, need to be printed on A3 paper.
+Token markers can be printed on A4 so long as your printer can handle the very narrow 5mm page margins; if not, they will need to be printed on A3 as well.
+Ensure you download the correct file for the paper size you intend to print on - the filenames all end in "-A3paper.pdf" or "-A4paper.pdf".
+
 You must ensure that your PDF viewer is not resizing the documents when printing.
 This can be checked by measuring the grey box around the marker and comparing this to the size defined in the rules.
 If the printed marker is not the correct size then the distance information reported by the vision API will be wrong.
