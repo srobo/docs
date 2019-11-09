@@ -17,7 +17,7 @@ do
     unzip -q $zipname -d $platform
     rm $zipname
     cd $platform/robot-sim
-    git pull -q git://git.srobo.org/simulator.git
+    git pull -q https://github.com/srobo/sr-turtle.git
     revision=`git log -1 --oneline`
     cd ..
     zip -q -r $zipname .
