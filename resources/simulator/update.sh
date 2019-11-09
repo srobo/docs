@@ -17,7 +17,8 @@ do
     unzip -q $zipname -d $platform
     rm $zipname
     cd $platform/robot-sim
-    git pull -q https://github.com/srobo/sr-turtle.git
+    git fetch https://github.com/srobo/sr-turtle.git
+    git reset FETCH_HEAD --hard  # avoid creating merges
     revision=`git log -1 --oneline`
     cd ..
     zip -q -r $zipname .
