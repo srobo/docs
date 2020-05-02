@@ -30,5 +30,5 @@ If you need more than one line (less than 80 characters) to summarise the change
 
 Although not essential in the IDE it is a good idea to format your commit messages in a certain way.
 As mentioned above you should leave a blank line between the summary and the main message,
- [this website](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+ [this website](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
  explains the reasoning behind this and many other commit message formatting conventions.

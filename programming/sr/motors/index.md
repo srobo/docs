@@ -41,7 +41,7 @@ R.motors["SR0A123"].something...
 Setting motor power
 -------------------
 
-Motor power is controlled using [PWM](http://en.wikipedia.org/wiki/Pulse-width_modulation) with 100% power being a [duty cycle](http://en.wikipedia.org/wiki/Duty_cycle) of 1. You set the power with an integer value between -100 and 100 inclusive (where a negative value puts the motor in reverse). The field to change the output power is `power`. As each Motor Board has two outputs you will need to specify which output you want to control:
+Motor power is controlled using [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) with 100% power being a [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) of 1. You set the power with an integer value between -100 and 100 inclusive (where a negative value puts the motor in reverse). The field to change the output power is `power`. As each Motor Board has two outputs you will need to specify which output you want to control:
 
 ~~~~~ python
 from sr.robot import *

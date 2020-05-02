@@ -27,7 +27,7 @@ Since the kits contain lithium polymer batteries there are some restrictions aro
 In all circumstances a shipment of a kit must have at least £500 worth of insurance.
 
 ### Interlink
- 1. Go to <http://www.interlinkdirect.co.uk/>.
+ 1. Go to <https://www.interlinkdirect.co.uk/>.
  1. Fill in the delivery and collection postcodes in the 'Quote/Send A Parcel' section, enter your email address and click 'Send A Parcel Within UK'.
  1. Enter the dimensions and weight from the [Kit Details](#kit-details) section and click next.
  1. Select the 'Next Day' service and 'Collection Tomorrow or later' (please do not select 'Collect Today' if you are arranging for a kit to be collected from us as we need time to prepare for the courier).
