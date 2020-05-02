@@ -56,15 +56,15 @@ As well as the aforementioned boards the kit also contains the following items.
 
 [ST7202USBGB]: http://uk.startech.com/Cards-Adapters/USB-2/Hub/7-Port-USB-20-Hub-UK~ST7202USBGB
 [TL-WN823N]: http://www.tp-link.com/en/products/details/?model=TL-WN823N
-[F-3882275]: http://www.xgoat.com/p/farnell/3882275
-[F-3881854]: http://www.xgoat.com/p/farnell/3881854
-[F-1717047]: http://www.xgoat.com/p/farnell/1717047
-[F-2103271]: http://www.xgoat.com/p/farnell/2103271
-[RS-361-715]: http://www.xgoat.com/p/rs/361-715
-[RS-361-759]: http://www.xgoat.com/p/rs/361-759
-[RS-748-2042]: http://www.xgoat.com/p/rs/748-2042
-[RS-361-585]: http://www.xgoat.com/p/rs/361-585
-[RS-361-636]: http://www.xgoat.com/p/rs/361-636
+[F-3882275]: https://uk.farnell.com/3882275
+[F-3881854]: https://uk.farnell.com/3881854
+[F-1717047]: https://uk.farnell.com/1717047
+[F-2103271]: https://uk.farnell.com/2103271
+[RS-361-715]: https://uk.rs-online.com/web/p/products/361-715
+[RS-361-759]: https://uk.rs-online.com/web/p/products/361-759
+[RS-748-2042]: https://uk.rs-online.com/web/p/products/748-2042
+[RS-361-585]: https://uk.rs-online.com/web/p/products/361-585
+[RS-361-636]: https://uk.rs-online.com/web/p/products/361-636
 [EB-230435]: http://www.ebuyer.com/230435-logitech-c270-hd-webcam-720p-hd-video-960-000582
 [G138960965859]: http://www.hardkernel.com/main/products/prdt_info.php?g_code=G138960965859
 [0000153]: http://www.modelsport.co.uk/overlander-lipo-safe-sack/rc-car-products/38313
