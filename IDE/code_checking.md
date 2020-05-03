@@ -11,7 +11,7 @@ If you wish to check code before you export it, you can do so by clicking the _C
 If there are any errors with your code, the code checker will present a warning offering you the chance to view the errors.
 
 The errors checking is done by running your code past a number of checkers,
- including [pylint](http://www.logilab.org/project/pylint).
+ including [pylint](https://www.pylint.org/).
 The check will check all your imported modules,
  so if you've written your code across multiple files (and imported them appropriately)
  you only need to run the check against robot.py &ndash; the checking will find all the used files and check them too.

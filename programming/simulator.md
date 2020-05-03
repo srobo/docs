@@ -162,8 +162,8 @@ for m in markers:
 [windows-zip]: {{ site.baseurl }}/resources/simulator/simulator-windows.zip
 [linux-zip]: {{ site.baseurl }}/resources/simulator/simulator-linux.zip
 [macosx-zip]: {{ site.baseurl }}/resources/simulator/simulator-macosx.zip
-[pygame]: http://pygame.org/
+[pygame]: https://pygame.org/
 [pypybox2d]: https://pypi.python.org/pypi/pypybox2d/2.1-r331
 [pyyaml]: https://pypi.python.org/pypi/PyYAML/
 [pip]: https://pip.pypa.io/en/latest/
-[homebrew]: http://brew.sh/
+[homebrew]: https://brew.sh/

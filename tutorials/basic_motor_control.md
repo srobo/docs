@@ -214,9 +214,9 @@ while True:
 
 Again, as you've seen most of that before, it shouldn't be too difficult to get your head around.
 The `for` loop may be new, however.
-The [`for`](http://docs.python.org/tutorial/controlflow.html#for-statements)
+The [`for`](https://docs.python.org/tutorial/controlflow.html#for-statements)
  loop accepts a Python `list` (a `list`, when `print`ed, appears in square brackets like so: `[1, 2, 3]`).
-For a comprehensive introduction to to `list`s, have a look at [this WikiBooks article](http://en.wikibooks.org/wiki/Python_Programming/Lists).
+For a comprehensive introduction to to `list`s, have a look at [this WikiBooks article](https://en.wikibooks.org/wiki/Python_Programming/Lists).
 The `for` loop will iterate over the `list` (i.e. take each element in turn)
  and make it available in the loop's body as the variable after the the `for` keyword.
 Here's an example:
@@ -234,7 +234,7 @@ The above would output:
 3
 ~~~~~
 
-Then there's the [`range()`](http://docs.python.org/library/functions.html#range) function.
+Then there's the [`range()`](https://docs.python.org/library/functions.html#range) function.
 The `range()` function returns a `list` with its contents dependent on the arguments passed to it.
 The Python documentation explains it quite nicely:
 
@@ -265,4 +265,4 @@ From here, you should be able to make your robot move about in a controlled mann
 See if you can make your robot drive forwards to a given point, stop, turn around and then return to its starting point.
 
 You might also like to see if you can make the larger code example above more concise by creating functions for the repetitive parts.
-[This](http://www.tutorialspoint.com/python/python_functions.htm) tutorial seems good if you're interested.
+[This](https://www.tutorialspoint.com/python/python_functions.htm) tutorial seems good if you're interested.

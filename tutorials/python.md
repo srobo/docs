@@ -17,11 +17,9 @@ Using an interpreter
 
 To run Python programs you need a something called an interpreter. This is a computer program which interprets human-readable Python code into something that the computer can execute. There are a number of online interpreters that should work even on a locked-down computer such as you will probably find in your college.
 
-If your computer has a compatible browser, go to <http://repl.it> and click Python. Enter your program in the box on the left, and click the arrow to run it.
+If your computer has a compatible browser, go to <https://repl.it> and click Python. Enter your program in the box on the left, and click the arrow to run it.
 
-If your browser isn't compatible, another good online interpreter can be found at <http://codeskulptor.org>. It's very similar; simply enter your program into the left pane and click the play button to run it. The output will appear in the right pane.
-
-Whichever you choose, test it with this classic one line program:
+You can test it with this classic one line program:
 
 ~~~~~ python
 print "Hello World!"
@@ -29,7 +27,7 @@ print "Hello World!"
 
 The text `Hello World!` should appear in the output box.
 
-There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Mac OS X and Linux come with one by default (just type `python` at the terminal), and you can download the Windows interpreter from <http://python.org/download> (try Portable Python (<http://portablepython.com>) if you can't install programs on your computer).
+There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Mac OS X and Linux come with one by default (just type `python` at the terminal), and you can download the Windows interpreter from <https://python.org/download> (try Portable Python (<https://portablepython.com>) if you can't install programs on your computer).
 
 Statements
 ----------
@@ -306,7 +304,7 @@ print shopping_list
 
 The values in a list can be of any type, even other lists. Also, a list can contain values of different types.
 
-There are various other useful data structures that are beyond the scope of this tutorial, such as dictionaries (which allow indices other than numbers). You can find out more about these at <http://docs.python.org/tutorial/datastructures.html>.
+There are various other useful data structures that are beyond the scope of this tutorial, such as dictionaries (which allow indices other than numbers). You can find out more about these at <https://docs.python.org/tutorial/datastructures.html>.
 
 `while` loops
 -------------
@@ -618,7 +616,7 @@ Exercises: Functions
 
 Write a program that takes as input an angle (in radians) and the length of one side (of your choice) of a right-angled triangle. Print out the length of all sides of the triangle.
 
-You'll need the functions contained in the `math` module (<http://docs.python.org/library/math.html>). Note that Python uses radians for its angles. If you are not comfortable with radians, you can use the `radians` function in the `math` module to convert to radians from degrees.
+You'll need the functions contained in the `math` module (<https://docs.python.org/library/math.html>). Note that Python uses radians for its angles. If you are not comfortable with radians, you can use the `radians` function in the `math` module to convert to radians from degrees.
 
 **Extension:** you can return multiple values from a function like so:
 
@@ -642,7 +640,7 @@ Wrap the code for your average calculator from the Lists and Loops exercises in 
 What to do next
 ---------------
 
-As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too, and <http://learnpython.org/> looks like a good choice. Start at the Classes and Objects section.
+As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too, and <https://learnpython.org/> looks like a good choice. Start at the Classes and Objects section.
 
 Appendices
 ==========
@@ -719,7 +717,7 @@ print (x == 2 and y == 3) or z == 2
 [Built-in functions](#built-in-function) {#built-in-functions}
 --------------------
 
-A lot of functions are defined for you by Python. Those listed at <http://docs.python.org/library/functions.html> are always available, and are the most commonly used, including `len`, `range`, and enumerate.
+A lot of functions are defined for you by Python. Those listed at <https://docs.python.org/library/functions.html> are always available, and are the most commonly used, including `len`, `range`, and enumerate.
 
 Others are contained in modules. To use a function from a module, you must `import` that module, like so:
 
@@ -728,4 +726,4 @@ import math
 print math.sqrt(4)
 ~~~~~
 
-One of the most useful modules for the moment will be `math` (<http://docs.python.org/library/math.html>).
+One of the most useful modules for the moment will be `math` (<https://docs.python.org/library/math.html>).
