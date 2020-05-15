@@ -3,6 +3,8 @@
 tree:
   - url: /
     title: Introduction
+  - url: /competition-simulator
+    title: Competition Simulator
   - url: /IDE/
     title: IDE
     tree:
