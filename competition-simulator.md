@@ -52,6 +52,62 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
 
 ## Programming Interface
 
+**WIP**
+
 Unless otherwise stated, the simulator’s API is the same as the real SR API described in the docs.
 
-**WIP**
+### Motors
+
+Your robot has 2 motor boards attached, each with 2 motors. Board `0` has the left wheel in port `m0`, and the right wheel in `m1`. Board `1` has the gripper lift motor in `m0`, and the finger motors in `m1`.
+
+### Ruggeduino
+
+Your robot has 5 microswitches and 6 distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
+
+#### Microswitches
+
+The microswitches are attached to digital pins 0-4:
+
+- Front
+- Back
+- Between gripper fingers
+- Left gripper finger
+- Right gripper finger
+
+Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
+
+#### Distance Sensors
+
+Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object.
+
+- Front Left
+- Front Right
+- Left
+- Right
+- Back Left
+- Back Right
+
+The `analogue_read` method will return the distance in centimetres, however only measure up to 30cm.
+
+### Camera
+
+Your robot has a camera, which is attached to the top of your gripper. A live preview of what the camera sees is shown in the top-left corner
+
+The [regular vision API]({{ site.baseurl }}/programming/sr/vision/) relied on seeing specific faces of tokens, and used fiducial markers to do so. This simulator's vision system sees tokens in their entirety.
+
+The `see` method will return a list of visible tokens in the arena. Each token has the following attributes:
+
+id
+:   The id of the marker. These match the ids defined in the [rules]({{ site.baseurl }}/rules/).
+
+type
+:   The type of token. Either `TokenType.SILVER` or `TokenType.GOLD`.
+
+size
+:   The size of the token, which is always `0.2`
+
+position
+:   The position of the token relative to the camera. The units are metres.
+
+orientation
+:   The orientation of the marker. **Work in progress**
