@@ -50,6 +50,10 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
   Please refrain from editing any code in the <code>sr</code> module directory. This contains the code which maps the SR API onto the webots API. Changes to this will not be carried forward into a competition environment.
 </div>
 
+### Updates
+
+Occasionally, we may release an update to the simulator. To update, you will need to copy your code our of of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
+
 ## Programming Interface
 
 **WIP**
