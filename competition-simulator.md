@@ -69,6 +69,8 @@ Your robot has 2 motor boards attached, each with 2 motors. Board `0` has the le
 
 Your robot has 5 microswitches and 6 distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
 
+Because these sensors are pre-attached to the ruggeduino, you do not need to set its `pin_mode`.
+
 #### Microswitches
 
 The microswitches are attached to digital pins 0-4:
