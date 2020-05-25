@@ -16,13 +16,13 @@ For SR2020, a virtual competition will be run using a brand new simulator.
 
 ### Prerequisites
 
-This simulator is based off [Webots](https://cyberbotics.com/#download), which will need to be downloaded and installed.
+This simulation is based in [Webots](https://cyberbotics.com/#download), which will need to be downloaded and installed.
 
 You will also need Python installed. The simulator supports >=3.4.
 
-### Installing the simulator
+### Installing the simulation
 
-1. [Download the simulator](), and unzip it somewhere on your computer.
+1. [Download the simulation](), and unzip it somewhere on your computer.
 2. Using the Webots IDE, open the `worlds/Arena.wbt` file
 
 ## Overview
@@ -31,7 +31,7 @@ Within the IDE, there are a few different panels:
 
 - In the centre of your screen is the 3D simulated view of the arena
 - On the left is a tree hierarchy of all elements in this "world"
-- On the right is your text editor for modifying the `example_controller` code for example
+- On the right is your text editor for modifying the `sr_controller` code for example
 - At the bottom is your console
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
 
@@ -53,13 +53,13 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
 
 ### Updates
 
-Occasionally, we may release an update to the simulator. To update, you will need to copy your code our of of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
+Occasionally, we may release an update to the simulation. To update, you will need to copy your code our of of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
 
 ## Programming Interface
 
 **WIP**
 
-Unless otherwise stated, the simulator’s API is the same as the real SR API described in the docs.
+Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [docs]({{ site.baseurl }}/docs/programming/).
 
 ### Motors
 
