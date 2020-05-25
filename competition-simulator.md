@@ -108,10 +108,10 @@ id
 :   The id of the marker. These match the ids defined in the [rules]({{ site.baseurl }}/rules/).
 
 type
-:   The type of token. Either `TokenType.SILVER` or `TokenType.GOLD`.
+:   The type of token. This will be `TokenType.SILVER`, `TokenType.GOLD` or `TokenType.ARENA`.
 
 size
-:   The size of the token, which is always `0.2`
+:   The size of the token, which is `0.2` for Silver and Gold tokens, and `0.25` for arena ones.
 
 position
 :   The position of the token relative to the camera. The units are metres.
