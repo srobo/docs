@@ -47,7 +47,8 @@ Within the IDE, there are a few different panels:
 The code for your robot is `controllers/sr_controller/sr_controller.py`. An example skeleton code is provided for convenience.
 
 <div class="warning">
-  Please refrain from editing any code in the <code>sr</code> module directory. This contains the code which maps the SR API onto the webots API. Changes to this will not be carried forward into a competition environment.
+  Please refrain from editing any code in the <code>sr</code> module directory. This contains the code which maps the SR API onto the webots API.
+  Any changes you make to this directory will not be present in the competition environment.
 </div>
 
 ### Updates
