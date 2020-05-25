@@ -22,7 +22,7 @@ You will also need Python installed. The simulator supports >=3.4.
 
 ### Installing the simulator
 
-1. [Download the simulator](https://github.com/srobo/competition-simulator/archive/master.zip), and unzip it somewhere on your computer.
+1. [Download the simulator](), and unzip it somewhere on your computer.
 2. Using the Webots IDE, open the `worlds/Arena.wbt` file
 
 ## Overview
