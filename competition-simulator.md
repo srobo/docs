@@ -25,6 +25,10 @@ You will also need Python installed. The simulator supports >=3.5.
 1. [Download the simulation](), and unzip it somewhere on your computer.
 2. Using the Webots IDE, open the `worlds/Arena.wbt` file
 
+#### Changing your version of Python
+
+If webots is picking up the incorrect version of Python, you'll need to change it. This can be done using `Tools > Preferences > General > Python command`. You'll need to ensure a matching version of Python is installed.
+
 ## Overview
 
 Within the IDE, there are a few different panels:
