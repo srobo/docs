@@ -71,7 +71,7 @@ Occasionally, we may release an update to the simulation. To update, you will ne
 
 **WIP**
 
-Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/docs/programming/).
+Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
 
 ### Motors
 
