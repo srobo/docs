@@ -57,6 +57,10 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
   Only your controller code will be present in the competition environment.
 </div>
 
+<div class="warning">
+  You will be responsible for backing up and versioning your code, and collaborating with your fellow team members. The <a href="https://studentrobotics.org/ide/">IDE</a> is unsuitable for this simulator.
+</div>
+
 ### Updates
 
 Occasionally, we may release an update to the simulation. To update, you will need to copy your code out of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
