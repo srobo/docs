@@ -104,7 +104,7 @@ The `analogue_read` method will return the distance in centimetres, however only
 
 ### Camera
 
-Your robot has a camera, which is attached to the top of your gripper. A live preview of what the camera sees is shown in the top-left corner
+Your robot has a camera, which is attached to the top of your gripper. A live preview of what the camera sees is shown in the top-left corner. The vision system uses Webots' object recognition, rather than [markers]({{ site.baseurl }}/programming/sr/vision/markers/).
 
 The `see` method will return a list of visible markers in the arena, but doesn't allow a resolution argument. Each token is as described in the [vision docs]({{ site.baseurl }}/programming/sr/vision/), except:
 
