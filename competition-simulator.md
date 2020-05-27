@@ -57,7 +57,7 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
 
 ### Updates
 
-Occasionally, we may release an update to the simulation. To update, you will need to copy your code our of of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
+Occasionally, we may release an update to the simulation. To update, you will need to copy your code out of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
 
 ## Programming Interface
 
