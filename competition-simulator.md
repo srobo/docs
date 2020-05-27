@@ -106,7 +106,7 @@ Analogous to ultrasound sensors, distance sensors allow you to retrieve the dist
 - Back Left
 - Back Right
 
-The `analogue_read` method will return the distance in centimetres, however only measure up to 30cm.
+These are shown as blue coloured blocks on the robot. The `analogue_read` method will return the distance in centimetres, however only measure up to 30cm.
 
 ### Camera
 
