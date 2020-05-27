@@ -52,7 +52,7 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
 
 <div class="warning">
   Please refrain from editing any code in the <code>sr</code> module directory. This contains the code which maps the SR API onto the webots API.
-  Any changes you make to this directory will not be present in the competition environment.
+  Only your controller code will be present in the competition environment.
 </div>
 
 ### Updates
