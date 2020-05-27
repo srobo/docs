@@ -106,21 +106,9 @@ The `analogue_read` method will return the distance in centimetres, however only
 
 Your robot has a camera, which is attached to the top of your gripper. A live preview of what the camera sees is shown in the top-left corner
 
-The [regular vision API]({{ site.baseurl }}/programming/sr/vision/) relied on seeing specific faces of tokens, and used fiducial markers to do so. This simulator's vision system sees tokens in their entirety.
+The `see` method will return a list of visible markers in the arena, but doesn't allow a resolution argument. Each token is as described in the [vision docs]({{ site.baseurl }}/programming/sr/vision/), except:
 
-The `see` method will return a list of visible tokens in the arena. Each token has the following attributes:
-
-id
-:   The id of the marker. These match the ids defined in the [rules]({{ site.baseurl }}/rules/).
-
-type
-:   The type of token. This will be `TokenType.SILVER`, `TokenType.GOLD` or `TokenType.ARENA`.
-
-size
-:   The size of the token, which is `0.2` for Silver and Gold tokens, and `0.25` for arena ones.
-
-position
-:   The position of the token relative to the camera. The units are metres.
-
-orientation
-:   The orientation of the marker. **Work in progress**
+- `Marker.info.marker_type` will be one of `MarkerType.SILVER`, `MarkerType.GOLD` or `MarkerType.ARENA`. `MarkerType` can be imported with `from sr.robot import MarkerType`
+- The following attributes are not available:
+  - `Marker.res`
+  - `Point.image`
