@@ -43,8 +43,6 @@ Within the IDE, there are a few different panels:
 - At the bottom is your console
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
 
-**Important:** Changes to the world must happen with the simulation paused at 0:00. If e.g. you move an object at a different time, rewinding back to the start will delete your changes.
-
 ### Useful links
 
 - [Camera Controls](https://www.cyberbotics.com/doc/guide/the-3d-window#navigation-in-the-scene)
