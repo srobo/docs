@@ -89,7 +89,7 @@ These are shown as red coloured blocks on the robot. Using the `digital_read`  m
 
 #### Distance Sensors
 
-Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object.
+Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analogue pins 0-5:
 
 - Front Left
 - Front Right
