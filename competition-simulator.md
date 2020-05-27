@@ -85,7 +85,7 @@ The microswitches are attached to digital pins 0-4:
 - Left gripper finger
 - Right gripper finger
 
-Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
+These are shown as red coloured blocks on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
 
 #### Distance Sensors
 
