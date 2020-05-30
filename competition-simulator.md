@@ -50,10 +50,21 @@ Within the IDE, there are a few different panels:
 
 ## Developing your code
 
-The code for your robot is `controllers/sr_controller/sr_controller.py`. An example skeleton code is provided for convenience.
+On first run, the robot will execute an example program for convenience. On first run, this will be copied to the directory `competition-simulator` is stored in:
+
+```
+.
+├── competition-simulator
+│   ├── ...
+│   └─ worlds
+│       └── Arena.wbt
+└── robot.py
+```
+
+Your code should be developed in `robot.py`.
+
 
 <div class="warning">
-  Please refrain from editing any code in the <code>sr</code> module directory. This contains the code which maps the SR API onto the webots API.
   Only your controller code will be present in the competition environment.
 </div>
 
@@ -63,7 +74,7 @@ The code for your robot is `controllers/sr_controller/sr_controller.py`. An exam
 
 ### Updates
 
-Occasionally, we may release an update to the simulation. To update, you will need to copy your code out of the `competition-simulator-master` directory, delete the directory, and re-download it using the above link. Then you can replace the new `controllers/sr_controller/sr_controller.py` with your existing code.
+Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-master` directory, and re-download it using the above link.
 
 ## Robot
 
