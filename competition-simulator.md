@@ -103,11 +103,13 @@ Because these sensors are pre-attached to the ruggeduino, you do not need to set
 
 The microswitches are attached to digital pins 2-6:
 
-- Front
-- Back
-- Between gripper fingers
-- Left gripper finger
-- Right gripper finger
+| Pin | Location |
+|-----|----------|
+|2|Front|
+|3|Back|
+|4|Between gripper fingers|
+|5|Left gripper finger|
+|6|Right gripper finger|
 
 These are shown as red coloured blocks on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
 
@@ -115,12 +117,14 @@ These are shown as red coloured blocks on the robot. Using the `digital_read`  m
 
 Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analogue pins 0-5:
 
-- Front Left
-- Front Right
-- Left
-- Right
-- Back Left
-- Back Right
+| Pin | Location |
+|-----|----------|
+|0|Front Left|
+|1|Front Right|
+|2|Left|
+|3|Right|
+|4|Back Left|
+|5|Back Right|
 
 These are shown as blue coloured blocks on the robot. The `analogue_read` method will return the distance in metres, however only measure up to 30cm.
 
