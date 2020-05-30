@@ -91,6 +91,8 @@ Unless otherwise stated, the simulator’s API is the same as the real SR API de
 
 Your robot has 2 motor boards attached, each with 2 motors. Board `0` has the left wheel in port `m0`, and the right wheel in `m1`. Board `1` has the gripper lift motor in `m0`, and the finger motors in `m1`.
 
+The motor boards do not have part codes, and so need to be indexed using `0` and `1`. The motor boards will always be in this order.
+
 ### Ruggeduino
 
 Your robot has 5 microswitches and 6 distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
