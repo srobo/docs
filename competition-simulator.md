@@ -35,7 +35,7 @@ If webots is picking up the incorrect version of Python, you'll need to change i
 
 ## Overview
 
-Within the IDE, there are a few different panels:
+Within the Webots IDE, there are a few different panels:
 
 - In the centre of your screen is the 3D simulated view of the arena
 - On the left is a tree hierarchy of all elements in this "world"
