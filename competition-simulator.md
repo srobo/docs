@@ -39,7 +39,6 @@ Within the Webots IDE, there are a few different panels:
 
 - In the centre of your screen is the 3D simulated view of the arena
 - On the left is a tree hierarchy of all elements in this "world"
-- On the right is your text editor for modifying the `sr_controller` code for example
 - At the bottom is your console
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
 
