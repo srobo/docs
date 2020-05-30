@@ -79,6 +79,10 @@ Occasionally, we may release an update to the simulation. To update, you will ne
 
 ![]({{ site.baseurl }}/resources/competition-simulator/robot-front.png)
 
+This is the pre-built robot used in the simulator, which supports the SR API. Building robot chassis in Webots is complicated, and we expect teams to use the pre-built robot.
+
+The robot has an array of sensors, a vision system, and a gripper to pick up tokens.
+
 ## Programming Interface
 
 Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
