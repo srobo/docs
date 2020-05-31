@@ -56,4 +56,4 @@ Within the Webots IDE, there are a few different panels:
 
 This is the pre-built robot used in the simulator, with an interface [similar](./programming) to the SR API.
 
-The robot has an array of sensors, a vision system, and a gripper to pick up tokens, all of whom can be [programmed](./programming).
+The robot has an array of sensors, a vision system, and a gripper to pick up tokens, all of which can be [programmed](./programming).
