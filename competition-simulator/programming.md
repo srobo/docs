@@ -41,7 +41,7 @@ The motor boards do not have part codes, and so need to be indexed using `0` and
 
 ### Ruggeduino
 
-Your robot has 5 microswitches and 6 distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
+Your robot has five microswitches and six distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
 
 Because these sensors are pre-attached to the ruggeduino, you do not need to set its `pin_mode`.
 
