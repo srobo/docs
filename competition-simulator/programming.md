@@ -33,6 +33,8 @@ Your code should be developed in `robot.py`.
 
 Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
 
+To assist with converting your existing code from Python 2 to Python 3, you can use [`2to3`](https://docs.python.org/3/library/2to3.html).
+
 ### Motors
 
 Your robot has two motor boards attached, each with two motors. Board `0` has the left wheel in port `m0`, and the right wheel in `m1`. Board `1` has the gripper lift motor in `m0`, and the finger motors in `m1`.
