@@ -34,7 +34,7 @@ If webots is picking up the incorrect version of Python, you'll need to change i
 
 ### Updates
 
-Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-master` directory, and re-download it using the above link.
+Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-<version>` directory, and re-download it using the above link.
 
 ## Overview
 
