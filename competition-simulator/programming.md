@@ -7,11 +7,11 @@ title: Programming
 
 ## Developing your code
 
-On first run, the robot will execute an example program for convenience. On first run, this will be copied to the directory `competition-simulator` is stored in:
+On first run, the robot will execute an example program for convenience. On first run, this will be copied to the directory `competition-simulator-<version>` is stored in:
 
 ```
 .
-├── competition-simulator
+├── competition-simulator-<version>
 │   ├── ...
 │   └─ worlds
 │       └── Arena.wbt
