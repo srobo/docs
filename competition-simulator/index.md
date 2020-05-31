@@ -42,7 +42,7 @@ Within the Webots IDE, there are a few different panels:
 
 - In the centre of your screen is the 3D simulated view of the arena
 - On the left is a tree hierarchy of all elements in this "world"
-- At the bottom is your console
+- At the bottom is the console, where output from your robot code will be displayed
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
 
 ### Useful links
