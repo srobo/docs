@@ -19,7 +19,17 @@ For SR2020, a virtual competition will be run using a brand new simulator.
 
 This simulation is based in [Webots](https://cyberbotics.com/#download), which will need to be downloaded and installed. The download is around 1.5GB.
 
-You will also need [Python 3.7 64-bit](https://www.python.org/downloads/release/python-377/) installed. Additional external libraries are not supported.
+#### Python Version
+
+You will also need Python installed. Additional external libraries are not supported.
+
+| Platform | Supported Python Version |
+|----------|--------------------------|
+| Windows  | 3.7 (64-bit)             |
+| macOS    | >= 3.7                   |
+| Linux    | >= 3.5                   |
+
+In the competition, Python 3.7 will be used.
 
 ### Installing the simulation
 
