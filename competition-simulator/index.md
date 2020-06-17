@@ -5,7 +5,7 @@ title: Competition Simulator
 
 # Competition Simulator
 
-![]({{ site.baseurl }}/resources/competition-simulator/arena.png)
+![]({{ site.baseurl }}/images/content/competition-simulator/arena.png)
 
 For SR2020, a virtual competition will be run using a brand new simulator.
 
@@ -62,7 +62,7 @@ Within the Webots IDE, there are a few different panels:
 
 ## Robot
 
-![]({{ site.baseurl }}/resources/competition-simulator/robot-front.png)
+![]({{ site.baseurl }}/images/content/competition-simulator/robot-front.png)
 
 This is the pre-built robot used in the simulator, with an interface [similar](./programming) to the SR API.
 
