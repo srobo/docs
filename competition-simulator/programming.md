@@ -111,7 +111,7 @@ R = Robot()
 
 # Blink the output
 R.ruggeduinos[0].digital_write(A_PIN, 1)
-R.sleep()
+R.sleep(1.5)  # Sleep for a second and a half of simulation time
 R.ruggeduinos[0].digital_write(A_PIN, 0)
 ```
 
