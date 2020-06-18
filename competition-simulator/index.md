@@ -67,3 +67,28 @@ Within the Webots IDE, there are a few different panels:
 This is the pre-built robot used in the simulator, with an interface [similar](./programming) to the SR API.
 
 The robot has an array of sensors, a vision system, and a gripper to pick up tokens, all of which can be [programmed](./programming).
+
+### Other robots
+
+There are 3 other robots in the arena, all in their starting zones. By default, these robots will not move.
+
+To control these robots, you will need to give them a controller:
+
+1. Select the robot, and in the menu on the left, edit the controller field and select the `sr_controller` controller:
+
+![]({{ site.baseurl }}/resources/competition-simulator/robot-controller.png)
+
+2. Create the robot code in `zone-x/robot.py`, where `x` is zone number `1`, `2` or `3`.
+   Your code at `robot.py` will be used for zone `0`, though you are encouraged to move your code to `zone-0/robot.py` when running multiple robots.
+   Robots which do not have any robot code in their `zone-x` directory will not do anything.
+
+```
+.
+├── competition-simulator-<version>
+│   ├── ...
+│   └─ worlds
+│       └── Arena.wbt
+├── zone-1
+|   └─ robot.py
+└── robot.py
+```
