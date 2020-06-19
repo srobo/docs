@@ -21,7 +21,7 @@ This simulation is based in [Webots](https://cyberbotics.com/#download), which w
 
 #### Python Version
 
-You will also need Python installed. Additional external libraries are not supported.
+You will also need Python installed.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
@@ -30,6 +30,11 @@ You will also need Python installed. Additional external libraries are not suppo
 | Linux    | >= 3.5                   |
 
 In the competition, Python 3.7 will be used.
+
+Currently no [external libraries]({{ site.baseurl}}/programming/python/libraries)
+are provided, however if there are libraries which you need you can request
+their inclusion [via the forums](/forum) (please include a link to the package
+on [PyPI](https://pypi.org/)).
 
 ### Installing the simulation
 

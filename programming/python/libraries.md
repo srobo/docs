@@ -6,6 +6,17 @@ title: Included Python Libraries
 Included Libraries
 ==================
 
+Competition Simulator
+---------------------
+
+The competition simulator currently doesn't include any packages other than the
+standard library. If there is library you would like included, please let us
+know [via the forums](/forum) and include a link to the package on
+[PyPI](https://pypi.org/).
+
+Robot Kit
+---------
+
 The following python libraries are installed and available for use in your robot's software:
 
  * [Babel 1.3.3](http://babel.pocoo.org/)
