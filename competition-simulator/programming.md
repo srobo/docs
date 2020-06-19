@@ -76,6 +76,21 @@ Analogous to ultrasound sensors, distance sensors allow you to retrieve the dist
 
 These are shown as blue coloured blocks on the robot. The `analogue_read` method will return the distance in metres, however only measure up to 30cm.
 
+#### LEDs
+
+The LEDs are attached to digital pins 7-12:
+
+| Pin | Location |
+|-----|----------|
+| 7   | Red (right) |
+| 8   | Green (right) |
+| 9   | Blue (right) |
+| 10  | Blue (left) |
+| 11  | Green (left) |
+| 12  | Red (left) |
+
+Using the `digital_write` method, you can set these to True (On) or False (Off).
+
 ### Camera
 
 Your robot has a camera, which is attached to the top of your robot. A live preview of what the camera sees is shown in the top-left corner. The vision system uses Webots' object recognition, rather than [fiducial markers]({{ site.baseurl }}/programming/sr/vision/markers/).
