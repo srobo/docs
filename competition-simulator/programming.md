@@ -89,7 +89,7 @@ The LEDs are attached to digital pins 7-12:
 | 11  | Green (left) |
 | 12  | Red (left) |
 
-Using the `digital_write`  method, you can set these to True (On) or False (Off).
+Using the `digital_write` method, you can set these to True (On) or False (Off).
 
 ### Camera
 
