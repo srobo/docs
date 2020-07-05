@@ -8,6 +8,9 @@ tree:
     tree:
       - url: /competition-simulator/programming
         title: Programming
+        tree:
+          - url: /competition-simulator/programming/time
+            title: Time
   - url: /IDE/
     title: IDE
     tree:
