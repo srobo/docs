@@ -35,6 +35,15 @@ Unless otherwise stated, the simulator’s API is the same as the real SR API de
 
 To assist with converting your existing code from Python 2 to Python 3, you can use [`2to3`](https://docs.python.org/3/library/2to3.html).
 
+### Robot
+
+There are two possible classes you can use to control your robot. You are
+encouraged to use the newer [`ManualTimestepRobot` class][manual-timestep-class]
+rather than the older `Robot` class. This avoids unpredictable behaviour which
+can result from simulator time not passing at the same rate as real time.
+
+[manual-timestep-class]: /docs/competition-simulator/programming/time#manual-timestep-robot
+
 ### Motors
 
 Your robot has two motor boards attached, each with two motors. Board `0` has the left wheel in port `m0`, and the right wheel in `m1`. Board `1` has the gripper lift motor in `m0`, and the finger motors in `m1`.
