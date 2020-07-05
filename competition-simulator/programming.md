@@ -97,7 +97,7 @@ Your robot has a camera, which is attached to the top of your robot. A live prev
 
 The `see` method will return a list of visible markers in the arena, but doesn't allow a resolution argument. Each token is as described in the [vision docs]({{ site.baseurl }}/programming/sr/vision/), except:
 
-- As well as the [existing constants](http://localhost:4000/docs/programming/sr/vision/#MarkerInfo), `Marker.info.marker_type` can be referred to as `MarkerType.SILVER`, `MarkerType.GOLD` or `MarkerType.ARENA`. `MarkerType` can be imported with `from sr.robot import MarkerType`
+- As well as the [existing constants]({{ site.baseurl }}/programming/sr/vision/#MarkerInfo), `Marker.info.marker_type` can be referred to as `MarkerType.SILVER`, `MarkerType.GOLD` or `MarkerType.ARENA`. `MarkerType` can be imported with `from sr.robot import MarkerType`
 - The following attributes are not available:
   - `Marker.res`
   - `Point.image`
