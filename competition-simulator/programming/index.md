@@ -25,10 +25,6 @@ Your code should be developed in `robot.py`.
   Only your controller code will be present in the competition environment.
 </div>
 
-<div class="warning">
-  You will be responsible for backing up and versioning your code, and collaborating with your fellow team members. The <a href="https://studentrobotics.org/ide/">IDE</a> is unsuitable for this simulator.
-</div>
-
 ## Programming Interface
 
 Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
