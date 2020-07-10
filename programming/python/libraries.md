@@ -9,10 +9,16 @@ Included Libraries
 Competition Simulator
 ---------------------
 
-The competition simulator currently doesn't include any packages other than the
-standard library. If there is library you would like included, please let us
-know [via the forums](/forum) and include a link to the package on
-[PyPI](https://pypi.org/).
+The following libraries will be available to your robot code during the
+competition. Note that for local development you will need to install these
+yourself.
+
+<!-- updating this list? Also update https://github.com/srobo/competition-simulator/blob/master/libraries.txt -->
+
+ * [matplotlib 3.2.2](https://pypi.org/project/matplotlib/3.2.2/)
+
+If there are other libraries you would like included, please let us know
+[via the forums](/forum) and include a link to the package on [PyPI](https://pypi.org/).
 
 Robot Kit
 ---------
