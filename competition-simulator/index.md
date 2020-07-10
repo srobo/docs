@@ -31,10 +31,12 @@ You will also need Python installed.
 
 In the competition, Python 3.7 will be used.
 
-Currently no [external libraries]({{ site.baseurl}}/programming/python/libraries)
-are provided, however if there are libraries which you need you can request
-their inclusion [via the forums](/forum) (please include a link to the package
-on [PyPI](https://pypi.org/)).
+There are a small number of [external libraries]({{ site.baseurl}}/programming/python/libraries)
+which will be available to your robot code during the competition. Note that for
+local development you will need to install these yourself.
+
+If there are other libraries you would like included, please let us know
+[via the forums](/forum) and include a link to the package on [PyPI](https://pypi.org/).
 
 ### Installing the simulation
 
