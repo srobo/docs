@@ -40,7 +40,7 @@ If there are other libraries you would like included, please let us know
 
 ### Installing the simulation
 
-1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/0.3.2/competition-simulator-0.3.2.zip), and unzip it somewhere on your computer.
+1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/0.5.0/competition-simulator-0.5.0.zip), and unzip it somewhere on your computer.
 2. Using the Webots IDE, open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
