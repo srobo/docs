@@ -16,7 +16,7 @@ implementing precise movements in your robot
   busy doing something without giving the simulator a chance to run.    
 
   This usually indicates that you have a loop somewhere which is expecting time    
-  to advance on its own and which should be modified to call `sleep`  
+  to advance on its own and which should be modified to call <code>sleep</code> 
   occasionally (even a very small value will allow the simulator to progress).    
 </div>
 
