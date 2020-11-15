@@ -35,9 +35,9 @@ R = Robot()
 <div class="warning">
   <!-- We should drop this after SR2020 and move `ManualTimestepRobot` to being the default. -->
 
-  When programming for the <a href="/docs/competition-simulator">Competition Simulator</a>
+  When programming for the <a href="/docs/simulator">Competition Simulator</a>
   you are strongly encouraged to use the
-  <a href="/docs/competition-simulator/programming/time#manual-timestep-robot">
+  <a href="/docs/simulator/programming/time#manual-timestep-robot">
     <code>ManualTimestepRobot class</code>
   </a>
   instead of the <code>Robot</code> class. This avoids unpredictable behaviour
