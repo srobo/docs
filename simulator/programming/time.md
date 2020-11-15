@@ -9,9 +9,14 @@ title: Simulated Time
 
 In the simulated environment, time advances only at the pace that the simulator
 is run and in cooperation with the controller code (such as the code controlling
-your robot). As a result, using the `time` method to know how long your robot has been
-running for or `sleep` method to wait for some duration is the most reliable way of
-implementing precise movements in your robot
+your robot). As a result, using `time.time` to know how long your robot has been
+running for or `time.sleep` to wait for some duration will have unpredictable
+results, especially when run on a computer other than the one you are developing
+on (such as during the competition).
+
+Instead your code should explicitly signal to the simulator when it is ready for
+time to advance and should query for the current time from the simulator. This
+can be done by using the methods detailed below.
 
 <div class="info">
   If you find that the simulator freezes then this indicates that your code is
