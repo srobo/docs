@@ -17,7 +17,7 @@ For SR2020, a virtual competition will be run using a brand new simulator.
 
 ### Prerequisites
 
-You need to download and install [Webots simulator](https://cyberbotics.com/#download) (the download is around 1.5GB). This is the platform we run our simulator on.
+You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 1.5GB). This is the platform we run our simulation in.
 
 #### Python Version
 
