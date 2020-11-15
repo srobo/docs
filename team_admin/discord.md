@@ -11,7 +11,7 @@ If you do not wish to, or are unable to join Discord, you can still get support 
 
 ## Joining
 
-Invite links will be sent to team leaders which will ensure you're added to the correct school / institution and team. Only team members should be given access. If you do not already have an account, you'll be prompted to create one. You may of course use your existing account, but please make sure the profile picture and username are appropriate.
+Invite links and entry passwords will be sent to team leaders which will ensure you're added to the correct school / institution and team. Only team members should be given access. If you do not already have an account, you'll be prompted to create one. You may of course use your existing account, but please make sure the profile picture and username are appropriate.
 
 Once invited, you'll only have access to a few channels, namely `#welcome-and-rules` and `#welcome-<username>` (with your username in). Before you can join, you must read the rules shown in the `#welcome-and-rules` channel, and enter the password for your team in your personal `#welcome-<username>` channel.
 
