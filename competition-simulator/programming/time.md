@@ -8,16 +8,16 @@ title: Robot Time
 In the simulated environment, time advances only at the pace that the simulator
 is run and in cooperation with the controller code (such as the code controlling
 your robot). As a result, using the `time` method to know how long your robot has been
-running for or `sleep` method to wait for some duration is the most reliable way of 
+running for or `sleep` method to wait for some duration is the most reliable way of
 implementing precise movements in your robot
 
-<div class="info">    
-  If you find that the simulator freezes then this indicates that your code is    
-  busy doing something without giving the simulator a chance to run.    
+<div class="info">
+  If you find that the simulator freezes then this indicates that your code is
+  busy doing something without giving the simulator a chance to run.
 
-  This usually indicates that you have a loop somewhere which is expecting time    
-  to advance on its own and which should be modified to call <code>sleep</code> 
-  occasionally (even a very small value will allow the simulator to progress).    
+  This usually indicates that you have a loop somewhere which is expecting time
+  to advance on its own and which should be modified to call <code>sleep</code>
+  occasionally (even a very small value will allow the simulator to progress).
 </div>
 
 ## Sleeping
