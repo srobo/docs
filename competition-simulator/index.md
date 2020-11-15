@@ -31,7 +31,7 @@ You will also need Python installed.
 
 In the competition, Python 3.7 will be used.
 
-There are a small number of [external libraries]({{ site.baseurl}}/programming/python/libraries)
+There are a small number of [external libraries]({{ site.baseurl }}/programming/python/libraries)
 which will be available to your robot code during the competition. Note that for
 local development you will need to install these yourself.
 
