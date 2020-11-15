@@ -27,4 +27,4 @@ Along with the common channels, there are some channels visible only to members 
 
 When asking for support, it's best to ask in public rooms unless there's a specific reason not to. This not only allows other teams who may be struggling with the same issue to benefit, but also allows them to contribute to a solution and discuss potential improvements.
 
-If your school / institution has multiple teams (`ABC2` etc), there will be an additional channel for each of those (`teams-ABC2`). Remember to try and keep conversations specific to the team - just because the team comes from the same school / institution, doesn't make them any less your rival.
+If your school / institution has multiple teams (`ABC2` etc), these will be separate channels (`team-ABC1`, `team-ABC2` etc). Team leaders will be in all team channels relevant to their school / institution, however as competitors can only be in a single team, they'll only be in a single team channel.
