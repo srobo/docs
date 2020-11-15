@@ -42,9 +42,9 @@ can result from simulator time not passing at the same rate as real time.
 
 ### Motors
 
-Your robot has two motor boards attached, each with two motors. Board `0` has the left wheel in port `m0`, and the right wheel in `m1`. Board `1` has the gripper lift motor in `m0`, and the finger motors in `m1`.
+Your robot has one motor board attached, the left wheel in port `m0`, and the right wheel in `m1`.
 
-The motor boards do not have part codes, and so need to be indexed using `0` and `1`. The motor boards will always be in this order.
+The motor boards do not have part codes, and so need to be indexed using `0`.
 
 ### Ruggeduino
 
