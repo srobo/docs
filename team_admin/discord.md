@@ -25,4 +25,4 @@ Along with the common channels, there are some channels visible only to members 
 
 `team-ABC` (where `ABC` is your TLA) is a channel only your team (and blue-shirts) can see. Here you can converse among your team, and get help from blue-shirts without giving away too much of your strategy. These channels should be considered your own, and can be used to discuss anything competition related for your team.
 
-If your school / institution has multiple teams (`ABC2` etc), there will be an additional channel for each of those (`teams-ABC2`). Remember to try and keep conversations specific to the team - Just because the team comes from the same school / institution, doesn't make them any less your rival.
+If your school / institution has multiple teams (`ABC2` etc), there will be an additional channel for each of those (`teams-ABC2`). Remember to try and keep conversations specific to the team - just because the team comes from the same school / institution, doesn't make them any less your rival.
