@@ -2,10 +2,10 @@
 redirect_from:
   - /competition-simulator/programming/time
 layout: page
-title: Robot Time
+title: Simulated Time
 ---
 
-# Important methods
+# Simulated Time
 
 In the simulated environment, time advances only at the pace that the simulator
 is run and in cooperation with the controller code (such as the code controlling
