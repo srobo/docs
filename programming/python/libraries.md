@@ -6,8 +6,8 @@ title: Included Python Libraries
 Included Libraries
 ==================
 
-Competition Simulator
----------------------
+Simulator
+---------
 
 The following libraries will be available to your robot code during the
 competition. Note that for local development you will need to install these
