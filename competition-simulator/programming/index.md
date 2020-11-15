@@ -60,9 +60,6 @@ The microswitches are attached to digital pins 2-6:
 |-----|----------|
 | 2   | Front    |
 | 3   | Back     |
-| 4   | Between gripper fingers |
-| 5   | Left gripper finger |
-| 6   | Right gripper finger |
 
 These are shown as red coloured blocks on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
 
