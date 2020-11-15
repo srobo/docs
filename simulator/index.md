@@ -22,7 +22,7 @@ You will also need Python installed.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
-| Windows  | 3.7 (64-bit)             |
+| Windows  | >= 3.7 (64-bit)          |
 | macOS    | >= 3.7                   |
 | Linux    | >= 3.7                   |
 
