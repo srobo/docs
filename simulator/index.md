@@ -7,12 +7,6 @@ title: Simulator
 
 ![]({{ site.baseurl }}/images/content/simulator/arena.png)
 
-For SR2020, a virtual competition will be run using a brand new simulator.
-
-<div class="info">
-  This is different to the <a href="/docs/programming/simulator/">regular simulator</a>.
-</div>
-
 ## Installation
 
 ### Prerequisites
