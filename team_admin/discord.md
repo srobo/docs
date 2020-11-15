@@ -11,7 +11,7 @@ If you do not wish to, or are unable to join Discord, you can still get support 
 
 ## Joining
 
-Invite links will be sent to team leaders. Only competitors should be given access.
+Invite links will be sent to team leaders which will ensure you're added to the correct team. Only team members should be given access.
 
 Once invited, you'll only have access to a few channels, namely `#welcome-and-rules` and `#welcome-<username>` (with your username in). Before you can join, you must read the rules shown in the `#welcome-and-rules` channel, and enter the password for your team in your personal `#welcome-<username>` channel.
 
