@@ -27,7 +27,7 @@ You will also need Python installed.
 |----------|--------------------------|
 | Windows  | 3.7 (64-bit)             |
 | macOS    | >= 3.7                   |
-| Linux    | >= 3.5                   |
+| Linux    | >= 3.7                   |
 
 In the competition, Python 3.7 will be used.
 
