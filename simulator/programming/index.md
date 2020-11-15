@@ -31,8 +31,6 @@ Your code should be developed in `robot.py`.
 
 Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
 
-To assist with converting your existing code from Python 2 to Python 3, you can use [`2to3`](https://docs.python.org/3/library/2to3.html).
-
 ### Robot
 
 There are two possible classes you can use to control your robot. You are
