@@ -3,13 +3,13 @@
 tree:
   - url: /
     title: Introduction
-  - url: /competition-simulator
-    title: Competition Simulator
+  - url: /simulator
+    title: Simulator
     tree:
-      - url: /competition-simulator/programming
+      - url: /simulator/programming
         title: Programming
         tree:
-          - url: /competition-simulator/programming/time
+          - url: /simulator/programming/time
             title: Time
   - url: /IDE/
     title: IDE
@@ -85,8 +85,6 @@ tree:
           title: Markers
     - url: /programming/git_repositories
       title: Git Repositories
-    - url: /programming/simulator
-      title: Simulator
   - url: /rules/
     title: Rules
     tree:
