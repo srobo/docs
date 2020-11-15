@@ -1,4 +1,7 @@
 ---
+redirect_from:
+  - /competition-simulator
+  - /programming/simulator
 layout: page
 title: Simulator
 ---

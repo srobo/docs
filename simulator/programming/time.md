@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /competition-simulator/programming/time
 layout: page
 title: Simulated Time
 ---

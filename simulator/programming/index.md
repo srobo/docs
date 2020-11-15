@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /competition-simulator/programming
 layout: page
 title: Programming
 ---
