@@ -66,11 +66,11 @@ Within the Webots IDE, there are a few different panels:
 
 ## Robot
 
-![]({{ site.baseurl }}/images/content/simulator/robot-front.png)
+![]({{ site.baseurl }}/images/content/simulator/robot-side.png)
 
 This is the pre-built robot used in the simulator, with an interface [similar](./programming) to the SR API.
 
-The robot has an array of sensors, a vision system, and a gripper to pick up tokens, all of which can be [programmed](./programming).
+The robot has an array of sensors and a vision system, all of which can be [programmed](./programming).
 
 ### Other robots
 

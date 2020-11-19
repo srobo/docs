@@ -42,9 +42,9 @@ can result from simulator time not passing at the same rate as real time.
 
 ### Motors
 
-Your robot has two motor boards attached, each with two motors. Board `0` has the left wheel in port `m0`, and the right wheel in `m1`. Board `1` has the gripper lift motor in `m0`, and the finger motors in `m1`.
+Your robot has one motor board attached, the left wheel in port `m0`, and the right wheel in `m1`.
 
-The motor boards do not have part codes, and so need to be indexed using `0` and `1`. The motor boards will always be in this order.
+The motor board does not have a part code, so it needs to be indexed using `0`.
 
 ### Ruggeduino
 
@@ -60,9 +60,6 @@ The microswitches are attached to digital pins 2-6:
 |-----|----------|
 | 2   | Front    |
 | 3   | Back     |
-| 4   | Between gripper fingers |
-| 5   | Left gripper finger |
-| 6   | Right gripper finger |
 
 These are shown as red coloured blocks on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
 
