@@ -22,9 +22,9 @@ You will also need Python installed.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
-| Windows  | >= 3.7 (64-bit)          |
-| macOS    | >= 3.7                   |
-| Linux    | >= 3.7                   |
+| Windows  | 3.7 - 3.8 (64-bit)       |
+| macOS    | 3.7 - 3.8                |
+| Linux    | 3.7 - 3.8                |
 
 In the competition, Python 3.7 will be used.
 
