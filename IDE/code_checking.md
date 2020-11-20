@@ -32,7 +32,7 @@ So an error on the second line of a file,
 
 ~~~~~ python
 import sr.robot
-print bacon
+print(bacon)
 ~~~~~
 
 Would show up as:

@@ -223,7 +223,7 @@ Here's an example:
 
 ~~~~~ python
 for i in [1, 2, 3]:
-	print i
+	print(i)
 ~~~~~
 
 The above would output:

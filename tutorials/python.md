@@ -22,7 +22,7 @@ If your computer has a compatible browser, go to <https://repl.it> and click Pyt
 You can test it with this classic one line program:
 
 ~~~~~ python
-print "Hello World!"
+print("Hello World!")
 ~~~~~
 
 The text `Hello World!` should appear in the output box.
@@ -37,7 +37,7 @@ A statement is a line of code that does something. A program is a list of statem
 ~~~~~ python
 x = 5
 y = (x * 2) + 4
-print "Number of bees:", y - 2
+print("Number of bees:", y - 2)
 ~~~~~
 
 The statements are executed one by one, in order. This example would give the output `Number of bees: 12`.
@@ -57,7 +57,7 @@ For example:
 
 ~~~~~ python
 # This is a comment
-print "This isn't."  # But this is!
+print("This isn't.")  # But this is!
 ~~~~~
 
 You should use comments whenever you think that it is not completely clear what a statement or block of statements does, especially as you are working in teams! Also bear in mind the varying coding skills of your team. You might be the best coder in your team, but what if you were taken ill the day before the competition, and your team-mates had to fix your code?
@@ -67,7 +67,7 @@ Comments are also useful for temporarily removing statements from your code, for
 ~~~~~ python
 x = 42
 #x = x - 4
-print "The answer is", x
+print("The answer is", x)
 ~~~~~
 
 This example would output `The answer is 42`, as the subtraction is not executed.
@@ -112,7 +112,7 @@ b = input("Enter second number: ")
 
 # Store the average of a and b in the variable `average`
 
-print "The average of", a, "and", b, "is", average
+print("The average of", a, "and", b, "is", average)
 ~~~~~
 
 Run your code and check that it works.
@@ -131,8 +131,8 @@ Booleans and `if` statements
 A boolean value is either `True` or `False`. For example:
 
 ~~~~~ python
-print 42 > 5
-print 4 == 2
+print(42 > 5)
+print(4 == 2)
 ~~~~~
 
 Output:
@@ -149,12 +149,12 @@ False
 ~~~~~ python
 name = raw_input("What is your name?")
 if name == "Tim":
-	print "Hello Tim."
-	print "You've got an email."
+	print("Hello Tim.")
+	print("You've got an email.")
 else:
-	print "You're not Tim!"
+	print("You're not Tim!")
 
-print "Python rocks!"
+print("Python rocks!")
 ~~~~~
 
 If you typed "Tim" at the prompt, this example would output:
@@ -170,12 +170,12 @@ Having another `if` in the `else` block is very common:
 ~~~~~ python
 price = 50000 * 1.3
 if price < 60000:
-	print "We can afford the tall ship!"
+	print("We can afford the tall ship!")
 else:
 	if price < 70000:
-		print "We might be able to afford the tall ship..."
+		print("We might be able to afford the tall ship...")
 	else:
-		print "We can't afford the tall ship. :-("
+		print("We can't afford the tall ship. :-(")
 ~~~~~
 
 So common that there's a special keyword, `elif`, for the purpose. So, the following piece of code is equivalent to the last:
@@ -183,11 +183,11 @@ So common that there's a special keyword, `elif`, for the purpose. So, the follo
 ~~~~~ python
 price = 50000 * 1.3
 if price < 60000:
-	print "We can afford the tall ship!"
+	print("We can afford the tall ship!")
 elif price < 70000:
-	print "We might be able to afford the tall ship..."
+	print("We might be able to afford the tall ship...")
 else:
-	print "We can't afford the tall ship. :-("
+	print("We can't afford the tall ship. :-(")
 ~~~~~
 
 Both output:
@@ -209,20 +209,20 @@ A group of consecutive statements that are all indented by the same distance is 
 name = raw_input("What is your name?")
 email = "Bank of Nigeria: Tax Refund"
 if name == "Tim":
-	print "Hello Tim."
+	print("Hello Tim.")
 	if email != "":
-		print "You've got an email."
+		print("You've got an email.")
 
 		# (blocks can contain blank lines in the middle)
 		if email != "Bank of Nigeria: Tax Refund":
-			print "Looks legitimate, too!"
+			print("Looks legitimate, too!")
 	else:
-		print "No mail."
+		print("No mail.")
 
 else:
-	print "You're not Tim!"
+	print("You're not Tim!")
 
-print "Python rocks."
+print("Python rocks.")
 ~~~~~
 
 Output (for "Tim" as before):
@@ -247,15 +247,15 @@ Without running it, work out what output the following code will give:
 ~~~~~ python
 some_text = "Duct Tape"
 if 5 > 4:
-	print "Maths works."
+	print("Maths works.")
 	if some_text == "duct tape":
-		print "The case is wrong."
+		print("The case is wrong.")
 	elif some_text == "Duct Tape":
-		print "That's right."
+		print("That's right.")
 	else:
-		print "Completely wrong."
+		print("Completely wrong.")
 else:
-	print "Oh-oh."
+	print("Oh-oh.")
 ~~~~~
 
 Run the code and check your prediction.
@@ -271,10 +271,10 @@ Lists store more than one value in a single variable, and allow you to set and r
 
 ~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
-print shopping_list[0]
+print(shopping_list[0])
 shopping_list[3] = "Magazine"
-print shopping_list[2]
-print shopping_list[3]
+print(shopping_list[2])
+print(shopping_list[3])
 ~~~~~
 
 Output:
@@ -291,7 +291,7 @@ You can find out the length of a list with the `len` function, like so:
 
 ~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
-print "There are", len(shopping_list), "items on your list."
+print("There are", len(shopping_list), "items on your list.")
 ~~~~~
 
 Finally, you can add a value to the end of a list with the `append` method:
@@ -299,7 +299,7 @@ Finally, you can add a value to the end of a list with the `append` method:
 ~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 shopping_list.append("Mince pies in October")
-print shopping_list
+print(shopping_list)
 ~~~~~
 
 The values in a list can be of any type, even other lists. Also, a list can contain values of different types.
@@ -314,13 +314,13 @@ The `while` loop is the most basic type of loop. It repeats the statements in th
 ~~~~~ python
 x = 10
 while x > 0:
-	print x
+	print(x)
 	if x == 5:
-		print "Half way there!"
+		print("Half way there!")
 
 	x = x - 1
 
-print "Zero!"
+print("Zero!")
 ~~~~~
 
 Output:
@@ -350,7 +350,7 @@ The most common application of loops is in conjunction with lists. The `for` loo
 ~~~~~ python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 for x in shopping_list:
-	print "[ ]", x
+	print("[ ]", x)
 ~~~~~
 
 The code is executed once for each item in the list, with `x` set to each item in turn. So, the output of this example is:
@@ -370,7 +370,7 @@ prices = [4, 5, 2, 1.50]
 for index, value in enumerate(prices):
 	prices[index] = value * 1.20
 
-print prices
+print(prices)
 ~~~~~
 
 Output:
@@ -392,9 +392,9 @@ You can tell when a user has not entered anything at a `raw_input` prompt when i
 ~~~~~ python
 var = raw_input("Enter a number: ")
 if var == "":
-	print "You didn't enter anything!"
+	print("You didn't enter anything!")
 else:
-	print "You entered",float(var)
+	print("You entered",float(var))
 ~~~~~
 
 Now, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `raw_input` prompt.
@@ -414,7 +414,7 @@ You can combine (or 'concatenate') strings in Python with the `+` operator:
 ~~~~~ python
 str = "Hello "
 str = str + "World!"
-print str
+print(str)
 ~~~~~
 
 Write a program that asks the user for a number, and then prints a triangle of that height, with its right angle at the bottom left. For example, given the number 3, the program should output:
@@ -452,7 +452,7 @@ Functions are pre-written bits of code that can be run ('called') at any point. 
 ~~~~~ python
 x = 10
 while x > 0:
-	print x
+	print(x)
 	x = x - 1
 	if x == 5:
 		exit()  # not supported in repl.it
@@ -462,7 +462,7 @@ This will output the numbers 10 to 6, and then stop. Not very useful. However, m
 
 ~~~~~ python
 my_list = [42, "BOOMERANG!!!", [0, 3]]
-print len(my_list)
+print(len(my_list))
 ~~~~~
 
 Output:
@@ -475,7 +475,7 @@ Combined with the `range` function, which returns a list of numbers in a certain
 
 ~~~~~ python
 my_list = [42, "BOOMERANG!!!", [0, 3]]
-print list(range(len(my_list)))
+print(list(range(len(my_list))))
 ~~~~~
 
 Output:
@@ -487,9 +487,9 @@ Output:
 The `range` function can also take multiple parameters:
 
 ~~~~~ python
-print list(range(5))            # numbers from 0 to 4.
-print list(range(2, 5))         # numbers from 2 to 4.
-print list(range(1, 10, 2))     # odd numbers from 1 to 10
+print(list(range(5)))            # numbers from 0 to 4.
+print(list(range(2, 5)))         # numbers from 2 to 4.
+print(list(range(1, 10, 2)))     # odd numbers from 1 to 10
 ~~~~~
 
 Output:
@@ -505,7 +505,7 @@ There are many built-in functions supplied with Python (see [appendix](#built-in
 ~~~~~ python
 import math
 
-print math.sin(math.pi / 2)
+print(math.sin(math.pi / 2))
 ~~~~~
 
 Defining functions
@@ -516,7 +516,7 @@ Of course, you'll want to make your own functions. To do this, you precede a blo
 ~~~~~ python
 def annoy(num_times):
 	for i in range(num_times):
-		print "Na na na-na na!"
+		print("Na na na-na na!")
 
 annoy(3)
 ~~~~~
@@ -529,7 +529,7 @@ To return a value, use the `return` statement. A rather trivial example:
 def multiply(x, y):
 	return x * y
 
-print multiply(2, 3)
+print(multiply(2, 3))
 ~~~~~
 
 ### Using functions effectively ###
@@ -590,10 +590,10 @@ x = 2
 
 def foo():
 	x = 3
-	print "In foo(), x =", x
+	print("In foo(), x =", x)
 
 foo()
-print "Outside foo(), x =", x
+print("Outside foo(), x =", x)
 ~~~~~
 
 Output:
@@ -678,7 +678,7 @@ These return a boolean (`True` or `False`) value, and are used in `if` statement
 
 ~~~~~ python
 if "car" in "Scarzy's hair":
-	print "Of course."
+	print("Of course.")
 ~~~~~
 
 ### Logical
@@ -691,12 +691,12 @@ y = 8
 z = 2
 
 if x == 5 and y == 3:
-	print "True"
+	print("True")
 else:
-	print "False"
+	print("False")
 
-print x == 5 or not y == 8         # could use y != 8 instead
-print x == 2 and y == 3 or z == 2  # needs brackets for clarity!
+print(x == 5 or not y == 8)        # could use y != 8 instead
+print(x == 2 and y == 3 or z == 2) # needs brackets for clarity!
 ~~~~~
 
 Output:
@@ -710,7 +710,7 @@ True
 When more than one boolean operator is used in an expression, `not` is performed first (as it works on a single operand). After this, `and` is done before `or`, but you should use brackets instead of relying on that fact, for readability. So, the last line of the example should read:
 
 ~~~~~ python
-print (x == 2 and y == 3) or z == 2
+print((x == 2 and y == 3) or z == 2)
 ~~~~~
 
 
@@ -723,7 +723,7 @@ Others are contained in modules. To use a function from a module, you must `impo
 
 ~~~~~ python
 import math
-print math.sqrt(4)
+print(math.sqrt(4))
 ~~~~~
 
 One of the most useful modules for the moment will be `math` (<https://docs.python.org/library/math.html>).

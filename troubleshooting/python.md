@@ -21,7 +21,7 @@ For example:
 
 ~~~~~ python
 def foo(s):
-	print s
+	print(s)
 
 foo "Hello World!"  # should be foo("Hello World!")
 ~~~~~
@@ -51,7 +51,7 @@ Other causes of syntax errors to look out for are:
 
 ~~~~~ python
 x = 5
-print X     # wrong case
+print(X)     # wrong case
 ~~~~~
 
 Error:
@@ -75,8 +75,8 @@ For example:
 
 ~~~~~ python
 a = ["Molly", "Polly", "Dolly"]
-print a[0]
-print a[3]
+print(a[0])
+print(a[3])
 ~~~~~
 
 Error:

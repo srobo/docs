@@ -21,7 +21,7 @@ You can access these values like so:
 
 ~~~~~ python
 # Print the battery voltage and current to the log
-print R.power.battery.voltage, R.power.battery.current
+print(R.power.battery.voltage, R.power.battery.current)
 ~~~~~
 
 A fully charged battery will measure 12.6V.
