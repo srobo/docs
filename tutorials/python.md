@@ -475,7 +475,7 @@ Combined with the `range` function, which returns a list of numbers in a certain
 
 ~~~~~ python
 my_list = [42, "BOOMERANG!!!", [0, 3]]
-print range(len(my_list))
+print list(range(len(my_list)))
 ~~~~~
 
 Output:
@@ -487,9 +487,9 @@ Output:
 The `range` function can also take multiple parameters:
 
 ~~~~~ python
-print range(5)            # numbers from 0 to 4.
-print range(2, 5)         # numbers from 2 to 4.
-print range(1, 10, 2)     # odd numbers from 1 to 10
+print list(range(5))            # numbers from 0 to 4.
+print list(range(2, 5))         # numbers from 2 to 4.
+print list(range(1, 10, 2))     # odd numbers from 1 to 10
 ~~~~~
 
 Output:
