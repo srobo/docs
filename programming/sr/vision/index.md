@@ -40,7 +40,7 @@ while True:
 
     for m in markers:
         if m.info.marker_type == MARKER_ARENA:
-            print " - Marker #{0} is {1} metres away".format( m.info.code, m.dist )
+            print " - Marker #{0} is {1} metres away".format(m.info.code, m.dist)
 ~~~~~
 
 [Choosing Resolution](#ChoosingResolution) {#ChoosingResolution}

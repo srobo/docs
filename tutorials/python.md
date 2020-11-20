@@ -112,7 +112,7 @@ b = input("Enter second number: ")
 
 # Store the average of a and b in the variable `average`
 
-print "The average of",a,"and",b,"is",average
+print "The average of", a, "and", b, "is", average
 ~~~~~
 
 Run your code and check that it works.

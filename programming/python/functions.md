@@ -15,7 +15,7 @@ A simple function that calculates the square of a number:
 
 ~~~~~ python
 def square(num):
-    return num**2
+    return num ** 2
 ~~~~~
 
 This would be used by some other code as follows:
