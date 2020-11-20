@@ -93,6 +93,8 @@ The Logitech C500 has a [field of view][fov] of 72&deg; and the C270 has a field
 [Definition of Axes](#axes) {#axes}
 ===================================
 
+<!-- Note: these are the same as the radio. We should keep these in sync. -->
+
 The vision system describes the markers it can see using three coordinate
 systems. These are intended to be complementary to each other and contain
 the same information in different forms.
@@ -185,6 +187,8 @@ size
 
 [`Point`](#Point) {#Point}
 ---------
+
+<!-- Note: this is almost identical to the equivalent type in the radio system. We should keep these in sync. -->
 
 A `Point` object describes a position in three different ways.
 These are accessed through the following attributes:
