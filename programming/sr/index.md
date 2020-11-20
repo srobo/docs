@@ -81,9 +81,8 @@ usbkey
     R = Robot()
     print "The path to the USB key is:", R.usbkey
     print "My file on the USB contains:"
-    f = open(os.path.join(R.usbkey, "my-file.txt"), "r")
-    print f.read()
-    f.close()
+    with open(os.path.join(R.usbkey, 'my-file.txt'), 'r') as f:
+        print f.read()
     ~~~~~
 
 [Custom Robot Object Initialisation](#CustomRobotInit) {#CustomRobotInit}
