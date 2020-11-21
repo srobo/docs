@@ -61,7 +61,7 @@ From here in, if you see a `R.something`, the requirement of the `sr.robot` impo
 As well as the attributes listed above, the Robot class also has the following attributes, which you may find useful:
 
 zone
-:    The number of the zone that the robot is associated with.  An integer from 0 to 3 inclusive.
+:    The number of the zone that the robot is associated with. Either `0` or `1`.
 
 mode
 :    Either "comp" or "dev".  When in a competition match, this will be "comp", and at all other times this will be "dev".
