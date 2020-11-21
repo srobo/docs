@@ -84,10 +84,10 @@ x = 8
 my_string = "Tall ship"
 ~~~~~
 
-You can ask the user to put some text into a variable with the `raw_input` function (we'll cover functions in more detail later):
+You can ask the user to put some text into a variable with the `input` function (we'll cover functions in more detail later):
 
 ~~~~~ python
-name = raw_input("What is your name?")
+name = input("What is your name?")
 ~~~~~
 
 [Concept: Identifiers](#concept-identifiers) {#concept-identifiers}
@@ -104,7 +104,7 @@ Exercises: Variables and Mathematics
 
 ### Average calculator ###
 
-The first two lines of this program put two numbers entered by the user into variables `a` and `b`. (The `input` function is like `raw_input`, but returns a number (e.g. `42`) when you enter one, rather than a string (like `"42"`).) Replace the comment with code that averages the numbers and puts them in a variable called `average`.
+The first two lines of this program put two numbers entered by the user into variables `a` and `b`. (The `input` function is like `input`, but returns a number (e.g. `42`) when you enter one, rather than a string (like `"42"`).) Replace the comment with code that averages the numbers and puts them in a variable called `average`.
 
 ~~~~~ python
 a = input("Enter first number: ")
@@ -147,7 +147,7 @@ False
 `if` statements execute code only if their condition is true. The code to include in the `if` is denoted by a number of indented lines (see the concept section on [code blocks][block]). To indent a line, press the tab key or insert four spaces at the start. You can also include an `else` statement, which is executed if the condition is false. For example:
 
 ~~~~~ python
-name = raw_input("What is your name?")
+name = input("What is your name?")
 if name == "Tim":
 	print("Hello Tim.")
 	print("You've got an email.")
@@ -206,7 +206,7 @@ In most other programming languages, if you don't indent your code it will run j
 A group of consecutive statements that are all indented by the same distance is called a block. `if` statements, as well as functions and loops, all refer to the block that follows them, which must be indented further than that statement. An example is in order. Let's expand the first `if` example:
 
 ~~~~~ python
-name = raw_input("What is your name?")
+name = input("What is your name?")
 email = "Bank of Nigeria: Tax Refund"
 if name == "Tim":
 	print("Hello Tim.")
@@ -387,17 +387,17 @@ Exercises: Lists and Loops
 Write a program which calculates the average of a list of numbers. You can specify the list in the code.
 
 **Extension:**
-You can tell when a user has not entered anything at a `raw_input` prompt when it returns the empty string, `""`. Otherwise, it returns a string (like "42.5"), which you can turn into a number with the `float` function. For example:
+You can tell when a user has not entered anything at a `input` prompt when it returns the empty string, `""`. Otherwise, it returns a string (like "42.5"), which you can turn into a number with the `float` function. For example:
 
 ~~~~~ python
-var = raw_input("Enter a number: ")
+var = input("Enter a number: ")
 if var == "":
 	print("You didn't enter anything!")
 else:
 	print("You entered",float(var))
 ~~~~~
 
-Now, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `raw_input` prompt.
+Now, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `input` prompt.
 
 ### Fizz buzz ###
 
