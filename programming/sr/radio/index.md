@@ -68,6 +68,8 @@ signal_strength
 
 bearing
 : A float giving the angle to the `Target` in radians.
+  <br>
+  A bearing of `0` is in front of the robot. Positive bearings are to the robot's right.
 
 ### [`TargetInfo`](#TargetInfo) {#TargetInfo}
 
