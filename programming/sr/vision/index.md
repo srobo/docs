@@ -176,8 +176,7 @@ marker_type
     One of:
 
     * `MARKER_ARENA`
-    * `MARKER_TOKEN_SILVER`
-    * `MARKER_TOKEN_GOLD`
+    <!-- Add other game-specific values here too -->
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.
