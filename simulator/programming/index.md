@@ -45,7 +45,7 @@ Because these sensors are pre-attached to the ruggeduino, you do not need to set
 
 #### Microswitches
 
-The microswitches are attached to digital pins 2-6:
+The microswitches are attached to digital pins 2 and 3:
 
 | Pin | Location |
 |-----|----------|
