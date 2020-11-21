@@ -76,6 +76,13 @@ It has the following attributes:
 
 station_code
 : The two character identifier of the transmitter.
+  Valid values are members of the `StationCode` enum.
+  ~~~~~ python
+  from sr.robot import StationCode
+
+  for station in StationCode:
+      print(station)
+  ~~~~~
 
 owned_by
 : The zone id of the robot that currently owns the stations territory. A `None` value indicates an unclaimed territory.
