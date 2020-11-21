@@ -71,6 +71,8 @@ tree:
         title: Motors
       - url: /programming/sr/power/
         title: Power
+      - url: /programming/sr/radio/
+        title: Radio
       - url: /programming/sr/ruggeduinos/
         title: Ruggeduinos
         tree:
