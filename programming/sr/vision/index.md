@@ -36,11 +36,11 @@ R = Robot()
 
 while True:
     markers = R.see()
-    print "I can see", len(markers), "markers:"
+    print("I can see", len(markers), "markers:")
 
     for m in markers:
         if m.info.marker_type == MARKER_ARENA:
-            print " - Marker #{0} is {1} metres away".format( m.info.code, m.dist )
+            print(" - Marker #{0} is {1} metres away".format(m.info.code, m.dist))
 ~~~~~
 
 [Choosing Resolution](#ChoosingResolution) {#ChoosingResolution}
@@ -217,9 +217,9 @@ polar
     For example, the following code displays the polar coordinate of a `Point` object `p`:
 
     ~~~~~ python
-    print "length", p.polar.length
-    print "rot_x", p.polar.rot_x
-    print "rot_y", p.polar.rot_y
+    print("length", p.polar.length)
+    print("rot_x", p.polar.rot_x)
+    print("rot_y", p.polar.rot_y)
     ~~~~~
 
 [`Orientation`](#Orientation) {#Orientation}

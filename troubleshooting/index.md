@@ -42,7 +42,7 @@ Check the log file for errors
     see any error reports.
 
 Print all the things
-:   Adding [`print` statements](/docs/python/tutorial/inputoutput.html)
+:   Adding `print` statements
     into the code you're working on allows you to track the progress of
     the system while it is running. When working on non-software systems
     other mechanisms are used to achieve the same goal &mdash; LEDs

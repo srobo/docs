@@ -15,14 +15,14 @@ A simple function that calculates the square of a number:
 
 ~~~~~ python
 def square(num):
-    return num**2
+    return num ** 2
 ~~~~~
 
 This would be used by some other code as follows:
 
 ~~~~~ python
 sq = square(5)
-print sq  # prints: 25
+print(sq)  # prints: 25
 ~~~~~
 
 Another advantage of grouping your code like this is that if you decide you change the way that it works slightly,
@@ -33,6 +33,6 @@ The same function modified & printing a log message:
 
 ~~~~~ python
 def square(num):
-    print 'found the square of %d' % num
+    print("found the square of {:d}".format(num))
     return num * num
 ~~~~~
