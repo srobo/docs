@@ -13,6 +13,19 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2020](#2020)
+---------------------
+
+<img src="{{ site.baseurl }}/images/content/rules/arena-2020.png" alt="A diagram of the arena for the SR2020 game" class="left" />
+
+The 2020 game, _Two Colours_, challenged teams to score points by retrieving
+coloured tokens from on and around a raised platform in the centre of the arena.
+They had to place these tokens within their scoring zone (i.e. their corner of
+the arena). However, if a team gathered more than one token colour within their
+scoring zone, each token's value would drop from 3 points to 1 point.
+
+Full details of the 2020 game are available in the [rulebook]({{ site.baseurl }}/resources/2020/rulebook.pdf).
+
 [2019](#2019)
 ---------------------
 
