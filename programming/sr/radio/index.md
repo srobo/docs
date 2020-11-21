@@ -3,16 +3,17 @@ layout: page
 title: Radio
 ---
 
-Radio
-=====
+# Radio
 
 <div class="info">
 This documentation refers to a feature which is only available within the simulator.
 </div>
 
-The `sr.robot` library contains support for detecting radio transmitters with the simulated radio unit on the robot.
-Radio transmitters are attached to various items in the Student Robotics arena.
-Each transmitter encodes their identity in a machine-readable way, which means that robots can identify these objects.
+The `sr.robot` library contains support for using a simulated radio unit on the robot.
+Radio transmitters and receivers are attached to various items in the Student Robotics arena.
+Each transmitter encodes their identity in a machine-readable way, which means that receivers can identify these objects.
+
+## [Detecting other stations](#detecting-other-stations) {#detecting-other-stations}
 
 Using the signal strength and bearing of the received radio signals, you are able to
 determine the distance and direction of a transmitter in 3D space relative to
@@ -50,12 +51,11 @@ while True:
         ))
 ~~~~~
 
+<!-- TODO: radio tranmission here -->
 
-[Objects of the Radio System](#radio_objects) {#radio_objects}
-===================================
+## [Objects of the Radio System](#radio_objects) {#radio_objects}
 
-[`Target`](#Target) {#Target}
-----------
+### [`Target`](#Target) {#Target}
 
 A `Target` object contains information about a _detected_ transmitter.
 It has the following attributes:
@@ -69,8 +69,7 @@ signal_strength
 bearing
 : A float giving the angle to the `Target` in radians.
 
-[`TargetInfo`](#TargetInfo) {#TargetInfo}
---------------
+### [`TargetInfo`](#TargetInfo) {#TargetInfo}
 
 The `TargetInfo` object contains information about a transmitter.
 It has the following attributes:
