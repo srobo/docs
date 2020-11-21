@@ -6,6 +6,10 @@ title: Vision
 Vision
 ======
 
+<div class="info">
+This documentation refers to a feature which is only available on the physical robot kits.
+</div>
+
 The `sr.robot` library contains support for detecting libkoki markers with the provided webcam.
 Markers are attached to various items in the Student Robotics arena.
 Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.

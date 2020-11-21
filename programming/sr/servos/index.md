@@ -6,6 +6,10 @@ title: Servos
 Servos
 ======
 
+<div class="info">
+This documentation refers to a feature which is only available on the physical robot kits.
+</div>
+
 The `servos` object is used to control a collection of Servo Boards.
 Similar to `motors` and `ruggeduinos`, `servos` can be used like a list.
 To do something with the **first Servo Board**, you would use:
