@@ -31,15 +31,6 @@ Your code should be developed in `robot.py`.
 
 Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
 
-### Robot
-
-There are two possible classes you can use to control your robot. You are
-encouraged to use the newer [`ManualTimestepRobot` class][manual-timestep-class]
-rather than the older `Robot` class. This avoids unpredictable behaviour which
-can result from simulator time not passing at the same rate as real time.
-
-[manual-timestep-class]: /docs/simulator/programming/time#manual-timestep-robot
-
 ### Motors
 
 Your robot has one motor board attached, the left wheel in port `m0`, and the right wheel in `m1`.
