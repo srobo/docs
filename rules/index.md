@@ -6,7 +6,13 @@ title: 2021 Rules
 2021 Rules
 ==========
 
-The rules for SR2021 will be published soon.
+[<img class="left" src="{{ site.baseurl }}/resources/2021/rulebook.png" />]({{ site.baseurl }}/resources/2021/rulebook.html)
+The rules, regulations and specifications for the SR2021 competition can be
+found in the [rulebook]({{ site.baseurl }}/resources/2021/rulebook.html).
+
+The rules may be subject to changes, so please ensure you're using the most up-to-date version.
+We will also let you know of any important changes by email.
+
 
 Previous Rules
 ==============
