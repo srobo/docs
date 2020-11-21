@@ -6,7 +6,7 @@ tree:
   - url: /simulator
     title: Simulator
     tree:
-      - url: /simulator/programming
+      - url: /simulator/programming/
         title: Programming
         tree:
           - url: /simulator/programming/time
