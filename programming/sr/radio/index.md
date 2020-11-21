@@ -15,6 +15,9 @@ Each transmitter encodes their identity in a machine-readable way, which means t
 
 ## [Detecting other stations](#detecting-other-stations) {#detecting-other-stations}
 
+Each territory in the arena transmits its identity and information about who has
+claimed it several times per second.
+
 Using the signal strength and bearing of the received radio signals, you are able to
 determine the distance and direction of a transmitter in 2D space relative to
 the radio. Therefore, if the robot can detect transmitters that is at a fixed
