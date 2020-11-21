@@ -71,16 +71,16 @@ These are shown as blue coloured blocks on the robot. The `analogue_read` method
 
 #### LEDs
 
-The LEDs are attached to digital pins 7-12:
+The LEDs are attached to digital pins 4-9:
 
 | Pin | Location |
 |-----|----------|
-| 7   | Red (right) |
-| 8   | Green (right) |
-| 9   | Blue (right) |
-| 10  | Blue (left) |
-| 11  | Green (left) |
-| 12  | Red (left) |
+| 4   | Red (right) |
+| 5   | Green (right) |
+| 6   | Blue (right) |
+| 7   | Blue (left) |
+| 8   | Green (left) |
+| 9   | Red (left) |
 
 Using the `digital_write` method, you can set these to True (On) or False (Off).
 
