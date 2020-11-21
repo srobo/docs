@@ -55,7 +55,7 @@ The resolution that this image is taken at can be changed using the optional `re
 
 ~~~~~ python
 # Take a photo at 1280 x 1024
-markers = R.see( res=(1280,1024) )
+markers = R.see(res=(1280, 1024))
 ~~~~~
 
 There are currently two kinds of webcam issued with SR kit: the Logitech C500 and C270.

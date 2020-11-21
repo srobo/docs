@@ -116,7 +116,7 @@ R.wait_start()
 ~~~~~
 
 During the setup phase, the Robot hardware is inaccessible.
-For example,`R.motors` is unavailable since enumerations occurs in the `init` function.
+For example, `R.motors` is unavailable since enumerations occurs in the `init` function.
 In this phase you can configure how the Robot finds and configures hardware.
 
 After the `init` call, all hardware is accessible.

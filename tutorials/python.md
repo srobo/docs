@@ -394,7 +394,7 @@ var = input("Enter a number: ")
 if var == "":
 	print("You didn't enter anything!")
 else:
-	print("You entered",float(var))
+	print("You entered", float(var))
 ~~~~~
 
 Now, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `input` prompt.
