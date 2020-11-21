@@ -37,6 +37,7 @@ Within your `Robot` (`R` in this case), you then have access to the following at
 * [motors](/docs/programming/sr/motors/)
 * [power](/docs/programming/sr/power/)
 * [servos](/docs/programming/sr/servos/)
+* [radio](/docs/programming/sr/radio/)
 * [ruggeduinos](/docs/programming/sr/ruggeduinos/)
 * [vision](/docs/programming/sr/vision/)
 
