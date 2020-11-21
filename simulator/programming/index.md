@@ -93,17 +93,6 @@ The LEDs are attached to digital pins 7-12:
 
 Using the `digital_write` method, you can set these to True (On) or False (Off).
 
-### Camera
-
-Your robot has a camera, which is attached to the top of your robot. A live preview of what the camera sees is shown in the top-left corner. The vision system uses Webots' object recognition, rather than [fiducial markers]({{ site.baseurl }}/programming/sr/vision/markers/).
-
-The `see` method will return a list of visible markers in the arena, but doesn't allow a resolution argument. Each token is as described in the [vision docs]({{ site.baseurl }}/programming/sr/vision/), except:
-
-- As well as the [existing constants]({{ site.baseurl }}/programming/sr/vision/#MarkerInfo), `Marker.info.marker_type` can be referred to as `MarkerType.SILVER`, `MarkerType.GOLD` or `MarkerType.ARENA`. `MarkerType` can be imported with `from sr.robot import MarkerType`
-- The following attributes are not available:
-  - `Marker.res`
-  - `Point.image`
-
 ### Time
 
 In the simulated environment, time advances only at the pace that the simulator
