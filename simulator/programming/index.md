@@ -39,7 +39,7 @@ The motor board does not have a part code, so it needs to be indexed using `0`.
 
 ### Ruggeduino
 
-Your robot has five microswitches and six distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
+Your robot has two microswitches and six distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
 
 Because these sensors are pre-attached to the ruggeduino, you do not need to set its `pin_mode`.
 
@@ -83,17 +83,6 @@ The LEDs are attached to digital pins 7-12:
 | 12  | Red (left) |
 
 Using the `digital_write` method, you can set these to True (On) or False (Off).
-
-### Camera
-
-Your robot has a camera, which is attached to the top of your robot. A live preview of what the camera sees is shown in the top-left corner. The vision system uses Webots' object recognition, rather than [fiducial markers]({{ site.baseurl }}/programming/sr/vision/markers/).
-
-The `see` method will return a list of visible markers in the arena, but doesn't allow a resolution argument. Each token is as described in the [vision docs]({{ site.baseurl }}/programming/sr/vision/), except:
-
-- As well as the [existing constants]({{ site.baseurl }}/programming/sr/vision/#MarkerInfo), `Marker.info.marker_type` can be referred to as `MarkerType.SILVER`, `MarkerType.GOLD` or `MarkerType.ARENA`. `MarkerType` can be imported with `from sr.robot import MarkerType`
-- The following attributes are not available:
-  - `Marker.res`
-  - `Point.image`
 
 ### Time
 
