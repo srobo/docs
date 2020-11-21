@@ -6,6 +6,10 @@ title: Ruggeduino custom firmware
 Custom firmware
 ===============
 
+<div class="info">
+This documentation refers to a feature which is only available on the physical robot kits.
+</div>
+
 The Ruggeduino that came as part of your kit was shipped with a firmware that provides the functionality outlined in the [Ruggeduino](/docs/programming/sr/ruggeduinos) page.
 You may wish to extend the functionality of this firmware, or completely replace it.
 The `sr.robot` library provides support for three Ruggeduino firmware scenarios:
