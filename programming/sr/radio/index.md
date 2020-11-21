@@ -51,7 +51,20 @@ while True:
         ))
 ~~~~~
 
-<!-- TODO: radio tranmission here -->
+## [Claiming Territories](#claiming-territories) {#claiming-territories}
+
+When your radio's antenna is within a territory, you are within range to claim it.
+You can claim that territory using your robot's radio:
+
+~~~~ python
+R.radio.claim_territory()
+~~~~
+
+This function takes a couple of seconds to complete and you must stay within
+range of the territory for the whole duration it is running for your claim to
+succeed.
+
+No information is returned from `claim_territory`.
 
 ## [Objects of the Radio System](#radio_objects) {#radio_objects}
 
