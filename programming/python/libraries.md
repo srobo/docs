@@ -18,7 +18,6 @@ yourself.
  * [matplotlib 3.3.3](https://pypi.org/project/matplotlib/3.3.3/)
  * [numpy 1.19.3](https://pypi.org/project/numpy/1.9.3/)
  * [pandas 1.1.4](https://pypi.org/project/pandas/1.1.4/)
- * [pytorch 1.7.0](https://pypi.org/project/torch/1.7.0/)
  * [scikit-learn 0.23.2](https://pypi.org/project/scikit-learn/0.23.2/)
  * [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
 
