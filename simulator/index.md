@@ -50,6 +50,10 @@ If webots is picking up the incorrect version of Python, you'll need to change i
 
 Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-<version>` directory, and re-download it using the above link.
 
+If you need a specific version of the simulator, or want to see what changes
+have been made with each version, please see the
+[list of releases](https://github.com/srobo/competition-simulator/releases).
+
 ## Overview
 
 Within the Webots IDE, there are a few different panels:
