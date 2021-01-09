@@ -33,7 +33,8 @@ which will be available to your robot code during the competition. Note that for
 local development you will need to install these yourself.
 
 If there are other libraries you would like included, please let us know
-[in the Discord](https://discord.com/channels/775497131057741836/777582218662510612) and include a link to the package on [PyPI](https://pypi.org/).
+in [`#programming-help`][programming-help] on the [Discord][discord] and include
+a link to the package on [PyPI](https://pypi.org/).
 
 ### Installing the simulation
 
@@ -44,11 +45,19 @@ You may receive a warning about your computer's GPU not being good enough, which
 
 #### Changing your version of Python
 
-If webots is picking up the incorrect version of Python, you'll need to change it. This can be done using `Tools > Preferences > General > Python command`. You'll need to ensure a matching version of Python is installed. If you're still having problems, ask for help in [the discord](https://discord.com/channels/775497131057741836/777584209896275988)
+If webots is picking up the incorrect version of Python, you'll need to change it.
+This can be done using `Tools > Preferences > General > Python command`.
+You'll need to ensure a matching version of Python is installed. If you're still
+having problems, ask for help in [`#simulator-help`][simulator-help] in
+[Discord][discord].
 
 ### Updates
 
 Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-<version>` directory, and re-download it using the above link.
+
+[discord]: {{ site.baseurl }}/team_admin/discord
+[programming-help]: https://discord.com/channels/775497131057741836/777582218662510612
+[simulator-help]: https://discord.com/channels/775497131057741836/777584209896275988
 
 ## Overview
 
