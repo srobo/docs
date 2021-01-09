@@ -33,7 +33,7 @@ which will be available to your robot code during the competition. Note that for
 local development you will need to install these yourself.
 
 If there are other libraries you would like included, please let us know
-[in the discord](https://discord.com/channels/775497131057741836/777582218662510612) and include a link to the package on [PyPI](https://pypi.org/).
+[in the Discord](https://discord.com/channels/775497131057741836/777582218662510612) and include a link to the package on [PyPI](https://pypi.org/).
 
 ### Installing the simulation
 
