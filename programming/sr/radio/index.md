@@ -57,7 +57,16 @@ while True:
 ## [Claiming Territories](#claiming-territories) {#claiming-territories}
 
 When your radio's antenna is within a territory, you are within range to claim it.
-You can claim that territory using your robot's radio:
+Claiming a territory requires your robot sending two signals to the tower,
+two seconds apart. You must ensure that your robot is within the range of the
+territory when both of the signals are sent.
+
+There are two approaches to claiming a territory, depending upon how much
+control you need over your robots behaviour while it is making a claim.
+
+The simplest approach is to use the `claim_territory` method, which will take
+care of sending the signals as well as ensuring that the proper amount of time
+passes between them:
 
 ~~~~ python
 R.radio.claim_territory()
@@ -68,6 +77,21 @@ range of the territory for the whole duration it is running for your claim to
 succeed.
 
 No information is returned from `claim_territory`.
+
+Alternatively if you would like to be able to control your robot while also
+making a territory claim, you can instead manage the claim signals directly:
+
+~~~~ python
+R.radio.begin_territory_claim()
+
+# Do stuff here
+
+R.radio.complete_territory_claim()
+~~~~
+
+Note that when using `begin_territory_claim` and `complete_territory_claim` you
+are also responsible for ensuring that the proper amount of time (two seconds)
+passes between the begin and the complete signals.
 
 ## [Objects of the Radio System](#radio_objects) {#radio_objects}
 
