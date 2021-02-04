@@ -14,7 +14,7 @@ title: Simulator
 
 ### Prerequisites
 
-You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 1.5GB). This is the platform we run our simulation in.
+You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 1.5GB). This is the platform we run our simulation in. The simulator supports version "R2021a" of Webots, and will show warnings for incorrect versions.
 
 #### Python Version
 
