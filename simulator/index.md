@@ -74,7 +74,7 @@ Within the Webots IDE, there are a few different panels:
 
 This is the pre-built robot used in the simulator, with an interface [similar](./programming) to the SR API.
 
-The robot has an [array of sensors](./programming/#ruggeduino) which can be [programmed](./programming) and a [radio system]({{ site.baseurl }}/programming/sr/radio/).
+The robot has an [array of sensors](./programming/#ruggeduino) which can be [programmed](./programming), along with a [compass]({{ site.baseurl }}/programming/sr/compass/) and a [radio system]({{ site.baseurl }}/programming/sr/radio/).
 
 ### Other robots
 
