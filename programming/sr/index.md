@@ -34,6 +34,7 @@ R = Robot()
 
 Within your `Robot` (`R` in this case), you then have access to the following attributes:
 
+* [compass](/docs/programming/sr/compass/)
 * [motors](/docs/programming/sr/motors/)
 * [power](/docs/programming/sr/power/)
 * [servos](/docs/programming/sr/servos/)
