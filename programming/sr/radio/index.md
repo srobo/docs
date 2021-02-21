@@ -23,6 +23,12 @@ determine the distance and direction of a transmitter in 2D space relative to
 the radio. Therefore, if the robot can detect transmitters that is at a fixed
 location in the arena, a robot can calculate its exact position in the arena.
 
+<div class="info">
+To more closely reflect reality, artificial noise has been added such that the
+signal strength and bearing are not perfectly accurate, and may fluctuate slightly
+between measurements.
+</div>
+
 The `sr.robot` library provides this through a `radio` attached to your `Robot`,
 which is can perform a `sweep` to detect transmitters:
 
