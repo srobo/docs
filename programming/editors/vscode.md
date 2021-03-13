@@ -179,8 +179,9 @@ to VSCode and select **Run** > **Start Debugging** or press <kbd>F5</kbd>.
 
 VSCode will attach to your code, paused at the `breakpoint()`  line.
 
-A full tutorial of debugging in VSCode is beyond the scope of this article,
-though the most common commands (all available from the **Run** menu) are:
+A full tutorial of [debugging in VSCode][vscode-debugging] is beyond the scope
+of this article, though the most common commands (all available from the **Run**
+menu) are:
 
 * Step Over (<kbd>F10</kbd>)
 * Step Into (<kbd>F11</kbd>)
@@ -188,3 +189,5 @@ though the most common commands (all available from the **Run** menu) are:
 * Continue (<kbd>F5</kbd>)
 
 You can also inspect the values of variables in your code by hovering over them.
+
+[vscode-debugging]: https://code.visualstudio.com/docs/editor/debugging
