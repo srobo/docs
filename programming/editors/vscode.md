@@ -68,6 +68,14 @@ so for now we just document the simulator version.
 -->
 </div>
 
+Interactive debugging is a great way to inspect what your code is doing whilst
+the simulator is actually running. It will allow you to inspect the values of
+variables throughout the code and even re-run sections to understand how they
+interact.
+
+There are two initial setup steps (installing `debugpy` and configuring VSCode)
+and then two steps each time you want to debug your code.
+
 ### Install `debugpy`
 
 In order for VSCode to be able to debug your code as it runs in the simulator
