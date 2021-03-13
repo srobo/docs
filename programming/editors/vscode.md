@@ -145,4 +145,38 @@ to instead be:
 [debugpy]: https://pypi.org/project/debugpy/
 [debug-config]: https://code.visualstudio.com/docs/python/debugging
 
-<!-- TODO: add instructions for setting up your code -->
+### Configure your code
+
+To debug a given part of your code, you will need to insert into your code a
+statement which will launch the debugger.
+
+At the place in your code that you would like the debugger to start, insert the
+following snippet:
+
+``` python
+import debugpy
+debugpy.listen(5678)
+debugpy.wait_for_client()
+breakpoint()
+```
+
+This code (specifically the `wait_for_client` call) will block until the
+debugger is attached.
+
+### Run and debug
+
+You can now launch your code in the simulator exactly as you would normally.
+When your code stops running (the simulation will also stop processing) change
+to VSCode and select **Run** > **Start Debugging** or press <kbd>F5</kbd>.
+
+VSCode will attach to your code, paused at the `breakpoint()`  line.
+
+A full tutorial of debugging in VSCode is beyond the scope of this article,
+though the most common commands (all available from the **Run** menu) are:
+
+* Step Over (<kbd>F10</kbd>)
+* Step Into (<kbd>F11</kbd>)
+* Step Out (<kbd>Shift</kbd> + <kbd>F11</kbd>)
+* Continue (<kbd>F5</kbd>)
+
+You can also inspect the values of variables in your code by hovering over them.
