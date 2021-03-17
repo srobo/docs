@@ -130,8 +130,3 @@ owned_by
 : The zone id of the robot that currently owns the stations territory. A `None` value indicates an unclaimed territory.
   <br>
   Remember that you can find out which zone your robot is in using <a href="/docs/programming/sr/#OtherRobotAttributes"><code>R.zone</code></a>.
-
-locked
-: A boolean value (`True` or `False`) for whether or not the territory is locked.
-  <br>
-  Locked territories are always unowned and cannot be claimed.
