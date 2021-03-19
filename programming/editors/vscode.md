@@ -99,13 +99,23 @@ Command Prompt (and not the terminal within VSCode or PowerShell).
 Next, we are going to create a [debug configuration][debug-config] so that
 VSCode knows what you want it to debug.
 
+<!--
+If the user hasn't activated their Python extension in the current editor
+session then it won't yet have registered itself. Additionally if the currently
+focused file is not a Python file then they will be asked for the environment
+they want to debug. Avoid both of these by instructing the user to open their
+`robot.py` before attempting to configure debugging.
+-->
+
 1. Open the workspace containing your code.
-2. Select the Run view in the sidebar (or press
+2. Open your `robot.py` file.
+3. Select the Run view in the sidebar (or press
    <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd> /
    <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>D</kbd> on macOS)
-3. Click "create a launch.json file".
-4. In the menu which appears, select **Remote Attach**
-5. Leave the subsequent values at their defaults (press <kbd>Enter</kbd> twice)
+4. Click "create a launch.json file".
+5. In the menu which appears, if you are asked to select an environment select **Python**.
+6. When asked for a Debug Configuration, select **Remote Attach**.
+7. Leave the subsequent values at their defaults (press <kbd>Enter</kbd> twice).
 
 This will create a new file in your project which contains the configuration.
 
