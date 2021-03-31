@@ -87,6 +87,11 @@ tree:
         tree:
         - url: /programming/sr/vision/markers
           title: Markers
+    - url: /programming/editors
+      title: Code Editors
+      tree:
+      - url: /programming/editors/vscode
+        title: VSCode
     - url: /programming/git_repositories
       title: Git Repositories
   - url: /rules/

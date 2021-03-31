@@ -108,6 +108,15 @@
     }
   }
 
+  kbd {
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 1px #ddd;
+    font-size: 0.9em;
+    padding: 1px 3px;
+  }
+
   ul, ol {
     margin: 1.2em 0 1.2em 40px;
 
