@@ -23,7 +23,7 @@ here.
 
 ## Code Completions
 
-In order for VSCode to pick up the `sr.robot` library and offer completions
+In order for VSCode to pick up the `sr.robot` library and offer [completions][code-completion]
 you'll need to tell it where to find the library files:
 
 1. Open the workspace containing your code.
@@ -55,6 +55,7 @@ you'll need to tell it where to find the library files:
 
    then the path you should add is `"competition-simulator-<version>/modules/"`.
 
+[code-completion]: https://en.wikipedia.org/wiki/Autocomplete#In_source_code_editors
 [workspace-settings]: https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings
 
 ## Interactive Debugging
