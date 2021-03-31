@@ -5,11 +5,15 @@ title: VSCode
 
 # Visual Studio Code
 
-Visual Studio Code (known commonly as VSCode) is a free code editor developed by
-Microsoft. As such it has [extensive documentation][vscode-docs] about its
-general use, which we will not repeat here. Instead this page will focus on the
-ways to get the most out of VSCode when developing code for Student Robotics.
+[Visual Studio Code][vscode] (known commonly as VSCode) is a free code editor
+developed by Microsoft. As such it has [extensive documentation][vscode-docs]
+about its general use, which we will not repeat here. Instead this page will
+focus on the ways to get the most out of VSCode when developing code for Student
+Robotics.
 
+<!-- We link to the homepage as that has a big install button --->
+[vscode]: https://code.visualstudio.com
+<!-- but we also want to link directly to their docs so people have a starting point --->
 [vscode-docs]: https://code.visualstudio.com/docs
 
 ## Python Extension
