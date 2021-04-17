@@ -10,4 +10,4 @@ in short:
 Don't.
 ===================
 
-thanks.
+Thank you for coming to my TED talk.
