@@ -1,6 +1,6 @@
 ---
 layout: page
-title: using Machine Learning
+title: Using Machine Learning
 ---
 Using machine learning
 ===================
