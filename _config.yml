@@ -29,10 +29,24 @@ emails:
   accounts: accounts@studentrobotics.org
 
 social:
-  facebook-official: //facebook.com/StudentRobotics
-  twitter: //twitter.com/studentrobotics
-  youtube: //youtube.com/StudentRobotics
-  github: //github.com/srobo
+  - title: GitHub
+    icon: github
+    link: https://github.com/srobo
+  - title: Twitter
+    icon: twitter
+    link: https://twitter.com/studentrobotics
+  - title: YouTube
+    icon: youtube-play
+    link: https://youtube.com/user/StudentRobotics
+  - title: Instagram
+    icon: instagram
+    link: https://www.instagram.com/student_robotics/
+  - title: Facebook
+    icon: facebook-official
+    link: https://facebook.com/StudentRobotics
+  - title: LinkedIn
+    icon: linkedin
+    link: https://www.linkedin.com/company/10969472/
 
 exclude:
   - README.md
