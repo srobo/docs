@@ -22,7 +22,7 @@ yourself.
  * [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
 
 If there are other libraries you would like included, please let us know
-[via the forums](/forum) and include a link to the package on [PyPI](https://pypi.org/).
+[via the forums]({{ site.url }}/forum) and include a link to the package on [PyPI](https://pypi.org/).
 
 Robot Kit
 ---------

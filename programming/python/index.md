@@ -26,4 +26,4 @@ There are a number of tutorials out there which might help you to learn to progr
     [Google's Python Class](https://developers.google.com/edu/python) looks to be a good tutorial which has some lecture videos to go with it.
 
 * [The Official Docs](https://docs.python.org/2.7/), for the version of python on the [Odroid Brain Boards](/docs/kit/brain_board).
-    We also host a [copy](/docs/python) of docs for the precise version (2.7.5) that it uses.
+    We also host a [copy]({{ site.url }}/docs/python) of docs for the precise version (2.7.5) that it uses.
