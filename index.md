@@ -7,8 +7,7 @@ Introduction
 ============
 
 There are a number of sections in the documentation,
- offering help for the [IDE](/docs/IDE/),
- the [kit](/docs/kit/) and [programming](/docs/programming/).
+ offering help for the [kit](/docs/kit/) and [programming](/docs/programming/).
 Under the [tutorials](/docs/tutorials/) section,
  a number of these things are combined to help you understand what you can,
  or need, to do.

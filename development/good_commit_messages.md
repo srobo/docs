@@ -28,7 +28,7 @@ More information on what to write can be found on [this website](http://lbrandy.
 It is good practice to produce small commits that do just one thing.
 If you need more than one line (less than 80 characters) to summarise the change, then the commit does too much!
 
-Although not essential in the IDE it is a good idea to format your commit messages in a certain way.
+Although not essential, it is a good idea to format your commit messages in a certain way.
 As mentioned above you should leave a blank line between the summary and the main message,
  [this website](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
  explains the reasoning behind this and many other commit message formatting conventions.
