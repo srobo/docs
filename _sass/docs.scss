@@ -96,6 +96,10 @@
       float: right;
       margin-left: 10px;
     }
+
+    &.half {
+      max-width: 50%;
+    }
   }
 
   iframe.video {
