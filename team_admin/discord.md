@@ -5,7 +5,7 @@ title: Discord Server
 
 # Discord Server
 
-To assist with communications, especially in a virtual competition, there's a [Discord](https://discord.com/) server for communicating with blue-shirts, your team members and other teams.
+To assist with communications there's a [Discord](https://discord.com/) server for communicating with blue-shirts, your team members and other teams.
 
 If you do not wish to, or are unable to join Discord, you can still get support from <{{ site.emails.teams }}> as normal.
 
