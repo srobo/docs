@@ -152,7 +152,7 @@ R.servo_board.servos[11].position = None
 It can sometimes be useful to save a photo of what markers the robot can see:
 
 ~~~~~ python
-R.camera.save("my-photo.png")
+R.camera.save("my-photo.png")  # Save my-photo.png to the USB drive
 ~~~~~
 
 ### Looking for markers
