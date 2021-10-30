@@ -40,14 +40,10 @@ tree:
     - url: /programming/sr/
       title: sr
       tree:
-      - url: /programming/sr/compass/
-        title: Compass
       - url: /programming/sr/motors/
         title: Motors
       - url: /programming/sr/power/
         title: Power
-      - url: /programming/sr/radio/
-        title: Radio
       - url: /programming/sr/ruggeduinos/
         title: Ruggeduinos
         tree:
