@@ -156,7 +156,7 @@ A `ThreeDCoordinate` object contains an `x`, `y` and `z` attribute. The exact me
 
 An `Orientation` object describes the orientation of a marker.
 
-![]({{ site.baseurl }}/images/content/vision/yawpitchroll.png)
+![A visual representation of how the orientation axes work. Source: SourceBots]({{ site.baseurl }}/images/content/vision/yawpitchroll.png)
 
 pitch
 :   Rotation of the marker about the cartesian x-axis, in radians.
@@ -199,8 +199,7 @@ quaternion
 
 The spherical coordinates system has three values to specify a specific point in space.
 
-![]({{ site.baseurl }}/images/content/vision/spherical.png)
-
+![A visual representation of Spherical coordinates. Source: SourceBots]({{ site.baseurl }}/images/content/vision/spherical.png)
 
 - r - The radial distance, the distance from the origin to the point, in metres.
 - θ (theta) - The angle from the azimuth to the point, in radians.
