@@ -136,7 +136,7 @@ from sr.robot import *
 
 RUGGEDUINO_ID = "752303138333517171B1"
 
-R = Robot(ignored_ruggeduinos=["752303138333517171B1"])
+R = Robot(ignored_ruggeduinos=[RUGGEDUINO_ID])
 
 ser = serial.Serial(R.ignored_ruggeduinos[RUGGEDUINO_ID])
 
