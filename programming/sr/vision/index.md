@@ -25,7 +25,7 @@ Under the hood, the vision system is based on [Zoloto](https://zoloto.readthedoc
 [Camera](#camera) {#camera}
 ===========================
 
-The interface to the vision system is through the camera, accessible through `r.camera`.
+The interface to the vision system is through the camera, accessible through `R.camera`.
 
 see
 :   Take a photo through the webcam, and return a list of [`Marker`](#Marker) instances, each of which describes one of the markers that were found in the image.
