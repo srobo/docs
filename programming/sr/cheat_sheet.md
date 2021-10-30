@@ -37,7 +37,7 @@ R = Robot(verbose=True)
 
 ## Selecting which board to control
 
-If you only have one board of a given type plugged into your robot, then you can use it's singular name:
+If you only have one board of a given type plugged into your robot, then you can use its singular name:
 
 ~~~~~ python
 R.power_board.something
