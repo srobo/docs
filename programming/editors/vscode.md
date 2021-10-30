@@ -27,40 +27,14 @@ here.
 
 ## Code Completions
 
-In order for VSCode to pick up the `sr.robot` library and offer [completions][code-completion]
-you'll need to tell it where to find the library files:
+In order for VSCode to pick up the `sr.robot3` library and offer [completions][code-completion]
+you'll need to make the library available within the Python environment that you're using.
 
 1. Open the workspace containing your code.
-2. Open your [workspace settings][workspace-settings] file:
-    * On Windows/Linux - **File** > **Preferences** > **Settings**.
-    * On macOS - **Code** > **Preferences** > **Settings**.
-
-3. Select **Workspace** (rather then **User**).
-4. Search for `python.autoComplete.extraPaths`.
-5. Click "Edit in settings.json".
-6. Add the path to the directory which contains the `sr` directory, within
-   double quotes. The path can be either relative to your project or absolute.
-
-   For example if developing code for the simulator and you have extracted the
-   simulator directory next to your code:
-
-   ```
-   .
-   ├── competition-simulator-<version>
-   │   ├── ...
-   │   ├─ modules
-   │   │   └── sr
-   │   │       └── robot
-   │   │           └── ...
-   │   └─ worlds
-   │       └── Arena.wbt
-   └── robot.py
-   ```
-
-   then the path you should add is `"competition-simulator-<version>/modules/"`.
+2. Open a terminal via **Terminal** > **New Terminal**.
+3. Run `pip install sr.robot3`.
 
 [code-completion]: https://en.wikipedia.org/wiki/Autocomplete#In_source_code_editors
-[workspace-settings]: https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings
 
 ## Interactive Debugging
 
