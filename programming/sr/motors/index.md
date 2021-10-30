@@ -22,7 +22,7 @@ It will look something like this:
 sr.robot3.robot INFO - Found Student Robotics Motor Board v4 - srABC1
 ~~~~~
 
-If you have more than one Motor Board attached, you need to specify which one you want to control. This is done using the part number of the board. For example: if you had a board that was labelled "srABC1",
+If you have more than one Motor Board attached, you need to specify which one you want to control. This is done using the serial number of the board. For example: if you had a board that was detected as "srABC1",
 you could do this instead:
 
 ~~~~~ python
