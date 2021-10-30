@@ -22,7 +22,7 @@ It will look something like this:
 sr.robot3.robot INFO - Found Student Robotics Motor Board v4 - srABC1
 ~~~~~
 
-If you have more than one Motor Board attached, the `motor_boards` object can be used to control a collection of Motor Board. It is a dictionary access via serial number, which is usually written on the board. For example, if you had a board whose serial number was "srABC1",
+If you have more than one Motor Board attached, you need to specify which one you want to control. This is done using the part number of the board. For example: if you had a board that was labelled "srABC1",
 you could do this instead:
 
 ~~~~~ python
