@@ -7,8 +7,8 @@ title: User Accounts
 # User Accounts
 
 Your User Account can be used to access the various online services that we host.
-These include the [forums](/forum), [IDE](/ide) and, for team-leaders,
-a [user management interface](/userman) (see [below](#UserManagement)).
+These include the [forums]({{ site.url }}/forum), [IDE]({{ site.url }}/ide) and, for team-leaders,
+a [user management interface][userman] (see [below](#UserManagement)).
 
 ### Getting an Account
 If you don't yet have an account, you should contact your team-leader,
@@ -34,7 +34,7 @@ They will be able to tell you the details of your account, or reset your passwor
 
 ### Password Change
 If you know your password, but want to change it,
-you can do this using the self service side of the [user management page](/userman).
+you can do this using the self service side of the [user management page][userman].
 
 ### Other Problems
 If your team-leader was unable to resolve your account issue,
@@ -45,7 +45,7 @@ you can ask them to email <{{ site.emails.accounts }}> for more help.
 
 ### Account creation
 
-To create user accounts, visit the [user management page](/userman), and
+To create user accounts, visit the [user management page][userman], and
 log in. In a column on the left, you'll see a list of users currently
 registered for your team.  At the bottom is a link marked 'Register users'.
 Click on this, and you'll be presented with a form for user details.
@@ -67,7 +67,7 @@ When an account is created it starts off as a competitor account. In order to
 allow your fellow team leaders to have full access to the user management pages
 (among other things), you should change them to being a team leader account.
 
-You can change the type of an account in the [user management page](/userman):
+You can change the type of an account in the [user management page][userman]:
 
 1. Select the user in question from the list on the left hand side
 1. Under 'Type' change the selection to 'Team Leader'
@@ -78,7 +78,7 @@ Feel free to add as many team leader accounts as you like; there's no upper limi
 ### Account maintenance
 
 If you need to update any user account data, find their username,
-reset their password or so forth, first log into the [user management page](/userman).
+reset their password or so forth, first log into the [user management page][userman].
 
 Once there, you should find the users name in the list of registered
 users on the left, as well as their username. To check or update their details,
@@ -94,3 +94,5 @@ forget passwords, please find their account as described above and click the
 a single-use link to reset their password.
 
 If you forget your own password, please contact <{{ site.emails.accounts }}>.
+
+[userman]: {{ site.url }}/userman/
