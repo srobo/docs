@@ -110,10 +110,10 @@ You can only set digital outputs (there's no analogue output, although you may f
 # R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pins[PIN_NO].digital_write(VALUE)
 
 # to set Ruggeduinos pin 2 high:
-R.ruggeduinos[0].pins[2].digital_write(True)
+R.ruggeduino.pins[2].digital_write(True)
 
 # to set Ruggeduino's pin 2 low:
-R.ruggeduinos[0].pins[2].digital_write(False)
+R.ruggeduino.pins[2].digital_write(False)
 ~~~~~
 
 [Pull-up resistors](#pullup) {#pullup}
