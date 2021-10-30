@@ -10,7 +10,7 @@ There are a few things that can be done with the power board, namely current and
 As there is only one power board, it is not accessed like a list like `motors` and is instead accessed directly, for example:
 
 ~~~~~ python
-r.power_board.something...
+R.power_board.something...
 ~~~~~
 
 [Power Outputs](#outputs) {#outputs}
@@ -33,16 +33,16 @@ While they are all turned on when your code starts running,
 from sr.robot3 import *
 
 # Turn output H0 off
-r.power_board.outputs[OUT_H0].is_enabled = False
+R.power_board.outputs[OUT_H0].is_enabled = False
 
 # Turn output L0 on
-r.power_board.outputs[OUT_L0].is_enabled = True
+R.power_board.outputs[OUT_L0].is_enabled = True
 
 # Find out whether L3 is enabled
-print(r.power_board.outputs[OUT_L3].is_enabled)
+print(R.power_board.outputs[OUT_L3].is_enabled)
 
 # Find the current (in Amps) being used by L3
-print(r.power_board.outputs[OUT_L3].current)
+print(R.power_board.outputs[OUT_L3].current)
 ~~~~~
 
 An exception is raised if you try to set an output index which doesn't exist.
@@ -50,8 +50,8 @@ An exception is raised if you try to set an output index which doesn't exist.
 You can also control all the outputs together:
 
 ~~~~~ python
-r.power_board.outputs.power_off()
-r.power_board.outputs.power_on()
+R.power_board.outputs.power_off()
+R.power_board.outputs.power_on()
 ~~~~~
 
 <div class="warning">
@@ -70,8 +70,8 @@ You can access these values like so:
 ~~~~~ python
 # Print the battery voltage and current to the log
 print(
-  r.power_board.battery_sensor.voltage,
-  r.power_board.battery_sensor.current,
+  R.power_board.battery_sensor.voltage,
+  R.power_board.battery_sensor.current,
 )
 ~~~~~
 
@@ -109,10 +109,10 @@ between `C6` and `C8`. You can play other tones by providing a frequency.
 from sr.robot3 import Note
 
 # Beep for 0.5s in D.
-r.power_board.piezo.buzz(0.5, Note.D6)
+R.power_board.piezo.buzz(0.5, Note.D6)
 
 # Beep for 2s at 400Hz
-r.power_board.piezo.buzz(2, 400)
+R.power_board.piezo.buzz(2, 400)
 ~~~~~
 
 `ValueError` is raised if the note is not recognised or the frequency is not an integer.
