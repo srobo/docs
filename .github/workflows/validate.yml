@@ -26,4 +26,4 @@ jobs:
         cache-version: 1
 
     - name: Build
-      run: bundle exec jekyll build --config _config.yml
+      run: rake build
