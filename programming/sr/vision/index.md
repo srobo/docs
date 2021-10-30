@@ -45,7 +45,7 @@ while True:
 ~~~~~
 
 see_ids
-:   Take a photo through the webcam, and return a list of marker ids (**not** full `Marker` objects). This doesn't do the same orientation calculations as `see`, and so is much faster to run.
+:   Take a photo through the webcam, and return a list of marker ids (**not** full `Marker` objects). This doesn't do the same [pose estimation](https://en.wikipedia.org/wiki/3D_pose_estimation) calculations as `see`, and so is much faster to run.
 
 ~~~~~ python
 from sr.robot3 import *
