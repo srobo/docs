@@ -29,6 +29,6 @@ feature branch, and [raise a pull request][raise-a-pr].
 ### Navigation Sidebar
 
 The docs navigation sidebar is generated from `_data/sidebar_tree.yaml` as part
-of the build process. This file is manually updated in order that we can
+of the build process. This file is manually updated so that we can
 explicitly control which files are included, in what order as well as adjust the
 page titles.
