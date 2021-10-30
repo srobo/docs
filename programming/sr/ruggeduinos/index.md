@@ -10,36 +10,36 @@ The [Ruggeduino](http://ruggedcircuits.com/html/ruggeduino.html)
 provides a total of 18 pins for either digital input or output (labelled 2 to 13 and A0 to A5),
 including 6 for analogue input (labelled A0 to A5).
 
-The `ruggeduinos` object is used to control a collection of Ruggeduinos.
-Similar to `motors` and `servos`, `ruggeduinos` can be used like a list.
-To do something with the **first Ruggeduino**, you would use:
+When a single Ruggeduino is connected to your robot, you can control it
+using the `ruggeduino` object.
 
 ~~~~~ python
-R.ruggeduinos[0].something...
+R.ruggeduinos.something...
 ~~~~~
-
-...because indexes are 0-based (counting starts from 0, not 1).
-
-When you have more than one Ruggeduino board connected to your kit
-they will be ordered based upon their serial number.
 
 The serial number of each detected Ruggeduino is printed to the log when your robot starts.
 It will look something like this:
 
 ~~~~~ not-code
-Found the following devices:
- - Ruggeduinos:
-    0: Ruggeduino( serialnum = "752303138333517171B1" )
+sr.robot3.robot INFO - Found Ruggeduino - 752303138333517171B1
 ~~~~~
 
-In addition, like `motors`, `ruggeduinos` is actually a dictionary.
-As a result, in `ruggeduinos` you can also use the Ruggeduino serial number as a key.
+If you have more than one Ruggeduino attached, the `ruggeduinos` object 
+can be used to control a collection of Ruggeduinos. Similar to `motors` 
+and `servos`, `ruggeduinos` is a dictionary accessed by serial number.
 For example, if you had a board whose serial number was "752303138333517171B1",
 you could do this instead:
 
 ~~~~~ python
 R.ruggeduinos["752303138333517171B1"].something...
 ~~~~~
+
+<div class="warning">
+    When you have more than one Ruggeduino board connected to your kit,
+    you must use `R.ruggeduinos` and index by serial number. This is so
+    that the kit knows which Ruggeduino you want to control.
+</div>
+
 
 [Setting pin modes](#pinmodes) {#pinmodes}
 --------------------------------------------------------------------------
@@ -48,7 +48,7 @@ To use one of the pins on the Ruggeduino, you must first set whether you want it
 You can do this with the following code:
 
 ~~~~~ python
-R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pin_mode(PIN_NO, MODE)
+R.ruggeduino.pins[10].mode = MODE
 ~~~~~
 
 The possible values for `MODE` are:
@@ -65,12 +65,12 @@ The possible values for `MODE` are:
 An example of how to use this is below:
 
 ~~~~~ python
-# set Ruggeduino board 0's pin 2 to output
-R.ruggeduinos[0].pin_mode(2, OUTPUT)
-# set Ruggeduino board 0's pin 3 to input
-R.ruggeduinos[0].pin_mode(3, INPUT)
-# set Ruggeduino board 0's pin 4 to input and enable pull-up resistor
-R.ruggeduinos[0].pin_mode(4, INPUT_PULLUP)
+# set Ruggeduino pin 2 to output
+R.ruggeduino.pins[2].mode = OUTPUT
+# set Ruggeduino pin 3 to input
+R.ruggeduinos[0].pins[3].mode = INPUT
+# set Ruggeduino git commit -m "pin 4 to input and enable pull-up resistor
+R.ruggeduinos[0].pins[4].mode = INPUT_PULLUP
 ~~~~~
 
 <div class="warning">You cannot use pins 0 and 1, as using these would disrupt communications between the Ruggeduino and the Power Board.</div>
@@ -81,10 +81,10 @@ R.ruggeduinos[0].pin_mode(4, INPUT_PULLUP)
 You can read a **digital** input pin with the following code:
 
 ~~~~~ python
-# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].digital_read(PIN_NO)
+# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pins[PIN_NO].digital_read()
 
-# to read Ruggeduino board 0's digital pin 3...
-pin0 = R.ruggeduinos[0].digital_read(3)
+# to read Ruggeduino's digital pin 3...
+pin0 = R.ruggeduino.pins[3].digital_read()
 ~~~~~
 
 `pin0` will now contain `True` or `False` depending on whether the pin was high (3.3v) or low (0v), respectively.
@@ -92,11 +92,13 @@ pin0 = R.ruggeduinos[0].digital_read(3)
 You can read an **analogue** input pin with the following code:
 
 ~~~~~ python
-# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].analogue_read(PIN_NO)
+# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pins[PIN_NO].analogue_read()
 
-# to read Ruggeduino board 0's analogue pin A0...
-pin0 = R.ruggeduinos[0].analogue_read(0)
+# to read Ruggeduino's analogue pin A0...
+pin0 = R.ruggeduino.pins[A0].analogue_read()
 ~~~~~
+
+The analogue pin numbers are available as `A0`, `A1`, `A2`, `A3`, `A4`, and `A5` respectively.
 
 
 [Output](#output) {#output}
@@ -105,13 +107,13 @@ pin0 = R.ruggeduinos[0].analogue_read(0)
 You can only set digital outputs (there's no analogue output, although you may feel free to modify the Ruggeduino's firmware to add the ability to output [PWM](https://wikipedia.org/wiki/Pulse-width_modulation "Pulse-width modulation") if you desire). To set a digital output pin, you would use the following:
 
 ~~~~~ python
-# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].digital_write(PIN_NO, VALUE)
+# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pins[PIN_NO].digital_write(VALUE)
 
-# to set Ruggeduino board 0's pin 2 high:
-R.ruggeduinos[0].digital_write(2, True)
+# to set Ruggeduinos pin 2 high:
+R.ruggeduinos[0].pins[2].digital_write(True)
 
-# to set Ruggeduino board 0's pin 2 low:
-R.ruggeduinos[0].digital_write(2, False)
+# to set Ruggeduino's pin 2 low:
+R.ruggeduinos[0].pins[2].digital_write(False)
 ~~~~~
 
 [Pull-up resistors](#pullup) {#pullup}
