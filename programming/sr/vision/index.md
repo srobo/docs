@@ -10,85 +10,69 @@ Vision
 This documentation refers to a feature which is only available on the physical robot kits.
 </div>
 
-The `sr.robot` library contains support for detecting libkoki markers with the provided webcam.
+The `sr.robot3` library contains support for detecting fiducial markers with the provided webcam.
 Markers are attached to various items in the Student Robotics arena.
 Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.
-For information on which markers codes are which, see the [markers page](/docs/programming/sr/vision/markers).
+For information on which markers codes are which, see the [markers page](./markers).
 
 Using knowledge of the physical size of the different markers and the characteristics of the webcam,
- libkoki can calculate the position of markers in 3D space relative to the camera.
+your robot can calculate the position of markers in 3D space relative to the camera.
 Therefore, if the robot can see a marker that is at a fixed location in the arena,
  a robot can calculate its exact position in the arena.
 
-The `sr.robot` library provides all of this power through a single function, `R.see`:
+Under the hood, the vision system is based on [Zoloto](https://zoloto.readthedocs.io/), a wrapper around [OpenCV's ArUco library](https://docs.opencv.org/4.5.4/d5/dae/tutorial_aruco_detection.html), using the `36H11` marker set from [April](https://april.eecs.umich.edu/software/apriltag)
 
-~~~~~ python
-from sr.robot import *
-R = Robot()
-markers = R.see()
-~~~~~
+[Camera](#camera) {#camera}
+===========================
 
-When called, this function takes a photo through the webcam and searches for markers within it.
-It returns a list of `Marker` objects, each of which describes one of the markers that were found in the image.
-A detailed description of the attributes of Marker objects is provided [later in this page](#Marker).
+The interface to the vision system is through the camera, accessible through `R.camera`.
+
+see
+:   Take a photo through the webcam, and return a list of [`Marker`](#Marker) instances, each of which describes one of the markers that were found in the image.
 
 Here's an example that will repeatedly print out the distance to each arena marker that the robot can see:
 
 ~~~~~ python
-from sr.robot import *
+from sr.robot3 import *
 R = Robot()
 
 while True:
-    markers = R.see()
+    markers = R.camera.see()
     print("I can see", len(markers), "markers:")
 
     for m in markers:
-        if m.info.marker_type == MARKER_ARENA:
-            print(" - Marker #{0} is {1} metres away".format(m.info.code, m.dist))
+        print(" - Marker #{0} is {1} metres away".format(m.id, m.distance))
 ~~~~~
 
-[Choosing Resolution](#ChoosingResolution) {#ChoosingResolution}
--------------------
-
-By default, the `R.see` function will take a photo at a resolution of 800x600.
-The resolution that this image is taken at can be changed using the optional `res` argument:
+see_ids
+:   Take a photo through the webcam, and return a list of marker ids (**not** full `Marker` objects). This doesn't do the same [pose estimation](https://en.wikipedia.org/wiki/3D_pose_estimation) calculations as `see`, and so is much faster to run.
 
 ~~~~~ python
-# Take a photo at 1280 x 1024
-markers = R.see(res=(1280, 1024))
+from sr.robot3 import *
+R = Robot()
+
+while True:
+    marker_ids = R.camera.see_ids()
+
+    if 0 in marker_ids:
+        print("I can see marker 0!")
+    else:
+        print("I cannot see marker 0!")
 ~~~~~
 
-There are currently two kinds of webcam issued with SR kit: the Logitech C500 and C270.
-They support the following resolutions:
+save
+:   Take a photo through the webcam, and save it to the provided location.
 
-|   Resolution              | C500  | C270  |
-|---------------------------|-------|-------|
-|  160 x 120                | yes   | yes   |
-|  176 x 144                | yes   | yes   |
-|  320 x 176                |       | yes   |
-|  320 x 240                | yes   | yes   |
-|  352 x 288                | yes   | yes   |
-|  432 x 240                |       | yes   |
-|  544 x 288                |       | yes   |
-|  640 x 360                | yes   |       |
-|  640 x 400                | yes   |       |
-|  640 x 480                | yes   | yes   |
-|  752 x 416                |       | yes   |
-|  800 x 448                |       | yes   |
-| **800 x 600** (Default)   | yes   | yes   |
-|  864 x 480                |       | yes   |
-|  960 x 544                |       | yes   |
-|  960 x 720                | yes   | yes   |
-|  1024 x 576               |       | yes   |
-|  1280 x 720               | yes   | yes   |
-|  1280 x 800               | yes   |       |
-|  1280 x 960               |       | yes   |
-|  1280 x 1024              | yes   |       |
+~~~~~ python
+from sr.robot3 import *
+R = Robot()
 
-There are advantages and disadvantages to switching resolution.
-Smaller images will process faster, but markers will be less likely to be detected within them.
-Additionally, the act of changing resolution takes a significant amount of time.
-The optimum resolution to use in a given situation is best determined through experiment.
+# `R.usbkey` is the path to your USB drive
+marker_ids = R.camera.save(R.usbkey / "initial-view.png")
+~~~~~
+
+[Field of View](#fov) {#fov}
+-------------------
 
 The Logitech C500 has a [field of view][fov] of 72&deg; and the C270 has a field of view of 60&deg;.
 
@@ -100,12 +84,6 @@ The Logitech C500 has a [field of view][fov] of 72&deg; and the C270 has a field
 The vision system describes the markers it can see using three coordinate
 systems. These are intended to be complementary to each other and contain
 the same information in different forms.
-
-The individual coordinate systems used are detailed below on the
-[`Point`](#Point) object, which represents a point in space.
-Both it and the [`Orientation`](#Orientation) object provide further
-details about what measurements of rotation or position mean for their
-attributes.
 
 The axis definitions match those in common use, as follows:
 
@@ -132,129 +110,108 @@ for that in your usage of the vision system's data.
 [Objects of the Vision System](#vision_objects) {#vision_objects}
 ==============================
 
+The vision system is made up of a number of objects, the primary of which is the `Marker`:
+
 [`Marker`](#Marker) {#Marker}
 ----------
 A `Marker` object contains information about a *detected* marker.
 It has the following attributes:
 
-info
-:   A [`MarkerInfo`](#MarkerInfo) object containing information about the type of marker that was detected.
+id
+:   The id of the marker.
 
-centre
-:   A [`Point`](#Point) describing the position of the centre of the marker.
+size
+:   The physical size of the marker, as the vision system expects it.
 
-vertices
-:   A list of 4 [`Point`](#Point) instances, each representing the position of the black corners of the marker.
+pixel_centre
+:   A [`Coordinate`](#Coordinate) describing the position of the centre of the marker.
 
-dist
-:   An alias for `centre.polar.length`
+pixel_corners
+:   A list of 4 [`Coordinate`](#Coordinate) instances, each representing the position of the corners of the marker.
 
-rot_y
-:   An alias for `centre.polar.rot_y`
+distance
+:   The distance between the camera and the centre of the marker, in metres.
 
 orientation
 :   An [`Orientation`](#Orientation) instance describing the orientation of the marker.
 
-res
-:   The resolution of the image that was taken from the webcam.
-    A 2-item tuple: (width, height).
+spherical
+:   A [`Spherical`](#Spherical) instance describing the position relative to the camera.
 
-timestamp
-:   The timestamp at which the image was taken (a float).
+cartesian
+:   A [`ThreeDCoordinates`][#ThreeDCoordinates] instance describing the absolute position of the marker relative to the camera.
 
-[`MarkerInfo`](#MarkerInfo) {#MarkerInfo}
---------------
-
-The `MarkerInfo` object contains information about a marker.
-It has the following attributes:
-
-code
-:   The numeric code of the marker.
-
-marker_type
-:   The type of object that this marker represents.<br />
-    One of:
-
-    * `MARKER_ARENA`
-    <!-- Add other game-specific values here too -->
-
-offset
-:   The offset of the numeric code of the marker from the lowest numbered marker of its type.
-    For example: markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.
-
-size
-:   The size of the marker in metres.
-    This is the length of the side of the main black body of the marker.
-
-[`Point`](#Point) {#Point}
+[`Coordinate`](#Coordinate) {#Coordinate}
 ---------
 
-A `Point` object describes a position in three different ways.
-These are accessed through the following attributes:
+A `Coordinate` object contains an `x` and `y` attribute. The exact meaning and unit of these attributes depends on its source.
 
-image
-:   The pixel coordinates of the point in the image, with the origin (0,0) in the top-left of the image.
-    This has two attributes: `x` and `y`.
+[`ThreeDCoordinate`](#ThreeDCoordinate) {#ThreeDCoordinate}
+---------
 
-world
-:   The [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) of the point in 3D space.
-    This has three attributes: `x`, `y`, and `z`, each of which specifies a distance in metres.
-    Positions in front of, to the right, or above the camera are positive.
-    Positions to the left or below are negative.
-
-polar
-:   The [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) of the point in 3D space.<br />
-    This has three attributes:
-
-    length
-    :   The distance to the point.
-
-    rot_x
-    :   Rotation about the x-axis in degrees.
-        Positions above the camera are positive.
-
-    rot_y
-    :   Rotation about the y-axis in degrees.
-        Positions to the right of the camera are positive.
-
-    For example, the following code displays the polar coordinate of a `Point` object `p`:
-
-    ~~~~~ python
-    print("length", p.polar.length)
-    print("rot_x", p.polar.rot_x)
-    print("rot_y", p.polar.rot_y)
-    ~~~~~
+A `ThreeDCoordinate` object contains an `x`, `y` and `z` attribute. The exact meaning and unit of these attributes depends on its source.
 
 [`Orientation`](#Orientation) {#Orientation}
 ---------------
 
-An `Orientation` object describes the orientation of a marker.  It has three attributes:
+An `Orientation` object describes the orientation of a marker.
 
-rot_x
-:   Rotation of the marker about the x-axis.
+![A visual representation of how the orientation axes work. Source: SourceBots]({{ site.baseurl }}/images/content/vision/yawpitchroll.png)
+
+pitch
+:   Rotation of the marker about the cartesian x-axis, in radians.
 
     Leaning a marker away from the camera increases the value of `rot_x`, while
     leaning it towards the camera decreases it. A value of 0 indicates that the
     marker is upright.
 
-rot_y
-:   Rotation of the marker about the y-axis.
+yaw
+:   Rotation of the marker about the cartesian y-axis, in radians.
 
     Turning a marker clockwise (as viewed from above) increases the value of
     `rot_y`, while turning it anticlockwise decreases it. A value of 0 means
     that the marker is perpendicular to the line of sight of the camera.
 
-rot_z
-:   Rotation of the marker about the z-axis.
+roll
+:   Rotation of the marker about the cartesian z-axis, in radians.
 
     Turning a marker anticlockwise (as viewed from the camera) increases the
     value of `rot_z`, while turning it clockwise decreases it. A value of 0
     indicates that the marker is upright.
 
-<!---
-It would be nice to be able to include here what happens to the values:
-* what about if a marker is upside down but also leant forwards
-* if a marker is seen at a side angle, but is also leant forwards, does
-  the value of rot_x measure its lean _towards the camera_ or from its
-  _own vertical_?
--->
+rot_x
+:   An alias for `pitch`.
+
+rot_y
+:   An alias for `yaw`.
+
+rot_z
+:   An alias for `roll`.
+
+rotation_matrix
+:   The rotation matrix represented by this orientation. A list of 3 lists, each with 3 items.
+
+quaternion
+:   The [Quarternion](https://kieranwynn.github.io/pyquaternion/#quaternion-features) instance represented by this orientation.
+
+[`Spherical`](#Spherical) {#Spherical}
+---------------
+
+The spherical coordinates system has three values to specify a specific point in space.
+
+![A visual representation of Spherical coordinates. Source: SourceBots]({{ site.baseurl }}/images/content/vision/spherical.png)
+
+- r - The radial distance, the distance from the origin to the point, in metres.
+- θ (theta) - The angle from the azimuth to the point, in radians.
+- φ (phi) - The polar angle from the plane of the camera to the point, in radians.
+
+rot_x
+:   Rotation around the X-axis, in radians.
+
+rot_y
+:   Rotation around the Y-axis, in radians.
+
+dist
+:   Distance, in metres.
+
+The camera is located at the origin, where the coordinates are (0, 0, 0).
