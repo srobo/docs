@@ -6,8 +6,7 @@ title: Troubleshooting
 Troubleshooting
 ===============
 
-If you are experiencing problems with either the Student Robotics hardware,
-IDE or python library you should check here first to see if there is a simple solution.
+If you are experiencing problems with either the Student Robotics hardware or python library you should check here first to see if there is a simple solution.
 If you don't find the information you need in this section you can use the
 [forum](/forum/) to get help with your specific problem.
 

@@ -11,25 +11,6 @@ tree:
         tree:
           - url: /simulator/programming/time
             title: Time
-  - url: /IDE/
-    title: IDE
-    tree:
-    - url: /IDE/code_checking
-      title: Code Checking
-    - url: /IDE/creating_a_project
-      title: Creating a Project
-    - url: /IDE/finding_things
-      title: Finding Things
-    - url: /IDE/getting_code_on_the_robot
-      title: Getting Code on the Robot
-    - url: /IDE/good_commit_messages
-      title: Good Commit Messages
-    - url: /IDE/shortcuts_menu
-      title: Shortcuts Menu
-    - url: /IDE/user_settings
-      title: User Settings
-    - url: /IDE/version_control
-      title: Version Control
   - url: /kit/
     title: Kits
     tree:
@@ -92,8 +73,6 @@ tree:
       tree:
       - url: /programming/editors/vscode
         title: VSCode
-    - url: /programming/git_repositories
-      title: Git Repositories
   - url: /rules/
     title: Rules
     tree:
