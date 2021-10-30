@@ -107,41 +107,41 @@ Doing this is actually very easy; the only thing you need to realise is that a p
 Here's the code:
 
 ~~~~~ python
-from sr.robot import *
+from sr.robot3 import *
 import time
 
 R = Robot()
 
 while True:
 
-    R.motors[0].m0.power = 50
+    R.motor_board.motors[0].power = 0.5
     time.sleep(3.0)
 
-    R.motors[0].m0.power = 0
+    R.motor_board.motors[0].power = 0
     time.sleep(1.4)
 
-    R.motors[0].m0.power = -50
+    R.motor_board.motors[0].power = -0.5
     time.sleep(1)
 
-    R.motors[0].m0.power = 0
+    R.motor_board.motors[0].power = 0
     time.sleep(4)
 ~~~~~
 
-You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `R.motors[0]...` lines.
-For a comprehensive reference to the `motor` object, see the `sr.robot` module's [`motor`](/docs/programming/sr/motors/) page.
+You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `R.motor_board...` lines.
+For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [`motor`](/docs/programming/sr/motors/) page.
 But, to summarise:
 
 <div class="info">
-    `R.motors[0].m0.power = x` will set the power of the motor connected to output 0 (the `m0` part)
-    on the first [motor board](/docs/kit/motor_board) (the `motors[0]` part)
-    plugged in to a USB hub to `x`, where `x` is a value between `-100` and `100`,
-    inclusive &mdash; in other words: `-100` &le; `x` &le; `100`.
+    `R.motor_board.motors[0].power = x` will set the power of the motor connected to output 0 (the `motors[0]` part)
+    on the first [motor board](/docs/kit/motor_board) (the `motor_board` part)
+    plugged in to a USB hub to `x`, where `x` is a value between `-1` and `1`,
+    inclusive &mdash; in other words: `-1` &le; `x` &le; `1`.
 </div>
 
-So, `R.motors[0].m0.power = 50` sets the target power of the motor connected to output 0 on the first [motor board](/docs/kit/motor_board)
+So, `R.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/docs/kit/motor_board)
  plugged in to a USB hub to 50% forwards (i.e. a duty-cycle of 0.5 forwards).
-As you would expect, then, `R.motors[0].m0.power = -50` will put the this motor into reverse at 50% power.
-`R.motors[0].m0.power = 0` will output no power to the motor and stop it.
+As you would expect, then, `R.motor_board.motors[0].power = -0.5` will put the this motor into reverse at 50% power.
+`R.motor_board.motors[0].power = 0` will output no power to the motor and stop it.
 
 So, if you put the above code on your robot,
  you should be able to see a motor spin forwards, stop, spin backwards, stop, and then repeat...
@@ -161,53 +161,53 @@ Our aim is to do the forwards and backwards bit (as above), but, before we loop 
 Here's the code:
 
 ~~~~~ python
-from sr.robot import *
+from sr.robot3 import *
 import time
 
 R = Robot()
 
 while True:
 
-    R.motors[0].m0.power = 50
+    R.motor_board.motors[0].power = 0.5
     time.sleep(3.0)
 
-    R.motors[0].m0.power = 0
+    R.motor_board.motors[0].power = 0
     time.sleep(1.4)
 
-    R.motors[0].m0.power = -50
+    R.motor_board.motors[0].power = -0.5
     time.sleep(1)
 
-    R.motors[0].m0.power = 0
+    R.motor_board.motors[0].power = 0
     time.sleep(4)
 
     # ^^ code from before ^^
 
-    # power up to 70 (from 10)
+    # power up to 70% (from 10%)
     for pwr in range(10, 80, 10):
-        R.motors[0].m0.power = pwr
+        R.motor_board.motors[0].power = pwr / 100  # Convert from percentage
         time.sleep(0.1)
 
-    # power down from 70 (to 10)
+    # power down from 70% (to 10%)
     for pwr in range(70, 0, -10):
-        R.motors[0].m0.power = pwr
+        R.motor_board.motors[0].power = pwr / 100  # Convert from percentage
         time.sleep(0.1)
 
     # set power to 0 for a second
-    R.motors[0].m0.power = 0
+    R.motor_board.motors[0].power
     time.sleep(1)
 
-    # power "up" to -70 (from -10)
+    # power "up" to -70% (from -10%)
     for pwr in range(-10, -80, -10):
-        R.motors[0].m0.power = pwr
+        R.motor_board.motors[0].power = pwr / 100  # Convert from percentage
         time.sleep(0.1)
 
-    # power "down" to -10 (from -70)
+    # power "down" to -10% (from -70%)
     for pwr in range(-70, 0, 10):
-        R.motors[0].m0.power = pwr
+        R.motor_board.motors[0].power = pwr / 100  # Convert from percentage
         time.sleep(0.1)
 
     # set power to 0 for a second
-    R.motors[0].m0.power = 0
+    R.motor_board.motors[0].power = 0
     time.sleep(1)
 
 ~~~~~
