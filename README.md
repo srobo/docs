@@ -17,6 +17,7 @@ The Student Robotics public documentation.
     ```shell
     $ rake dev
     ```
+
 ## Making changes
 
 When you've made a change, either push it to a forked repository, or to a
