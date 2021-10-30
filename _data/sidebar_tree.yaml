@@ -67,6 +67,8 @@ tree:
     - url: /programming/sr/
       title: sr
       tree:
+      - url: /programming/sr/cheat_sheet
+        title: API Quick Reference
       - url: /programming/sr/compass/
         title: Compass
       - url: /programming/sr/motors/
