@@ -147,7 +147,7 @@ R.servo_board.servos[11].position = None
 
 ## Camera
 
-## Taking a photo
+### Taking a photo
 
 It can sometimes be useful to save a photo of what markers the robot can see:
 
@@ -155,7 +155,7 @@ It can sometimes be useful to save a photo of what markers the robot can see:
 R.camera.save("my-photo.png")
 ~~~~~
 
-## Looking for markers
+### Looking for markers
 
 You can take a photo with the camera and search for markers:
 
