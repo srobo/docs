@@ -7,7 +7,7 @@ Power
 =====
 
 There are a few things that can be done with the power board, namely current and voltage sensing, and beeping.
-As there is only one power board, it is not accessed like a list like `motors` for example:
+As there is only one power board, it is not accessed like a list like `motors` and is instead accessed directly, for example:
 
 ~~~~~ python
 r.power_board.something...
