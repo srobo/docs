@@ -17,7 +17,7 @@ For more information, make sure you check the rest of the documentation.
 R = Robot()
 ~~~~~
 
-### Initialisation with manual start button
+### Initialisation without waiting for the start button
 
 ~~~~~ python
 R = Robot(auto_start=True)
