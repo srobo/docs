@@ -714,7 +714,7 @@ print((x == 2 and y == 3) or z == 2)
 ~~~~~
 
 
-[Built-in functions](#built-in-function) {#built-in-functions}
+[Built-in functions](#built-in-functions) {#built-in-functions}
 --------------------
 
 A lot of functions are defined for you by Python. Those listed at <https://docs.python.org/library/functions.html> are always available, and are the most commonly used, including `len`, `range`, and enumerate.

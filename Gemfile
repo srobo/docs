@@ -9,5 +9,8 @@ gem 'kramdown-parser-gfm'
 gem 'jekyll', 3.9
 gem 'jekyll-redirect-from'
 
+# For testing output
+gem 'html-proofer'
+
 # Avoid polling on windows
 gem 'wdm', '>= 0.1.0'
