@@ -13,22 +13,6 @@ As there is only one power board, it is not accessed like a list like `motors` f
 R.power.something...
 ~~~~~
 
-[Battery Status](#battery) {#battery}
--------
-
-The power board can report both the battery voltage, in Volts, and the current being drawn from it, in Amps.
-You can access these values like so:
-
-~~~~~ python
-# Print the battery voltage and current to the log
-print(R.power.battery.voltage, R.power.battery.current)
-~~~~~
-
-A fully charged battery will measure 12.6V.
-The power board will turn off and signal a low battery at 10.2V.
-The discharge curve is roughly linear between 11.4V and 10.4V.
-
-
 [Power Outputs](#outputs) {#outputs}
 -------
 
@@ -54,6 +38,22 @@ R.power.output[OUT_L0] = True
 ~~~~~
 
 An exception is raised if you try to set an output index which doesn't exist.
+
+
+[Battery Status](#battery) {#battery}
+-------
+
+The power board can report both the battery voltage, in Volts, and the current being drawn from it, in Amps.
+You can access these values like so:
+
+~~~~~ python
+# Print the battery voltage and current to the log
+print(R.power.battery.voltage, R.power.battery.current)
+~~~~~
+
+A fully charged battery will measure 12.6V.
+The power board will turn off and signal a low battery at 10.2V.
+The discharge curve is roughly linear between 11.4V and 10.4V.
 
 
 [Beeping](#beeping) {#beeping}
