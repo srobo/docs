@@ -3,14 +3,6 @@
 tree:
   - url: /
     title: Introduction
-  - url: /simulator
-    title: Simulator
-    tree:
-      - url: /simulator/programming/
-        title: Programming
-        tree:
-          - url: /simulator/programming/time
-            title: Time
   - url: /IDE/
     title: IDE
     tree:
