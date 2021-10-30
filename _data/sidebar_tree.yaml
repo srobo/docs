@@ -87,5 +87,3 @@ tree:
     tree:
     - url: /team_admin/discord
       title: Discord Server
-    - url: /team_admin/user_accounts
-      title: User Accounts
