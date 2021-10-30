@@ -250,7 +250,7 @@ arena = R.arena # -> 'A'
 This is set to `COMP` when your robot is in a match.
 
 ~~~~~ python
-robot_mode = r.mode # -> DEV or COMP
+robot_mode = R.mode # -> DEV or COMP
 ~~~~~
 
 ### USB Key Path
@@ -260,5 +260,5 @@ This is the path to where your USB key is mounted.
 You can use this to save files and information to the drive.
 
 ~~~~~ python
-usb_key_path = r.usbkey # -> pathlib.Path
+usb_key_path = R.usbkey # -> pathlib.Path
 ~~~~~
