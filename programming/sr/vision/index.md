@@ -10,7 +10,7 @@ Vision
 This documentation refers to a feature which is only available on the physical robot kits.
 </div>
 
-The `sr.robot` library contains support for detecting fiducial markers with the provided webcam.
+The `sr.robot3` library contains support for detecting fiducial markers with the provided webcam.
 Markers are attached to various items in the Student Robotics arena.
 Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.
 For information on which markers codes are which, see the [markers page](./markers).
