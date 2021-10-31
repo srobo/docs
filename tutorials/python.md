@@ -27,7 +27,7 @@ print("Hello World!")
 
 The text `Hello World!` should appear in the output box.
 
-There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. macOS and Linux come with one by default (just type `python3` at the terminal), and you can download the Windows interpreter from <https://python.org/download> (try Portable Python (<https://portablepython.com>) if you can't install programs on your computer).
+There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. macOS and Linux come with one by default (just type `python3` at the terminal), and you can download the Windows interpreter from <https://python.org/download> (try WinPython (<https://winpython.github.io/>) if you can't install programs on your computer).
 
 Statements
 ----------
