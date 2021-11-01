@@ -46,7 +46,7 @@ The position of servos can range from `-1` to `1` inclusive:
 ~~~~~ python
 # R.servo_board.servos[SERVO_NUMBER].position = POS
 
-# set servo 1's position (on the first Servo Board connected) to 0.2
+# set servo 1's position to 0.2
 R.servo_board.servos[1].position = 0.2
 
 # Set servo 2's position (on the Servo Board with serial number srABC) to -0.55
