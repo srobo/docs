@@ -57,7 +57,7 @@ You can read the last value a servo was set to using similar code:
 
 ~~~~~ python
 # get the last setting of the second servo on the first Servo Board
-lastSetting = R.servo_board.servos[1].position
+last_setting = R.servo_board.servos[1].position
 ~~~~~
 
 <div class="info" markdown="1">
