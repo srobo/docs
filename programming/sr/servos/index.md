@@ -26,7 +26,7 @@ It will look something like this:
 sr.robot3.robot INFO - Found Student Robotics Servo Board v4 - srABC1
 ~~~~~
 
-If you have more than one Servo Board attached, you need to specify which one you want to control. This is done using the part number of the board. For example: if you had a board that was labelled "srABC1",
+If you have more than one Servo Board attached, you need to specify which one you want to control. This is done using the serial number of the board. For example: if you had a board that was labelled "srABC1",
 
 ~~~~~ python
 R.servo_boards["srABC1"].something...
@@ -49,7 +49,7 @@ The position of servos can range from `-1` to `1` inclusive:
 # set servo 1's position (on the first Servo Board connected) to 0.2
 R.servo_board.servos[1].position = 0.2
 
-# Set servo 2's position (on the Servo Board with part code srABC) to -0.55
+# Set servo 2's position (on the Servo Board with serial number srABC) to -0.55
 R.servo_boards["srABC"].servos[2].position = -0.55
 ~~~~~
 
