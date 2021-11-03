@@ -27,6 +27,8 @@ tree:
       title: Servo Board
     - url: /kit/wifi
       title: WiFi
+    - url: /kit/safety-regulations
+      title: Safety Regulations
   - url: /programming/
     title: Programming
     tree:
