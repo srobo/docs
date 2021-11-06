@@ -10,9 +10,10 @@ Brain Board
 The Odroid U3+ Brain Board provided with your kit is what runs the code you write
 and controls the other peripheral boards.
 
-It can be controlled remotely over [WiFi](/docs/kit/wifi).
-
 ### Flashing SD card
+
+In order to get access to the SD card, you will need to open up the case for the brain board. Pull the latch at the end of the case in order to hinge it open.
+The SD card is located on the underside of the board. Grab the SD card with your fingers and simply pull it out of the slot.
 
 To fully update your Brain Board's software, or refresh it if you think it's not working correctly, you can flash our SD card image onto the microSD card in your Brain Board.
 
