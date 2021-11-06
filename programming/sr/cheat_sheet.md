@@ -236,7 +236,7 @@ The API also makes some information about where your code is running
 ### Starting Zone for a match
 
 ~~~~~ python
-zone = r.zone  # -> 0, 1, 2, or 3
+zone = R.zone  # -> 0, 1, 2, or 3
 ~~~~~
 
 ### Arena Information
