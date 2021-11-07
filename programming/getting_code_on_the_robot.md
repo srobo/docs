@@ -7,30 +7,27 @@ Getting Code on the Robot
 ======================
 
 Getting your code on to the robot is quite simple.
-You will need to put your code on a USB drive. Which will need to be formatted with either FAT32, exFAT, NTFS or ext2/3/4.
+You will need to put your code on a USB drive
+Which will need to be formatted with either FAT32, exFAT, NTFS or ext2/3/4.
+Upon plugging in the drive or starting up, the robot will run the `robot.py` file found in the `robot.zip` in the root of the drive.
 
-<details>
-<summary>Windows</summary>
+## Windows
 1. Open your code in File Explorer
-2. Select all of your code files (<kbd>Control + A</kbd> to select all files)
+2. Select all of your code files (<kbd>Control</kbd><kbd>A</kbd> to select all files)
 3. Right-click the files
 4. Click Compress to Zip file
-5. Name the newly created file `robot`
+5. Name the newly created file `robot` (or `robot.zip` if you have file extentions shown)
 
 ![Screenshot for Windows 11](/images/content/kit/zip_win11.png)
-![Screenshot for Windows 10](/images/content/kit/zip_win10.png)
 
 If you are on Windows 10 or older, you will need to use Send to &rarr; Compressed (zipped) folder
-</details>
 
-<details>
-<summary>macOS</summary>
+## macOS
 1. Open your code in Finder
-2. Select all of your code files (<kbd>⌘A</kbd> to select all files)
+2. Select all of your code files (<kbd>⌘</kbd><kbd>A</kbd> to select all files)
 3. Right-click (or Control-click) the files and click Compress
 4. Name the newly created file `robot.zip`
 
 ![Screenshot]({ site.baseurl }}/images/content/kit/zip_macOS.png)
-</details>
 
 To re-run your program, simply remove the USB stick and plug it back in again and it will restart automatically.
