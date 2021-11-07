@@ -10,7 +10,7 @@ If you are experiencing problems with either the Student Robotics hardware or py
 If you don't find the information you need in this section you can use the
 [forum]({{ site.url }}/forum/) to get help with your specific problem.
 
-1. [`sr.robot` python library issues](/docs/troubleshooting/python) &mdash; Common problems with the `sr.robot` python library and possible solutions.
+1. [`sr.robot3` python library issues](/docs/troubleshooting/python) &mdash; Common problems with the `sr.robot3` python library and possible solutions.
 2. [Interactive Troubleshooter](/docs/troubleshooting/interactive_troubleshooter) &mdash; Consider using the Interactive Troubleshooter to narrow down your problem and find a solution.
 
 [General Troubleshooting Tips](#GeneralTips) {#GeneralTips}
