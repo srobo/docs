@@ -18,7 +18,7 @@ Upon plugging in the drive or starting up, the robot will run the `robot.py` fil
 4. Click Compress to Zip file
 5. Name the newly created file `robot` (or `robot.zip` if you have file extentions shown)
 
-![Screenshot for Windows 11](/images/content/kit/zip_win11.png)
+![Screenshot for Windows 11]({{ site.baseurl }}/images/content/kit/zip_win11.png)
 
 If you are on Windows 10 or older, you will need to use Send to &rarr; Compressed (zipped) folder
 
@@ -28,6 +28,6 @@ If you are on Windows 10 or older, you will need to use Send to &rarr; Compresse
 3. Right-click (or Control-click) the files and click Compress
 4. Name the newly created file `robot.zip`
 
-![Screenshot]({ site.baseurl }}/images/content/kit/zip_macOS.png)
+![Screenshot]({{ site.baseurl }}/images/content/kit/zip_macOS.png)
 
 To re-run your program, simply remove the USB stick and plug it back in again and it will restart automatically.
