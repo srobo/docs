@@ -37,10 +37,6 @@
                 {
                     "answer": "Vision",
                     "nextquestion": "vision"
-                },
-                {
-                    "answer": "IDE",
-                    "nextquestion": "ide"
                 }
             ]
         },
@@ -433,7 +429,7 @@
                 },
                 {
                     "answer": "The camera takes a long time to take a photo.",
-                    "message": "Try reducing the resolution in your code, you'll have to find an optimum resolution for your robot to get the best speed and detail."
+                    "message": "The vision system always takes longer for the first photo. Consider taking a photo when your robot first starts."
                 }
             ]
         },
@@ -442,7 +438,7 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "Make sure the marker is flat, well-lit and there a visible border around the pattern, and if your robot is moving you should check the camera is not shaking.<br />If you still cannot pickup any markers there could be a problem with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "nextquestion": "vision-markers-dont-get-picked-up-good-webcam"
                 },
                 {
                     "answer": "No",
@@ -450,16 +446,16 @@
                 }
             ]
         },
-        "ide": {
-            "question": "Choose the option that best describes your situation.",
+        "vision-markers-dont-get-picked-up-good-webcam": {
+            "question": "Is the marker ID listed in the rules as in use?",
             "answers": [
                 {
-                    "answer": "My code does not check correctly.",
-                    "message": "Click on the 'Error' tab to see detailed explanations of the errors."
+                    "answer": "Yes",
+                    "message": "Make sure the marker is flat, well-lit and there a visible border around the pattern, and if your robot is moving you should check the camera is not shaking.<br />If you still cannot pickup any markers there could be a problem with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
                 },
                 {
-                    "answer": "My latest code is not exported to the zip file.",
-                    "message": "Make sure you've pressed save before pressing export."
+                    "answer": "No",
+                    "message": "The robot will ignore marker IDs that are not in use for the game. Try using a marker that is listed in the rules."
                 }
             ]
         }
