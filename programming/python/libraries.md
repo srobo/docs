@@ -6,24 +6,6 @@ title: Included Python Libraries
 Included Libraries
 ==================
 
-Simulator
----------
-
-The following libraries will be available to your robot code during the
-competition. Note that for local development you will need to install these
-yourself.
-
-<!-- updating this list? Also update https://github.com/srobo/competition-simulator/blob/master/libraries.txt -->
-
- * [matplotlib 3.3.3](https://pypi.org/project/matplotlib/3.3.3/)
- * [numpy 1.19.3](https://pypi.org/project/numpy/1.9.3/)
- * [pandas 1.1.4](https://pypi.org/project/pandas/1.1.4/)
- * [scikit-learn 0.23.2](https://pypi.org/project/scikit-learn/0.23.2/)
- * [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
-
-If there are other libraries you would like included, please let us know
-[via the forums](/forum) and include a link to the package on [PyPI](https://pypi.org/).
-
 Robot Kit
 ---------
 

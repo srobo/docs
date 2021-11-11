@@ -6,12 +6,11 @@ title: Troubleshooting
 Troubleshooting
 ===============
 
-If you are experiencing problems with either the Student Robotics hardware,
-IDE or python library you should check here first to see if there is a simple solution.
+If you are experiencing problems with either the Student Robotics hardware or python library you should check here first to see if there is a simple solution.
 If you don't find the information you need in this section you can use the
-[forum](/forum/) to get help with your specific problem.
+[forum]({{ site.url }}/forum/) to get help with your specific problem.
 
-1. [`sr.robot` python library issues](/docs/troubleshooting/python) &mdash; Common problems with the `sr.robot` python library and possible solutions.
+1. [`sr.robot3` python library issues](/docs/troubleshooting/python) &mdash; Common problems with the `sr.robot3` python library and possible solutions.
 2. [Interactive Troubleshooter](/docs/troubleshooting/interactive_troubleshooter) &mdash; Consider using the Interactive Troubleshooter to narrow down your problem and find a solution.
 
 [General Troubleshooting Tips](#GeneralTips) {#GeneralTips}
@@ -59,5 +58,5 @@ Check the docs
     and then forget something out of familiarity.
 
     By double-checking the appropriate docs (be it for the [kit](/docs/kit),
-    for [Python](/docs/python) or for the extra thing you've bought) you
-    can be completely sure that you've not missed something.
+    for [Python]({{ site.url }}/docs/python) or for the extra thing you've bought)
+    you can be completely sure that you've not missed something.

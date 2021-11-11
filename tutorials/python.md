@@ -6,7 +6,7 @@ title: "Python: A whirlwind tour"
 Python: A whirlwind tour
 ========================
 
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but for the Student Robotics competition we use one called Python 2.6. We chose it because it's good for beginners, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but for the Student Robotics competition we use one called Python 3.9. We chose it because it's good for beginners, but also elegant and powerful.
 
 Sprinkled through the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 
@@ -27,7 +27,7 @@ print("Hello World!")
 
 The text `Hello World!` should appear in the output box.
 
-There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Mac OS X and Linux come with one by default (just type `python` at the terminal), and you can download the Windows interpreter from <https://python.org/download> (try Portable Python (<https://portablepython.com>) if you can't install programs on your computer).
+There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. macOS and Linux come with one by default (just type `python3` at the terminal), and you can download the Windows interpreter from <https://python.org/download> (try WinPython (<https://winpython.github.io/>) if you can't install programs on your computer).
 
 Statements
 ----------
@@ -714,7 +714,7 @@ print((x == 2 and y == 3) or z == 2)
 ~~~~~
 
 
-[Built-in functions](#built-in-function) {#built-in-functions}
+[Built-in functions](#built-in-functions) {#built-in-functions}
 --------------------
 
 A lot of functions are defined for you by Python. Those listed at <https://docs.python.org/library/functions.html> are always available, and are the most commonly used, including `len`, `range`, and enumerate.

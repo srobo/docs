@@ -33,6 +33,6 @@ The same function modified & printing a log message:
 
 ~~~~~ python
 def square(num):
-    print("found the square of {:d}".format(num))
+    print(f"found the square of {num}")
     return num * num
 ~~~~~

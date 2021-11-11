@@ -17,6 +17,7 @@ The Student Robotics public documentation.
     ```shell
     $ rake dev
     ```
+
 ## Making changes
 
 When you've made a change, either push it to a forked repository, or to a
@@ -24,3 +25,10 @@ feature branch, and [raise a pull request][raise-a-pr].
 
 [install-ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [raise-a-pr]: https://github.com/srobo/docs/pull/new/master
+
+### Navigation Sidebar
+
+The docs navigation sidebar is generated from `_data/sidebar_tree.yaml` as part
+of the build process. This file is manually updated so that we can
+explicitly control which files are included, in what order as well as adjust the
+page titles.
