@@ -9,7 +9,7 @@ title: Simulator Programming
 
 ## Developing your code
 
-On first run, the robot will execute an example program for convenience. On first run, this will be copied to the directory `competition-simulator-<version>` is stored in:
+On first run, the robot will execute an example program for convenience. This program will be copied to the directory `competition-simulator-<version>` is stored in:
 
 ```
 .
@@ -27,61 +27,72 @@ Your code should be developed in `robot.py`.
   Only your controller code will be present in the competition environment.
 </div>
 
-## Programming Interface
+## Robot
 
-Unless otherwise stated, the simulator’s API is the same as the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
+There is a pre-built robot used in the simulator.
+To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
+
+The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/), with the exception of `R.time` and `R.sleep`.
 
 ### Motors
 
-Your robot has one motor board attached, the left wheel in port `m0`, and the right wheel in `m1`.
+Your robot has one motor board attached, the left wheel is connected to the first port, and the right wheel to the second.
 
-The motor board does not have a part code, so it needs to be indexed using `0`.
+The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `R.motor_board`.
+
+### Servos
+
+Your robot has one servo board attached, the jaws of the robot are controlled by a pair of servos:
+
+| Servo | Location  |
+|-------|-----------|
+| 0     | Left Jaw  |
+| 1     | Right Jaw |
+
+Setting each servo to -1 fully opens the respective jaw.
+
+The servo board has the part code `srXYZ2`, since only a single servo board is attached it can be referenced as `R.servo_board`.
 
 ### Ruggeduino
 
-Your robot has two microswitches and six distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
+Your robot has a microswitch and six distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
 
 Because these sensors are pre-attached to the ruggeduino, you do not need to set its `pin_mode`.
 
 #### Microswitches
 
-The microswitches are attached to digital pins 2 and 3:
+The microswitch is attached to digital pin 2:
 
 | Pin | Location |
 |-----|----------|
-| 2   | Front    |
-| 3   | Back     |
+| 2   | Back     |
 
-These are shown as red coloured blocks on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is current actuated.
+This is shown as a red coloured block on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is currently actuated.
 
 #### Distance Sensors
 
-Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analogue pins 0-5:
+Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analogue pins A0-A5:
 
 | Pin | Location |
 |-----|----------|
-| 0   | Front Left |
-| 1   | Front Right |
-| 2   | Left     |
-| 3   | Right    |
-| 4   | Back Left |
-| 5   | Back Right |
+| A0  | Front Left |
+| A1  | Front Right |
+| A2  | Left     |
+| A3  | Right    |
+| A4  | Front    |
+| A5  | Back     |
 
-These are shown as blue coloured blocks on the robot. The `analogue_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
+These are shown as blue boards with silver transceivers on the robot. The `analogue_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
 
 #### LEDs
 
-The LEDs are attached to digital pins 4-9:
+The LEDs are attached to digital pins 3-4:
 
 | Pin | Location |
 |-----|----------|
-| 4   | Red (right) |
-| 5   | Green (right) |
-| 6   | Blue (right) |
-| 7   | Blue (left) |
-| 8   | Green (left) |
-| 9   | Red (left) |
+| 3   | Red (Left) |
+| 4   | Green (right) |
 
 Using the `digital_write` method, you can set these to True (On) or False (Off).
 
