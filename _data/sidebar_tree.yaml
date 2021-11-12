@@ -82,8 +82,8 @@ tree:
     tree:
     - url: /tutorials/basic_motor_control
       title: Basic Motor Control
-    - url: /tutorials/2021_microgames
-      title: SR2021 Microgames
+    - url: /tutorials/microgames
+      title: Microgames
     - url: /tutorials/python
       title: Python
   - url: /team_admin/
