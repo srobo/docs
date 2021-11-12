@@ -20,6 +20,7 @@ To fully update your Brain Board's software, or refresh it if you think it's not
 To update the SD card, you'll need to download our image, `robot-image.img.xz`. The flashing procedure is identical to flashing Raspberry Pi images.
 
 ## Etcher
+
 We recommend using [etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you're familiar with Raspberry Pis or other similar boards and have flashed images before with a different tool, that will also work.
 
 ![Etcher example]({{ site.baseurl }}/images/content/kit/etcher.png)
