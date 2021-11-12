@@ -32,6 +32,8 @@ tree:
   - url: /programming/
     title: Programming
     tree:
+    - url: /programming/getting_code_on_the_robot
+      title: Getting Code on the Robot
     - url: /programming/python/
       title: Python
       tree:
