@@ -13,7 +13,7 @@ Upon plugging in the drive or starting up, the robot will run the `robot.py` fil
 
 ## Windows
 1. Open your code in File Explorer
-2. Select all of your code files (<kbd>Control</kbd><kbd>A</kbd> to select all files)
+2. Select all of your code files (<kbd>Ctrl</kbd><kbd>A</kbd> to select all files)
 3. Right-click the files
 4. Click Compress to Zip file
 5. Name the newly created file `robot` (or `robot.zip` if you have file extentions shown)
