@@ -3,8 +3,7 @@ layout: page
 title: Getting Code on the Robot
 ---
 
-Getting Code on the Robot
-======================
+# Getting Code on the Robot
 
 Getting your code on to the robot is quite simple.
 You will need to put your code on a USB drive
