@@ -27,9 +27,13 @@ tree:
       title: Servo Board
     - url: /kit/wifi
       title: WiFi
+    - url: /kit/safety-regulations
+      title: Safety Regulations
   - url: /programming/
     title: Programming
     tree:
+    - url: /programming/getting_code_on_the_robot
+      title: Getting Code on the Robot
     - url: /programming/python/
       title: Python
       tree:
