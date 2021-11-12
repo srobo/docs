@@ -96,12 +96,20 @@ The LEDs are attached to digital pins 3-4:
 
 Using the `digital_write` method, you can set these to True (On) or False (Off).
 
-### Time
+## Simulated Time
 
 In the simulated environment, time advances only at the pace that the simulator
 is run. As a result, using `time.time` to know how long your robot has been
 running for or `time.sleep` to wait for some duration will be unreliable.
 
 As a result the API present in the simulator supports a slightly different
-approach to handling time. See the documentation about [simulated time](./time)
-for more details.
+approach to handling time.
+The methods `R.time` and `R.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
+
+<div class="warning">
+  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a <code>R.sleep</code> even if with a small value.
+
+  <b>If in doubt add an <code>R.sleep</code></b>.
+
+  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any <code>R.sleep</code> and is expecting time to advance.
+</div>
