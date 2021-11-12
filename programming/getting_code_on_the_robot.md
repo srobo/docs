@@ -21,7 +21,7 @@ Upon plugging in the drive or starting up, the robot will run the `robot.py` fil
 <img src="{{ site.baseurl }}/images/content/kit/zip_win10.jpg" alt="Screenshot for Windows 10" class="column half" />
 <img src="{{ site.baseurl }}/images/content/kit/zip_win11.png" alt="Screenshot for Windows 11" class="column half" />
 
-If you are on Windows 10 or older, you will need to use Send to &rarr; Compressed (zipped) folder
+If you are on Windows 10 or older, you will need to use Send to &rarr; Compressed (zipped) folder.
 
 ## macOS
 1. Open your code in Finder
