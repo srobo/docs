@@ -21,11 +21,6 @@ The boards provided are as follows; more details can be found on their individua
  * [Ruggeduino (including two screw shields)](/docs/kit/ruggeduino)
  * [Servo Board](/docs/kit/servo_board)
 
-The WiFi
--------------------
-
-The kit can be controlled over [WiFi](/docs/kit/wifi). You can use any device to connect to the WiFi.
-
 Ancillary Parts
 ---------------
 
