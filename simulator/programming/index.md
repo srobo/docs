@@ -51,7 +51,7 @@ Your robot has one servo board attached, the jaws of the robot are controlled by
 
 Setting each servo to -1 fully opens the respective jaw.
 
-The servo board has the part code `srXYZ2`, since only a single servo board is attached it can be referenced as `R.servo_board`.
+The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `R.servo_board`.
 
 ### Ruggeduino
 
