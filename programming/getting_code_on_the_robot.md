@@ -33,3 +33,8 @@ If you are on Windows 10 or older, you will need to use Send to &rarr; Compresse
 ![Screenshot]({{ site.baseurl }}/images/content/kit/zip_macOS.png)
 
 To re-run your program, simply remove the USB stick and plug it back in again and it will restart automatically.
+
+## Robot Logs
+
+When your program runs on the robot, the output of `print(...)` calls and any
+errors which occur are written to a log file on the USB stick as `log.txt`.
