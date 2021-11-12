@@ -28,7 +28,7 @@ We recommend using [etcher](https://etcher.io), as it's simple to use, and avail
 
 ![Etcher example]({{ site.baseurl }}/images/content/kit/etcher.png)
 
-<div class="info">
+<div class="info" markdown="1">
 If you choose to use a tool other than Etcher, you may need to extract the `srobo-robot-2022.0.0.img.xz` to `srobo-robot-2022.0.0.img`. There are many tools available for this, e.g. [7-zip](http://www.7-zip.org/).
 </div>
 
