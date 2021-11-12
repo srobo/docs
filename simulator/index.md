@@ -20,9 +20,9 @@ You will also need Python installed.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
-| Windows  | 3.7+ (64-bit)            |
-| macOS    | 3.7+                     |
-| Linux    | 3.7+                     |
+| Windows  | 3.7-3.9 (64-bit)         |
+| macOS    | 3.7-3.9                  |
+| Linux    | 3.7-3.9                  |
 
 There are a small number of [external libraries]({{ site.baseurl }}/programming/python/libraries)
 which will be available to your robot code during the competition. Note that for
