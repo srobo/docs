@@ -24,10 +24,6 @@ You will also need Python installed.
 | macOS    | 3.7-3.9                  |
 | Linux    | 3.7-3.9                  |
 
-There are a small number of [external libraries]({{ site.baseurl }}/programming/python/libraries)
-which will be available to your robot code during the competition. Note that for
-local development you will need to install these yourself.
-
 ### Installing the simulation
 
 1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2021.10/competition-simulator-sr2021.10.zip), and unzip it somewhere on your computer.
