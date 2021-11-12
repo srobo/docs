@@ -25,8 +25,6 @@ tree:
       title: Ruggeduino
     - url: /kit/servo_board
       title: Servo Board
-    - url: /kit/wifi
-      title: WiFi
     - url: /kit/safety-regulations
       title: Safety Regulations
   - url: /programming/

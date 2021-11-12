@@ -42,11 +42,11 @@ print("Number of bees:", y - 2)
 
 The statements are executed one by one, in order. This example would give the output `Number of bees: 12`.
 
-As you may have guessed, the `print` statement displays text on the screen, while the other two lines are simple algebra.
+As you may have guessed, the `print(...)` statement displays text on the screen, while the other two lines are simple algebra.
 
 ### Strings
 
-When you want the interpreter to treat something as a text value (for example, after the `print` statement above), you have to surround it in quotes. You can use either single (`'`) or double (`"`) quotes, but try to be consistent. Pieces of text that are treated like this are called 'strings'.
+When you want the interpreter to treat something as a text value (for example, after the `print(...)` statement above), you have to surround it in quotes. You can use either single (`'`) or double (`"`) quotes, but try to be consistent. Pieces of text that are treated like this are called 'strings'.
 
 Comments
 --------
