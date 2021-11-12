@@ -65,7 +65,7 @@ Controls
 | Control        | Use
 |----------------|----------------------------
 | ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
-| START          | Starts your program (can be used instead of the robot WiFi interface)
+| START          | Starts your program
 
 
 Case Dimensions
