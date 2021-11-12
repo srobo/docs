@@ -5,14 +5,9 @@ title: Code Editors
 
 # Code Editors
 
-When developing code to run on our robotics kit, we recommend that you start by
-using our hosted IDE. The hosted IDE provides an easy way to get going, as well
-as ensuring that you have a history of your code which is available from
-anywhere and your mentor can access. We appreciate that you may wish to use your
-own editor instead, which you are free to do.
-
-When developing code to run in the simulator, you will need to have both the
-simulator and your own editor set up.
+In order to develop the code for your robot, we recommend that you use a code
+editor. A code editor (rather than a plain text editor) will make it easier to
+develop your code and help you catch errors sooner.
 
 <div class="info">
 However you are working on your code, you are encouraged to ensure you have a backup!
