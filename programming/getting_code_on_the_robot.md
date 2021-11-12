@@ -36,5 +36,5 @@ To re-run your program, simply remove the USB stick and plug it back in again an
 
 ## Robot Logs
 
-When your program runs on the robot, the output of `print(...)` calls and any
-errors which occur are written to a log file on the USB stick as `log.txt`.
+When your program runs on the robot, the output of `print(...)` statements and
+any errors which occur are written to a log file on the USB stick as `log.txt`.

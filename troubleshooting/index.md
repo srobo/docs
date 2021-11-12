@@ -47,7 +47,7 @@ Print all the things
     commonly used for this in electronics hardware, and this is part
     of the reason our boards are covered in them.
 
-    On the robots the output from any `print` statements will end up
+    On the robots the output from any `print(...)` statements will end up
     in [the log file](/docs/troubleshooting/python#ReadingTheLogs), which can
     be viewed on the USB stick.
 
