@@ -70,7 +70,7 @@ tree:
     tree:
     - url: /rules/archive
       title: Game Rules Archive
-  - url: /simulator
+  - url: /simulator/
     title: Simulator
     tree:
       - url: /simulator/programming/
