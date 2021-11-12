@@ -12,6 +12,10 @@ $error: #BF433A;
   background: transparentize($info, 0.8);
   border-color: $info;
   color: $info;
+
+  p {
+    color: $info;
+  }
 }
 
 .warning {
@@ -19,4 +23,8 @@ $error: #BF433A;
   background: transparentize($error, 0.8);
   border-color: $error;
   color: $error;
+
+  p {
+    color: $error;
+  }
 }
