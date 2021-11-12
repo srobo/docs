@@ -12,7 +12,10 @@ If you encounter one that isn't on this list, quickly check your code and search
 
 ## [Reading the Logs](#ReadingTheLogs) {#ReadingTheLogs}
 
-When your program runs on the robot, the output of `print` statements and any errors which occur are written to a log file. You can view this log file via the robot [WiFi](/docs/kit/wifi) interface (by touching the menu icon in the top-left, followed by "Logs"). It is also written to the USB stick as `log.txt`.
+When your program runs on the robot, the output of `print` statements and any
+errors which occur are written to a log file. You can view this log file via the
+robot [WiFi](/docs/kit/wifi) interface (by touching the menu icon in the
+top-left, followed by "Logs"). It is also written to the USB stick as `log.txt`.
 
 ## [Syntax Error](#SyntaxError) {#SyntaxError}
 
