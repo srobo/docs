@@ -12,6 +12,7 @@ Which will need to be formatted with either FAT32, exFAT, NTFS or ext2/3/4.
 Upon plugging in the drive or starting up, the robot will run the `robot.py` file found in the `robot.zip` in the root of the drive.
 
 ## Windows
+
 1. Open your code in File Explorer
 2. Select all of your code files (<kbd>Ctrl</kbd><kbd>A</kbd> to select all files)
 3. Right-click the files
@@ -24,6 +25,7 @@ Upon plugging in the drive or starting up, the robot will run the `robot.py` fil
 If you are on Windows 10 or older, you will need to use Send to &rarr; Compressed (zipped) folder.
 
 ## macOS
+
 1. Open your code in Finder
 2. Select all of your code files (<kbd>⌘</kbd><kbd>A</kbd> to select all files)
 3. Right-click (or Control-click) the files and click Compress
