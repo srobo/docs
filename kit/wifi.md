@@ -62,7 +62,7 @@ You cannot use this screen when code is running.
 
 ![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/remote-interface/logs-screen.png)
 
-This screen allows you to see all messages from your code sent by `print`
+This screen allows you to see all messages from your code sent by `print(...)`
 statements (and anything else that outputs to standard output or standard
 error). It will also show messages from the initialisation of the robot's
 hardware, as well as any errors that occurred when running your code.

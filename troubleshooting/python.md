@@ -12,8 +12,8 @@ If you encounter one that isn't on this list, quickly check your code and search
 
 ## [Reading the Logs](#ReadingTheLogs) {#ReadingTheLogs}
 
-When your program runs on the robot, the output of `print` statements and any
-errors which occur are written to a log file on the USB stick as `log.txt`.
+When your program runs on the robot, the output of `print(...)` statements and
+any errors which occur are written to a log file on the USB stick as `log.txt`.
 
 ## [Syntax Error](#SyntaxError) {#SyntaxError}
 
