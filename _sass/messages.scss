@@ -14,6 +14,8 @@ $error: #BF433A;
   color: $info;
 
   p {
+    // Prevent our custom styles being overwritten if a div
+    // has markdownenabled="1"
     color: $info;
   }
 }
@@ -25,6 +27,8 @@ $error: #BF433A;
   color: $error;
 
   p {
+    // Prevent our custom styles being overwritten if a div
+    // has markdownenabled="1"
     color: $error;
   }
 }
