@@ -195,9 +195,9 @@ for marker in markers:
 ### Setting the mode of a pin
 
 ~~~~~ python
-R.ruggeduinos[0].pins[4].mode = OUTPUT
-R.ruggeduinos[0].pins[4].mode = INPUT
-R.ruggeduinos[0].pins[4].mode = INPUT_PULLUP
+R.ruggeduinos['1234567890'].pins[4].mode = OUTPUT
+R.ruggeduinos['1234567890'].pins[4].mode = INPUT
+R.ruggeduinos['1234567890'].pins[4].mode = INPUT_PULLUP
 ~~~~~
 
 ### Digital Write
@@ -205,10 +205,10 @@ R.ruggeduinos[0].pins[4].mode = INPUT_PULLUP
 You can set the output for a pin of the Ruggeduino:
 
 ~~~~~ python
-R.ruggeduinos[0].pins[4].mode = OUTPUT
+R.ruggeduinos['1234567890'].pins[4].mode = OUTPUT
 
-R.ruggeduinos[0].pins[2].digital_write(True)
-R.ruggeduinos[0].pins[2].digital_write(False)
+R.ruggeduinos['1234567890'].pins[2].digital_write(True)
+R.ruggeduinos['1234567890'].pins[2].digital_write(False)
 ~~~~~
 
 ### Digital Read
@@ -216,7 +216,7 @@ R.ruggeduinos[0].pins[2].digital_write(False)
 You can read a digital value from the pins of the Ruggeduino:
 
 ~~~~~ python
-R.ruggeduinos[0].pins[3].mode = INPUT
+R.ruggeduinos['1234567890'].pins[3].mode = INPUT
 
 value = R.ruggeduino.pins[3].digital_read()
 ~~~~~

@@ -24,8 +24,8 @@ It will look something like this:
 sr.robot3.robot INFO - Found Ruggeduino - 752303138333517171B1
 ~~~~~
 
-If you have more than one Ruggeduino attached, the `ruggeduinos` object 
-can be used to control a collection of Ruggeduinos. Similar to `motors` 
+If you have more than one Ruggeduino attached, the `ruggeduinos` object
+can be used to control a collection of Ruggeduinos. Similar to `motors`
 and `servos`, `ruggeduinos` is a dictionary accessed by serial number.
 For example, if you had a board whose serial number was "752303138333517171B1",
 you could do this instead:
@@ -68,9 +68,9 @@ An example of how to use this is below:
 # set Ruggeduino pin 2 to output
 R.ruggeduino.pins[2].mode = OUTPUT
 # set Ruggeduino pin 3 to input
-R.ruggeduinos[0].pins[3].mode = INPUT
-# set Ruggeduino git commit -m "pin 4 to input and enable pull-up resistor
-R.ruggeduinos[0].pins[4].mode = INPUT_PULLUP
+R.ruggeduino.pins[3].mode = INPUT
+# set Ruggeduino pin 4 to input and enable pull-up resistor
+R.ruggeduino.pins[4].mode = INPUT_PULLUP
 ~~~~~
 
 <div class="warning">You cannot use pins 0 and 1, as using these would disrupt communications between the Ruggeduino and the Power Board.</div>
