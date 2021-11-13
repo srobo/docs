@@ -216,7 +216,7 @@ R.ruggeduino.pins[2].digital_write(False)
 You can read a digital value from the pins of the Ruggeduino:
 
 ~~~~~ python
-R.ruggeduinos['1234567890'].pins[3].mode = INPUT
+R.ruggeduino.pins[3].mode = INPUT
 
 value = R.ruggeduino.pins[3].digital_read()
 ~~~~~
