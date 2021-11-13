@@ -34,11 +34,9 @@ R = Robot()
 
 Within your `Robot` (`R` in this case), you then have access to the following attributes:
 
-* [compass](/docs/programming/sr/compass/)
 * [motors](/docs/programming/sr/motors/)
 * [power](/docs/programming/sr/power/)
 * [servos](/docs/programming/sr/servos/)
-* [radio](/docs/programming/sr/radio/)
 * [ruggeduinos](/docs/programming/sr/ruggeduinos/)
 * [vision](/docs/programming/sr/vision/)
 
@@ -47,15 +45,15 @@ Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should 
 Here are some examples:
 
 ~~~~~ python
-R.motors[0].m0.power = 50   # WILL work, if motor 0 exists
-R.motors[1].m0.power = -20  # WILL work, if motor 1 exists
-R.motors.m0.power = 42      # WON'T WORK
+R.motor_board.motors[0].power = 50   # WILL work, if motor 0 exists
+R.motor_board.motors[1].power = -20  # WILL work, if motor 1 exists
+R.motor_board.motors.power = 42      # WON'T WORK
 
 # the above is similar to the situation for 'ruggeduinos' and 'servos'
 ~~~~~
 
 A number of examples in the documentation will assume you've instantiated the required `Robot` class and have called it `R`.
-From here in, if you see a `R.something`, the requirement of the `sr.robot` import line and the instantiation of `Robot` as `R` is implicit.
+From here in, if you see a `R.something`, the requirement of the `sr.robot3` import line and the instantiation of `Robot` as `R` is implicit.
 
 [Other Robot Attributes](#OtherRobotAttributes) {#OtherRobotAttributes}
 ----------------------
@@ -77,7 +75,7 @@ usbkey
     An example of how the `usbkey` attribute might be used:
 
     ~~~~~ python
-    from sr.robot import *
+    from sr.robot3 import *
     import os
 
     R = Robot()
@@ -104,12 +102,7 @@ However if you want to:
 Then Robot initialisation can be broken up as follows (this example is equivalent to the previous code excerpt):
 
 ~~~~~ python
-R = Robot.setup()
-
-# Setup phase.
-# Here you can configure hardware enumeration
-
-R.init()
+R = Robot(auto_start=True)
 
 # Initialisation phase.
 # Here you can perform hardware/software initialisation before start
@@ -117,10 +110,6 @@ R.init()
 R.wait_start()
 ~~~~~
 
-During the setup phase, the Robot hardware is inaccessible.
-For example, `R.motors` is unavailable since enumerations occurs in the `init` function.
-In this phase you can configure how the Robot finds and configures hardware.
-
-After the `init` call, all hardware is accessible.
+During the initialisation phase, all hardware is accessible.
 If you have any hardware which must be initialised before the start button is pressed,
  the initialisation phase is the time to do so.
