@@ -39,6 +39,11 @@ You'll need to ensure a matching version of Python is installed. If you're still
 having problems, ask for help in [`#simulator-help`][simulator-help] in
 [Discord][discord].
 
+On Windows your Python path is likely `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python39\python.exe` where `<USERNAME>` is your login.
+On Mac your Python path is likely `/Library/Frameworks/Python.framework/Versions/3.9/bin/python3` when using Python 3.9.
+
+Currently the simulator does not work properly on Apple M1 Macs.
+
 ### Updates
 
 Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-<version>` directory, and re-download it using the above link.
