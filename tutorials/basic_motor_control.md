@@ -265,4 +265,4 @@ From here, you should be able to make your robot move about in a controlled mann
 See if you can make your robot drive forwards to a given point, stop, turn around and then return to its starting point.
 
 You might also like to see if you can make the larger code example above more concise by creating functions for the repetitive parts.
-[This](https://www.tutorialspoint.com/python/python_functions.htm) tutorial seems good if you're interested.
+[This](https://www.tutorialspoint.com/python3/python_functions.htm) tutorial seems good if you're interested.
