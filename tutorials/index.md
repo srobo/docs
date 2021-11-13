@@ -13,5 +13,6 @@ Read the following tutorials listed in order of difficulty:
 
 We also recommend these external tutorials:
 
-* <https://docs.microsoft.com/en-us/learn/paths/python-language/>
-* <https://www.tutorialspoint.com/python3/index.htm>
+* Microsoft's [Take your first steps with Python](https://docs.microsoft.com/en-us/learn/paths/python-first-steps/)
+* Microsoft's [Build real world applications with Python](https://docs.microsoft.com/en-us/learn/paths/python-language/)
+* Tutorials Point's [Python 3 Tutorial](https://www.tutorialspoint.com/python3/index.htm)
