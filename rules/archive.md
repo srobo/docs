@@ -13,6 +13,28 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2021](#2021)
+---------------------
+
+<img src="{{ site.baseurl }}/images/content/rules/arena-2021.png" alt="A diagram of the arena for the SR2021 game" class="right" />
+
+For SR2021 the game, _Radars of the Lost Ark_, challenged teams to score points
+by claiming territories using radios. Teams had to navigate the arena scanning
+for tower transmissions and sending their own transmissions back to claim
+territories.
+
+The game was released over four modules, with teams having to adapt to the
+challenges each new module added. The second module added a limitation that
+towers must have an active connection to other already-claimed towers in order
+to be successfully claimed. The fourth module expanded the arena and introduced
+gold and silver towers which were worth additional points.
+
+Full details of the 2021 game are available in the module rulebooks:
+[Module Ⅰ]({{ site.baseurl }}/resources/2021/rulebook.module-1.html),
+[Module Ⅱ]({{ site.baseurl }}/resources/2021/rulebook.module-2.html),
+[Module Ⅲ]({{ site.baseurl }}/resources/2021/rulebook.module-3.html),
+[Module Ⅳ]({{ site.baseurl }}/resources/2021/rulebook.module-4.html).
+
 [2020](#2020)
 ---------------------
 
