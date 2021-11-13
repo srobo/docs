@@ -30,9 +30,9 @@ R.motor_boards["srABC1"].something...
 ~~~~~
 
 <div class="warning" markdown="1">
-    When you have more than one Motor board connected to your kit,
-    you must use `R.motor_boards` and index by serial number. This is so
-    that the kit knows which Motor Board you want to control.
+  When you have more than one Motor board connected to your kit,
+  you must use `R.motor_boards` and index by serial number. This is so
+  that the kit knows which Motor Board you want to control.
 </div>
 
 
