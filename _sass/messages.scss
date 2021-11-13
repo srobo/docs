@@ -17,7 +17,8 @@ $error: #BF433A;
     // Prevent our custom styles being overwritten if a div
     // has markdownenabled="1"
     color: $info;
-    margin: unset;
+    margin: 0;
+    font-size: 1rem;
   }
 }
 
@@ -31,6 +32,7 @@ $error: #BF433A;
     // Prevent our custom styles being overwritten if a div
     // has markdownenabled="1"
     color: $error;
-    margin: unset;
+    margin: 0;
+    font-size: 1rem;
   }
 }
