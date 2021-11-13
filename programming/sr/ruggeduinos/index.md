@@ -34,10 +34,10 @@ you could do this instead:
 R.ruggeduinos["752303138333517171B1"].something...
 ~~~~~
 
-<div class="warning">
-    When you have more than one Ruggeduino board connected to your kit,
-    you must use `R.ruggeduinos` and index by serial number. This is so
-    that the kit knows which Ruggeduino you want to control.
+<div class="warning" markdown="1">
+  When you have more than one Ruggeduino board connected to your kit,
+  you must use `R.ruggeduinos` and index by serial number. This is so
+  that the kit knows which Ruggeduino you want to control.
 </div>
 
 

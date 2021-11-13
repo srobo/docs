@@ -98,7 +98,7 @@ humans can only hear between [20Hz and 20000Hz][pitch-range].
 The `Note` enum provides notes in [scientific pitch notation][pitch-notation]
 between `C6` and `C8`. You can play other tones by providing a frequency.
 
-<div class="info">
+<div class="info" markdown="1">
   Calling `buzz` is non-blocking, which means it doesn't actually wait
   for the piezo to stop buzzing before continuing with your code. If you
   want to wait for the buzzing to stop, add a `sleep` afterwards!

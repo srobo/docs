@@ -131,11 +131,11 @@ You're familiar with the first few lines; in fact, the only lines you may not be
 For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [`motor`](/docs/programming/sr/motors/) page.
 But, to summarise:
 
-<div class="info">
-    `R.motor_board.motors[0].power = x` will set the power of the motor connected to output 0 (the `motors[0]` part)
-    on the first [motor board](/docs/kit/motor_board) (the `motor_board` part)
-    plugged in to a USB hub to `x`, where `x` is a value between `-1` and `1`,
-    inclusive &mdash; in other words: `-1` &le; `x` &le; `1`.
+<div class="info" markdown="1">
+  `R.motor_board.motors[0].power = x` will set the power of the motor connected to output 0 (the `motors[0]` part)
+  on the first [motor board](/docs/kit/motor_board) (the `motor_board` part)
+  plugged in to a USB hub to `x`, where `x` is a value between `-1` and `1`,
+  inclusive &mdash; in other words: `-1` &le; `x` &le; `1`.
 </div>
 
 So, `R.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/docs/kit/motor_board)
@@ -146,10 +146,10 @@ As you would expect, then, `R.motor_board.motors[0].power = -0.5` will put the t
 So, if you put the above code on your robot,
  you should be able to see a motor spin forwards, stop, spin backwards, stop, and then repeat...
 
-<div class="info">
-    If you find that the motor doesn't turn when you run the above code,
-     check that you've got all the cables connected to the right places,
-     in particular note that the motor board has _two_ outputs.
+<div class="info" markdown="1">
+  If you find that the motor doesn't turn when you run the above code,
+  check that you've got all the cables connected to the right places,
+  in particular note that the motor board has _two_ outputs.
 </div>
 
 ### Changing the Speed

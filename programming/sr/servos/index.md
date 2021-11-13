@@ -32,10 +32,10 @@ If you have more than one Servo Board attached, you need to specify which one yo
 R.servo_boards["srABC1"].something...
 ~~~~~
 
-<div class="warning">
-    When you have more than one servo board connected to your kit,
-    you must use `R.servo_boards` and index by serial number. This is so
-    that the kit knows which servo board you want to control.
+<div class="warning" markdown="1">
+  When you have more than one servo board connected to your kit,
+  you must use `R.servo_boards` and index by serial number. This is so
+  that the kit knows which servo board you want to control.
 </div>
 
 Setting servo positions
