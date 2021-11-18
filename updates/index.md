@@ -1,9 +1,6 @@
 ---
 layout: updates
 title: Updates
-kit_versions:
-  - version: 2022.0.0
-    released: 2021-11-13
 ---
 
 # Updates
