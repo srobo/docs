@@ -25,7 +25,7 @@ layout: default
           <th>Licences</th>
         </tr>
         {% for kit_version in site.data.kit_versions %}
-          <tr>
+          <tr id="{{ kit_version.version | slugify }}">
             <td>
               {% if forloop.first %}
               <code><strong>{{ kit_version.version }}</strong></code>
