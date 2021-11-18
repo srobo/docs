@@ -75,6 +75,8 @@ tree:
     tree:
       - url: /simulator/programming/
         title: Programming
+  - url: /updates/
+    title: Updates
   - url: /troubleshooting/
     title: Troubleshooting
     tree:
