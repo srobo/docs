@@ -1,6 +1,7 @@
 ---
 layout: updates
 title: Updates
+extra_js: updates
 ---
 
 # Updates

@@ -17,7 +17,7 @@ layout: default
     <div class="column m-9-12 doc">
       {{ content }}
 
-      <table>
+      <table id="updates-table">
         <tr>
           <th></th>
           <th>Release Date</th>
@@ -25,17 +25,22 @@ layout: default
           <th>Licences</th>
         </tr>
         {% for kit_version in site.data.kit_versions %}
-          <tr id="{{ kit_version.version | slugify }}">
+          {% assign version = kit_version.version %}
+          <tr id="{{ version | slugify }}">
             <td>
               {% if forloop.first %}
-              <code><strong>{{ kit_version.version }}</strong></code>
+              <code><strong>{{ version }}</strong></code>
               {% else %}
-              <code>{{ kit_version.version }}</code>
+              <code>{{ version }}</code>
               {% endif %}
             </td>
             <td>{{ kit_version.released | date_to_string }}</td>
-            <td><a href="https://kit-downloads.studentrobotics.org/kit-software/{{ kit_version.version }}/srobo-robot-{{ kit_version.version }}.img.xz">Download <code>{{ kit_version.version }}</code></a></td>
-            <td><a href="https://kit-downloads.studentrobotics.org/kit-software/{{ kit_version.version }}/srobo-robot-{{ kit_version.version }}-licences">Licences</a></td>
+            <td>
+              <a class="kit-download-link" data-version="{{ version }}" href="https://kit-downloads.studentrobotics.org/kit-software/{{ version }}/srobo-robot-{{ version }}.img.xz">
+                Download {{ version }}
+              </a>
+            </td>
+            <td><a href="https://kit-downloads.studentrobotics.org/kit-software/{{ version }}/srobo-robot-{{ version }}-licences">Licences</a></td>
           </tr>
         {% endfor %}
       </table>
