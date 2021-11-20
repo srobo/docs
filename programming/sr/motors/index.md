@@ -39,7 +39,7 @@ R.motor_boards["srABC1"].something...
 Setting motor power
 -------------------
 
-Motor power is controlled using [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) with 100% power being a [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) of 1. You set the power with an integer value between -1 and 1 inclusive. Fractional values (such as 0.42) can be used to specify less than 100% power. Negative values run the motor in the opposite direction.
+Motor power is controlled using [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) with 100% power being a [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) of 1. You set the power with a value between -1 and 1 inclusive. Fractional values (such as 0.42) can be used to specify less than 100% power. Negative values run the motor in the opposite direction.
 
 The field to change the output power is `power`. As each Motor Board has two outputs you will need to specify which output you want to control:
 
