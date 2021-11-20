@@ -50,7 +50,7 @@ task :validate_links => [:build] do
   sh('bundle exec htmlproofer _site --assume-extension --disable-external --empty-alt-ignore --allow-hash-href --url-swap "^/docs/:/"')
 end
 
-task :validate_sidebar_tree do # => [:build] do
+task :validate_sidebar_tree => [:build] do
   # There are lots of things which this could validate, however we assume that
   # most changes will be eyeballed by a human. We therefore just check the most
   # nuanced case -- that the url must be an exact match for its target page.
