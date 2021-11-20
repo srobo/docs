@@ -15,7 +15,7 @@ tree:
         title: HKE4 Charger
       - url: /kit/batteries/imax_b6_charger
         title: IMAX B6 Charger
-    - url: /kit/brain_board
+    - url: /kit/brain_board/
       title: Brain Board
       tree:
         - url: /kit/brain_board/updates
