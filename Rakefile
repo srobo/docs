@@ -50,4 +50,34 @@ task :validate_links => [:build] do
   sh('bundle exec htmlproofer _site --assume-extension --disable-external --empty-alt-ignore --allow-hash-href --url-swap "^/docs/:/"')
 end
 
-task :validate => [:validate_kit_versions, :validate_links]
+task :validate_sidebar_tree do # => [:build] do
+  # There are lots of things which this could validate, however we assume that
+  # most changes will be eyeballed by a human. We therefore just check the most
+  # nuanced case -- that the url must be an exact match for its target page.
+
+  def check_url(url)
+    if url.end_with? "/" then
+      raise "Imprecise target url '#{url}' in sidebar (did you mean '#{url[..-2]}'?)\n\n" unless File.directory?("_site#{url}")
+    else
+      raise "Imprecise target url '#{url}' in sidebar (did you mean '#{url}/'?)\n\n" unless File.file?("_site#{url}.html")
+    end
+  end
+
+  def check_nodes(node)
+    check_url(node['url'])
+    if node['tree'] then
+      node['tree'].each do |x|
+        check_nodes(x)
+      end
+    end
+  end
+
+  data = YAML.load_file('_data/sidebar_tree.yaml')
+  data['tree'].each do |x|
+    check_nodes(x)
+  end
+
+  puts "Sidebar links validated successfully"
+end
+
+task :validate => [:validate_kit_versions, :validate_links, :validate_sidebar_tree]
