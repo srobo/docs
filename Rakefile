@@ -1,3 +1,5 @@
+require 'yaml'
+
 task :clean do
   sh('rm -rf _site')
 end
@@ -24,7 +26,21 @@ task :build => [:dependencies, :submodules] do
   sh('bundle exec jekyll build --config _config.yml')
 end
 
-task :validate => [:build] do
+task :validate_kit_versions do
+  data = YAML.load_file('_data/kit_versions.yml')
+  data.each do |entry|
+    actual = entry.keys.to_set
+    expected = ['version', 'released'].to_set
+    missing = expected - actual
+    extra = actual - expected
+    messages = []
+    messages << "Missing keys: #{missing.to_a.join(', ')}" if missing.size() > 0
+    messages << "Extra keys: #{extra.to_a.join(', ')}" if extra.size() > 0
+    raise "For entry\n#{entry}\n#{messages.join("\n")}\n\n" if messages.size() > 0
+  end
+end
+
+task :validate_links => [:build] do
   # Explanation of arguments:
   # --assume-extension  # Tells html-proofer that `.html` files can be accessed without the `.html` part in the url.
   # --disable-external  # For speed. Ideally we'd check external links too, but ignoring for now.
@@ -33,3 +49,5 @@ task :validate => [:build] do
   # --url-swap          # Adjust for Jekyll's baseurl. See https://github.com/gjtorikian/html-proofer/issues/618 for more.
   sh('bundle exec htmlproofer _site --assume-extension --disable-external --empty-alt-ignore --allow-hash-href --url-swap "^/docs/:/"')
 end
+
+task :validate => [:validate_kit_versions, :validate_links]
