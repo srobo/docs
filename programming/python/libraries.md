@@ -29,7 +29,7 @@ The following python libraries are installed and available for use in your robot
 * [numpy 1.21.2](https://pypi.org/project/numpy)
 * opencv 4.5.2
 * [pandas 1.3.3](https://pypi.org/project/pandas)
-* python3-pkg-resources 57.4.0
+* pkg-resources 57.4.0
 * [pydantic 1.8.2](https://pypi.org/project/pydantic)
 * [pygobject 3.40.1](https://pypi.org/project/PyGObject/)
 * [pyparsing 2.4.7](https://pypi.org/project/pyparsing)
