@@ -38,6 +38,8 @@ task :validate_kit_versions do
     messages << "Extra keys: #{extra.to_a.join(', ')}" if extra.size() > 0
     raise "For entry\n#{entry}\n#{messages.join("\n")}\n\n" if messages.size() > 0
   end
+
+  puts "Kit versions validated successfully"
 end
 
 task :validate_links => [:build] do
