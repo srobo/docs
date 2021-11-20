@@ -1,0 +1,27 @@
+<table id="updates-table">
+  <tr>
+    <th></th>
+    <th>Release Date</th>
+    <th>Download</th>
+    <th>Licences</th>
+  </tr>
+  {% for kit_version in site.data.kit_versions %}
+    {% assign version = kit_version.version %}
+    <tr id="{{ version | slugify }}">
+      <td>
+        {% if forloop.first %}
+        <code><strong>{{ version }}</strong></code>
+        {% else %}
+        <code>{{ version }}</code>
+        {% endif %}
+      </td>
+      <td>{{ kit_version.released | date_to_string }}</td>
+      <td>
+        <a class="kit-download-link" data-version="{{ version }}" href="https://kit-downloads.studentrobotics.org/kit-software/{{ version }}/srobo-robot-{{ version }}.img.xz">
+          Download {{ version }}
+        </a>
+      </td>
+      <td><a href="https://kit-downloads.studentrobotics.org/kit-software/{{ version }}/srobo-robot-{{ version }}-licences">Licences</a></td>
+    </tr>
+  {% endfor %}
+</table>
