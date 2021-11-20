@@ -17,6 +17,9 @@ tree:
         title: IMAX B6 Charger
     - url: /kit/brain_board
       title: Brain Board
+      tree:
+        - url: /kit/brain_board/updates/
+          title: Updates
     - url: /kit/motor_board
       title: Motor Board
     - url: /kit/power_board
@@ -75,8 +78,6 @@ tree:
     tree:
       - url: /simulator/programming/
         title: Programming
-  - url: /updates/
-    title: Updates
   - url: /troubleshooting/
     title: Troubleshooting
     tree:
