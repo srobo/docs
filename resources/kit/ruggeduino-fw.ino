@@ -3,7 +3,7 @@
 // We communicate with the power board at 115200 baud.
 #define SERIAL_BAUD 115200
 
-#define FW_VER 0
+#define FW_VER 1
 
 void setup() {
   Serial.begin(SERIAL_BAUD);
