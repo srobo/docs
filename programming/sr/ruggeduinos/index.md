@@ -14,7 +14,7 @@ When a single Ruggeduino is connected to your robot, you can control it
 using the `ruggeduino` object.
 
 ~~~~~ python
-R.ruggeduinos.something...
+R.ruggeduino.something...
 ~~~~~
 
 The serial number of each detected Ruggeduino is printed to the log when your robot starts.
