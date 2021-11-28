@@ -6,7 +6,7 @@ title: SR Module
 SR Module
 =========
 
-Student Robotics has written a module &mdash; `sr.robot`  &mdash; which is used to interface with the hardware.
+Student Robotics has written a module &mdash; `sr.robot3`  &mdash; which is used to interface with the hardware.
 It handles all the low-level interactions so you don't have to.
 To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
 
@@ -19,16 +19,16 @@ R.motors[0].m0.power = -30
 To gain access to all of this functionality, all you need to do is write:
 
 ~~~~~ python
-from sr.robot import *
+from sr.robot3 import *
 ~~~~~
 
 ...at the top of your code (before you use any of its functionality, basically).
 This imports the Student Robotics module that we've written to interface with our hardware.
 
-Then, within the `sr.robot` module, there is a `Robot` class that should be instantiated, as follows:
+Then, within the `sr.robot3` module, there is a `Robot` class that should be instantiated, as follows:
 
 ~~~~~ python
-from sr.robot import *
+from sr.robot3 import *
 R = Robot()
 ~~~~~
 
