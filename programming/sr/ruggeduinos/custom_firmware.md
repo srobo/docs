@@ -107,7 +107,7 @@ Ruggeduino connected.
 You'll need the ID later, so it's best to save it into a variable:
 
 ~~~~~ python
-from sr.robot import *
+from sr.robot3 import *
 
 RUGGEDUINO_ID = "752303138333517171B1" # Replace this with the actual ID
 
@@ -132,7 +132,7 @@ You may wish to use pyserial to communicate with the Ruggeduino, in which case y
 
 ~~~~~ python
 import serial
-from sr.robot import *
+from sr.robot3 import *
 
 RUGGEDUINO_ID = "752303138333517171B1"
 
