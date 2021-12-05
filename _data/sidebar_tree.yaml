@@ -63,7 +63,7 @@ tree:
         tree:
         - url: /programming/sr/vision/markers
           title: Markers
-    - url: /programming/editors
+    - url: /programming/editors/
       title: Code Editors
       tree:
       - url: /programming/editors/vscode
