@@ -58,7 +58,7 @@ task :validate_sidebar_tree => [:build] do
   # nuanced case -- that the url must be an exact match for its target page.
 
   def check_url(url)
-    if url.end_with? "/" then
+    if url.end_with?("/") then
       raise "Imprecise target url '#{url}' in sidebar (did you mean '#{url[..-2]}'?)\n\n" unless File.directory?("_site#{url}")
     else
       raise "Imprecise target url '#{url}' in sidebar (did you mean '#{url}/'?)\n\n" unless File.file?("_site#{url}.html")
