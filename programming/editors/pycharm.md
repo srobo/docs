@@ -13,7 +13,7 @@ In order to take full advantage of PyCharm's smart assistance features, such as 
 The following instructions will guide you through setting up your local environment to have access our `sr.robot3` API.
 
 1. Open your robot code project in PyCharm.
-2. Head to `File` &rarr; `Settings` or `PyCharm` &rarr; `Preferences` on a Mac.
+2. Head to **File** &rarr; **Settings** or **PyCharm** &rarr; **Preferences** on a Mac.
 ![Location of Settings menu option in PyCharm for Windows and Linux]({{ site.baseurl }}/images/content/programming/pycharm_app_menu.png)
 3. Select `Project` &rarr; `Project Interpreter` from the list on the left.
 4. Click the `+` symbol at the top of the packages list to install a new library.

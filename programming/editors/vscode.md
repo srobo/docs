@@ -31,7 +31,7 @@ In order for VSCode to pick up the `sr.robot3` library and offer [completions][c
 you'll need to make the library available within the Python environment that you're using.
 
 1. Open the workspace containing your code.
-2. Open a terminal via **Terminal** > **New Terminal**.
+2. Open a terminal via **Terminal** &rarr; **New Terminal**.
 3. Run `pip install sr.robot3`.
 
 [code-completion]: https://en.wikipedia.org/wiki/Autocomplete#In_source_code_editors
