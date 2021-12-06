@@ -63,8 +63,10 @@ tree:
     - url: /programming/editors
       title: Code Editors
       tree:
+      - url: /programming/editors/pycharm
+        title: PyCharm
       - url: /programming/editors/vscode
-        title: VSCode
+        title: Visual Studio Code
   - url: /rules/
     title: Rules
     tree:
