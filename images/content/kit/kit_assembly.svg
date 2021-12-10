@@ -161,14 +161,24 @@
      fit-margin-bottom="0"
      showguides="false"
      inkscape:zoom="0.32"
-     inkscape:cx="1426.4617"
-     inkscape:cy="1068.5746"
+     inkscape:cx="1244.511"
+     inkscape:cy="964.32448"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="editor-g1061b63b5b8_0_220"
+     inkscape:current-layer="svg1277"
      inkscape:pagecheckerboard="true"
      inkscape:snap-text-baseline="false" />
+  <rect
+     style="overflow:hidden;opacity:1;vector-effect:none;fill:#c0c0c0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect5028-8-9"
+     width="32.421623"
+     height="41.117592"
+     x="32053.348"
+     y="-140714.31"
+     rx="6"
+     ry="6"
+     transform="rotate(90)" />
   <g
      style="overflow:hidden;fill:none;fill-rule:evenodd;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
      transform="matrix(0.01,0,0,0.01,138342.05,31386.94)"
@@ -272,7 +282,7 @@
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;stroke:#343434;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     d="m 140167.48,32009.903 c 148.05,-4.42 204.69,130.372 444.44,129.267"
+     d="m 140167.48,32009.903 c 129.3,8.08 115.63,138.185 444.44,129.267"
      id="path4868"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
@@ -733,70 +743,53 @@
       </g>
     </g>
   </g>
+  <path
+     style="stroke:#303030;stroke-width:3.80999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     id="path1106"
+     d="m 140184.36,31825.59 53.76,-90.6"
+     stroke-miterlimit="8" />
   <g
-     id="editor-g1061b63b5b8_0_199"
+     id="g1112"
      transform="matrix(0.01,0,0,0.01,138342.05,31386.94)">
-    <g
-       id="g1114">
-      <g
-         id="g1108">
-        <path
-           stroke-miterlimit="8"
-           d="m 184231,43865 5376,-9060"
-           id="path1106"
-           inkscape:connector-curvature="0"
-           style="stroke:#303030;stroke-width:381;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1" />
-      </g>
-      <g
-         id="g1112">
-        <path
-           stroke-miterlimit="10"
-           pointer-events="visiblePainted"
-           d="m 184231,43865 5376,-9060"
-           id="path1110"
-           inkscape:connector-curvature="0"
-           style="stroke:#000000;stroke-width:3810;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0" />
-      </g>
-    </g>
+    <path
+       stroke-miterlimit="10"
+       pointer-events="visiblePainted"
+       d="m 184231,43865 5376,-9060"
+       id="path1110"
+       inkscape:connector-curvature="0"
+       style="stroke:#000000;stroke-width:3810;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0" />
   </g>
   <g
-     id="editor-g1061b63b5b8_0_200"
+     id="g1119"
      transform="matrix(0.01,0,0,0.01,138342.05,31386.94)">
-    <g
-       id="g1169">
-      <g
-         id="g1119">
-        <path
-           d="m 186778,25511 h 53088 v 19704 h -53088 z"
-           id="path1117"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         id="g1123">
-        <path
-           stroke-miterlimit="10"
-           pointer-events="visiblePainted"
-           d="m 186778,25511 h 53088 v 19704 h -53088 z"
-           id="path1121"
-           inkscape:connector-curvature="0"
-           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3810;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0" />
-      </g>
-      <g
-         id="g1167">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5333.33300781px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:100"
-           x="189273.12"
-           y="33233.418"
-           id="text5392"><tspan
-             sodipodi:role="line"
-             id="tspan5390"
-             x="189273.12"
-             y="33233.418"
-             style="font-weight:bold;stroke-width:100">Power Switch Loop</tspan></text>
-      </g>
-    </g>
+    <path
+       d="m 186778,25511 h 53088 v 19704 h -53088 z"
+       id="path1117"
+       inkscape:connector-curvature="0" />
   </g>
+  <g
+     id="g1123"
+     transform="matrix(0.01,0,0,0.01,138342.05,31386.94)">
+    <path
+       stroke-miterlimit="10"
+       pointer-events="visiblePainted"
+       d="m 186778,25511 h 53088 v 19704 h -53088 z"
+       id="path1121"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3810;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0" />
+  </g>
+  <text
+     id="text5392"
+     y="31719.273"
+     x="140234.78"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33332825px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:round;paint-order:markers stroke fill"
+     xml:space="preserve"><tspan
+       style="font-weight:bold;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1;stroke-linecap:round;paint-order:markers stroke fill"
+       y="31719.273"
+       x="140234.78"
+       id="tspan5390"
+       sodipodi:role="line">Power Switch Loop</tspan></text>
   <g
      id="g3279"
      transform="matrix(0.01,0,0,0.01,138342.05,31386.94)">
@@ -2158,7 +2151,7 @@
      transform="scale(-1)" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers stroke fill;stroke-linecap:round;"
      x="32458.525"
      y="-141620.7"
      id="text5349"
@@ -2166,12 +2159,12 @@
        sodipodi:role="line"
        x="32458.525"
        y="-141620.7"
-       style="font-weight:bold"
+       style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers stroke fill;stroke-linecap:round;"
        id="tspan5351">Leave Empty for</tspan><tspan
        sodipodi:role="line"
        x="32458.525"
        y="-141554.03"
-       style="font-weight:bold"
+       style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers stroke fill;stroke-linecap:round;"
        id="tspan5355">Competition USB</tspan></text>
   <rect
      style="overflow:hidden;opacity:1;vector-effect:none;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -2182,19 +2175,9 @@
      y="32276.838"
      rx="6"
      ry="6" />
-  <rect
-     style="overflow:hidden;opacity:1;vector-effect:none;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4951-1"
-     width="84.042282"
-     height="129.64391"
-     x="31946.301"
-     y="-140687.08"
-     rx="6"
-     ry="6"
-     transform="rotate(90)" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;paint-order:stroke markers fill;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-linecap:square;stroke-linejoin:round"
      x="-32304.289"
      y="138767"
      id="text1221"
@@ -2202,12 +2185,12 @@
        sodipodi:role="line"
        x="-32304.289"
        y="138767"
-       style="font-weight:bold"
+       style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;paint-order:stroke markers fill;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-linecap:square;stroke-linejoin:round"
        id="tspan1227">ONLY USED</tspan><tspan
        sodipodi:role="line"
        x="-32304.289"
        y="138833.67"
-       style="font-weight:bold"
+       style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;paint-order:stroke markers fill;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-linecap:square;stroke-linejoin:round"
        id="tspan1231">FOR CHARGING</tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
@@ -2227,18 +2210,88 @@
        y="32011.799" /></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;overflow:hidden;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;overflow:hidden;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-linecap:round;stroke-miterlimit:10;stroke-opacity:1;stroke-width:10;stroke-dasharray:none;stroke-linejoin:miter;paint-order:markers stroke fill;"
      x="141246.84"
      y="31925.896"
      id="text5349-0"><tspan
        sodipodi:role="line"
        x="141246.84"
        y="31925.896"
-       style="font-weight:bold"
+       style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:round;paint-order:markers stroke fill;"
        id="tspan5355-6">USB B</tspan><tspan
        sodipodi:role="line"
        x="141246.84"
        y="31992.562"
-       style="font-weight:bold"
+       style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:round;paint-order:markers stroke fill;"
        id="tspan1300">Connector</tspan></text>
+  <rect
+     style="overflow:hidden;opacity:1;vector-effect:none;fill:#03a1ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4951-1-9"
+     width="38.729782"
+     height="268.70639"
+     x="32050.961"
+     y="-140686.88"
+     rx="6"
+     ry="6"
+     transform="rotate(90)" />
+  <rect
+     style="overflow:hidden;opacity:1;vector-effect:none;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4951-1"
+     width="84.042282"
+     height="129.64391"
+     x="31946.301"
+     y="-140687.08"
+     rx="6"
+     ry="6"
+     transform="rotate(90)" />
+  <g
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+     id="g1119-3"
+     transform="matrix(0.01,0,0,0.01,138276.51,31871.94)">
+    <path
+       d="m 186778,25511 h 53088 v 19704 h -53088 z"
+       id="path1117-7"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+     id="g1123-2"
+     transform="matrix(0.01,0,0,0.01,138276.51,31871.94)">
+    <path
+       stroke-miterlimit="10"
+       pointer-events="visiblePainted"
+       d="m 186778,25511 h 53088 v 19704 h -53088 z"
+       id="path1121-0"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3810;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0" />
+  </g>
+  <text
+     id="text5392-4"
+     y="32230.711"
+     x="140285.61"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33332825px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;paint-order:markers stroke fill;"
+     xml:space="preserve"><tspan
+       style="font-weight:bold;stroke-width:10;stroke:#ffffff;stroke-opacity:1;stroke-miterlimit:10;stroke-dasharray:none;stroke-linecap:round;paint-order:markers stroke fill;"
+       y="32230.711"
+       x="140285.61"
+       id="tspan5390-3"
+       sodipodi:role="line">Code USB Stick</tspan></text>
+  <g
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+     id="g1112-5"
+     transform="matrix(0.01,0,0,0.01,138507,31715.791)">
+    <path
+       stroke-miterlimit="10"
+       pointer-events="visiblePainted"
+       d="m 184231,43865 5376,-9060"
+       id="path1110-2"
+       inkscape:connector-curvature="0"
+       style="stroke:#000000;stroke-width:3810;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0" />
+  </g>
+  <path
+     style="overflow:hidden;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.80999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     id="path1106-2"
+     d="m 140455.06,32178.995 1.64,-105.336"
+     stroke-miterlimit="8" />
 </svg>
