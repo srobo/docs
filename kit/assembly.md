@@ -6,7 +6,10 @@ title: Kit Assembly
 Kit Assembly
 ============
 
-The Student Robotics kit contains a number of separate modules which must be connected together to be usable to control your robot.
+The Student Robotics kit contains a number of separate modules which must be connected together control your robot. Below is a diagram of what your assembled kit should look like.
+
+![Diagram of the kit assembly]({{ site.baseurl }}/images/content/kit/kit_assembly.png)
+
 
 Preparation
 -----------
@@ -45,7 +48,6 @@ When creating your power cables be sure to refer to the pages for each board
 In our diagrams, the <span class="positive-connector">+</span> outputs from the
  the Power Board should be connected to the <span class="positive-connector">+</span>
  inputs on the board being powered.
-
 
 Video
 -----
