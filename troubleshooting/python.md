@@ -44,7 +44,7 @@ As you can see, this could often be more helpful.
 Other causes of syntax errors to look out for are:
 
 * Missing colons at the end of `def`s, `if`s, `for`s, etc.
-* Using the wrong number of `=` signs (see the [Variables](#variables) section)
+* Using the wrong number of `=` signs (see the [Variables](/docs/tutorials/python#variables) section)
 * Missing brackets (e.g. `x = 5 * (3+2`).
 * For those outside of the U.K., the decimal point is a period (`.`), not a comma (`,`)
 
