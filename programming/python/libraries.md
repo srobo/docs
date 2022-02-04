@@ -11,7 +11,7 @@ Robot Kit
 
 The following python libraries are installed and available for use in your robot's software:
 
-* [astoria 0.7.0](https://pypi.org/project/astoria)
+* [astoria 0.8.0](https://pypi.org/project/astoria)
 * [cached-property 1.5.2](https://pypi.org/project/cached-property)
 * [click 8.0.1](https://pypi.org/project/click)
 * [cycler 0.10.0](https://pypi.org/project/cycler)
@@ -23,12 +23,13 @@ The following python libraries are installed and available for use in your robot
 * [gpg 1.16.0](https://pypi.org/project/gpg)
 * [iniparse 0.5](https://pypi.org/project/iniparse)
 * [j5 0.13.1](https://pypi.org/project/j5)
-* [j5-zoloto 0.1.0](https://pypi.org/project/j5-zoloto)
+* [j5-zoloto 0.2.0](https://pypi.org/project/j5-zoloto)
 * [kiwisolver 1.3.2](https://pypi.org/project/kiwisolver)
 * [matplotlib 3.4.1](https://pypi.org/project/matplotlib)
 * [numpy 1.21.2](https://pypi.org/project/numpy)
 * opencv 4.5.2
 * [pandas 1.3.3](https://pypi.org/project/pandas)
+* [pillow 8.3.2](https://pypi.org/project/Pillow/)
 * pkg-resources 57.4.0
 * [pydantic 1.8.2](https://pypi.org/project/pydantic)
 * [pygobject 3.40.1](https://pypi.org/project/PyGObject/)
@@ -47,6 +48,6 @@ The following python libraries are installed and available for use in your robot
 * [typing-extensions 3.10.0.0](https://pypi.org/project/typing-extensions)
 * [udiskie 2.3.3](https://pypi.org/project/udiskie)
 * udiskie-locale-en-us 2.3.3
-* [zoloto 0.7.1](https://pypi.org/project/zoloto)
+* [zoloto 0.8.0](https://pypi.org/project/zoloto)
 
 If you wish to use a library that isn't listed above, get in contact with us on Discord and have a chat with us about it.
