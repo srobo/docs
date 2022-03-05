@@ -39,9 +39,13 @@ R.motor_boards["srABC1"].something...
 Setting motor power
 -------------------
 
-Motor power is controlled using [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) with 100% power being a [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) of 1. You set the power with a value between -1 and 1 inclusive. Fractional values (such as 0.42) can be used to specify less than 100% power. Negative values run the motor in the opposite direction.
+Control of your motors is achieved by setting a power output from one of the
+channels on your motor boards. Valid values are between -1 and 1 inclusive.
+Fractional values (such as 0.42) can be used to specify less than 100% power.
+Negative values run the motor in the opposite direction.
 
-The field to change the output power is `power`. As each Motor Board has two outputs you will need to specify which output you want to control:
+The field to change the output power is `power`. As each Motor Board has two
+outputs you will need to specify which output you want to control:
 
 ~~~~~ python
 from sr.robot3 import *
@@ -57,21 +61,55 @@ R.motor_boards["srXYZ1"].motors[0].power = -1
 
 # motor board srABC1, channel 1 to half power forward
 R.motor_boards["srABC1"].motors[1].power = 0.5
+~~~~~
 
+The motor board will continue to output the requested power until it is told
+otherwise or until power to the board is removed (usually when the robot turns
+off).
+
+Therefore to stop your motors you must explicitly set the power output to zero:
+
+~~~~~ python
 # motor board srXYZ1, channel 0 stopped
 R.motor_boards["srXYZ1"].motors[0].power = 0
 
-# the following will put motor board srABC1, channel 1 at 25% power (forwards) for 2.5 seconds:
+# Put motor board srABC1, channel 1 at 25% power for 2.5 seconds:
 R.motor_boards["srABC1"].motors[1].power = 0.25
 time.sleep(2.5)       # wait for 2.5 seconds
 R.motor_boards["srABC1"].motors[1].power = 0
 ~~~~~
 
+Since each output channel can be controlled separately, you can control several
+motors at once.
+
+~~~~~ python
+# Set one motor to full power in one direction and
+# another to full power in the other:
+R.motor_boards["srABC1"].motors[0].power = 1
+R.motor_boards["srABC1"].motors[1].power = -1
+
+# Wait a while (perhaps for the robot to move)
+time.sleep(3)
+
+# Stop both motors
+R.motor_boards["srABC1"].motors[0].power = 0
+R.motor_boards["srABC1"].motors[1].power = 0
+~~~~~
+
+<div class="info" markdown="1">
+  You will need to work out for your robot which values (positive or negative)
+  result in it moving in each direction. This will depend on how you have
+  positioned your motors as well as how they have been wired to the motor board.
+</div>
+
+Getting the current motor power
+-------------------------------
+
 You can read the current power value for a motor using the same field:
 
 ~~~~~ python
 # get the current output power of Motor Board srABC1, channel 0
-currentTarget = R.motor_boards["srABC1"].motors[0].power
+target = R.motor_boards["srABC1"].motors[0].power
 ~~~~~
 
 Stopping the motors
@@ -80,7 +118,8 @@ Stopping the motors
 When you set the motor power to 0, this signals the Motor Board to actively stop that motor from turning.
 
 ~~~~~ python
-# store the motor in a local variable because typing it out gets really boring
+# store the motor in a local variable because
+# typing it out gets really boring
 molly = R.motor_boards["srABC1"].motors[1]
 
 # set the power to 100% for a second, then stop immediately
