@@ -14,6 +14,11 @@ The USB interface is isolated from the rest of the board to prevent damage to th
 Due to this isolation the board must have power applied to the power connector, from the motor rail on the power board, to function.
 If the board does not have power applied to the power connector then the kit will report that there is a problem with the motor board.
 
+The motor board uses [pulse-width modulation][wiki-pwm] (PWM) to control the
+amount of power that is sent to the motors.
+
+[wiki-pwm]: https://en.wikipedia.org/wiki/Pulse-width_modulation
+
 Board Diagram
 -------------
 
