@@ -96,7 +96,7 @@ R.motor_boards["srABC1"].motors[0].power = 0
 R.motor_boards["srABC1"].motors[1].power = 0
 ~~~~~
 
-<div class="warning" markdown="1">
+<div class="info" markdown="1">
   You will need to work out for your robot which values (positive or negative)
   result in it moving in each direction. This will depend on how you have
   positioned your motors as well as how they have been wired to the motor board.
