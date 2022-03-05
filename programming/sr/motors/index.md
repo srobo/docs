@@ -118,7 +118,8 @@ Stopping the motors
 When you set the motor power to 0, this signals the Motor Board to actively stop that motor from turning.
 
 ~~~~~ python
-# store the motor in a local variable because typing it out gets really boring
+# store the motor in a local variable because
+# typing it out gets really boring
 molly = R.motor_boards["srABC1"].motors[1]
 
 # set the power to 100% for a second, then stop immediately
