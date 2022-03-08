@@ -28,7 +28,10 @@ Indicators
 Connectors
 ----------
 
-There are 8 servo connections on the left-side of the board, and 4 on the right. Servo cables are connected vertically, with 0V (the black or brown wire) at the bottom of the board.
+There are 8 servo connections on the left-side of the board (numbers 0-7), and 4 on the right (numbers 8-11).
+See the labels on the board (also visible in the photo above) for how these numbers map to the outputs.
+
+Servo cables are connected vertically, with 0V (the black or brown wire) at the bottom of the board.
 
 For the servo board to operate correctly, you must connect it to the 12V power
 rail from the power board. A green LED will light next to the servo board 12V

@@ -41,6 +41,10 @@ R.servo_boards["srABC1"].something...
 Setting servo positions
 -----------------------
 
+Each of the twelve servo outputs can be controlled separately. The servo outputs
+are numbered 0-11, see the [Servo Board](/docs/kit/servo_board#connectors) docs
+for details of which output is which.
+
 The position of servos can range from `-1` to `1` inclusive:
 
 ~~~~~ python
