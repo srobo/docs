@@ -58,5 +58,5 @@ when using the Ruggeduino to drive the LED a current limiting resistor is not re
 
 ## Design
 
-* [Schematic](http://ruggedcircuits.com/AM010/am010.pdf)
-* [Manufacturer's documentation](http://ruggedcircuits.com/html/ruggeduino.html)
+* [Schematic](https://web.archive.org/web/20140210003143/http://ruggedcircuits.com/AM010/am010.pdf)
+* [Manufacturer's documentation](https://web.archive.org/web/20170317171649/https://www.rugged-circuits.com/ruggeduino)
