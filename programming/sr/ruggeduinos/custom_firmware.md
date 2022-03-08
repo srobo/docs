@@ -92,7 +92,7 @@ The `cake_result` variable will contain any response from your firmware, if you 
 You're done!  You can now use your custom cake-baking firmware!
 
 If you have multiple Ruggeduino running custom firmware, you can keep track of which one is which
-by using the serial numner.
+by using the serial number.
 
 [Completely custom firmware](#completely) {#completely}
 ----------------------------
