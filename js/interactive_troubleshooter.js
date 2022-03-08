@@ -5,7 +5,7 @@
     function init() {
         globalRadioName = 0;
 
-        var resetBtnAtTop = document.getElementById("resetbtnattop");
+        var resetBtnAtTop = document.getElementById("reset-btn-at-top");
         resetBtnAtTop.style.display = "none";
 
         var troubleshooter = document.getElementById("troubleshooter");
@@ -42,26 +42,26 @@
             parent.appendChild(newMessage);
         }
 
-        if ("askiffixed" in answer) {
-            var question = data.askiffixed_question;
-            question.answers[1].nextquestion = answer.nextquestion;
+        if ("ask_if_fixed" in answer) {
+            var question = data.ask_if_fixed_question;
+            question.answers[1].next_question = answer.next_question;
             appendQuestion(parent, question);
             return;
         }
 
-        if (!("nextquestion" in answer)) {
+        if (!("next_question" in answer)) {
             var newMessage = document.createElement("p");
             newMessage.className = "message";
             newMessage.textContent = "Thank you for using the SR Troubleshooter.";
             parent.appendChild(newMessage);
 
-            var resetBtnAtTop = document.getElementById("resetbtnattop");
+            var resetBtnAtTop = document.getElementById("reset-btn-at-top");
             resetBtnAtTop.style.display = "inline-block";
 
             return;
         }
 
-        appendQuestionById(parent, answer.nextquestion);
+        appendQuestionById(parent, answer.next_question);
     }
 
     function appendQuestionById(parent, id) {
