@@ -12,6 +12,10 @@ task :dependencies do
   sh('bundle install --path gems')
 end
 
+task :spelling_dependencies do
+  sh('npm install')
+end
+
 file '_sass/brand/.git' do
   sh('git submodule update --init')
 end
@@ -25,6 +29,8 @@ end
 task :build => [:dependencies, :submodules] do
   sh('bundle exec jekyll build --config _config.yml')
 end
+
+task :build_spellings => [:build, :spelling_dependencies]
 
 task :validate_kit_versions do
   data = YAML.load_file('_data/kit_versions.yml')
@@ -84,4 +90,8 @@ task :validate_sidebar_tree => [:build] do
   puts "Sidebar links validated successfully"
 end
 
-task :validate => [:validate_kit_versions, :validate_links, :validate_sidebar_tree]
+task :validate_spellings => [:build_spellings] do
+  sh('npm run spell-check')
+end
+
+task :validate => [:validate_kit_versions, :validate_links, :validate_sidebar_tree, :validate_spellings]
