@@ -39,7 +39,7 @@ custom_css: >
 iMAX B6 Chargers
 ================
 
-![iMAX B6 Charger]({{ site.baseurl }}/images/content/kit/battery_charger_imaxb6.png "An iMAX B6 Charger")
+![iMAX B6 Charger]({{ site.baseurl }}/images/content/kit/battery_charger_imax_b6.png "An iMAX B6 Charger")
 
 Some kits will contain a blue iMAX B6 charger.
 This charger is more complex than the HobbyKing HKE4 charger and has a lot of unnecessary functionality,
