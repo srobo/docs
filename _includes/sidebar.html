@@ -16,14 +16,14 @@ This file performs two tasks:
           <a href="{{ subheading.url | prepend: site.baseurl }}">{{subheading.title}}</a>
           {% if subheading.tree %}
           <ul>
-          {% for subsubheading in subheading.tree %}
-            <li{% if clean_url == subsubheading.url %} class="selected" {% endif %}>
-              <a href="{{ subsubheading.url | prepend: site.baseurl }}">{{subsubheading.title}}</a>
-              {% if subsubheading.tree %}
+          {% for sub_subheading in subheading.tree %}
+            <li{% if clean_url == sub_subheading.url %} class="selected" {% endif %}>
+              <a href="{{ sub_subheading.url | prepend: site.baseurl }}">{{sub_subheading.title}}</a>
+              {% if sub_subheading.tree %}
               <ul>
-                {% for subsubsubheading in subsubheading.tree %}
-                  <li{% if clean_url == subsubsubheading.url %} class="selected" {% endif %}>
-                    <a href="{{ subsubsubheading.url | prepend: site.baseurl }}">{{subsubsubheading.title}}</a>
+                {% for sub_sub_subheading in sub_subheading.tree %}
+                  <li{% if clean_url == sub_sub_subheading.url %} class="selected" {% endif %}>
+                    <a href="{{ sub_sub_subheading.url | prepend: site.baseurl }}">{{sub_sub_subheading.title}}</a>
                   </li>
                 {% endfor %}
               </ul>
