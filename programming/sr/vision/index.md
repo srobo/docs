@@ -157,7 +157,7 @@ spherical
 :   A [`Spherical`](#Spherical) instance describing the position relative to the camera.
 
 cartesian
-:   A [`ThreeDCoordinates`][#ThreeDCoordinates] instance describing the absolute position of the marker relative to the camera.
+:   A [`ThreeDCoordinate`](#ThreeDCoordinate) instance describing the absolute position of the marker relative to the camera.
 
 [`Coordinate`](#Coordinate) {#Coordinate}
 ---------
