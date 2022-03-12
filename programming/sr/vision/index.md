@@ -224,12 +224,12 @@ The spherical coordinates system has three values to specify a specific point in
 - φ (phi) - The polar angle from the plane of the camera to the point, in radians.
 
 rot_x
-:   Rotation around the X-axis, in radians.
+:   Rotation around the X-axis, in radians, corresponding to `theta` on the diagram.
 
 rot_y
-:   Rotation around the Y-axis, in radians.
+:   Rotation around the Y-axis, in radians, corresponding to `phi` on the diagram.
 
 dist
-:   Distance, in metres.
+:   Distance, in metres, corresponding to `r` on the diagram.
 
 The camera is located at the origin, where the coordinates are (0, 0, 0).
