@@ -69,3 +69,9 @@ The following procedure will be used when testing a robot:
     9. Check that all electronics are securely fixed to the robot.
 
     10. Check for unreasonably sharp edges and dangerous moving parts.
+
+    11. Check that there is not an excessive amount of unshielded wire
+        protruding from any of the green CamCon connectors.
+
+    12. In turn, give each of the wires attached to the green CamCon
+        connectors a gentle tug. The cables must not move.
