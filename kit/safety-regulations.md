@@ -63,7 +63,8 @@ The following procedure will be used when testing a robot:
        the XT60 connector were currently connected).
 
     8. Check that the power switch on the power board is easily
-       accessible.
+       accessible. This must be on the exterior of the robot, not
+       behind any covers and ideally on the top.
 
     9. Check that all electronics are securely fixed to the robot.
 
