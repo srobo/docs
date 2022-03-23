@@ -6,7 +6,7 @@ title: IO (Ruggeduino)
 IO (Ruggeduino)
 ===============
 
-The [Ruggeduino](http://ruggedcircuits.com/html/ruggeduino.html)
+The [Ruggeduino](https://web.archive.org/web/20170317171649/https://www.rugged-circuits.com/ruggeduino)
 provides a total of 18 pins for either digital input or output (labelled 2 to 13 and A0 to A5),
 including 6 for analogue input (labelled A0 to A5).
 
