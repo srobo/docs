@@ -41,7 +41,7 @@ while True:
     print("I can see", len(markers), "markers:")
 
     for m in markers:
-        print(" - Marker #{0} is {1} metres away".format(m.id, m.distance))
+        print(" - Marker #{0} is {1} metres away".format(m.id, m.distance / 1000))
 ~~~~~
 
 see_ids
@@ -148,7 +148,7 @@ pixel_corners
 :   A list of 4 [`Coordinate`](#Coordinate) instances, each representing the position of the corners of the marker.
 
 distance
-:   The distance between the camera and the centre of the marker, in metres.
+:   The distance between the camera and the centre of the marker, in millimetres.
 
 orientation
 :   An [`Orientation`](#Orientation) instance describing the orientation of the marker.
@@ -219,7 +219,7 @@ The spherical coordinates system has three values to specify a specific point in
 
 ![A visual representation of Spherical coordinates. Source: SourceBots]({{ site.baseurl }}/images/content/vision/spherical.png)
 
-- r - The radial distance, the distance from the origin to the point, in metres.
+- r - The radial distance, the distance from the origin to the point, in millimetres.
 - θ (theta) - The angle from the azimuth to the point, in radians.
 - φ (phi) - The polar angle from the plane of the camera to the point, in radians.
 
@@ -230,6 +230,6 @@ rot_y
 :   Rotation around the Y-axis, in radians, corresponding to `phi` on the diagram.
 
 dist
-:   Distance, in metres, corresponding to `r` on the diagram.
+:   Distance, in millimetres, corresponding to `r` on the diagram.
 
 The camera is located at the origin, where the coordinates are (0, 0, 0).
