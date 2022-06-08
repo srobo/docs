@@ -15,7 +15,7 @@ The following instructions will guide you through setting up your local environm
 1. Open your robot code project in PyCharm.
 2. Head to **File** &rarr; **Settings** or **PyCharm** &rarr; **Preferences** on a Mac.
 ![Location of Settings menu option in PyCharm for Windows and Linux]({{ site.baseurl }}/images/content/programming/pycharm_app_menu.png)
-3. Select `Project` &rarr; `Project Interpreter` from the list on the left.
+3. Select `Project` &rarr; `Python Interpreter` from the list on the left.
 4. Click the `+` symbol at the top of the packages list to install a new library.
 ![PyCharm Interpreter Settings dialog]({{ site.baseurl }}/images/content/programming/pycharm_interpreter_settings.png)
 5. Search for `sr.robot3` then click `Install Package`
