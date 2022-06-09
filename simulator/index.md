@@ -34,7 +34,7 @@ You may receive a warning about your computer's GPU not being good enough, which
 #### Changing your version of Python
 
 If webots is picking up the incorrect version of Python, you'll need to change it.
-This can be done using `Tools > Preferences > General > Python command` (or `Webots > Preferences` <kbd>⌘</kbd><kbd>,</kbd> on a Mac).
+This can be done using **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command** (or **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd> on a Mac).
 You'll need to ensure a matching version of Python is installed. If you're still
 having problems, ask for help in [`#simulator-help`][simulator-help] in
 [Discord][discord].
