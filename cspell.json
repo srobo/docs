@@ -10,5 +10,6 @@
   ],
   "dictionaries": ["en-gb", "project-words", "python"],
   "useGitignore": true,
-  "ignorePaths": ["resources/", "vendor/"]
+  "ignorePaths": ["resources/", "vendor/"],
+  "files": ["**/*.html", "**/*.md", "**/*.js", "**/*.css"]
 }

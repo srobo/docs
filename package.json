@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "npm run spell-check",
-    "spell-check": "cspell \"**/*.html\" \"**/*.md\" \"**/*.js\" \"**/*.css\""
+    "spell-check": "cspell"
   },
   "@comments": [
     "These dependencies are only for testing the site.",
