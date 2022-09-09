@@ -31,7 +31,6 @@ As well as the aforementioned boards the kit also contains the following items.
 | Battery Charger Supply | 1   | 12V 5A                                                                | N/A                                         |
 | Battery Charger        | 1   | iMAX B6 or HobbyKing E4                                               | N/A                                         | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
 | USB Hub                | 2   | 7-Port                                                                | [StarTech ST7202USBGB][ST7202USBGB]         | The hub does *not* require a power cable
-| USB WiFi Adapter       | 1   | 300Mbps Mini Wireless N USB Adapter                                   | [TP-Link TL-WN823N][TL-WN823N]              |
 | USB Memory Stick       | 1   | Kingston Datatraveler 16GB SE9H                                       | [DTSE9H/16GB][DTSE9H-16GB]                  |
 | Standard USB cable     | 3   | Standard USB A to B connector                                         | N/A                                         | For connecting the ruggeduino (via a hub) and USB hubs to the Brain Board
 | Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the Brain Board
@@ -46,7 +45,6 @@ As well as the aforementioned boards the kit also contains the following items.
 | Screwdriver            | 1   | Duratool Precision 2.5mm Slot Screwdriver                             | [Farnell 2103271][F-2103271]                |
 
 [ST7202USBGB]: https://uk.startech.com/Cards-Adapters/USB-2/Hub/7-Port-USB-20-Hub-UK~ST7202USBGB
-[TL-WN823N]: https://www.tp-link.com/en/products/details/?model=TL-WN823N
 [F-3882275]: https://uk.farnell.com/3882275
 [F-3881854]: https://uk.farnell.com/3881854
 [F-1717047]: https://uk.farnell.com/1717047
