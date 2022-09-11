@@ -69,17 +69,6 @@ While it is possible to retrieve the last position a servo was set to,
 this does not guarantee that the servo is currently in that position.
 </div>
 
-Turning off a servo
--------------------
-
-You can also set a servo output to be unpowered, so that there is no longer a PWM signal from the output on the servo board.
-
-You can unpower the servo output by setting the position to `None`.
-
-~~~~~ python
-r.servo_board.servos[11].position = None
-~~~~~
-
 [How the set position relates to the servo angle](#ServoAngle) {#ServoAngle}
 -----------------------------------------------
 
