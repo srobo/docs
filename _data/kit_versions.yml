@@ -1,2 +1,5 @@
 # The latest version should be the first in this file.
+# The format of this file should be like such:
+# - version: 20xx.y.z
+#   released: 2038-01-19
 []

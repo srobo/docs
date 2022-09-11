@@ -3,7 +3,6 @@
     <th></th>
     <th>Release Date</th>
     <th>Download</th>
-    <th>Licences</th>
   </tr>
   {% for kit_version in site.data.kit_versions %}
     {% assign version = kit_version.version %}
@@ -21,7 +20,6 @@
           Download {{ version }}
         </a>
       </td>
-      <td><a href="https://kit-downloads.studentrobotics.org/kit-software/{{ version }}/srobo-robot-{{ version }}-licences">Licences</a></td>
     </tr>
   {% endfor %}
 </table>
