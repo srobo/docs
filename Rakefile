@@ -9,7 +9,11 @@ task :deep_clean => [:clean] do
 end
 
 task :dependencies do
-  sh('bundle install --path gems')
+  if ENV["GLOBAL_GEMS"]
+    sh('bundle install')
+  else
+    sh('bundle install --path gems')
+  end
 end
 
 file '_sass/brand/.git' do
@@ -19,7 +23,7 @@ end
 task :submodules => ['_sass/brand/.git']
 
 task :dev => [:dependencies, :submodules] do
-  sh('bundle exec jekyll serve --drafts --config _config.yml')
+  sh('bundle exec jekyll serve --host 0.0.0.0 --drafts --config _config.yml')
 end
 
 task :build => [:dependencies, :submodules] do

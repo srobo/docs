@@ -25,3 +25,14 @@ jobs:
 
     - name: Build & Validate
       run: rake validate
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build container
+      run: docker-compose build
+
+    - name: Build site in container
+      run: docker-compose run docs rake build

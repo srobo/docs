@@ -4,6 +4,12 @@ The Student Robotics public documentation.
 
 ## Getting Started
 
+For ease of setup, a Docker container is provided. Simply install Docker and `docker-compose`, and run `docker-compose up`.
+
+Once setup, the site will be accessible on http://localhost:4000/docs/
+
+### Manual
+
 1. [Install Ruby][install-ruby]
 
 2. Install Bundler (1.x) and Rake

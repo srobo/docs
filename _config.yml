@@ -56,6 +56,7 @@ exclude:
   - Gemfile.lock
   - gems/
   - Dockerfile
+  - docker-compose.yml
   - _env/
   - _docs/
   - vendor/
