@@ -19,7 +19,7 @@ The following instructions will guide you through setting up your local environm
 4. Click the `+` symbol at the top of the packages list to install a new library.
 ![PyCharm Interpreter Settings dialog]({{ site.baseurl }}/images/content/programming/pycharm_interpreter_settings.png)
 5. Search for `sr.robot3` then click `Install Package`
-![Installing sr.robot3 package from within PyCharm]({{ site.baseurl }}/images/content/programming/pycharm_pkgs.png)
+![Installing sr.robot3 package from within PyCharm]({{ site.baseurl }}/images/content/programming/pycharm_packages.png)
 If this results in an error, try selecting the `Install to user's site packages directory` checkbox at the bottom of the dialog and try again.
 6. All done. You can now close the Settings window.
 

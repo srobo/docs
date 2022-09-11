@@ -32,11 +32,11 @@ R = Robot()
 transmitters = R.radio.sweep()
 ~~~~~
 
-When called, the `sweep` function uses the radio reciever to scan for nearby transmitters.
+When called, the `sweep` function uses the radio receiver to scan for nearby transmitters.
 It returns a list of `Target` objects, each of which describes one of the transmitters that were found within range.
 A detailed description of the attributes of `Target` objects is provided [later in this page](#Target).
 
-Here's an example that will repeatedly print out the bearing and signal stength of each arena transmitter in range:
+Here's an example that will repeatedly print out the bearing and signal strength of each arena transmitter in range:
 
 ~~~~~ python
 from sr.robot import *

@@ -41,7 +41,7 @@ R.ruggeduinos["752303138333517171B1"].something...
 </div>
 
 
-[Setting pin modes](#pinmodes) {#pinmodes}
+[Setting pin modes](#pin-modes) {#pin-modes}
 --------------------------------------------------------------------------
 
 To use one of the pins on the Ruggeduino, you must first set whether you want it to behave as an input or as an output.

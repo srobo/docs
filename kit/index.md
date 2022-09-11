@@ -31,7 +31,7 @@ As well as the aforementioned boards the kit also contains the following items.
 | Battery Charger Supply | 1   | 12V 5A                                                                | N/A                                         |
 | Battery Charger        | 1   | iMAX B6 or HobbyKing E4                                               | N/A                                         | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
 | USB Hub                | 2   | 7-Port                                                                | [StarTech ST7202USBGB][ST7202USBGB]         | The hub does *not* require a power cable
-| USB Memory Stick       | 1   | Kingston Datatraveler 16GB SE9H                                       | [DTSE9H/16GB][DTSE9H-16GB]                  |
+| USB Memory Stick       | 1   | Kingston DataTraveler 16GB SE9H                                       | [DTSE9H/16GB][DTSE9H-16GB]                  |
 | Standard USB cable     | 3   | Standard USB A to B connector                                         | N/A                                         | For connecting the ruggeduino (via a hub) and USB hubs to the Brain Board
 | Micro USB cable        | 5   | Standard USB A to Micro USB B                                         | N/A                                         | For connecting the motor boards, servo boards and power board to the Brain Board
 | Coloured Power Wire    | 1   |                                                                       |                                             | To connect power from the power board to the motor/servo boards
@@ -41,7 +41,7 @@ As well as the aforementioned boards the kit also contains the following items.
 | MicroCamCon            | 1   | 2 way<br />3.81mm<br />12A                                            | [Farnell 1717047][F-1717047]                | To connect a 5V component to the power board or to connect an external start button
 | USB Webcam             | 1   | Either Logitech C500 or Logitech C270                                 | [Ebuyer 230435][EB-230435]                  |
 | Battery (LiPo)         | 2   | 11.1V 2.2Ah Lithium Polymer                                           | N/A                                         | Please read the [documentation](/docs/kit/batteries) for storage and usage information
-| Battery Bag            | 1   | HPI Plazma Pouch Lipo Safe Bag (18x22cm) or Overlander Lipo Safe Sack | [HPI 101289][HPI-101289] [0000153][0000153] | Batteries should always be stored in the battery bag
+| Battery Bag            | 1   | HPI Plazma Pouch LiPo Safe Bag (18x22cm) or Overlander LiPo Safe Sack | [HPI 101289][HPI-101289] [0000153][0000153] | Batteries should always be stored in the battery bag
 | Screwdriver            | 1   | Duratool Precision 2.5mm Slot Screwdriver                             | [Farnell 2103271][F-2103271]                |
 
 [ST7202USBGB]: https://uk.startech.com/Cards-Adapters/USB-2/Hub/7-Port-USB-20-Hub-UK~ST7202USBGB

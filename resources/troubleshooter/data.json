@@ -1,5 +1,5 @@
 {
-    "askiffixed_question": {
+    "ask_if_fixed_question": {
         "question": "Has this fixed your problem?",
         "answers": [
             {
@@ -16,27 +16,27 @@
             "answers": [
                 {
                     "answer": "Power Board",
-                    "nextquestion": "power-board-function-checks"
+                    "next_question": "power-board-function-checks"
                 },
                 {
                     "answer": "Motor Board and Motors",
-                    "nextquestion": "motor-board-function-check"
+                    "next_question": "motor-board-function-check"
                 },
                 {
                     "answer": "Servo Board and Servos",
-                    "nextquestion": "servo-board-function-check"
+                    "next_question": "servo-board-function-check"
                 },
                 {
                     "answer": "Ruggeduino",
-                    "nextquestion": "io-board-function-check"
+                    "next_question": "io-board-function-check"
                 },
                 {
                     "answer": "Batteries",
-                    "nextquestion": "battery-damage-check"
+                    "next_question": "battery-damage-check"
                 },
                 {
                     "answer": "Vision",
-                    "nextquestion": "vision"
+                    "next_question": "vision"
                 }
             ]
         },
@@ -45,7 +45,7 @@
             "answers": [
                 {
                     "answer": "My Power Board isn't doing anything",
-                    "nextquestion": "power-board-switch-check"
+                    "next_question": "power-board-switch-check"
                 },
                 {
                     "answer": "My Power Board is beeping",
@@ -58,7 +58,7 @@
            "answers": [
                {
                    "answer": "Yes",
-                   "nextquestion": "power-board-power-check"
+                   "next_question": "power-board-power-check"
                },
                {
                    "answer": "No",
@@ -71,13 +71,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "battery-damage-check"
+                    "next_question": "battery-damage-check"
                 },
                 {
                     "answer": "No",
                     "message": "Check the &lsquo;Charging Batteries&rsquo; section of the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">battery</a> documentation and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
-                    "askiffixed": true,
-                    "nextquestion": "battery-damage-check"
+                    "ask_if_fixed": true,
+                    "next_question": "battery-damage-check"
                 }
             ]
         },
@@ -90,7 +90,7 @@
                 },
                 {
                     "answer": "No",
-                    "nextquestion": "is-battery-charged"
+                    "next_question": "is-battery-charged"
                 }
             ]
         },
@@ -99,13 +99,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "both-batteries"
+                    "next_question": "both-batteries"
                 },
                 {
                     "answer": "No",
                     "message": "It is important that you keep your batteries charged so that they don't run down too low. Consult the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">documentation</a> and make sure to follow the instructions appropriate for the charger you have been supplied with.",
-                    "askiffixed": true,
-                    "nextquestion": "both-batteries"
+                    "ask_if_fixed": true,
+                    "next_question": "both-batteries"
                 }
             ]
         },
@@ -127,11 +127,11 @@
             "answers": [
                 {
                     "answer": "My Ruggeduino isn't doing anything",
-                    "nextquestion": "io-board-led"
+                    "next_question": "io-board-led"
                 },
                 {
                     "answer": "My external peripherals aren't working as I expected.",
-                    "nextquestion": "io-peripherals"
+                    "next_question": "io-peripherals"
                 }
             ]
         },
@@ -140,11 +140,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "io-board-usb"
+                    "next_question": "io-board-usb"
                 },
                 {
                     "answer": "No",
-                    "nextquestion": "io-board-power"
+                    "next_question": "io-board-power"
                 }
             ]
         },
@@ -153,13 +153,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "io-board-usb"
+                    "next_question": "io-board-usb"
                 },
                 {
                     "answer": "No",
                     "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/docs/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
-                    "askiffixed": true,
-                    "nextquestion": "io-board-dead"
+                    "ask_if_fixed": true,
+                    "next_question": "io-board-dead"
                 }
             ]
         },
@@ -181,13 +181,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "io-peripherals"
+                    "next_question": "io-peripherals"
                 },
                 {
                     "answer": "No",
                     "message": "You should connect up your Ruggeduino to the Power Board as described.",
-                    "askiffixed": true,
-                    "nextquestion": "io-peripherals"
+                    "ask_if_fixed": true,
+                    "next_question": "io-peripherals"
                 }
             ]
         },
@@ -209,15 +209,15 @@
             "answers": [
                 {
                     "answer": "Nothing is happening",
-                    "nextquestion": "motor-board-led"
+                    "next_question": "motor-board-led"
                 },
                 {
                     "answer": "My motors are not behaving the same as each other.",
-                    "nextquestion": "motor-force"
+                    "next_question": "motor-force"
                 },
                 {
                     "answer": "My motors are not doing what I expected",
-                    "nextquestion": "motor-more-than-one"
+                    "next_question": "motor-more-than-one"
                 }
             ]
         },
@@ -226,13 +226,13 @@
             "answers": [
                 {
                     "answer": "The Battery is definitely charged",
-                    "nextquestion": "motor-count"
+                    "next_question": "motor-count"
                 },
                 {
                     "answer": "The Battery isn't charged",
                     "message": "<a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">Charge your batteries</a> and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-count"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-count"
                 }
             ]
         },
@@ -241,11 +241,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "motor-more-than-one"
+                    "next_question": "motor-more-than-one"
                 },
                 {
                     "answer": "No",
-                    "nextquestion": "motor-programming-direction"
+                    "next_question": "motor-programming-direction"
                 }
             ]
         },
@@ -255,20 +255,20 @@
                 {
                     "answer": "Some of the Motors aren't spinning.",
                     "message": "You may well have mixed up a Motor index in your code &mdash; double check your Motor indexing.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-programming"
                 },
                 {
                     "answer": "Some of the Motors spin in the wrong direction",
                     "message": "Check the Motors are orientated correctly, and <abbr title=\"turn negative, ie: multiply by -1\">negate</abbr> the values you pass to Motors if you notice it is spinning in the wrong direction.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-programming"
                 },
                 {
                     "answer": "The Motors are all spinning at different speeds",
                     "message": "Double check your code for discrepancies, however, it is worth noting that no two Motors will give you exactly the same output, and you will need to account for this in your code.<br />Ensuring your batteries are charged will result in <strong>predictable</strong> operation, and allow you to cope with the issue.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-programming"
                 }
             ]
         },
@@ -277,17 +277,17 @@
             "answers": [
                 {
                     "answer": "Green",
-                    "nextquestion": "motor-board-usb"
+                    "next_question": "motor-board-usb"
                 },
                 {
                     "answer": "Red",
                     "message": "The <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/docs/kit/assembly#Connections\" target=\"_blank\">in the docs</a>.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-board-usb"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-board-usb"
                 },
                 {
                     "answer": "Off",
-                    "nextquestion": "motor-board-power"
+                    "next_question": "motor-board-power"
                 }
             ]
         },
@@ -296,13 +296,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "motor-board-usb"
+                    "next_question": "motor-board-usb"
                 },
                 {
                     "answer": "No",
                     "message": "Connect the Motor to the Power Board as described <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">in the docs</a>.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-board-usb"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-board-usb"
                 }
             ]
         },
@@ -311,13 +311,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "motor-programming"
+                    "next_question": "motor-programming"
                 },
                 {
                     "answer": "No",
                     "message": "Connect the Motor up with USB cables.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-programming"
                 }
             ]
         },
@@ -327,12 +327,12 @@
                 {
                     "answer": "Yes",
                     "message": "Try giving a negative value to the Motor, as this will cause it to spin in the opposite direction.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "motor-programming"
                 },
                 {
                     "answer": "No",
-                    "nextquestion": "motor-programming"
+                    "next_question": "motor-programming"
                 }
             ]
         },
@@ -354,13 +354,13 @@
             "answers": [
                 {
                     "answer": "Nothing is happening",
-                    "nextquestion": "servo-board-led"
+                    "next_question": "servo-board-led"
                 },
                 {
                     "answer": "The Servos aren't doing what I expected",
                     "message": "Check that the servo is orientated correctly as described in <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">the docs</a>, and check whether it is a continuous Servo.",
-                    "askiffixed": true,
-                    "nextquestion": "servo-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "servo-programming"
                 }
             ]
         },
@@ -369,11 +369,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "servo-board-usb"
+                    "next_question": "servo-board-usb"
                 },
                 {
                     "answer": "No",
-                    "nextquestion": "servo-board-power"
+                    "next_question": "servo-board-power"
                 }
             ]
         },
@@ -382,13 +382,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "servo-board-usb"
+                    "next_question": "servo-board-usb"
                 },
                 {
                     "answer": "No",
                     "message": "Connect the Servo to power as described <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">in the Docs</a>.",
-                    "askiffixed": true,
-                    "nextquestion": "servo-board-usb"
+                    "ask_if_fixed": true,
+                    "next_question": "servo-board-usb"
                 }
             ]
         },
@@ -397,13 +397,13 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "servo-programming"
+                    "next_question": "servo-programming"
                 },
                 {
                     "answer": "No",
                     "message": "You should connect up your Servo Board to the Power Board as described.",
-                    "askiffixed": true,
-                    "nextquestion": "servo-programming"
+                    "ask_if_fixed": true,
+                    "next_question": "servo-programming"
                 }
             ]
         },
@@ -425,7 +425,7 @@
             "answers": [
                 {
                     "answer": "Markers don't get picked up.",
-                    "nextquestion": "vision-markers-dont-get-picked-up"
+                    "next_question": "vision-markers-dont-get-picked-up"
                 },
                 {
                     "answer": "The camera takes a long time to take a photo.",
@@ -438,7 +438,7 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "nextquestion": "vision-markers-dont-get-picked-up-good-webcam"
+                    "next_question": "vision-markers-dont-get-picked-up-good-webcam"
                 },
                 {
                     "answer": "No",

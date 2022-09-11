@@ -174,7 +174,7 @@ A `ThreeDCoordinate` object contains an `x`, `y` and `z` attribute. The exact me
 
 An `Orientation` object describes the orientation of a marker.
 
-![A visual representation of how the orientation axes work. Source: SourceBots]({{ site.baseurl }}/images/content/vision/yawpitchroll.png)
+![A visual representation of how the orientation axes work. Source: SourceBots]({{ site.baseurl }}/images/content/vision/yaw-pitch-roll.png)
 
 pitch
 :   Rotation of the marker about the cartesian x-axis, in radians.
