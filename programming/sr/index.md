@@ -11,10 +11,10 @@ It handles all the low-level interactions so you don't have to.
 To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
 
 ~~~~~ python
-R.motors[0].m0.power = -30
+R.motor_board.motors[0].power = -0.3
 ~~~~~
 
-`-30` would be backwards (depending upon which way you wired up the motor) &mdash; 30% power in reverse.
+`-0.3` would be backwards (depending upon which way you wired up the motor) &mdash; 30% power in reverse.
 
 To gain access to all of this functionality, all you need to do is write:
 
@@ -45,9 +45,9 @@ Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should 
 Here are some examples:
 
 ~~~~~ python
-R.motor_board.motors[0].power = 50   # WILL work, if motor 0 exists
-R.motor_board.motors[1].power = -20  # WILL work, if motor 1 exists
-R.motor_board.motors.power = 42      # WON'T WORK
+R.motor_board.motors[0].power = 0.5   # WILL work, if motor 0 exists
+R.motor_board.motors[1].power = -0.2  # WILL work, if motor 1 exists
+R.motor_board.motors.power = 0.42      # WON'T WORK
 
 # the above is similar to the situation for 'ruggeduinos' and 'servos'
 ~~~~~
