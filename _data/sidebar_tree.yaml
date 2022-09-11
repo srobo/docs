@@ -18,8 +18,10 @@ tree:
     - url: /kit/brain_board/
       title: Brain Board
       tree:
+        - url: /kit/brain_board/updating-the-brain
+          title: Updating The Brain
         - url: /kit/brain_board/updates
-          title: Updates
+          title: Available Updates
     - url: /kit/motor_board
       title: Motor Board
     - url: /kit/power_board
