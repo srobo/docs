@@ -9,6 +9,14 @@ This page contains a quick guide to the `sr.robot3` API.
 
 For more information, make sure you check the rest of the documentation.
 
+## Import the API
+
+In order to use the `sr.robot3` API you first need to import it into your code:
+
+~~~~~ python
+from sr.robot3 import *
+~~~~~
+
 ## Initialising your robot
 
 ### Standard Initialisation
