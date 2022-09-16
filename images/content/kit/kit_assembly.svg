@@ -12,7 +12,7 @@
    overflow="hidden"
    viewBox="138684 31623 3032.5903 1858.0154"
    id="svg1277"
-   sodipodi:docname="kit-assembly.svg"
+   sodipodi:docname="kit_assembly.svg"
    width="3032.5903"
    height="1858.0154"
    style="overflow:hidden;fill:none;fill-rule:evenodd;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
@@ -161,8 +161,8 @@
      fit-margin-bottom="0"
      showguides="false"
      inkscape:zoom="0.32"
-     inkscape:cx="1244.511"
-     inkscape:cy="964.32448"
+     inkscape:cx="1671.8497"
+     inkscape:cy="1024.4844"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -207,7 +207,7 @@
     </g>
   </g>
   <path
-     style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#434343;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
      d="m 139577.73,32469.391 c -0.89,249.391 -29.42,378.876 235.43,566.332"
      id="path5357"
      inkscape:connector-curvature="0"
@@ -219,7 +219,7 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
-     style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#434343;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
      d="m 139756.72,32470.038 c 2.21,163.518 155.88,201.083 248.69,260.745"
      id="path5361"
      inkscape:connector-curvature="0"
@@ -602,7 +602,7 @@
                d="m 45422.498,127821.21 c 9692.754,-4361.04 21028.634,-2767.41 29143.275,4097.04 l -702.871,830.89 c -7794.6,-6593.73 -18683.392,-8124.5 -27993.864,-3935.46 z"
                id="path861"
                inkscape:connector-curvature="0"
-               style="fill:#212121;fill-opacity:1;stroke:#303030;stroke-width:381;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1" />
+               style="fill:#434343;fill-opacity:1;stroke:#303030;stroke-width:381;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1" />
           </g>
           <g
              id="g867">
@@ -744,7 +744,7 @@
     </g>
   </g>
   <path
-     style="stroke:#303030;stroke-width:3.80999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1"
+     style="stroke:#434343;stroke-width:3.80999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1"
      inkscape:connector-curvature="0"
      id="path1106"
      d="m 140184.36,31825.59 53.76,-90.6"
@@ -2080,7 +2080,7 @@
      rx="6"
      ry="6" />
   <rect
-     style="overflow:hidden;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:20, 20;stroke-dashoffset:0;stroke-opacity:1"
+     style="overflow:hidden;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#434343;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:20, 20;stroke-dashoffset:0;stroke-opacity:1"
      id="rect4951-4-2"
      width="104.46198"
      height="160.11345"
@@ -2193,7 +2193,7 @@
        style="font-weight:bold;stroke:#ffffff;stroke-opacity:1;paint-order:stroke markers fill;stroke-width:10;stroke-miterlimit:10;stroke-dasharray:none;stroke-linecap:square;stroke-linejoin:round"
        id="tspan1231">FOR CHARGING</tspan></text>
   <path
-     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#434343;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
      d="m 138743.37,32331.015 -10.85,103.125"
      id="path1233"
      inkscape:connector-curvature="0"
@@ -2294,4 +2294,30 @@
      id="path1106-2"
      d="m 140455.06,32178.995 1.64,-105.336"
      stroke-miterlimit="8" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+     x="141277.75"
+     y="33146.641"
+     id="text1653"><tspan
+       sodipodi:role="line"
+       x="141277.75"
+       y="33184.445"
+       id="tspan1655" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;overflow:hidden;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+     x="141270.88"
+     y="33230.434"
+     id="text5349-8"><tspan
+       sodipodi:role="line"
+       x="141270.88"
+       y="33230.434"
+       style="font-weight:bold;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="tspan5355-2">Not Pictured:</tspan><tspan
+       sodipodi:role="line"
+       x="141270.88"
+       y="33297.102"
+       style="font-weight:bold;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="tspan1682">Ruggeduino</tspan></text>
 </svg>
