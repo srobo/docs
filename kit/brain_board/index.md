@@ -20,6 +20,35 @@ The LEDs on the HAT display the current status of the robot and can be used to h
 
 ## Board Diagram
 
+![brain board assembly diagram]({{ site.baseurl }}/images/content/kit/brain-diagram.png "The Brain Board Assembly")
+
+### Indicators
+
+| LED              | Meaning                 
+|------------------|-------------------------
+| 5V Power         | The board is powered    
+| 12V Power        | The board is powered    
+| Reverse Polarity | The 12V power is reversed
+| Boot Progress    | Progress Bar for Brain Boot Progress 
+| Code             | A USB containing code is plugged in
+| Comp             | The Robot is in Competition Mode
+| WiFi             | The Robot WiFi hotspot is running
+| ♥ (Heartbeat)    | Blinks when the Brain is running
+| Start            | The Robot is waiting to start
+| OK               | Shows the code status, see below table
+
+### OK LED
+
+The OK LED shows the status of your code using different colours.
+
+| OK LED Colour | Meaning
+|---------------|--------------------------
+| Off           | No code available
+| Cyan          | Your code is starting
+| Yellow        | Your code is running
+| Magenta       | Your code has been killed
+| Green         | Your code has finished without errors
+| Red           | Your code has crashed
 
 ## Flashing SD card
 
