@@ -52,6 +52,8 @@ Specification
 | Nominal input voltage                    | 11.1V ± 15% |
 | Output voltage                           | 5.5V      |
 | Maximum total output current [^1]        | 10A       |
+| Servo PWN range                          | 1ms — 2ms |
+| Servo PWN precision                      | 5µs       |
 
 [^1]: If the auxiliary input is connected, outputs 8-11 have an independent maximum current.
 
