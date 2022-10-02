@@ -25,7 +25,7 @@ When in a team's scoring zone, correctly oriented cans were worth 3 points,
 upside down cans were worth one point, and cans lying on their side were worth
 nothing.
 
-However, not all cans are created equal: Tin cans on the arena floor started
+However, not all cans were created equal: Tin cans on the arena floor started
 upside down, but those on the raised platform in the centre were already the
 right way up, making them harder to get but easier to score points with.
 
