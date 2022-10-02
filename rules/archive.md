@@ -13,6 +13,27 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2022](#2022)
+---------------------
+
+<img src="{{ site.baseurl }}/images/content/rules/arena-2022.png" alt="A diagram of the arena for the SR2022 game" class="left" />
+
+
+The SR2022 game, _This Way Up_, challenged teams to collect the most tin cans
+from the arena and ensure that they were up the right way for maximum points.
+When in a team's scoring zone, correctly oriented cans were worth 3 points,
+upside down cans were worth one point, and cans lying on their side were worth
+nothing.
+
+However, not all cans are created equal: Tin cans on the arena floor started
+upside down, but those on the raised platform in the centre were already the
+right way up, making them harder to get but easier to score points with.
+
+Teams could detect a can's orientation with an insulating band along the bottom
+-- how they chose to use this was up to them!
+
+Full details of the 2022 game are available in the [rulebook]({{ site.baseurl }}/resources/2022/rulebook.html).
+
 [2021](#2021)
 ---------------------
 
