@@ -34,6 +34,12 @@ To allow this simulated robot to move around and sense its environment a set of 
 
 The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/), with the exception of `R.time` and `R.sleep`.
 
+<div class="info">
+  To more closely reflect reality, artificial noise has been added to simulated
+  values such that sensors and actuators are not perfectly are not perfectly
+  accurate, and may fluctuate slightly between measurements or operations.
+</div>
+
 ### Motors
 
 Your robot has one motor board attached, the left wheel is connected to the first port, and the right wheel to the second.
