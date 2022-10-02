@@ -34,7 +34,7 @@ Indicators
 
 | LED                    | Meaning                 | Initial power-up state
 |------------------------|-------------------------|------------------------------
-| Power                  | The board is powered    | On
+| Power                  | Green when powered correctly<br>Red when polarity is wrong for Power In | Green
 | M{0,1} Speed/Direction | Brightness indicates speed, colour indicates direction | Off
 | USB Power              | The USB interface is powered | On
 | USB Data               | Data is being transferred to/from the board | Off
