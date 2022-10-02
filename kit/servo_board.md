@@ -19,13 +19,13 @@ Board Diagram
 Indicators
 ----------
 
-| LED           | Meaning                                                                                          | Initial power-up state |
-| ------------- | ------------------------------------------------------------------------------------------------ | ---------------------- |
-| Power         | The board is powered over USB.                                                                   | On                     |
-| 5.5V On       | There is 5.5V power on the board. This usually indicates that the 12V connector rail is powered. | Off                    |
-| Aux On        | There is auxiliary power on the board.                                                           | Off                    |
-| Status        | The board has successfully booted.                                                               | On                     |
-| Error         | An error has occurred. This often indicates a disconnection of the 12V connector.                | Off                    |
+| LED                   | Meaning                                                                                          | Initial power-up state |
+| --------------------- | ------------------------------------------------------------------------------------------------ | ---------------------- |
+| Power <!-- DS1 -->    | The board is powered over USB.                                                                   | On                     |
+| 5.5V On <!-- DS15 --> | There is 5.5V power on the board. This usually indicates that the 12V connector rail is powered. | Off                    |
+| Aux On <!-- DS16 -->  | There is auxiliary power on the board.                                                           | Off                    |
+| Status <!-- DS10 -->  | The board has successfully booted.                                                               | On                     |
+| Error                 | An error has occurred. This often indicates a disconnection of the 12V connector.                | Off                    |
 
 Connectors
 ----------
