@@ -68,9 +68,9 @@ The simplest approach is to use the `claim_territory` method, which will take
 care of sending the signals as well as ensuring that the proper amount of time
 passes between them:
 
-~~~~ python
+~~~~~ python
 R.radio.claim_territory()
-~~~~
+~~~~~
 
 This function takes a couple of seconds to complete and you must stay within
 range of the territory for the whole duration it is running for your claim to
@@ -81,13 +81,13 @@ No information is returned from `claim_territory`.
 Alternatively if you would like to be able to control your robot while also
 making a territory claim, you can instead manage the claim signals directly:
 
-~~~~ python
+~~~~~ python
 R.radio.begin_territory_claim()
 
 # Do stuff here
 
 R.radio.complete_territory_claim()
-~~~~
+~~~~~
 
 Note that when using `begin_territory_claim` and `complete_territory_claim` you
 are also responsible for ensuring that the proper amount of time (two seconds)
