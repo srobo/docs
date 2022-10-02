@@ -9,7 +9,7 @@ LEDs
 The KCH HAT provides diagnostic information about the state of your robot
 through a collection of preconfigured and user-controllable LEDs. It is part of
 the [Brain Board](/docs/kit/brain_board) assembly, however control of its LEDs
-is provide through a distinct API.
+is provided through a distinct API.
 
 The LEDs on the KCH can be accessed via the `kch` object:
 
