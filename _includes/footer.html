@@ -1,13 +1,9 @@
 <footer class="site-footer">
   <div class="row fixed-width">
+    <h4>Student Robotics</h4>
+  </div>
+  <div class="row fixed-width">
     <div class="column d-4-12 m-2-12">
-      <h4>For Competitors</h4>
-      <ul class="sitemap">
-        <li><a href="{{ site.url }}/docs/">Documentation</a></li>
-      </ul>
-    </div>
-    <div class="column d-4-12 m-2-12">
-      <h4>Student Robotics</h4>
       <ul class="sitemap">
         <li><a href="{{ site.url }}/compete/">Compete</a></li>
         <li><a href="{{ site.url }}/volunteer/">Volunteer</a></li>
@@ -15,7 +11,6 @@
       </ul>
     </div>
     <div class="column d-4-12 m-2-12">
-      <h4>&nbsp;</h4>
       <ul class="sitemap">
         <li><a href="{{ site.url }}/blog/">Blog</a></li>
         <li><a href="{{ site.url }}/events/">Events</a></li>
@@ -23,9 +18,15 @@
       </ul>
     </div>
     <div class="column d-4-12 m-2-12">
-      <h4>&nbsp;</h4>
       <ul class="sitemap">
         <li><a href="{{ site.links.donate }}">Donate</a></li>
+        <li><a href="{{ site.baseurl }}/">Documentation</a></li>
+        <li><a href="{{ site.url }}/covid-19">COVID-19</a></li>
+      </ul>
+    </div>
+    <div class="column d-4-12 m-2-12">
+      <ul class="sitemap">
+        <li><a href="{{ site.url }}/governance/">Governance</a></li>
       </ul>
     </div>
   </div>
@@ -49,7 +50,7 @@
       <ul class="social-media-links">
         {% for account in site.social %}
         <li>
-          <a href="{{ account.link }}">
+          <a aria-label="{{ account.title }}" href="{{ account.link }}">
             <i class="fa-brands fa-{{ account.icon }}" aria-hidden="true" title="{{ account.title }}"></i>
           </a>
         </li>
