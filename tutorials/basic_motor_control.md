@@ -10,7 +10,7 @@ The aim of this tutorial is to get a motor turning with your kit.
 To complete this tutorial, you'll need the following:
 
 * The [power board](/docs/kit/power_board)
-* The battery (charged, of course)
+* A battery (charged, of course)
 * A [motor board](/docs/kit/motor_board)
 * 2 large (7.5mm) green _CamCon_ connectors to plug the power board and motor board together
 * 2 lengths of a suitable gauge of wire for powering the motor board from the power board (one should be black/grey)
