@@ -216,7 +216,8 @@ Again, as you've seen most of that before, it shouldn't be too difficult to get 
 The `for` loop may be new, however.
 
 The [`for`](https://docs.python.org/tutorial/controlflow.html#for-statements)
- loop accepts a Python `list` (a `list`, when `print`ed, appears in square brackets like so: `[1, 2, 3]`).
+ loop accepts anything that Python can iterate over to get multiple values, such as a `list` (a `list`, when `print`ed, appears in square brackets like so: `[1, 2, 3]`).
+
 For a comprehensive introduction to to `list`s, have a look at [this WikiBooks article](https://en.wikibooks.org/wiki/Python_Programming/Lists).
 The `for` loop will iterate over the `list` (i.e. take each element in turn)
  and make it available in the loop's body as the variable after the the `for` keyword.
@@ -235,25 +236,22 @@ The above would output:
 3
 ~~~~~
 
-Then there's the [`range()`](https://docs.python.org/library/functions.html#range) function.
-The `range()` function returns a `list` with its contents dependent on the arguments passed to it.
-The Python documentation explains it quite nicely:
+Then there's the [`range()`](https://docs.python.org/3/library/stdtypes.html#typesseq-range) object.
 
-> `range([start], stop[, step])` (note: the square brackets here mean 'optional')
->
-> If the `step` argument is omitted, it defaults to `1`. If the `start` argument is
-> omitted, it defaults to `0`. The full form returns a list of plain integers
-> `[start,  start + step, start + 2 *  step, ...]`. If `step` is positive, the last
-> element is the largest `start + i * step` less than `stop`; if `step` is negative,
-> the last element is the smallest `start + i * step` greater than `stop`.
+`range()` objects represent a sequence of numbers. They can be constructed with
+one, two or three arguments to describe what the sequence of numbers should be.
 
-So, based on that, `range(3)` would return the list `[0, 1, 2]` because it is shorthand for `range(0, 3, 1)`.
-From the quote, you can see that this would return a list starting from `0`,
- and finishing with the integer one less than `3`, hence the `[0, 1, 2]`.
+If only one argument is provided then the sequence starts at `0` and stops just
+before the given number. Otherwise the first argument is the number to start at,
+the second argument is the number to stop before and the (optional) third
+argument is how big the steps should be (by default steps are `1`).
+
+So, based on this, `range(3)` would represent the sequence `0`, `1`, `2` because
+it is shorthand for `range(0, 3, 1)`.
 
 So, taking `range(10, 80, 10)`, for example, would output `10` as the first element,
  then `20, 30, ...` up until `x=10+i*10` for some `i` where `i` ensures `x < stop` (which, in this case, is `80`).
-So, the `80` I've used could equally have been `77` or even `71` and the outputted `list` would still be `[10, 20, 30, 40, 50, 60, 70]`.
+So, the `80` we've used could equally have been `77` or even `71` and the outputted sequence would still be `10`, `20`, `30`, `40`, `50`, `60`, `70`.
 
 Putting all of that together should mean you understand the above code.
 You might want to run the code on your kit to see if it does what you expect it to.
