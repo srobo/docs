@@ -98,4 +98,9 @@ task :validate_spellings => [:build_spellings] do
   sh('npm run spell-check')
 end
 
-task :validate => [:validate_kit_versions, :validate_links, :validate_sidebar_tree, :validate_spellings]
+task :validate => [
+  :validate_kit_versions,
+  :validate_links,
+  :validate_sidebar_tree,
+  :validate_spellings,
+]
