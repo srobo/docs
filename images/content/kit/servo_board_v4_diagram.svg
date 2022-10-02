@@ -320,19 +320,18 @@
            style="font-size:40px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara4223">Power LED</flowPara><flowPara
          id="flowPara4227" /></flowRoot>    <flowRoot
-       transform="translate(108.2821,-124.53475)"
+       transform="translate(100.39934,-149.75957)"
        id="flowRoot4229"
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
          id="flowRegion4231"><rect
-           width="254.11371"
-           height="164.34528"
+           width="243.07779"
+           height="110.74252"
            x="751.29266"
            y="756.81689"
            id="rect4233"
            style="font-size:40px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara4235">Status</flowPara><flowPara
-         id="flowPara4237">LED</flowPara></flowRoot>    <flowRoot
+         id="flowPara4237">Status / Error LED</flowPara></flowRoot>    <flowRoot
        transform="translate(46.27789,64.909478)"
        id="flowRoot4239"
        xml:space="preserve"
@@ -375,9 +374,9 @@
        id="path4269"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
     <path
-       d="m 742.32846,653.23794 160.20212,0"
+       d="m 742.32846,653.23794 123.94143,0"
        id="path4715"
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart)" />
     <path
        d="m 856.61757,795.35827 -85.28456,0 -92.54013,-87.03643 h -75.96579"
        id="path4903"
