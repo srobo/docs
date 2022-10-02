@@ -47,3 +47,15 @@ R.kch.c.rgb = (1, 1, 0)
 # Set LED B to a light blue colour
 R.kch.b.rgb = (0, 1, 1)
 ~~~~~
+
+You can also access all the LEDs together:
+
+~~~~~ python
+# Turn on the blue channel of all the LEDs
+for led in R.kch.leds.values():
+    led.blue = 1
+
+# Set all LEDs to a purple colour
+for led in R.kch.leds.values():
+    led.rgb = (1, 0, 1)
+~~~~~
