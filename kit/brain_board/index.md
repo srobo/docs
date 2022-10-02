@@ -42,3 +42,7 @@ If you choose to use a tool other than Etcher, you may need to extract the `srob
 1. Open Etcher and select the `srobo-robot-{{ latest_version }}.img.xz` file you downloaded
 2. Select your SD card from the devices window
 3. Click 'Flash!'
+4. When the flash is complete you should safely eject the SD card.<br>
+   Your computer may complain that the SD card is no longer readable, however
+   this is expected as the data being written to the SD card is not in a format
+   that either Windows or macOS can natively understand.
