@@ -45,5 +45,5 @@ Alternatively you can set the red, green and blue channels for a given LED all t
 R.kch.c.rgb = (1, 1, 0)
 
 # Set LED B to a light blue colour
-R.kch.b.green = (0, 1, 1)
+R.kch.b.rgb = (0, 1, 1)
 ~~~~~
