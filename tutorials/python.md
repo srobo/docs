@@ -6,7 +6,7 @@ title: "Python: A whirlwind tour"
 Python: A whirlwind tour
 ========================
 
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but for the Student Robotics competition we use one called Python 3.9. We chose it because it's good for beginners, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but for the Student Robotics competition we use one called Python 3.10. We chose it because it's good for beginners, but also elegant and powerful.
 
 Sprinkled through the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 
