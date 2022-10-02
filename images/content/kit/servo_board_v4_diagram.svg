@@ -52,6 +52,21 @@
   </metadata>
   <g
      id="layer1">
+    <g
+       id="g4171"
+       transform="matrix(3.7629648,0,0,2.2577755,371.93089,-1069.7105)">
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:none"
+         id="rect4173"
+         width="5.3149605"
+         height="8.8582678"
+         x="90.354324"
+         y="758.2677" />
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:none"
+         d="m 90.354324,758.2677 h 5.314961 l -5.314961,8.85827 z"
+         id="path4175" />
+    </g>
     <rect
        width="496.4371"
        height="546.43707"
@@ -155,13 +170,6 @@
        x="575.40137"
        y="697.42419"
        id="rect4328-2-3"
-       style="fill:#00ff00;fill-opacity:1;stroke:none" />
-    <rect
-       width="20"
-       height="20"
-       x="711.93103"
-       y="642.28772"
-       id="rect4328-2-3-8"
        style="fill:#00ff00;fill-opacity:1;stroke:none" />
     <text
        x="706.74414"
@@ -299,10 +307,10 @@
            id="rect4211"
            style="font-size:40px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara4213">UART</flowPara></flowRoot>    <flowRoot
-       transform="translate(597.31793,-384.64845)"
+       transform="translate(575.31793,-384.64845)"
        id="flowRoot4215"
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
          id="flowRegion4217"><rect
            width="455.74741"
            height="145.01054"
@@ -310,7 +318,7 @@
            y="1155.9412"
            id="rect4219"
            style="font-size:40px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara4223">USB LED</flowPara><flowPara
+         id="flowPara4223">Power LED</flowPara><flowPara
          id="flowPara4227" /></flowRoot>    <flowRoot
        transform="translate(108.2821,-124.53475)"
        id="flowRoot4229"
@@ -351,10 +359,10 @@
            style="font-size:40px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara4255">Main</flowPara><flowPara
          id="flowPara4257">Outputs</flowPara></flowRoot>    <flowRoot
-       transform="translate(188,0)"
+       transform="translate(194,20)"
        id="flowRoot4259"
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
          id="flowRegion4261"><rect
            width="292.78317"
            height="114.62738"
@@ -362,8 +370,7 @@
            y="273.44846"
            id="rect4263"
            style="font-size:40px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara4265">Power supply</flowPara><flowPara
-         id="flowPara4267">Status LED</flowPara></flowRoot>    <path
+         id="flowPara4267">5.5V On LED</flowPara></flowRoot>    <path
        d="m 275.48182,337.06921 39.38467,60.19609 40.21004,0"
        id="path4269"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
@@ -372,8 +379,8 @@
        id="path4715"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart)" />
     <path
-       d="m 892.87826,795.35827 -121.54525,0 -92.54013,-87.03643 -75.96579,0"
+       d="m 856.61757,795.35827 -85.28456,0 -92.54013,-87.03643 h -75.96579"
        id="path4903"
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow2Mend)" />
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Mend)" />
   </g>
 </svg>
