@@ -41,9 +41,9 @@ The criteria are as follows:
 
 <div class="info">
     When designing your robot you should bear in mind that while each motor board can deliver 10A on each output,
-    all the power needs to go through the power board, which is fused at 15A.
-    This means that across all the outputs for all the motors,
-    you can only draw up to 15A at any time.
+    all the power needs to go through the power board, which is limited to 30A overall.
+    This means that across all the outputs for all the motors (as well as the rest of your kit),
+    you can only draw up to 30A at any time.
 </div>
 
 Connecting a Motor
