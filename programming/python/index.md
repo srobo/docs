@@ -22,4 +22,4 @@ There are a number of tutorials out there which might help you to learn to progr
 * A number of tutorials for beginners are linked to from [here](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers).
     [Wikibooks Tutorial](https://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3) seems like a good one.
 
-* [The Official Docs](https://docs.python.org/3.9/), for the version of python on the [Odroid Brain Boards](/docs/kit/brain_board).
+* [The Official Docs](https://docs.python.org/3.9/), for the version of python on the [Brain Board](/docs/kit/brain_board).
