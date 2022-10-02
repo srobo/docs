@@ -7,7 +7,7 @@ title: Getting Code on the Robot
 
 Getting your code on to the robot is quite simple.
 You will need to put your code on a USB drive
-Which will need to be formatted with either FAT32, exFAT or ext2/3/4.
+which will need to be formatted with either FAT32, exFAT or ext2/3/4.
 Upon plugging in the drive or starting up, the robot will run the `robot.py` file found in the `robot.zip` in the root of the drive.
 
 ## Windows
