@@ -57,6 +57,7 @@ exclude:
   - gems/
   - Dockerfile
   - docker-compose.yml
+  - node_modules/
   - _env/
   - _docs/
   - vendor/
