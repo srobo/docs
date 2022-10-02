@@ -47,7 +47,7 @@ Here are some examples:
 ~~~~~ python
 R.motor_board.motors[0].power = 0.5   # WILL work, if motor 0 exists
 R.motor_board.motors[1].power = -0.2  # WILL work, if motor 1 exists
-R.motor_board.motors.power = 0.42      # WON'T WORK
+R.motor_board.motors.power = 0.42     # WON'T WORK
 
 # the above is similar to the situation for 'ruggeduinos' and 'servos'
 ~~~~~
