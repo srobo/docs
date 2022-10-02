@@ -127,7 +127,7 @@ while True:
 ~~~~~
 
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `R.motor_board...` lines.
-For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [`motor`](/docs/programming/sr/motors/) page.
+For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [Motors](/docs/programming/sr/motors/) page.
 But, to summarise:
 
 <div class="info" markdown="1">
@@ -139,6 +139,7 @@ But, to summarise:
 
 So, `R.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/docs/kit/motor_board)
  plugged in to a USB hub to 50% forwards (i.e. a duty-cycle of 0.5 forwards).
+
 As you would expect, then, `R.motor_board.motors[0].power = -0.5` will put the this motor into reverse at 50% power.
 `R.motor_board.motors[0].power = 0` will output no power to the motor and stop it.
 
@@ -213,6 +214,7 @@ while True:
 
 Again, as you've seen most of that before, it shouldn't be too difficult to get your head around.
 The `for` loop may be new, however.
+
 The [`for`](https://docs.python.org/tutorial/controlflow.html#for-statements)
  loop accepts a Python `list` (a `list`, when `print`ed, appears in square brackets like so: `[1, 2, 3]`).
 For a comprehensive introduction to to `list`s, have a look at [this WikiBooks article](https://en.wikibooks.org/wiki/Python_Programming/Lists).
@@ -222,7 +224,7 @@ Here's an example:
 
 ~~~~~ python
 for i in [1, 2, 3]:
-	print(i)
+    print(i)
 ~~~~~
 
 The above would output:
