@@ -62,7 +62,7 @@
                },
                {
                    "answer": "No",
-                   "message": "There is an external On|Off switch connector. If you are not connecting a switch, you must connect a loop of wire between the two terminals. See the preparation section in <a href=\"ROOT_URL/docs/kit/assembly\" target=\"_blank\">kit assembly</a> for more details."
+                   "message": "There is an external On|Off switch connector. If you are not connecting a switch, you must connect a loop of wire between the two terminals. See the preparation section in <a href=\"ROOT_URL/kit/assembly\" target=\"_blank\">kit assembly</a> for more details."
                }
            ]
         },
@@ -75,7 +75,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Check the &lsquo;Charging Batteries&rsquo; section of the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">battery</a> documentation and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "message": "Check the &lsquo;Charging Batteries&rsquo; section of the <a href=\"ROOT_URL/kit/batteries/\" target=\"_blank\">battery</a> documentation and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
                     "ask_if_fixed": true,
                     "next_question": "battery-damage-check"
                 }
@@ -103,7 +103,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "It is important that you keep your batteries charged so that they don't run down too low. Consult the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">documentation</a> and make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "message": "It is important that you keep your batteries charged so that they don't run down too low. Consult the <a href=\"ROOT_URL/kit/batteries/\" target=\"_blank\">documentation</a> and make sure to follow the instructions appropriate for the charger you have been supplied with.",
                     "ask_if_fixed": true,
                     "next_question": "both-batteries"
                 }
@@ -157,7 +157,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/docs/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
+                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
                     "ask_if_fixed": true,
                     "next_question": "io-board-dead"
                 }
@@ -196,7 +196,7 @@
             "answers": [
                 {
                     "answer": "My peripherals are fine",
-                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/docs/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
                 },
                 {
                     "answer": "I need help with my peripherals",
@@ -230,7 +230,7 @@
                 },
                 {
                     "answer": "The Battery isn't charged",
-                    "message": "<a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">Charge your batteries</a> and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "message": "<a href=\"ROOT_URL/kit/batteries/\" target=\"_blank\">Charge your batteries</a> and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
                     "ask_if_fixed": true,
                     "next_question": "motor-count"
                 }
@@ -281,7 +281,7 @@
                 },
                 {
                     "answer": "Red",
-                    "message": "The <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/docs/kit/assembly#Connections\" target=\"_blank\">in the docs</a>.",
+                    "message": "The <a href=\"ROOT_URL/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/kit/assembly#Connections\" target=\"_blank\">in the docs</a>.",
                     "ask_if_fixed": true,
                     "next_question": "motor-board-usb"
                 },
@@ -300,7 +300,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Motor to the Power Board as described <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">in the docs</a>.",
+                    "message": "Connect the Motor to the Power Board as described <a href=\"ROOT_URL/kit/motor_board\" target=\"_blank\">in the docs</a>.",
                     "ask_if_fixed": true,
                     "next_question": "motor-board-usb"
                 }
@@ -337,7 +337,7 @@
             ]
         },
         "motor-programming": {
-            "question": "Please test the Motor with the <a href=\"ROOT_URL/docs/kit/wifi\" target=\"_blank\">WiFi</a> interface. Does the Motor respond to the interface?",
+            "question": "Please test the Motor with the <a href=\"ROOT_URL/kit/wifi\" target=\"_blank\">WiFi</a> interface. Does the Motor respond to the interface?",
             "answers": [
                 {
                     "answer": "Yes",
@@ -358,7 +358,7 @@
                 },
                 {
                     "answer": "The Servos aren't doing what I expected",
-                    "message": "Check that the servo is orientated correctly as described in <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">the docs</a>, and check whether it is a continuous Servo.",
+                    "message": "Check that the servo is orientated correctly as described in <a href=\"ROOT_URL/kit/servo_board\" target=\"_blank\">the docs</a>, and check whether it is a continuous Servo.",
                     "ask_if_fixed": true,
                     "next_question": "servo-programming"
                 }
@@ -386,7 +386,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Servo to power as described <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">in the Docs</a>.",
+                    "message": "Connect the Servo to power as described <a href=\"ROOT_URL/kit/servo_board\" target=\"_blank\">in the Docs</a>.",
                     "ask_if_fixed": true,
                     "next_question": "servo-board-usb"
                 }
@@ -408,7 +408,7 @@
             ]
         },
         "servo-programming": {
-            "question": "Please test the Servo with the <a href=\"ROOT_URL/docs/kit/wifi\" target=\"_blank\">WiFi</a> interface. Does the Servo respond to the robot interface?",
+            "question": "Please test the Servo with the <a href=\"ROOT_URL/kit/wifi\" target=\"_blank\">WiFi</a> interface. Does the Servo respond to the robot interface?",
             "answers": [
                 {
                     "answer": "Yes",

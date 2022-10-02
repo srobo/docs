@@ -1,3 +1,4 @@
+require 'set'
 require 'yaml'
 
 task :clean do
@@ -52,6 +53,64 @@ task :validate_kit_versions do
   puts "Kit versions validated successfully"
 end
 
+task :validate_interactive_troubleshooter_questions => [:build] do
+  # Check that each of the next_question ids actually exists and that each
+  # question is actually used.
+
+  ROOT_QUESTION_ID = ''
+  data = YAML.load_file('resources/troubleshooter/data.json')
+  questions = data['questions']
+
+  targets = Set[]
+  questions.each_value do |question|
+    question['answers'].each do |answer|
+      if answer.has_key?('next_question')
+        targets.add(answer['next_question'])
+      end
+    end
+  end
+
+  question_ids = questions.keys.to_set
+
+  missing = targets - question_ids
+  if missing.length > 0 then
+    raise "Found 'next_question' targets which do not exist: #{missing.to_a.sort.join(', ')}"
+  end
+
+  extra = question_ids - targets - Set[ROOT_QUESTION_ID]
+  if extra.length > 0 then
+    puts "Warning: found unreachable questions: #{extra.to_a.sort.join(', ')}"
+  end
+
+  puts "Interactive Troubleshooter links validated successfully"
+end
+
+task :validate_interactive_troubleshooter_urls => [:build] do
+  # There are lots of things which this could validate, however we assume that
+  # most changes will be eyeballed by a human. We therefore just check the most
+  # nuanced case -- that the url must be an exact match for its target page.
+
+  def check_url(url)
+    if url.end_with?("/") then
+      return if File.directory?("_site#{url}")
+      raise "Invalid target url '#{url}' in interactive troubleshoter (did you mean '#{url[..-2]}'?)\n\n"
+    else
+      return if File.file?("_site#{url}.html")
+      raise "Invalid target url '#{url}' in interactive troubleshoter (did you mean '#{url}/'?)\n\n"
+    end
+  end
+
+  text = IO.read('resources/troubleshooter/data.json')
+  text.scan(/href=\\"([^"]+)\\"/) do |match|
+    url = match[0]
+    if url.include? 'ROOT_URL' then
+      check_url(url.sub('ROOT_URL', '').sub(/#.+/, ''))
+    end
+  end
+
+  puts "Interactive Troubleshooter urls validated successfully"
+end
+
 task :validate_links => [:build] do
   # Explanation of arguments:
   # --assume-extension  # Tells html-proofer that `.html` files can be accessed without the `.html` part in the url.
@@ -100,6 +159,8 @@ end
 
 task :validate => [
   :validate_kit_versions,
+  :validate_interactive_troubleshooter_questions,
+  :validate_interactive_troubleshooter_urls,
   :validate_links,
   :validate_sidebar_tree,
   :validate_spellings,
