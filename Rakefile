@@ -61,7 +61,7 @@ task :validate_interactive_troubleshooter_questions => [:build] do
   data = YAML.load_file('resources/troubleshooter/data.json')
   questions = data['questions']
 
-  targets = Set[]
+  targets = Set.new
   questions.each_value do |question|
     question['answers'].each do |answer|
       if answer.has_key?('next_question')
