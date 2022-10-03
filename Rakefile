@@ -73,12 +73,12 @@ task :validate_interactive_troubleshooter_questions => [:build] do
   question_ids = questions.keys.to_set
 
   missing = targets - question_ids
-  if missing.length > 0 then
+  if missing.any?
     raise "Found 'next_question' targets which do not exist: #{missing.to_a.sort.join(', ')}"
   end
 
   extra = question_ids - targets - Set[ROOT_QUESTION_ID]
-  if extra.length > 0 then
+  if extra.any?
     puts "Warning: found unreachable questions: #{extra.to_a.sort.join(', ')}"
   end
 
@@ -91,7 +91,7 @@ task :validate_interactive_troubleshooter_urls => [:build] do
   # nuanced case -- that the url must be an exact match for its target page.
 
   def check_url(url)
-    if url.end_with?("/") then
+    if url.end_with?("/")
       return if File.directory?("_site#{url}")
       raise "Invalid target url '#{url}' in interactive troubleshoter (did you mean '#{url[..-2]}'?)\n\n"
     else
@@ -103,7 +103,7 @@ task :validate_interactive_troubleshooter_urls => [:build] do
   text = IO.read('resources/troubleshooter/data.json')
   text.scan(/href=\\"([^"]+)\\"/) do |match|
     url = match[0]
-    if url.include? 'ROOT_URL' then
+    if url.include? 'ROOT_URL'
       check_url(url.sub('ROOT_URL', '').sub(/#.+/, ''))
     end
   end
