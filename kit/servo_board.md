@@ -43,6 +43,30 @@ Case Dimensions
 
 The case measures 68x68x21mm. Don't forget that the cables will stick out.
 
+Servo Control
+-------------
+
+Control of servos is often referred to as using
+<a href="https://en.wikipedia.org/wiki/Pulse-width_modulation">pulse-width modulation (<abbr title="Pulse-width_modulation">PWM</abbr>)</a>
+and while that is a useful way to convey the general idea it is unfortunately
+not a technically precise description of either how the control protocol
+operates nor how the Servo Board implements the control.
+
+Instead RC servos typically to react to the duration of the pulse sent to them
+and essentially ignore the gaps between the pulses. However this is not
+universally the case and some servos do care about the time between pulses as
+well.
+
+The Servo Board is able to precisely control the duration of the pulses sent to
+servos (based on the values you configure using the python API), within the
+ranges in the table below.
+
+Conversely the time between pulses sent to a given servo is allowed a much wider
+variation and in fact can vary even when that servo is not changing position.
+For example this can happen if another servo's position changes from being a
+longer pulse than the first to a shorter pulse. The range of possible gaps
+quoted below represents the worst possible case that a servo may experience.
+
 Specification
 -------------
 
@@ -52,8 +76,10 @@ Specification
 | Nominal input voltage                    | 11.1V ± 15% |
 | Output voltage                           | 5.5V      |
 | Maximum total output current [^1]        | 10A       |
-| Servo PWN range                          | 1ms — 2ms |
-| Servo PWN precision                      | 5µs       |
+| Pulse range                              | 1ms — 2ms |
+| Pulse precision                          | 5µs       |
+| Min time between pulses                  | 16.075ms (62.208Hz) |
+| Max time between pulses                  | 18.575ms (53.836Hz) |
 
 [^1]: If the auxiliary input is connected, outputs 8-11 have an independent maximum current.
 
