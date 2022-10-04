@@ -71,7 +71,7 @@ Controls
 Case Dimensions
 ---------------
 
-The case measures 83x99x24mm. Don't forget that the cables will stick out.
+The case measures 83×99×24mm. Don't forget that the cables will stick out.
 
 [Specification](#Specification) {#Specification}
 -------------

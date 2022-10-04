@@ -146,7 +146,7 @@ Full details about the game, the scoring method and more, remain available in th
 ---------------------
 
 The 2013 competition, *A Strange Game*, saw thirty teams build robots looking to dominate a game of noughts and crosses.
-Each robot, equipped with six rather large cardboard boxes, attempted to take-over squares in a 3x3 grid in the centre of an arena.
+Each robot, equipped with six rather large cardboard boxes, attempted to take-over squares in a 3×3 grid in the centre of an arena.
 The more squares owned in a row or column, the more points a robot would score.
 For further details about the game see the [full rules]({{ site.baseurl }}/resources/2013/rulebook.pdf).
 

@@ -42,7 +42,7 @@ Indicators
 Case Dimensions
 ---------------
 
-The case measures 70x84x20mm. Don't forget that the cables will stick out.
+The case measures 70×84×20mm. Don't forget that the cables will stick out.
 
 Specification
 -------------

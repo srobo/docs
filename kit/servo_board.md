@@ -41,7 +41,7 @@ connector when it is correctly powered.
 Case Dimensions
 ---------------
 
-The case measures 68x68x21mm. Don't forget that the cables will stick out.
+The case measures 68×68×21mm. Don't forget that the cables will stick out.
 
 Servo Control
 -------------
