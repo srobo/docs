@@ -47,6 +47,8 @@ tree:
       tree:
       - url: /programming/sr/cheat_sheet
         title: API Quick Reference
+      - url: /programming/sr/leds/
+        title: LEDs
       - url: /programming/sr/motors/
         title: Motors
       - url: /programming/sr/power/
