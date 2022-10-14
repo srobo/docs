@@ -13,21 +13,53 @@ The below will automatically calculate the latest version number, to be used whe
 Brain Board
 ===========
 
-<img src="{{ site.baseurl }}/images/content/kit/brain.png" alt="A photo of a brain board" title="A brain board" class="right" />
-The Odroid U3+ Brain Board provided with your kit is what runs the code you write
-and controls the other peripheral boards.
+<img src="{{ site.baseurl }}/images/content/kit/brain.png" alt="A photo of a brain board" title="A brain board" class="right" style="max-width: 50%"/>
+The Brain Board provided with your kit is what runs the code you write and controls the other peripheral boards. It consists of a [Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) and a Student Robotics KCH HAT.
 
-### Flashing SD card
+The LEDs on the HAT display the current status of the robot and can be used to help debug your robot. There are also 3 RGB (Red, Green and Blue) LEDs that you can control from your code.
 
-In order to get access to the SD card, you will need to open up the case for the brain board. Pull the latch at the end of the case in order to hinge it open.
-The SD card is located on the underside of the board. Carefully open the Brain Board's plastic case, grab the SD card with your fingers and simply pull it out of the slot.
+## Board Diagram
+
+![brain board assembly diagram]({{ site.baseurl }}/images/content/kit/brain-diagram.png "The Brain Board Assembly")
+
+### Indicators
+
+| LED              | Meaning                 
+|------------------|-------------------------
+| 5V Power         | The board is powered    
+| 12V Power        | The board is powered    
+| Reverse Polarity | The 12V power is reversed
+| Boot Progress    | Progress Bar for Brain Boot Progress 
+| Code             | A USB containing code is plugged in
+| Comp             | The Robot is in Competition Mode
+| WiFi             | The Robot WiFi hotspot is running
+| ♥ (Heartbeat)    | Blinks when the Brain is running
+| Start            | The Robot is waiting to start
+| OK               | Shows the code status, see below table
+
+### OK LED
+
+The OK LED shows the status of your code using different colours.
+
+| OK LED Colour | Meaning
+|---------------|--------------------------
+| Off           | No code available
+| Cyan          | Your code is starting
+| Yellow        | Your code is running
+| Magenta       | Your code has been killed
+| Green         | Your code has finished without errors
+| Red           | Your code has crashed
+
+## Flashing SD card
+
+The SD card is located on the underside of the board underneath the green power connector. Grab the SD card with your fingers and simply pull it out of the slot.
 
 To fully update your Brain Board's software, or refresh it if you think it's not working correctly, you can flash our SD card image onto the microSD card in your Brain Board.
 
 To update the SD card, you'll need to download our image from the [updates page]({{ site.baseurl }}/kit/brain_board/updates). The latest version is `{{ latest_version }}`.
 The flashing procedure is identical to flashing Raspberry Pi images.
 
-## Etcher
+### Etcher
 
 We recommend using [etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you're familiar with Raspberry Pis or other similar boards and have flashed images before with a different tool, that will also work.
 
