@@ -32,15 +32,15 @@ The following table summarises the connections which need to be made for each bo
 
 Board                                   | Power
 ----------------------------------------|------------------------------
-[Brain Board](/docs/kit/brain_board)    | 5V, using the provided cable
+[Brain Board](/docs/kit/brain_board)    | 12V, must be connected to L2
 [Power Board](/docs/kit/power_board)    | 12V, via the yellow XT60 to the [battery](/docs/kit/batteries)
 [Motor Board](/docs/kit/motor_board)    | 12V
 [Ruggeduino](/docs/kit/ruggeduino)      | via USB
 [Servo Board](/docs/kit/servo_board)    | 12V
 
-In order to connect the Motor and Servo Boards to the Power Board, you will need to create some power cables.
+In order to connect the Brain, Motor and Servo Boards to the Power Board, you will need to create some power cables.
 This should be done using the provided red and black _power wire_ (this is the thicker wire provided in the kit)
- and a pair of green CamCon connectors. The green power wire should only be used to connect motors to the motor board. 
+ and a pair of green CamCon connectors. The green power wire should only be used to connect motors to the motor board.
 _Remember you **must** use black wire for any ground connections as defined in the [Rules](/docs/rules)._
 
 When creating your power cables be sure to refer to the pages for each board
@@ -48,6 +48,13 @@ When creating your power cables be sure to refer to the pages for each board
 In our diagrams, the <span class="positive-connector">+</span> outputs from the
  the Power Board should be connected to the <span class="positive-connector">+</span>
  inputs on the board being powered.
+
+<div class="info" markdown="1">
+  The Brain Board *must* be plugged in to the L2 port on the Power Board in order for the kit to start up.
+  <br>
+  The L2 port is the only port on the Power Board which is powered before the Brain Board has started,
+  so is the only one which can be used to power the Brain Board.
+</div>
 
 Video
 -----
