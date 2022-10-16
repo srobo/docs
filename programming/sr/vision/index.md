@@ -74,10 +74,6 @@ marker_ids = R.camera.save(R.usbkey / "initial-view.png")
 capture
 :   Take a photo through the webcam, and return the image data as an OpenCV array.
 
-<div class="info">
-This feature is only available on version 2022.1.0 or later of the kit.
-</div>
-
 ~~~~~ python
 import cv2
 from sr.robot3 import *
