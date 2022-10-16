@@ -17,9 +17,6 @@ The LEDs on the KCH can be accessed via the `kch` object:
 R.kch.something...
 ~~~~~
 
-[LEDs](#leds) {#leds}
----------------------
-
 The KCH HAT has three RGB LEDs: A, B and C. The LEDs default to off, however
 once set they will hold their value even if your code exits. This is potentially
 useful to understand the current state of your code as it runs or the final
