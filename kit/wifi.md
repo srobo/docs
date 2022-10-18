@@ -28,7 +28,7 @@ Note that, because the information for your robot's WiFi network is stored insid
 the WiFi network will disappear when you unplug the USB memory stick. It will reappear a few moments
 after you plug the USB memory stick into your robot.
 
-If you are having any problems connecting to your robot, just head on over to the [forum]({{ site.url }}/forum)
+If you are having any problems connecting to your robot, just head on over to support forum channel in Discord
 and ask for help.
 
 Using the robot interface
