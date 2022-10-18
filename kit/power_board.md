@@ -10,8 +10,8 @@ Power Board
 	<img src="{{ site.baseurl }}/images/content/kit/pbv4.png" alt="A photo of a power board" title="The Power Board, click to view larger" width="250px" class="right" />
 </a>
 The Power Board distributes power to the SR kit from the battery. It provides
-six individual general-purpose power outputs along with a separate power connector
-for the Brain Board.
+eight individual general-purpose power outputs, with one reserved for powering
+the Brain Board.
 
 It also holds the internal On|Off switch for the whole robot as well as
 the Start button which is used to start your robot code running.
@@ -28,8 +28,12 @@ These are enabled when your robot code is started, and supply around 11.1V
 (±15%). They should be used to connect to the motor and servo board power
 inputs. The "H" connectors will supply more current than the "L" connectors.
 
+<div class="warning">When connecting the brain board, the "L2" port should be
+used. This ensures the Brain Board can turn on before the rest of the power
+outputs. Your Brain Board will not power on unless it's connected to "L2".</div>
+
 The 5V connectors can be used to connect low-current devices that take 5V
-inputs, such as the Brain Board.
+inputs.
 
 There is also a Micro USB B connector which should be used to connect the Brain
 Board for control of the power board.

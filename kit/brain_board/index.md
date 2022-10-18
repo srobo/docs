@@ -24,12 +24,12 @@ The LEDs on the HAT display the current status of the robot and can be used to h
 
 ### Indicators
 
-| LED              | Meaning                 
+| LED              | Meaning
 |------------------|-------------------------
-| 5V Power         | The board is powered    
-| 12V Power        | The board is powered    
+| 5V Power         | The Brain Board is powered
+| 12V Power        | The KCH is powered
 | Reverse Polarity | The 12V power is reversed
-| Boot Progress    | Progress Bar for Brain Boot Progress 
+| Boot Progress    | Progress Bar for Brain Boot Progress
 | Code             | A USB containing code is plugged in
 | Comp             | The Robot is in Competition Mode
 | WiFi             | The Robot WiFi hotspot is running
