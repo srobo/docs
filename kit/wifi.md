@@ -16,8 +16,7 @@ During the boot process you should notice the green LED on the KCH labelled "WiF
 Your robot has now set up its very own WiFi network! It will initially have a name starting with `robot-ZZZ` followed by some random numbers.
 
 You can now connect to your robot in the same way you normally connect to a WiFi network.
-You will need a WiFi key to be able to connect and you can find this inside any robot.zip
-that you have exported from the IDE. Just have a look inside `robot-settings.toml` on the USB drive containing your code.
+You will need a WiFi key to be able to connect and you can find this inside `robot-settings.toml` on the USB drive containing your code.
 
 These details can also be printed using:
 ~~~~ python
