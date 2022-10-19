@@ -12,8 +12,8 @@ You can connect to your robot using any WiFi capable device (laptop, tablet, pho
 Connecting to Your Robot
 ------------------------
 
-During the boot process you should notice the green LED labelled WiFi turn on.
-Your robot has now set up its very own WiFi network! It will have a name starting with `robot-ZZZ` followed by some random numbers.
+During the boot process you should notice the green LED on the KCH labelled "WiFi" turn on.
+Your robot has now set up its very own WiFi network! It will initially have a name starting with `robot-ZZZ` followed by some random numbers.
 
 You can now connect to your robot in the same way you normally connect to a WiFi network.
 You will need a WiFi key to be able to connect and you can find this inside any robot.zip
@@ -24,11 +24,7 @@ These details can also be printed using:
 R.print_wifi_details()
 ~~~~
 
-Note that, because the information for your robot's WiFi network is stored inside the robot.zip,
-the WiFi network will disappear when you unplug the USB memory stick. It will reappear a few moments
-after you plug the USB memory stick into your robot.
-
-If you are having any problems connecting to your robot, just head on over to support forum channel in Discord
+If you are having any problems connecting to your robot, just head on over to the Discord
 and ask for help.
 
 Using the robot interface
@@ -53,9 +49,11 @@ You can also see your robot's logs on the USB stick, in a file called
 
 ### Setting up the Robot's Environment
 
-The toolbar present at the top of the page, or bottom of the page on mobile; allows you to change the robot's starting zone and mode.
+The toolbar present at the top of the page, or bottom of the page on mobile, allows you to change the robot's starting zone and mode.
 Changing the starting zone allows you to test how your robot handles being started in a
 different zone.
+
+The wifi interface will only be fully accessible when your robot is started in dev mode and will be restricted in competition mode.
 
 Changing to competition mode causes the development markers to be unreadable,
 and instead reads the competition markers, which are different. Therefore, you
