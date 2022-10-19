@@ -12,7 +12,9 @@ title: Simulator
 
 ### Prerequisites
 
-You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 400MB). This is the platform we run our simulation in. We recommend version "R2021b" of Webots.
+You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 300MB).
+This is the platform we run our simulation in.
+Only version "R2022b" of Webots is supported.
 
 #### Python Version
 
@@ -20,16 +22,22 @@ You will also need Python installed.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
-| Windows  | 3.7-3.9 (64-bit)         |
-| macOS    | 3.7-3.9                  |
-| Linux    | 3.7-3.9                  |
+| Windows  | 3.8-3.10 (64-bit)        |
+| macOS    | 3.8-3.10                 |
+| Linux    | 3.8-3.10                 |
 
 ### Installing the simulation
+
+The simulation for SR2023 is not yet available, it will be made available during [Kickstart](https://studentrobotics.org/events/sr2023/southampton-kickstart/).
+
+<!--
 
 1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2022.2/competition-simulator-sr2022.2.zip), and unzip it somewhere on your computer.
 2. Using the Webots IDE, open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
+
+-->
 
 #### Changing your version of Python
 
