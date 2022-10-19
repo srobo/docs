@@ -39,9 +39,9 @@ Once you have a WiFi connection, visit `http://robot.lan` in a web browser to se
 The robot interface gives you the ability to remotely start the code on your robot,
 as well as view the logs.
 
-### Viewing logs
+![The robot interface on desktop]({{ site.baseurl }}/images/content/kit/wifi_interface.png)
 
-![The robot interface's logs screen]({{ site.baseurl }}/images/content/kit/remote-interface/logs-screen.png)
+### Viewing logs
 
 The robot interface allows you to see all messages from your code sent by `print(...)`
 statements (and anything else that outputs to standard output or standard
@@ -52,8 +52,6 @@ You can also see your robot's logs on the USB stick, in a file called
 `log.txt`.
 
 ### Setting up the Robot's Environment
-
-![The robot interface's set up screen]({{ site.baseurl }}/images/content/kit/remote-interface/set-up-screen.png)
 
 The toolbar present at the top of the page, or bottom of the page on mobile; allows you to change the robot's starting zone and mode.
 Changing the starting zone allows you to test how your robot handles being started in a
