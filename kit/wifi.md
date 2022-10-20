@@ -12,7 +12,7 @@ You can connect to your robot using any WiFi capable device (laptop, tablet, pho
 Connecting to Your Robot
 ------------------------
 
-During the boot process you should notice the green LED on the KCH labelled "WiFi" turn on.
+During the boot process you should notice the green LED on the KCH (the board on top of the Pi) labelled "WiFi" turn on.
 Your robot has now set up its very own WiFi network! It will initially have a name starting with `robot-ZZZ` followed by some random numbers.
 
 You can now connect to your robot in the same way you normally connect to a WiFi network.
@@ -52,7 +52,7 @@ The toolbar present at the top of the page, or bottom of the page on mobile, all
 Changing the starting zone allows you to test how your robot handles being started in a
 different zone.
 
-The wifi interface will only be fully accessible when your robot is started in dev mode and will be restricted in competition mode.
+The WiFi interface will only be fully accessible when your robot is started in dev mode and will be restricted in competition mode.
 
 Changing to competition mode causes the development markers to be unreadable,
 and instead reads the competition markers, which are different. Therefore, you
