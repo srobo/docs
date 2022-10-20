@@ -22,7 +22,7 @@ once set they will hold their value even if your code exits. This is potentially
 useful to understand the current state of your code as it runs or the final
 state of the code afterwards.
 
-Each of the LEDs can be set to a colour:
+Each of the LEDs can be set to one of 8 colours:
 
 ~~~~~ python
 # Set LED A to red
