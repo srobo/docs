@@ -337,7 +337,7 @@
             ]
         },
         "motor-programming": {
-            "question": "Please test the Motor with the <a href=\"ROOT_URL/kit/wifi\" target=\"_blank\">WiFi</a> interface. Does the Motor respond to the interface?",
+            "question": "Please try replacing your code with sample code from the <a href=\"ROOT_URL/kit/motor_board\" target=\"_blank\">Motor Board documentation</a>. Does the motor respond?",
             "answers": [
                 {
                     "answer": "Yes",
@@ -408,7 +408,7 @@
             ]
         },
         "servo-programming": {
-            "question": "Please test the Servo with the <a href=\"ROOT_URL/kit/wifi\" target=\"_blank\">WiFi</a> interface. Does the Servo respond to the robot interface?",
+            "question": "Please try replacing your code with sample code from the <a href=\"ROOT_URL/kit/servo_board\" target=\"_blank\">Servo Board documentation</a>. Does the servo respond?",
             "answers": [
                 {
                     "answer": "Yes",
