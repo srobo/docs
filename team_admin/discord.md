@@ -28,3 +28,9 @@ Along with the common channels, there are some channels visible only to members 
 When asking for support, it's best to ask in public rooms unless there's a specific reason not to. This not only allows other teams who may be struggling with the same issue to benefit, but also allows them to contribute to a solution and discuss potential improvements.
 
 If your school / institution has multiple teams (`ABC2` etc), these will be separate channels (`team-ABC1`, `team-ABC2` etc). Team leaders will be in all team channels relevant to their school / institution, however as competitors can only be in a single team, they'll only be in a single team channel.
+
+#### Voice channels
+
+It may be beneficial to have a voice channel for your team, whether for communication within your team or easier support from Student Robotics.
+
+If you'd like a voice channel for your team(s), please let us know either in Discord or by email. Only requests from a team supervisor will be honoured. Please note that for safeguarding purposes, blue-shirts will only join voice calls when asked and can only be around whilst a responsible adult (team leader, parent) is also in the call. Team supervisors also be responsible for ensuring conduct in these rooms meets our rules.
