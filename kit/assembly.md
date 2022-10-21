@@ -62,10 +62,12 @@ Video
 The following video contains an overview which covers the [brain board](/docs/kit/brain_board),
 [power board](/docs/kit/power_board) and a [motor board](/docs/kit/motor_board).
 
-<iframe class="video center"
-        height="315"
-        width="560"
-        src="https://www.youtube-nocookie.com/embed/vhZjjCdhVE0?rel=0"
-        frameborder="0"
-        allowfullscreen>
-</iframe>
+<div class="centered-content">
+  <iframe class="video center"
+          height="315"
+          width="560"
+          src="https://www.youtube-nocookie.com/embed/HQmL_3giLvc?rel=0"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+</div>
