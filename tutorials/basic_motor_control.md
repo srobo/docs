@@ -10,8 +10,7 @@ The aim of this tutorial is to get a motor turning with your kit.
 To complete this tutorial, you'll need the following:
 
 * The [power board](/docs/kit/power_board)
-* The battery (charged, of course)
-* The cable to connect the battery to the power board
+* A battery (charged, of course)
 * A [motor board](/docs/kit/motor_board)
 * 2 large (7.5mm) green _CamCon_ connectors to plug the power board and motor board together
 * 2 lengths of a suitable gauge of wire for powering the motor board from the power board (one should be black/grey)
@@ -42,9 +41,9 @@ The criteria are as follows:
 
 <div class="info">
     When designing your robot you should bear in mind that while each motor board can deliver 10A on each output,
-    all the power needs to go through the power board, which is fused at 15A.
-    This means that across all the outputs for all the motors,
-    you can only draw up to 15A at any time.
+    all the power needs to go through the power board, which is limited to 30A overall.
+    This means that across all the outputs for all the motors (as well as the rest of your kit),
+    you can only draw up to 30A at any time.
 </div>
 
 Connecting a Motor
@@ -128,7 +127,7 @@ while True:
 ~~~~~
 
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `R.motor_board...` lines.
-For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [`motor`](/docs/programming/sr/motors/) page.
+For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [Motors](/docs/programming/sr/motors/) page.
 But, to summarise:
 
 <div class="info" markdown="1">
@@ -140,6 +139,7 @@ But, to summarise:
 
 So, `R.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/docs/kit/motor_board)
  plugged in to a USB hub to 50% forwards (i.e. a duty-cycle of 0.5 forwards).
+
 As you would expect, then, `R.motor_board.motors[0].power = -0.5` will put the this motor into reverse at 50% power.
 `R.motor_board.motors[0].power = 0` will output no power to the motor and stop it.
 
@@ -214,8 +214,10 @@ while True:
 
 Again, as you've seen most of that before, it shouldn't be too difficult to get your head around.
 The `for` loop may be new, however.
+
 The [`for`](https://docs.python.org/tutorial/controlflow.html#for-statements)
- loop accepts a Python `list` (a `list`, when `print`ed, appears in square brackets like so: `[1, 2, 3]`).
+ loop accepts anything that Python can iterate over to get multiple values, such as a `list` (a `list`, when `print`ed, appears in square brackets like so: `[1, 2, 3]`).
+
 For a comprehensive introduction to to `list`s, have a look at [this WikiBooks article](https://en.wikibooks.org/wiki/Python_Programming/Lists).
 The `for` loop will iterate over the `list` (i.e. take each element in turn)
  and make it available in the loop's body as the variable after the the `for` keyword.
@@ -223,7 +225,7 @@ Here's an example:
 
 ~~~~~ python
 for i in [1, 2, 3]:
-	print(i)
+    print(i)
 ~~~~~
 
 The above would output:
@@ -234,25 +236,22 @@ The above would output:
 3
 ~~~~~
 
-Then there's the [`range()`](https://docs.python.org/library/functions.html#range) function.
-The `range()` function returns a `list` with its contents dependent on the arguments passed to it.
-The Python documentation explains it quite nicely:
+Then there's the [`range()`](https://docs.python.org/3/library/stdtypes.html#typesseq-range) object.
 
-> `range([start], stop[, step])` (note: the square brackets here mean 'optional')
->
-> If the `step` argument is omitted, it defaults to `1`. If the `start` argument is
-> omitted, it defaults to `0`. The full form returns a list of plain integers
-> `[start,  start + step, start + 2 *  step, ...]`. If `step` is positive, the last
-> element is the largest `start + i * step` less than `stop`; if `step` is negative,
-> the last element is the smallest `start + i * step` greater than `stop`.
+`range()` objects represent a sequence of numbers. They can be constructed with
+one, two or three arguments to describe what the sequence of numbers should be.
 
-So, based on that, `range(3)` would return the list `[0, 1, 2]` because it is shorthand for `range(0, 3, 1)`.
-From the quote, you can see that this would return a list starting from `0`,
- and finishing with the integer one less than `3`, hence the `[0, 1, 2]`.
+If only one argument is provided then the sequence starts at `0` and stops just
+before the given number. Otherwise the first argument is the number to start at,
+the second argument is the number to stop before and the (optional) third
+argument is how big the steps should be (by default steps are `1`).
+
+So, based on this, `range(3)` would represent the sequence `0`, `1`, `2` because
+it is shorthand for `range(0, 3, 1)`.
 
 So, taking `range(10, 80, 10)`, for example, would output `10` as the first element,
  then `20, 30, ...` up until `x=10+i*10` for some `i` where `i` ensures `x < stop` (which, in this case, is `80`).
-So, the `80` I've used could equally have been `77` or even `71` and the outputted `list` would still be `[10, 20, 30, 40, 50, 60, 70]`.
+So, the `80` we've used could equally have been `77` or even `71` and the outputted sequence would still be `10`, `20`, `30`, `40`, `50`, `60`, `70`.
 
 Putting all of that together should mean you understand the above code.
 You might want to run the code on your kit to see if it does what you expect it to.
