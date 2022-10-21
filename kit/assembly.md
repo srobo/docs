@@ -64,8 +64,8 @@ The following video contains an overview which covers the [brain board](/docs/ki
 
 <div class="centered-content">
   <iframe class="video center"
-          height="315"
-          width="560"
+          height="480"
+          width="640"
           src="https://www.youtube-nocookie.com/embed/HQmL_3giLvc?rel=0"
           frameborder="0"
           allowfullscreen>

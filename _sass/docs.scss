@@ -106,9 +106,15 @@
     background: white;
     border: 1px solid silver;
     padding: 3px;
+    max-height: 25vh;
+
+    @media (orientation: landscape) {
+      max-height: 90vh;
+    }
 
     @include media-query('medium') {
       min-height: 480px;
+      max-height: initial;
     }
   }
 
