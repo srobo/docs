@@ -28,9 +28,11 @@ These are enabled when your robot code is started, and supply around 11.1V
 (±15%). They should be used to connect to the motor and servo board power
 inputs. The "H" connectors will supply more current than the "L" connectors.
 
-<div class="warning">When connecting the brain board, the "L2" port should be
-used. This ensures the Brain Board can turn on before the rest of the power
-outputs. Your Brain Board will not power on unless it's connected to "L2".</div>
+<div class="warning">
+  When connecting the brain board, the "L2" port should be used.
+  This ensures the Brain Board can turn on before the rest of the power
+  outputs. Your Brain Board will not power on unless it's connected to "L2".
+</div>
 
 The 5V connectors can be used to connect low-current devices that take 5V
 inputs.
