@@ -22,14 +22,19 @@ The LEDs on the HAT display the current status of the robot and can be used to h
 
 ![brain board assembly diagram]({{ site.baseurl }}/images/content/kit/brain-diagram.png "The Brain Board Assembly")
 
+## Powering the Brain Board
+
+Your Brain Board will not power on unless it's connected to the "L2" port on the Power Board. 
+This is because the rest of the power outputs are disabled until the usercode runs. 
+
 ### Indicators
 
-| LED              | Meaning                 
+| LED              | Meaning
 |------------------|-------------------------
-| 5V Power         | The board is powered    
-| 12V Power        | The board is powered    
+| 5V Power         | The Brain Board is powered
+| 12V Power        | The KCH is powered
 | Reverse Polarity | The 12V power is reversed
-| Boot Progress    | Progress Bar for Brain Boot Progress 
+| Boot Progress    | Progress Bar for Brain Boot Progress
 | Code             | A USB containing code is plugged in
 | Comp             | The Robot is in Competition Mode
 | WiFi             | The Robot WiFi hotspot is running
