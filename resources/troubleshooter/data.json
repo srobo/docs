@@ -397,12 +397,27 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "next_question": "servo-programming"
+                    "next_question": "servo-plod"
                 },
                 {
                     "answer": "No",
                     "message": "You should connect up your Servo Board to the Power Board as described.",
                     "ask_if_fixed": true,
+                    "next_question": "servo-programming"
+                }
+            ]
+        },
+        "servo-plod": {
+            "question": "Is there a purple LED on the Servo Board?",
+            "answers": [
+                {
+                    "answer": "Yes",
+                    "message": "Unplug the USB cable to the Servo Board and plug it back in.",
+                    "ask_if_fixed": true,
+                    "next_question": "servo-programming"
+                },
+                {
+                    "answer": "No",
                     "next_question": "servo-programming"
                 }
             ]
