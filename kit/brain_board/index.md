@@ -78,3 +78,19 @@ If you choose to use a tool other than Etcher, you may need to extract the `srob
    Your computer may complain that the SD card is no longer readable, however
    this is expected as the data being written to the SD card is not in a format
    that either Windows or macOS can natively understand.
+
+## Robot Settings
+
+Some of the features on your robot are configured using a settings file, called `robot-settings.toml`. This file is automatically created on your USB drive the first time that you run any code on your robot.
+
+You can edit the settings file using your IDE or any text editor.
+
+The robot settings file contains the following settings:
+
+| Setting Name          | Description                                | Default Value      |
+|-----------------------|--------------------------------------------|--------------------|
+| `team_tla`            | Three Letter Acryonym (TLA) for your team. | Randomly generated |
+| `wifi_psk`            | Password for the Robot WiFi                | Randomly generated |
+| `wifi_region`         | Region Identifier for the WiFi             | `GB`               |
+| `wifi_enabled`        | Enables the WiFi                           | `true`             |
+| `usercode_entrypoint` | The entry point to your Python code        | `robot.py`         |
