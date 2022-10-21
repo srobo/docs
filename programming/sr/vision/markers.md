@@ -18,7 +18,7 @@ There is also some text in the bottom-left corner of the marker, in its padding:
 
 Details of the types and size of markers used in the game can be found in the [rules](/docs/rules).
 
-You can download all the markers as a single [ZIP file](/docs/resources/2022/sr-dev-markers-sr2022.zip) or individually from the [git repo](https://github.com/srobo/game-markers/tree/master/SR2022/dev).
+You can download all the markers as a single [ZIP file](/docs/resources/2023/sr-markers-sr2023.zip) or individually from the [git repo](https://github.com/srobo/game-markers/tree/master/SR2023/markers).
 
 You must ensure that your PDF viewer is not resizing the documents when printing.
 This can be checked by measuring the grey box around the marker and comparing this to the size defined in the rules.
