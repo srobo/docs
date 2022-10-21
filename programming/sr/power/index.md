@@ -16,15 +16,18 @@ R.power_board.something...
 [Power Outputs](#outputs) {#outputs}
 -------
 
-Each of the power board's six outputs has a constant whose name closely
+Each of the power board's controllable outputs has a constant whose name closely
  matches the name of the output:
 
 * H0 : `OUT_H0`
 * H1 : `OUT_H1`
 * L0 : `OUT_L0`
 * L1 : `OUT_L1`
-* L2 : `OUT_L2`
+* L2 : N/A (Not Controllable)
 * L3 : `OUT_L3`
+* 5V : `OUT_FIVE_VOLT`
+
+Both of the 5V outputs are controlled simultaneously.
 
 While they are all turned on when your code starts running,
  you can control whether each output is turned on or off like so:
