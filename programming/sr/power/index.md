@@ -102,7 +102,6 @@ between `C6` and `C8`. You can play other tones by providing a frequency.
   Calling `buzz` is non-blocking, which means it doesn't actually wait
   for the piezo to stop buzzing before continuing with your code. If you
   want to wait for the buzzing to stop, add a `sleep` afterwards!
-  If you send more than 32 beeps to the robot too quickly, your power board will crash!
 </div>
 
 ~~~~~ python
