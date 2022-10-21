@@ -18,6 +18,10 @@ Your robot has now set up its very own WiFi network! It will initially have a na
 You can now connect to your robot in the same way you normally connect to a WiFi network.
 You will need a WiFi key to be able to connect and you can find this inside `robot-settings.toml` on the USB drive containing your code.
 
+<div class="info">
+    If there is no <code>robot-settings.toml</code> on your USB drive, you can generate one by first running any code on your robot. For more information see our docs on <a href="{{ site.baseurl }}/kit/brain_board#robot-settings">Robot Settings</a>.
+</div>
+
 These details can also be printed using:
 ~~~~ python
 R.print_wifi_details()
