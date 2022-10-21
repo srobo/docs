@@ -35,6 +35,7 @@ dbus
 docopt
 gmqtt
 iniparse
+kchd
 kiwisolver
 matplotlib
 pydantic
@@ -46,4 +47,5 @@ pytz
 pyudev
 pyusb
 setuptools
+tomli
 udiskie
