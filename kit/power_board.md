@@ -25,8 +25,9 @@ Connectors
 
 There are six power output connectors on the board, labelled L0–L3, H0, and H1.
 These are enabled when your robot code is started, and supply around 11.1V
-(±15%). They should be used to connect to the motor and servo board power
-inputs. The "H" connectors will supply more current than the "L" connectors.
+(±15%). These may be referred to as 12V ports elsewhere in the docs. They should 
+be used to connect to the motor and servo board power inputs. The "H" connectors 
+will supply more current than the "L" connectors.
 
 <div class="warning">
   When connecting the brain board, the "L2" port should be used.
@@ -60,7 +61,7 @@ Indicators
 
 [^1]: The outputs only turn on when your program runs (specifically, when the `Robot` object is created).
 
-On power-up, the Power Board will emit some beeps, which are related to the version of the firmware it has installed.
+On power-up, the Power Board will emit a beep.
 
 If the Power Board starts beeping (and all the outputs turn off) then this
 means that the whole board's current limit has been triggered.
