@@ -101,8 +101,7 @@ between `C6` and `C8`. You can play other tones by providing a frequency.
 <div class="info" markdown="1">
   Calling `buzz` is non-blocking, which means it doesn't actually wait
   for the piezo to stop buzzing before continuing with your code. If you
-  want to wait for the buzzing to stop, add a `sleep` afterwards!
-  If you send more than 32 beeps to the robot too quickly, your power board will crash!
+  want to wait for the buzzing to stop, use the <code>blocking</code> argument!
 </div>
 
 ~~~~~ python
@@ -113,6 +112,9 @@ R.power_board.piezo.buzz(0.5, Note.D6)
 
 # Beep for 2s at 400Hz
 R.power_board.piezo.buzz(2, 400)
+
+# Beep for 3s at 250Hz and wait for it to finish
+R.power_board.piezo.buzz(3, 250, blocking=True)
 ~~~~~
 
 `ValueError` is raised if the note is not recognised or the frequency is not an integer.
