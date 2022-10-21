@@ -25,7 +25,7 @@ Connectors
 
 There are six power output connectors on the board, labelled L0–L3, H0, and H1.
 These are enabled when your robot code is started, and supply around 11.1V
-(±15%). These may be refered to as 12V ports elsewhere in the docs. They should 
+(±15%). These may be referred to as 12V ports elsewhere in the docs. They should 
 be used to connect to the motor and servo board power inputs. The "H" connectors 
 will supply more current than the "L" connectors.
 
