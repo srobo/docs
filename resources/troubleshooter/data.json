@@ -86,7 +86,7 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "You should immediately disconnect the battery, place it in a dry container &mdash; preferably outside &mdash; and post a message on the <a href=\"/forums\" target=\"_blank\">forums</a> to discuss how to dispose of it."
+                    "message": "You should immediately disconnect the battery, place it in a dry container &mdash; preferably outside &mdash; and post a message in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a> to discuss how to dispose of it."
                 },
                 {
                     "answer": "No",
@@ -114,11 +114,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "There may be a problem with the specific battery, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be a problem with the specific battery, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "No",
-                    "message": "There may be a problem with your Power Board or Charger, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be a problem with your Power Board or Charger, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 }
             ]
         },
@@ -168,11 +168,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "There is an issue with your Ruggeduino, you should post a message on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There is an issue with your Ruggeduino, you should post a message in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "No",
-                    "message": "There may be an issue with your power connector, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be an issue with your power connector, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 }
             ]
         },
@@ -196,11 +196,11 @@
             "answers": [
                 {
                     "answer": "My peripherals are fine",
-                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "I need help with my peripherals",
-                    "message": "Consider asking about this hardware on the <a href=\"/forums\" target=\"_blank\">forums</a>, and check the manual or contact the manufacturer of your peripheral."
+                    "message": "Consider asking about this hardware in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>, and check the manual or contact the manufacturer of your peripheral."
                 }
             ]
         },
@@ -341,11 +341,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "There may be an issue with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be an issue with your code, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "No",
-                    "message": "There may be an issue with your Motor Board, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be an issue with your Motor Board, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 }
             ]
         },
@@ -412,11 +412,11 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "There may be an issue with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be an issue with your code, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "No",
-                    "message": "There may be an issue with your servo or Servo Board. Try using a different servo if you can, otherwise consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be an issue with your servo or Servo Board. Try using a different servo if you can, otherwise consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 }
             ]
         },
@@ -442,7 +442,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "There may be an issue with your Webcam, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There may be an issue with your Webcam, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 }
             ]
         },
@@ -451,7 +451,7 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "Make sure the marker is flat, well-lit and there a visible border around the pattern, and if your robot is moving you should check the camera is not shaking.<br />If you still cannot pickup any markers there could be a problem with your code, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "Make sure the marker is flat, well-lit and there a visible border around the pattern, and if your robot is moving you should check the camera is not shaking.<br />If you still cannot pickup any markers there could be a problem with your code, consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "No",
