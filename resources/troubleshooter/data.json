@@ -408,7 +408,7 @@
             ]
         },
         "servo-plod": {
-            "question": "Is there a purple LED on the Servo Board?",
+            "question": "Is there a pink LED on the Servo Board?",
             "answers": [
                 {
                     "answer": "Yes",
