@@ -6,10 +6,6 @@ title: Servos
 Servos
 ======
 
-<div class="info">
-This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 The `servo_board` object is used to control a collection of Servo Boards.
 
 When a single Servo Board is connected to your robot, you can control it

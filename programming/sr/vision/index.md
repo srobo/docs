@@ -6,10 +6,6 @@ title: Vision
 Vision
 ======
 
-<div class="info">
-This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 The `sr.robot3` library contains support for detecting fiducial markers with the provided webcam.
 Markers are attached to various items in the Student Robotics arena.
 Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.
@@ -167,6 +163,11 @@ A `ThreeDCoordinate` object contains an `x`, `y` and `z` attribute. The exact me
 
 [`Orientation`](#Orientation) {#Orientation}
 ---------------
+
+<div class="info">
+Orientation information is returned in different formats between the simulator and the physical robot kits.
+One (possibly both) of them may change to resolve this.
+</div>
 
 An `Orientation` object describes the orientation of a marker.
 
