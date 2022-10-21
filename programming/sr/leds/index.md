@@ -22,37 +22,41 @@ once set they will hold their value even if your code exits. This is potentially
 useful to understand the current state of your code as it runs or the final
 state of the code afterwards.
 
-Each channel of each LED acts independently, so you can either set them separately:
+Each of the LEDs can be set to one of 8 colours:
 
 ~~~~~ python
-# Turn on the red channel of LED A
-R.kch.a.red = 1
+# Set LED A to red
+R.kch[UserLED.A] = Colour.RED
 
-# Turn on the green channel of LED B
-R.kch.b.green = 1
+# Set LED B to cyan
+R.kch[UserLED.B] = Colour.CYAN
 
-# Turn off the red channel of LED A
-R.kch.a.red = 0
+# Turn LED C off
+R.kch[UserLED.C] = Colour.OFF
 ~~~~~
 
-Alternatively you can set the red, green and blue channels for a given LED all together:
+The available colours are:
 
 ~~~~~ python
-# Set LED C to a yellow colour
-R.kch.c.rgb = (1, 1, 0)
-
-# Set LED B to a light blue colour
-R.kch.b.rgb = (0, 1, 1)
+OFF
+RED
+YELLOW
+GREEN
+CYAN
+BLUE
+MAGENTA
+WHITE
 ~~~~~
 
-You can also access all the LEDs together:
+Alternatively you can set the red, green and blue channels for a given LED separately:
 
 ~~~~~ python
-# Turn on the blue channel of all the LEDs
-for led in R.kch.leds.values():
-    led.blue = 1
+# Turn on the blue segment of LED A
+R.kch[UserLED.A].b = True
 
-# Set all LEDs to a purple colour
-for led in R.kch.leds.values():
-    led.rgb = (1, 0, 1)
+# Turn off the red segment of LED B
+R.kch[UserLED.B].r = False
+
+# Turn on green segment of LED B
+R.kch[UserLED.B].g = True
 ~~~~~
