@@ -23,7 +23,7 @@ Indicators
 | --------------------- | ------------------------------------------------------------------------------------------------ | ---------------------- |
 | Power <!-- DS1 -->    | The board is powered over USB.                                                                   | On                     |
 | 5.5V On <!-- DS15 --> | There is 5.5V power on the board. This usually indicates that the 12V connector rail is powered. | Off                    |
-| Aux On <!-- DS16 -->  | There is auxiliary power on the board.                                                           | Off                    |
+| Aux On <!-- DS16 -->  | There is auxiliary power on the board.                                                           | On                     |
 | STATUS\|ERROR <!-- DS10 --> | Blue when the board has successfully booted<br />Solid pink if an error has occurred (often 12V power being lost) | Blue |
 
 Connectors
@@ -58,7 +58,7 @@ universally the case and some servos do care about the time between pulses as
 well.
 
 The Servo Board is able to precisely control the duration of the pulses sent to
-servos (based on the values you configure using the python API), within the
+servos (based on the values you configure using the Python API), within the
 ranges in the table below.
 
 Conversely the time between pulses sent to a given servo is allowed a much wider
