@@ -16,7 +16,7 @@ Brain Board
 <img src="{{ site.baseurl }}/images/content/kit/brain.png" alt="A photo of a brain board" title="A brain board" class="right" style="max-width: 50%"/>
 The Brain Board provided with your kit is what runs the code you write and controls the other peripheral boards. It consists of a [Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) and a Student Robotics KCH HAT.
 
-The LEDs on the HAT display the current status of the robot and can be used to help debug your robot. There are also 3 RGB (Red, Green and Blue) LEDs that you can control from your code.
+The LEDs on the HAT display the current status of the robot and can be used to help debug your robot. There are also 3 RGB (Red, Green, and Blue) LEDs that you can control from your code.
 
 ## Board Diagram
 
@@ -55,7 +55,7 @@ The OK LED shows the status of your code using different colours.
 Your Brain Board will not power on unless it's connected to the "L2" port on the Power Board. 
 This is because the rest of the power outputs are disabled until the usercode runs. 
 
-## Flashing SD card
+## Flashing the SD card
 
 The SD card is located on the underside of the board underneath the green power connector. Grab the SD card with your fingers and simply pull it out of the slot.
 
@@ -66,7 +66,7 @@ The flashing procedure is identical to flashing Raspberry Pi images.
 
 ### Etcher
 
-We recommend using [etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you're familiar with Raspberry Pis or other similar boards and have flashed images before with a different tool, that will also work.
+We recommend using [Etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you're familiar with Raspberry Pis or other similar boards and have flashed images before with a different tool, that should also work.
 
 ![Etcher example]({{ site.baseurl }}/images/content/kit/etcher.png)
 
