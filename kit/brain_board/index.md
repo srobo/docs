@@ -89,7 +89,7 @@ The robot settings file contains the following settings:
 
 | Setting Name          | Description                                | Default Value      |
 |-----------------------|--------------------------------------------|--------------------|
-| `team_tla`            | Three Letter Acryonym (TLA) for your team. | Randomly generated |
+| `team_tla`            | Three Letter Acronym (TLA) for your team.  | Randomly generated |
 | `wifi_psk`            | Password for the Robot WiFi                | Randomly generated |
 | `wifi_region`         | Region Identifier for the WiFi             | `GB`               |
 | `wifi_enabled`        | Enables the WiFi                           | `true`             |
