@@ -52,8 +52,8 @@ The OK LED shows the status of your code using different colours.
 
 ## Powering the Brain Board
 
-Your Brain Board will not power on unless it's connected to the "L2" port on the Power Board. 
-This is because the rest of the power outputs are disabled until the usercode runs. 
+Your Brain Board will not power on unless it's connected to the "L2" port on the Power Board.
+This is because the rest of the power outputs are disabled until the usercode runs.
 
 ## Flashing the SD card
 
