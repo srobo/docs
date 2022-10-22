@@ -26,13 +26,13 @@ Each of the LEDs can be set to one of 8 colours:
 
 ~~~~~ python
 # Set LED A to red
-R.kch[UserLED.A] = Colour.RED
+R.kch.leds[UserLED.A] = Colour.RED
 
 # Set LED B to cyan
-R.kch[UserLED.B] = Colour.CYAN
+R.kch.leds[UserLED.B] = Colour.CYAN
 
 # Turn LED C off
-R.kch[UserLED.C] = Colour.OFF
+R.kch.leds[UserLED.C] = Colour.OFF
 ~~~~~
 
 The available colours are:
@@ -52,11 +52,11 @@ Alternatively you can set the red, green and blue channels for a given LED separ
 
 ~~~~~ python
 # Turn on the blue segment of LED A
-R.kch[UserLED.A].b = True
+R.kch.leds[UserLED.A].b = True
 
 # Turn off the red segment of LED B
-R.kch[UserLED.B].r = False
+R.kch.leds[UserLED.B].r = False
 
 # Turn on green segment of LED B
-R.kch[UserLED.B].g = True
+R.kch.leds[UserLED.B].g = True
 ~~~~~
