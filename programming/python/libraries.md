@@ -49,3 +49,20 @@ The following python libraries are installed and available for use in your robot
 * [zoloto 0.8.0](https://pypi.org/project/zoloto)
 
 If you wish to use a library that isn't listed above, get in contact with us on Discord and have a chat with us about it.
+
+Simulator
+---------
+
+The following libraries will be available to your robot code during the
+competition. Note that for local development you will need to install these
+yourself.
+
+<!-- updating this list? Also update https://github.com/srobo/competition-simulator/blob/master/libraries.txt -->
+
+* [matplotlib 3.5.1](https://pypi.org/project/matplotlib/3.5.1/)
+* [numpy 1.22.3](https://pypi.org/project/numpy/1.22.3/)
+* [pandas 1.4.2](https://pypi.org/project/pandas/1.4.2/)
+* [typing-extensions 3.10.0.0](https://pypi.org/project/typing-extensions/3.10.0.0/)
+
+If there are other libraries you would like included, please get in contact with
+us on Discord and have a chat with us about it.
