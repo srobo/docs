@@ -28,25 +28,51 @@ You will also need Python installed.
 
 ### Installing the simulation
 
-
-1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.1/competition-simulator-sr2023.1.zip), and unzip it somewhere on your computer.
-2. Using the Webots IDE, open the `worlds/Arena.wbt` file.
+1. Create a directory, perhaps called `simulation` where you will store your robot code.
+2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.1/competition-simulator-sr2023.1.zip)
+  and unzip it as a subdirectory of that directory:
+  ```
+  simulation
+  ├── competition-simulator-<version>
+  │   ├── ...
+  │   └─ worlds
+  │       └── Arena.wbt
+  └── robot.py
+  ```
+  If there is not an existing `robot.py` an example one will be created when the simulator first runs.
+3. Using the Webots IDE, open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
 
+<div class="info">
+  On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
+</div>
 
 #### Changing your version of Python
 
-If webots is picking up the incorrect version of Python, you'll need to change it.
-This can be done using **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command** (or **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd> on a Mac).
+If webots is not picking any version of Python or is picking up the wrong one then you'll need to change it.
+When this happens Webots will print errors to its console and your robot will not move.
+
+You will need the full path to the version of Python that you want to use.
+This will vary based on the system you have.
+One way to find the path is by launching the version of Python that you want to
+use and running the following code:
+
+~~~~~ python
+import sys
+print(sys.executable)
+~~~~~
+
+On Windows you can set the path to the Python version to use in Webots UI via
+**Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command**.
+Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python39\python.exe` when using Python 3.9, where `<USERNAME>` is your login.
+
+On Mac you can set the path to the Python version to use via **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd>.
+Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.9/bin/python3` when using Python 3.9.
+
 You'll need to ensure a matching version of Python is installed. If you're still
 having problems, ask for help in [`#simulator-help`][simulator-help] in
 [Discord][discord].
-
-On Windows your Python path is likely `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python39\python.exe` where `<USERNAME>` is your login.
-On Mac your Python path is likely `/Library/Frameworks/Python.framework/Versions/3.9/bin/python3` when using Python 3.9.
-
-Currently the simulator does not work properly on Apple M1 Macs.
 
 ### Updates
 
