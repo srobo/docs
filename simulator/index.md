@@ -44,6 +44,10 @@ You will also need Python installed.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
 
+<div class="info">
+  On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
+</div>
+
 #### Changing your version of Python
 
 If webots is not picking any version of Python or is picking up the wrong one then you'll need to change it.
