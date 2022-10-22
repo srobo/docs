@@ -28,16 +28,12 @@ You will also need Python installed.
 
 ### Installing the simulation
 
-The simulation for SR2023 is not yet available, it will be made available during [Kickstart](https://studentrobotics.org/events/sr2023/southampton-kickstart/).
 
-<!--
-
-1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2022.2/competition-simulator-sr2022.2.zip), and unzip it somewhere on your computer.
+1. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.1/competition-simulator-sr2023.1.zip), and unzip it somewhere on your computer.
 2. Using the Webots IDE, open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
 
--->
 
 #### Changing your version of Python
 
