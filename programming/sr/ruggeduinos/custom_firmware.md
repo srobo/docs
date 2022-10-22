@@ -142,4 +142,4 @@ ser = serial.Serial(R.ignored_ruggeduinos[RUGGEDUINO_ID])
 
 ~~~~~
 
-Refer to the [pyserial documentation](http://pyserial.sourceforge.net/) for more information on how to use pyserial.
+Refer to the [pyserial documentation](https://pyserial.readthedocs.org/en/latest/) for more information on how to use pyserial.

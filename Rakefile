@@ -115,11 +115,10 @@ task :validate_links => [:build] do
   # Explanation of arguments:
   # --disable-external    # For speed. Ideally we'd check external links too, but ignoring for now.
   # --ignore-missing-alt  # To avoid needing to fix lots upfront, we can migrate towards this later.
-  # --enforce-https       # To avoid needing to fix lots upfront, we can migrate towards this later.
   # --allow-hash-href     # Allow empty `#` links to mean "top of page". It's true that these can be errors, however we have far too many to really address this.
   # --allow-missing-href  # Allow missing hrefs as we use them in the troubleshooter and rules (as anchors). It's true that these can be errors, however we have plenty which are legitimate.
   # --swap-urls           # Adjust for Jekyll's baseurl. See https://github.com/gjtorikian/html-proofer/issues/618 for more.
-  sh('bundle exec htmlproofer _site --disable-external true --ignore-missing-alt true --enforce-https false --allow-hash-href true --allow-missing-href true --swap-urls "^/docs/:/"')
+  sh('bundle exec htmlproofer _site --disable-external true --ignore-missing-alt true --allow-hash-href true --allow-missing-href true --swap-urls "^/docs/:/"')
 end
 
 task :validate_sidebar_tree => [:build] do
