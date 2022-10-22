@@ -655,7 +655,7 @@ There are three types of operators in Python: arithmetic, comparison, and logica
 The usual mathematical order (BODMAS) applies to these, just like in normal algebra.
 
 `+`, `-`, `*`, `/`
-:   Self-explanatory (if you're having trouble with division, read the first half of this article: <http://www.ferg.org/projects/python_gotchas.html>)
+:   Self-explanatory
 
 '%'
 :   Remainder. For example, `5 % 2` is 1, `4 % 2` is 0.
