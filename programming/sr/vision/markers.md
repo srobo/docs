@@ -21,7 +21,7 @@ Details of the types and size of markers used in the game can be found in the [r
 You can download all the markers as a single [ZIP file](/docs/resources/2023/sr-markers-sr2023.zip) or individually from the [git repo](https://github.com/srobo/game-markers/tree/master/SR2023/markers).
 
 You must ensure that your PDF viewer is not resizing the documents when printing.
-This can be checked by measuring the grey box around the marker and comparing this to the size defined in the rules.
+This can be checked by measuring the black marker and comparing this to the size defined in the rules.
 If the printed marker is not the correct size then the distance information reported by the vision API will be wrong.
 
 Note that a different set of markers will be used in the arenas at the competition.
