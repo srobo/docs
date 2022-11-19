@@ -28,7 +28,30 @@ jobs:
     - name: Build & Validate
       run: rake validate
 
+  changes:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref != 'refs/heads/master' }}
+    permissions:
+      pull-requests: read
+    outputs:
+      docker: ${{ steps.filter.outputs.docker }}
+    steps:
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          docker:
+            - '_config.yml'
+            - '.dockerignore'
+            - '*docker*'
+            - 'Dockerfile'
+            - 'Gemfile*'
+            - 'package*.json'
+            - 'Rakefile'
+
   docker:
+    needs: changes
+    if: ${{ needs.changes.outputs.docker == 'true' }} || ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
