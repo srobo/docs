@@ -28,6 +28,6 @@ Note that a different set of markers will be used in the arenas at the competiti
 However, this is not something you need to worry about.
 We will handle this for you automatically when your robot is started in competition mode.
 
-The white space around the markers is very important -- without it, the markers probably won't be recognised. This white border is needed to ensure there's enough contrast between the black marker and whatever it's attached to - its size isn't strictly important. The grey border around the marker is the same size as 1 pixel in the marker, which is a good target for contrast.
+The white space around the markers is very important -- without it, the markers probably won't be recognised. This white border is needed to ensure there's enough contrast between the black marker and whatever it's attached to - its size isn't strictly important. The white space around the marker is the same size as one block within the marker, which is a good target for contrast.
 
 If the markers become damaged (scuff markers, tears, etc...) they will not function as well (if at all). If this happens, it is best to just print another one.
