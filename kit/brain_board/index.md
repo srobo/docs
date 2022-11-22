@@ -99,3 +99,7 @@ The robot settings file contains the following settings:
 | `wifi_region`         | Region Identifier for the WiFi             | `GB`               |
 | `wifi_enabled`        | Enables the WiFi                           | `true`             |
 | `usercode_entrypoint` | The entry point to your Python code        | `robot.py`         |
+
+If your `robot-settings.toml` is not valid, it will be automatically regenerated with valid settings. This will reset any settings you have changed back to their default values. We therefore recommend that you do not change your settings file before a competition match.
+
+In software version `2023.1.0` and later, an error file will be generated if your settings are invalid: `robot-settings-error.txt`. This file contains a message explaining the problem and a copy of your old settings.
