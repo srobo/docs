@@ -99,3 +99,18 @@ The robot settings file contains the following settings:
 | `wifi_region`         | Region Identifier for the WiFi             | `GB`               |
 | `wifi_enabled`        | Enables the WiFi                           | `true`             |
 | `usercode_entrypoint` | The entry point to your Python code        | `robot.py`         |
+
+## Firewall
+
+<div class="info">
+This documentation refers to a feature which is only available from software version `2023.1.0` and later.
+</div>
+
+The Brain Board has a [network firewall](https://en.wikipedia.org/wiki/Firewall_(computing)) that prevents access to applications and services on the Brain Board unless it is required.
+
+If you are running code that uses networking, such as `Flask`, you will need to use a port from the range that is allocated for competitor use:
+
+| Protocol | Start of Range | End of Range |
+|----------|----------------|--------------|
+| TCP      | 7000           | 8999         |
+| UDP      | 7000           | 8999         |
