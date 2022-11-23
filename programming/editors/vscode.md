@@ -35,3 +35,45 @@ you'll need to make the library available within the Python environment that you
 3. Run `pip install sr.robot3`.
 
 [code-completion]: https://en.wikipedia.org/wiki/Autocomplete#In_source_code_editors
+
+## Remote Debugging
+
+<div class="info">
+This documentation refers to a feature which is only available from software version `2023.1.0` and later.
+</div>
+
+When connected to the [robot's WiFi hotspot](/docs/kit/wifi), it is possible to attach VS Code's
+debugger to the robot by performing the following steps:
+
+1. Ensure the [Python extension](#python-extension) is installed
+2. Open the Run and Debug panel
+3. Click the cog icon at the top of the panel
+4. Paste the following configuration:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Robot",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "192.168.32.1",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ],
+            "justMyCode": true
+        }
+    ]
+}
+```
+5. In order to debug, you can now either click the green play button at the top of the Run and Debug panel or press <kbd>F5</kbd>
+
+For more information on debugging with Visual Studio Code, please visit the [VS Code documentation][vs-code-debug-docs]
+
+[vs-code-debug-docs]: https://code.visualstudio.com/Docs/editor/debugging
