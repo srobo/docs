@@ -108,7 +108,7 @@ This documentation refers to a feature which is only available from software ver
 
 The Brain Board has a [network firewall](https://en.wikipedia.org/wiki/Firewall_(computing)) that prevents access to applications and services on the Brain Board unless it is required.
 
-If you are running code that uses networking, such as `Flask`, you will need to use a port from the range that is allocated for competitor use:
+If you are running code that uses networking, you will need to use a port from the range that is allocated for competitor use:
 
 | Protocol | Start of Range | End of Range |
 |----------|----------------|--------------|
