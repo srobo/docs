@@ -103,3 +103,19 @@ The robot settings file contains the following settings:
 If your `robot-settings.toml` is not valid, it will be automatically regenerated with valid settings. This will reset any settings you have changed back to their default values. We therefore recommend that you do not change your settings file before a competition match.
 
 In software version `2023.1.0` and later, an error file will be generated if your settings are invalid: `robot-settings-error.txt`. This file contains a message explaining the problem and a copy of your old settings.
+
+
+## Firewall
+
+<div class="info">
+This documentation refers to a feature which is only available from software version `2023.1.0` and later.
+</div>
+
+The Brain Board has a [network firewall](https://en.wikipedia.org/wiki/Firewall_(computing)) that prevents access to applications and services on the Brain Board unless it is required.
+
+If you are running code that uses networking, you will need to use a port from the range that is allocated for competitor use:
+
+| Protocol | Start of Range | End of Range |
+|----------|----------------|--------------|
+| TCP      | 7000           | 8999         |
+| UDP      | 7000           | 8999         |
