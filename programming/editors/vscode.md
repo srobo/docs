@@ -72,7 +72,19 @@ debugger to the robot by performing the following steps:
     ]
 }
 ```
-5. In order to debug, you can now either click the green play button at the top of the Run and Debug panel or press <kbd>F5</kbd>
+5. Add the following snippet to the top of your code:
+```python
+import debugpy
+debugpy.listen(("0.0.0.0", 5678))
+```
+
+If you would like for your code to not run until the debugger is attached, you can also add the following:
+```python
+print("Waiting for debugger...")
+debugpy.wait_for_client()
+```
+
+6. In order to debug, you can now either click the green play button at the top of the Run and Debug panel or press <kbd>F5</kbd>
 
 For more information on debugging with Visual Studio Code, please visit the [VS Code documentation][vs-code-debug-docs]
 
