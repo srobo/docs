@@ -45,9 +45,9 @@ This documentation refers to a feature which is only available from software ver
 When connected to the [robot's WiFi hotspot](/docs/kit/wifi), it is possible to attach VS Code's
 debugger to the robot by performing the following steps:
 
-1. Ensure the [Python extension](#python-extension) is installed
-2. Open the Run and Debug panel
-3. Click the cog icon at the top of the panel
+1. Ensure the [Python extension](#python-extension) is installed.
+2. Open the Run and Debug panel.
+3. Click the cog icon at the top of the panel.
 4. Paste the following configuration:
 ```json
 {
@@ -84,7 +84,7 @@ print("Waiting for debugger...")
 debugpy.wait_for_client()
 ```
 
-6. In order to debug, you can now either click the green play button at the top of the Run and Debug panel or press <kbd>F5</kbd>
+6. In order to debug, you can now either click the green play button at the top of the Run and Debug panel or press <kbd>F5</kbd>.
 
 For more information on debugging with Visual Studio Code, please visit the [VS Code documentation][vs-code-debug-docs]
 
