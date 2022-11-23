@@ -39,7 +39,7 @@ you'll need to make the library available within the Python environment that you
 ## Remote Debugging
 
 <div class="info">
-This documentation refers to a feature which is only available from software version `2023.1.0` and later.
+This documentation refers to a feature which is only available from software version <code>2023.1.0</code> and later.
 </div>
 
 When connected to the [robot's WiFi hotspot](/docs/kit/wifi), it is possible to attach VS Code's
