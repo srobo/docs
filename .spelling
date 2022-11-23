@@ -35,6 +35,7 @@ xmlschema
 # Python Modules
 dateutil
 dbus
+debugpy
 docopt
 gmqtt
 iniparse
