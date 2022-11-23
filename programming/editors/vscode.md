@@ -58,7 +58,7 @@ debugger to the robot by performing the following steps:
             "type": "python",
             "request": "attach",
             "connect": {
-                "host": "192.168.32.1",
+                "host": "robot.lan",
                 "port": 5678
             },
             "pathMappings": [
