@@ -42,7 +42,7 @@ you'll need to make the library available within the Python environment that you
 This documentation refers to a feature which is only available from software version <code>2023.1.0</code> and later.
 </div>
 
-When connected to the [robot's WiFi hotspot](/docs/kit/wifi), it is possible to attach VS Code's
+When connected to the [robot's WiFi hotspot]({{ site.baseurl }}/kit/wifi), it is possible to attach VS Code's
 debugger to the robot by performing the following steps:
 
 1. Ensure the [Python extension](#python-extension) is installed.
