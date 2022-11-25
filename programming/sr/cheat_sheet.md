@@ -191,6 +191,26 @@ for marker in markers:
     marker.orientation.rotation_matrix
 ~~~~~
 
+## Getting the frame from the camera
+
+It is also possible to get an OpenCV frame from the camera:
+
+~~~~~ python
+frame = R.camera.capture()
+~~~~~
+
+<div class="info">
+The <code>frame=</code> argument is only available from software version <code>2023.1.0</code> and later.
+</div>
+
+You can use this frame in your own vision processing, or use it with other vision commands.
+
+~~~~~ python
+markers = R.camera.see(frame=frame)
+marker_ids = R.camera.see_ids(frame=frame)
+marker_ids = R.camera.save("photo.jpg", frame=frame)
+~~~~~
+
 ## Ruggeduino
 
 ### Setting the mode of a pin
