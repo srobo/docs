@@ -9,7 +9,7 @@ function handleDownloadClick(event) {
 }
 
 function addDownloadTracking() {
-  document.querySelectorAll("#updates-table .kit-download-link").forEach(function(link) {
+  document.querySelectorAll(".kit-download-link").forEach(function(link) {
     link.addEventListener("click", handleDownloadClick);
   });
 }
