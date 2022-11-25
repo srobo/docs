@@ -2,5 +2,10 @@
 # The format of this file should be like such:
 # - version: 20xx.y.z
 #   released: 2038-01-19
+#   changelog:
+#     - Changed something
+#     - Changed another thing too
 - version: 2023.0.0
   released: 2022-10-21
+  changelog:
+    - Initial release for SR2023.
