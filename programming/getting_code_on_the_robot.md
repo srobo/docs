@@ -22,7 +22,7 @@ back in again and it will restart automatically.
 
 1. Open your code in File Explorer
 2. Select all of your code files (<kbd>Ctrl</kbd><kbd>A</kbd> to select all files)
-3. Right-click the files and click "Copy"
+3. Right-click the files and click "Copy" (<i class="fa-regular fa-copy"></i> on Windows 11)
 4. Open your USB drive in File Explorer
 5. Right-click in the directory and click "Paste"
 
