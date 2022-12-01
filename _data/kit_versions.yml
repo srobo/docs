@@ -6,7 +6,7 @@
 #     - Changed something
 #     - Changed another thing too
 - version: 2023.1.0
-  released: 2022-11-25
+  released: 2022-12-01
   changelog:
     - Added dark theme and WiFi details to web interface.
     - Added terminal interface.
