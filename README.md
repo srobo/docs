@@ -10,6 +10,8 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
 
 ### Manual
 
+0. [Clone this repo][clone-repo]
+
 1. [Install Ruby][install-ruby]
 
 2. Install Bundler (1.x) and Rake
@@ -29,6 +31,7 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
 When you've made a change, either push it to a forked repository, or to a
 feature branch, and [raise a pull request][raise-a-pr].
 
+[clone-repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 [install-ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [raise-a-pr]: https://github.com/srobo/docs/pull/new/master
 
