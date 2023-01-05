@@ -5,6 +5,11 @@
 #   changelog:
 #     - Changed something
 #     - Changed another thing too
+- version: 2023.2.0
+  released: 2023-01-05
+  changelog:
+    - Reworked underlying vision library to improve marker detection and distance calculation.
+    - Added a display of last captured image in web UI.
 - version: 2023.1.0
   released: 2022-12-01
   changelog:
