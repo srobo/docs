@@ -5,6 +5,10 @@
 #   changelog:
 #     - Changed something
 #     - Changed another thing too
+- version: 2023.2.1
+  released: 2023-01-07
+  changelog:
+    - Fixed issue in camera optimisation that caused JPEG corruption.
 - version: 2023.2.0
   released: 2023-01-05
   yanked: true
