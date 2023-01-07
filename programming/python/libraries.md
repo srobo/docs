@@ -22,7 +22,6 @@ The following python libraries are installed and available for use in your robot
 * [gpg 1.17.1](https://pypi.org/project/gpg)
 * [iniparse 0.5](https://pypi.org/project/iniparse)
 * [j5 1.1.2](https://pypi.org/project/j5)
-* [j5-zoloto 0.4.0](https://pypi.org/project/j5-zoloto)
 * [kchd 0.4.0](https://pypi.org/project/kchd)
 * [matplotlib 3.5.1](https://pypi.org/project/matplotlib)
 * [numpy 1.22.3](https://pypi.org/project/numpy)
@@ -46,7 +45,6 @@ The following python libraries are installed and available for use in your robot
 * [tomli-w 1.0.0](https://pypi.org/project/tomli-w)
 * [typing-extensions 3.10.0.0](https://pypi.org/project/typing-extensions)
 * [udiskie 2.3.3](https://pypi.org/project/udiskie)
-* [zoloto 0.8.0](https://pypi.org/project/zoloto)
 
 If you wish to use a library that isn't listed above, get in contact with us on Discord and have a chat with us about it.
 
