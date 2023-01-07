@@ -42,8 +42,9 @@ task :validate_kit_versions do
   data.each do |entry|
     actual = entry.keys.to_set
     expected = ['version', 'released', 'changelog'].to_set
-    missing = expected - actual
-    extra = actual - expected
+    optional = ['yanked'].to_set
+    missing = expected - actual - optional
+    extra = actual - expected - optional
     messages = []
     messages << "Missing keys: #{missing.to_a.join(', ')}" if missing.size() > 0
     messages << "Extra keys: #{extra.to_a.join(', ')}" if extra.size() > 0
