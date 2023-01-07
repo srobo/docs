@@ -5,9 +5,13 @@
   {% else %}
   <h2><code>{{ version }} ({{ kit_version.released | date_to_string }})</code></h2>
   {% endif %}
+  {% if kit_version.yanked %}
+  <p>This version is no longer available.</p>
+  {% else %}
   <a class="kit-download-link" data-version="{{ version }}" href="https://github.com/srobo/robot-image/releases/download/v{{ version }}/srobo-image-robot-{{ version }}.img.xz">
       Download {{ version }}
   </a>
+  {% endif %}
   <ul>
   {% for log in kit_version.changelog %}
     <li>{{log }}</li>
