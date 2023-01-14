@@ -26,6 +26,10 @@ You will also need Python installed.
 | macOS    | 3.8-3.10                 |
 | Linux    | 3.8-3.10                 |
 
+There are a small number of [external libraries]({{ site.baseurl }}/programming/python/libraries)
+which will be available to your robot code during the competition. Note that for
+local development you will need to install these yourself.
+
 ### Installing the simulation
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
