@@ -1,3 +1,4 @@
+require 'fileutils'
 require 'set'
 require 'yaml'
 
@@ -15,6 +16,12 @@ task :dependencies do
   else
     sh('bundle install --path gems')
   end
+
+  # Fix pathutil on Ruby 3; works around https://github.com/envygeeks/pathutil/pull/5
+  # as suggested by https://stackoverflow.com/a/73909894/67873
+  pathutil_path = `bundle exec gem which pathutil`.strip()
+  content = File.read(pathutil_path).gsub(', kwd', ', **kwd')
+  File.write(pathutil_path, content)
 end
 
 task :spelling_dependencies do
