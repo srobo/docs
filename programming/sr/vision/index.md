@@ -241,7 +241,7 @@ roll
 
 
 rotation_matrix
-:   The rotation matrix represented by this orientation. A list of 3 lists, each with 3 items.
+:   The [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix) represented by this orientation. A list of 3 lists, each with 3 items.
 
 quaternion
 :   The [Quarternion](https://kieranwynn.github.io/pyquaternion/#quaternion-features) instance represented by this orientation.
