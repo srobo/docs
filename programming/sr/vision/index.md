@@ -149,7 +149,7 @@ spherical
 :   A [`SphericalCoordinate`](#SphericalCoordinate) instance describing the position relative to the camera.
 
 cartesian
-:   A [`CartesianCoordinates`](#CartesianCoordinates) instance describing the absolute position of the marker relative to the camera.
+:   A [`CartesianCoordinates`](#CartesianCoordinates) instance describing the position of the marker relative to the camera.
 
 <a id="Coordinate"/>
 
