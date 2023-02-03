@@ -187,7 +187,8 @@ One (possibly both) of them may change to resolve this.
 An `Orientation` object describes the orientation of a marker.
 
 rot_x
-:   Rotation of the marker about the cartesian x-axis, in radians.
+:   Rotation of the marker about the cartesian x-axis, in radians. This is a
+    pitch-like rotation.
 
     Leaning a marker towards the camera increases the value of `rot_x`, while
     leaning it away from the camera decreases it. A value of either π or -π
@@ -195,27 +196,49 @@ rot_x
     at π and -π, as both values represent the same position).
 
 rot_y
-:   Rotation of the marker about the cartesian y-axis, in radians.
+:   Rotation of the marker about the cartesian y-axis, in radians. This is a
+    yaw-like rotation.
 
     Turning a marker clockwise (as viewed from above) decreases the value of
     `rot_y`, while turning it anticlockwise increases it. A value of 0 means
     that the marker is perpendicular to the line of sight of the camera.
 
 rot_z
-:   Rotation of the marker about the cartesian z-axis, in radians.
+:   Rotation of the marker about the cartesian z-axis, in radians. This is a
+    roll-like rotation.
 
     Turning a marker anticlockwise (as viewed from the camera) increases the
     value of `rot_z`, while turning it clockwise decreases it. A value of 0
     indicates that the marker is upright.
 
-roll
-:   An alias for `rot_x`.
-
-pitch
-:   An alias for `rot_y`.
+There are additional attributes for the [principal axis rotations](https://en.wikipedia.org/wiki/Aircraft_principal_axes) of the marker.
 
 yaw
-:   An alias for `rot_z`.
+:   A rotation about the about the vertical axis, in radians (an axis top to
+    bottom through the token). Turning a marker clockwise (as viewed from above)
+    increases the value of `yaw`, while turning it anticlockwise decreases it. A
+    value of 0 means that the marker is perpendicular to the line of sight of
+    the camera.
+
+    This differs from `rot_y` in the direction that increases the value.
+
+pitch
+:   A rotation about the transverse axis, in radians (an axis right to left
+    across the token). Tilting the marker backward increases the value of
+    `pitch`, while tilting it forwards decreases it. A value of 0 indicates that
+    the marker is facing the camera square-on.
+
+    This differs from `rot_x` in the zero point and direction to increase the value.
+
+roll
+:   A rotation about the longitudinal axis, in radians (an axis normal from the
+    apparent front to the back of the token, normal to the marker). Rotating the
+    marker anti-clockwise (from the perspective of the camera) increases the
+    value of `roll`, while rotating it clockwise decreases it. A value of 0
+    indicates that the marker is upright.
+
+    This differs from `rot_x` in the zero point and direction to increase the value.
+
 
 rotation_matrix
 :   The rotation matrix represented by this orientation. A list of 3 lists, each with 3 items.
