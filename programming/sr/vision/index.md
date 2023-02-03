@@ -205,8 +205,8 @@ rot_z
 :   Rotation of the marker about the cartesian z-axis, in radians.
 
     Turning a marker anticlockwise (as viewed from the camera) increases the
-    value of `rot_z`, while turning it clockwise decreases it. A value of π
-    or -π indicates that the marker is upright.
+    value of `rot_z`, while turning it clockwise decreases it. A value of 0
+    indicates that the marker is upright.
 
 roll
 :   An alias for `rot_x`.
