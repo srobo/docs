@@ -246,7 +246,7 @@ rotation_matrix
     This 3×3 matrix is represented by a list of 3 lists, each with 3 values, in an arrangement compatible with tools such as `numpy`.
 
 quaternion
-:   The [quarternion](https://en.wikipedia.org/wiki/Quaternion) represented by this orientation.
+:   The [quaternion](https://en.wikipedia.org/wiki/Quaternion) represented by this orientation.
     On the physical kits this is implemented as a [`pyquaternion.Quaternion`](https://kieranwynn.github.io/pyquaternion/#quaternion-features) instance.
 
 <a id="Spherical"/>
