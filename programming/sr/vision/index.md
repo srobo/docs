@@ -190,8 +190,9 @@ rot_x
 :   Rotation of the marker about the cartesian x-axis, in radians.
 
     Leaning a marker towards the camera increases the value of `rot_x`, while
-    leaning it away from the camera decreases it. A value of π or -π indicates
-    that the marker is upright.
+    leaning it away from the camera decreases it. A value of either π or -π
+    indicates that the marker is upright (there is a discontinuity in the value
+    at π and -π, as both values represent the same position).
 
 rot_y
 :   Rotation of the marker about the cartesian y-axis, in radians.
