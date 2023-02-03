@@ -159,6 +159,7 @@ cartesian
 A named tuple of `x` and `y` coordinates for the point, in pixels relative to the top left of the image.
 
 ~~~~~ python
+# Print the x and y coordinates of the pixel location
 print(marker.pixel_centre.x, marker.pixel_centre.y)
 ~~~~~
 
@@ -171,6 +172,7 @@ A named tuple of `x`, `y` and `z` coordinates for the point, in millimeters rela
 Increasing values are to the right, below and away from the camera respectively.
 
 ~~~~~ python
+# Print the x, y and z coordinates of the marker's location
 print(marker.cartesian.x, marker.cartesian.y, marker.cartesian.z)
 ~~~~~
 
