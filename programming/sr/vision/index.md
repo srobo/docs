@@ -232,8 +232,8 @@ distance
 
 theta
 :   This is the angle from directly in front of the camera to the vector which
-    points to the location in the horizontal plane. A positive value indicates a
-    counter-clockwise rotation. Zero is at the centre of the image.
+    points to the location in the horizontal plane, in radians. A positive value
+    indicates a counter-clockwise rotation. Zero is at the centre of the image.
 
 phi
 :   The polar angle from the y-axis of the camera "down" to the vector which
