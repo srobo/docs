@@ -14,7 +14,9 @@ title: Simulator
 
 You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 300MB).
 This is the platform we run our simulation in.
-Only version "R2022b" of Webots is supported.
+
+Versions "R2022b" and "R2023a" of Webots are supported.
+*Note*: versions of the simulation prior to sr2023.3 did not support Webots "R2023a".
 
 #### Python Version
 
@@ -33,7 +35,7 @@ local development you will need to install these yourself.
 ### Installing the simulation
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
-2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.2/competition-simulator-sr2023.2.zip)
+2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.3/competition-simulator-sr2023.3.zip)
   and unzip it as a subdirectory of that directory:
   ```
   simulation
