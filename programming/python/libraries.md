@@ -52,7 +52,6 @@ The following python libraries are installed and available for use in your robot
 * [tomli-w 1.0.0](https://pypi.org/project/tomli-w)
 * [typing-extensions 3.10.0.0](https://pypi.org/project/typing-extensions)
 * [udiskie 2.3.3](https://pypi.org/project/udiskie)
-* [zoloto 0.8.0](https://pypi.org/project/zoloto)
 <!-- cspell:enable -->
 
 If you wish to use a library that isn't listed above, get in contact with us on Discord and have a chat with us about it.

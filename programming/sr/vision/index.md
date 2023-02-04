@@ -16,7 +16,7 @@ your robot can calculate the position of markers in 3D space relative to the cam
 Therefore, if the robot can see a marker that is at a fixed location in the arena,
  a robot can calculate its exact position in the arena.
 
-Under the hood, the vision system is based on [Zoloto](https://zoloto.readthedocs.io/), a wrapper around [OpenCV's ArUco library](https://docs.opencv.org/4.5.4/d5/dae/tutorial_aruco_detection.html), using the `36H11` marker set from [April](https://april.eecs.umich.edu/software/apriltag).
+Under the hood, the vision system is based on [AprilTag](https://april.eecs.umich.edu/software/apriltag/) and [OpenCV](https://opencv.org), using the `36H11` marker set.
 
 [Camera](#camera) {#camera}
 ===========================
