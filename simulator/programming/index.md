@@ -119,7 +119,7 @@ One (possibly both) of them may change to resolve this.
 
 ### Pressure sensing
 
-Your simulated robot has two deployable 'fingers' that are able to lift the front of the robot up. These fingers have pressure sensors on their tips to measure mass. With this you can determine the weight of an object your robot is carrying.
+Your simulated robot has two deployable 'fingers' that are able to lift the front of the robot up. These fingers have pressure sensors on their tips, with these you can determine the weight of an object your robot is carrying.
 
 The servos to move the fingers are both attached to servo pin 2 in the servo board:
 
