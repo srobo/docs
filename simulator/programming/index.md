@@ -117,6 +117,22 @@ Orientation information is returned in different formats between the simulator a
 One (possibly both) of them may change to resolve this.
 </div>
 
+### Pressure sensing
+
+Your simulated robot has two deployable 'fingers' that are able to lift the front of the robot up. These fingers have pressure sensors on their tips to measure mass. With this you can determine the weight of an object your robot is carrying.
+
+The servos to move the fingers are both attached to servo pin 3 in the servo board:
+
+| Servo | Location           |
+|-------|--------------------|
+| 3     | both finger servos |
+
+Once the fingers are deployed, your robot will have reduced motion but it will be able to sense the total pressure on the front of the robot. The pressure sensing fingers are available as analogue inputs on A6, they are meant to emulate sensors that output a higher value proportional to higher pressure. 
+
+| Pin | Location         |
+|-----|------------------|
+| A6  | Pressure sensors |
+
 ## Simulated Time
 
 In the simulated environment, time advances only at the pace that the simulator
