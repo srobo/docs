@@ -146,7 +146,7 @@ orientation
 :   An [`Orientation`](#Orientation) instance describing the orientation of the marker.
 
 spherical
-:   A [`SphericalCoordinate`](#SphericalCoordinate) instance describing the position relative to the camera.
+:   A [`SphericalCoordinate`](#SphericalCoordinate) instance describing the position of the marker relative to the camera.
 
 cartesian
 :   A [`CartesianCoordinates`](#CartesianCoordinates) instance describing the position of the marker relative to the camera.
