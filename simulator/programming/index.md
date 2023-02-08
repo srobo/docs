@@ -125,7 +125,7 @@ The servos to move the fingers are both attached to servo pin 3 in the servo boa
 
 | Servo | Location           |
 |-------|--------------------|
-| 3     | both finger servos |
+| 2     | both finger servos |
 
 Once the fingers are deployed, your robot will have reduced motion but it will be able to sense the total pressure on the front of the robot. The pressure sensing fingers are available as analogue inputs on A6, they are meant to emulate sensors that output a higher value proportional to higher pressure. 
 
