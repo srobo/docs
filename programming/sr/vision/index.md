@@ -134,10 +134,10 @@ size
 :   The physical size of the marker, as the vision system expects it.
 
 pixel_centre
-:   A [`Coordinate`](#Coordinate) describing the position of the centre of the marker.
+:   A [`PixelCoordinates`](#PixelCoordinates) describing the position of the centre of the marker.
 
 pixel_corners
-:   A list of 4 [`Coordinate`](#Coordinate) instances, each representing the position of the corners of the marker.
+:   A list of 4 [`PixelCoordinates`](#PixelCoordinates) instances, each representing the position of the corners of the marker.
 
 distance
 :   The distance between the camera and the centre of the marker, in millimetres.
@@ -146,20 +146,35 @@ orientation
 :   An [`Orientation`](#Orientation) instance describing the orientation of the marker.
 
 spherical
-:   A [`Spherical`](#Spherical) instance describing the position relative to the camera.
+:   A [`SphericalCoordinate`](#SphericalCoordinate) instance describing the position of the marker relative to the camera.
 
 cartesian
-:   A [`ThreeDCoordinate`](#ThreeDCoordinate) instance describing the absolute position of the marker relative to the camera.
+:   A [`CartesianCoordinates`](#CartesianCoordinates) instance describing the position of the marker relative to the camera.
 
-[`Coordinate`](#Coordinate) {#Coordinate}
+<a id="Coordinate"/>
+
+[`PixelCoordinates`](#PixelCoordinates) {#PixelCoordinates}
 ---------
 
-A `Coordinate` object contains an `x` and `y` attribute. The exact meaning and unit of these attributes depends on its source.
+A named tuple of `x` and `y` coordinates for the point, in pixels relative to the top left of the image.
 
-[`ThreeDCoordinate`](#ThreeDCoordinate) {#ThreeDCoordinate}
+~~~~~ python
+# Print the x and y coordinates of the pixel location
+print(marker.pixel_centre.x, marker.pixel_centre.y)
+~~~~~
+
+<a id="ThreeDCoordinate"/>
+
+[`CartesianCoordinates`](#CartesianCoordinates) {#CartesianCoordinates}
 ---------
 
-A `ThreeDCoordinate` object contains an `x`, `y` and `z` attribute. The exact meaning and unit of these attributes depends on its source.
+A named tuple of `x`, `y` and `z` coordinates for the point, in millimeters relative to the camera.
+Increasing values are to the right, below and away from the camera respectively.
+
+~~~~~ python
+# Print the x, y and z coordinates of the marker's location
+print(marker.cartesian.x, marker.cartesian.y, marker.cartesian.z)
+~~~~~
 
 [`Orientation`](#Orientation) {#Orientation}
 ---------------
@@ -171,62 +186,98 @@ One (possibly both) of them may change to resolve this.
 
 An `Orientation` object describes the orientation of a marker.
 
-![A visual representation of how the orientation axes work. Source: SourceBots]({{ site.baseurl }}/images/content/vision/yaw-pitch-roll.png)
+rot_x
+:   Rotation of the marker about the cartesian x-axis, in radians. This is a
+    pitch-like rotation.
 
-pitch
-:   Rotation of the marker about the cartesian x-axis, in radians.
+    Leaning a marker towards the camera increases the value of `rot_x`, while
+    leaning it away from the camera decreases it. A value of either π or -π
+    indicates that the marker is upright (there is a discontinuity in the value
+    at π and -π, as both values represent the same position).
 
-    Leaning a marker away from the camera increases the value of `rot_x`, while
-    leaning it towards the camera decreases it. A value of 0 indicates that the
-    marker is upright.
+rot_y
+:   Rotation of the marker about the cartesian y-axis, in radians. This is a
+    yaw-like rotation.
 
-yaw
-:   Rotation of the marker about the cartesian y-axis, in radians.
-
-    Turning a marker clockwise (as viewed from above) increases the value of
-    `rot_y`, while turning it anticlockwise decreases it. A value of 0 means
+    Turning a marker clockwise (as viewed from above) decreases the value of
+    `rot_y`, while turning it anticlockwise increases it. A value of 0 means
     that the marker is perpendicular to the line of sight of the camera.
 
-roll
-:   Rotation of the marker about the cartesian z-axis, in radians.
+rot_z
+:   Rotation of the marker about the cartesian z-axis, in radians. This is a
+    roll-like rotation.
 
     Turning a marker anticlockwise (as viewed from the camera) increases the
     value of `rot_z`, while turning it clockwise decreases it. A value of 0
     indicates that the marker is upright.
 
-rot_x
-:   An alias for `pitch`.
+There are additional attributes for the [principal axis rotations](https://en.wikipedia.org/wiki/Aircraft_principal_axes) of the marker.
 
-rot_y
-:   An alias for `yaw`.
+yaw
+:   A rotation about the about the vertical axis, in radians (an axis top to
+    bottom through the token). Turning a marker clockwise (as viewed from above)
+    increases the value of `yaw`, while turning it anticlockwise decreases it. A
+    value of 0 means that the marker is perpendicular to the line of sight of
+    the camera.
 
-rot_z
-:   An alias for `roll`.
+    This differs from `rot_y` in the direction that increases the value.
+
+pitch
+:   A rotation about the transverse axis, in radians (an axis right to left
+    across the token). Tilting the marker backward increases the value of
+    `pitch`, while tilting it forwards decreases it. A value of 0 indicates that
+    the marker is facing the camera square-on.
+
+    This differs from `rot_x` in the zero point and direction to increase the value.
+
+roll
+:   A rotation about the longitudinal axis, in radians (an axis normal from the
+    apparent front to the back of the token, normal to the marker). Rotating the
+    marker anti-clockwise (from the perspective of the camera) increases the
+    value of `roll`, while rotating it clockwise decreases it. A value of 0
+    indicates that the marker is upright.
+
+    This differs from `rot_x` in the zero point and direction to increase the value.
+
+Finally there are attributes which express the orientation in other forms:
 
 rotation_matrix
-:   The rotation matrix represented by this orientation. A list of 3 lists, each with 3 items.
+:   The [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix) represented by this orientation.
+    This 3×3 matrix is represented by a list of 3 lists, each with 3 values, in an arrangement compatible with tools such as `numpy`.
 
 quaternion
-:   The [Quarternion](https://kieranwynn.github.io/pyquaternion/#quaternion-features) instance represented by this orientation.
+:   The [quaternion](https://en.wikipedia.org/wiki/Quaternion) represented by this orientation.
+    On the physical kits this is implemented as a [`pyquaternion.Quaternion`](https://kieranwynn.github.io/pyquaternion/#quaternion-features) instance.
 
-[`Spherical`](#Spherical) {#Spherical}
+<a id="Spherical"/>
+
+[`SphericalCoordinate`](#SphericalCoordinate) {#SphericalCoordinate}
 ---------------
 
 The spherical coordinates system has three values to specify a specific point in space.
 
-![A visual representation of Spherical coordinates. Source: SourceBots]({{ site.baseurl }}/images/content/vision/spherical.png)
+distance
+:   The radial distance, the distance from the origin to the point, in millimetres.
 
-- r - The radial distance, the distance from the origin to the point, in millimetres.
-- θ (theta) - The angle from the azimuth to the point, in radians.
-- φ (phi) - The polar angle from the plane of the camera to the point, in radians.
+theta
+:   This is the angle from directly in front of the camera to the vector which
+    points to the location in the horizontal plane, in radians. A positive value
+    indicates a counter-clockwise rotation. Zero is at the centre of the image.
+
+phi
+:   The polar angle from the y-axis of the camera "down" to the vector which
+    points to the location, in radians. Zero is directly upward.
+
+Also available are two computed angles which express the same location slightly differently:
 
 rot_x
-:   Rotation around the X-axis, in radians, corresponding to `theta` on the diagram.
+:   Approximate rotation around the X-axis, in radians.
+    This is the angle from the camera's horizontal plane to the vector which
+    points to the location. Zero is at the centre of the image. Values increase
+    towards the bottom of the image.
 
 rot_y
-:   Rotation around the Y-axis, in radians, corresponding to `phi` on the diagram.
-
-dist
-:   Distance, in millimetres, corresponding to `r` on the diagram.
+:   Rotation around the Y-axis, in radians. This is similar to `theta`, however
+    values increase towards the right of the image. Zero is at the centre of the image.
 
 The camera is located at the origin, where the coordinates are (0, 0, 0).
