@@ -64,7 +64,7 @@ from sr.robot3 import *
 R = Robot()
 
 # `R.usbkey` is the path to your USB drive
-marker_ids = R.camera.save(R.usbkey / "initial-view.png")
+R.camera.save(R.usbkey / "initial-view.png")
 ~~~~~
 
 capture
