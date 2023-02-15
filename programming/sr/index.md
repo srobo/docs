@@ -85,6 +85,9 @@ usbkey
         print(f.read())
     ~~~~~
 
+is_simulated
+:   A boolean value indicating whether or not the code is running in the simulator.
+
 [Custom Robot Object Initialisation](#CustomRobotInit) {#CustomRobotInit}
 ----------------------
 
