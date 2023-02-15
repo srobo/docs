@@ -109,13 +109,9 @@ The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
-The information returned by the simulated vision API is generally in the same
-format and units as the physical robot's [vision API](/docs/programming/sr/vision/).
-
-<div class="info">
-Orientation information is returned in different formats between the simulator and the physical robot kits.
-One (possibly both) of them may change to resolve this.
-</div>
+The information returned by the simulated vision API is similar to the physical
+robot's [vision API](/docs/programming/sr/vision/), however there are a number
+of differences as are noted in the vision docs.
 
 ## Simulated Time
 
