@@ -35,8 +35,8 @@ local development you will need to install these yourself.
 ### Installing the simulation
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
-2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.4/competition-simulator-sr2023.4.zip)
-  and unzip it as a subdirectory of that directory:
+2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.4/competition-simulator-sr2023.4.zip), the latest version is sr2023.4, released on 2023-02-15.
+3. unzip the simulation as a subdirectory of that directory:
   ```
   simulation
   ├── competition-simulator-<version>
