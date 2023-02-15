@@ -42,7 +42,7 @@ To test how your robot behaves in each starting zone of the arena, you can copy 
    └── robot.py
 ```
 
-This will run 2 robots in the arena, each with different `robot.py`s. You can run as many or as few zones as you like, in any combination.
+This will run two robots in the arena, each with different `robot.py`s. You can run as many or as few zones as you like, in any combination.
 
 ## Robot
 
