@@ -37,16 +37,17 @@ local development you will need to install these yourself.
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
 2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.4/competition-simulator-sr2023.4.zip), the latest version is sr2023.4, released on 2023-02-15.
 3. Unzip the simulation as a subdirectory of the directory you created in the first step:
-  ```
-  simulation
-  ├── competition-simulator-<version>
-  │   ├── ...
-  │   └─ worlds
-  │       └── Arena.wbt
-  └── robot.py
-  ```
-  If there is not an existing `robot.py` an example one will be created when the simulator first runs.
-3. Using the Webots IDE, open the `worlds/Arena.wbt` file.
+    ```
+    simulation
+    ├── competition-simulator-<version>
+    │   ├── ...
+    │   └─ worlds
+    │       └── Arena.wbt
+    └── robot.py
+    ```
+    If there is not an existing `robot.py` an example one will be created when the simulator first runs.
+
+4. Using the Webots IDE, open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
 
