@@ -56,6 +56,10 @@ while True:
         print("I cannot see marker 0!")
 ~~~~~
 
+<div class="info" markdown="1">
+The simulated camera does not have `capture` or `save` methods.
+</div>
+
 save
 :   Take a photo through the webcam, and save it to the provided location.
 
@@ -133,6 +137,10 @@ id
 size
 :   The physical size of the marker, as the vision system expects it.
 
+<div class="info" markdown="1">
+Pixel coordinate information is not available in the simulator.
+</div>
+
 pixel_centre
 :   A [`PixelCoordinates`](#PixelCoordinates) describing the position of the centre of the marker.
 
@@ -155,6 +163,10 @@ cartesian
 
 [`PixelCoordinates`](#PixelCoordinates) {#PixelCoordinates}
 ---------
+
+<div class="info" markdown="1">
+Pixel coordinate information is not available in the simulator.
+</div>
 
 A named tuple of `x` and `y` coordinates for the point, in pixels relative to the top left of the image.
 
@@ -179,9 +191,15 @@ print(marker.cartesian.x, marker.cartesian.y, marker.cartesian.z)
 [`Orientation`](#Orientation) {#Orientation}
 ---------------
 
-<div class="info">
+<div class="info" markdown="1">
 Orientation information is returned in different formats between the simulator and the physical robot kits.
 One (possibly both) of them may change to resolve this.
+
+In the simulator the `roll`, `pitch` and `yaw` properties are strict aliases for the `rot_x`, `rot_y` and `rot_z` properties.
+Additionally the `rotation_matrix` and `quaternion` properties are not present.
+</div>
+<div class="warning" markdown="1">
+There is a bug in the simulator such that the `rot_x` and `rot_z` values are not reliable -- specifically they depend on the orientation of the robot itself within the simulated environment in addition to the orientation of the marker. This is believed to be a bug in Webots simulation software.
 </div>
 
 An `Orientation` object describes the orientation of a marker.
@@ -253,6 +271,12 @@ quaternion
 
 [`SphericalCoordinate`](#SphericalCoordinate) {#SphericalCoordinate}
 ---------------
+
+<div class="info" markdown="1">
+Spherical coordinate information is returned in different formats between the simulator and the physical robot kits.
+
+The simulator does not provide the `theta` or `phi` values and the values for `rot_x` and `rot_y` may be slightly different for equivalent positions.
+</div>
 
 The spherical coordinates system has three values to specify a specific point in space.
 
