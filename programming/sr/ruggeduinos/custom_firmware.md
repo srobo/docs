@@ -27,7 +27,7 @@ If you're using completely custom firmware, you'll need to tell the kit to ignor
 
 <div class="warning" markdown="1">
 Because the API sets all pins to inputs when the robot is initialised, you cannot set pin modes in the setup function as these will be overridden.
-In order to setup pins you can either create a function on the ruggeduino that you call after your robot is initialised or use the [python functions](/docs/programming/sr/ruggeduinos/#pin-modes) to setup the pins.
+In order to setup pins you can either create a function on the ruggeduino that you call after your robot is initialised or use the [Python functions](/docs/programming/sr/ruggeduinos/#pin-modes) to setup the pins.
 </div>
 
 You may wish to extend the SR firmware with additional functionality.
