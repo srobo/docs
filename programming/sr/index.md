@@ -64,7 +64,17 @@ zone
 :    The number of the zone that the robot is associated with. Between `0` and `3`.
 
 mode
-:    Either "comp" or "dev".  When in a competition match, this will be "comp", and at all other times this will be "dev".
+:   Whether the robot is running in competition mode.
+    When in a competition match, this will be `RobotMode.COMP`, and at all other times this will be `RobotMode.DEV`.
+
+    ~~~~~ python
+    from sr.robot3 import *
+
+    R = Robot()
+
+    if R.mode == RobotMode.COMP:
+      print("This is the competition!")
+    ~~~~~
 
 usbkey
 :   The path to the USB memory stick.
