@@ -8,6 +8,8 @@ RUN git config --global --add safe.directory /usr/src/docs && git config --globa
 
 RUN gem install 'bundler:~>1' rake
 
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && apt-get install -y nodejs
+
 COPY . ./
 
 RUN rake dependencies

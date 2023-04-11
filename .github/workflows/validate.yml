@@ -25,6 +25,11 @@ jobs:
         bundler-cache: true
         cache-version: 2
 
+    - name: Set up Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
     - name: Build & Validate
       run: rake validate
 

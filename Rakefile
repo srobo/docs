@@ -17,15 +17,13 @@ task :dependencies do
     sh('bundle install --path gems')
   end
 
+  sh('npm install')
+
   # Fix pathutil on Ruby 3; works around https://github.com/envygeeks/pathutil/pull/5
   # as suggested by https://stackoverflow.com/a/73909894/67873
   pathutil_path = `bundle exec gem which pathutil`.strip()
   content = File.read(pathutil_path).gsub(', kwd', ', **kwd')
   File.write(pathutil_path, content)
-end
-
-task :spelling_dependencies do
-  sh('npm install')
 end
 
 file '_sass/brand/.git' do
@@ -41,8 +39,6 @@ end
 task :build => [:dependencies, :submodules] do
   sh('bundle exec jekyll build --config _config.yml')
 end
-
-task :build_spellings => [:build, :spelling_dependencies]
 
 task :validate_kit_versions do
   data = YAML.load_file('_data/kit_versions.yml')
@@ -161,7 +157,7 @@ task :validate_sidebar_tree => [:build] do
   puts "Sidebar links validated successfully"
 end
 
-task :validate_spellings => [:build_spellings] do
+task :validate_spellings => [:build] do
   sh('npm run spell-check')
 end
 
