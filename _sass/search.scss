@@ -1,0 +1,17 @@
+:root {
+  --pagefind-ui-scale: 0.8;
+  --pagefind-ui-primary: #{$sr-blue};
+  --pagefind-ui-text: #{$sr-black};
+  --pagefind-ui-border: #{$sr-medium-grey};
+  --pagefind-ui-tag: #{$sr-medium-grey};
+  --pagefind-ui-border-radius: 0px;
+  --pagefind-ui-border-width: 1px;
+}
+
+.pagefind-ui__search-clear {
+  border: none;
+}
+
+#search {
+  margin-top: $spacing;
+}
