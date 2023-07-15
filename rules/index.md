@@ -1,12 +1,13 @@
 ---
 layout: page
 title: 2024 Rules
+show_rulebook: false
 ---
 
 2024 Rules
 ==========
 
-{% if false %}
+{% if page.show_rulebook %}
   [<img class="left" src="{{ site.baseurl }}/resources/2024/rulebook.png" />]({{ site.baseurl }}/resources/2024/rulebook.html)
   The rules, regulations and specifications for the SR2024 competition can be
   found in the [rulebook]({{ site.baseurl }}/resources/2024/rulebook.html).
