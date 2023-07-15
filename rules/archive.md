@@ -13,6 +13,29 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2023](#2023)
+---------------------
+
+<img
+  src="{{ site.baseurl }}/images/content/rules/arena-2023.png"
+  alt="A diagram of the arena for the SR2023 game"
+  width="250"
+  height="250"
+  class="right"
+/>
+
+For SR2023 the game, _Greed_, challenged teams to steal tokens from other
+scoring zones. With Bronze, Silver, and Gold tokens, each worth a different
+number of game points, teams had to think carefully about the optimum strategy.
+
+While all of the tokens featured a marker identifiable by the cameras provided
+in their kits, all the tokens had the same marker! This forced teams to use
+other sensing mechanisms to determine which tokens were which. Bronze and Silver
+tokens were the same size but the Silver tokens weighed 300g more, while Gold
+tokens were larger than Bronze and Silver.
+
+Full details of the 2023 game are available in the [rulebook]({{ site.baseurl }}/resources/2023/rulebook.html).
+
 [2022](#2022)
 ---------------------
 
