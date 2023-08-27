@@ -62,7 +62,7 @@
                },
                {
                    "answer": "No",
-                   "message": "There is an external On|Off switch connector. If you are not connecting a switch, you must connect a loop of wire between the two terminals. See the preparation section in <a href=\"ROOT_URL/kit/assembly\" target=\"_blank\">kit assembly</a> for more details."
+                   "message": "There is an external On|Off switch connector. If you are not connecting a switch, you must connect a loop of wire between the two terminals. See the preparation section in <a href=\"ROOT_URL/tutorials/assembly\" target=\"_blank\">kit assembly</a> for more details."
                }
            ]
         },
@@ -157,7 +157,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
+                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/kit/arduino\" target=\"_blank\">in the Docs</a>.",
                     "ask_if_fixed": true,
                     "next_question": "io-board-dead"
                 }
@@ -196,7 +196,7 @@
             "answers": [
                 {
                     "answer": "My peripherals are fine",
-                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
+                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/programming/arduino/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting in the <a href=\"/docs/team_admin/discord\" target=\"_blank\">Discord</a>."
                 },
                 {
                     "answer": "I need help with my peripherals",
@@ -281,7 +281,7 @@
                 },
                 {
                     "answer": "Red",
-                    "message": "The <a href=\"ROOT_URL/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/kit/assembly#Connections\" target=\"_blank\">in the docs</a>.",
+                    "message": "The <a href=\"ROOT_URL/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/tutorials/assembly#Connections\" target=\"_blank\">in the docs</a>.",
                     "ask_if_fixed": true,
                     "next_question": "motor-board-usb"
                 },
