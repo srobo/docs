@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ruggeduino
+title: Arduino
 ---
 
 # Ruggeduino

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Included Python Libraries
+title: Available Python Libraries
 ---
 
-Included Libraries
-==================
+Available Python Libraries
+==========================
 
 Robot Kit
 ---------
