@@ -73,6 +73,11 @@ Controls
 | ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
 | START          | Starts your program
 
+Fan
+---
+
+The power board has a fan to keep the board cool when it is under high load.
+The fan will only begin to spin when the board gets hot.
 
 Case Dimensions
 ---------------
