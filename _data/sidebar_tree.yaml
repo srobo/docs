@@ -30,8 +30,6 @@ tree:
       title: Ruggeduino
     - url: /kit/servo_board
       title: Servo Board
-    - url: /kit/safety-regulations
-      title: Safety Regulations
     - url: /kit/wifi
       title: WiFi
   - url: /programming/
@@ -79,8 +77,12 @@ tree:
   - url: /rules/
     title: Rules
     tree:
+    - url: /rules/code_of_conduct
+      title: Code Of Conduct
     - url: /rules/archive
       title: Game Rules Archive
+    - url: /rules/safety_regulations
+      title: Safety Regulations
   - url: /simulator/
     title: Simulator
     tree:
