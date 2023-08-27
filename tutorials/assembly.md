@@ -25,7 +25,7 @@ Each of the modules in the kit needs to be provided with both a control signal a
 All the boards use USB to connect to the [Brain Board](/docs/kit/brain_board) so it can tell them what to do.
 If you run out of USB ports on the Brain Board itself, then you can use the provided USB hubs to provide more ports.
 
-Most of the boards (with the exception of the [Ruggeduino](/docs/kit/ruggeduino)) also need an additional power connection.
+Most of the boards (with the exception of the [Ruggeduino](/docs/kit/arduino)) also need an additional power connection.
 This should be provided from the [Power Board](/docs/kit/power_board).
 
 The following table summarises the connections which need to be made for each board.
@@ -35,7 +35,7 @@ Board                                   | Power
 [Brain Board](/docs/kit/brain_board)    | 12V, must be connected to L2
 [Power Board](/docs/kit/power_board)    | 12V, via the yellow XT60 to the [battery](/docs/kit/batteries)
 [Motor Board](/docs/kit/motor_board)    | 12V
-[Ruggeduino](/docs/kit/ruggeduino)      | via USB
+[Ruggeduino](/docs/kit/arduino)      | via USB
 [Servo Board](/docs/kit/servo_board)    | 12V
 
 In order to connect the Brain, Motor and Servo Boards to the Power Board, you will need to create some power cables.

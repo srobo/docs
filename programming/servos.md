@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Servos
+title: Servos Board API
 ---
 
-Servos
-======
+Servos Board API
+================
 
 The `servo_board` object is used to control a collection of Servo Boards.
 

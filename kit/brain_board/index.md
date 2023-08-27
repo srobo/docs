@@ -61,7 +61,7 @@ The SD card is located on the underside of the board underneath the green power 
 
 To fully update your Brain Board's software, or refresh it if you think it's not working correctly, you can flash our SD card image onto the microSD card in your Brain Board.
 
-To update the SD card, you'll need to download our image from the [updates page]({{ site.baseurl }}/kit/brain_board/updates). The latest version is `{{ latest_version }}`.
+To update the SD card, you'll need to download our image from the [updates page]({{ site.baseurl }}/kit/brain_board/robot_os). The latest version is `{{ latest_version }}`.
 The flashing procedure is identical to flashing Raspberry Pi images.
 
 ### Etcher

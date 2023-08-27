@@ -127,7 +127,7 @@ while True:
 ~~~~~
 
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `R.motor_board...` lines.
-For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [Motors](/docs/programming/sr/motors/) page.
+For a comprehensive reference to the `motor` object, see the `sr.robot3` module's [Motors](/docs/programming/motors) page.
 But, to summarise:
 
 <div class="info" markdown="1">

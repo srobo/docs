@@ -18,7 +18,7 @@ The boards provided are as follows; more details can be found on their individua
  * [Brain Board](/docs/kit/brain_board)
  * [Power Board](/docs/kit/power_board)
  * [Motor Board x2](/docs/kit/motor_board)
- * [Ruggeduino (including two screw shields)](/docs/kit/ruggeduino)
+ * [Ruggeduino (including two screw shields)](/docs/kit/arduino)
  * [Servo Board](/docs/kit/servo_board)
 
 Ancillary Parts

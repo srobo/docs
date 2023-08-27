@@ -1,10 +1,10 @@
 ---
 layout: page
-title: IO (Ruggeduino)
+title: Arduino API
 ---
 
-IO (Ruggeduino)
-===============
+Arduino API
+===========
 
 The [Ruggeduino](https://web.archive.org/web/20170317171649/https://www.rugged-circuits.com/ruggeduino)
 provides a total of 18 pins for either digital input or output (labelled 2 to 13 and A0 to A5),

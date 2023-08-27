@@ -1,9 +1,9 @@
 ---
 layout: page
-title: SR Module
+title: Robot API
 ---
 
-SR Module
+Robot API
 =========
 
 Student Robotics has written a module &mdash; `sr.robot3`  &mdash; which is used to interface with the hardware.
@@ -34,11 +34,11 @@ R = Robot()
 
 Within your `Robot` (`R` in this case), you then have access to the following attributes:
 
-* [motors](/docs/programming/sr/motors/)
-* [power](/docs/programming/sr/power/)
-* [servos](/docs/programming/sr/servos/)
-* [ruggeduinos](/docs/programming/sr/ruggeduinos/)
-* [vision](/docs/programming/sr/vision/)
+* [motors](/docs/programming/motors)
+* [power](/docs/programming/power)
+* [servos](/docs/programming/servos)
+* [ruggeduinos](/docs/programming/arduino/)
+* [vision](/docs/programming/vision/)
 
 They can be used in your code just like the example above.
 Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should be accessed as such.

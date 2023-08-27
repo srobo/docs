@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Motors
+title: Motor Board API
 ---
 
-Motors
-======
+Motor Board API
+===============
 
 The `motor_board` object is used to control a collection of Motor Boards.
 
