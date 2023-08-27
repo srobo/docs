@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Ruggeduino custom firmware
+title: Arduino custom firmware
 ---
 
-Custom firmware
-===============
+Arduino custom firmware
+=======================
 
 <div class="info">
 This documentation refers to a feature which is only available on the physical robot kits.

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: SR Module
+title: Robot API
 ---
 
-SR Module
+Robot API
 =========
 
 Student Robotics has written a module &mdash; `sr.robot3`  &mdash; which is used to interface with the hardware.

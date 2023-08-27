@@ -1,10 +1,10 @@
 ---
 layout: page
-title: LEDs
+title: Brain Board LED API
 ---
 
-LEDs
-====
+Brain Board LED API
+===================
 
 <div class="info">
 This documentation refers to a feature which is only available on the physical robot kits.
