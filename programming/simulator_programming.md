@@ -1,11 +1,10 @@
 ---
-redirect_from:
-  - /competition-simulator/programming
 layout: page
 title: Simulator Programming
 ---
 
-# Simulator Programming
+Simulator Programming
+=====================
 
 ## Developing your code
 

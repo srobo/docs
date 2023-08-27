@@ -48,11 +48,6 @@ tree:
       title: Power Board API
     - url: /programming/servos
       title: Servo Board API
-    - url: /programming/arduino/
-      title: Arduino API
-      tree:
-      - url: /programming/arduino/custom_firmware
-        title: Custom Firmware
     - url: /programming/vision/
       title: Vision
       tree:
@@ -62,22 +57,24 @@ tree:
         title: Position
       - url: /programming/vision/orientation
         title: Orientation
+    - url: /programming/arduino/
+      title: Arduino API
+      tree:
+      - url: /programming/arduino/custom_firmware
+        title: Custom Firmware
     - url: /programming/cheat_sheet
       title: API Quick Reference
+    - url: /programming/simulator_programming
+      title: Simulator Programming
   - url: /rules/
     title: Rules
     tree:
     - url: /rules/code_of_conduct
       title: Code Of Conduct
-    - url: /rules/archive
-      title: Game Rules Archive
     - url: /rules/safety_regulations
       title: Safety Regulations
-  - url: /simulator/
-    title: Simulator
-    tree:
-      - url: /simulator/programming/
-        title: Programming
+    - url: /rules/archive
+      title: Game Rules Archive
   - url: /troubleshooting/
     title: Troubleshooting
     tree:
@@ -90,14 +87,12 @@ tree:
     tree:
     - url: /tutorials/assembly
       title: Assembly
+    - url: /tutorials/python
+      title: Python
     - url: /tutorials/getting_code_on_the_robot
       title: Getting Code on the Robot
     - url: /tutorials/basic_motor_control
       title: Basic Motor Control
-    - url: /tutorials/microgames
-      title: Microgames
-    - url: /tutorials/python
-      title: Python
     - url: /tutorials/editors/
       title: Code Editors
       tree:
@@ -105,6 +100,15 @@ tree:
         title: PyCharm
       - url: /tutorials/editors/vscode
         title: Visual Studio Code
+    - url: /tutorials/setting_up_simulator
+      title: Setting up the simulator
+    - url: /tutorials/using_the_simulator
+      title: Using the simulator
+  - url: /competitor_resources/
+    title: Resources
+    tree:
+    - url: /competitor_resources/microgames
+      title: Microgames
   - url: /team_admin/
     title: Team Admin
     tree:
