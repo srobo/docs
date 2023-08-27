@@ -9,9 +9,8 @@ Power Board
 <a href="{{ site.baseurl }}/images/content/kit/pbv4.png">
 	<img src="{{ site.baseurl }}/images/content/kit/pbv4.png" alt="A photo of a power board" title="The Power Board, click to view larger" width="250px" class="right" />
 </a>
-The Power Board distributes power to the SR kit from the battery. It provides
-eight individual general-purpose power outputs, with one reserved for powering
-the Brain Board.
+The Power Board distributes power to the SR kit from the battery.
+It provides eight general-purpose power outputs, with port L2 reserved for powering the Brain Board.
 
 It also holds the internal On|Off switch for the whole robot as well as
 the Start button which is used to start your robot code running.
@@ -24,13 +23,13 @@ Connectors
 ----------
 
 There are six power output connectors on the board, labelled L0–L3, H0, and H1.
-These are enabled when your robot code is started, and supply around 11.1V
-(±15%). These may be referred to as 12V ports elsewhere in the docs. They should 
-be used to connect to the motor and servo board power inputs. The "H" connectors 
-will supply more current than the "L" connectors.
+These are enabled when your robot code is started, supply around 11.1V (±15%) and will turn off when your robot code finishes.
+These may be referred to as 12V ports elsewhere in the docs.
+They should be used to connect to the motor and servo board power inputs.
+The "H" connectors will supply more current than the "L" connectors.
 
 <div class="warning">
-  When connecting the brain board, the "L2" port should be used.
+  When connecting the brain board, the "L2" port must be used.
   This ensures the Brain Board can turn on before the rest of the power
   outputs. Your Brain Board will not power on unless it's connected to "L2".
 </div>
@@ -74,6 +73,11 @@ Controls
 | ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
 | START          | Starts your program
 
+Fan
+---
+
+The power board has a fan to keep the board cool when it is under high load.
+The fan will only begin to spin when the board gets hot.
 
 Case Dimensions
 ---------------
