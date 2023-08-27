@@ -10,7 +10,7 @@ Arduino custom firmware
 This documentation refers to a feature which is only available on the physical robot kits.
 </div>
 
-The Ruggeduino that came as part of your kit was shipped with a firmware that provides the functionality outlined in the [Ruggeduino](/docs/programming/sr/ruggeduinos) page.
+The Ruggeduino that came as part of your kit was shipped with a firmware that provides the functionality outlined in the [Ruggeduino](/docs/programming/arduino) page.
 You may wish to extend the functionality of this firmware, or completely replace it.
 The `sr.robot3` library provides support for three Ruggeduino firmware scenarios:
 
@@ -18,7 +18,7 @@ The `sr.robot3` library provides support for three Ruggeduino firmware scenarios
  2. [Extended SR firmware](#extension): Firmwares that add commands to the default SR firmware.
  3. [Completely custom](#completely): Any firmware not derived from the SR firmware.
 
-By default, the [`sr.robot3`](/docs/programming/sr/) library assumes that all connected Ruggeduinos are running the SR firmware
+By default, the [`sr.robot3`](/docs/programming/robot_api/) library assumes that all connected Ruggeduinos are running the SR firmware
 or firmware which is compatible with the SR Ruggeduino firmware.
 If you're using completely custom firmware, you'll need to tell the kit to ignore the ruggeduino so that you're able to define your own setup logic.
 
@@ -27,7 +27,7 @@ If you're using completely custom firmware, you'll need to tell the kit to ignor
 
 <div class="warning" markdown="1">
 Because the API sets all pins to inputs when the robot is initialised, you cannot set pin modes in the setup function as these will be overridden.
-In order to setup pins you can either create a function on the ruggeduino that you call after your robot is initialised or use the [Python functions](/docs/programming/sr/ruggeduinos/#pin-modes) to setup the pins.
+In order to setup pins you can either create a function on the ruggeduino that you call after your robot is initialised or use the [Python functions](/docs/programming/arduino/#pin-modes) to setup the pins.
 </div>
 
 You may wish to extend the SR firmware with additional functionality.

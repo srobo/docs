@@ -126,7 +126,7 @@ information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
 The information returned by the simulated vision API is similar to the physical
-robot's [vision API](/docs/programming/sr/vision/), however there are a number
+robot's [vision API](/docs/programming/vision/), however there are a number
 of differences as are noted in the vision docs.
 
 ### Pressure sensing

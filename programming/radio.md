@@ -129,4 +129,4 @@ station_code
 owned_by
 : The zone id of the robot that currently owns the stations territory. A `None` value indicates an unclaimed territory.
   <br>
-  Remember that you can find out which zone your robot is in using <a href="/docs/programming/sr/#OtherRobotAttributes"><code>R.zone</code></a>.
+  Remember that you can find out which zone your robot is in using <a href="/docs/programming/robot_api/"><code>R.zone</code></a>.
