@@ -1,25 +1,40 @@
 ---
+redirect_from:
+  - /kit/ruggeduino
 layout: page
 title: Arduino
 ---
 
-# Ruggeduino
+Arduino
+=======
 
-The Ruggeduino board allows you to connect the SR kit to your own electronics.
-This board is very similar to an Arduino which you may have used before.
+The Arduino board allows you to connect the SR kit to your own electronics.
+For the SR kit we use a special Arduino called a Ruggeduino.
+This board acts the same as an Arduino Uno but comes with extra protection to stop it from being damaged.
 
-It has 14 digital I/O pins, these pins can either input or output a digital signal.
-5V logic is used to interface with the Ruggeduino.
+We also provide some screw terminal headers that convert the pin headers on the Arduino into screw terminals.
+This makes for easier connection of wires to the Arduino.
 
-The board also has 6 analogue input pins, these pins can read an analogue signal from 0 to 5V.
-The board has a 3.3V pin, a 5V pin and three 0V/ground pins which can be used to power external devices.
-If for whatever reason the board does not seem to be working pressing the reset button will reset the Ruggeduino and may solve the problem.
-
-The Ruggeduino needs only to be connected to the kit over USB as it uses this for both power and communication.
+The Arduino only needs to be connected to the kit over USB as it uses this for both power and communication.
 
 ## Board Diagram
 
 ![Ruggeduino diagram]({{ site.baseurl }}/images/content/kit/ruggeduino_diagram.png "The Ruggeduino")
+
+## Digital Pins
+
+The Arduino has 14 digital I/O pins, these pins can either input or output a digital signal.
+These pins operate at a 5V logic level, so any signals connected need to be 5V.
+
+## Analog Pins
+
+The board has 6 analog input pins, these pins can read an analog signal from 0 to 5V.
+These pins also support the standard digital functions.
+
+## Power Pins
+
+The board has a 3.3V pin, a 5V pin and three 0V/ground pins which can be used to power external devices.
+The power available on these pins is limited when compared to the power board, so only connect low power devices (sensors, LEDs, buttons).
 
 ## Indicators
 
@@ -32,7 +47,7 @@ The Ruggeduino needs only to be connected to the kit over USB as it uses this fo
 ## Case Dimensions
 
 The case alone measures 86✕68✕23mm(L✕W✕H) without the extra pin headers.
-When the Ruggeduino is fitted the whole unit measures 86✕84✕29mm; some screw heads may protrude from the bottom of the case by up to 2mm.
+When the Ruggeduino is fitted with the screw terminal headers the whole unit measures 86✕84✕29mm; some screw heads may protrude from the bottom of the case by up to 2mm.
 Don’t forget that the cables will also stick out.
 
 ## Specification
