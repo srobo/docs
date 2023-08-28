@@ -27,13 +27,13 @@ Each of the LEDs can be set to one of 8 colours:
 
 ~~~~~ python
 # Set LED A to red
-R.kch.leds[LED_A].colour = Colour.RED
+robot.kch.leds[LED_A].colour = Colour.RED
 
 # Set LED B to cyan
-R.kch.leds[LED_B].colour = Colour.CYAN
+robot.kch.leds[LED_B].colour = Colour.CYAN
 
 # Turn LED C off
-R.kch.leds[LED_C].colour = Colour.OFF
+robot.kch.leds[LED_C].colour = Colour.OFF
 ~~~~~
 
 The available colours are:
@@ -53,11 +53,11 @@ Alternatively you can set the red, green and blue channels for a given LED separ
 
 ~~~~~ python
 # Turn on the blue segment of LED A
-R.kch.leds[LED_A].b = True
+robot.kch.leds[LED_A].b = True
 
 # Turn off the red segment of LED B
-R.kch.leds[LED_B].r = False
+robot.kch.leds[LED_B].r = False
 
 # Turn on the green segment of LED B
-R.kch.leds[LED_B].g = True
+robot.kch.leds[LED_B].g = True
 ~~~~~
