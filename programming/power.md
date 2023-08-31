@@ -9,6 +9,13 @@ Power Board API
 ===============
 
 There are a few things that can be done with the power board, namely current and voltage sensing, and beeping.
+See the [Power Board](/docs/kit/power_board) hardware page for more details.
+
+
+
+[Accessing the Power Board](#access_power_board) {#access_power_board}
+-------------------------
+
 The power board can be accessed using the `power_board` property of the `Robot` object.
 
 ~~~~~ python
@@ -20,7 +27,7 @@ my_power_board = robot.power_board
 
 
 [Power Outputs](#outputs) {#outputs}
--------
+------------------------------------
 
 Each of the power board's controllable outputs has a constant whose name closely matches the name of the output:
 
