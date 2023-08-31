@@ -11,8 +11,8 @@ Each Motor Board can control two motors.
 See the [Motor Board](/docs/kit/motor_board) hardware page for more details.
 
 
-Accessing the Motor Board
--------------------------
+[Accessing the Motor Board](#access_motor_power) {#access_motor_power}
+----------------------------------------------------------------------
 
 If there is exactly one Motor Board connected to your robot, it can be accessed using the `motor_board` property of the `Robot` object.
 
@@ -49,8 +49,8 @@ my_other_motor_board = robot.motor_boards["srXYZ1"]
 </div>
 
 
-Setting motor power
--------------------
+[Setting motor power](#setting_motor_power) {#setting_motor_power}
+------------------------------------------------------------------
 
 Control of your motors is achieved by setting a power output from one of the channels on your Motor Boards.
 Valid values are between -1 and 1 inclusive.
@@ -106,8 +106,9 @@ robot.motor_boards["srABC1"].motors[1].power = 0
   This will depend on how you have positioned your motors as well as how they have been wired to the Motor Board.
 </div>
 
-Getting the current motor power
--------------------------------
+
+[Getting the current motor power](#current_motor_power) {#current_motor_power}
+------------------------------------------------------------------------------
 
 You can read the current power value for a motor using the same field:
 
@@ -116,8 +117,9 @@ You can read the current power value for a motor using the same field:
 print(robot.motor_boards["srABC1"].motors[0].power)
 ~~~~~
 
-Special Values
---------------
+
+[Special Values](#special_values) {#special_values}
+---------------------------------------------------
 
 In addition to the numeric values, there are two special constants that can be used:
 - `BRAKE`
@@ -143,8 +145,8 @@ robot.motor_boards["srABC1"].motors[0].power = COAST
 ~~~~~
 
 
-Motor currents
---------------
+[Motor currents](#motor_currents) {#motor_currents}
+---------------------------------------------------
 
 The Motor Board can also measure the current being drawn by each of the ports on the board.
 This value is measured in amps.
