@@ -6,41 +6,54 @@ title: Motor Board API
 Motor Board API
 ===============
 
-The `motor_board` object is used to control a collection of Motor Boards.
+The kit can control multiple motors simultaneously
+Each Motor Board can control two motors.
+See the [Motor Board](/docs/kit/motor_board) hardware page for more details.
 
-When a single Motor Board is connected to your robot, you can control it
-using the `motor_board` object.
+
+Accessing the Motor Board
+-------------------------
+
+If there is exactly one Motor Board connected to your robot, it can be accessed using the `motor_board` property of the `Robot` object.
 
 ~~~~~ python
-R.motor_board.something...
+from sr.robot3 import *
+robot = Robot()
+
+my_motor_board = robot.motor_board
 ~~~~~
 
-The serial number of each detected Motor Board is printed to the log when your robot starts.
+If you have more than one Motor Board attached, you need to specify which one you want to control.
+This is done using the serial number of the board.
+
+The serial number is physically written on each board and the serial of any connected board will be printed to your log when the robot starts.
 It will look something like this:
 
 ~~~~~ not-code
-sr.robot3.robot INFO - Found Student Robotics Motor Board v4 - srABC1
+sr.robot3.robot - INFO - Found MotorBoard, serial: srABC1
 ~~~~~
 
-If you have more than one Motor Board attached, you need to specify which one you want to control. This is done using the serial number of the board. For example: if you had a board that was detected as "srABC1",
-you could do this instead:
+You can then access the boards like this:
 
 ~~~~~ python
-R.motor_boards["srABC1"].something...
+from sr.robot3 import *
+robot = Robot()
+
+my_motor_board = robot.motor_boards["srABC1"]
+my_other_motor_board = robot.motor_boards["srXYZ1"]
 ~~~~~
 
 <div class="warning" markdown="1">
-  When you have more than one Motor board connected to your kit,
-  you must use `R.motor_boards` and index by serial number. This is so
-  that the kit knows which Motor Board you want to control.
+  When you have more than one Motor Board connected to your kit, you must use `robot.motor_boards` and index by serial number.
+  This is because the kit needs to know which Motor Board you want to control.
 </div>
 
 
 Setting motor power
 -------------------
 
-Control of your motors is achieved by setting a power output from one of the
-channels on your motor boards. Valid values are between -1 and 1 inclusive.
+Control of your motors is achieved by setting a power output from one of the channels on your Motor Boards.
+Valid values are between -1 and 1 inclusive.
 Fractional values (such as 0.42) can be used to specify less than 100% power.
 Negative values run the motor in the opposite direction.
 
@@ -48,35 +61,27 @@ The field to change the output power is `power`. As each Motor Board has two
 outputs you will need to specify which output you want to control:
 
 ~~~~~ python
-from sr.robot3 import *
-import time
-
-R = Robot()
-
 # motor board srABC1, channel 0 to full power forward
-R.motor_boards["srABC1"].motors[0].power = 1
+robot.motor_boards["srABC1"].motors[0].power = 1
 
 # motor board srXYZ1, channel 0 to full power reverse
-R.motor_boards["srXYZ1"].motors[0].power = -1
+robot.motor_boards["srXYZ1"].motors[0].power = -1
 
 # motor board srABC1, channel 1 to half power forward
-R.motor_boards["srABC1"].motors[1].power = 0.5
+robot.motor_boards["srABC1"].motors[1].power = 0.5
 ~~~~~
 
-The motor board will continue to output the requested power until it is told
-otherwise or until power to the board is removed (usually when the robot turns
+The Motor Board will continue to output the requested power until it is told
+otherwise or until power to the board is removed (usually when your code ends and the robot turns
 off).
 
 Therefore to stop your motors you must explicitly set the power output to zero:
 
 ~~~~~ python
-# motor board srXYZ1, channel 0 stopped
-R.motor_boards["srXYZ1"].motors[0].power = 0
-
 # Put motor board srABC1, channel 1 at 25% power for 2.5 seconds:
-R.motor_boards["srABC1"].motors[1].power = 0.25
+robot.motor_boards["srABC1"].motors[1].power = 0.25
 time.sleep(2.5)       # wait for 2.5 seconds
-R.motor_boards["srABC1"].motors[1].power = 0
+robot.motor_boards["srABC1"].motors[1].power = 0
 ~~~~~
 
 Since each output channel can be controlled separately, you can control several
@@ -85,21 +90,20 @@ motors at once.
 ~~~~~ python
 # Set one motor to full power in one direction and
 # another to full power in the other:
-R.motor_boards["srABC1"].motors[0].power = 1
-R.motor_boards["srABC1"].motors[1].power = -1
+robot.motor_boards["srABC1"].motors[0].power = 1
+robot.motor_boards["srABC1"].motors[1].power = -1
 
-# Wait a while (perhaps for the robot to move)
+# Wait a while for the robot to move
 time.sleep(3)
 
 # Stop both motors
-R.motor_boards["srABC1"].motors[0].power = 0
-R.motor_boards["srABC1"].motors[1].power = 0
+robot.motor_boards["srABC1"].motors[0].power = 0
+robot.motor_boards["srABC1"].motors[1].power = 0
 ~~~~~
 
 <div class="info" markdown="1">
-  You will need to work out for your robot which values (positive or negative)
-  result in it moving in each direction. This will depend on how you have
-  positioned your motors as well as how they have been wired to the motor board.
+  You will need to work out for your robot which values (positive or negative) result in it moving in each direction.
+  This will depend on how you have positioned your motors as well as how they have been wired to the Motor Board.
 </div>
 
 Getting the current motor power
@@ -108,40 +112,44 @@ Getting the current motor power
 You can read the current power value for a motor using the same field:
 
 ~~~~~ python
-# get the current output power of Motor Board srABC1, channel 0
-target = R.motor_boards["srABC1"].motors[0].power
+# Print the output power of Motor Board srABC1, channel 0
+print(robot.motor_boards["srABC1"].motors[0].power)
 ~~~~~
 
-Stopping the motors
--------------------
+Special Values
+--------------
 
-When you set the motor power to 0, this signals the Motor Board to actively stop that motor from turning.
+In addition to the numeric values, there are two special constants that can be used:
+- `BRAKE`
+- `COAST`
+
+`BRAKE` will stop the motors from turning, and thus stop your robot as quick as possible.
+
+<div class="info" markdown="1">
+  `BRAKE` does the same thing as setting the power to `0`.
+</div>
 
 ~~~~~ python
-# store the motor in a local variable because
-# typing it out gets really boring
-molly = R.motor_boards["srABC1"].motors[1]
-
-# set the power to 100% for a second, then stop immediately
-molly.power = 1
-time.sleep(1)
-molly.power = 0
+# Stop the motor as quick as possible
+robot.motor_boards["srABC1"].motors[0].power = BRAKE
 ~~~~~
 
-However, you may also want to allow the motors to gently coast to a halt.
-This can be achieved by using the special `COAST` value.
+`COAST` will stop applying power to the motors.
+This will mean they continue moving under the momentum they had before and slowly come to a stop.
 
 ~~~~~ python
-# set the power to 100% for a second, then coast to a stop
-molly.power = 1
-time.sleep(1)
-molly.power = COAST
+# Slowly coast to a stop
+robot.motor_boards["srABC1"].motors[0].power = COAST
 ~~~~~
 
-When the power of the motor is set to `0`, it is equivalent to setting
-the power to `BRAKE`.
+
+Motor currents
+--------------
+
+The Motor Board can also measure the current being drawn by each of the ports on the board.
+This value is measured in amps.
 
 ~~~~~ python
-# set the motor to brake
-molly.power = BRAKE
+# Print the current in amps of motor 0 on board srABC1
+print(robot.motor_boards["srABC1"].motors[0].current)
 ~~~~~
