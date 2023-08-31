@@ -47,7 +47,7 @@ You can read the last value a servo was set to using similar code:
 
 ~~~~~ python
 # Print the last setting of servo number 1
-print(robot.servo_board.servos[1].position))
+print(robot.servo_board.servos[1].position)
 ~~~~~
 
 Disabling servo outputs
