@@ -52,6 +52,8 @@ social:
     icon: tiktok
     link: https://www.tiktok.com/@studentrobotics
 
+user_tracking: true
+
 exclude:
   - README.md
   - Rakefile
