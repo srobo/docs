@@ -12,7 +12,6 @@ There are a few things that can be done with the power board, namely current and
 See the [Power Board](/docs/kit/power_board) hardware page for more details.
 
 
-
 [Accessing the Power Board](#access_power_board) {#access_power_board}
 -------------------------
 
@@ -35,7 +34,7 @@ Each of the power board's controllable outputs has a constant whose name closely
 * H1 : `OUT_H1`
 * L0 : `OUT_L0`
 * L1 : `OUT_L1`
-* L2 : N/A (Not Controllable - Brain power)
+* L2 : N/A (Not Controllable - This port is used to power the Brain Board)
 * L3 : `OUT_L3`
 * 5V : `OUT_FIVE_VOLT`
 
@@ -131,5 +130,5 @@ You can manually wait for the start button to be pressed, not only at the start.
 robot.wait_start()
 ~~~~~
 
-This may be useful for testing, but be sure to remove it in the competition,
-as you won't be allowed to touch the start button after a match has begun!
+This method will block until the start button is pressed.
+This may be useful for testing, but be sure to remove it in the competition, as you won't be allowed to touch the start button after a match has begun!
