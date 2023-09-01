@@ -6,7 +6,7 @@ title: Motor Board API
 Motor Board API
 ===============
 
-The kit can control multiple motors simultaneously
+The kit can control multiple motors simultaneously.
 Each Motor Board can control two motors.
 See the [Motor Board](/docs/kit/motor_board) hardware page for more details.
 
@@ -44,7 +44,7 @@ my_other_motor_board = robot.motor_boards["srXYZ1"]
 ~~~~~
 
 <div class="warning" markdown="1">
-  When you have more than one Motor Board connected to your kit, you must use `robot.motor_boards` and index by serial number.
+  When you have more than one Motor Board connected to your kit, you can't use `robot.motor_board`.
   This is because the kit needs to know which Motor Board you want to control.
 </div>
 
@@ -103,7 +103,7 @@ robot.motor_boards["srABC1"].motors[1].power = 0
 
 <div class="info" markdown="1">
   You will need to work out for your robot which values (positive or negative) result in it moving in each direction.
-  This will depend on how you have positioned your motors as well as how they have been wired to the Motor Board.
+  If you want to swap the direction of a motor you can swap the wires connecting the motor to the Motor Board.
 </div>
 
 
