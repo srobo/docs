@@ -108,8 +108,6 @@ The frequency on the buzzer is limited from 8Hz to 10,000Hz
 </div>
 
 ~~~~~ python
-from sr.robot3 import Note
-
 # Beep for 0.5s in D.
 R.power_board.piezo.buzz(Note.D6, 0.5)
 
