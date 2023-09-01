@@ -31,6 +31,7 @@ It will look something like this:
 
 ~~~~~ not-code
 sr.robot3.robot - INFO - Found MotorBoard, serial: srABC1
+sr.robot3.robot - INFO - Found MotorBoard, serial: srXYZ1
 ~~~~~
 
 You can then access the boards like this:
