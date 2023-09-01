@@ -104,7 +104,7 @@ The frequency on the buzzer is limited from 8Hz to 10,000Hz
 
 <div class="info" markdown="1">
   Calling `buzz` is non-blocking, which means it doesn't actually wait for the piezo to stop buzzing before continuing with your code.
-  If you want to wait for the buzzing to stop, use the `blocking` argument!
+  If you want to wait for the buzzing to stop, use the `blocking` argument.
 </div>
 
 ~~~~~ python
