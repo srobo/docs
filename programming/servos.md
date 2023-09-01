@@ -50,6 +50,7 @@ You can read the last value a servo was set to using similar code:
 print(robot.servo_board.servos[1].position)
 ~~~~~
 
+
 Disabling servo outputs
 -----------------------
 
@@ -61,15 +62,34 @@ This is the state all the servo outputs are in when the board turns on, where no
 robot.servo_board.servos[5].position = None
 ~~~~~
 
-[How the set position relates to the servo angle](#ServoAngle) {#ServoAngle}
------------------------------------------------
+
+Extended servo range
+--------------------
+
+For an RC servo the angle of rotation is determined by the width of an electrical pulse on the control wire.
+A typical servo expects to see a pulse every 20ms, with a pulse width between 1ms and 2ms.
+Our API will take the position provided (between -1 and 1) and map it to the correct pulse width.
+
+However there is no standard for the width of this pulse and there are differences between manufacturers as to what angle the servo will turn to for a given pulse width.
+The API can be used to change what the limits of pulse width are for each servo.
+You should experiment and find what the actual limit of your servos are but be careful not drive them past that.
+
+|     Parameter     |  Min value  |  Max value  |
+|-------------------|-------------|-------------|
+|Pulse width default|1000 &micro;s|2000 &micro;s|
+|Pulse width limit  |500 &micro;s |4000 &micro;s|
+
+This code to set the pulse width limits should be done before setting the position of the servo.
+
+~~~~~ python
+# set the range of servo output 7 between 500us and 2500us
+robot.servo_board.servos[7].set_duty_limits(500, 2500)
+
+# Then move the position of the servo to the upper position
+# (pulse width = 2500us)
+robot.servo_board.servos[7].position = 1
+~~~~~
 
 <div class="warning">
-You should be careful about forcing a servo to drive past its end stops.
-Some servos are very strong and it could damage the internal gears.
+You should be careful about forcing a servo to drive past its end stops as this could damage the internal gears.
 </div>
-
-The angle of an RC servo is controlled by the width of a pulse supplied to it periodically.
-There is no standard for the width of this pulse and there are differences between manufacturers as to what angle the servo will turn to for a given pulse width.
-To be able to handle the widest range of all servos our hardware outputs a very wide range of pulse widths which in some cases will force the servo to try and turn past its internal end-stops.
-You should experiment and find what the actual limit of your servos are (it almost certainly won't be -1 and 1) and not drive them past that.
