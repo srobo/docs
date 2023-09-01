@@ -12,7 +12,7 @@ There are a few things that can be done with the power board, namely current and
 See the [Power Board](/docs/kit/power_board) hardware page for more details.
 
 
-[Accessing the Power Board](#access_power_board) {#access_power_board}
+Accessing the Power Board
 -------------------------
 
 The power board can be accessed using the `power_board` property of the `Robot` object.
@@ -25,8 +25,8 @@ my_power_board = robot.power_board
 ~~~~~
 
 
-[Power Outputs](#outputs) {#outputs}
-------------------------------------
+Power Outputs
+-------------
 
 Each of the power board's controllable outputs has a constant whose name closely matches the name of the output:
 
@@ -69,8 +69,8 @@ they will appear to be missing and your code will break if you try to control th
 </div>
 
 
-[Battery Status](#battery) {#battery}
--------------------------------------
+Battery Status
+--------------
 
 The power board can report both the battery voltage, in Volts, and the current being drawn from it, in Amps.
 You can access these values like so:
@@ -88,8 +88,8 @@ print(robot.power_board.battery_sensor.current)
 - The discharge curve is roughly linear between 11.4V and 10.4V.
 
 
-[Beeping](#beeping) {#beeping}
-------------------------------
+Beeping
+-------
 
 The power board has a piezo buzzer which can beep.
 
@@ -119,8 +119,8 @@ R.power_board.piezo.buzz(250, 3, blocking=True)
 ~~~~~
 
 
-[Start Button](#start_button) {#start_button}
----------------------------------------------
+Start Button
+------------
 
 You can manually wait for the start button to be pressed, not only at the start.
 
