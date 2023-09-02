@@ -85,6 +85,14 @@ frame = R.camera.capture()
 flipped = cv2.flip(frame, 0)
 ~~~~~
 
+You can also use a frame with other vision commands to avoid recapturing. This may be useful if you wish to use both your own vision algorithms and our vision on the same frames.
+
+~~~~~ python
+markers = R.camera.see(frame=frame)
+marker_ids = R.camera.see_ids(frame=frame)
+R.camera.save('photo.jpg', frame=frame)
+~~~~~
+
 [Field of View](#fov) {#fov}
 -------------------
 
