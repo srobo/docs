@@ -17,7 +17,7 @@ tree:
       title: Brain Board
       tree:
         - url: /kit/brain_board/robot_os
-          title: Robot OS
+          title: Student Robotics OS
         - url: /kit/brain_board/python_libraries
           title: Python Libraries
         - url: /kit/brain_board/wifi
@@ -104,6 +104,8 @@ tree:
       title: Setting up the simulator
     - url: /tutorials/using_the_simulator
       title: Using the simulator
+    - url: /tutorials/update_brain
+      title: How to update your robot
   - url: /competitor_resources/
     title: Resources
     tree:

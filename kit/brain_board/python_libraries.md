@@ -3,15 +3,15 @@ layout: page
 title: Available Python Libraries
 ---
 
-Available Python Libraries
-==========================
 
-Robot Kit
----------
+# Available Python Libraries
+
+
+## Robot Kit
 
 The following python libraries are installed and available for use in your robot's software:
-<!-- cspell:disable -->
 
+<!-- cspell:disable -->
 * [april-vision 1.0.2](https://pypi.org/project/april-vision)
 * [astoria 0.11.1](https://pypi.org/project/astoria)
 * [cached-property 1.5.2](https://pypi.org/project/cached-property)
@@ -56,8 +56,8 @@ The following python libraries are installed and available for use in your robot
 
 If you wish to use a library that isn't listed above, get in contact with us on Discord and have a chat with us about it.
 
-Simulator
----------
+
+## Simulator
 
 The following libraries will be available to your robot code during the
 competition. Note that for local development you will need to install these

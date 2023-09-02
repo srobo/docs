@@ -5,29 +5,7 @@
 #   changelog:
 #     - Changed something
 #     - Changed another thing too
-- version: 2023.2.1
-  released: 2023-01-07
+- version: 2024.0.0
+  released: 2023-10-21
   changelog:
-    - Fixed issue in camera optimisation that caused JPEG corruption.
-- version: 2023.2.0
-  released: 2023-01-05
-  yanked: true
-  changelog:
-    - Reworked underlying vision library to improve marker detection and distance calculation.
-    - Added a display of last captured image in web UI.
-- version: 2023.1.0
-  released: 2022-12-01
-  changelog:
-    - Added dark theme and WiFi details to web interface.
-    - Added terminal interface.
-    - Updated axes for orientations.
-    - Added frame argument to camera operations.
-    - Added robot settings error file.
-    - Added competitor port range (7000-8999) to firewall.
-    - Updated C270 and B500 camera calibrations.
-    - Fixed bug where stopping running code didn't work.
-    - Python packages can now be installed onto the brain board using pip.
-- version: 2023.0.0
-  released: 2022-10-21
-  changelog:
-    - Initial release for SR2023.
+    - Initial release for SR2024.

@@ -1,20 +1,27 @@
 ---
 layout: page
-title: Robot OS
+title: Student Robotics OS
 ---
 
-Robot OS
-========
 
-TODO
+# Student Robotics OS
 
-# Updates
+The Raspberry Pi runs a custom operating system that contains the Student Robotics software.
+The OS contains a set of pre-installed python libraries that you can use, the list of which can be found [here](./python_libraries).
 
-Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs.
 
-Once you have downloaded the file you need, refer to the documentation on [updating your brain board]({{ site.baseurl }}/kit/brain_board#flashing-the-sd-card) to apply the update.
+## Updates
 
-Each update file is a complete upgrade. Each file contains the changes of those before it. If you need to jump up multiple versions, you can do so by using the latest file.
+Keeping your kit up to date is very important, it enables us to deploy new features, as well as fix bugs.
+
+Below is a list of the versions released, once you have downloaded the file you need, refer to the steps on the [tutorial page](/tutorials/update_brain) to apply the update.
+
+Each update file is a complete upgrade.
+Each file contains the changes of those before it.
+If you need to jump up multiple versions, you can do so by using the latest file.
+
+
+## OS Versions
 
 {% if site.data.kit_versions.size > 0 %}
 {% include updates-list.html %}
