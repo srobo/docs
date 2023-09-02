@@ -26,7 +26,7 @@ You will need a WiFi key to be able to connect and you can find this inside `rob
 
 These details can also be printed using:
 ~~~~~ python
-R.print_wifi_details()
+robot.print_wifi_details()
 ~~~~~
 
 If you are having any problems connecting to your robot, just head on over to the Discord and ask for help.
