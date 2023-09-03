@@ -3,8 +3,7 @@ layout: page
 title: Vision
 ---
 
-Vision
-======
+# Vision
 
 Your robot is able to use a webcam to detect [fiducial markers](https://en.wikipedia.org/wiki/Fiducial_marker).
 Specifically it can detect [AprilTags](https://april.eecs.umich.edu/software/apriltag), using the `36H11` marker set.
@@ -17,8 +16,8 @@ Using the marker poses and their locations, we can either calculate the location
 
 For information on markers, see the [markers page](./markers).
 
-[Camera](#camera) {#camera}
-===========================
+
+## Camera
 
 The interface to the vision system is through the camera, accessible through `R.camera`.
 
@@ -69,8 +68,8 @@ frame = robot.camera.capture()
 flipped = cv2.flip(frame, 0)
 ~~~~~
 
-[Frame argument](#frame_args) {#frame_args}
--------------------------------------------
+
+### Frame argument
 
 The slowest part of vision is capturing the image.
 You can use a frame with the other vision commands to avoid recapturing.
@@ -92,8 +91,8 @@ robot.camera.save("photo.jpg", frame=frame)
 # Do some other vision algorithm with the OpenCV frame here
 ~~~~~
 
-[Field of View](#fov) {#fov}
-----------------------------
+
+### Field of View
 
 The Logitech C500 has a [field of view][fov] of 72&deg; and the C270 has a field of view of 60&deg;.
 
@@ -104,8 +103,8 @@ Note that the axes are all defined relative to the camera.
 Since we have no way to know how you've mounted your camera, you may need to account for that in your usage of the vision system's data.
 </div>
 
-[Marker](#marker) {#marker}
-===========================
+
+## Marker
 
 A `Marker` object contains information about a *detected* marker.
 It has the following attributes:
@@ -117,10 +116,10 @@ size
 :   The physical size of the marker, as the vision system expects it.
 
 pixel_centre
-:   A [`PixelCoordinates`](#PixelCoordinates) describing the position of the centre of the marker in the image.
+:   A [`PixelCoordinates`](#pixelcoordinates) describing the position of the centre of the marker in the image.
 
 pixel_corners
-:   A list of 4 [`PixelCoordinates`](#PixelCoordinates) instances, each representing the position of a corner of the marker in the image.
+:   A list of 4 [`PixelCoordinates`](#pixelcoordinates) instances, each representing the position of a corner of the marker in the image.
 
 position
 :   A `Position` instance describing the position of the marker.
@@ -161,10 +160,7 @@ orientation
         Zero values have the marker facing the camera square-on.
 
 
-<a id="Coordinate"/>
-
-[`PixelCoordinates`](#PixelCoordinates) {#PixelCoordinates}
----------
+### PixelCoordinates
 
 A named tuple of `x` and `y` coordinates for the point, in pixels relative to the top left of the image.
 
