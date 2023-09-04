@@ -69,7 +69,7 @@ frame = robot.camera.capture()
 
 ### Frame argument
 
-The slowest part of vision is capturing the image.
+The slowest part of marker detection is capturing the image.
 You can use the output of the `capture` method with the other vision commands to avoid recapturing.
 This may be useful if you wish to use both your own vision algorithms and our marker detection on the same frames.
 
