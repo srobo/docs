@@ -6,9 +6,8 @@ title: Servos Board API
 Servos Board API
 ================
 
-The kit can control multiple servos.
-One servo board can control up to 12 servos.
-See the [Servo Board](/docs/kit/servo_board) hardware page for more details about this board.
+The servo board provided in the kit can control up to 12 servos.
+See the [Servo Board]({{ site.baseurl }}/kit/servo_board) hardware page for more details about this board.
 
 
 Accessing the Servo Board
@@ -27,12 +26,15 @@ my_servo_board = robot.servo_board
 Setting servo positions
 -----------------------
 
+<div class="warning" markdown="1">
+To use servo outputs 8-11 power must be provided through the auxillary power input at an appropriate voltage for the connected servos.
+See the [Servo Board]({{ site.baseurl }}/kit/servo_board#auxiliary-outputs) page for more info.
+</div>
+
 Each of the twelve servo outputs can be controlled separately.
-The servo outputs are numbered 0-11, see the [Servo Board](/docs/kit/servo_board#connectors) docs for details of which output is which.
+The servo outputs are numbered 0-11, see the [Servo Board]({{ site.baseurl }}/kit/servo_board#connectors) docs for details of which output is which.
 
-This board object has an array containing the servos connected to it, which can be accessed as servos[0], servos[1], servos[2], etc.
-The servo board is labelled so you know which servo is which.
-
+This board object has an array called `servos` containing the servos connected to it.
 The position of servos can range from `-1` to `1` inclusive:
 
 ~~~~~ python
