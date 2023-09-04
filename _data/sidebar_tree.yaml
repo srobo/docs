@@ -38,8 +38,8 @@ tree:
     - url: /programming/robot_api/
       title: Robot API
       tree:
-      - url: /programming/robot_api/metadata
-        title: Metadata
+      - url: /programming/robot_api/comp_mode
+        title: Competition Mode
     - url: /programming/leds
       title: Brain Board LED API
     - url: /programming/motors
@@ -105,7 +105,7 @@ tree:
     - url: /tutorials/using_the_simulator
       title: Using the simulator
     - url: /tutorials/update_brain
-      title: How to update your robot
+      title: Updating your brain board
   - url: /competitor_resources/
     title: Resources
     tree:

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to update your robot
+title: Updating your brain board
 ---
 
 {% comment %}
@@ -11,8 +11,7 @@ The below will automatically calculate the latest version number, to be used whe
 {% assign latest_version = latest_version.version %}
 
 
-How to update your robot
-========================
+# Updating your brain board
 
 The SD card is located on the underside of the board underneath the green power connector.
 Grab the SD card with your fingers and simply pull it out of the slot.

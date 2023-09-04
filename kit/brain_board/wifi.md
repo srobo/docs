@@ -19,9 +19,9 @@ It will initially have a name starting with `robot-ZZZ` followed by some random 
 You can now connect to your robot in the same way you normally connect to a WiFi network.
 You will need a WiFi key to be able to connect and you can find this inside `robot-settings.toml` on the USB drive containing your code.
 
-<div class="info">
-    If there is no <code>robot-settings.toml</code> on your USB drive, you can generate one by first running any code on your robot.
-    For more information see our docs on <a href="{{ site.baseurl }}/kit/brain_board#robot-settings">Robot Settings</a>.
+<div class="info" markdown="1">
+If there is no `robot-settings.toml` on your USB drive, you can generate one by first running any code on your robot.
+For more information see our docs on [Robot Settings]({{ site.baseurl }}/kit/brain_board#robot-settings).
 </div>
 
 These details can also be printed using:
@@ -57,3 +57,4 @@ Changing the starting zone allows you to test how your robot handles being start
 Changing mode applies from the next time your code runs.
 
 The WiFi interface will only be fully accessible when your robot is started in dev mode and will be restricted in competition mode.
+See the [competition mode]({{ site.baseurl }}/programming/robot_api/comp_mode) page for details of what competition mode is and what limitations it imposes.
