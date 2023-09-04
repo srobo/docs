@@ -3,31 +3,44 @@ layout: page
 title: Markers
 ---
 
-Markers
-=======
+# Markers
 
 <img src="{{ site.baseurl }}/images/content/vision/marker-0.png" alt="An Example Marker: 0" class="right half" />
 
-An example marker is given to the right; this one is `0`. The marker is the correct way up, as shown by the text in the bottom left corner.
+An example marker is given to the right; this one is ID number `0`.
+The marker is the correct way up, as shown by the text in the bottom left corner.
 
-There is also some text in the bottom-left corner of the marker, in its padding: `Student Robotics APRILTAG_36H11 - Dev #0`.
+There is also some text in the bottom-left corner of the marker, in its padding: `Student Robotics - #0`.
 
-- `#0` means marker number 0
-- `APRILTAG_36H11` is the marker type
-- `Dev` shows it's a development marker, rather than a competition marker
+- `Student Robotics` means that it is one of our markers
+- `#0` means that it is marker number 0
 
-Details of the types and size of markers used in the game can be found in the [rules](/docs/rules).
+Details of the types and size of markers used in the game can be found in the [rules]({{ site.baseurl }}/rules).
 
-You can download all the markers as a single [ZIP file](/docs/resources/2023/sr-markers-sr2023.zip) or individually from the [git repo](https://github.com/srobo/game-markers/tree/master/SR2023/markers).
+You can download all the markers for this years game from the [resources page]({{ site.baseurl }}/competitor_resources/markers).
 
-You must ensure that your PDF viewer is not resizing the documents when printing.
-This can be checked by measuring the black marker and comparing this to the size defined in the rules.
-If the printed marker is not the correct size then the distance information reported by the vision API will be wrong.
+## Printing markers
 
-Note that a different set of markers will be used in the arenas at the competition.
-However, this is not something you need to worry about.
-We will handle this for you automatically when your robot is started in competition mode.
+The size of the printed markers is very important.
+The vision system relies on the size of the marker to estimate its position.
+If the marker is the wrong size the information returned by the API will be incorrect.
 
-The white space around the markers is very important -- without it, the markers probably won't be recognised. This white border is needed to ensure there's enough contrast between the black marker and whatever it's attached to - its size isn't strictly important. The white space around the marker is the same size as one block within the marker, which is a good target for contrast.
+When printing the markers you must ensure that your PDF viewer is not resizing the document.
+This can be checked by measuring the black of the marker and comparing this to the size defined in the rules.
 
-If the markers become damaged (scuff markers, tears, etc...) they will not function as well (if at all). If this happens, it is best to just print another one.
+Once printed the marker should be mounted on a rigid backing material to keep the marker flat.
+Any distortion in the marker will cause inaccuracies in the numbers reported by the API.
+
+If the markers become damaged (scuffs, tears, etc...) they will not function as well, if this happens, it is best to just print another one.
+
+## Marker detection
+
+<img src="{{ site.baseurl }}/images/content/vision/marker_with_size_labeled.png" alt="An Example Marker: 0" class="right half" />
+
+All of the content within the grey line is important:
+
+- The white border is used to create contrast between the black of the marker and the background.
+- The black border is used for [Pose Estimation](https://en.wikipedia.org/wiki/3D_pose_estimation) where the position of the four corners and the knowledge of the size of the marker is used to approximate its location in 3D space.
+- The data bits in the centre are used to identify the ID of the marker and have enough polygons to not be confused with a real world object.
+
+The marker can be cut out up to the grey line.

@@ -111,6 +111,8 @@ tree:
     tree:
     - url: /competitor_resources/microgames
       title: Microgames
+    - url: /competitor_resources/markers
+      title: Game markers
   - url: /team_admin/
     title: Team Admin
     tree:
