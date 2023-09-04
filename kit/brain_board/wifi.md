@@ -6,9 +6,8 @@ title: WiFi
 
 # WiFi
 
-The Raspberry Pi that makes up your kit's brain board contains a WiFi radio which allows you to interface with and debug your robot.
-You can connect to your robot using any WiFi capable device (laptop, tablet, phone, etc.)
-
+The Raspberry Pi that makes up your kit's brain board has WiFi which allows you to connect to and debug your robot, using any WiFi capable device (laptop, tablet, phone, etc.).
+The WiFi is only available during development and will be disabled during competition matches.
 
 ## Connecting to Your Robot
 
@@ -49,12 +48,11 @@ It will also show messages from the initialisation of the robot's hardware, as w
 You can also see your robot's logs on the USB stick, in a file called
 `log.txt`.
 
-### Setting up the Robot's Environment
+
+### Setting the robot zone
 
 The toolbar present at the top of the page, or bottom of the page on mobile, allows you to change the robot's starting zone and mode.
 Changing the starting zone allows you to test how your robot handles being started in a different zone.
+Changing mode only applies from the next time your code runs.
 
-Changing mode applies from the next time your code runs.
-
-The WiFi interface will only be fully accessible when your robot is started in dev mode and will be restricted in competition mode.
-See the [competition mode]({{ site.baseurl }}/programming/robot_api/comp_mode) page for details of what competition mode is and what limitations it imposes.
+See the [competition mode]({{ site.baseurl }}/programming/robot_api/comp_mode) page for details of what competition mode is.

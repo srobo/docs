@@ -13,13 +13,12 @@ The OS contains a set of pre-installed python libraries that you can use, the li
 
 ## Updates
 
-Keeping your kit up to date is very important, it enables us to deploy new features, as well as fix bugs.
+Keeping your kit up to date is very important, it enables us to fix bugs, as well as deploy new features.
 
-Below is a list of the versions released, once you have downloaded the file you need, refer to the steps on the [tutorial page](/tutorials/update_brain) to apply the update.
+Below is a list of the versions released, once you have downloaded the file you need, refer to the steps on the [tutorial page]({{ site.baseurl }}/tutorials/update_brain) to apply the update.
 
-Each update file is a complete upgrade.
-Each file contains the changes of those before it.
-If you need to jump up multiple versions, you can do so by using the latest file.
+Each update file is a complete upgrade and contains all the changes of those before it.
+If you need to jump up multiple versions, you can do so by just using the latest version.
 
 
 ## OS Versions
