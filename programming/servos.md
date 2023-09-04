@@ -6,74 +6,92 @@ title: Servos Board API
 Servos Board API
 ================
 
-The `servo_board` object is used to control a collection of Servo Boards.
+The servo board provided in the kit can control up to 12 servos.
+See the [Servo Board]({{ site.baseurl }}/kit/servo_board) hardware page for more details about this board.
 
-When a single Servo Board is connected to your robot, you can control it
-using the `servo_board` object.
 
-~~~~~ python
-R.servo_board.something...
-~~~~~
+Accessing the Servo Board
+-------------------------
 
-The serial number of each detected Servo Board is printed to the log when your robot starts.
-It will look something like this:
-
-~~~~~ not-code
-sr.robot3.robot INFO - Found Student Robotics Servo Board v4 - srABC1
-~~~~~
-
-If you have more than one Servo Board attached, you need to specify which one you want to control. This is done using the serial number of the board. For example: if you had a board that was labelled "srABC1",
+The servo board can be accessed using the `servo_board` property of the `Robot` object.
 
 ~~~~~ python
-R.servo_boards["srABC1"].something...
+from sr.robot3 import *
+robot = Robot()
+
+my_servo_board = robot.servo_board
 ~~~~~
 
-<div class="warning" markdown="1">
-  When you have more than one servo board connected to your kit,
-  you must use `R.servo_boards` and index by serial number. This is so
-  that the kit knows which servo board you want to control.
-</div>
 
 Setting servo positions
 -----------------------
 
-Each of the twelve servo outputs can be controlled separately. The servo outputs
-are numbered 0-11, see the [Servo Board](/docs/kit/servo_board#connectors) docs
-for details of which output is which.
+<div class="warning" markdown="1">
+To use servo outputs 8-11 power must be provided through the auxillary power input at an appropriate voltage for the connected servos.
+See the [Servo Board]({{ site.baseurl }}/kit/servo_board#auxiliary-outputs) page for more info.
+</div>
 
+Each of the twelve servo outputs can be controlled separately.
+The servo outputs are numbered 0-11, see the [Servo Board]({{ site.baseurl }}/kit/servo_board#connectors) docs for details of which output is which.
+
+This board object has an array called `servos` containing the servos connected to it.
 The position of servos can range from `-1` to `1` inclusive:
 
 ~~~~~ python
-# R.servo_board.servos[SERVO_NUMBER].position = POS
+# Set servo 0 position to 0.2
+robot.servo_board.servos[0].position = 0.2
 
-# set servo 1's position to 0.2
-R.servo_board.servos[1].position = 0.2
-
-# Set servo 2's position (on the Servo Board with serial number srABC) to -0.55
-R.servo_boards["srABC"].servos[2].position = -0.55
+# Set servo 2 position to -0.55
+robot.servo_board.servos[2].position = -0.55
 ~~~~~
 
 You can read the last value a servo was set to using similar code:
 
 ~~~~~ python
-# get the last setting of the second servo on the first Servo Board
-last_setting = R.servo_board.servos[1].position
+# Print the last setting of servo number 1
+print(robot.servo_board.servos[1].position)
 ~~~~~
 
-<div class="info" markdown="1">
-While it is possible to retrieve the last position a servo was set to,
-this does not guarantee that the servo is currently in that position.
-</div>
 
-[How the set position relates to the servo angle](#ServoAngle) {#ServoAngle}
------------------------------------------------
+Disabling servo outputs
+-----------------------
+
+Setting a position to `None` will disable an output.
+This is the state all the servo outputs are in when the board turns on, where no servo pulses are being sent to the outputs.
+
+~~~~~ python
+# disable servo output 5
+robot.servo_board.servos[5].position = None
+~~~~~
+
+
+Extended servo range
+--------------------
+
+For an RC servo the angle of rotation is determined by the width of an electrical pulse on the control wire.
+A typical servo expects to see a pulse every 20ms, with a pulse width between 1ms and 2ms.
+Our API will take the position provided (between -1 and 1) and map it to the correct pulse width.
+
+However there is no standard for the width of this pulse and there are differences between manufacturers as to what angle the servo will turn to for a given pulse width.
+The API can be used to change what the limits of pulse width are for each servo.
+You should experiment and find what the actual limit of your servos are but be careful not drive them past that.
+
+|     Parameter     |  Min value  |  Max value  |
+|-------------------|-------------|-------------|
+|Pulse width default|1000 &micro;s|2000 &micro;s|
+|Pulse width limit  |500 &micro;s |4000 &micro;s|
+
+This code to set the pulse width limits should be done before setting the position of the servo.
+
+~~~~~ python
+# set the range of servo output 7 between 500us and 2500us
+robot.servo_board.servos[7].set_duty_limits(500, 2500)
+
+# Then move the position of the servo to the upper position
+# (pulse width = 2500us)
+robot.servo_board.servos[7].position = 1
+~~~~~
 
 <div class="warning">
-You should be careful about forcing a servo to drive past its end stops.
-Some servos are very strong and it could damage the internal gears.
+You should be careful about forcing a servo to drive past its end stops as this could damage the internal gears.
 </div>
-
-The angle of an RC servo is controlled by the width of a pulse supplied to it periodically.
-There is no standard for the width of this pulse and there are differences between manufacturers as to what angle the servo will turn to for a given pulse width.
-To be able to handle the widest range of all servos our hardware outputs a very wide range of pulse widths which in some cases will force the servo to try and turn past its internal end-stops.
-You should experiment and find what the actual limit of your servos are (it almost certainly won't be -1 and 1) and not drive them past that.
