@@ -13,17 +13,17 @@ The axis and rotations follow the [aircraft principal axis](https://en.wikipedia
 These properties can be accessed as follows:
 
 yaw
-:   A rotation about the vertical axis, in radians.
+:   The yaw of the marker, a rotation about the vertical axis, in radians.
     Positive values indicate a rotation clockwise from the perspective of the marker.
     Zero values have the marker facing the camera square-on.
 
 pitch
-:   A rotation about the transverse axis, in radians.
+:   The pitch of the marker, a rotation about the transverse axis, in radians.
     Positive values indicate a rotation upwards from the perspective of the marker.
     Zero values have the marker facing the camera square-on.
 
 roll
-:   A rotation about the longitudinal axis, in radians.
+:   The roll of the marker, a rotation about the longitudinal axis, in radians.
     Positive values indicate a rotation clockwise from the perspective of the marker.
     Zero values have the marker facing the camera square-on.
 
