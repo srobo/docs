@@ -34,7 +34,10 @@ while True:
     print("I can see", len(markers), "markers:")
 
     for marker in markers:
-        print(" - Marker #{0} is {1} metres away".format(marker.id, marker.distance / 1000))
+        print("Marker #{0} is {1} metres away".format(
+            marker.id,
+            marker.position.distance / 1000,
+        ))
 ~~~~~
 
 <div class="info">
