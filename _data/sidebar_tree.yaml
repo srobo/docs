@@ -4,7 +4,7 @@ tree:
   - url: /
     title: Introduction
   - url: /kit/
-    title: Kits
+    title: Kit
     tree:
     - url: /kit/batteries/
       title: Batteries
