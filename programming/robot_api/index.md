@@ -3,126 +3,119 @@ layout: page
 title: Robot API
 ---
 
-Robot API
-=========
+# Robot API
 
 Student Robotics has written a module &mdash; `sr.robot3`  &mdash; which is used to interface with the hardware.
 It handles all the low-level interactions so you don't have to.
-To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
+
+For example, to set the power of output 0 on a Motor Board to 30%, you would simply write:
 
 ~~~~~ python
-R.motor_board.motors[0].power = -0.3
+robot.motor_board.motors[0].power = 0.3
 ~~~~~
 
-`-0.3` would be backwards (depending upon which way you wired up the motor) &mdash; 30% power in reverse.
+<div class="info" markdown="1">
+See the [Motor Board]({{ site.baseurl }}/programming/motors) page for more details about this example.
+</div>
 
-To gain access to all of this functionality, all you need to do is write:
+To gain access to all of this functionality, all you need to do at the top of your code is the following:
 
 ~~~~~ python
 from sr.robot3 import *
+robot = Robot()
 ~~~~~
 
-...at the top of your code (before you use any of its functionality, basically).
 This imports the Student Robotics module that we've written to interface with our hardware.
+We then use the `Robot` class from within the `sr.robot3` module, to create a `robot` object that sets up and gives you access to your robot's hardware.
 
-Then, within the `sr.robot3` module, there is a `Robot` class that should be instantiated, as follows:
+<div class="info" markdown="1">
+Most examples in the documentation will assume you have created a `robot` object from the `Robot` class.
+If you see `robot` in a code example, it is assumed you have run the two lines above.
+</div>
 
-~~~~~ python
-from sr.robot3 import *
-R = Robot()
-~~~~~
+Then, within your `robot` you can use the following attributes to access to the robot's hardware:
 
-Within your `Robot` (`R` in this case), you then have access to the following attributes:
+* [kch]({{ site.baseurl }}/programming/leds)
+* [motor_board]({{ site.baseurl }}/programming/motors)
+* [power_board]({{ site.baseurl }}/programming/power)
+* [servo_board]({{ site.baseurl }}/programming/servos)
+* [arduino]({{ site.baseurl }}/programming/arduino/)
+* [camera]({{ site.baseurl }}/programming/vision/)
 
-* [motors](/docs/programming/motors)
-* [power](/docs/programming/power)
-* [servos](/docs/programming/servos)
-* [ruggeduinos](/docs/programming/arduino/)
-* [vision](/docs/programming/vision/)
+The functions of each board are described on their respective pages.
 
-They can be used in your code just like the example above.
-Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should be accessed as such.
-Here are some examples:
 
-~~~~~ python
-R.motor_board.motors[0].power = 0.5   # WILL work, if motor 0 exists
-R.motor_board.motors[1].power = -0.2  # WILL work, if motor 1 exists
-R.motor_board.motors.power = 0.42     # WON'T WORK
+## Other Robot Attributes
 
-# the above is similar to the situation for 'ruggeduinos' and 'servos'
-~~~~~
-
-A number of examples in the documentation will assume you've instantiated the required `Robot` class and have called it `R`.
-From here in, if you see a `R.something`, the requirement of the `sr.robot3` import line and the instantiation of `Robot` as `R` is implicit.
-
-[Other Robot Attributes](#OtherRobotAttributes) {#OtherRobotAttributes}
-----------------------
-
-As well as the attributes listed above, the Robot class also has the following attributes, which you may find useful:
+As well as the attributes listed above, the `Robot` class also has the following attributes, which you may find useful:
 
 zone
-:    The number of the zone that the robot is associated with. Between `0` and `3`.
+:   The number of the scoring zone that the robot is associated with.
+    Between `0` and `3`.
+
+    This attribute is only available after the start button is pressed and will throw an error if accessed before.
+    See the [competition mode](./comp_mode) page for more information about this attribute.
 
 mode
 :   Whether the robot is running in competition mode.
-    When in a competition match, this will be `RobotMode.COMP`, and at all other times this will be `RobotMode.DEV`.
+    When in a competition match, this will be `COMP`, and at all other times this will be `DEV`.
+
+    This attribute is only available after the start button is pressed and will throw an error if accessed before.
+    See the [competition mode](./comp_mode) page for more information about this attribute.
 
     ~~~~~ python
     from sr.robot3 import *
 
-    R = Robot()
+    robot = Robot()
 
-    if R.mode == RobotMode.COMP:
-      print("This is the competition!")
+    if robot.mode == COMP:
+        print("This is the competition!")
+    elif robot.mode == DEV:
+        print("This is development")
     ~~~~~
 
 usbkey
-:   The path to the USB memory stick.
-    Your code is unzipped and run from a temporary directory, therefore files you create will be lost when the kit is turned off.
-    You can use this to easily read from and write to files on the stick itself.
-    Note that the USB memory stick is mounted synchronously, so any writes to it will block until complete and may slow down your code.
+:   The path to the USB stick.
+    You can use this to easily read and write files on the USB stick itself.
 
-    An example of how the `usbkey` attribute might be used:
+    An example of how the `usbkey` attribute might be used to read a file called `my-file.txt` which is stored on the USB stick:
 
     ~~~~~ python
     from sr.robot3 import *
     import os
 
-    R = Robot()
-    print("The path to the USB key is:", R.usbkey)
+    robot = Robot()
+    print("The path to the USB stick is:", robot.usbkey)
     print("My file on the USB contains:")
-    with open(os.path.join(R.usbkey, 'my-file.txt'), 'r') as f:
-        print(f.read())
+    with open(os.path.join(robot.usbkey, 'my-file.txt')) as file:
+        print(file.read())
     ~~~~~
 
 is_simulated
 :   A boolean value indicating whether or not the code is running in the simulator.
+    This value is `True` when in the simulator and `False` when on the robot.
 
-[Custom Robot Object Initialisation](#CustomRobotInit) {#CustomRobotInit}
-----------------------
+
+## Custom Robot Object Initialisation
 
 Normally the Robot object is initialised with the following:
 
 ~~~~~ python
-R = Robot()
+from sr.robot3 import *
+robot = Robot()
 ~~~~~
 
-However if you want to:
-
- * customise your Ruggeduino firmware
- * initialise some hardware or software before the start button is pressed
-
-Then Robot initialisation can be broken up as follows (this example is equivalent to the previous code excerpt):
+By default your robot will pause on this line waiting for the start button to be pressed.
+However if you want to initialise some hardware or software before the start button is pressed then Robot initialisation can be broken up as follows.
 
 ~~~~~ python
-R = Robot(auto_start=True)
+from sr.robot3 import *
+robot = Robot(wait_for_start=False)
 
 # Initialisation phase.
 # Here you can perform hardware/software initialisation before start
 
-R.wait_start()
+robot.wait_start()
 ~~~~~
 
-During the initialisation phase, all hardware is accessible.
-If you have any hardware which must be initialised before the start button is pressed,
- the initialisation phase is the time to do so.
+This will not pause on the line which creates the `robot` but will instead pause on the `robot.wait_start()` line, until the start button is pressed.
