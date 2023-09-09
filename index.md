@@ -26,7 +26,7 @@ From time to time, you may come across some warnings such as the following:
 
 <div class="warning">Never leave batteries unattended when they are in use or charging.</div>
 
-It would be advisable to take note of these, especially that one!
+You should take note of these, they often contain important safety information.
 
 You will also come across some blue boxes providing key bits of information, similar to the following:
 
