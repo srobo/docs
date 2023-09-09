@@ -44,5 +44,6 @@ The list below outlines the differences.
 
 <!-- cspell:disable -->
 * `flask` is not available in the simulator
+* `opencv` is not available in the simulator
 <!-- cspell:enable -->
 
