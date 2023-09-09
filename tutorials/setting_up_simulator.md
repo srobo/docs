@@ -24,9 +24,8 @@ You will also need Python installed.
 | macOS    | 3.8-3.10                 |
 | Linux    | 3.8-3.10                 |
 
-There are a small number of [external libraries]({{ site.baseurl }}/kit/brain_board/python_libraries#simulator)
-which will be available to your robot code during the competition. Note that for
-local development you will need to install these yourself.
+There are a small number of [external libraries]({{ site.baseurl }}/kit/brain_board/python_libraries) which will be available to your robot code during the competition.
+Note that for local development you will need to install these yourself.
 
 ### Installing the simulation
 
