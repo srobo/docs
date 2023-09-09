@@ -3,7 +3,9 @@ layout: page
 title: Robots 101 - So you're running a team
 ---
 
-So, you’re running a team. Here’s a little bit of info on what to expect from Student Robotics, and your responsibilities as a team supervisor.
+# Robots 101 - So you're running a team
+
+Here’s a little bit of info on what to expect from Student Robotics, and your responsibilities as a team supervisor.
 
 As a team supervisor, your role is to guide the competitors through the journey of building a robot. You’ll be there to point them in the right direction when they get stuck and resolve any issues they run into. We encourage team supervisors to limit their involvement with the robot design/building process so that the finished contraptions are 100% student-built which competitors find very rewarding.
 

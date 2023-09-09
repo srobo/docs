@@ -3,8 +3,7 @@ layout: page
 title: Robots 101 - Theming
 ---
 
-Welcome (back) to the Robots 101 series! This time, we’re addressing theming
-your robot.
+# Robots 101 - Theming
 
 Theming your robot might not seem important at first, but having consistency
 between your robot, your team and social media goes a long way to delivering a

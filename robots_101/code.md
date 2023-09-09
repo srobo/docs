@@ -3,8 +3,7 @@ layout: page
 title: Robots 101 - The Code
 ---
 
-Welcome to another blog post in our 101 series! Today, we're going to delve into
-the brains of your robot - its code.
+# Robots 101 - The Code
 
 ## Teamwork Makes The Code Work
 
