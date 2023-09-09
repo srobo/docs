@@ -23,11 +23,6 @@ If there is no `robot-settings.toml` on your USB drive, you can generate one by 
 For more information see our docs on [Robot Settings]({{ site.baseurl }}/kit/brain_board#robot-settings).
 </div>
 
-These details can also be printed using:
-~~~~~ python
-robot.print_wifi_details()
-~~~~~
-
 If you are having any problems connecting to your robot, just head on over to the Discord and ask for help.
 
 
