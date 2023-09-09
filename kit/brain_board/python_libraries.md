@@ -4,8 +4,8 @@ title: Available Python Libraries
 ---
 
 <!-- Simulator libraries https://github.com/srobo/competition-simulator/blob/main/libraries.txt -->
-<!-- Robot image libraries https://github.com/srobo/robot-image/blob/main/libraries.txt -->
-<!-- Robot image requirements https://github.com/srobo/robot-image/blob/main/requirements.txt -->
+<!-- Robot image libraries https://github.com/srobo/robot-image/blob/main/files/python/libraries.txt -->
+<!-- Robot image requirements https://github.com/srobo/robot-image/blob/main/files/python/requirements.txt -->
 
 # Available Python Libraries
 
@@ -43,7 +43,9 @@ Generally we will try to keep the libraries available in the simulator the same 
 The list below outlines the differences.
 
 <!-- cspell:disable -->
+* `debugpy` is not available in the simulator
 * `flask` is not available in the simulator
 * `opencv` is not available in the simulator
+* `sr-robot3` that comes with the simulator has the same API but is different to the one available on pypi
 <!-- cspell:enable -->
 
