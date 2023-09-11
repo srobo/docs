@@ -124,3 +124,19 @@ serial_port = robot.raw_serial_devices[ARDUINO_SN].port
 ~~~~~
 
 Refer to the [pyserial documentation](https://pyserial.readthedocs.org/en/latest/) for more information on how to use pyserial.
+
+
+## Finding other serial devices
+
+If you are using your own serial device that you want to access via a [raw serial port](#opening-a-serial-port), you will need to know its serial number.
+To do this we provide a helper function.
+Running the below code example will print a list of all the devices connected to the system.
+
+Once you have found your device, and copied the serial number, you can follow the guidance in the [opening a serial port](#opening-a-serial-port) section.
+If you need help finding which device is yours contact us on Discord for help.
+
+~~~~~ python
+from sr.robot3 import list_ports
+
+list_ports()
+~~~~~
