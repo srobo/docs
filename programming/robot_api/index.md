@@ -75,7 +75,7 @@ mode
     ~~~~~
 
 usbkey
-:   The path to the USB stick.
+:   A [`Path`](https://docs.python.org/3/library/pathlib.html#basic-use) object containing the path to the USB stick.
     You can use this to easily read and write files on the USB stick itself.
 
     An example of how the `usbkey` attribute might be used to read a file called `my-file.txt` which is stored on the USB stick:
