@@ -7,6 +7,7 @@ title: Arduino API
 
 The Arduino that came as part of your kit was shipped with a firmware that provides the functionality outlined in the [Arduino API](/docs/programming/arduino/sr_firmware) page.
 You may wish to use the Arduino as is, extend the functionality of this firmware, or completely replace it.
+You can also add your own Arduinos, or other boards, to the kit, running either our firmware or your own.
 
 The `sr.robot3` library provides support for using the Arduino in three possible configurations:
 

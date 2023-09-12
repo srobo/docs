@@ -77,21 +77,23 @@ robot.arduino.pins[4].mode = INPUT_PULLUP
 You can read a **digital** input pin with the following code:
 
 ~~~~~ python
-# robot.arduinos[ARDUINO_SERIAL_NUMBER].pins[PIN_NO].digital_read()
-
 # to read Arduino's digital pin 3...
-pin3 = robot.arduino.pins[3].digital_read()
+value = robot.arduino.pins[3].digital_read()
+
+# to read Arduino's digital pin 7...
+value = robot.arduino.pins[7].digital_read()
 ~~~~~
 
-`pin3` will now contain `True` or `False` depending on whether the pin was high (5v) or low (0v), respectively.
+`value` will now contain `True` or `False` depending on whether the pin was high (5v) or low (0v), respectively.
 
 You can read an **analog** input pin with the following code:
 
 ~~~~~ python
-# robot.arduinos[ARDUINO_SERIAL_NUMBER].pins[PIN_NO].analog_read()
-
 # to read Arduino's analog pin A0...
-pinA0 = robot.arduino.pins[A0].analog_read()
+value = robot.arduino.pins[A0].analog_read()
+
+# to read Arduino's analog pin A4...
+value = robot.arduino.pins[A4].analog_read()
 ~~~~~
 
 The analog pin numbers are available as `A0`, `A1`, `A2`, `A3`, `A4`, and `A5` respectively.
@@ -99,12 +101,10 @@ The analog pin numbers are available as `A0`, `A1`, `A2`, `A3`, `A4`, and `A5` r
 
 ## Output
 
-You can only set digital outputs (there's no analog_write, although feel free to modify the Arduino's firmware to add the ability to output [PWM](https://wikipedia.org/wiki/Pulse-width_modulation "Pulse-width modulation") if you desire).
+You can only set digital outputs (there's no analog_write, although feel free to modify the Arduino's firmware to add the ability to output [PWM](https://wikipedia.org/wiki/Pulse-width_modulation) (Pulse-width modulation) if you desire).
 To set a digital output pin, you would use the following:
 
 ~~~~~ python
-# robot.arduinos[ARDUINO_SERIAL_NUMBER].pins[PIN_NO].digital_write(VALUE)
-
 # to set Arduino's pin 2 high:
 robot.arduino.pins[2].digital_write(True)
 

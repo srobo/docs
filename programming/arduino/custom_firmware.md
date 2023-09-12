@@ -17,10 +17,9 @@ By default when the `robot` object is created it will try to communicate with al
 If you want the API to not try connecting to a device we need to *ignore* the Arduino.
 
 To configure a `Robot` object to ignore a Arduino with custom firmware, you will need to provide it with the Arduino's serial number.
-The Arduino serial number is a character string of numbers and letters, and is output in the robot log when you run a program on your robot with your
-Arduino connected.
+The Arduino serial number is a string of numbers and letters, and is output in the robot log when you run a program on your robot with your Arduino connected.
 
-You'll need the ID later, so it's best to save it into a variable:
+You'll need the serial number later, so it's best to save it into a variable:
 
 ~~~~~ python
 from sr.robot3 import *
@@ -86,6 +85,7 @@ Putting a `b` in front of a string is a short hand way of creating a bytes objec
 
 ~~~~~ python
 # This will send the message "data" over the serial port
+# The b in front of the string is not a typo, this is a byte string
 robot.raw_serial_devices[ARDUINO_SN].write(b"data")
 ~~~~~
 
