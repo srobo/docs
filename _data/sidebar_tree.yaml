@@ -60,6 +60,10 @@ tree:
     - url: /programming/arduino/
       title: Arduino API
       tree:
+      - url: /programming/arduino/sr_firmware
+        title: SR Firmware
+      - url: /programming/arduino/extended_sr_firmware
+        title: Extended SR Firmware
       - url: /programming/arduino/custom_firmware
         title: Custom Firmware
     - url: /programming/cheat_sheet
