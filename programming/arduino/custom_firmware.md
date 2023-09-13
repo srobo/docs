@@ -62,7 +62,7 @@ robot.raw_serial_devices[ARDUINO_SN]
 ~~~~~
 
 <div class="info" markdown="1">
-Note that all communications with the serial port is done with `bytes` rather than `strings` that you will be more familiar with.
+Note that all communications with the serial port is done with `bytes` rather than strings that you will be more familiar with.
 
 You may need to convert from a string to bytes:
 
