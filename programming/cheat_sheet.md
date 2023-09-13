@@ -22,17 +22,17 @@ from sr.robot3 import *
 ### Standard Initialisation
 
 ~~~~~ python
-R = Robot()
+robot = Robot()
 ~~~~~
 
 ### Initialisation without waiting for the start button
 
 ~~~~~ python
-R = Robot(auto_start=True)
+robot = Robot(wait_for_start=False)
 
 # Code here runs before the start button is pressed
 
-R.wait_start()
+robot.wait_start() # wait for the start button
 ~~~~~
 
 ### Initialisation with extra logging
@@ -40,7 +40,7 @@ R.wait_start()
 You can also tell the robot to print extra logging information, although this is quite noisy.
 
 ~~~~~ python
-R = Robot(verbose=True)
+robot = Robot(debug=True)
 ~~~~~
 
 ## Selecting which board to control
@@ -48,49 +48,48 @@ R = Robot(verbose=True)
 If you only have one board of a given type plugged into your robot, then you can use its singular name:
 
 ~~~~~ python
-R.power_board.something
-R.motor_board.something
-R.servo_board.something
-R.ruggeduino.something
+robot.power_board
+robot.motor_board
+robot.servo_board
+robot.arduino
 ~~~~~
 
 If you have multiple boards of a given type plugged into your robot, you must index them by serial number:
 
 ~~~~~ python
-R.motor_boards["srABC1"].something
-R.servo_boards["srXYZ2"].something
-R.ruggeduinos["1234567890"].something
+robot.motor_boards["srABC1"]
+robot.arduinos["1234567890"]
 ~~~~~
 
 ## Power Board
 
-The outputs on the power board will turn on when you initialise your robot.
+The outputs on the power board will turn on when you initialise your robot and turn off when your code ends.
 
 ### Turn on and off the power outputs
 
 ~~~~~ python
 # Turn all of the outputs on
-R.power_board.outputs.power_on()
+robot.power_board.outputs.power_on()
 
 # Turn all of the outputs off
-R.power_board.outputs.power_off()
+robot.power_board.outputs.power_off()
 
 # Turn a single output on
-R.power_board.outputs[OUT_H0].is_enabled = True
+robot.power_board.outputs[OUT_H0].is_enabled = True
 
 # Turn a single output off
-R.power_board.outputs[OUT_H0].is_enabled = False
+robot.power_board.outputs[OUT_H0].is_enabled = False
 ~~~~~
 
 ### Reading voltage and current
 
 ~~~~~ python
 # Read the current of an individual output
-current = R.power_board.outputs[OUT_H0].current
+current = robot.power_board.outputs[OUT_H0].current
 
 # Read the current and voltage from the LiPo battery
-voltage = R.power_board.battery_sensor.voltage
-current = R.power_board.battery_sensor.current
+voltage = robot.power_board.battery_sensor.voltage
+current = robot.power_board.battery_sensor.current
 ~~~~~
 
 ### Buzzer
@@ -99,10 +98,13 @@ The power board has an on-board piezoelectric buzzer.
 
 ~~~~~ python
 # Play a standard note C6 -> C8 included for 0.5s
-R.power_board.piezo.buzz(0.5, Note.C6)
+robot.power_board.piezo.buzz(Note.C6, 0.5)
 
 # Play a tone at 1047Hz for 1 second
-R.power_board.piezo.buzz(1, 1047)
+robot.power_board.piezo.buzz(1047, 1)
+
+# Play a tone at 500Hz tone for 2 seconds and wait for it to finish
+robot.power_board.piezo.buzz(500, 2, blocking=True)
 ~~~~~
 
 ## Motors
@@ -114,25 +116,24 @@ You can set the power of each motor on the board between -1 and 1.
 If you change the power of your motor too rapidly, the overcurrent protection may be triggered.
 
 ~~~~~ python
-R.motor_board.motors[0].power = 1
-R.motor_board.motors[1].power = -1
+robot.motor_board.motors[0].power = 1
+robot.motor_board.motors[1].power = -1
 ~~~~~
 
-Setting a motor to `COAST` is equivalent to power level `0`.
+### Special motor values
+
+Setting a motor to `BRAKE` is equivalent to power level `0`.
 
 ~~~~~ python
 # This is the same operation
-R.motor_board.motors[0].power = COAST
-R.motor_board.motors[0].power = 0
+robot.motor_board.motors[0].power = BRAKE
+robot.motor_board.motors[0].power = 0
 ~~~~~
 
-### Braking Motors
-
-You can also brake a motor, which will quickly slow the motor.
+`COAST` will stop applying power to the motors. This will mean they continue moving under the momentum they had before and slowly come to a stop.
 
 ~~~~~ python
-R.motor_board.motors[0].power = BRAKE
-R.motor_board.motors[1].power = -1
+robot.motor_board.motors[0].power = COAST
 ~~~~~
 
 ## Servos
@@ -140,8 +141,8 @@ R.motor_board.motors[1].power = -1
 You can set the position of each servo output on the board between -1 and 1.
 
 ~~~~~ python
-R.servo_board.servos[0].position = -1
-R.servo_board.servos[1].position = 1
+robot.servo_board.servos[0].position = -1
+robot.servo_board.servos[1].position = 1
 ~~~~~
 
 You can also set the position to `0`, which is the approximate centre.
@@ -153,7 +154,15 @@ You can also set the position to `0`, which is the approximate centre.
 It can sometimes be useful to save a photo of what markers the robot can see:
 
 ~~~~~ python
-R.camera.save("my-photo.png")  # Save my-photo.png to the USB drive
+robot.camera.save("my-photo.png")  # Save my-photo.png to the USB drive
+~~~~~
+
+### Capturing an openCV array
+
+Take a photo using the webcam, and return the image data as an OpenCV array:
+
+~~~~~ python
+frame = robot.camera.capture()
 ~~~~~
 
 ### Looking for markers
@@ -161,7 +170,7 @@ R.camera.save("my-photo.png")  # Save my-photo.png to the USB drive
 You can take a photo with the camera and search for markers:
 
 ~~~~~ python
-markers = R.camera.see()
+markers = robot.camera.see()
 ~~~~~
 
 There are various bits of information available about visible markers:
@@ -172,44 +181,39 @@ for marker in markers:
     marker.id  # The ID of the marker
     marker.size  # Physical size of the marker in mm.
 
-    marker.distance  # Distance away from the camera in mm
+    marker.pixel_centre  # The co-ordinates of the centre of the marker
+    marker.pixel_corners  # A list of corners of the marker
 
-    # Cartesian coords of the marker
-    marker.cartesian.x
-    marker.cartesian.y
-    marker.cartesian.z
-
-    # Spherical coords of the marker
-    marker.spherical.rot_x
-    marker.spherical.rot_y
-    marker.spherical.dist
+    # Position of the marker
+    marker.position.distance  # Distance away from the camera in mm
+    marker.position.horizontal_angle  # angle to the marker in radians
+    marker.position.vertical_angle  # angle to the marker in radians
 
     # Orientation of the marker
-    marker.orientation.rot_x
-    marker.orientation.rot_y
-    marker.orientation.rot_z
-    marker.orientation.rotation_matrix
+    marker.orientation.yaw
+    marker.orientation.pitch
+    marker.orientation.roll
 ~~~~~
 
-## Ruggeduino
+## Arduino
 
 ### Setting the mode of a pin
 
 ~~~~~ python
-R.ruggeduino.pins[4].mode = OUTPUT
-R.ruggeduino.pins[4].mode = INPUT
-R.ruggeduino.pins[4].mode = INPUT_PULLUP
+robot.ruggeduino.pins[4].mode = OUTPUT
+robot.ruggeduino.pins[4].mode = INPUT
+robot.ruggeduino.pins[4].mode = INPUT_PULLUP
 ~~~~~
 
 ### Digital Write
 
-You can set the output for a pin of the Ruggeduino:
+You can set the output for a pin of the Arduino:
 
 ~~~~~ python
-R.ruggeduino.pins[4].mode = OUTPUT
+robot.ruggeduino.pins[4].mode = OUTPUT
 
-R.ruggeduino.pins[2].digital_write(True)
-R.ruggeduino.pins[2].digital_write(False)
+robot.ruggeduino.pins[2].digital_write(True)
+robot.ruggeduino.pins[2].digital_write(False)
 ~~~~~
 
 ### Digital Read
@@ -217,9 +221,9 @@ R.ruggeduino.pins[2].digital_write(False)
 You can read a digital value from the pins of the Ruggeduino:
 
 ~~~~~ python
-R.ruggeduino.pins[3].mode = INPUT
+robot.ruggeduino.pins[3].mode = INPUT
 
-value = R.ruggeduino.pins[3].digital_read()
+value = robot.ruggeduino.pins[3].digital_read()
 ~~~~~
 
 ### Analogue Read
@@ -227,7 +231,9 @@ value = R.ruggeduino.pins[3].digital_read()
 You can read an analogue value from the analogue pins of the Ruggeduino:
 
 ~~~~~ python
-value = R.ruggeduino.pins[A0].analogue_read()
+robot.ruggeduino.pins[A0].mode = INPUT
+
+value = robot.ruggeduino.pins[A0].analogue_read()
 ~~~~~
 
 ## Metadata
@@ -237,13 +243,7 @@ The API also makes some information about where your code is running
 ### Starting Zone for a match
 
 ~~~~~ python
-zone = R.zone  # -> 0, 1, 2, or 3
-~~~~~
-
-### Arena Information
-
-~~~~~ python
-arena = R.arena # -> 'A'
+zone = robot.zone  # -> 0, 1, 2, or 3
 ~~~~~
 
 ### Robot Mode
@@ -251,15 +251,24 @@ arena = R.arena # -> 'A'
 This is set to `COMP` when your robot is in a match.
 
 ~~~~~ python
-robot_mode = R.mode # -> DEV or COMP
+robot_mode = robot.mode # -> DEV or COMP
 ~~~~~
 
-### USB Key Path
+### USB stick Path
 
-This is the path to where your USB key is mounted.
+This is the path to where your USB stick is mounted.
 
 You can use this to save files and information to the drive.
 
 ~~~~~ python
-usb_key_path = R.usbkey # -> pathlib.Path
+usb_key_path = robot.usbkey # -> pathlib.Path
+~~~~~
+
+### Is simulated
+
+A boolean value indicating whether or not the code is running in the simulator.
+This value is True when in the simulator and False when on the robot.
+
+~~~~~ python
+value = robot.is_simulated
 ~~~~~
