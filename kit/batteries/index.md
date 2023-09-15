@@ -34,17 +34,6 @@ If you have any doubts or wish to request permission to use a battery, charger, 
 </div>
 
 
-## Storing Batteries
-
-When your batteries are not actively in use, they should be safely stored.
-To do this you must disconnect the batteries from all electrical equipment, and place them in the battery safety bag.
-You should then store the battery safety bag in a safe location.
-
-If you are not going to use the batteries for a long period of time, such as more than a week, then you should charge the batteries before hand.
-By themselves, batteries will discharge very slowly, and over-discharging will lead to damage.
-We recommend that you charge all batteries to at least 70% of capacity before being stored for a long period.
-
-
 ## Operating Batteries
 
 To use your batteries, you must connect them to the Student Robotics power board.
@@ -67,12 +56,25 @@ The smaller lead is only used for voltage measurement when charging and must **n
 </div>
 
 
-### Flat Batteries
+## Storing Batteries
+
+When your batteries are not actively in use, they should be safely stored.
+To do this you must disconnect the batteries from all electrical equipment, and place them in the battery safety bag.
+You should then store the battery safety bag in a safe location, away from anything flammable and where it wont be physically damaged.
+
+
+### Fully charged batteries
+
+Storing a battery at 100% charge puts stress on the battery, reducing its life.
+If you are planning on storing you battery for a long time (greater than 1 week) its best to discharge it to approximately 70%.
+This can be done by running your robot.
+
+
+### Flat batteries
 
 When the battery has been almost completely discharged, the Power Board will automatically turn off and the LED marked "Power / Flat Battery Indicator" in the [diagram](/docs/kit/power_board#BoardDiagram) will flash red and green.
-You should immediately disconnect the battery, and begin charging it.
-You should keep your second battery charged, so that you can immediately switch to using it.
-
+You should disconnect the battery, and begin charging it.
+By themselves, batteries will discharge very slowly, and over-discharging will lead to damage.
 Do not store a discharged battery for more than a few days without charging it, as it may discharge further and become damaged.
 
 
