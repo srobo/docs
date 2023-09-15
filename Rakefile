@@ -48,7 +48,7 @@ task :validate_kit_versions do
   data = YAML.load_file('_data/kit_versions.yml')
   data.each do |entry|
     actual = entry.keys.to_set
-    expected = ['version', 'released', 'changelog'].to_set
+    expected = ['version', 'released', 'link', 'changelog'].to_set
     optional = ['yanked'].to_set
     missing = expected - actual - optional
     extra = actual - expected - optional
