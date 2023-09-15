@@ -8,7 +8,7 @@
   {% if kit_version.yanked %}
   <p>This version is no longer available.</p>
   {% else %}
-  <a class="kit-download-link" data-version="{{ version }}" href="https://github.com/srobo/robot-image/releases/download/v{{ version }}/srobo-image-robot-{{ version }}.img.xz">
+  <a class="kit-download-link" data-version="{{ version }}" href="{{ kit_version.link }}">
       Download {{ version }}
   </a>
   {% endif %}

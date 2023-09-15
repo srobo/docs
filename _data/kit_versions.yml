@@ -2,7 +2,12 @@
 # The format of this file should be like such:
 # - version: 20xx.y.z
 #   released: 2038-01-19
+#   link: https://link-to-download.img
 #   changelog:
 #     - Changed something
 #     - Changed another thing too
-[]
+- version: 2024.1.0
+  released: 2023-09-14
+  link: https://github.com/srobo/robot-image/releases/download/2024.1.0/Student.Robotics.OS-image-2024.1.0.img.xz
+  changelog:
+    - Initial release for SR2024.
