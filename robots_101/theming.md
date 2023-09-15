@@ -36,12 +36,35 @@ style to your robot, your competitors and your socials.
 To give you some ideas, we've included some photos of teams we think did
 particularly well at previous competitions.
 
-<img src="/images/content/blog/robots-101/sr2022-hrs-team-photo.png" alt="2022 - HRS: Hills Road's “Ducktor Who” As well as theming their robot, small rubber ducks were placed around the event, as well as given to other teams." />
+{% include figure.html
+src="/images/content/robots-101/sr2022-hrs-team-photo.png"
+caption="2022 - HRS: Hills Road's “Ducktor Who” As well as theming their robot,
+small rubber ducks were placed around the event, as well as given to other
+teams." class="spaced-figure-non-bold-caption" %}
 
-<img src="/images/content/blog/robots-101/sr2019-hab-team-photo.png" alt=" 2019 - HAB: Haberdashers’ Aske’s Boys’ School won the Robot and Team Image award with their Hawaiian theme. This was complimented with inflatable palm trees and a 3D paper pineapple on top of their robot." />
+{% include figure.html
+src="/images/content/robots-101/sr2019-hab-team-photo.png"
+caption=" 2019 - HAB: Haberdashers’ Aske’s Boys’ School won the Robot and Team
+Image award with their Hawaiian theme. This was complimented with inflatable
+palm trees and a 3D paper pineapple on top of their robot."
+class="spaced-figure-non-bold-caption" %}
 
-<img src="/images/content/blog/robots-101/sr2016-mai-team-photo.png" alt="2016 - MAI: ‘Measure, Analyze, Improve’ from Gymnasium Markt Indersdorf, who came all the way from Germany looking very Frankenstein-esque, wearing their bio-hazard suits and zombie face paints. Their robot was a rotten-fleshy-green colour with a brain exposed." />
+{% include figure.html
+src="/images/content/robots-101/sr2016-mai-team-photo.png"
+caption="2016 - MAI: ‘Measure, Analyze, Improve’ from Gymnasium Markt
+Indersdorf, who came all the way from Germany looking very Frankenstein-esque,
+wearing their bio-hazard suits and zombie face paints. Their robot was a
+rotten-fleshy-green colour with a brain exposed."
+class="spaced-figure-non-bold-caption" %}
 
-<img src="/images/content/blog/robots-101/sr2015-mai-team-photo.png" alt="2015 - MAI: “42 * 2 - Double Vision” from Gymnasium Markt Indersdorf, came dressed as monks in hooded brown robes, laced with glowing LED strips." />
+{% include figure.html
+src="/images/content/robots-101/sr2015-mai-team-photo.png"
+caption="2015 - MAI: “42 * 2 - Double Vision” from Gymnasium Markt Indersdorf,
+came dressed as monks in hooded brown robes, laced with glowing LED strips."
+class="spaced-figure-non-bold-caption" %}
 
-<img src="/images/content/blog/robots-101/sr2014-hrs-team-photo.png" alt="2014 - HRS: Systemetric (HRS) impressed the judges with their steampunk costumes and brass and mahogany robot (pictured)." />
+{% include figure.html
+src="/images/content/robots-101/sr2014-hrs-team-photo.png"
+caption="2014 - HRS: Systemetric (HRS) impressed the judges with their steampunk
+costumes and brass and mahogany robot (pictured)."
+class="spaced-figure-non-bold-caption" %}
