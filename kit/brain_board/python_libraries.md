@@ -33,7 +33,7 @@ The following python libraries are installed and available for use in your robot
 * [scikit-learn 1.3.0](https://pypi.org/project/scikit-learn)
 * [scipy 1.10.1](https://pypi.org/project/scipy)
 * [shapely 2.0.1](https://pypi.org/project/shapely)
-* [sr-robot3 2024.0.0](https://pypi.org/project/sr-robot3)
+* [sr-robot3 2024.0.1](https://pypi.org/project/sr-robot3)
 <!-- cspell:enable -->
 
 
