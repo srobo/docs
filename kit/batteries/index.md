@@ -28,22 +28,22 @@ If you have any doubts or wish to request permission to use a battery, charger, 
 * Always place the batteries in the provided battery safety bag when charging or when being stored.
 * Always follow the charging checklist precisely to make sure the charger is correctly configured.
   See the [Charging Batteries](#charging-batteries) section for more details.
-* Do not charge or use a damaged battery.
 * If a battery has any cuts, nicks, exposed copper on the wires or is bulging to the point of no longer being squishy, contact <{{ site.emails.kit-support }}> immediately.
+* Do not charge or use a damaged battery.
 * Always leave the charging leads connected to the battery charger at all times.
 </div>
 
 
 ## Operating Batteries
 
-To use your batteries, you must connect them to the Student Robotics power board.
-Do not tamper with the cable or connect the batteries to anything other than the power board (or the charger when charging).
+To use your batteries, you must connect them to the Student Robotics Power Board.
+Do not tamper with the cable or connect the batteries to anything other than the Power Board (or the charger when charging).
 
-During operation, the battery is protected by over-current protection and a fuse in the power board.
+During operation, the battery is protected by over-current protection and a fuse in the Power Board.
 If any equipment is short circuited, the over-current protection will activate - protecting the battery.
 In extreme circumstances the fuse may blow to prevent damage to the battery.
 This is an important safety feature: do **not**, under any circumstances, bypass the fuse.
-The fuse is not user serviceable and if the fuse has blown then the power board must be replaced.
+The fuse is not user serviceable and if the fuse has blown then the Power Board must be replaced.
 If you suspect the fuse has blown then please contact <{{ site.emails.kit-support }}> straight away.
 
 Mechanical damage to a battery can be dangerous, and a puncture or large force applied to a battery causes a serious risk of fire.
