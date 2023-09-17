@@ -11,8 +11,7 @@ Setting up the simulator
 You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 300MB).
 This is the platform we run our simulation in.
 
-Versions "R2022b" and "R2023a" of Webots are supported.
-*Note*: versions of the simulation prior to sr2023.3 did not support Webots "R2023a".
+Version "R2023b" of Webots is supported.
 
 #### Python Version
 
@@ -20,9 +19,9 @@ You will also need Python installed.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
-| Windows  | 3.8-3.10 (64-bit)        |
-| macOS    | 3.8-3.10                 |
-| Linux    | 3.8-3.10                 |
+| Windows  | 3.8-3.11 (64-bit)        |
+| macOS    | 3.8-3.11                 |
+| Linux    | 3.8-3.11                 |
 
 There are a small number of [external libraries]({{ site.baseurl }}/kit/brain_board/python_libraries) which will be available to your robot code during the competition.
 Note that for local development you will need to install these yourself.
@@ -30,7 +29,7 @@ Note that for local development you will need to install these yourself.
 ### Installing the simulation
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
-2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2023.5/competition-simulator-sr2023.5.zip), the latest version is sr2023.5, released on 2023-02-22.
+2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/TODO/competition-simulator-TODO.zip), the latest version is TODO, released on TODO.
 3. Unzip the simulation as a subdirectory of the directory you created in the first step:
     ```
     simulation
@@ -67,10 +66,10 @@ print(sys.executable)
 
 On Windows you can set the path to the Python version to use in Webots UI via
 **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command**.
-Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python39\python.exe` when using Python 3.9, where `<USERNAME>` is your login.
+Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python311\python.exe` when using Python 3.11, where `<USERNAME>` is your login.
 
 On Mac you can set the path to the Python version to use via **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd>.
-Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.9/bin/python3` when using Python 3.9.
+Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3` when using Python 3.11.
 
 You'll need to ensure a matching version of Python is installed. If you're still
 having problems, ask for help in [`#simulator-help`][simulator-help] in
