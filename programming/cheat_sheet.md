@@ -37,7 +37,7 @@ robot.wait_start() # wait for the start button
 
 ### Initialisation with extra logging
 
-You can also tell the robot to print extra logging information, although this is quite noisy.
+You can also tell the robot to print extra logging information, although this will create a lot of logs.
 
 ~~~~~ python
 robot = Robot(debug=True)
@@ -154,7 +154,7 @@ You can also set the position to `0`, which is the approximate centre.
 It can sometimes be useful to save a photo of what markers the robot can see:
 
 ~~~~~ python
-robot.camera.save("my-photo.png")  # Save my-photo.png to the USB drive
+robot.camera.save("my-photo.jpg")  # Save my-photo.jpg to the USB drive
 ~~~~~
 
 ### Capturing an openCV array
@@ -210,7 +210,7 @@ robot.ruggeduino.pins[4].mode = INPUT_PULLUP
 You can set the output for a pin of the Arduino:
 
 ~~~~~ python
-robot.ruggeduino.pins[4].mode = OUTPUT
+robot.ruggeduino.pins[2].mode = OUTPUT
 
 robot.ruggeduino.pins[2].digital_write(True)
 robot.ruggeduino.pins[2].digital_write(False)
@@ -218,17 +218,19 @@ robot.ruggeduino.pins[2].digital_write(False)
 
 ### Digital Read
 
-You can read a digital value from the pins of the Ruggeduino:
+You can read a digital value from the pins of the Arduino:
 
 ~~~~~ python
 robot.ruggeduino.pins[3].mode = INPUT
+robot.ruggeduino.pins[5].mode = INPUT_PULLUP
 
 value = robot.ruggeduino.pins[3].digital_read()
+value = robot.ruggeduino.pins[5].digital_read()
 ~~~~~
 
 ### Analogue Read
 
-You can read an analogue value from the analogue pins of the Ruggeduino:
+You can read an analogue value from the analogue pins of the Arduino:
 
 ~~~~~ python
 robot.ruggeduino.pins[A0].mode = INPUT
@@ -240,13 +242,13 @@ value = robot.ruggeduino.pins[A0].analogue_read()
 
 The API also makes some information about where your code is running
 
-### Starting Zone for a match
+### Starting zone for a match
 
 ~~~~~ python
 zone = robot.zone  # -> 0, 1, 2, or 3
 ~~~~~
 
-### Robot Mode
+### Robot mode
 
 This is set to `COMP` when your robot is in a match.
 
@@ -254,14 +256,14 @@ This is set to `COMP` when your robot is in a match.
 robot_mode = robot.mode # -> DEV or COMP
 ~~~~~
 
-### USB stick Path
+### USB stick path
 
 This is the path to where your USB stick is mounted.
 
 You can use this to save files and information to the drive.
 
 ~~~~~ python
-usb_key_path = robot.usbkey # -> pathlib.Path
+usb_key_path = robot.usbkey
 ~~~~~
 
 ### Is simulated
