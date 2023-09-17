@@ -28,33 +28,22 @@ If you have any doubts or wish to request permission to use a battery, charger, 
 * Always place the batteries in the provided battery safety bag when charging or when being stored.
 * Always follow the charging checklist precisely to make sure the charger is correctly configured.
   See the [Charging Batteries](#charging-batteries) section for more details.
-* Do not charge or use a damaged battery.
 * If a battery has any cuts, nicks, exposed copper on the wires or is bulging to the point of no longer being squishy, contact <{{ site.emails.kit-support }}> immediately.
+* Do not charge or use a damaged battery.
 * Always leave the charging leads connected to the battery charger at all times.
 </div>
 
 
-## Storing Batteries
-
-When your batteries are not actively in use, they should be safely stored.
-To do this you must disconnect the batteries from all electrical equipment, and place them in the battery safety bag.
-You should then store the battery safety bag in a safe location.
-
-If you are not going to use the batteries for a long period of time, such as more than a week, then you should charge the batteries before hand.
-By themselves, batteries will discharge very slowly, and over-discharging will lead to damage.
-We recommend that you charge all batteries to at least 70% of capacity before being stored for a long period.
-
-
 ## Operating Batteries
 
-To use your batteries, you must connect them to the Student Robotics power board.
-Do not tamper with the cable or connect the batteries to anything other than the power board (or the charger when charging).
+To use your batteries, you must connect them to the Student Robotics Power Board.
+Do not tamper with the cable or connect the batteries to anything other than the Power Board (or the charger when charging).
 
-During operation, the battery is protected by over-current protection and a fuse in the power board.
+During operation, the battery is protected by over-current protection and a fuse in the Power Board.
 If any equipment is short circuited, the over-current protection will activate - protecting the battery.
 In extreme circumstances the fuse may blow to prevent damage to the battery.
 This is an important safety feature: do **not**, under any circumstances, bypass the fuse.
-The fuse is not user serviceable and if the fuse has blown then the power board must be replaced.
+The fuse is not user serviceable and if the fuse has blown then the Power Board must be replaced.
 If you suspect the fuse has blown then please contact <{{ site.emails.kit-support }}> straight away.
 
 Mechanical damage to a battery can be dangerous, and a puncture or large force applied to a battery causes a serious risk of fire.
@@ -67,12 +56,25 @@ The smaller lead is only used for voltage measurement when charging and must **n
 </div>
 
 
-### Flat Batteries
+## Storing Batteries
+
+When your batteries are not actively in use, they should be safely stored.
+To do this you must disconnect the batteries from all electrical equipment, and place them in the battery safety bag.
+You should then store the battery safety bag in a safe location, away from anything flammable and where it wont be physically damaged.
+
+
+### Fully charged batteries
+
+Storing a battery at 100% charge puts stress on the battery, reducing its life.
+If you are planning on storing you battery for a long time (greater than 1 week) its best to discharge it to approximately 70%.
+This can be done by running your robot.
+
+
+### Flat batteries
 
 When the battery has been almost completely discharged, the Power Board will automatically turn off and the LED marked "Power / Flat Battery Indicator" in the [diagram](/docs/kit/power_board#BoardDiagram) will flash red and green.
-You should immediately disconnect the battery, and begin charging it.
-You should keep your second battery charged, so that you can immediately switch to using it.
-
+You should disconnect the battery, and begin charging it.
+By themselves, batteries will discharge very slowly, and over-discharging will lead to damage.
 Do not store a discharged battery for more than a few days without charging it, as it may discharge further and become damaged.
 
 
