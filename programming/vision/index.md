@@ -87,7 +87,7 @@ frame = robot.camera.capture()
 markers = robot.camera.see(frame=frame)
 
 # Save the frame with marker annotation
-robot.camera.save(robot.usbkey / "photo.jpg", frame=frame)
+robot.camera.save(robot.usbkey / "photo.png", frame=frame)
 
 # Do some other vision algorithm with the OpenCV frame here
 ~~~~~

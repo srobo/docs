@@ -37,7 +37,7 @@ for marker in markers:
 |horizontal_angle|vertical_angle||
 |-----|-----|---|
 |0    |0    |![Position centre]({{ site.baseurl }}/images/content/vision/position/pos_centre.png "Position centre")|
-|0    |0.12 |![Position up]({{ site.baseurl }}/images/content/vision/position/pos_up.png "Position up")|
-|0.12 |0    |![Position right]({{ site.baseurl }}/images/content/vision/position/pos_right.png "Position right")|
-|0    |-0.12|![Position down]({{ site.baseurl }}/images/content/vision/position/pos_down.png "Position down")|
-|-0.12|0    |![Position left]({{ site.baseurl }}/images/content/vision/position/pos_left.png "Position left")|
+|0    |0.2  |![Position up]({{ site.baseurl }}/images/content/vision/position/pos_up.png "Position up")|
+|0.2  |0    |![Position right]({{ site.baseurl }}/images/content/vision/position/pos_right.png "Position right")|
+|0    |-0.2 |![Position down]({{ site.baseurl }}/images/content/vision/position/pos_down.png "Position down")|
+|-0.2 |0    |![Position left]({{ site.baseurl }}/images/content/vision/position/pos_left.png "Position left")|
