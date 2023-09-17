@@ -92,7 +92,7 @@ tree:
     - url: /tutorials/assembly
       title: Kit Assembly
     - url: /tutorials/python
-      title: Python
+      title: An intro to Python
     - url: /tutorials/getting_code_on_the_robot
       title: Getting Code on the Robot
     - url: /tutorials/basic_motor_control
