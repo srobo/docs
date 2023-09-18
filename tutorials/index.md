@@ -8,7 +8,7 @@ title: Tutorials
 
 ## Getting started
 
-The best place to start is the [kit assembly]({{ site.baseurl }}/tutorials/basic_motor_control) guide which shows you how to connect up your kit.
+The best place to start with your kit is the [kit assembly]({{ site.baseurl }}/tutorials/basic_motor_control) guide which shows you how to connect up your kit.
 This along with the [Basic Motor Control]({{ site.baseurl }}/tutorials/basic_motor_control) page should be enough to get your robot moving.
 
 

@@ -16,7 +16,7 @@ Below is a diagram of what your assembled kit should look like.
 The power board contains a connector for an external On|Off switch.
 If you do not intend to connect a switch then you must still make this connection.
 You can do this by connecting a short loop of wire between the two terminals of a suitable CamCon and placing it in the external On|Off port.
-This wire loop can be of any thickness.
+Any of the wire we provide would be suitable for this.
 
 
 ## Connections
