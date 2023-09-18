@@ -207,7 +207,14 @@ For example:
 range(5)  # [0, 1, 2, 3, 4]
 ~~~~~
 
-Taking `range(10, 60, 10)`, as a second example:
+If two arguments are provided, then these represent the start and stop with the step being set to `1`.
+
+For example:
+~~~~~ python
+range(2, 6)  # [2, 3, 4, 5]
+~~~~~
+
+Taking `range(10, 60, 10)`, as an example of all three arguments:
 
 * Start at 10
 * Go up in steps of 10
