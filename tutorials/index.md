@@ -3,15 +3,19 @@ layout: page
 title: Tutorials
 ---
 
-Tutorials
-=========
+# Tutorials
 
-Read the following tutorials listed in order of difficulty:
 
-1. [Basic Motor Control](/docs/tutorials/basic_motor_control) &mdash; all you need to know to get your motors moving
-2. [Python: A whirlwind tour](/docs/tutorials/python) &mdash; an overview of how to use [python](https://www.python.org "The Python programming language")
+## Getting started
 
-We also recommend these external tutorials:
+The best place to start with your kit is the [kit assembly]({{ site.baseurl }}/tutorials/basic_motor_control) guide which shows you how to connect up your kit.
+This along with the [Basic Motor Control]({{ site.baseurl }}/tutorials/basic_motor_control) page should be enough to get your robot moving.
+
+
+## Python help
+
+If you need some help on how to code in python, our [Intro to Python](/docs/tutorials/python) tutorial shows you through the basics.
+If you need some further or more advanced help, we also recommend these external tutorials:
 
 * Microsoft's [Take your first steps with Python](https://docs.microsoft.com/en-us/learn/paths/python-first-steps/)
 * Microsoft's [Build real world applications with Python](https://docs.microsoft.com/en-us/learn/paths/python-language/)
