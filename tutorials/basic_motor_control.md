@@ -55,7 +55,7 @@ This motor should then be connected to motor 0 socket on the Motor Board.
 To see which output is number 0, look at the [Motor Board]({{ site.baseurl }}/kit/motor_board) page.
 
 
-## Some Code
+## Adding the code
 
 <div class="warning">
 You will want to ensure the motor is secured when testing.
