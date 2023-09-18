@@ -79,13 +79,6 @@ tree:
       title: Safety Regulations
     - url: /rules/archive
       title: Game Rules Archive
-  - url: /troubleshooting/
-    title: Troubleshooting
-    tree:
-    - url: /troubleshooting/python
-      title: Python
-    - url: /troubleshooting/interactive_troubleshooter
-      title: Interactive Troubleshooter
   - url: /tutorials/
     title: Tutorials
     tree:
@@ -110,6 +103,13 @@ tree:
       title: Using the simulator
     - url: /tutorials/update_brain
       title: Updating your brain board
+  - url: /troubleshooting/
+    title: Troubleshooting
+    tree:
+    - url: /troubleshooting/python
+      title: Python
+    - url: /troubleshooting/interactive_troubleshooter
+      title: Interactive Troubleshooter
   - url: /competitor_resources/
     title: Resources
     tree:
