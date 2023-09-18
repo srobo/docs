@@ -53,7 +53,7 @@ from sr.robot3 import *
 robot = Robot()
 
 # `robot.usbkey` is the path to your USB drive
-robot.camera.save(robot.usbkey / "initial-view.png")
+robot.camera.save(robot.usbkey / "initial-view.jpg")
 ~~~~~
 
 capture
@@ -87,7 +87,7 @@ frame = robot.camera.capture()
 markers = robot.camera.see(frame=frame)
 
 # Save the frame with marker annotation
-robot.camera.save(robot.usbkey / "photo.png", frame=frame)
+robot.camera.save(robot.usbkey / "photo.jpg", frame=frame)
 
 # Do some other vision algorithm with the OpenCV frame here
 ~~~~~
