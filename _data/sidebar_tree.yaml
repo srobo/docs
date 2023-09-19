@@ -97,6 +97,8 @@ tree:
         title: Visual Studio Code
     - url: /tutorials/update_brain
       title: Updating your brain board
+    - url: /tutorials/discord
+      title: How to use Discord
   - url: /simulator/
     title: Simulator
     tree:
@@ -120,8 +122,3 @@ tree:
       title: Microgames
     - url: /competitor_resources/markers
       title: Game markers
-  - url: /team_admin/
-    title: Team Admin
-    tree:
-    - url: /team_admin/discord
-      title: Discord Server
