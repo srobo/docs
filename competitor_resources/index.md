@@ -3,7 +3,6 @@ layout: page
 title: Resources
 ---
 
-Resources
-=========
+# Resources
 
-TODO
+The below pages contain downloadable resources that will be needed during development.
