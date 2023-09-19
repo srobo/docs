@@ -68,8 +68,6 @@ tree:
         title: Custom Firmware
     - url: /programming/cheat_sheet
       title: API Quick Reference
-    - url: /programming/simulator_programming
-      title: Simulator Programming
   - url: /rules/
     title: Rules
     tree:
@@ -97,12 +95,17 @@ tree:
         title: PyCharm
       - url: /tutorials/editors/vscode
         title: Visual Studio Code
-    - url: /tutorials/setting_up_simulator
-      title: Setting up the simulator
-    - url: /tutorials/using_the_simulator
-      title: Using the simulator
     - url: /tutorials/update_brain
       title: Updating your brain board
+  - url: /simulator/
+    title: Simulator
+    tree:
+    - url: /simulator/simulator_programming
+      title: Simulator Programming
+    - url: /simulator/setting_up_simulator
+      title: Setting up the simulator
+    - url: /simulator/using_the_simulator
+      title: Using the simulator
   - url: /troubleshooting/
     title: Troubleshooting
     tree:

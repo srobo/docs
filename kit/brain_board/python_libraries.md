@@ -13,7 +13,7 @@ If you wish to use a library that isn't in the list, get in contact with us on D
 
 <div class="info" markdown="1">
 Note that for local development in the simulator you will need to install the libraries yourself.
-Look at the guide on [setting up the simulator]({{ site.baseurl }}/tutorials/setting_up_simulator) to find out how to do this.
+Look at the guide on [setting up the simulator]({{ site.baseurl }}/simulator/setting_up_simulator) to find out how to do this.
 </div>
 
 
