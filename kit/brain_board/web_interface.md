@@ -1,10 +1,10 @@
 ---
 layout: page
-title: WiFi
+title: Web Interface
 ---
 
 
-# WiFi
+# Web Interface
 
 The Raspberry Pi that makes up your kit's brain board has WiFi which allows you to connect to and debug your robot, using any WiFi capable device (laptop, tablet, phone, etc.).
 The WiFi is only available during development and will be disabled during competition matches.

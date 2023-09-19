@@ -6,8 +6,8 @@ title: Brain Board - Advanced
 
 # Brain Board - Advanced
 
-When connected to your [Brain Board WiFi]({{ site.baseurl }}/kit/brain_board/wifi), it is possible to access the Brain Board via a terminal interface.
-The Brain Board is running Student Robotics OS, a purpose-built Linux distribution.
+When connected to your [Brain Board's WiFi]({{ site.baseurl }}/kit/brain_board/web_interface), it is possible to access the Brain Board via a terminal interface.
+The Brain Board is running the [Student Robotics OS]({{ site.baseurl}}/kit/brain_board/robot_os).
 
 <div class="warning">
 Proceed at your own risk. We only provide limited support for these advanced features.

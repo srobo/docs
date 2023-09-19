@@ -20,8 +20,8 @@ tree:
           title: Student Robotics OS
         - url: /kit/brain_board/python_libraries
           title: Python Libraries
-        - url: /kit/brain_board/wifi
-          title: WiFi
+        - url: /kit/brain_board/web_interface
+          title: Web Interface
         - url: /kit/brain_board/advanced
           title: Advanced
     - url: /kit/motor_board
