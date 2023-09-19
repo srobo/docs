@@ -83,6 +83,6 @@ If you need a specific version of the simulator, or want to see what changes
 have been made with each version, please see the
 [list of releases](https://github.com/srobo/competition-simulator/releases).
 
-[discord]: {{ site.baseurl }}/team_admin/discord
+[discord]: {{ site.baseurl }}/tutorials/discord
 [programming-help]: https://discord.com/channels/900501415548579842/900501416269971457
 [simulator-help]: https://discord.com/channels/900501415548579842/900501416269971458

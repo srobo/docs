@@ -19,7 +19,7 @@ Please bear in mind the following:
 - We may need you to upgrade the OS which will overwrite any changes.
 - Any modifications you make must be in line with [the rules]({{ site.baseurl }}/rules).
 - We reserve the right to inspect your Brain Board at any time.
-- Feel free to tinker. If you are stuck, ask in [Discord]({{ site.baseurl }}/team_admin/discord), we may be able to help.
+- Feel free to tinker. If you are stuck, ask in [Discord]({{ site.baseurl }}/tutorials/discord), we may be able to help.
 
 
 ## SSH Access
