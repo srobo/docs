@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/editors/vscode
 layout: page
 title: VSCode
 ---

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/servos/
 layout: page
 title: Servos Board API
 ---

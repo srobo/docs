@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/python/libraries
 layout: page
 title: Available Python Libraries
 ---

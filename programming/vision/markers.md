@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/vision/markers
 layout: page
 title: Markers
 ---

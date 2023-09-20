@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/cheat_sheet
 layout: page
 title: API Quick Reference
 ---

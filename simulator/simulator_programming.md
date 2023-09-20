@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /simulator/programming/
 layout: page
 title: Simulator Programming
 ---

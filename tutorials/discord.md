@@ -1,4 +1,7 @@
 ---
+redirect_from:
+  - /team_admin/
+  - /team_admin/discord
 layout: page
 title: Discord Server
 ---

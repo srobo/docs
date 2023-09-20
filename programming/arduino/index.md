@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/ruggeduinos/
 layout: page
 title: Arduino API
 ---

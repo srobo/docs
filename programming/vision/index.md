@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/vision/
 layout: page
 title: Vision
 ---

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/motors/
 layout: page
 title: Motor Board API
 ---
