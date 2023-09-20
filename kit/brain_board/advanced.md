@@ -6,8 +6,8 @@ title: Brain Board - Advanced
 
 # Brain Board - Advanced
 
-When connected to your [Brain Board WiFi]({{ site.baseurl }}/kit/brain_board/wifi), it is possible to access the Brain Board via a terminal interface.
-The Brain Board is running Student Robotics OS, a purpose-built Linux distribution.
+When connected to your [Brain Board's WiFi]({{ site.baseurl }}/kit/brain_board/web_interface), it is possible to access the Brain Board via a terminal interface.
+The Brain Board is running the [Student Robotics OS]({{ site.baseurl}}/kit/brain_board/robot_os).
 
 <div class="warning">
 Proceed at your own risk. We only provide limited support for these advanced features.
@@ -19,7 +19,7 @@ Please bear in mind the following:
 - We may need you to upgrade the OS which will overwrite any changes.
 - Any modifications you make must be in line with [the rules]({{ site.baseurl }}/rules).
 - We reserve the right to inspect your Brain Board at any time.
-- Feel free to tinker. If you are stuck, ask in [Discord]({{ site.baseurl }}/team_admin/discord), we may be able to help.
+- Feel free to tinker. If you are stuck, ask in [Discord]({{ site.baseurl }}/tutorials/discord), we may be able to help.
 
 
 ## SSH Access

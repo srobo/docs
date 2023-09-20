@@ -38,8 +38,8 @@ speeds (▶▶ and ▶▶▶).
 
 These differences mean that your code will need to use a different mechanism to
 find the current time or to sleep within the simulation. Find out more by
-heading over to the [simulator programming docs](/docs/programming/simulator_programming).
+heading over to the [simulator programming docs](/docs/simulator/simulator_programming).
 
 ## Programming
 
-Once you have the simulator installed you can begin [programming your robot](/docs/programming/simulator_programming) in the simulator.
+Once you have the simulator installed you can begin [programming your robot](/docs/simulator/simulator_programming) in the simulator.

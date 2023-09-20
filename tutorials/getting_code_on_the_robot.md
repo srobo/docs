@@ -33,4 +33,4 @@ To re-run your program, simply remove the USB stick from the robot and plug it b
 ## Robot Logs
 
 When your program runs on the robot, the output of `print(...)` statements and any errors which occur are written to a log file on the USB stick as `log.txt`.
-These logs are also available to view live on the [web interface]({{ site.baseurl }}/kit/brain_board/wifi).
+These logs are also available to view live on the [web interface]({{ site.baseurl }}/kit/brain_board/web_interface).
