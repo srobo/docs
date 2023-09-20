@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/python/functions
 layout: page
 title: "Python: A whirlwind tour"
 ---

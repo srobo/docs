@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /kit/brain_board/updates
 layout: page
 title: Student Robotics OS
 ---

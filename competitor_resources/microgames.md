@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /tutorials/microgames
 layout: page
 title: Microgames
 ---

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/editors/pycharm
 layout: page
 title: PyCharm
 ---

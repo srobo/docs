@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /kit/assembly
 layout: page
 title: Kit Assembly
 ---

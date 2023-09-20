@@ -1,6 +1,6 @@
 ---
 redirect_from:
-  - /programming/sr/power
+  - /programming/sr/power/
 layout: page
 title: Power Board API
 ---

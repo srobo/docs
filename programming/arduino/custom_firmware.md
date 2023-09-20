@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/ruggeduinos/custom_firmware
 layout: page
 title: Arduino custom firmware
 ---
