@@ -9,7 +9,7 @@ Motor Board
 <img src="{{ site.baseurl }}/images/content/kit/mcv4b.png" alt="A phot of an un-cased motor board" title="An un-cased motor board" class="right" />
 The Motor Board can be used to control two 12V DC motors. Your kit contains two of these boards to allow you to control up to four motors. These can be used for moving your robot, although don't feel you are limited to using them for this purpose.
 
-The speed and direction of the two outputs are controlled independently through the USB connection. The board also needs power delivered from a 12V port on the Power Board in order to drive the motors. 
+The speed and direction of the two outputs are controlled independently through the USB connection. The board also needs power delivered from a 12V port on the Power Board in order to drive the motors.
 
 The motor board uses [pulse-width modulation][wiki-pwm] (PWM) to control the
 amount of power that is sent to the motors.
@@ -21,11 +21,6 @@ Board Diagram
 
 ![motor board diagram]({{ site.baseurl }}/images/content/kit/mcv4b_board_diagram.png "The Motor Board")
 
-<div class="info">
-The expansion connector labelled in the above diagram is not currently used by any part of our kit.
-Do not connect anything to this port, since incorrect use can damage the kit.
-</div>
-
 Indicators
 ----------
 
@@ -33,6 +28,7 @@ Indicators
 |------------------------|-------------------------|------------------------------
 | Power                  | Green when powered correctly<br>Red when polarity is wrong for Power In | Green
 | M{0,1} Speed/Direction | Brightness indicates speed, colour indicates direction | Off
+| M{0,1} Output Status   | Blue indicates more than 50% load (5A)<br>Red indicates a motor driver fault | Off
 | USB Power              | The USB interface is powered | On
 | USB Data               | Data is being transferred to/from the board | Off
 

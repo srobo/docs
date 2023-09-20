@@ -2,22 +2,22 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="425.19684"
    height="350.78738"
    id="svg3900"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="mcv4b_board_diagram.svg"
-   inkscape:export-filename="/home/rbarlow/srobo/git/srweb/images/content/kit/mcv4b_board_diagram.png"
-   inkscape:export-xdpi="89.958336"
-   inkscape:export-ydpi="89.958336">
+   inkscape:export-filename="mcv4b_board_diagram.png"
+   inkscape:export-xdpi="97.663254"
+   inkscape:export-ydpi="97.663254"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3902">
     <inkscape:path-effect
@@ -78,6 +78,25 @@
        effect="spiro"
        id="path-effect6896"
        is_visible="true" />
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4094-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3846-3"
+       effect="spiro"
+       lpeversion="0" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -86,16 +105,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="300.74825"
-     inkscape:cy="85.524502"
+     inkscape:zoom="2.8"
+     inkscape:cx="194.64286"
+     inkscape:cy="130.35714"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="745"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      units="mm"
      showguides="true"
@@ -104,7 +123,10 @@
      inkscape:bbox-paths="false"
      inkscape:bbox-nodes="false"
      inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:snap-bbox-midpoints="false">
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid4071"
@@ -745,7 +767,7 @@
          y="747.63757"
          x="324.21259"
          sodipodi:role="line"
-         style="font-size:18px;line-height:1.25">Motor 0</tspan></text>
+         style="font-size:18px;line-height:1.25">Motor 1</tspan></text>
     <path
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
@@ -764,7 +786,7 @@
          x="30.118114"
          y="747.63757"
          id="tspan3099"
-         style="font-size:18px;line-height:1.25">Motor 1</tspan></text>
+         style="font-size:18px;line-height:1.25">Motor 0</tspan></text>
     <path
        sodipodi:nodetypes="ccc"
        inkscape:original-d="m 212.59843,868.11008 40.91115,40.74803 69.09449,0"
@@ -824,7 +846,7 @@
          x="325.98422"
          y="783.07068"
          id="tspan3123"
-         style="font-size:18px;line-height:1.25">M0 Speed</tspan><tspan
+         style="font-size:18px;line-height:1.25">M1 Speed</tspan><tspan
          sodipodi:role="line"
          x="325.98422"
          y="805.57068"
@@ -848,7 +870,7 @@
          y="783.07068"
          x="3.5433071"
          sodipodi:role="line"
-         style="font-size:18px;line-height:1.25">M1 Speed</tspan><tspan
+         style="font-size:18px;line-height:1.25">M0 Speed</tspan><tspan
          id="tspan3133"
          y="805.57068"
          x="3.5433071"
@@ -921,11 +943,19 @@
        sodipodi:nodetypes="ccc" />
     <path
        sodipodi:nodetypes="ccc"
-       inkscape:original-d="m 168.98947,968.59649 -12.5647,-12.40157 h -49.6063"
+       inkscape:original-d="m 182.5609,838.86499 -23.10041,22.223 h -51.21345"
        inkscape:path-effect="#path-effect3846"
        id="path3844"
-       d="m 168.98947,968.59649 -12.5647,-12.40157 h -49.6063"
+       d="m 182.5609,838.86499 -23.10041,22.223 h -51.21345"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccc"
+       inkscape:original-d="m 238.48173,838.75266 23.10041,22.223 h 51.21345"
+       inkscape:path-effect="#path-effect3846-3"
+       id="path3844-4"
+       d="m 238.48173,838.75266 23.10041,22.223 h 51.21345"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart-6)"
        inkscape:connector-curvature="0" />
     <text
        id="text3850"
@@ -940,19 +970,35 @@
          sodipodi:role="line">Serial</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="12.114737"
-       y="950.57068"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="61.063747"
+       y="854.77576"
        id="text3856"><tspan
-         style="font-size:18px;line-height:1.25"
+         style="font-size:18px;line-height:1.25;text-align:center;text-anchor:middle"
          sodipodi:role="line"
-         x="12.114737"
-         y="950.57068"
-         id="tspan3860">Expansion</tspan><tspan
-         style="font-size:18px;line-height:1.25"
+         x="61.063747"
+         y="854.77576"
+         id="tspan3864">M0 Output</tspan><tspan
+         style="font-size:18px;line-height:1.25;text-align:center;text-anchor:middle"
          sodipodi:role="line"
-         x="12.114737"
-         y="973.07068"
-         id="tspan3864">connector</tspan></text>
+         x="61.063747"
+         y="877.27576"
+         id="tspan503">Status</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="359.76059"
+       y="854.77576"
+       id="text3856-2"><tspan
+         style="font-size:18px;line-height:1.25;text-align:center;text-anchor:middle"
+         sodipodi:role="line"
+         x="359.76059"
+         y="854.77576"
+         id="tspan3864-8">M1 Output</tspan><tspan
+         style="font-size:18px;line-height:1.25;text-align:center;text-anchor:middle"
+         sodipodi:role="line"
+         x="359.76059"
+         y="877.27576"
+         id="tspan503-2">Status</tspan></text>
   </g>
 </svg>

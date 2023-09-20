@@ -9,8 +9,7 @@ HobbyKing HKE4 Chargers
 ![hobby king e4 charger]({{ site.baseurl }}/images/content/kit/battery_charger_HKE4.png "A HobbyKing E4 battery charger")
 
 Some kits will contain a black HobbyKing HKE4 charger.
-This charger is simpler and easier to use than the iMAX B6 charger,
- while retaining all of the functionality required for charging the batteries supplied with the kit.
+This charger is simpler and easier to use than the iMAX B6 charger, while retaining all of the functionality required for charging the batteries supplied with the kit.
 The charging lead is cable-tied to the charger and you must not remove this cable.
 The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
 
@@ -41,7 +40,5 @@ You must then:
 1.   Unplug the battery from the charging lead, do not unplug the charging lead from the charger.
 1.   Unplug the charger from the mains.
 
-Generally, the battery does not have to be charged to 100% every time you want
-to use it. However, before storing the battery for longer periods of time, it
-is best to charge it to approximately 70% because storing it with 100% charge
-puts stress on the battery, reducing its life.
+Generally, the battery does not have to be charged to 100% every time you want to use it.
+However, before storing the battery for longer periods of time, it is best to charge it to approximately 70% because storing it with 100% charge puts stress on the battery, reducing its life.

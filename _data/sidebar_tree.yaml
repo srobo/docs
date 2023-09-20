@@ -4,10 +4,8 @@ tree:
   - url: /
     title: Introduction
   - url: /kit/
-    title: Kits
+    title: Kit
     tree:
-    - url: /kit/assembly
-      title: Assembly
     - url: /kit/batteries/
       title: Batteries
       tree:
@@ -18,74 +16,98 @@ tree:
     - url: /kit/brain_board/
       title: Brain Board
       tree:
-        - url: /kit/brain_board/updates
-          title: Updates
+        - url: /kit/brain_board/robot_os
+          title: Student Robotics OS
+        - url: /kit/brain_board/python_libraries
+          title: Python Libraries
+        - url: /kit/brain_board/web_interface
+          title: Web Interface
         - url: /kit/brain_board/advanced
           title: Advanced
     - url: /kit/motor_board
       title: Motor Board
     - url: /kit/power_board
       title: Power Board
-    - url: /kit/ruggeduino
-      title: Ruggeduino
     - url: /kit/servo_board
       title: Servo Board
-    - url: /kit/safety-regulations
-      title: Safety Regulations
-    - url: /kit/wifi
-      title: WiFi
+    - url: /kit/arduino
+      title: Arduino
   - url: /programming/
     title: Programming
     tree:
-    - url: /programming/getting_code_on_the_robot
-      title: Getting Code on the Robot
-    - url: /programming/python/
-      title: Python
+    - url: /programming/robot_api/
+      title: Robot API
       tree:
-      - url: /programming/python/functions
-        title: Functions
-      - url: /programming/python/libraries
-        title: Libraries
-    - url: /programming/sr/
-      title: sr
+      - url: /programming/robot_api/comp_mode
+        title: Competition Mode
+    - url: /programming/leds
+      title: Brain Board LED API
+    - url: /programming/motors
+      title: Motor Board API
+    - url: /programming/power
+      title: Power Board API
+    - url: /programming/servos
+      title: Servo Board API
+    - url: /programming/vision/
+      title: Vision
       tree:
-      - url: /programming/sr/cheat_sheet
-        title: API Quick Reference
-      - url: /programming/sr/leds/
-        title: LEDs
-      - url: /programming/sr/motors/
-        title: Motors
-      - url: /programming/sr/power/
-        title: Power
-      - url: /programming/sr/ruggeduinos/
-        title: Ruggeduinos
-        tree:
-        - url: /programming/sr/ruggeduinos/custom_firmware
-          title: Custom Firmware
-      - url: /programming/sr/servos/
-        title: Servos
-      - url: /programming/sr/vision/
-        title: Vision
-        tree:
-        - url: /programming/sr/vision/markers
-          title: Markers
-    - url: /programming/editors/
-      title: Code Editors
+      - url: /programming/vision/markers
+        title: Markers
+      - url: /programming/vision/position
+        title: Position
+      - url: /programming/vision/orientation
+        title: Orientation
+    - url: /programming/arduino/
+      title: Arduino API
       tree:
-      - url: /programming/editors/pycharm
-        title: PyCharm
-      - url: /programming/editors/vscode
-        title: Visual Studio Code
+      - url: /programming/arduino/sr_firmware
+        title: SR Firmware
+      - url: /programming/arduino/extended_sr_firmware
+        title: Extended SR Firmware
+      - url: /programming/arduino/custom_firmware
+        title: Custom Firmware
+    - url: /programming/cheat_sheet
+      title: API Quick Reference
   - url: /rules/
     title: Rules
     tree:
+    #- url: /rules/code_of_conduct
+    #  title: Code Of Conduct
+    #- url: /rules/safety_regulations
+    #  title: Safety Regulations
     - url: /rules/archive
       title: Game Rules Archive
+  - url: /tutorials/
+    title: Tutorials
+    tree:
+    - url: /tutorials/assembly
+      title: Kit Assembly
+    - url: /tutorials/python
+      title: An intro to Python
+    - url: /tutorials/getting_code_on_the_robot
+      title: Getting Code on the Robot
+    - url: /tutorials/basic_motor_control
+      title: Basic Motor Control
+    - url: /tutorials/editors/
+      title: Code Editors
+      tree:
+      - url: /tutorials/editors/pycharm
+        title: PyCharm
+      - url: /tutorials/editors/vscode
+        title: Visual Studio Code
+    - url: /tutorials/update_brain
+      title: Updating your brain board
+    - url: /tutorials/discord
+      title: How to use Discord
   - url: /simulator/
     title: Simulator
     tree:
-      - url: /simulator/programming/
-        title: Programming
+    - url: /simulator/simulator_programming
+      title: Simulator Programming
+    - url: /simulator/setting_up_simulator
+      title: Setting up the simulator
+    - url: /simulator/using_the_simulator
+      title: Using the simulator
   - url: /troubleshooting/
     title: Troubleshooting
     tree:
@@ -93,17 +115,10 @@ tree:
       title: Python
     - url: /troubleshooting/interactive_troubleshooter
       title: Interactive Troubleshooter
-  - url: /tutorials/
-    title: Tutorials
+  - url: /competitor_resources/
+    title: Resources
     tree:
-    - url: /tutorials/basic_motor_control
-      title: Basic Motor Control
-    - url: /tutorials/microgames
+    - url: /competitor_resources/microgames
       title: Microgames
-    - url: /tutorials/python
-      title: Python
-  - url: /team_admin/
-    title: Team Admin
-    tree:
-    - url: /team_admin/discord
-      title: Discord Server
+    - url: /competitor_resources/markers
+      title: Game markers
