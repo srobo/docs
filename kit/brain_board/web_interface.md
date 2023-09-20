@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /kit/wifi
 layout: page
 title: Web Interface
 ---

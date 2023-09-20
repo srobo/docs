@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/python/
 layout: page
 title: Programming
 ---

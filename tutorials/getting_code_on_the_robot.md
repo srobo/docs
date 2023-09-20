@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/getting_code_on_the_robot
 layout: page
 title: Getting Code on the Robot
 ---

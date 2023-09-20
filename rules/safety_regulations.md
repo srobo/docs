@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /kit/safety-regulations
 layout: page
 title: Safety Regulations
 ---

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/sr/leds/
 layout: page
 title: Brain Board LED API
 ---

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /programming/editors/
 layout: page
 title: Code Editors
 ---
