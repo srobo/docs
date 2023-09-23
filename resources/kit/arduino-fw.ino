@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-// We communicate with the ruggeduino at 115200 baud.
+// We communicate with the Arduino at 115200 baud.
 #define SERIAL_BAUD 115200
 
 #define FW_VER 1
