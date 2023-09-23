@@ -202,9 +202,9 @@ for marker in markers:
 ### Setting the mode of a pin
 
 ~~~~~ python
-robot.ruggeduino.pins[4].mode = OUTPUT
-robot.ruggeduino.pins[4].mode = INPUT
-robot.ruggeduino.pins[4].mode = INPUT_PULLUP
+robot.arduino.pins[4].mode = OUTPUT
+robot.arduino.pins[4].mode = INPUT
+robot.arduino.pins[4].mode = INPUT_PULLUP
 ~~~~~
 
 ### Digital Write
@@ -212,10 +212,10 @@ robot.ruggeduino.pins[4].mode = INPUT_PULLUP
 You can set the output for a pin of the Arduino:
 
 ~~~~~ python
-robot.ruggeduino.pins[2].mode = OUTPUT
+robot.arduino.pins[2].mode = OUTPUT
 
-robot.ruggeduino.pins[2].digital_write(True)
-robot.ruggeduino.pins[2].digital_write(False)
+robot.arduino.pins[2].digital_write(True)
+robot.arduino.pins[2].digital_write(False)
 ~~~~~
 
 ### Digital Read
@@ -223,11 +223,11 @@ robot.ruggeduino.pins[2].digital_write(False)
 You can read a digital value from the pins of the Arduino:
 
 ~~~~~ python
-robot.ruggeduino.pins[3].mode = INPUT
-robot.ruggeduino.pins[5].mode = INPUT_PULLUP
+robot.arduino.pins[3].mode = INPUT
+robot.arduino.pins[5].mode = INPUT_PULLUP
 
-value = robot.ruggeduino.pins[3].digital_read()
-value = robot.ruggeduino.pins[5].digital_read()
+value = robot.arduino.pins[3].digital_read()
+value = robot.arduino.pins[5].digital_read()
 ~~~~~
 
 ### Analogue Read
@@ -235,9 +235,9 @@ value = robot.ruggeduino.pins[5].digital_read()
 You can read an analogue value from the analogue pins of the Arduino:
 
 ~~~~~ python
-robot.ruggeduino.pins[A0].mode = INPUT
+robot.arduino.pins[A0].mode = INPUT
 
-value = robot.ruggeduino.pins[A0].analogue_read()
+value = robot.arduino.pins[A0].analogue_read()
 ~~~~~
 
 ## Metadata
