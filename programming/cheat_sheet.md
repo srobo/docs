@@ -237,7 +237,7 @@ You can read an analogue value from the analogue pins of the Arduino:
 ~~~~~ python
 robot.arduino.pins[A0].mode = INPUT
 
-value = robot.arduino.pins[A0].analogue_read()
+value = robot.arduino.pins[A0].analog_read()
 ~~~~~
 
 ## Metadata
