@@ -83,3 +83,11 @@ Do not store a discharged battery for more than a few days without charging it, 
 Student Robotics provides two different kinds of chargers with our kit, the [iMAX B6](/docs/kit/batteries/imax_b6_charger), and the [HobbyKing HKE4](/docs/kit/batteries/hke4_charger).
 You should only use the battery charger provided by Student Robotics to charge the batteries provided in the kit.
 For precise instructions on how to charge your batteries with the provided charger, please see the charger specific documentation page.
+
+
+## Further guidance
+
+Most of the batteries used in the kit come from the manufacturer called Overlander.
+Overlander provides [guidance][overlander_guidance] on safe charging and usage of their batteries that we recommend you read.
+
+[overlander_guidance]: https://www.overlander.co.uk/pub/media/datasheets/Fullymax_warning_sheet_Li_Poly_2_.pdf
