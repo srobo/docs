@@ -73,8 +73,11 @@ Your robot has one servo board attached, the jaws of the robot are controlled by
 |-------|-----------|
 | 0     | Left Jaw  |
 | 1     | Right Jaw |
+| 2     | Lifter    |
 
-Setting each servo to -1 fully opens the respective jaw.
+Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully opens them.
+
+Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
 
 The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `R.servo_board`.
 
@@ -118,8 +121,8 @@ The LEDs are attached to digital pins 3-4:
 
 | Pin | Location      | Required Mode |
 |-----|---------------|---------------|
-| 3   | Red (left)    | `OUTPUT`      |
-| 4   | Green (right) | `OUTPUT`      |
+| 3   | Red (lower)   | `OUTPUT`      |
+| 4   | Green (upper) | `OUTPUT`      |
 
 Using the `digital_write` method, you can set these to True (On) or False (Off).
 
@@ -132,24 +135,6 @@ system of fiducial markers which the physical robot's camera can detect.
 The information returned by the simulated vision API is similar to the physical
 robot's [vision API](/docs/programming/vision/), however there are a number
 of differences as are noted in the vision docs.
-
-### Pressure sensing
-
-Your simulated robot has two deployable 'fingers' that are able to lift the front of the robot up. These fingers have pressure sensors on their tips, with these you can determine the weight of an object your robot is carrying.
-
-The servos to move the fingers are attached to servo pins 2 and 3 in the servo board:
-
-| Servo | Location           |
-|-------|--------------------|
-| 2     | Left finger servo  |
-| 3     | Right finger servo |
-
-Once the fingers are deployed, your robot will have reduced manoeuvrability, but you will be able to sense the total pressure on the front of the robot. The pressure measuring devices on the end of the fingers are available as analog inputs on A6 and A7. They are meant to emulate sensors that output a value proportional to pressure, the higher the pressure the higher the voltage reading.
-
-| Pin | Location                     |
-|-----|------------------------------|
-| A6  | Left finger pressure sensor  |
-| A7  | Right finger pressure sensor |
 
 ## Simulated Time
 
