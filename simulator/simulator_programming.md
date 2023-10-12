@@ -124,7 +124,7 @@ The LEDs are attached to digital pins 3-4:
 | 3   | Red (lower)   | `OUTPUT`      |
 | 4   | Green (upper) | `OUTPUT`      |
 
-Using the `digital_write` method, you can set these to True (On) or False (Off).
+Using the `digital_write` method, you can set these to `True` (On) or `False` (Off).
 
 ### Vision
 
