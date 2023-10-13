@@ -41,14 +41,14 @@ robot.kch.leds[LED_C].colour = Colour.OFF
 The available colours are:
 
 ~~~~~ python
-OFF
-RED
-YELLOW
-GREEN
-CYAN
-BLUE
-MAGENTA
-WHITE
+Colour.OFF
+Colour.RED
+Colour.YELLOW
+Colour.GREEN
+Colour.CYAN
+Colour.BLUE
+Colour.MAGENTA
+Colour.WHITE
 ~~~~~
 
 Alternatively you can set the red, green and blue channels for a given LED separately:
