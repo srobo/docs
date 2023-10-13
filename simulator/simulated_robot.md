@@ -2,50 +2,11 @@
 redirect_from:
   - /simulator/programming/
 layout: page
-title: Simulator Programming
+title: The Simulated Robot
 ---
 
-Simulator Programming
-=====================
-
-## Developing your code
-
-On first run, the robot will execute an example program for convenience. This program will be copied to the directory `competition-simulator-<version>` is stored in:
-
-```
-.
-├── competition-simulator-<version>
-│   ├── ...
-│   └─ worlds
-│       └── Arena.wbt
-└── robot.py
-```
-
-Your code should be developed in `robot.py`.
-
-<div class="warning">
-  Only your controller code will be present in the competition environment.
-</div>
-
-### Running multiple robots
-
-To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner. Code can be placed in a `zone-<zone>` directory to run in starting zone `<zone>`:
-
-```
-.
-├── competition-simulator-<version>
-│   ├── ...
-│   └─ worlds
-│       └── Arena.wbt
-├── zone-0
-│   └── robot.py
-└── zone-1
-   └── robot.py
-```
-
-This will run two robots in the arena, each with different `robot.py`s. You can run as many or as few zones as you like, in any combination.
-
-## Robot
+The Simulated Robot
+===================
 
 There is a pre-built robot used in the simulator.
 To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
@@ -53,7 +14,7 @@ To allow this simulated robot to move around and sense its environment a set of 
 The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
 The main differences are:
 
-- the way that [time is handled](#simulated-time),
+- the way that [time is handled]({{ site.baseurl }}/simulator/using_the_simulator#time),
 - the simulated arduino only offering the plain SR Firmware interactions, and
 - the simulated robot not having the Brain Board LEDs.
 
@@ -63,13 +24,13 @@ The main differences are:
   fluctuate slightly between measurements or operations.
 </div>
 
-### Motors
+## Motors
 
 Your robot has one motor board attached, the left wheel is connected to the first port, and the right wheel to the second.
 
 The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `robot.motor_board`.
 
-### Servos
+## Servos
 
 Your robot has one servo board attached, the jaws of the robot are controlled by a pair of servos:
 
@@ -85,7 +46,7 @@ Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises i
 
 The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `robot.servo_board`.
 
-### Arduino
+## Arduino
 
 Your robot has a microswitch and six distance sensors, attached to the digital and analog pins respectively. These are all attached to a single arduino.
 
@@ -93,7 +54,7 @@ The simulated arduino behaves like one with the ordinary SR Firmware and does no
 
 Make sure you have set the correct [pin_mode]({{ site.baseurl }}/programming/arduino/sr_firmware#setting-pin-modes), depending on what device you're using.
 
-#### Microswitches
+### Microswitches
 
 The rear of the robot has a wide microswitch.
 
@@ -105,7 +66,7 @@ The microswitch is attached to digital pin 2:
 
 This is shown as a red coloured block on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is currently actuated.
 
-#### Distance Sensors
+### Distance Sensors
 
 Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
 
@@ -121,7 +82,7 @@ Analogous to ultrasound sensors, distance sensors allow you to retrieve the dist
 These are shown as blue boards with silver transceivers on the robot. The `analog_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
 
-#### LEDs
+### LEDs
 
 The LEDs are attached to digital pins 3-4:
 
@@ -132,7 +93,7 @@ The LEDs are attached to digital pins 3-4:
 
 Using the `digital_write` method, you can set these to `True` (On) or `False` (Off).
 
-### Vision
+## Vision
 
 The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
@@ -141,21 +102,3 @@ system of fiducial markers which the physical robot's camera can detect.
 The simulated vision system matches the physical robot's
 [vision API]({{ site.baseurl }}/programming/vision/), with small differences as
 noted in the vision docs.
-
-## Simulated Time
-
-In the simulated environment, time advances only at the pace that the simulator
-is run. As a result, using `time.time` to know how long your robot has been
-running for or `time.sleep` to wait for some duration will be unreliable.
-
-As a result the API present in the simulator supports a slightly different
-approach to handling time.
-The methods `robot.time` and `robot.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
-
-<div class="warning" markdown="1">
-
-  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a `robot.sleep` even if with a small value.
-  **If in doubt add an `robot.sleep`**.
-  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any `robot.sleep` and is expecting time to advance.
-
-</div>

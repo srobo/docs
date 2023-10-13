@@ -36,10 +36,56 @@ speed multiplier shows 0.00×). You could choose to step a single time increment
 run the simulator at real speed (▶), or run the simulator at various faster
 speeds (▶▶ and ▶▶▶).
 
-These differences mean that your code will need to use a different mechanism to
-find the current time or to sleep within the simulation. Find out more by
-heading over to the [simulator programming docs](/docs/simulator/simulator_programming).
+### Programming for Simulated Time
 
-## Programming
+As time in the simulator is part of the simulation itself, your code must be careful not to block for too long.
 
-Once you have the simulator installed you can begin [programming your robot](/docs/simulator/simulator_programming) in the simulator.
+For example, if you have used Python before and have used `time.time` to determine the current time or `time.sleep` to wait for some duration, you will find these to be unreliable in the simulator.
+
+Instead you must use `robot.time` and `robot.sleep`, which are provided as direct replacements of `time.time` and `time.sleep` respectively.
+These methods are also available on the physical kits.
+
+<div class="warning" markdown="1">
+
+  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a `robot.sleep` even if with a small value.
+  **If in doubt add an `robot.sleep`**.
+  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any `robot.sleep` and is expecting time to advance.
+
+</div>
+
+## Developing your code
+
+On first run, the robot will execute an example program for convenience. This program will be copied to the directory `competition-simulator-<version>` is stored in:
+
+```
+.
+├── competition-simulator-<version>
+│   ├── ...
+│   └─ worlds
+│       └── Arena.wbt
+└── robot.py
+```
+
+Your code should be developed in `robot.py`.
+
+<div class="warning">
+  Only your controller code will be present in the competition environment.
+</div>
+
+### Running multiple robots
+
+To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner. Code can be placed in a `zone-<zone>` directory to run in starting zone `<zone>`:
+
+```
+.
+├── competition-simulator-<version>
+│   ├── ...
+│   └─ worlds
+│       └── Arena.wbt
+├── zone-0
+│   └── robot.py
+└── zone-1
+   └── robot.py
+```
+
+This will run two robots in the arena, each with different `robot.py`s. You can run as many or as few zones as you like, in any combination.
