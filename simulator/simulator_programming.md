@@ -54,7 +54,7 @@ The simulator’s API is very similar to the real SR API described in the [progr
 The main differences are:
 
 - the way that [time is handled](#simulated-time),
-- the simulated arduino only offering the plain SR firmware style interactions, and
+- the simulated arduino only offering the plain SR Firmware interactions, and
 - the simulated robot not having the Brain Board LEDs.
 
 <div class="info">
@@ -88,6 +88,8 @@ The servo board has the part code `srXYZ2`, but since only a single servo board 
 ### Arduino
 
 Your robot has a microswitch and six distance sensors, attached to the digital and analog pins respectively. These are all attached to a single arduino.
+
+The simulated arduino behaves like one with the ordinary SR Firmware and does not offer any of the extended or custom arduino behaviours.
 
 Make sure you have set the correct [pin_mode]({{ site.baseurl }}/programming/arduino/sr_firmware#setting-pin-modes), depending on what device you're using.
 
