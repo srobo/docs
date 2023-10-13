@@ -51,7 +51,7 @@ There is a pre-built robot used in the simulator.
 To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
 
 The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
-The main differences are the way that [time is handled](#simulated-time), some discrepancies in the vision API we hope to resolve soon and the simulated robot not having the Brain Board LEDs.
+The main differences are the way that [time is handled](#simulated-time) and the simulated robot not having the Brain Board LEDs.
 
 <div class="info">
   To more closely reflect reality, artificial noise has been added to simulated
@@ -132,9 +132,9 @@ The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
-The information returned by the simulated vision API is similar to the physical
-robot's [vision API](/docs/programming/vision/), however there are a number
-of differences as are noted in the vision docs.
+The simulated vision system matches the physical robot's
+[vision API]({{ site.baseurl }}/programming/vision/), with small differences as
+noted in the vision docs.
 
 ## Simulated Time
 
