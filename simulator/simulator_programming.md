@@ -152,10 +152,10 @@ As a result the API present in the simulator supports a slightly different
 approach to handling time.
 The methods `robot.time` and `robot.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
 
-<div class="warning">
-  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a <code>robot.sleep</code> even if with a small value.
+<div class="warning" markdown="1">
 
-  <b>If in doubt add an <code>robot.sleep</code></b>.
+  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a `robot.sleep` even if with a small value.
+  **If in doubt add an `robot.sleep`**.
+  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any `robot.sleep` and is expecting time to advance.
 
-  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any <code>robot.sleep</code> and is expecting time to advance.
 </div>
