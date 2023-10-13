@@ -6,14 +6,14 @@ title: Setting up the simulator
 Setting up the simulator
 ========================
 
-### Prerequisites
+## Prerequisites
 
 You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 300MB).
 This is the platform we run our simulation in.
 
 Version "R2023b" of Webots is supported.
 
-#### Python Version
+### Python Version
 
 You will also need Python installed.
 
@@ -26,7 +26,7 @@ You will also need Python installed.
 There are a small number of [external libraries]({{ site.baseurl }}/kit/brain_board/python_libraries) which will be available to your robot code during the competition.
 Note that for local development you will need to install these yourself.
 
-### Installing the simulation
+## Installing the simulation
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
 2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/TODO/competition-simulator-TODO.zip), the latest version is TODO, released on TODO.
@@ -49,7 +49,7 @@ You may receive a warning about your computer's GPU not being good enough, which
   On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
 </div>
 
-#### Changing your version of Python
+### Changing your version of Python
 
 If webots is not picking any version of Python or is picking up the wrong one then you'll need to change it.
 When this happens Webots will print errors to its console and your robot will not move.
@@ -75,7 +75,7 @@ You'll need to ensure a matching version of Python is installed. If you're still
 having problems, ask for help in [`#simulator-help`][simulator-help] in
 [Discord][discord].
 
-### Updates
+## Updates
 
 Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-<version>` directory, and re-download it using the above link.
 
