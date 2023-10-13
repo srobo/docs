@@ -51,7 +51,11 @@ There is a pre-built robot used in the simulator.
 To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
 
 The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
-The main differences are the way that [time is handled](#simulated-time) and the simulated robot not having the Brain Board LEDs.
+The main differences are:
+
+- the way that [time is handled](#simulated-time),
+- the simulated arduino only offering the plain SR firmware style interactions, and
+- the simulated robot not having the Brain Board LEDs.
 
 <div class="info">
   To more closely reflect reality, artificial noise has been added to simulated
