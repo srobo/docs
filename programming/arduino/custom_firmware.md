@@ -12,6 +12,10 @@ On this page we talk specifically about Arduinos.
 However this page is applicable to opening any device that shows up as a serial port.
 </div>
 
+<div class="info">
+  This documentation refers to a feature which is only available on the physical robot kits.
+</div>
+
 
 ## Ignoring a device
 
