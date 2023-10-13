@@ -83,7 +83,7 @@ Therefore to stop your motors you must explicitly set the power output to zero:
 ~~~~~ python
 # Put motor board srABC1, channel 1 at 25% power for 2.5 seconds:
 robot.motor_boards["srABC1"].motors[1].power = 0.25
-time.sleep(2.5)       # wait for 2.5 seconds
+robot.sleep(2.5)      # wait for 2.5 seconds
 robot.motor_boards["srABC1"].motors[1].power = 0
 ~~~~~
 
@@ -97,7 +97,7 @@ robot.motor_boards["srABC1"].motors[0].power = 1
 robot.motor_boards["srABC1"].motors[1].power = -1
 
 # Wait a while for the robot to move
-time.sleep(3)
+robot.sleep(3)
 
 # Stop both motors
 robot.motor_boards["srABC1"].motors[0].power = 0
