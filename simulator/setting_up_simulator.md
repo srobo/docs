@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Setting up the simulator
+title: Setting up the Simulator
 ---
 
-Setting up the simulator
+Setting up the Simulator
 ========================
 
 ## Prerequisites

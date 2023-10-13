@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Using the simulator
+title: Using the Simulator
 ---
 
-Using the simulator
+Using the Simulator
 ===================
 
 ## Overview
