@@ -7,7 +7,7 @@ title: Programming
 
 # Programming Your Robot
 
-Robots build using the SR kit are programmed with [Python 3.11](https://www.python.org) which is made possible with a custom-built Python library, `sr.robot3`.
+Robots built using the SR kit are programmed with [Python 3.11](https://www.python.org) which is made possible with a custom-built Python library, `sr.robot3`.
 This library deals with talking to the boards and doing all the complicated bits so you can focus on the fun bits.
 
 The [Robot API]({{ site.baseurl }}/programming/robot_api/) page has the details about this library.
