@@ -63,7 +63,7 @@ The main differences are the way that [time is handled](#simulated-time), some d
 
 Your robot has one motor board attached, the left wheel is connected to the first port, and the right wheel to the second.
 
-The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `R.motor_board`.
+The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `robot.motor_board`.
 
 ### Servos
 
@@ -79,7 +79,7 @@ Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully
 
 Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
 
-The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `R.servo_board`.
+The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `robot.servo_board`.
 
 ### Arduino
 
@@ -144,12 +144,12 @@ running for or `time.sleep` to wait for some duration will be unreliable.
 
 As a result the API present in the simulator supports a slightly different
 approach to handling time.
-The methods `R.time` and `R.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
+The methods `robot.time` and `robot.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
 
 <div class="warning">
-  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a <code>R.sleep</code> even if with a small value.
+  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a <code>robot.sleep</code> even if with a small value.
 
-  <b>If in doubt add an <code>R.sleep</code></b>.
+  <b>If in doubt add an <code>robot.sleep</code></b>.
 
-  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any <code>R.sleep</code> and is expecting time to advance.
+  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any <code>robot.sleep</code> and is expecting time to advance.
 </div>
