@@ -106,8 +106,8 @@ tree:
       title: Setting up the Simulator
     - url: /simulator/using_the_simulator
       title: Using the Simulator
-    - url: /simulator/simulator_programming
-      title: Simulator Programming
+    - url: /simulator/simulated_robot
+      title: The Simulated Robot
   - url: /troubleshooting/
     title: Troubleshooting
     tree:
