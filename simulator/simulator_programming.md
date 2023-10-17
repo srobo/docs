@@ -51,7 +51,11 @@ There is a pre-built robot used in the simulator.
 To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
 
 The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
-The main differences are the way that [time is handled](#simulated-time), some discrepancies in the vision API we hope to resolve soon and the simulated robot not having the Brain Board LEDs.
+The main differences are:
+
+- the way that [time is handled](#simulated-time),
+- the simulated arduino only offering the plain SR Firmware interactions, and
+- the simulated robot not having the Brain Board LEDs.
 
 <div class="info">
   To more closely reflect reality, artificial noise has been added to simulated
@@ -63,7 +67,7 @@ The main differences are the way that [time is handled](#simulated-time), some d
 
 Your robot has one motor board attached, the left wheel is connected to the first port, and the right wheel to the second.
 
-The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `R.motor_board`.
+The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `robot.motor_board`.
 
 ### Servos
 
@@ -79,11 +83,13 @@ Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully
 
 Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
 
-The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `R.servo_board`.
+The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `robot.servo_board`.
 
 ### Arduino
 
 Your robot has a microswitch and six distance sensors, attached to the digital and analog pins respectively. These are all attached to a single arduino.
+
+The simulated arduino behaves like one with the ordinary SR Firmware and does not offer any of the extended or custom arduino behaviours.
 
 Make sure you have set the correct [pin_mode]({{ site.baseurl }}/programming/arduino/sr_firmware#setting-pin-modes), depending on what device you're using.
 
@@ -132,9 +138,9 @@ The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
-The information returned by the simulated vision API is similar to the physical
-robot's [vision API](/docs/programming/vision/), however there are a number
-of differences as are noted in the vision docs.
+The simulated vision system matches the physical robot's
+[vision API]({{ site.baseurl }}/programming/vision/), with small differences as
+noted in the vision docs.
 
 ## Simulated Time
 
@@ -144,12 +150,12 @@ running for or `time.sleep` to wait for some duration will be unreliable.
 
 As a result the API present in the simulator supports a slightly different
 approach to handling time.
-The methods `R.time` and `R.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
+The methods `robot.time` and `robot.sleep` are provided as a direct replacement of `time.time` and `time.sleep` respectively and can be used anywhere the previous methods were used.
 
-<div class="warning">
-  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a <code>R.sleep</code> even if with a small value.
+<div class="warning" markdown="1">
 
-  <b>If in doubt add an <code>R.sleep</code></b>.
+  Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a `robot.sleep` even if with a small value.
+  **If in doubt add an `robot.sleep`**.
+  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any `robot.sleep` and is expecting time to advance.
 
-  If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any <code>R.sleep</code> and is expecting time to advance.
 </div>

@@ -49,6 +49,9 @@ Try pausing movement while taking an image.
 
 save
 :   Take a photo using the webcam, draw a box around the detected markers and save it to the provided location.
+    <div class="info">
+      This function is only available on the physical robot kits.
+    </div>
 
 ~~~~~ python
 from sr.robot3 import *
@@ -60,6 +63,9 @@ robot.camera.save(robot.usbkey / "initial-view.jpg")
 
 capture
 :   Take a photo using the webcam, and return the image data as an OpenCV array.
+    <div class="info">
+      This function is only available on the physical robot kits.
+    </div>
 
 ~~~~~ python
 import cv2
@@ -108,9 +114,15 @@ size
 
 pixel_centre
 :   A [`PixelCoordinates`](#pixel-coordinates) object describing the position of the centre of the marker in the image.
+    <div class="info">
+      This attribute is only available on the physical robot kits.
+    </div>
 
 pixel_corners
 :   A list of 4 [`PixelCoordinates`](#pixel-coordinates) objects, each representing the position of a corner of the marker in the image.
+    <div class="info">
+      This attribute is only available on the physical robot kits.
+    </div>
 
 position
 :   A `Position` object describing the position of the marker.
@@ -150,6 +162,10 @@ orientation
 
 
 ### Pixel Coordinates
+
+<div class="info">
+  This documentation refers to a feature which is only available on the physical robot kits.
+</div>
 
 A named tuple of `x` and `y` coordinates for the point, in pixels relative to the top left of the image.
 

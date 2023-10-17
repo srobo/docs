@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Setting up the simulator
+title: Setting up the Simulator
 ---
 
-Setting up the simulator
+Setting up the Simulator
 ========================
 
-### Prerequisites
+## Prerequisites
 
 You need to download and install [Webots](https://cyberbotics.com/#download) (the download is around 300MB).
 This is the platform we run our simulation in.
 
 Version "R2023b" of Webots is supported.
 
-#### Python Version
+### Python Version
 
 You will also need Python installed.
 
@@ -26,7 +26,9 @@ You will also need Python installed.
 There are a small number of [external libraries]({{ site.baseurl }}/kit/brain_board/python_libraries) which will be available to your robot code during the competition.
 Note that for local development you will need to install these yourself.
 
-### Installing the simulation
+Once you have downloaded the simulation, the libraries can be installed with `pip install -r competition-simulator.../libraries.txt`.
+
+## Installing the simulation
 
 The simulation for the SR2024 competition will be released at Kickstart.
 
@@ -39,6 +41,7 @@ The simulation for the SR2024 competition will be released at Kickstart.
     simulation
     ├── competition-simulator-<version>
     │   ├── ...
+    │   └─ libraries.txt
     │   └─ worlds
     │       └── Arena.wbt
     └── robot.py
@@ -55,7 +58,7 @@ You may receive a warning about your computer's GPU not being good enough, which
   On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
 </div>
 
-#### Changing your version of Python
+### Changing your version of Python
 
 If webots is not picking any version of Python or is picking up the wrong one then you'll need to change it.
 When this happens Webots will print errors to its console and your robot will not move.
@@ -81,7 +84,7 @@ You'll need to ensure a matching version of Python is installed. If you're still
 having problems, ask for help in [`#simulator-help`][simulator-help] in
 [Discord][discord].
 
-### Updates
+## Updates
 
 Occasionally, we may release an update to the simulation. To update, you will need to delete the `competition-simulator-<version>` directory, and re-download it using the above link.
 

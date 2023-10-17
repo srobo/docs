@@ -8,6 +8,10 @@ title: Brain Board LED API
 Brain Board LED API
 ===================
 
+<div class="info">
+  This documentation refers to a feature which is only available on the physical robot kits.
+</div>
+
 The KCH board provides diagnostic information about the state of your robot through a collection of preconfigured and user-controllable LEDs.
 It is part of the [Brain Board](/docs/kit/brain_board) assembly and will be found attached to the top of the Raspberry Pi.
 
