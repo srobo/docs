@@ -103,14 +103,14 @@ This is shown as a red coloured block on the robot. Using the `digital_read`  me
 
 Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
 
-| Pin | Location    |
-|-----|-------------|
-| A0  | Front Left  |
-| A1  | Front Right |
-| A2  | Left        |
-| A3  | Right       |
-| A4  | Front       |
-| A5  | Back        |
+| Pin | Location    | Required Mode |
+|-----|-------------|---------------|
+| A0  | Front Left  | `INPUT`       |
+| A1  | Front Right | `INPUT`       |
+| A2  | Left        | `INPUT`       |
+| A3  | Right       | `INPUT`       |
+| A4  | Front       | `INPUT`       |
+| A5  | Back        | `INPUT`       |
 
 These are shown as blue boards with silver transceivers on the robot. The `analog_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
