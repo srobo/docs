@@ -102,12 +102,12 @@ tree:
   - url: /simulator/
     title: Simulator
     tree:
-    - url: /simulator/simulator_programming
-      title: Simulator Programming
     - url: /simulator/setting_up_simulator
       title: Setting up the simulator
     - url: /simulator/using_the_simulator
       title: Using the simulator
+    - url: /simulator/simulator_programming
+      title: Simulator Programming
   - url: /troubleshooting/
     title: Troubleshooting
     tree:

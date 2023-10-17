@@ -73,53 +73,58 @@ Your robot has one servo board attached, the jaws of the robot are controlled by
 |-------|-----------|
 | 0     | Left Jaw  |
 | 1     | Right Jaw |
+| 2     | Lifter    |
 
-Setting each servo to -1 fully opens the respective jaw.
+Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully opens them.
+
+Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
 
 The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `R.servo_board`.
 
-### Ruggeduino
+### Arduino
 
-Your robot has a microswitch and six distance sensors, attached to the digital and analogue pins respectively. These are all attached to a single ruggeduino.
+Your robot has a microswitch and six distance sensors, attached to the digital and analog pins respectively. These are all attached to a single arduino.
 
-Because these sensors are pre-attached to the ruggeduino, you do not need to set its `pin_mode`.
+Make sure you have set the correct [pin_mode]({{ site.baseurl }}/programming/arduino/sr_firmware#setting-pin-modes), depending on what device you're using.
 
 #### Microswitches
 
+The rear of the robot has a wide microswitch.
+
 The microswitch is attached to digital pin 2:
 
-| Pin | Location |
-|-----|----------|
-| 2   | Back     |
+| Pin | Location | Required Mode |
+|-----|----------|---------------|
+| 2   | Back     | `INPUT`       |
 
 This is shown as a red coloured block on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is currently actuated.
 
 #### Distance Sensors
 
-Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analogue pins A0-A5:
+Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
 
-| Pin | Location |
-|-----|----------|
-| A0  | Front Left |
-| A1  | Front Right |
-| A2  | Left     |
-| A3  | Right    |
-| A4  | Front    |
-| A5  | Back     |
+| Pin | Location    | Required Mode |
+|-----|-------------|---------------|
+| A0  | Front Left  | `INPUT`       |
+| A1  | Front Right | `INPUT`       |
+| A2  | Left        | `INPUT`       |
+| A3  | Right       | `INPUT`       |
+| A4  | Front       | `INPUT`       |
+| A5  | Back        | `INPUT`       |
 
-These are shown as blue boards with silver transceivers on the robot. The `analogue_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
+These are shown as blue boards with silver transceivers on the robot. The `analog_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
 
 #### LEDs
 
 The LEDs are attached to digital pins 3-4:
 
-| Pin | Location |
-|-----|----------|
-| 3   | Red (Left) |
-| 4   | Green (right) |
+| Pin | Location      | Required Mode |
+|-----|---------------|---------------|
+| 3   | Red (lower)   | `OUTPUT`      |
+| 4   | Green (upper) | `OUTPUT`      |
 
-Using the `digital_write` method, you can set these to True (On) or False (Off).
+Using the `digital_write` method, you can set these to `True` (On) or `False` (Off).
 
 ### Vision
 
@@ -130,24 +135,6 @@ system of fiducial markers which the physical robot's camera can detect.
 The information returned by the simulated vision API is similar to the physical
 robot's [vision API](/docs/programming/vision/), however there are a number
 of differences as are noted in the vision docs.
-
-### Pressure sensing
-
-Your simulated robot has two deployable 'fingers' that are able to lift the front of the robot up. These fingers have pressure sensors on their tips, with these you can determine the weight of an object your robot is carrying.
-
-The servos to move the fingers are attached to servo pins 2 and 3 in the servo board:
-
-| Servo | Location           |
-|-------|--------------------|
-| 2     | Left finger servo  |
-| 3     | Right finger servo |
-
-Once the fingers are deployed, your robot will have reduced manoeuvrability, but you will be able to sense the total pressure on the front of the robot. The pressure measuring devices on the end of the fingers are available as analogue inputs on A6 and A7. They are meant to emulate sensors that output a value proportional to pressure, the higher the pressure the higher the voltage reading.
-
-| Pin | Location                     |
-|-----|------------------------------|
-| A6  | Left finger pressure sensor  |
-| A7  | Right finger pressure sensor |
 
 ## Simulated Time
 
