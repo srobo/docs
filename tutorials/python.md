@@ -112,11 +112,12 @@ Exercises: Variables and Mathematics
 
 ### Average calculator ###
 
-The first two lines of this program put two numbers entered by the user into variables `a` and `b`. (The `input` function is like `input`, but returns a number (e.g. `42`) when you enter one, rather than a string (like `"42"`).) Replace the comment with code that averages the numbers and puts them in a variable called `average`.
+The first two lines of this program put two numbers entered by the user into variables `a` and `b`.
+Replace the comment with code that averages the numbers and puts them in a variable called `average`.
 
 ~~~~~ python
-a = input("Enter first number: ")
-b = input("Enter second number: ")
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
 
 # Store the average of a and b in the variable `average`
 
