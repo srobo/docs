@@ -11,4 +11,4 @@ For guidance of where these will be located in the arena, look at this years [ru
 
 ## Download
 
-The markers for the SR2024 competition will be released at Kickstart.
+You can download all the SR2024 markers as a single [PDF file](/docs/resources/2024/sr-markers-sr2024.pdf).
