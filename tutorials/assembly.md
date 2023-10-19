@@ -10,7 +10,7 @@ title: Kit Assembly
 The Student Robotics kit contains a number of separate modules which must be connected together control your robot.
 Below is a diagram of what your assembled kit should look like.
 
-![Diagram of the kit assembly]({{ site.baseurl }}/images/content/kit/kit_assembly.png)
+![Diagram of the kit assembly]({{ site.baseurl }}/images/content/kit/kit_assembly.svg)
 
 
 ## Preparation
