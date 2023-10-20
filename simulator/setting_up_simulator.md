@@ -102,7 +102,7 @@ If you're still having problems, ask for help in [`#simulator-help`][simulator-h
 Occasionally, we may release an update to the simulation.
 To update, you will need to delete the `competition-simulator-<version>` folder and replace it with the new version that can be downloaded using the above link.
 
-If you need a specific version of the simulator, or want to see what changes have been made with each version, please see the [list of releases](release-list).
+If you need a specific version of the simulator, or want to see what changes have been made with each version, please see the [list of releases][release-list].
 
 [discord]: {{ site.baseurl }}/tutorials/discord
 [programming-help]: https://discord.com/channels/900501415548579842/900501416269971457
