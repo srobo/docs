@@ -5,13 +5,15 @@ title: Simulator
 
 # Simulator
 
-The simulator is a useful tool for becoming more familiar with our API or planning out game strategies.
+The simulator is a useful development tool, it allows you to become familiar with our API and to get started coding straight away even if you have yet to construct your robot.
+It could also be used to test out game strategies before applying them in real life.
 
 ## Programming
 
 Programming for the simulator is very similar to [programming for your physical robot]({{ site.baseurl }}/programming/).
 
-The simulator provides a subset of the `sr.robot3` [Robot API]({{ site.baseurl }}/programming/robot_api/) which is used on the physical robots. As a result code which is written for the simulator should largely work on your robot and vice-versa.
+The simulator provides a subset of the `sr.robot3` [Robot API]({{ site.baseurl }}/programming/robot_api/) which is used on the physical robots.
+As a result code which is written for the simulator should largely work on your robot and vice-versa.
 
 ## Getting started
 
