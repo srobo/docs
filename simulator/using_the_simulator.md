@@ -15,6 +15,8 @@ Within the Webots IDE, there are a few different panels:
 - At the bottom is the console, where output from your robot code will be displayed
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
 
+![Webots overview screenshot]({{ site.baseurl }}/images/content/simulator/webots-overview.png)
+
 ### Useful links
 
 - [Camera Controls](https://www.cyberbotics.com/doc/guide/the-3d-window#navigation-in-the-scene)
