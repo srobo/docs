@@ -82,7 +82,8 @@ This will also reset the state of the simulated world, allowing your robot to st
 
 ### Running multiple robots
 
-To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner. Code can be placed in a `zone-<zone>` directory to run in starting zone `<zone>`:
+To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner.
+Rather than having a single `robot.py`, code can be placed in a number of `zone-<zone>` folders to run in starting zone `<zone>`:
 
 ```
 .
@@ -96,4 +97,4 @@ To test how your robot behaves in each starting zone of the arena, you can copy 
    └── robot.py
 ```
 
-This will run two robots in the arena, each with different `robot.py`s. You can run as many or as few zones as you like, in any combination.
+This will run two robots in the arena, each with different `robot.py` files. You can run as many or as few zones as you like, in any combination.
