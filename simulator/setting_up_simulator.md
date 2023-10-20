@@ -6,19 +6,23 @@ title: Setting up the Simulator
 Setting up the Simulator
 ========================
 
-## Prerequisites
+There are three key components you will need in order to be able to use the simulator:
+
+- [Webots](#webots), the platform which runs the simulation
+- [Python](#python), the interpreter for the your robot code
+- The [world simulation](#world-simulation), which includes the SR API for use in the simulator
 
 
-### Webots
+## Webots
 
-Our simulator runs in a program called Webots.
-In order to run the simulation you first need to install Webots.
+Webots is a free open-source robot simulator. It is the program which runs the simulation.
+
 You need to download [Webots from here](https://cyberbotics.com/#download) and install it.
 
 The current supported version is "R2023b".
 
 
-### Python
+## Python
 
 You will also need Python installed.
 If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/).
@@ -42,7 +46,7 @@ pip install -r competition-simulator-<version>/libraries.txt
 ~~~~~
 
 
-## Installing the simulation
+## The world simulation {#world-simulation}
 
 The simulation for the SR2024 competition will be released at Kickstart.
 
@@ -73,7 +77,7 @@ On recent versions of macOS you may need to give Webots permission to access the
 </div>
 
 
-### Changing your version of Python
+## Changing your version of Python
 
 Sometimes Webots will not automatically detect your installed Python so we need to change it.
 When this happens Webots will print errors to its console and your robot will not move.
