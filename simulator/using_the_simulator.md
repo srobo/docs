@@ -64,7 +64,7 @@ This should be within the parent directory you created when [setting up the worl
 .
 ├── competition-simulator-<version>
 │   ├── ...
-│   └─ worlds
+│   └── worlds
 │       └── Arena.wbt
 └── robot.py
 ```
@@ -89,12 +89,12 @@ Rather than having a single `robot.py`, code can be placed in a number of `zone-
 .
 ├── competition-simulator-<version>
 │   ├── ...
-│   └─ worlds
+│   └── worlds
 │       └── Arena.wbt
 ├── zone-0
 │   └── robot.py
 └── zone-1
-   └── robot.py
+    └── robot.py
 ```
 
 This will run two robots in the arena, each with different `robot.py` files. You can run as many or as few zones as you like, in any combination.

@@ -84,8 +84,8 @@ The simulation for the SR2024 competition will be released at Kickstart.
     simulation
     ├── competition-simulator-<version>
     │   ├── ...
-    │   └─ libraries.txt
-    │   └─ worlds
+    │   ├── libraries.txt
+    │   └── worlds
     │       └── Arena.wbt
     └── robot.py
     ```
