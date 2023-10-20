@@ -57,7 +57,8 @@ These methods are also available on the physical kits.
 
 ## Developing your code
 
-On first run, the robot will execute an example program for convenience. This program will be copied to the directory `competition-simulator-<version>` is stored in:
+You should develop your code outside the folder which contains the world simulation, in a file called `robot.py`.
+This should be within the parent directory you created when [setting up the world simulation]({{ site.baseurl }}/simulator/setting_up_simulator#world-simulation).
 
 ```
 .
@@ -68,11 +69,16 @@ On first run, the robot will execute an example program for convenience. This pr
 └── robot.py
 ```
 
-Your code should be developed in `robot.py`.
+If you run the simulation without a `robot.py` file in place, the simulation will copy an example there and run it.
 
 <div class="warning">
   Only your controller code will be present in the competition environment.
 </div>
+
+### Making changes
+
+In order for your simulated robot to pick up changes to your code you need to save the files you are working on and then reload the simulation.
+This will also reset the state of the simulated world, allowing your robot to start afresh.
 
 ### Running multiple robots
 
