@@ -8,6 +8,8 @@ title: The Simulated Robot
 The Simulated Robot
 ===================
 
+<img class="right" style="width: 320px" src="{{ site.baseurl }}/images/content/simulator/sr2024-robot.png" alt="Image of the simulated robot">
+
 There is a pre-built robot used in the simulator.
 To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
 
