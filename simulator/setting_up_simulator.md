@@ -6,10 +6,10 @@ title: Setting up the Simulator
 Setting up the Simulator
 ========================
 
-# Prerequisites
+## Prerequisites
 
 
-## Webots
+### Webots
 
 Our simulator runs in a program called Webots.
 In order to run the simulation you first need to install Webots.
@@ -18,7 +18,7 @@ You need to download [Webots from here](https://cyberbotics.com/#download) and i
 The current supported version is "R2023b".
 
 
-## Python
+### Python
 
 You will also need Python installed.
 If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/).
@@ -88,6 +88,7 @@ print(sys.executable)
 ~~~~~
 
 Once you have the path you need to enter this into the Webots settings.
+
 To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command** and enter the path in that box.
 Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python311\python.exe` when using Python 3.11, where `<USERNAME>` is your login.
 
@@ -105,6 +106,4 @@ To update, you will need to delete the `competition-simulator-<version>` folder 
 If you need a specific version of the simulator, or want to see what changes have been made with each version, please see the [list of releases][release-list].
 
 [discord]: {{ site.baseurl }}/tutorials/discord
-[programming-help]: https://discord.com/channels/900501415548579842/900501416269971457
-[simulator-help]: https://discord.com/channels/900501415548579842/900501416269971458
 [release-list]: https://github.com/srobo/competition-simulator/releases
