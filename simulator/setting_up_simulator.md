@@ -13,7 +13,7 @@ Setting up the Simulator
 
 Our simulator runs in a program called Webots.
 In order to run the simulation you first need to install Webots.
-You need to download [Webots for here](https://cyberbotics.com/#download) and install it.
+You need to download [Webots from here](https://cyberbotics.com/#download) and install it.
 
 The current supported version is "R2023b".
 
