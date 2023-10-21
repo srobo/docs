@@ -20,5 +20,5 @@ As part of your team, you’ll have a trusted adult who is acting as supervisor 
 Hopefully this has given you some jumping off points to begin your journey to the competition. Check back soon for our next entry in this series, all about how to design your robot!
 
 [youtube]: https://youtube.com/user/StudentRobotics
-[discord-docs]: https://studentrobotics.org/docs/team_admin/discord
+[discord-docs]: {{ site.baseurl }}/tutorials/discord
 [one-oh-one-supervisor]: {{ '/robots_101/team_supervisor' | prepend: site.baseurl }}
