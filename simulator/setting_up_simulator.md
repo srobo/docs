@@ -61,7 +61,7 @@ pip install -r competition-simulator-<version>/libraries.txt
 
 ### Troubleshooting: setting your version of Python
 
-Sometimes Webots will not automatically detect your installed Python so we need to change it.
+Sometimes Webots will not automatically detect your installed Python in which case it will need to be set manually.
 When this happens Webots will print errors to its console and your robot will not move.
 
 You will need the full path to the version of Python that you want to use.
