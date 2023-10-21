@@ -19,7 +19,7 @@ Webots is a free open-source robot simulator. It is the program which runs the s
 
 You need to download [Webots from here](https://cyberbotics.com/#download) and install it.
 
-The current supported version is "R2023b".
+The current supported version is **R2023b**.
 
 ### Troubleshooting: performance
 
@@ -36,6 +36,9 @@ To do this on Mac, open webots and go to the menu **Webots** &rarr; **Preference
 
 You will also need Python installed.
 If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/).
+
+We recommend using **Python 3.11** as it is the newest supported version and is the version which is used on your physical robot.
+The most recent version of Python (3.12), which is the default download, is not yet supported by Webots.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
