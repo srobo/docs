@@ -44,12 +44,8 @@ pip install -r competition-simulator-<version>/libraries.txt
 
 ## Installing the simulation
 
-The simulation for the SR2024 competition will be released at Kickstart.
-
-<!--
-
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
-2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/TODO/competition-simulator-TODO.zip), the latest version is TODO, released on TODO.
+2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2024.1/competition-simulator-sr2024.1.zip), the latest version is sr2024.1, released on 2023-10-21.
 3. Unzip the simulation as a folder inside the folder you created in the first step:
     ```
     simulation
@@ -65,8 +61,6 @@ The simulation for the SR2024 competition will be released at Kickstart.
 4. Open the Webots IDE, then use that to open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer's GPU not being good enough, which can be ignored.
-
--->
 
 <div class="info">
 On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
