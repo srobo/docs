@@ -80,6 +80,7 @@ Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Program
 
 On Mac you can set the path to the Python version to use via **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd>.
 Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3` when using Python 3.11.
+If you installed Python using Homebrew, it will be in `/opt/homebrew/bin/python3.11` (or `/usr/local/bin/python3.11` on an Intel-based Mac)
 
 If you're still having problems, ask for help in [Discord][discord].
 
