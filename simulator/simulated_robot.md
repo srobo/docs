@@ -26,8 +26,8 @@ The main differences are:
 
 ## Motors
 
-Your robot has one motor board attached, the motor on the left wheel is connected to the 'Motor 0' port, and the right wheel to 'Motor 1'. These can be referenced with `robot.motor_board.motors[0]`, and 
-`robot.motor_board.motors[1]`, respectively. See [the motor board programming docs]({{ site.baseurl }}/programming/motors) for how to control these.
+Your robot has one motor board attached, the motor on the left wheel is connected to the "Motor 0" port, and the right wheel to "Motor 1". These can be referenced with `robot.motor_board.motors[0]`, and `robot.motor_board.motors[1]`, respectively.
+See [the motor board programming docs]({{ site.baseurl }}/programming/motors) for how to control these.
 
 If you want to reference the motor board by its the part code, you can use the part code `srABC1`.
 
