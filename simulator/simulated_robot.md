@@ -33,7 +33,7 @@ If you want to reference the motor board by its the part code, you can use the p
 
 ## Servos
 
-Your robot has one servo board attached, the jaws of the robot are controlled by a pair of servos:
+Your robot has one servo board attached, the jaws of the robot and the lifter are all controlled by servos.
 
 | Servo | Location  |
 |-------|-----------|
