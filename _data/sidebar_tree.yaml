@@ -77,6 +77,19 @@ tree:
     #  title: Safety Regulations
     - url: /rules/archive
       title: Game Rules Archive
+  - url: /robots_101/
+    title: Robots 101
+    tree:
+      - url: /robots_101/post_kickstart
+        title: After Kickstart
+      - url: /robots_101/design
+        title: Design
+      - url: /robots_101/code
+        title: Code
+      - url: /robots_101/theming
+        title: Theming
+      - url: /robots_101/team_supervisor
+        title: Running a team
   - url: /tutorials/
     title: Tutorials
     tree:
