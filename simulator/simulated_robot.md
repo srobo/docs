@@ -106,6 +106,6 @@ The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
-You can access the camera with `robot.camera`, the simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page. 
+You can access the camera with `robot.camera`, the simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page. 
 
 [arduino-programming]: {{ site.baseurl }}/programming/arduino/sr_firmware
