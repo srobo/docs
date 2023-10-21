@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2024 Rules
-show_rulebook: false
+show_rulebook: true
 ---
 
 2024 Rules
