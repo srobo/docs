@@ -56,7 +56,7 @@ taking an average of multiple readings) can be highly beneficial here.
 
 ## The Power of Documentation
 
-Our [Docs]({{ site.baseurl }}) are a goldmine of knowledge and
+Our [Docs]({{ '/' | prepend: site.baseurl }}) are a goldmine of knowledge and
 should be your first port of call whenever you're unsure about something. Much
 like a good textbook or reference guide, our Docs are designed to support you in
 understanding your robot better. From getting started with your robot kit, to

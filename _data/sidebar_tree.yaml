@@ -77,7 +77,7 @@ tree:
     #  title: Safety Regulations
     - url: /rules/archive
       title: Game Rules Archive
-  - url: /robots_101
+  - url: /robots_101/
     title: Robots 101
     tree:
       - url: /robots_101/post_kickstart
