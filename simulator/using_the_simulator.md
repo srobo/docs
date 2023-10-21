@@ -68,10 +68,6 @@ On first run, the robot will execute an example program for convenience. This pr
 
 Your code should be developed in `robot.py`.
 
-<div class="warning">
-  Only your controller code will be present in the competition environment.
-</div>
-
 ### Running multiple robots
 
 To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner. Code can be placed in a `zone-<zone>` directory to run in starting zone `<zone>`:
