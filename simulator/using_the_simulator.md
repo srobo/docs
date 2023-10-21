@@ -118,3 +118,16 @@ In the simulator, all logs are prefixed with the zone that the robot code is run
 ~~~~~
 
 This makes it possible to distinguish which logs are from which robot when they are viewed in Webots console panel.
+
+## Simulated robot inputs
+
+By default Webots will show an overlay of what the robot's [camera]({{ site.baseurl }}/simulator/simulated_robot#vision) can see in the top right of the simulation window.
+This can be useful to understand how the robot sees its world.
+Double-clicking this overlay will move the overlay to its own window.
+
+Note that the view provided by Webots may include highlights of simulated markers which a real camera would not be able to see.
+These are filtered out for you by the simulated SR API.
+
+The robot also features [distance sensors]({{ site.baseurl }}/simulator/simulated_robot#distance-sensors).
+To better understand how these sensors perceive the world it is possible to turn on a display of their interactions with the simulated world.
+Go to the menu **View** &rarr; **Optional Rendering** and select the option **Show DistanceSensor Rays**.
