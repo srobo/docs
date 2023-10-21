@@ -51,7 +51,7 @@ These methods are also available on the physical kits.
 <div class="warning" markdown="1">
 
   Since the simulator does not simulate the time taken to execute your code, any loop or decision which needs an event to occur must be accompanied by a `robot.sleep` even if with a small value.
-  **If in doubt add an `robot.sleep`**.
+  **If in doubt add a `robot.sleep`**.
   If you find that the simulator freezes then this indicates that your code is reaching a loop which does not contain any `robot.sleep` and is expecting time to advance.
 
 </div>
