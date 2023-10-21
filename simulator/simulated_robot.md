@@ -8,6 +8,8 @@ title: The Simulated Robot
 The Simulated Robot
 ===================
 
+<img class="right" style="width: 320px" src="{{ site.baseurl }}/images/content/simulator/sr2024-robot.png" alt="Image of the simulated robot">
+
 There is a pre-built robot used in the simulator.
 To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
 
@@ -71,6 +73,8 @@ This is shown as a red coloured block on the robot. You can access the servo usi
 
 ### Distance Sensors
 
+<!-- Changing this? Consider updating the "Simulated robot inputs" section in `simulator/using_the_simulator.md` -->
+
 Analogous to [ultrasound sensors](https://robocraze.com/blogs/post/what-is-ultrasonic-sensor), distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
 
 | Pin | Location    | Required Mode |
@@ -102,10 +106,12 @@ Using the `digital_write` method, you can set these to `True` (On) or `False` (O
 
 ## Vision
 
+<!-- Changing this? Consider updating the "Simulated robot inputs" section in `simulator/using_the_simulator.md` -->
+
 The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
-You can access the camera with `robot.camera`. The simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page. 
+You can access the camera with `robot.camera`. The simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page.
 
 [arduino-programming]: {{ site.baseurl }}/programming/arduino/sr_firmware

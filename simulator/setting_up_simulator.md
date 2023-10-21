@@ -6,22 +6,39 @@ title: Setting up the Simulator
 Setting up the Simulator
 ========================
 
-## Prerequisites
+There are three key components you will need in order to be able to use the simulator:
+
+- [Webots](#webots), the platform which runs the simulation
+- [Python](#python), the interpreter for the your robot code
+- The [world simulation](#world-simulation), which includes the SR API for use in the simulator
 
 
-### Webots
+## Webots
 
-Our simulator runs in a program called Webots.
-In order to run the simulation you first need to install Webots.
+Webots is a free open-source robot simulator. It is the program which runs the simulation.
+
 You need to download [Webots from here](https://cyberbotics.com/#download) and install it.
 
-The current supported version is "R2023b".
+The current supported version is **R2023b**.
 
+### Troubleshooting: performance
 
-### Python
+The default settings work for most users however if you are using a less powerful computer or one without a dedicated graphics card (as is the case on many laptops), you may wish to adjust the graphics settings to enable the simulation to run faster.
+
+If you find that the simulation runs very slowly we suggest disabling both Ambient Occlusion and Shadows.
+These should not affect the behaviour of the simulation, only the rendered visuals.
+
+To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **OpenGL**, then set **Ambient Occlusion** to "none" and check the box next to "Disable shadows".
+
+To do this on Mac, open webots and go to the menu **Webots** &rarr; **Preferences** &rarr; **OpenGL**, then set **Ambient Occlusion** to "none" and check the box next to "Disable shadows".
+
+## Python
 
 You will also need Python installed.
-If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/).
+If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/downloads/).
+
+We recommend using **Python 3.11** as it is the newest supported version and is the version which is used on your physical robot.
+The most recent version of Python (3.12), which is the default download, is not yet supported by Webots.
 
 | Platform | Supported Python Version |
 |----------|--------------------------|
@@ -42,7 +59,33 @@ pip install -r competition-simulator-<version>/libraries.txt
 ~~~~~
 
 
-## Installing the simulation
+### Troubleshooting: setting your version of Python
+
+Sometimes Webots will not automatically detect your installed Python in which case it will need to be set manually.
+When this happens Webots will print errors to its console and your robot will not move.
+
+You will need the full path to the version of Python that you want to use.
+This will vary based on the system you have.
+One way to find the path is by launching Python and running the following code:
+
+~~~~~ python
+import sys
+print(sys.executable)
+~~~~~
+
+Once you have the path you need to enter this into the Webots settings.
+
+To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command** and enter the path in that box.
+Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python311\python.exe` when using Python 3.11, where `<USERNAME>` is your login.
+
+On Mac you can set the path to the Python version to use via **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd>.
+Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3` when using Python 3.11.
+If you installed Python using Homebrew, it will be in `/opt/homebrew/bin/python3.11` (or `/usr/local/bin/python3.11` on an Intel-based Mac)
+
+If you're still having problems, ask for help in [Discord][discord].
+
+
+## The world simulation {#world-simulation}
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
 2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2024.1/competition-simulator-sr2024.1.zip), the latest version is sr2024.1, released on 2023-10-21.
@@ -65,31 +108,6 @@ You may receive a warning about your computer's GPU not being good enough, which
 <div class="info">
 On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
 </div>
-
-
-### Changing your version of Python
-
-Sometimes Webots will not automatically detect your installed Python so we need to change it.
-When this happens Webots will print errors to its console and your robot will not move.
-
-You will need the full path to the version of Python that you want to use.
-This will vary based on the system you have.
-One way to find the path is by launching Python and running the following code:
-
-~~~~~ python
-import sys
-print(sys.executable)
-~~~~~
-
-Once you have the path you need to enter this into the Webots settings.
-
-To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command** and enter the path in that box.
-Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python311\python.exe` when using Python 3.11, where `<USERNAME>` is your login.
-
-On Mac you can set the path to the Python version to use via **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd>.
-Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3` when using Python 3.11.
-
-If you're still having problems, ask for help in [Discord][discord].
 
 
 ## Updates
