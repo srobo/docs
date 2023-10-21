@@ -21,6 +21,16 @@ You need to download [Webots from here](https://cyberbotics.com/#download) and i
 
 The current supported version is "R2023b".
 
+### Troubleshooting: performance
+
+The default settings work for most users however if you are using a less powerful computer or one without a dedicated graphics card (as is the case on many laptops), you may wish to adjust the graphics settings to enable the simulation to run faster.
+
+If you find that the simulation runs very slowly we suggest disabling both Ambient Occlusion and Shadows.
+These should not affect the behaviour of the simulation, only the rendered visuals.
+
+To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **OpenGL**, then set **Ambient Occlusion** to "none" and check the box next to "Disable shadows".
+
+To do this on Mac, open webots and go to the menu **Webots** &rarr; **Preferences** &rarr; **OpenGL**, then set **Ambient Occlusion** to "none" and check the box next to "Disable shadows".
 
 ## Python
 

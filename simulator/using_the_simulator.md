@@ -11,6 +11,7 @@ Using the Simulator
 Within the Webots IDE, there are a few different panels:
 
 - In the centre of your screen is the 3D simulated view of the arena.
+  It can be useful to change your view into the world using the [camera controls][camera-controls].
 - On the left is a tree hierarchy of all elements in this "world".
 - On the right is a text editor which you can use to develop your code, however we recommend using a dedicated [code editor]({{ site.baseurl }}/tutorials/editors/) if you can.
 - At the bottom is the console, where output from your robot code will be displayed.
@@ -18,10 +19,7 @@ Within the Webots IDE, there are a few different panels:
 
 ![Webots overview screenshot]({{ site.baseurl }}/images/content/simulator/webots-overview.png)
 
-### Useful links
-
-- [Camera Controls](https://www.cyberbotics.com/doc/guide/the-3d-window#navigation-in-the-scene)
-- [Graphics settings](https://www.cyberbotics.com/doc/guide/preferences#opengl) (Useful if Webots is running slowly)
+[camera-controls]: https://www.cyberbotics.com/doc/guide/the-3d-window#navigation-in-the-scene
 
 ## Time
 
