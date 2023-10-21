@@ -5,6 +5,8 @@ title: Simulator
 
 # Simulator
 
+![Image of the SR2024 arena rendered within the simulated environment]({{ site.baseurl }}/images/content/simulator/sr2024-arena.png)
+
 The simulator is a useful development tool, it allows you to become familiar with our API and to get started coding straight away even if you have yet to construct your robot.
 It could also be used to test out game strategies before applying them in real life.
 
