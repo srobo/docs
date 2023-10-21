@@ -35,7 +35,7 @@ To do this on Mac, open webots and go to the menu **Webots** &rarr; **Preference
 ## Python
 
 You will also need Python installed.
-If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/).
+If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/downloads/).
 
 We recommend using **Python 3.11** as it is the newest supported version and is the version which is used on your physical robot.
 The most recent version of Python (3.12), which is the default download, is not yet supported by Webots.
