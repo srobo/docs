@@ -99,3 +99,22 @@ Rather than having a single `robot.py`, code can be placed in a number of `zone-
 ```
 
 This will run two robots in the arena, each with different `robot.py` files. You can run as many or as few zones as you like, in any combination.
+
+## Robot logs
+
+When your program runs in the simulator, the output of `print(...)` statements and any errors which occur are written to a log file next to your code as `log-zone-<zone>-<date-time>.txt`.
+
+These logs are also available to view live via the console at bottom of the simulator.
+
+In the simulator, all logs are prefixed with the zone that the robot code is running in. For example, a robot running in zone 2 might have logs like:
+
+~~~~~ not-code
+2| Using /home/srobo/my-robot/robot.py for Zone 2
+2| Robot Initialized. Zone: 2, Mode: RobotMode.DEV.
+2| Waiting for start signal.
+2| Starting
+2| I saw a marker!
+2| I turned left!
+~~~~~
+
+This makes it possible to distinguish which logs are from which robot when they are viewed in Webots console panel.
