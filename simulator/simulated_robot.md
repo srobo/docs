@@ -26,9 +26,10 @@ The main differences are:
 
 ## Motors
 
-Your robot has one motor board attached, the left wheel is connected to the first port, and the right wheel to the second.
+Your robot has one motor board attached, the motor on the left wheel is connected to the 'Motor 0' port, and the right wheel to 'Motor 1'. These can be referenced with `robot.motor_board.motors[0]`, and 
+`robot.motor_board.motors[1]`, respectively. See [the motor board programming docs]({{ site.baseurl }}/programming/motors) for how to control these.
 
-The motor board has the part code `srABC1`, since only a single motor board is attached it can be referenced as `robot.motor_board`.
+If you want to reference the motor board by its the part code, you can use the part code `srABC1`.
 
 ## Servos
 
@@ -44,19 +45,21 @@ Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully
 
 Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
 
-The servo board has the part code `srXYZ2`, but since only a single servo board is attached it can be referenced as `robot.servo_board`.
+You can access the servos with `robot.servo_board.servos[N]` where N is the number of the servo from the table above. Read more at [the servo board programming docs]({{ site.baseurl }}/programming/servos).
+
+If you want to reference the servo board by its the part code, you can use the part code `srXYZ2`.
 
 ## Arduino
 
-Your robot has a microswitch and six distance sensors, attached to the digital and analog pins respectively. These are all attached to a single arduino.
+Your robot has an arduino board, with one microswitch and six distance sensors, attached to the digital and analog pins respectively.
 
-The simulated arduino behaves like one with the ordinary SR Firmware and does not offer any of the extended or custom arduino behaviours.
+The simulated arduino behaves like one with the ordinary SR Firmware, the simulator doesn't support any [extended firmware]({{ site.baseurl }}/programming/arduino/extended_sr_firmware) or [custom arduino firmware]({{ site.baseurl }}/programming/arduino/custom_firmware). Read below for details on the individual sensors.
 
 Make sure you have set the correct [pin_mode]({{ site.baseurl }}/programming/arduino/sr_firmware#setting-pin-modes), depending on what device you're using.
 
 ### Microswitches
 
-The rear of the robot has a wide microswitch.
+The rear of the robot has a wide bump sensor attached to a microswitch.
 
 The microswitch is attached to digital pin 2:
 
@@ -64,11 +67,11 @@ The microswitch is attached to digital pin 2:
 |-----|----------|---------------|
 | 2   | Back     | `INPUT`       |
 
-This is shown as a red coloured block on the robot. Using the `digital_read`  method, you'll receive a `bool` telling you whether the switch is currently actuated.
+This is shown as a red coloured block on the robot. You can access the servo using `robot.arduino.pins[2]`. Make sure you set the pin mode to `INPUT`. The `digital_read` method will return a `bool` telling you whether the switch is currently being pressed. You can read more in the [arduino programming docs page][arduino-programming].
 
 ### Distance Sensors
 
-Analogous to ultrasound sensors, distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
+Analogous to [ultrasound sensors](https://robocraze.com/blogs/post/what-is-ultrasonic-sensor), distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
 
 | Pin | Location    | Required Mode |
 |-----|-------------|---------------|
@@ -79,17 +82,21 @@ Analogous to ultrasound sensors, distance sensors allow you to retrieve the dist
 | A4  | Front       | `INPUT`       |
 | A5  | Back        | `INPUT`       |
 
-These are shown as blue boards with silver transceivers on the robot. The `analog_read` method will return the distance in metres. They can see in a narrow cone up to a maximum of about 2m away.
+These are shown as blue boards with silver transceivers on the robot. They can see in a narrow cone up to a maximum of about 5m away.
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
+
+You can access the ultrasound sensors using `robot.arduino.pins[AX]`, where '`AX`' is between `A0` and `A5`. Make sure you set the pin mode to `INPUT`. The `analog_read` method will return the distance in metres. You can read more in the [arduino programming docs page][arduino-programming].
 
 ### LEDs
 
-The LEDs are attached to digital pins 3-4:
+Your robot has two LEDs mounted in clearly visible points on the robot. The LEDs are attached to digital pins 3-4:
 
 | Pin | Location      | Required Mode |
 |-----|---------------|---------------|
 | 3   | Red (lower)   | `OUTPUT`      |
 | 4   | Green (upper) | `OUTPUT`      |
+
+You can access the LEDs using `robot.arduino.pins[3]` or `robot.arduino.pins[4]`. For the red or green LED, respectively. Make sure you set the pin mode to `OUTPUT`. You can read more in the [arduino programming docs page][arduino-programming].
 
 Using the `digital_write` method, you can set these to `True` (On) or `False` (Off).
 
@@ -99,6 +106,6 @@ The simulated robot has a camera which provides position and orientation
 information about other objects within the simulation. This simulates the
 system of fiducial markers which the physical robot's camera can detect.
 
-The simulated vision system matches the physical robot's
-[vision API]({{ site.baseurl }}/programming/vision/), with small differences as
-noted in the vision docs.
+You can access the camera with `robot.camera`, the simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page. 
+
+[arduino-programming]: {{ site.baseurl }}/programming/arduino/sr_firmware
