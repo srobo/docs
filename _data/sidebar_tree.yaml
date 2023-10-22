@@ -88,6 +88,8 @@ tree:
         title: Code
       - url: /robots_101/theming
         title: Theming
+      - url: /robots_101/tech_days
+        title: Tech Days
       - url: /robots_101/team_supervisor
         title: Running a team
   - url: /tutorials/
