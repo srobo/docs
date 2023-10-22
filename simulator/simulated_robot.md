@@ -43,7 +43,7 @@ Your robot has one servo board attached, the jaws of the robot and the lifter ar
 | 1     | Right Jaw |
 | 2     | Lifter    |
 
-Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully opens them.
+Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully closes them.
 
 Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
 
