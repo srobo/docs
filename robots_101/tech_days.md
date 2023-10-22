@@ -35,7 +35,7 @@ being said, in most cases you'll want:
 * Your _robot_, no matter how many pieces it's in and including any spare parts you have
 * A _laptop with a USB port_ (don't forget the charger)
 * Some _hand-tools_ to work on your kit
-* Your _Team Supervisor_
+* Your _Team Supervisor_ or another (non-competitor) responsible adult
 
 Some venues may allow you to bring things like _power tools_ and _paint_ or
 _glue_, however not all will. Sometimes you may also need to bring a _packed
