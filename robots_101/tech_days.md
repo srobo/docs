@@ -33,7 +33,7 @@ event is hosted, so you should always **check the event page for details**. That
 being said, in most cases you'll want:
 
 * Your _robot_, no matter how many pieces it's in and including any spare parts you have
-* A _laptop with a USB port_ (don't forget the charger)
+* A _laptop with a USB-A port_ (don't forget the charger)
 * Some _hand-tools_ to work on your kit
 * Your _Team Supervisor_ or another (non-competitor) responsible adult
 
