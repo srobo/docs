@@ -84,7 +84,7 @@ value = robot.arduino.pins[3].digital_read()
 value = robot.arduino.pins[7].digital_read()
 ~~~~~
 
-`value` will now contain `True` or `False` depending on whether the pin was high (5v) or low (0v), respectively.
+`value` will now contain `True` or `False` depending on whether the pin was high (5V) or low (0V), respectively.
 
 You can read an **analog** input pin with the following code:
 
