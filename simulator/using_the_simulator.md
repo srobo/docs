@@ -75,6 +75,10 @@ If you run the simulation without a `robot.py` file in place, the simulation wil
 In order for your simulated robot to pick up changes to your code you need to save the files you are working on and then reload the simulation.
 This will also reset the state of the simulated world, allowing your robot to start afresh.
 
+<div class="warning">
+  Only your controller code will be present in the competition environment.
+</div>
+
 ### Running multiple robots
 
 To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner.
