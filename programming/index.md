@@ -7,12 +7,11 @@ title: Programming
 
 # Programming Your Robot
 
-Robots built using the SR kit are programmed with [Python 3.11](https://www.python.org) which is made possible with a custom-built Python library, `sr.robot3`.
+Robots built using the SR kit are programmed with [Python 3.11](https://www.python.org) which is made possible with a custom-built Python library, `sr.robot3`, which is pre-installed on your robot.
 This library deals with talking to the boards and doing all the complicated bits so you can focus on the fun bits.
 
 The [Robot API]({{ site.baseurl }}/programming/robot_api/) page has the details about this library.
 The other pages in this section contain all of the information you need to know to successfully code for your robot.
-
 
 ## Learning python
 
@@ -35,6 +34,9 @@ There are a number of tutorials out there which might help you to learn to progr
 
 ## Writing code
 
-In order to develop the code for your robot, we recommend that you use a code editor.
+In order to develop the code for your robot, you will write it on your computer and then [transfer it to your robot]({{ site.baseurl }}/tutorials/getting_code_on_the_robot). Unlike other code you may be used to writing, you won't be able to run your robot code from your computer &mdash; it needs to be run on your robot.
+
 A good code editor can provide you with features such as auto completion and syntax highlighting which will help you more easily write code.
 For suggestions of suitable editors, and how to set them up see the [Code Editors]({{ site.baseurl }}/tutorials/editors/) section.
+
+Other than an editor to write the code, you don't need anything else to get started.
