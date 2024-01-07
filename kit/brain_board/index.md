@@ -26,7 +26,6 @@ There are also 3 RGB (Red, Green, and Blue) LEDs that you can control from your 
 
 ![brain board assembly diagram]({{ site.baseurl }}/images/content/kit/brain-diagram.png "The Brain Board Assembly")
 
-[test](/docs/kit/brain_board#brain-board)
 
 ### Indicators
 
