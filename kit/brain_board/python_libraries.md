@@ -11,6 +11,12 @@ title: Available Python Libraries
 
 # Available Python Libraries
 
+Out of the box, Python 3.11 comes with a large number of built-in libraries (known as its [standard library](https://docs.python.org/3.11/library/index.html)), useful for a variety of different tasks. All modules in the standard library are available to use, both on the robotics kit and simulator.
+
+## Additional Libraries
+
+Python has a rich ecosystem of 3rd-party packages available for use outside the standard library, however these need to be installed manually. We've pre-selected a few useful libraries and made them available for use in your robot's software.
+
 If you wish to use a library that isn't in the list, get in contact with us on Discord and have a chat with us about it.
 
 <div class="info" markdown="1">
@@ -18,10 +24,9 @@ Note that for local development in the simulator you will need to install the li
 Look at the guide on [setting up the simulator]({{ site.baseurl }}/simulator/setting_up_simulator) to find out how to do this.
 </div>
 
+### Robot Kit
 
-## Robot Kit
-
-The following python libraries are installed and available for use in your robot's software:
+The following python libraries are installed and available on the brain board:
 
 <!-- cspell:disable -->
 * [debugpy 1.7.0](https://pypi.org/project/debugpy)
@@ -39,7 +44,7 @@ The following python libraries are installed and available for use in your robot
 <!-- cspell:enable -->
 
 
-## Simulator differences
+### Simulator differences
 
 Generally we will try to keep the libraries available in the simulator the same as what is available on the physical robot.
 The list below outlines the differences.
@@ -50,4 +55,3 @@ The list below outlines the differences.
 * `opencv` is not available in the simulator
 * `sr-robot3` that comes with the simulator has the same API but is different to the one available on pypi
 <!-- cspell:enable -->
-
