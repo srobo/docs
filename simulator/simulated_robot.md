@@ -94,7 +94,7 @@ You can access the ultrasound sensors using `robot.arduino.pins[AX]`, where '`AX
 ```python
 reading = R.arduino.pins[A5].analog_read()
 # convert reading from volts to meters
-measurement = reading / 2.5
+measurement = reading / (5/2)
 print(f"Rear ultrasound distance {measurement:.2f} meters")
 ```
 
