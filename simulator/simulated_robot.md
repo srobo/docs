@@ -86,10 +86,17 @@ Analogous to [ultrasound sensors](https://robocraze.com/blogs/post/what-is-ultra
 | A4  | Front       | `INPUT`       |
 | A5  | Back        | `INPUT`       |
 
-These are shown as blue boards with silver transceivers on the robot. They can see in a narrow cone up to a maximum of about 5m away.
+These are shown as blue boards with silver transceivers on the robot. They can see in a narrow cone up to a maximum of about 2m away.
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
 
-You can access the ultrasound sensors using `robot.arduino.pins[AX]`, where '`AX`' is between `A0` and `A5`. Make sure you set the pin mode to `INPUT`. The `analog_read` method will return the distance in metres. You can read more in the [arduino programming docs page][arduino-programming].
+You can access the ultrasound sensors using `robot.arduino.pins[AX]`, where '`AX`' is between `A0` and `A5`. Make sure you set the pin mode to `INPUT`. The `analog_read` method will return a voltage (0-5V) proportional to the distance. You can read more in the [arduino programming docs page][arduino-programming].
+
+```python
+reading = R.arduino.pins[A5].analog_read()
+# convert reading from volts to meters
+measurement = reading / (5/2)
+print(f"Rear ultrasound distance {measurement:.2f} meters")
+```
 
 ### LEDs
 
