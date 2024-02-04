@@ -90,7 +90,7 @@ If you're still having problems, ask for help in [Discord][discord].
 The world simulation we provide defines the environment that contains the simulated arena and robot as well as the SR API for use in the simulator.
 
 1. Create a directory, perhaps called `simulation` where you will store your robot code.
-2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2024.1/competition-simulator-sr2024.1.zip), the latest version is sr2024.1, released on 2023-10-21.
+2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2024.2/competition-simulator-sr2024.2.zip), the latest version is sr2024.2, released on 2024-02-04.
 3. Unzip the simulation as a folder inside the folder you created in the first step:
     ```
     simulation
