@@ -121,4 +121,22 @@ system of fiducial markers which the physical robot's camera can detect.
 
 You can access the camera with `robot.camera`. The simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page.
 
+If you want to see for yourself what the robot camera can see, you can enable an
+overlay of the camera's view by right clicking on the robot then going to
+**Overlays** &rarr; **Camera Devices** &rarr; **Show 'camera' overlay**.
+
+![An image of the camera overlay with the relevant part of the simulated arena in the background]({{ site.baseurl }}/images/content/simulator/camera-overlay.png)
+
+The overlay shows the simulated objects which can be seen from the camera's
+perspective as well as red outlines around any markers which Webots' vision
+system can identify.
+
+You can move the preview around within Webots window, or double-click on it to pop it out to its own window.
+
+<div class="info" markdown="1">
+As Webots has full awareness of the whole of the simulation, there may be markers highlighted in the preview which your real robot's camera would not be able to see. In order to make the simulation closer to your real robot, the simulator API filters out these markers.
+
+Consequently: **there may be markers highlighted in the preview which the API does not return**.
+</div>
+
 [arduino-programming]: {{ site.baseurl }}/programming/arduino/sr_firmware
