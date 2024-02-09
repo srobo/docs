@@ -24,3 +24,5 @@ The `sr.robot3` library provides support for using the Arduino in three possible
 
 By default, the [`sr.robot3`](/docs/programming/robot_api/) library assumes that all connected Arduinos are running the SR firmware or firmware which is compatible with the SR Arduino firmware.
 If you're using completely custom firmware, you'll need to tell the kit to ignore the device so that you're able to define your own setup logic.
+
+If you have installed custom firmware onto the Arduino and want to reset it back to its original state, you can download the [source code]({{ site.baseurl }}/resources/kit/arduino-fw.ino) for the stock firmware and then load that back onto the Arduino.
