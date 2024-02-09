@@ -17,6 +17,9 @@ This makes for easier connection of wires to the Arduino.
 
 The Arduino only needs to be connected to the kit over USB as it uses this for both power and communication.
 
+The Arduino in your kit has been preloaded with [firmware]({{ site.baseurl }}/programming/arduino/sr_firmware) allowing its inputs and outputs to be used from your Python code.
+You can also load your own firmware onto the Arduino to extend its capabilities -- see [Arduino API]({{ site.baseurl }}/programming/arduino) for details.
+
 ## Board Diagram
 
 ![Ruggeduino diagram]({{ site.baseurl }}/images/content/kit/ruggeduino_diagram.png "The Ruggeduino")

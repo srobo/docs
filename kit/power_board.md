@@ -11,6 +11,7 @@ Power Board
 </a>
 The Power Board distributes power to the SR kit from the battery.
 It provides eight general-purpose power outputs, with port L2 reserved for powering the Brain Board.
+You can control the state of these outputs from the [Power Board API]({{ site.baseurl }}/programming/power).
 
 It also holds the internal On|Off switch for the whole robot as well as
 the Start button which is used to start your robot code running.

@@ -19,8 +19,7 @@ The Brain Board provided with your kit is what runs the code you write and contr
 It consists of a [Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) and a Student Robotics KCH.
 
 The KCH is the board installed on top of the Pi, it powers the brain and has LEDs to show the current status of the robot.
-There are also 3 RGB (Red, Green, and Blue) LEDs that you can control from your code.
-
+There are also 3 RGB (Red, Green, and Blue) LEDs that you can control from your code -- see the [Brain Board LED API]({{ site.baseurl }}/programming/leds) for details.
 
 ## Board Diagram
 
