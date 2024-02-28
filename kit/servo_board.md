@@ -12,6 +12,8 @@ Servo Board
 The Servo Board can be used to control up to 12 RC servos.
 Many devices are available that can be controlled as servos, such as RC motor speed controllers, so these can also be used with this board.
 
+You can control the state of each servo output from the [Servo Board API]({{ site.baseurl }}/programming/servos).
+
 Board Diagram
 -------------
 <img src="{{ site.baseurl }}/images/content/kit/servo_board_v4_diagram.png" alt="A diagram of a servo board" />

@@ -14,6 +14,8 @@ The speed and direction of the two outputs are controlled independently through 
 The motor board uses [pulse-width modulation][wiki-pwm] (PWM) to control the
 amount of power that is sent to the motors.
 
+You can control the motors using the [Motor Board API]({{ site.baseurl }}/programming/motors).
+
 [wiki-pwm]: https://en.wikipedia.org/wiki/Pulse-width_modulation
 
 Board Diagram
