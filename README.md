@@ -31,6 +31,21 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
 When you've made a change, either push it to a forked repository, or to a
 feature branch, and [raise a pull request][raise-a-pr].
 
+### Spellings
+
+Spell checking is provided via [`cspell`][cspell], a library which integrates
+with a number of code editors. Checking is run automatically on pull requests.
+
+If you're using VSCode, be sure to [install Code Spell Checker][vscode-cspell].
+
+To run the checks manually (this is optional) you'll need to:
+
+0. install [NodeJS & `npm`][install-node]
+
+1. run `npm test`
+
+New spellings can be added to `.spelling`. Be sure to spell added words correctly!
+
 ### Navigation Sidebar
 
 The docs navigation sidebar is generated from `_data/sidebar_tree.yaml` as part
@@ -42,3 +57,6 @@ page titles.
 [clone-repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 [install-ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [raise-a-pr]: https://github.com/srobo/docs/pull/new/main
+[cspell]: https://cspell.org/
+[vscode-cspell]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+[install-node]: https://downloads.nodesource.com/
