@@ -35,18 +35,25 @@ using, which may present a security risk.
 When you've made a change, either push it to a forked repository, or to a
 feature branch, and [raise a pull request][raise-a-pr].
 
-### Spellings
+### Validation
+
+We have a number of checks which run against the docs to ensure they are ready
+to publish, including internal links checks and spelling checks.
 
 Spell checking is provided via [`cspell`][cspell], a library which integrates
 with a number of code editors. Checking is run automatically on pull requests.
 
-If you're using VSCode, be sure to [install Code Spell Checker][vscode-cspell].
+If you're using VSCode, be sure to install the [Code Spell Checker][vscode-cspell]
+extension.
 
-To run the checks manually (this is optional) you'll need to:
+To run the checks manually (this is optional, but encouraged if making
+non-trivial changes) you'll need to:
 
 0. install [NodeJS & `npm`][install-node]
 
-1. run `npm test`
+1. run `npm install` (to install the spellings libraries)
+
+1. run `rake validate` to run all the checks
 
 New spellings can be added to `.spelling`. Be sure to spell added words correctly!
 
