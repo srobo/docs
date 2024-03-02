@@ -8,19 +8,19 @@ The Student Robotics public documentation.
 
 1. [Install Ruby][install-ruby]
 
-2. Install Bundler (1.x) and Rake
+1. Install Bundler (1.x) and Rake
 
     ``` shell
     $ gem install 'bundler:~>1' rake
     ```
 
-3. Start the app in development mode
+1. Start the app in development mode
 
     ```shell
     $ rake dev
     ```
 
-4. View the website at <http://localhost:4000/docs/>
+1. View the website at <http://localhost:4000/docs/>
 
 ### Docker
 
