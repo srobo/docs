@@ -4,12 +4,6 @@ The Student Robotics public documentation.
 
 ## Getting Started
 
-For ease of setup, a Docker container is provided. Install Docker and `docker-compose`, then run `docker compose up`.
-
-Once setup, the site will be accessible on http://localhost:4000/docs/
-
-### Manual
-
 1. [Clone this repo][clone-repo]
 
 1. [Install Ruby][install-ruby]
@@ -27,6 +21,14 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
     ```
 
 4. View the website at <http://localhost:4000/docs/>
+
+### Docker
+
+If you would prefer to [install Docker][install-docker] and [Docker Compose][install-docker-compose]
+rather than Ruby directly, these can be used instead.
+
+Note that this approach exposes the development server to the network you're
+using, which may present a security risk.
 
 ## Making changes
 
@@ -58,6 +60,8 @@ page titles.
 
 [clone-repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 [install-ruby]: https://www.ruby-lang.org/en/documentation/installation/
+[install-docker]: https://docs.docker.com/engine/install/
+[install-docker-compose]: https://docs.docker.com/compose/install/
 [raise-a-pr]: https://github.com/srobo/docs/pull/new/main
 [cspell]: https://cspell.org/
 [vscode-cspell]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
