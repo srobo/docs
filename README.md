@@ -26,6 +26,8 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
     $ rake dev
     ```
 
+4. View the website at <http://localhost:4000/docs/>
+
 ## Making changes
 
 When you've made a change, either push it to a forked repository, or to a
