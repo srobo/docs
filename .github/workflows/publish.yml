@@ -7,7 +7,7 @@ on:
   pull_request: {}
 
 jobs:
-  build:
+  build-validate:
     env:
       # ruby/setup-ruby@v1 does not offer a way to change the cached gems path.
       # See https://github.com/ruby/setup-ruby/issues/291
@@ -44,7 +44,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-validate
     if: ${{ github.ref == 'refs/heads/main' }}
 
     # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
