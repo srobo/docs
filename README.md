@@ -10,7 +10,7 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
 
 ### Manual
 
-0. [Clone this repo][clone-repo]
+1. [Clone this repo][clone-repo]
 
 1. [Install Ruby][install-ruby]
 
