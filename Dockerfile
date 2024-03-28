@@ -6,7 +6,7 @@ WORKDIR /usr/src/docs
 
 RUN git config --global --add safe.directory /usr/src/docs && git config --global --add safe.directory /usr/src/docs/_sass/brand
 
-RUN gem install 'bundler:~>1' rake
+RUN gem install 'bundler:2.4.22' rake
 
 COPY . ./
 
