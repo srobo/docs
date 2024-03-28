@@ -14,10 +14,10 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
 
 1. [Install Ruby][install-ruby]
 
-2. Install Bundler (1.x) and Rake
+2. Install Bundler (2.x) and Rake
 
     ``` shell
-    $ gem install 'bundler:~>1' rake
+    $ gem install bundler rake
     ```
 
 3. Start the app in development mode

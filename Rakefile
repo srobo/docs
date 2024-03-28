@@ -11,11 +11,10 @@ task :deep_clean => [:clean] do
 end
 
 task :dependencies do
-  if ENV["GLOBAL_GEMS"]
-    sh('bundle install')
-  else
-    sh('bundle install --path gems')
+  if ! ENV["GLOBAL_GEMS"]
+    sh('bundle config set --local path "gems"')
   end
+  sh('bundle install')
 
   # Fix pathutil on Ruby 3; works around https://github.com/envygeeks/pathutil/pull/5
   # as suggested by https://stackoverflow.com/a/73909894/67873
