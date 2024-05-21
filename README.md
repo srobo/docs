@@ -33,7 +33,7 @@ feature branch, and [raise a pull request][raise-a-pr].
 
 [clone-repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 [install-ruby]: https://www.ruby-lang.org/en/documentation/installation/
-[raise-a-pr]: https://github.com/srobo/docs/pull/new/master
+[raise-a-pr]: https://github.com/srobo/docs/pull/new/main
 
 ### Navigation Sidebar
 
