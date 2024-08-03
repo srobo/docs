@@ -82,11 +82,10 @@ jobs:
       - name: Build
         run: rake build
 
-      - name: Upload build site
-        uses: actions/upload-artifact@v4
+      - name: Upload reference artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           name: build-from-main
-          path: _site
 
   diff:
     runs-on: ubuntu-latest
@@ -113,7 +112,14 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-from-main
-          path: main
+
+      - name: Unpack main build
+        run: |
+          mkdir main
+          pushd main
+          tar --extract --file ../artifact.tar
+          popd
+          mv artifact.tar main.tar
 
       - name: Diff
         id: diff
