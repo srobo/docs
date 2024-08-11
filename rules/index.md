@@ -1,22 +1,19 @@
 ---
 layout: page
 title: 2024 Rules
-show_rulebook: true
+
+# Un-comment this line to redirect to the rules
+redirect_to: /resources/2024/rulebook.html
 ---
 
-2024 Rules
-==========
+{% comment %}
+This content is only shown when the above redirect is not used.
+{% endcomment %}
 
-{% if page.show_rulebook %}
-  [<img class="left" src="{{ site.baseurl }}/resources/2024/rulebook.png" />]({{ site.baseurl }}/resources/2024/rulebook.html)
-  The rules, regulations and specifications for the SR2024 competition can be
-  found in the [rulebook]({{ site.baseurl }}/resources/2024/rulebook.html).
+Rules
+=====
 
-  The rules may be subject to changes, so please ensure you're using the most up-to-date version.
-  We will also let you know of any important changes by email.
-{% else %}
-  The rules, regulations and specifications for the SR2024 competition will be released at Kickstart.
-{% endif %}
+The rules, regulations and specifications for the competition will be released at Kickstart.
 
 Previous Rules
 ==============
