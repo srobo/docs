@@ -121,6 +121,28 @@ jobs:
           popd
           mv artifact.tar main.tar
 
+      - name: Normalise JSON
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+
+          ROOTS = [
+              Path('main'),
+              Path('local'),
+          ]
+          FILES = [
+              'redirects.json',
+          ]
+
+          for root in ROOTS:
+              for name in FILES:
+                  p = root / name
+                  p.write_text(json.dumps(
+                      json.loads(p.read_text()),
+                      sort_keys=True,
+                  ))
+
       - name: Diff
         id: diff
         run: |

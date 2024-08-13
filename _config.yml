@@ -56,6 +56,7 @@ user_tracking: true
 
 exclude:
   - README.md
+  - cspell.json
   - Rakefile
   - Gemfile
   - Gemfile.lock
@@ -63,6 +64,8 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - node_modules/
+  - package-lock.json
+  - package.json
   - _env/
   - _docs/
   - vendor/
