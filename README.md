@@ -14,7 +14,7 @@ Once setup, the site will be accessible on http://localhost:4000/docs/
 
 1. [Install Ruby][install-ruby]
 
-2. Install Bundler (2.x) and Rake
+2. Install Bundler (2.3 or above) and Rake
 
     ``` shell
     $ gem install bundler rake
