@@ -10,7 +10,7 @@ gem 'jekyll', 3.9
 gem 'jekyll-redirect-from'
 
 # For testing output
-gem 'html-proofer'
+gem 'html-proofer', '~> 4'
 
 # Avoid polling on windows
 gem 'wdm', '>= 0.1.0'

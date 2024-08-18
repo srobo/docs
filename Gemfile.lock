@@ -97,7 +97,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  html-proofer
+  html-proofer (~> 4)
   jekyll (= 3.9)
   jekyll-redirect-from
   kramdown
