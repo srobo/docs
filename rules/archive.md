@@ -13,6 +13,32 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2024](#2024)
+-------------
+
+<img
+  src="{{ site.baseurl }}/images/content/rules/arena-2024.png"
+  alt="A diagram of the arena for the SR2024 game"
+  width="250"
+  height="250"
+  class="left"
+/>
+
+For SR2024 the game, _Final Frontier_, plunged teams into an interstellar battle
+for dominance among four formidable civilizations, all vying for control of the
+cosmos. Teams had to retrieve asteroids scattered throughout the asteroid field
+and transport them back to their home planet or, even better, their
+intergalactic spaceship currently under construction.
+
+However, the stakes were high, as within the confines of the asteroid belt lay
+The Egg, a cosmic time bomb that, if disturbed, could spell chaos. Teams had to
+strategise, navigate the treacherous field, and decide whether to safeguard
+their own civilization or sabotage their rivals. With asteroids worth points,
+spaceships to manage, and The Egg lurking, the universe had never been this
+competitive.
+
+Full details of the 2024 game are available in the [rulebook]({{ site.baseurl }}/resources/2024/rulebook.html).
+
 [2023](#2023)
 ---------------------
 
