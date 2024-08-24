@@ -12,11 +12,6 @@ On this page we talk specifically about Arduinos.
 However this page is applicable to opening any device that shows up as a serial port.
 </div>
 
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
-
 ## Ignoring a device
 
 By default when the `robot` object is created it will try to communicate with all Arduinos and will expect them to respond in the way the SR firmware does.
