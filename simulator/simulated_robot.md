@@ -65,7 +65,7 @@ They return the distance to the nearest object in front of the sensor in a narro
 Objects beyond 4 meters are not detected.
 
 The robot has four ultrasound sensors attached to it, one on each side of the robot.
-They can all be accessed using the Arduino API's [ultrasound interface]({{ site.baseurl }}/programming/arduino/sr_firmware#ultrasound).
+They can all be accessed using the Arduino API's [ultrasound interface]({{ site.baseurl }}/programming/arduino/sr_firmware#ultrasound-sensors).
 
 <div class="info">
 Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
