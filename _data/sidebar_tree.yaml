@@ -123,6 +123,8 @@ tree:
       title: Using the Simulator
     - url: /simulator/simulated_robot
       title: The Simulated Robot
+    - url: /simulator/troubleshooting
+      title: Troubleshooting
   - url: /troubleshooting/
     title: Troubleshooting
     tree:

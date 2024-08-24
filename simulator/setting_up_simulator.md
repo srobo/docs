@@ -6,118 +6,76 @@ title: Setting up the Simulator
 Setting up the Simulator
 ========================
 
-There are three key components you will need in order to be able to use the simulator:
+## Required Software
 
-- [Webots](#webots), the platform which runs the simulation
-- [Python](#python), the interpreter for the your robot code
-- The [world simulation](#world-simulation), which includes the SR API for use in the simulator
+In order to use the simulator a few set-up steps need to be done.
+First you need to install Python 3.8+ and Webots R2023b.
 
+To install Python, you can download the latest version from the [Python website](https://www.python.org/downloads/). If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step.
+![python download site]({{ site.baseurl }}/images/content/simulator/python-download.png)
 
-## Webots
+We recommend using **Python 3.11** as it is the version which is used on your physical robot.
 
-Webots is a free open-source robot simulator. It is the program which runs the simulation.
+To install Webots, you can download the latest version from the [Webots website](https://cyberbotics.com/#download). Use the default settings when installing Webots.
+![webots download site]({{ site.baseurl }}/images/content/simulator/webots-download.png)
 
-You need to download [Webots from here](https://cyberbotics.com/#download) and install it.
+## Simulator Bundle
 
-The current supported version is **R2023b**.
+Once you have installed these, you need to download our [simulator bundle](https://github.com/srobo/sbot_simulator/releases/download/2024.0.1/sbot-simulator-2024.0.1.zip).
+This is a zip file containing the arena and the necessary files to allow the sbot library to be used in the simulator.
 
-### Troubleshooting: performance
+Once this has downloaded, extract the contents to an empty folder.
+This folder will contain the arena as well as the code you will develop to control the robot.
 
-The default settings work for most users however if you are using a less powerful computer or one without a dedicated graphics card (as is the case on many laptops), you may wish to adjust the graphics settings to enable the simulation to run faster.
+<div class="info" markdown="1">
+The contents of the folder should look like this:
 
-If you find that the simulation runs very slowly we suggest disabling both Ambient Occlusion and Shadows.
-These should not affect the behaviour of the simulation, only the rendered visuals.
-
-To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **OpenGL**, then set **Ambient Occlusion** to "none" and check the box next to "Disable shadows".
-
-To do this on Mac, open webots and go to the menu **Webots** &rarr; **Preferences** &rarr; **OpenGL**, then set **Ambient Occlusion** to "none" and check the box next to "Disable shadows".
-
-## Python
-
-You will also need Python installed.
-If it is not already installed this can be downloaded and installed from the [Python website](https://www.python.org/downloads/).
-
-We recommend using **Python 3.11** as it is the newest supported version and is the version which is used on your physical robot.
-The most recent version of Python (3.12), which is the default download, is not yet supported by Webots.
-
-| Platform | Supported Python Version |
-|----------|--------------------------|
-| Windows  | 3.8-3.11 (64-bit)        |
-| macOS    | 3.8-3.11                 |
-| Linux    | 3.8-3.11                 |
-
-
-### Python libraries
-
-There are a small number of [external libraries]({{ site.baseurl }}/kit/brain_board/python_libraries) which are available on the physical kit that may be useful in the simulator.
-If you want to use these in your code you will need to install these yourself.
-
-Once you have downloaded the simulation, the libraries can be installed with the following command in a terminal.
-
-~~~~~bash
-pip install -r competition-simulator-<version>/libraries.txt
-~~~~~
-
-
-### Troubleshooting: setting your version of Python
-
-Sometimes Webots will not automatically detect your installed Python in which case it will need to be set manually.
-When this happens Webots will print errors to its console and your robot will not move.
-
-You will need the full path to the version of Python that you want to use.
-This will vary based on the system you have.
-One way to find the path is by launching Python and running the following code:
-
-~~~~~ python
-import sys
-print(sys.executable)
-~~~~~
-
-Once you have the path you need to enter this into the Webots settings.
-
-To do this on Windows, open webots and go to the menu **Tools** &rarr; **Preferences** &rarr; **General** &rarr; **Python command** and enter the path in that box.
-Your Python path is likely similar to `C:\Users\<USERNAME>\AppData\Local\Programs\Python\Python311\python.exe` when using Python 3.11, where `<USERNAME>` is your login.
-
-On Mac you can set the path to the Python version to use via **Webots** &rarr; **Preferences** <kbd>⌘</kbd><kbd>,</kbd>.
-Your Python path is likely similar to `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3` when using Python 3.11.
-If you installed Python using Homebrew, it will be in `/opt/homebrew/bin/python3.11` (or `/usr/local/bin/python3.11` on an Intel-based Mac)
-
-If you're still having problems, ask for help in [Discord][discord].
-
-
-## The world simulation {#world-simulation}
-
-The world simulation we provide defines the environment that contains the simulated arena and robot as well as the SR API for use in the simulator.
-
-1. Create a directory, perhaps called `simulation` where you will store your robot code.
-2. [Download the simulation](https://github.com/srobo/competition-simulator/releases/download/sr2024.2/competition-simulator-sr2024.2.zip), the latest version is sr2024.2, released on 2024-02-04.
-3. Unzip the simulation as a folder inside the folder you created in the first step:
-    ```
-    simulation
-    ├── competition-simulator-<version>
-    │   ├── ...
-    │   └─ libraries.txt
-    │   └─ worlds
-    │       └── Arena.wbt
-    └── robot.py
-    ```
-    If there is not an existing `robot.py` an example one will be created when the simulator first runs.
-
-4. Open the Webots IDE, then use that to open the `worlds/Arena.wbt` file.
-
-You may receive a warning about your computer's GPU not being good enough, which can be ignored.
-
-<div class="info">
-On recent versions of macOS you may need to give Webots permission to access the directory where you have extracted the simulation files.
+![File contents of a release]({{ site.baseurl }}/images/content/simulator/release-contents.png)
 </div>
 
+- The `simulator` folder contains our code to support running your code in the simulator.
+- The `zone_0` folder is where you will write your code, and it must contain a file called `robot.py`.
+- The `setup.py` and `run_simulator.py` files are used to set up the environment and run the simulator respectively.
+- The `readme.html` file contains a single page guide to using the simulator, similar to this one.
+
+If the world supports multiple zones, you will see a `zone_1` folder, and so on.
+
+<div class="info" markdown="1">
+If you had previously downloaded the simulator, you can copy your code from the previous installation by copying just the `zone_0` folder from the old installation to the new one.
+</div>
+
+## Setting up the Environment
+
+Now that you have downloaded and extracted the simulator, you need to set up the environment to run the simulator.
+Since the simulator uses the sr-robot3 library, there are a series of python packages that need to be installed and Webots needs to be configured to use the correct version of Python.
+We have provided a script that will set up this environment for you.
+
+First, navigate to the folder you extracted the simulator into. This folder should contain a file called `setup.py`.
+Run this script and it will set up the environment for you.
+A terminal window will open and you will see the output of the script, if there are any errors displayed you should ask for help in [Discord][discord].
+
+<div class="info" markdown="1">
+In order to run the Python script, instead of opening the file you may need to right-click and select **Open with** &rarr; **Python**.
+
+![Open with Python]({{ site.baseurl }}/images/content/simulator/open-with-python.png)
+</div>
+
+<div class="info">
+On recent versions of macOS you may need to give Python permission to access the directory where you have extracted the simulation files.
+</div>
+
+This will create a contained python installation with the required libraries in a `venv` folder, this is called a virtual environment.
+This also configures the Webots settings to use the correct version of Python.
 
 ## Updates
 
 Occasionally, we may release an update to the simulation.
-To update, you will need to delete the `competition-simulator-<version>` folder and replace it with the new version that can be downloaded using the above link.
+To update, download the new version of the simulator using the link above and extract it to an empty folder.
+Then, run the `setup.py` script again to update the environment.
+
+If you want to use code from a previous version of the simulator, you can copy the `zone_0` folder from the old installation to the new one.
 
 If you need a specific version of the simulator, or want to see what changes have been made with each version, please see the [list of releases][release-list].
 
 [discord]: {{ site.baseurl }}/tutorials/discord
-[release-list]: https://github.com/srobo/competition-simulator/releases
+[release-list]: https://github.com/srobo/sbot_simulator/releases

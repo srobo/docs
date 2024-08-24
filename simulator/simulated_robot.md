@@ -8,135 +8,97 @@ title: The Simulated Robot
 The Simulated Robot
 ===================
 
-<img class="right" style="width: 320px" src="{{ site.baseurl }}/images/content/simulator/sr2024-robot.png" alt="Image of the simulated robot">
+<img class="right" style="width: 320px" src="{{ site.baseurl }}/images/content/simulator/robot.png" alt="Image of the simulated robot">
 
-There is a pre-built robot used in the simulator.
-To allow this simulated robot to move around and sense its environment a set of motors and sensors have been connected as detailed below.
+The simulator contains a pre-built robot model that can be controlled using the sr-robot3 library.
+The robot is a differential drive robot with a camera and a variety of sensors to sense its environment with.
 
-The simulator’s API is very similar to the real SR API described in the [programming docs]({{ site.baseurl }}/programming/).
-The main differences are:
 
-- the way that [time is handled]({{ site.baseurl }}/simulator/using_the_simulator#time),
-- the simulated arduino only offering the plain SR Firmware interactions, and
-- the simulated robot not having the Brain Board LEDs.
-
-<div class="info">
-  To more closely reflect reality, artificial noise has been added to simulated
-  values such that sensors and actuators are not perfectly accurate, and may
-  fluctuate slightly between measurements or operations.
+<div class="info" style="display: flex;">
+The simulated sensors and motors are not perfectly accurate and have artificial noise included to more closely reflect reality.
 </div>
 
-## Motors
+## Attached Boards
 
-Your robot has one motor board attached, the motor on the left wheel is connected to the "Motor 0" port, and the right wheel to "Motor 1". These can be referenced with `robot.motor_board.motors[0]`, and `robot.motor_board.motors[1]`, respectively.
-See [the motor board programming docs]({{ site.baseurl }}/programming/motors) for how to control these.
+The robot has a number of boards attached to it that can be interacted with using the [Robot API]({{ site.baseurl }}/programming/robot_api/).
+These boards include:
 
-If you want to reference the motor board by its the part code, you can use the part code `srABC1`.
+- Power Board (serial number: `PWR`)
+- Motor Board (serial number: `MOT`)
+    - The left wheel is connected to motor 0.
+    - The right wheel is connected to motor 1.
+- Servo Board (serial number: `SERVO`)
+    - No servos are attached to the simulated robot.
+- Arduino Board (serial number: `Arduino1`)
+    - The arduino has the [SR Firmware]({{ site.baseurl }}/programming/arduino/sr_firmware) installed. This firmware cannot be altered.
+    - The attached sensors are covered in the [Sensors](#attached-sensors) section.
+- Camera (serial number: `Camera`)
+- Brain Board - Including the [LEDs][led-api] that are attached to the Brain Board on the real robot (serial number: `LED`)
 
-## Servos
+## Attached Sensors
 
-Your robot has one servo board attached, the jaws of the robot and the lifter are all controlled by servos.
+<div class="info">
+The simulated sensors are not perfectly accurate and have artificial noise included to more closely reflect reality.
+</div>
 
-| Servo | Location  |
-|-------|-----------|
-| 0     | Left Jaw  |
-| 1     | Right Jaw |
-| 2     | Lifter    |
+All sensors are attached to the Arduino board and can be accessed using the [Arduino API]({{ site.baseurl }}/programming/arduino/sr_firmware).
 
-Setting each servo to -1 fully opens the respective jaw, setting them to 1 fully closes them.
+| Sensor | Connected Pin | Description |
+| ------ | ------------- | ----------- |
+| Front Ultrasound Sensor  | Trigger: 2<br/>Echo: 3 | Measures distance from the front of the robot |
+| Left Ultrasound Sensor   | Trigger: 4<br/>Echo: 5 | Measures distance from the left of the robot  |
+| Right Ultrasound Sensor  | Trigger: 6<br/>Echo: 7 | Measures distance from the right of the robot |
+| Back Ultrasound Sensor   | Trigger: 8<br/>Echo: 9 | Measures distance from the back of the robot  |
+| Front Left Microswitch   | 10 | Detects if the front left of the robot has bumped into something  |
+| Front Right Microswitch  | 11 | Detects if the front right of the robot has bumped into something |
+| Rear Left Microswitch    | 12 | Detects if the rear left of the robot has bumped into something   |
+| Rear Right Microswitch   | 13 | Detects if the rear right of the robot has bumped into something  |
+| Left Reflectance Sensor  | A0 | Measures the reflectance of the surface under the left side of the robot  |
+| Center Reflectance Sensor| A1 | Measures the reflectance of the surface under the center of the robot     |
+| Right Reflectance Sensor | A2 | Measures the reflectance of the surface under the right side of the robot |
 
-Setting the lifter to -1 fully lowers the lifter, setting it to 1 fully raises it.
+### Ultrasound Sensors
 
-You can access the servos with `robot.servo_board.servos[N]` where N is the number of the servo from the table above. Read more at [the servo board programming docs]({{ site.baseurl }}/programming/servos).
+These are the simulated version of [ultrasound sensors](https://robocraze.com/blogs/post/what-is-ultrasonic-sensor).
 
-If you want to reference the servo board by its the part code, you can use the part code `srXYZ2`.
+They return the distance to the nearest object in front of the sensor in a narrow cone of view.
+Objects beyond 4 meters are not detected.
 
-## Arduino
+The robot has four ultrasound sensors attached to it, one on each side of the robot.
+They can all be accessed using the Arduino API's [ultrasound interface]({{ site.baseurl }}/programming/arduino/sr_firmware#ultrasound).
 
-Your robot has an arduino board, with one microswitch and six distance sensors, attached to the digital and analog pins respectively.
+<div class="info">
+Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
+</div>
 
-The simulated arduino behaves like one with the ordinary SR Firmware, the simulator doesn't support any [extended firmware]({{ site.baseurl }}/programming/arduino/extended_sr_firmware) or [custom arduino firmware]({{ site.baseurl }}/programming/arduino/custom_firmware). Read below for details on the individual sensors.
+These appear as a blue board with two silver cylinders on the robot model.
+The returned distance is measured from the blue board in the direction of the silver cylinders.
 
-Make sure you have set the correct [pin_mode]({{ site.baseurl }}/programming/arduino/sr_firmware#setting-pin-modes), depending on what device you're using.
+![Ultrasound Sensors]({{ site.baseurl }}/images/content/simulator/ultrasound.png)
+
+### Reflectance Sensors
+
+Across the bottom of the robot, there are three reflectance sensors that can detect differences in the colour of the surface under the robot.
+This is achieved by returning the relative red content of the surface directly below the sensor.
+
+The measured values can then be read using the [Analog Input]({{ site.baseurl }}/programming/arduino/sr_firmware#input) interface.
+This is returned as a voltage between 0 and 5 volts, with lower values indicating a darker surface.
+
+These appear as blue rectangles on the robot model.
+
+![Reflectance Sensors]({{ site.baseurl }}/images/content/simulator/robot-bottom.png)
 
 ### Microswitches
 
-The rear of the robot has a wide bump sensor attached to a microswitch.
+On the front and back of the robot, there are microswitches that can detect if the robot has bumped into something.
+These appear as red cuboids on the robot model.
 
-The microswitch is attached to digital pin 2:
+The attached pin will read `True` if the cuboid has intersected with any other object in the simulation.
 
-| Pin | Location | Required Mode |
-|-----|----------|---------------|
-| 2   | Back     | `INPUT`       |
+## LEDs
 
-This is shown as a red coloured block on the robot. You can access the servo using `robot.arduino.pins[2]`. Make sure you set the pin mode to `INPUT`. The `digital_read` method will return a `bool` telling you whether the switch is currently being pressed. You can read more in the [arduino programming docs page][arduino-programming].
+![LEDs]({{ site.baseurl }}/images/content/simulator/leds.png)
 
-### Distance Sensors
+The three rectangles on the back of the robot can have their colours set using the [Brain Board LED]({{ site.baseurl }}/programming/leds) interface.
 
-<!-- Changing this? Consider updating the "Simulated robot inputs" section in `simulator/using_the_simulator.md` -->
-
-Analogous to [ultrasound sensors](https://robocraze.com/blogs/post/what-is-ultrasonic-sensor), distance sensors allow you to retrieve the distance between your robot and an object. These are attached to analog pins A0-A5:
-
-| Pin | Location    | Required Mode |
-|-----|-------------|---------------|
-| A0  | Front Left  | `INPUT`       |
-| A1  | Front Right | `INPUT`       |
-| A2  | Left        | `INPUT`       |
-| A3  | Right       | `INPUT`       |
-| A4  | Front       | `INPUT`       |
-| A5  | Back        | `INPUT`       |
-
-These are shown as blue boards with silver transceivers on the robot. They can see in a narrow cone up to a maximum of about 2m away.
-Since these sensors rely on echoes being reflected back from objects, if the angle of incidence between the sensor's pulse and the contacted surface exceeds 22.5 degrees then the sensor will be unable to detect the object.
-
-You can access the ultrasound sensors using `robot.arduino.pins[AX]`, where '`AX`' is between `A0` and `A5`. Make sure you set the pin mode to `INPUT`. The `analog_read` method will return a voltage (0-5V) proportional to the distance. You can read more in the [arduino programming docs page][arduino-programming].
-
-```python
-reading = R.arduino.pins[A5].analog_read()
-# convert reading from volts to meters
-measurement = reading / (5/2)
-print(f"Rear ultrasound distance {measurement:.2f} meters")
-```
-
-### LEDs
-
-Your robot has two LEDs mounted in clearly visible points on the robot. The LEDs are attached to digital pins 3-4:
-
-| Pin | Location      | Required Mode |
-|-----|---------------|---------------|
-| 3   | Red (lower)   | `OUTPUT`      |
-| 4   | Green (upper) | `OUTPUT`      |
-
-You can access the LEDs using `robot.arduino.pins[3]` or `robot.arduino.pins[4]`. For the red or green LED, respectively. Make sure you set the pin mode to `OUTPUT`. You can read more in the [arduino programming docs page][arduino-programming].
-
-Using the `digital_write` method, you can set these to `True` (On) or `False` (Off).
-
-## Vision
-
-<!-- Changing this? Consider updating the "Simulated robot inputs" section in `simulator/using_the_simulator.md` -->
-
-The simulated robot has a camera which provides position and orientation
-information about other objects within the simulation. This simulates the
-system of fiducial markers which the physical robot's camera can detect.
-
-You can access the camera with `robot.camera`. The simulated vision system matches the physical robot's vision API, so please use the [vision programming docs page]({{ site.baseurl }}/programming/vision/) as a reference. There are a few small differences between the simulator and the physical kit which are noted on that page.
-
-If you want to see for yourself what the robot camera can see, you can enable an
-overlay of the camera's view by right clicking on the robot then going to
-**Overlays** &rarr; **Camera Devices** &rarr; **Show 'camera' overlay**.
-
-![An image of the camera overlay with the relevant part of the simulated arena in the background]({{ site.baseurl }}/images/content/simulator/camera-overlay.png)
-
-The overlay shows the simulated objects which can be seen from the camera's
-perspective as well as red outlines around any markers which Webots' vision
-system can identify.
-
-You can move the preview around within Webots window, or double-click on it to pop it out to its own window.
-
-<div class="info" markdown="1">
-As Webots has full awareness of the whole of the simulation, there may be markers highlighted in the preview which your real robot's camera would not be able to see. In order to make the simulation closer to your real robot, the simulator API filters out these markers.
-
-Consequently: **there may be markers highlighted in the preview which the API does not return**.
-</div>
-
-[arduino-programming]: {{ site.baseurl }}/programming/arduino/sr_firmware
+[led-api]: {{ site.baseurl }}/programming/leds
