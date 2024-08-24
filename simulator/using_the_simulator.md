@@ -45,7 +45,7 @@ The camera overlay shows the images from the robot's camera.
 This only updates when `robot.camera.see()` is called in your code.
 
 This image is the raw image that the robot sees, and is not processed in any way.
-To see the processed image, look at the [saving images]({{ site.baseurl }}/programming/vision/#saving-camera-output) section of the camera interface to see how to save annotated images.
+To see the processed image, look at saving images in the [camera interface]({{ site.baseurl }}/programming/vision/#camera) to see how to save annotated images.
 
 If the camera overlay is closed and you want to get it back, you can use the [Reopening the Camera Overlay](#reopening-the-camera-overlay) instructions.
 
