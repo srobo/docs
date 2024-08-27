@@ -124,10 +124,6 @@ robot.motor_board.motors[1].power = -1
 
 ### Special motor values
 
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 Setting a motor to `BRAKE` is equivalent to power level `0`.
 
 ~~~~~ python
@@ -157,10 +153,6 @@ You can also set the position to `0`, which is the approximate centre.
 
 ### Taking a photo
 
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 It can sometimes be useful to save a photo of what markers the robot can see:
 
 ~~~~~ python
@@ -168,10 +160,6 @@ robot.camera.save("my-photo.jpg")  # Save my-photo.jpg to the USB drive
 ~~~~~
 
 ### Capturing an openCV array
-
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
 
 Take a photo using the webcam, and return the image data as an OpenCV array:
 

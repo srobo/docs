@@ -128,3 +128,23 @@ However, for simple electronics, a microswitch for example, you would normally b
 However, the built-in pull-up resistor alleviates this need.
 It essentially wires in a resistor connected to 5.0V, meaning that when this option is enabled, an input pin will "default" to being high.
 This means you can simply connect a switch between the input pin and a ground pin without any need of resistors - when the switch is open, the pin will read high; when closed, it will read low.
+
+## Ultrasound Sensors
+
+You can also measure distance using an ultrasound sensor from the arduino. Ultrasound sensors return the distance of the closest object in mm.
+
+To use this on your robot you will need use HC-SR04 ultrasound modules.
+
+```python
+# Trigger pin: 4
+# Echo pin: 5
+
+# Measure distance in mm
+distance_mm = robot.arduino.ultrasound_measure(4, 5)
+```
+
+<div class="warning">
+The ultrasound sensor can measure distances up to around 4 metres.
+If the ultrasound signal has to travel further, the echo may not be detected. 
+This will cause the sensor to timeout and return 0.
+</div>

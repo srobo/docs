@@ -124,10 +124,6 @@ print(robot.motor_boards["srABC1"].motors[0].power)
 Special Values
 --------------
 
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 In addition to the numeric values, there are two special constants that can be used:
 - `BRAKE`
 - `COAST`
@@ -156,7 +152,7 @@ Motor currents
 --------------
 
 <div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
+  In the simulator, the current values always return 0.
 </div>
 
 The Motor Board can also measure the current being drawn by each of the ports on the board.

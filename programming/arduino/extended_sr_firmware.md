@@ -5,10 +5,6 @@ title: Arduino extended firmware
 
 # Arduino with extended SR firmware
 
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 You may wish to extend the SR firmware with additional functionality.
 This will allow you to continue using the commands already provided by the SR firmware (e.g. `digital_read()`),
 which means any existing robot code you have won't need modifying very much.

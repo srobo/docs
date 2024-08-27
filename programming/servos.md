@@ -58,10 +58,6 @@ print(robot.servo_board.servos[1].position)
 Disabling servo outputs
 -----------------------
 
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
-
 Setting a position to `None` will disable an output.
 This is the state all the servo outputs are in when the board turns on, where no servo pulses are being sent to the outputs.
 
@@ -73,10 +69,6 @@ robot.servo_board.servos[5].position = None
 
 Extended servo range
 --------------------
-
-<div class="info">
-  This documentation refers to a feature which is only available on the physical robot kits.
-</div>
 
 For an RC servo the angle of rotation is determined by the width of an electrical pulse on the control wire.
 A typical servo expects to see a pulse every 20ms, with a pulse width between 1ms and 2ms.
