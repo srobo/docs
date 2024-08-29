@@ -5,7 +5,7 @@ title: Pre-Kickstart Activities
 
 # Pre-Kickstart Activities
 
-The pre-Kickstart activities provide a basic introduction to the kit which can be completed before Kickstart.
+The pre-Kickstart activities provide a basic introduction to robotics, through our simulator, which can be completed before Kickstart.
 
 We recommend you work through them as a team, so you can learn from each other.
 If you have any issues, just ask us on [Discord](/docs/tutorials/discord).
