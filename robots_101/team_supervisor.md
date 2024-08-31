@@ -16,7 +16,7 @@ We encourage team supervisors to limit their involvement with the robot design/b
 You’ll be our point of contact with the team. If you have any questions during the year, just email <{{ site.emails.teams }}>. We’ll also be sending you emails every month or so with important information such as:
 - Details of [Tech Days]({{ site.baseurl }}/robots_101/tech_days) where we provide a space for teams to come together and get direct help from our dedicated volunteers
 - Software updates for our kit
-- Information about the competition event (usually in late March or April)
+- Information about the [competition event]({{ site.baseurl }}/robots_101/programme_structure#competition) (usually in late March or April)
 
 We aim to host our Kickstart event and Tech Days in multiple locations to make it more convenient for you to travel. However, you will still need to arrange to travel to these places.
 This is especially important to book for the competition, as you will likely need to arrange to stay overnight near the venue.
