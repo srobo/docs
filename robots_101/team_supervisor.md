@@ -11,7 +11,7 @@ Here’s a little bit of info on what to expect from Student Robotics, and your 
 
 As a team supervisor, your role is to guide the competitors through the journey of building a robot. You’ll be there to point them in the right direction when they get stuck and resolve any issues they run into.
 You don't need to have any technical skills though -- our volunteer mentors can provide that [support](#support) either in person or remotely.
-We encourage team supervisors to limit their involvement with the robot design/building process so that the finished contraptions are 100% student-built which competitors find very rewarding.
+We encourage team supervisors to limit their involvement with the [robot design]({{ site.baseurl }}/robots_101/design)/building process so that the finished contraptions are 100% student-built which competitors find very rewarding.
 
 You’ll be our point of contact with the team. If you have any questions during the year, just email <{{ site.emails.teams }}>. We’ll also be sending you emails every month or so with important information such as:
 - Details of [Tech Days]({{ site.baseurl }}/robots_101/tech_days) where we provide a space for teams to come together and get direct help from our dedicated volunteers
@@ -48,7 +48,7 @@ Popular suppliers of these components are:
 - [Amazon](https://www.amazon.co.uk/)
 - [eBay](https://www.ebay.co.uk/)
 
-Your team will also need access to a computer to write the code for their robot.
+Your team will also need access to a computer to write the [code]({{ site.baseurl }}/robots_101/code) for their robot.
 Ideally this would be one that can be brought to events so that improvements can be made to the robot at any time.
 
 Being able to install software onto the computer will also be important to make use of the [simulator]({{ site.baseurl }}/simulator/) and a suitable [code editor]({{ site.baseurl }}/tutorials/editors/).
