@@ -75,8 +75,8 @@ afterwards so you can continue to improve it.
 
 ## Competition
 
-The Competition event is a two day event in spring. You'll put your robot to the
-test in a weekend of tinkering and matches.
+The Competition event is a two day event in spring. It's the ultimate test for
+your robot in a weekend of tinkering and matches.
 
 You'll have a team pit for you to work in, with power and internet access, and
 throughout the weekend there are volunteers around to help with the kits and
