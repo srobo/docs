@@ -48,6 +48,11 @@ Popular suppliers of these components are:
 - [Amazon](https://www.amazon.co.uk/)
 - [eBay](https://www.ebay.co.uk/)
 
+Your team will also need access to a computer to write the code for their robot.
+Ideally this would be one that can be brought to events so that improvements can be made to the robot at any time.
+
+Being able to install software onto the computer will also be important to make use of the [simulator]({{ site.baseurl }}/simulator/) and a suitable [code editor]({{ site.baseurl }}/tutorials/editors/).
+
 ## Support
 
 To allow you and your team to ask us questions directly, as well as share what they’re working on with other teams, we provide a [Discord]({{ site.baseurl }}/tutorials/discord) server. You will receive a unique link to share with your team so that you can all join with your own Discord accounts. Each team gets a private text channel for direct support from us which can be used to discuss your robot without worrying about giving other teams your strategy. We also have a team-supervisor only channel for any questions you may have. There are also some text channels where teams can communicate with each other (and us!) for more general topics. If you’d like a voice channel for your team, email us or ask in `#team-supervisor`!
