@@ -13,7 +13,12 @@ But what actually happens during the course of the competition year?
 Registration for the competition usually open in late summer. Teams usually
 consist of 4-8 competitors attending a school or college, though other groups
 are also free to enter. Your team must have a responsible adult who will oversee
-the team -- a role we call the [team supervisor][team-supervisor].
+the team (a role we call the [team supervisor][team-supervisor]) and they must
+be the person to [sign up][sign-up].
+
+While places are free (thanks to our [sponsors][sponsors]), they are limited.
+You will be notified whether or not your team has received a place shortly
+before the start of the competition year.
 
 <!-- TODO: add something about the pre-kickstart activities once they're published -->
 
@@ -76,6 +81,8 @@ afternoon you'll advance into the knockout stages, and can go on to win prizes.
 
 
 [team-supervisor]: {{ site.baseurl }}/robots_101/team_supervisor
+[sign-up]: https://studentrobotics.org/compete/#signup
+[sponsors]: https://studentrobotics.org/sponsor/
 [microgames]: {{ site.baseurl }}/competitor_resources/microgames
 [kit]: {{ site.baseurl }}/kit/
 [discord]: {{ site.baseurl }}/tutorials/discord
