@@ -9,7 +9,9 @@ Here’s a little bit of info on what to expect from Student Robotics, and your 
 
 ## Your role
 
-As a team supervisor, your role is to guide the competitors through the journey of building a robot. You’ll be there to point them in the right direction when they get stuck and resolve any issues they run into. We encourage team supervisors to limit their involvement with the robot design/building process so that the finished contraptions are 100% student-built which competitors find very rewarding.
+As a team supervisor, your role is to guide the competitors through the journey of building a robot. You’ll be there to point them in the right direction when they get stuck and resolve any issues they run into.
+You don't need to have any technical skills though -- our volunteer mentors can provide that [support](#support) either in person or remotely.
+We encourage team supervisors to limit their involvement with the robot design/building process so that the finished contraptions are 100% student-built which competitors find very rewarding.
 
 You’ll be our point of contact with the team. If you have any questions during the year, just email <{{ site.emails.teams }}>. We’ll also be sending you emails every month or so with important information such as:
 - Details of [Tech Days]({{ site.baseurl }}/robots_101/tech_days) where we provide a space for teams to come together and get direct help from our dedicated volunteers
