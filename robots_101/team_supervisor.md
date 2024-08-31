@@ -21,6 +21,15 @@ You’ll be our point of contact with the team. If you have any questions during
 We aim to host our Kickstart event and Tech Days in multiple locations to make it more convenient for you to travel. However, you will still need to arrange to travel to these places.
 This is especially important to book for the competition, as you will likely need to arrange to stay overnight near the venue.
 
+## The team
+
+Teams usually consist of 4-8 competitors aged 16-19 and are often attending a school or college.
+However, the team doesn't necessarily need to represent a school -- any group of 16-19 year-olds, with a responsible adult, can enter.
+
+Most teams work on their robot for at least two hours a week, with some teams spending four hours or more.
+How this time is scheduled varies between teams -- some have more than one meeting a week, others have less frequent but longer sessions.
+To get the most out of the time, ensure sessions are long enough to make useful progress after allowing for setting up beforehand and tidying away afterwards.
+
 ## Materials
 
 Our [kit]({{ site.baseurl }}/kit/) includes a battery and a few boards to get your robot started. However, your team will need additional components and materials from which to build their robot. For the chassis, your team has several options. Teams often use cardboard, MDF, Aluminium, and/or Acrylic. In terms of electronic components, teams often make use of:
