@@ -80,6 +80,8 @@ tree:
   - url: /robots_101/
     title: Robots 101
     tree:
+      - url: /robots_101/programme_structure
+        title: Programme Structure
       - url: /robots_101/post_kickstart
         title: After Kickstart
       - url: /robots_101/design
