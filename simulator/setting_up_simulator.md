@@ -21,7 +21,7 @@ To install Webots, you can download the latest version from the [Webots website]
 
 ## Simulator Bundle
 
-Once you have installed these, you need to download our [simulator bundle](https://github.com/srobo/sbot_simulator/releases/download/2024.0.1/sbot-simulator-2024.0.1.zip).
+Once you have installed these, you need to download our [simulator bundle](https://github.com/srobo/sbot_simulator/releases/download/2025.0.1/sbot-simulator-2025.0.1.zip).
 This is a zip file containing the arena and the necessary files to allow the sr-robot3 library to be used in the simulator.
 
 Once this has downloaded, extract the contents to an empty folder.
