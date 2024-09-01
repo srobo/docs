@@ -20,7 +20,7 @@ For information on markers, see the [markers page](./markers).
 
 ## Camera
 
-The interface to the vision system is through the camera, accessible through `robot.camera`, there are three functions available on the camera object:
+The interface to the vision system is through the camera, accessible through `robot.camera`, there are two functions available on the camera object:
 
 see
 :   Take a photo using the webcam, and return a list of [`Marker`](#marker) instances, each of which describes one of the markers that were found in the image.
@@ -46,17 +46,6 @@ while True:
 Taking images while moving will cause them to be blurry, which will cause marker detection to fail.
 Try pausing movement while taking an image.
 </div>
-
-save
-:   Take a photo using the webcam, draw a box around the detected markers and save it to the provided location.
-
-~~~~~ python
-from sr.robot3 import *
-robot = Robot()
-
-# `robot.usbkey` is the path to your USB drive
-robot.camera.save(robot.usbkey / "initial-view.jpg")
-~~~~~
 
 capture
 :   Take a photo using the webcam, and return the image data as an OpenCV array.
@@ -93,6 +82,31 @@ robot.camera.save(robot.usbkey / "photo.jpg", frame=frame)
 
 # Do some other vision algorithm with the OpenCV frame here
 ~~~~~
+
+
+### Saving camera output
+
+You can also save a snapshot of what your webcam is currently seeing. This can be useful to debug your code.
+
+This is done by adding the `save` parameter to the `see` or `capture` functions.
+The parameter should be the filename to where you want to save the image.
+
+If used with the `see` function, every marker that your robot can see will have a square annotated around it, with a red dot indicating the top left corner of the marker.
+The ID of every marker is also written next to it.
+
+Snapshots are saved to your USB drive, and can be viewed on another computer.
+
+```python
+from sr.robot3 import *
+
+robot = Robot()
+
+# Save a snapshot of what the camera is currently seeing
+frame =  robot.camera.capture(save="snapshot.jpg")
+
+# Save a snapshot of what the camera is currently seeing with markers annotated
+markers = robot.camera.see(save="annotated-snapshot.jpg")
+```
 
 
 ## Marker
