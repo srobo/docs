@@ -10,7 +10,7 @@ But what actually happens during the course of the competition year?
 
 ## Registration
 
-Registration for the competition usually opens in late summer. Teams usually
+Registration for the competition usually opens in early September. Teams usually
 consist of 4-8 competitors attending a school or college, though other groups
 are also free to enter. Your team must have a responsible adult who will oversee
 the team (a role we call the [team supervisor][team-supervisor]) and they must
