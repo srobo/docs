@@ -20,7 +20,9 @@ While places are free (thanks to our [sponsors][sponsors]), they are limited.
 You will be notified whether or not your team has received a place shortly
 before the start of the competition year.
 
-<!-- TODO: add something about the pre-kickstart activities once they're published -->
+We also provide some [pre-kickstart activities][pre-kickstart-activities] which
+teach some core concepts of robotics making use of our [simulator][simulator]
+and introduce some simple sensors that you could use on your physical robots.
 
 ## Kickstart
 
@@ -91,6 +93,7 @@ afternoon you'll advance into the knockout stages, and can go on to win prizes.
 [team-supervisor]: {{ site.baseurl }}/robots_101/team_supervisor
 [sign-up]: https://studentrobotics.org/compete/#signup
 [sponsors]: https://studentrobotics.org/sponsor/
+[pre-kickstart-activities]: {{ site.baseurl }}/competitor_resources/pre_kickstart_activities
 [rules]: {{ site.baseurl }}/rules/
 [microgames]: {{ site.baseurl }}/competitor_resources/microgames
 [kit]: {{ site.baseurl }}/kit/
