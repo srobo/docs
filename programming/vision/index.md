@@ -96,6 +96,10 @@ The ID of every marker is also written next to it.
 
 Snapshots are saved to your USB drive, and can be viewed on another computer.
 
+<div class="warning">
+    When saving images, make sure to use a unique filename each time, otherwise the previous image will be overwritten.
+</div>
+
 ```python
 from sr.robot3 import *
 
