@@ -15,7 +15,7 @@ Be sure to take all of your own kit with you - it may not be possible to return 
 
 ## Kit Shipping
 
-If you are unable to return your kit at the competition, it must be shipped to us at <a href="{{ site.url }}/contact/">this address</a>, unless otherwise instructed.
+If you are unable to return your kit at the competition, it must be shipped to us at [this address]({{ site.url }}/contact/), unless otherwise instructed.
 
 The Kit List document included with your kit has the date by which the kit needs to be returned.
 
