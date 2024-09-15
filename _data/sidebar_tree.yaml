@@ -32,6 +32,8 @@ tree:
       title: Servo Board
     - url: /kit/arduino
       title: Arduino
+    - url: /kit/return
+      title: Kit Return
   - url: /programming/
     title: Programming
     tree:

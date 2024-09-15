@@ -6,7 +6,7 @@ title: Kit
 # Kit
 
 The Student Robotics kit is lent, free of charge, to each team and consists of various modules designed by us along with some ancillary parts to allow easy use of the modules.
-All of the kit, except the wire, needs to be returned after the competition.
+All of the kit, except the wire, needs to be [returned](/docs/kit/return) after the competition.
 
 
 ## The Modules
