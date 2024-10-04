@@ -5,7 +5,7 @@ title: Robots 101 - Kickstarted, now what?
 
 # Robots 101 - Kickstarted, now what?
 
-So, you attended our kickstart event and are now ready to build your robot! But where should you start? We’re here to help!
+So, you attended our [kickstart event][kickstart] and are now ready to build your robot! But where should you start? We’re here to help!
 
 We’ve found that most teams split up the different parts of the robot between them. It’s a good idea to meet up and discuss which tasks each person wants to accomplish and give each other roles inside the team. Of course, these can change throughout the time between kickstart and competition, but make sure everyone has a job to do. It’s important to make sure there's always at least two or three people that can do each task type. Don’t forget tasks outside the robot itself either, like project management, running the social media, or theming.
 
@@ -19,6 +19,7 @@ As part of your team, you’ll have a trusted adult who is acting as supervisor 
 
 Hopefully this has given you some jumping off points to begin your journey to the competition. Check back soon for our next entry in this series, all about how to design your robot!
 
+[kickstart]: {{ site.baseurl }}/robots_101/programme_structure#kickstart
 [youtube]: https://youtube.com/user/StudentRobotics
 [discord-docs]: {{ site.baseurl }}/tutorials/discord
 [one-oh-one-supervisor]: {{ '/robots_101/team_supervisor' | prepend: site.baseurl }}

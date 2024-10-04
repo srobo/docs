@@ -50,6 +50,8 @@ anything specific you'll need for the day.
 Your Team Supervisor can sign up for your team to attend as many as you like,
 however in cases where events are over-subscribed we will try to ensure that
 everyone has the opportunity to attend at least one Tech Day throughout the
-year.
+year. Be sure to also read our general information about [events][events] when
+signing up.
 
 [events-calendar]: https://studentrobotics.org/events/
+[events]: {{ site.baseurl }}/robots_101/events
