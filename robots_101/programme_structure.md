@@ -30,7 +30,7 @@ Kickstart is the event which kicks off a competition year. The structure of the
 competition and the [game rules][rules] are announced and any questions you have
 will be answered.
 
-Typically this is a one day in-person event in October (usually a Saturday).
+Typically this is a one day in-person [event][events] in October (usually a Saturday).
 Throughout the day there are Blueshirts (our awesome volunteers!) around in
 person, ready to answer any questions and to help you through the
 [microgames][microgames]. The microgames help you become familiar with the
@@ -95,6 +95,7 @@ afternoon you'll advance into the knockout stages, and can go on to win prizes.
 [sponsors]: https://studentrobotics.org/sponsor/
 [pre-kickstart-activities]: {{ site.baseurl }}/competitor_resources/pre_kickstart_activities
 [rules]: {{ site.baseurl }}/rules/
+[events]: {{ site.baseurl }}/robots_101/events
 [microgames]: {{ site.baseurl }}/competitor_resources/microgames
 [kit]: {{ site.baseurl }}/kit/
 [discord]: {{ site.baseurl }}/tutorials/discord
