@@ -11,4 +11,4 @@ For guidance of where these will be located in the arena, look at this years [ru
 
 ## Download
 
-You can download all the SR2024 markers as a single [PDF file](/docs/resources/2024/sr-markers-sr2024.pdf).
+You can download all the SR2025 markers as a single [PDF file](/docs/resources/2025/sr-markers-sr2025.pdf).
