@@ -12,7 +12,7 @@ The Simulated Robot
 
 The simulator contains a pre-built robot model that can be controlled using the sr-robot3 library.
 The robot is a differential drive robot with a camera and a variety of sensors to sense its environment with.
-
+For the SR2025 competition, the robot has been equipped with a vacuum pump on on a lifting arm to pick up tokens.
 
 <div class="info" style="display: flex;">
 The simulated sensors and motors are not perfectly accurate and have artificial noise included to more closely reflect reality.
@@ -24,11 +24,12 @@ The robot has a number of boards attached to it that can be interacted with usin
 These boards include:
 
 - Power Board (serial number: `PWR`)
+    - OUT_H0 controls the vacuum pump. Enabling this allows the robot to pick up the token.
 - Motor Board (serial number: `MOT`)
     - The left wheel is connected to motor 0.
     - The right wheel is connected to motor 1.
 - Servo Board (serial number: `SERVO`)
-    - No servos are attached to the simulated robot.
+    - Servo 0 controls the lifter. Setting the position to -1 will move the lifter to the bottom position and a position of 1 will move the lifter to the top position.
 - Arduino Board (serial number: `Arduino1`)
     - The arduino has the [SR Firmware]({{ site.baseurl }}/programming/arduino/sr_firmware) installed. This firmware cannot be altered.
     - The attached sensors are covered in the [Sensors](#attached-sensors) section.
