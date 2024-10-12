@@ -19,7 +19,7 @@ event is different so be sure to check the event pages.
 
 All teams attending an event **must** be accompanied by a responsible adult.
 This person will typically be the primary Team Supervisor, however does not need
-to be. In cases where this role is delegated, we require only that:
+to be. In cases where this role is delegated, we require that:
 
 * the person is someone the primary contact is aware of and happy to act as [Team Supervisor][team-supervisor] in their stead at the event:
   * over the age of 18
