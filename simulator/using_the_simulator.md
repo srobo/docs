@@ -99,7 +99,7 @@ See the [Time Controls](#time-controls) section for how to reload the world.
 </div>
 
 As well as the logs being displayed in the console, they are also saved to a file.
-This file is saved in the `zone_0` folder and has a name in the format `log-<date>.log`.
+This file is saved in the `zone_0` folder and has a name in the format `log-zone-<zone>-<date>.log`.
 The date is when that simulation was run.
 
 ## Points of Interest
@@ -148,11 +148,11 @@ This menu can be seen in the image below.
 
 Select the option again to disable the display of the sensor paths.
 
-<!-- ## Running multiple robots
+## Using Other Zones
 
 If the arena has multiple starting zones, you can run multiple robots in the simulator.
 To test how your robot behaves in each starting zone of the arena, you can copy your robot's code to run in each corner.
 
 In the folder where you extracted the simulator, alongside the `zone_0` folder, you may have other `zone_<number>` folders.
 Such as `zone_1`, `zone_2`, etc.
-Each of these folders can contain a `robot.py` file that will be run in the corresponding starting zone of the arena. -->
+Each of these folders can contain a `robot.py` file that will be run in the corresponding starting zone of the arena.
