@@ -5,6 +5,8 @@ title: Robots 101 - Tech Days
 
 # Robots 101 - Tech Days
 
+_See the Tech Days for this year in the [events calendar][events-calendar] on our website._
+
 Tech Days are opportunities for your team to spend a whole day working on your
 robot, with lots of help available. They’re also an opportunity to see how other
 teams are doing or get more direct help with your robot.
