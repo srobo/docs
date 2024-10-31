@@ -11,7 +11,7 @@ The aim of this article is to give you a jumping off point rather than prescribe
 
 Before settling on a final design, it’s a good idea to devise several different strategies. Making a scale plan or model of the arena, tokens, and robots is a very good way to start thinking about these and can aid discussion. Be sure to document the pros and cons of each strategy. Include point scoring, ease of implementation, additional items required to implement the strategy, and possible interactions with other robots.
 
-Narrow the list and prototype some hardware (can be simple) to assess feasibility. The most complex, technologically advanced strategy is not necessarily the best. A simple (and elegant) strategy is more straightforward, quicker to implement and less likely to fail. On many occasions, a simple strategy has won the day.
+Narrow the list and prototype some hardware (can be basic) to assess feasibility. The most complex, technologically advanced strategy is not necessarily the best. A simple (and elegant) strategy is more straightforward, quicker to implement and less likely to fail. On many occasions, a simple strategy has won the day.
 
 ## Movement
 

@@ -14,7 +14,7 @@ The below will automatically calculate the latest version number, to be used whe
 # Updating your brain board
 
 The SD card is located on the underside of the board underneath the green power connector.
-Grab the SD card with your fingers and simply pull it out of the slot.
+Grab the SD card with your fingers and pull it out of the slot.
 
 To fully update your Brain Board's software, or refresh it if you think it's not working correctly, you can flash our SD card image onto the microSD card in your Brain Board.
 
@@ -25,7 +25,7 @@ The flashing procedure is identical to flashing Raspberry Pi images.
 
 ### Etcher
 
-We recommend using [Etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux.
+We recommend using [Etcher](https://etcher.io), as it's designed for people of all skill levels, and is available on Windows, macOS and Linux.
 If you're familiar with Raspberry Pis or other similar boards and have flashed images before with a different tool, that should also work.
 
 ![Etcher example]({{ site.baseurl }}/images/content/kit/etcher.png)

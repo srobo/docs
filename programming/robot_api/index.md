@@ -10,7 +10,7 @@ title: Robot API
 Student Robotics has written a module &mdash; `sr.robot3`  &mdash; which is used to interface with the hardware.
 It handles all the low-level interactions so you don't have to.
 
-For example, to set the power of output 0 on a Motor Board to 30%, you would simply write:
+For example, to set the power of output 0 on a Motor Board to 30%, you would write:
 
 ~~~~~ python
 robot.motor_board.motors[0].power = 0.3

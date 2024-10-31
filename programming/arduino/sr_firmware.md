@@ -123,11 +123,11 @@ In this state, they might read high or low, or different values depending on the
 This is obviously not good for consistent control.
 
 Many pieces of off-the-shelf electronics that have some form of standard I/O output will connect this pin to 5.0V (high) and 0V (low) when required, so this is not a problem.
-However, for simple electronics, a microswitch for example, you would normally be required to connect a resistor between the input pin and 5.0V (a pull-up resistor) to keep the input in a known state until the switch overrides it by connecting directly to 0V.
+However, for basic electronics, a microswitch for example, you would normally be required to connect a resistor between the input pin and 5.0V (a pull-up resistor) to keep the input in a known state until the switch overrides it by connecting directly to 0V.
 
 However, the built-in pull-up resistor alleviates this need.
 It essentially wires in a resistor connected to 5.0V, meaning that when this option is enabled, an input pin will "default" to being high.
-This means you can simply connect a switch between the input pin and a ground pin without any need of resistors - when the switch is open, the pin will read high; when closed, it will read low.
+This means you can connect a switch between the input pin and a ground pin without any need of resistors - when the switch is open, the pin will read high; when closed, it will read low.
 
 ## Ultrasound Sensors
 
