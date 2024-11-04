@@ -4,7 +4,7 @@ The Student Robotics public documentation.
 
 ## Getting Started
 
-For ease of setup, a Docker container is provided. Simply install Docker and `docker-compose`, and run `docker compose up`.
+For ease of setup, a Docker container is provided. Install Docker and `docker-compose`, then run `docker compose up`.
 
 Once setup, the site will be accessible on http://localhost:4000/docs/
 

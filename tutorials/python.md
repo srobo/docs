@@ -50,7 +50,7 @@ print("Number of bees:", y - 2)
 
 The statements are executed one by one, in order. This example would give the output `Number of bees: 12`.
 
-As you may have guessed, the `print(...)` statement displays text on the screen, while the other two lines are simple algebra.
+As you may have guessed, the `print(...)` statement displays text on the screen, while the other two lines are basic algebra.
 
 ### Strings
 
@@ -85,7 +85,7 @@ This example would output `The answer is 42`, as the subtraction is not executed
 
 Variables store values for later use, as in the first example. They can store many different things, but the most relevant here are numbers, strings (blocks of text), booleans (`True` or `False`) and lists (which we'll come to later).
 
-To set a variable, simply give its name (see [Identifiers], below), followed by `=` and a value. For example:
+To set a variable, give its name (see [Identifiers], below), followed by `=` and a value. For example:
 
 ~~~~~ python
 x = 8
@@ -456,7 +456,7 @@ Try the same, but with the right angle in the top-right, like so (again, for inp
 [Calling functions](#calling-functions) {#calling-functions}
 -------------------
 
-Functions are pre-written bits of code that can be run ('called') at any point. The simplest functions take no parameters and return nothing. For example, the `exit` function ends your program prematurely:
+Functions are pre-written bits of code that can be run ('called') at any point. The most basic functions take no parameters and return nothing. For example, the `exit` function ends your program prematurely:
 
 ~~~~~ python
 x = 10

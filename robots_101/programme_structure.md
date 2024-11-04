@@ -22,7 +22,7 @@ before the start of the competition year.
 
 We also provide some [pre-kickstart activities][pre-kickstart-activities] which
 teach some core concepts of robotics making use of our [simulator][simulator]
-and introduce some simple sensors that you could use on your physical robots.
+and introduce some basic sensors that you could use on your physical robots.
 
 ## Kickstart
 

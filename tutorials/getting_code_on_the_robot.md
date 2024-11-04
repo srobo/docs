@@ -10,11 +10,10 @@ title: Getting Code on the Robot
 For your robot to function, it needs some code to tell it what to do.
 This code will be written on your computer, but then needs to be transferred to your robot to execute it.
 
-Getting your code on to the robot is quite simple.
 You will need to put your code on a USB drive which will need to be formatted with either FAT32, exFAT or ext2/3/4.
 Upon plugging in the drive or starting up, the robot will run the `robot.py` file found in the root of the drive.
 
-To re-run your program, simply remove the USB stick from the robot and plug it back in again and it will restart automatically.
+To re-run your program, remove the USB stick from the robot and plug it back in again and it will restart automatically.
 
 
 ## Windows
