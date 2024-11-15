@@ -47,11 +47,9 @@ The following python libraries are installed and available on the brain board:
 ### Simulator differences
 
 Generally we will try to keep the libraries available in the simulator the same as what is available on the physical robot.
-The list below outlines the differences.
+However, the versions of the libraries differ slightly to allow for the simulator to run on a wider range of systems.
+The list below outlines the libraries not available in the simulator:
 
 <!-- cspell:disable -->
 * `debugpy` is not available in the simulator
-* `flask` is not available in the simulator
-* `opencv` is not available in the simulator
-* `sr-robot3` that comes with the simulator has the same API but is different to the one available on pypi
 <!-- cspell:enable -->
