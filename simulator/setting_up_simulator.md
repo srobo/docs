@@ -9,7 +9,8 @@ Setting up the Simulator
 ## Required Software
 
 In order to use the simulator a few set-up steps need to be done.
-First you need to install Python 3.8+ and Webots R2023b.
+First you need to install Python 3, between 3.9 and 3.12, and Webots R2023b.
+Python 3.13 is not currently supported by the simulator.
 
 To install Python, you can download the latest version from the [Python website](https://www.python.org/downloads/). If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step.
 ![python download site]({{ site.baseurl }}/images/content/simulator/python-download.png)
