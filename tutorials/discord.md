@@ -10,6 +10,8 @@ title: Discord Server
 
 To assist with communications there's a [Discord](https://discord.com/) server for communicating with blue-shirts, your team members and other teams.
 
+A fresh Discord server is created for each competition cycle, so everyone present will be a competitor, supervisor or blue-shirt who is part of the same competition.
+
 If you do not wish to, or are unable to join Discord, you can still get support from <{{ site.emails.teams }}> as normal.
 
 ## Joining
