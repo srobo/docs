@@ -49,6 +49,10 @@ If your motors turn in opposite directions, it's often easier to swap the wires 
 
 When the robot runs out of code to run, the program terminates, and all motors and other components turn off. At the end of the program is `robot.sleep(10)`, which lets the program keep running for 10 seconds. For your actual program, your robot will likely have more to do after it moves.
 
+### LEDs
+
+As your motors are turning, you may notice some LEDs lighting up next to the outputs. The LEDs will light up either red or blue based on the direction the robot.
+
 ### Inaccuracies
 
 Even though both your motors are turning at the same speed, your robot may not drive in a perfectly straight line. This is expected, and is usually down to manufacturing tolerances in the motors or wheels themselves.
