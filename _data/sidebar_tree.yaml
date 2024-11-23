@@ -21,6 +21,8 @@ tree:
         title: Tech Days
       - url: /robots_101/team_supervisor
         title: Running a team
+      - url: /robots_101/motors
+        title: Motors
   - url: /tutorials/
     title: Tutorials
     tree:
