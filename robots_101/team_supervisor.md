@@ -18,7 +18,7 @@ You’ll be our point of contact with the team. If you have any questions during
 - Software updates for our kit
 - Information about the [competition event]({{ site.baseurl }}/robots_101/programme_structure#competition) (usually in late March or April)
 
-We aim to host our Kickstart event and Tech Days in multiple locations to make it more convenient for you to travel. However, you will still need to arrange to travel to these places.
+We aim to host our [Kickstart event]({{ site.baseurl }}/robots_101/programme_structure#kickstart) and Tech Days in multiple locations to make it more convenient for you to travel. However, you will still need to arrange to travel to these places.
 This is especially important to book for the competition, as you will likely need to arrange to stay overnight near the venue.
 
 ## The team
