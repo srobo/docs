@@ -80,7 +80,7 @@ If the motor appears to be going in the wrong direction, just swap the motor's p
 As a first example:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 
 robot = Robot()
 
@@ -131,7 +131,7 @@ Our aim is to do the forwards and backwards bit (as above), but, instead of sett
 Here's the code:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 
 robot = Robot()
 

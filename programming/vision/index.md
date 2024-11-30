@@ -28,7 +28,7 @@ see
 Here's an example that will repeatedly print out the distance, in meters, to each marker that the robot can see:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 while True:
@@ -52,7 +52,7 @@ capture
 
 ~~~~~ python
 import cv2
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 frame = robot.camera.capture()
@@ -68,7 +68,7 @@ You can use the output of the `capture` method with the other vision commands to
 This may be useful if you wish to use both your own vision algorithms and our marker detection on the same frames.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 # Capture an OpenCV frame
@@ -101,7 +101,7 @@ Snapshots are saved to your USB drive, and can be viewed on another computer.
 </div>
 
 ```python
-from sr.robot3 import *
+from sr.robot3 import Robot
 
 robot = Robot()
 

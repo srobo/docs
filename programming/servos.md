@@ -18,7 +18,7 @@ Accessing the Servo Board
 The servo board can be accessed using the `servo_board` property of the `Robot` object.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 my_servo_board = robot.servo_board

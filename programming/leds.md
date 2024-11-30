@@ -38,7 +38,7 @@ robot.kch.leds[LED_B].colour = Colour.CYAN
 robot.kch.leds[LED_C].colour = Colour.OFF
 ~~~~~
 
-The available colours are:
+The available colours are defined on the `Colour` enum:
 
 ~~~~~ python
 Colour.OFF
@@ -63,3 +63,9 @@ robot.kch.leds[LED_B].r = False
 # Turn on the green segment of LED B
 robot.kch.leds[LED_B].g = True
 ~~~~~
+
+These values are all available from the `sr.robot3` module:
+
+~~~~ python
+from sr.robot3 import Colour, LED_A, LED_B, LED_C
+~~~~

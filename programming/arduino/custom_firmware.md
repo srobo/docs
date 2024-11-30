@@ -23,7 +23,7 @@ The Arduino serial number is a string of numbers and letters, and is output in t
 You'll need the serial number later, so it's best to save it into a variable:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 
 # Replace this with the actual serial number of your board
 ARDUINO_SN = "752303138333517171B1"
@@ -40,7 +40,7 @@ If you need to communicate with a device, you will need to open its serial port.
 If you want the `robot` object to do this and provide a serial port for your use, you will need to do the following.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 
 # Replace this with the actual serial number of your board
 ARDUINO_SN = "752303138333517171B1"

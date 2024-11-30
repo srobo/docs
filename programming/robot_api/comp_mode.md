@@ -28,14 +28,7 @@ This will instruct your robot that it is in competition mode and will have a num
     Certain robot attributes will change when in comp mode, these can be used to change your robot's behaviour.
     The affected attributes are:
 
-    mode
-    :   Whether the robot is running in competition mode.
-        When in a competition match, this will be `COMP`, and at all other times this will be `DEV`.
+    - `robot.mode`
+    - `robot.zone`
 
-    zone
-    :   The number of the scoring zone that the robot is associated with.
-        Between `0` and `3`.
-
-        The zone you are in defines which arena markers are near your scoring zone.
-        You can use the knowledge of your zone to compensate for this, so your robot behaves correctly in all starting positions.
-        See the [rules]({{ site.baseurl }}/rules) for where the scoring zones and arena markers are positioned.
+    See [other robot attributes]({{ site.baseurl }}/programming/robot_api/#other-robot-attributes) for further details of these attributes.
