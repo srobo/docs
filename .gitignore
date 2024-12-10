@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 .bundle
 node_modules/
+_sass/_syntax-highlighting.scss
