@@ -95,6 +95,7 @@ usbkey
 
     ~~~~~ python
     from sr.robot3 import Robot
+    import os
 
     robot = Robot()
     print("The path to the USB stick is:", robot.usbkey)
