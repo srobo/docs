@@ -131,3 +131,30 @@ robot.wait_start()
 ~~~~~
 
 This will not pause on the line which creates the `robot` but will instead pause on the `robot.wait_start()` line, until the start button is pressed.
+
+## Enums
+
+Many values from the robot API are "enums". Enums are sets of values with names.
+
+Enums compare equal to each other:
+
+~~~~~ python
+from sr.robot3 import Colour
+
+pump_output = PowerOutputPosition.H0
+
+pump_output == PowerOutputPosition.H0  # True
+pump_output == PowerOutputPosition.H1  # False
+~~~~~
+
+Enums are special values. They may look like strings or numbers, but they're not. An enum is a name for a special value. For example, the value for `PowerOutputPosition.H0` is `0`, whilst `RobotMode.COMP` is `"COMP"`. The inner value can be retrieved using `.value`.
+
+
+~~~~~ python
+from sr.robot3 import RobotMode
+
+RobotMode.COMP == "COMP"  # False
+RobotMode.COMP.value == "COMP"  # True
+~~~~~
+
+In general, the enum should be used and compared directly, rather than using its inner value.
