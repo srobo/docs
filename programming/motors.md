@@ -19,7 +19,7 @@ Accessing the Motor Board
 If there is exactly one Motor Board connected to your robot, it can be accessed using the `motor_board` property of the `Robot` object.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 my_motor_board = robot.motor_board
@@ -39,7 +39,7 @@ sr.robot3.robot - INFO - Found MotorBoard, serial: srXYZ1
 You can then access the boards like this:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 my_motor_board = robot.motor_boards["srABC1"]
@@ -125,6 +125,7 @@ Special Values
 --------------
 
 In addition to the numeric values, there are two special constants that can be used:
+
 - `BRAKE`
 - `COAST`
 
@@ -135,6 +136,8 @@ In addition to the numeric values, there are two special constants that can be u
 </div>
 
 ~~~~~ python
+from sr.robot3 import BRAKE, COAST
+
 # Stop the motor as quick as possible
 robot.motor_boards["srABC1"].motors[0].power = BRAKE
 ~~~~~

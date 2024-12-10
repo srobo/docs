@@ -23,12 +23,20 @@ See the [Motor Board]({{ site.baseurl }}/programming/motors) page for more detai
 To gain access to all of this functionality, all you need to do at the top of your code is the following:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 ~~~~~
 
 This imports the Student Robotics module that we've written to interface with our hardware.
 We then use the `Robot` class from within the `sr.robot3` module, to create a `robot` object that sets up and gives you access to your robot's hardware.
+
+Alongside `Robot`, other values are importable from `sr.robot3` which may be useful, such as `OUT_H0` or `A3`. It's best practice to only import the values you need, rather than `import *`. Most of these are available directly, or can be retrieved from the enums they're defined on (`PowerOutputPosition` and `AnalogPins` in these cases). If you need multiple values, you can import them all on one line:
+
+~~~~ python
+from sr.robot3 import Robot, OUT_H0, AnalogPins
+~~~~
+
+If you don't need a value, it's best not to import it, to avoid accidentally overriding it.
 
 <div class="info" markdown="1">
 Most examples in the documentation will assume you have created a `robot` object from the `Robot` class.
@@ -46,7 +54,6 @@ Then, within your `robot` you can use the following attributes to access to the 
 
 The functions of each board are described on their respective pages.
 
-
 ## Other Robot Attributes
 
 As well as the attributes listed above, the `Robot` class also has the following attributes, which you may find useful:
@@ -56,6 +63,8 @@ zone
     Between `0` and `3`.
 
     This attribute is only available after the start button is pressed and will throw an error if accessed before.
+    The zone you are in defines which arena markers are near your scoring zone.
+    You can use the knowledge of your zone to compensate for this, so your robot behaves correctly in all starting positions.
     See the [competition mode](./comp_mode) page for more information about this attribute.
 
 mode
@@ -66,7 +75,7 @@ mode
     See the [competition mode](./comp_mode) page for more information about this attribute.
 
     ~~~~~ python
-    from sr.robot3 import *
+    from sr.robot3 import Robot, COMP, DEV
 
     robot = Robot()
 
@@ -76,6 +85,8 @@ mode
         print("This is development")
     ~~~~~
 
+    `COMP` and `DEV` are aliases for `RobotMode.COMP` and `RobotMode.DEV`, which can also be imported from `sr.robot3`.
+
 usbkey
 :   A [`Path`](https://docs.python.org/3/library/pathlib.html#basic-use) object containing the path to the USB stick.
     You can use this to easily read and write files on the USB stick itself.
@@ -83,7 +94,7 @@ usbkey
     An example of how the `usbkey` attribute might be used to read a file called `my-file.txt` which is stored on the USB stick:
 
     ~~~~~ python
-    from sr.robot3 import *
+    from sr.robot3 import Robot
     import os
 
     robot = Robot()
@@ -103,7 +114,7 @@ is_simulated
 Normally the Robot object is initialised with the following:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 ~~~~~
 
@@ -111,7 +122,7 @@ By default your robot will pause on this line waiting for the start button to be
 However if you want to initialise some hardware or software before the start button is pressed then Robot initialisation can be broken up as follows.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot(wait_for_start=False)
 
 # Initialisation phase.
@@ -121,3 +132,30 @@ robot.wait_start()
 ~~~~~
 
 This will not pause on the line which creates the `robot` but will instead pause on the `robot.wait_start()` line, until the start button is pressed.
+
+## Enums
+
+Many values from the robot API are "enums". Enums are sets of values with names.
+
+Enums compare equal to each other:
+
+~~~~~ python
+from sr.robot3 import Colour
+
+pump_output = PowerOutputPosition.H0
+
+pump_output == PowerOutputPosition.H0  # True
+pump_output == PowerOutputPosition.H1  # False
+~~~~~
+
+Enums are special values. They may look like strings or numbers, but they're not. An enum is a name for a special value. For example, the value for `PowerOutputPosition.H0` is `0`, whilst `RobotMode.COMP` is `"COMP"`. The inner value can be retrieved using `.value`.
+
+
+~~~~~ python
+from sr.robot3 import RobotMode
+
+RobotMode.COMP == "COMP"  # False
+RobotMode.COMP.value == "COMP"  # True
+~~~~~
+
+In general, the enum should be used and compared directly, rather than using its inner value.

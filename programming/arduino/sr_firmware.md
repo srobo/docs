@@ -15,7 +15,7 @@ The kit can control multiple Arduinos at once, however we only provide one in th
 If there is exactly one Arduino connected to your robot, it can be accessed using the `arduino` property of the `Robot` object.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 my_arduino = robot.arduino
@@ -57,10 +57,13 @@ The possible modes for a pin are:
 `INPUT_PULLUP`
 :   set the pin to input mode with a [pull-up resistor](#pull-up-resistors)
 
+These are available from `sr.robot3`, or the `GPIOPinMode` enum.
 
 An example of how to use this is below:
 
 ~~~~~ python
+from sr.robot3 import INPUT, INPUT_PULLUP, OUTPUT
+
 # set Arduino pin 2 to output
 robot.arduino.pins[2].mode = OUTPUT
 
@@ -96,8 +99,11 @@ value = robot.arduino.pins[A0].analog_read()
 value = robot.arduino.pins[A4].analog_read()
 ~~~~~
 
-The analog pin numbers are available as `A0`, `A1`, `A2`, `A3`, `A4`, and `A5` respectively.
+The analog pin numbers are available as `A0`, `A1`, `A2`, `A3`, `A4`, and `A5` respectively, either imported directly or using the `AnalogPins` enum.
 
+~~~~ python
+from sr.robot3 import A0, A1, A2, A3, A4, A5, AnalogPins
+~~~~
 
 ## Output
 
@@ -145,6 +151,6 @@ distance_mm = robot.arduino.ultrasound_measure(4, 5)
 
 <div class="warning">
 The ultrasound sensor can measure distances up to around 4 metres.
-If the ultrasound signal has to travel further, the echo may not be detected. 
+If the ultrasound signal has to travel further, the echo may not be detected.
 This will cause the sensor to timeout and return 0.
 </div>

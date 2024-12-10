@@ -18,7 +18,7 @@ Accessing the Power Board
 The power board can be accessed using the `power_board` property of the `Robot` object.
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 robot = Robot()
 
 my_power_board = robot.power_board
@@ -28,7 +28,7 @@ my_power_board = robot.power_board
 Power Outputs
 -------------
 
-Each of the power board's controllable outputs has a constant whose name closely matches the name of the output:
+Each of the power board's controllable outputs has a constant whose name closely matches the name of the output, which can be imported from `sr.robot3`:
 
 * H0 : `OUT_H0`
 * H1 : `OUT_H1`
@@ -37,6 +37,8 @@ Each of the power board's controllable outputs has a constant whose name closely
 * L2 : N/A (Not Controllable - This port is used to power the Brain Board)
 * L3 : `OUT_L3`
 * 5V : `OUT_FIVE_VOLT`
+
+These are also available on the `PowerOutputPosition` enum.
 
 Both of the 5V outputs are controlled together.
 
@@ -108,6 +110,8 @@ The frequency on the buzzer is limited from 8Hz to 10,000Hz
 </div>
 
 ~~~~~ python
+from sr.robot3 import Note
+
 # Beep for 0.5s in D.
 robot.power_board.piezo.buzz(Note.D6, 0.5)
 

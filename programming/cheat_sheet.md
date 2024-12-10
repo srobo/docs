@@ -16,7 +16,7 @@ For more information, make sure you check the rest of the documentation.
 In order to use the `sr.robot3` API you first need to import it into your code:
 
 ~~~~~ python
-from sr.robot3 import *
+from sr.robot3 import Robot
 ~~~~~
 
 ## Initialising your robot
