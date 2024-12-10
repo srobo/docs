@@ -129,8 +129,6 @@ In addition to the numeric values, there are two special constants that can be u
 - `BRAKE`
 - `COAST`
 
-Which are aliases for entries of the `MotorPower` enum with the same name.
-
 `BRAKE` will stop the motors from turning, and thus stop your robot as quick as possible.
 
 <div class="info" markdown="1">
