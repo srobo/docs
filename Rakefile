@@ -34,11 +34,16 @@ end
 
 task :submodules => ['_sass/brand/.git']
 
-task :dev => [:dependencies, :submodules] do
+task :styles => [:dependencies] do
+  highlight_css = `bundle exec rougify style github`.strip()
+  File.write("_sass/_syntax-highlighting.scss", highlight_css)
+end
+
+task :dev => [:dependencies, :submodules, :styles] do
   sh('bundle exec jekyll serve --host 0.0.0.0 --drafts --config _config.yml,_dev.yml')
 end
 
-task :build => [:dependencies, :submodules] do
+task :build => [:dependencies, :submodules, :styles] do
   sh('bundle exec jekyll build --config _config.yml')
 end
 
