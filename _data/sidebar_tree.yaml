@@ -45,6 +45,8 @@ tree:
       title: Updating your brain board
     - url: /tutorials/discord
       title: How to use Discord
+    - url: /tutorials/code_submitter
+      title: How to Submit Code
   - url: /rules/
     title: Rules
     tree:
