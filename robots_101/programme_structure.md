@@ -69,7 +69,7 @@ as volunteers able to help with the kits and hands-on guidance with your robot.
 
 ## Virtual League
 
-The Virtual League is often the first change you'll have to test your strategies
+The Virtual League is often the first chance you'll have to test your strategies
 against other teams. You'll [submit][code-submitter] your robot code for running
 against other teams in the [simulator][simulator]. The matches are livestreamed
 on our [YouTube Channel][youtube] and you'll get a copy of your robot's logs
