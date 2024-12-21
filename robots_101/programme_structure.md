@@ -67,9 +67,9 @@ more direct help with your robot.
 We provide a space for you to work in, with power and internet access, as well
 as volunteers able to help with the kits and hands-on guidance with your robot.
 
-## Virtual Competition
+## Virtual League
 
-The Virtual Competition is often the first change you'll have to test your
+The Virtual League is often the first change you'll have to test your
 strategies against other teams. You'll submit your robot code for running
 against other teams in the [simulator][simulator]. The matches are livestreamed
 on our [YouTube Channel][youtube] and you'll get a copy of your robot's logs
