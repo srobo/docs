@@ -1,9 +1,9 @@
 ---
 layout: page
-title: How to Submit Code
+title: Using the Code Submitter
 ---
 
-# How to Submit Code
+# Using the Code Submitter
 
 For virtual aspects of the competition, such as the [Virtual League][virtual-league], you will submit your code using the [code-submitter][code-submitter].
 Your code will then be run alongside other teams' code in the [simulator][simulator].
