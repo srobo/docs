@@ -8,9 +8,9 @@ title: Discord Server
 
 # Discord Server
 
-To assist with communications there's a [Discord](https://discord.com/) server for communicating with blueshirts, your team members and other teams.
+To assist with communications there's a [Discord](https://discord.com/) server for communicating with Blueshirts, your team members and other teams.
 
-A fresh Discord server is created for each competition cycle, so everyone present will be a competitor, supervisor or blueshirt who is part of the same competition.
+A fresh Discord server is created for each competition cycle, so everyone present will be a competitor, supervisor or Blueshirt who is part of the same competition.
 
 If you do not wish to, or are unable to join Discord, you can still get support from <{{ site.emails.teams }}> as normal.
 
@@ -28,7 +28,7 @@ The server has a number of channels for specific conversation. Please try to kee
 
 Along with the common channels, there are some channels visible only to members of your team.
 
-`team-ABC` (where `ABC` is your TLA) is a channel only your team (and blueshirts) can see. Here you can converse among your team, and get help from blueshirts without giving away too much of your strategy. These channels should be considered your own, and can be used to discuss anything competition related for your team.
+`team-ABC` (where `ABC` is your TLA) is a channel only your team (and Blueshirts) can see. Here you can converse among your team, and get help from Blueshirts without giving away too much of your strategy. These channels should be considered your own, and can be used to discuss anything competition related for your team.
 
 When asking for support, it's best to ask in public rooms unless there's a specific reason not to. This not only allows other teams who may be struggling with the same issue to benefit, but also allows them to contribute to a solution and discuss potential improvements.
 
@@ -38,4 +38,4 @@ If your school / institution has multiple teams (`ABC2` etc), these will be sepa
 
 It may be beneficial to have a voice channel for your team, whether for communication within your team or easier support from Student Robotics.
 
-If you'd like a voice channel for your team(s), please let us know either in Discord or by email. Only requests from a team supervisor will be honoured. Please note that for safeguarding purposes, blueshirts will only join voice calls when asked and can only be around whilst a responsible adult (team supervisor, parent) is also in the call. Team supervisors also be responsible for ensuring conduct in these rooms meets our rules.
+If you'd like a voice channel for your team(s), please let us know either in Discord or by email. Only requests from a team supervisor will be honoured. Please note that for safeguarding purposes, Blueshirts will only join voice calls when asked and can only be around whilst a responsible adult (team supervisor, parent) is also in the call. Team supervisors also be responsible for ensuring conduct in these rooms meets our rules.
