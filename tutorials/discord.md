@@ -47,4 +47,4 @@ If your school / institution has multiple teams (`ABC2` etc), these will be sepa
 
 It may be beneficial to have a voice channel for your team, whether for communication within your team or easier support from Student Robotics.
 
-If you'd like a voice channel for your team(s), please let us know either in Discord or by email. Only requests from a team supervisor will be honoured. Please note that for safeguarding purposes, Blueshirts will only join voice calls when asked and can only be around whilst a responsible adult (team supervisor, parent) is also in the call. Team supervisors are also be responsible for ensuring conduct in these channels meets our rules.
+If you'd like a voice channel for your team(s), please let us know either in Discord or by email. Only requests from a team supervisor will be honoured. Please note that for safeguarding purposes, Blueshirts will only join voice calls when asked and can only be around whilst a responsible adult (team supervisor, parent) is also in the call. Team supervisors are also responsible for ensuring conduct in these channels meets our rules.
