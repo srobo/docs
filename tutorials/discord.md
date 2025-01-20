@@ -22,7 +22,7 @@ If you do not wish to, or are unable to join Discord, you can still get support 
 
 Invite links and entry passwords are sent to team supervisors at the start of each competition year.
 These ensure you're added to the correct school / institution and team.
-Only team members should be given access.
+Only team members and supervisors should be given access.
 
 If you do not already have a Discord account, you'll be prompted to create one.
 You may of course use your existing account, but please make sure the profile picture and username are appropriate.
