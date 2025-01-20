@@ -16,7 +16,7 @@ If you do not wish to, or are unable to join Discord, you can still get support 
 
 ## Joining
 
-Invite links and entry passwords will be sent to team leaders which will ensure you're added to the correct school / institution and team. Only team members should be given access. If you do not already have an account, you'll be prompted to create one. You may of course use your existing account, but please make sure the profile picture and username are appropriate.
+Invite links and entry passwords will be sent to team supervisors which will ensure you're added to the correct school / institution and team. Only team members should be given access. If you do not already have an account, you'll be prompted to create one. You may of course use your existing account, but please make sure the profile picture and username are appropriate.
 
 Once invited, you'll only have access to a few channels, namely `#welcome-and-rules` and `#welcome-<username>` (with your username in). Before you can join, you must read the rules shown in the `#welcome-and-rules` channel, and enter the password for your team in your personal `#welcome-<username>` channel.
 
@@ -32,7 +32,7 @@ Along with the common channels, there are some channels visible only to members 
 
 When asking for support, it's best to ask in public rooms unless there's a specific reason not to. This not only allows other teams who may be struggling with the same issue to benefit, but also allows them to contribute to a solution and discuss potential improvements.
 
-If your school / institution has multiple teams (`ABC2` etc), these will be separate channels (`team-ABC1`, `team-ABC2` etc). Team leaders will be in all team channels relevant to their school / institution, however as competitors can only be in a single team, they'll only be in a single team channel.
+If your school / institution has multiple teams (`ABC2` etc), these will be separate channels (`team-ABC1`, `team-ABC2` etc). Team supervisors will be in all team channels relevant to their school / institution, however as competitors can only be in a single team, they'll only be in a single team channel.
 
 #### Voice channels
 
