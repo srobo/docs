@@ -8,6 +8,10 @@ title: Discord Server
 
 # Discord Server
 
+<div class="info">
+  Ask your team supervisor for the invite link and password to access the Discord server for the competition.
+</div>
+
 To assist with communications there's a [Discord](https://discord.com/) server for communicating with Blueshirts, your team members and other teams.
 
 A fresh Discord server is created for each competition cycle, so everyone present will be a competitor, supervisor or Blueshirt who is part of the same competition.
@@ -16,7 +20,8 @@ If you do not wish to, or are unable to join Discord, you can still get support 
 
 ## Joining
 
-Invite links and entry passwords will be sent to team supervisors which will ensure you're added to the correct school / institution and team.
+Invite links and entry passwords are sent to team supervisors at the start of each competition year.
+These ensure you're added to the correct school / institution and team.
 Only team members should be given access.
 
 If you do not already have a Discord account, you'll be prompted to create one.
