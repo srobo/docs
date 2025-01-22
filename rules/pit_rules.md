@@ -30,6 +30,8 @@ To provide a safe environment in which to use tools, we have a dedicated tools a
 
 ### Permitted tools
 
+For any queries on specific tools, please speak to Helpdesk.
+
 Though not an exhaustive list, you are permitted to use the following tools within your pits:
 
 - Screwdrivers
