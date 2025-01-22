@@ -56,6 +56,8 @@ tree:
     #  title: Safety Regulations
     - url: /rules/archive
       title: Game Rules Archive
+    - url: /rules/pit_rules
+      title: Pit Rules
   - url: /kit/
     title: Kit
     tree:
