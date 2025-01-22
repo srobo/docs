@@ -56,4 +56,4 @@ Some tools are **not permitted** to be used anywhere within the venue; these inc
 ## Robot Rules
 
 - Robots must be safely immobilised before being carried around the venue
-- The power switch on top of your robot must always be accessible whenever the robot is powered
+- The power switch must be on top of your robot and accessible whenever the robot is powered
