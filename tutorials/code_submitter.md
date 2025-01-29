@@ -22,6 +22,11 @@ Once you have prepared the archive containing your code:
     (check with your supervisor if you're not sure what this is)
 1. Upload the archive to the Code Submitter
 
+You team can make as many submissions as you like.
+Each is recorded along with the date & time of the submission and can be downloaded again if needed.
+This allows you to continue working on their code even after having made an initial submission.
+The last submission before the deadline is the one which will be used.
+
 [virtual-league]: {{ site.baseurl }}/robots_101/programme_structure#virtual-league
 [simulator]: {{ site.baseurl }}/simulator/
 [code-submitter]: https://studentrobotics.org/code-submitter/
