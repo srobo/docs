@@ -70,10 +70,10 @@ as volunteers able to help with the kits and hands-on guidance with your robot.
 ## Virtual League
 
 The Virtual League is often the first chance you'll have to test your strategies
-against other teams. This uses the same [simulator][simulator] used for the
-pre-Kickstart activities and the includes a [simulated robot][simulated-robot]
-which both supports the same programming interface as your robot and has a wide
-array of sensors.
+against other teams. The Virtual League plays the same game as the physical
+competition, though takes place in the [simulator][simulator]. You'll write
+code for a [simulated robot][simulated-robot] which both supports the same
+programming interface as your physical robot and has a wide array of sensors.
 
 This allows you to use the simulator and the Virtual League to learn about
 writing code for a robot as well as developing the code for your physical robot
@@ -81,10 +81,10 @@ before it's fully built. The Virtual League is thus a both a first test of your
 code as well as an early opportunity to explore strategies for competing against
 other teams.
 
-Shortly before the event you'll [submit][code-submitter] so the matches can be
-simulated. The matches are then livestreamed on our [YouTube Channel][youtube].
-After the livestream you'll get a copy of your robot's logs afterwards so you
-can continue to improve it.
+Shortly before the event you'll [submit][code-submitter] your robot code so the
+matches can be simulated. The matches are then livestreamed on our
+[YouTube Channel][youtube]. Afterwards you'll get a copy of your simulated
+robot's logs so you can continue to improve your code.
 
 ## Competition
 
