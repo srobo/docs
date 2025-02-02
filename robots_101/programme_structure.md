@@ -72,7 +72,7 @@ as volunteers able to help with the kits and hands-on guidance with your robot.
 The Virtual League is often the first chance you'll have to test your strategies
 against other teams. This uses the same [simulator][simulator] used for the
 pre-Kickstart activities and the includes a [simulated robot][simulated-robot]
-which both supports the same programming interface as your robot and as a wide
+which both supports the same programming interface as your robot and has a wide
 array of sensors.
 
 This allows you to use the simulator and the Virtual League to learn about
