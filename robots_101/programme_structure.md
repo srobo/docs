@@ -78,7 +78,7 @@ array of sensors.
 This allows you to use the simulator and the Virtual League to learn about
 writing code for a robot as well as developing the code for your physical robot
 before it's fully built. The Virtual League is thus a both a first test of your
-code as well as an early opportunity to explore strategies competing against
+code as well as an early opportunity to explore strategies for competing against
 other teams.
 
 Shortly before the event you'll [submit][code-submitter] so the matches can be
