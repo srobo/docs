@@ -15,10 +15,15 @@ Python 3.13 is not currently supported by the simulator.
 To install Python, you can download the latest version from the [Python website](https://www.python.org/downloads/). If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step.
 ![python download site]({{ site.baseurl }}/images/content/simulator/python-download.png)
 
-We recommend using **Python 3.11** as it is the version which is used on your physical robot.
+We recommend using [**Python 3.11**](https://www.python.org/downloads/release/python-3119/) as it is the version which is used on your physical robot.
 
-To install Webots, you can download the latest version from the [Webots website](https://cyberbotics.com/#download). Use the default settings when installing Webots.
+To install Webots, you can download the latest version from the [Webots website](https://cyberbotics.com/#download), however for the virtual league, Webots [R2023b](https://github.com/cyberbotics/webots/releases/tag/R2023b) will be used.
+
+Use the default settings when installing Webots.
+
+
 ![webots download site]({{ site.baseurl }}/images/content/simulator/webots-download.png)
+
 
 ## Simulator Bundle
 
