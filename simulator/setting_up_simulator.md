@@ -17,7 +17,7 @@ To install Python, you can download the latest version from the [Python website]
 
 We recommend using [**Python 3.11**](https://www.python.org/downloads/release/python-3119/) as it is the version which is used on your physical robot.
 
-To install Webots, you can download the latest version from the [Webots website](https://cyberbotics.com/#download), however for the virtual league, Webots [R2023b](https://github.com/cyberbotics/webots/releases/tag/R2023b) will be used.
+To install Webots R2023b, you can download it from the [Webots GitHub](https://github.com/cyberbotics/webots/releases/tag/R2023b). Other versions may work, but this version will be used for the Virtual League.
 
 Use the default settings when installing Webots.
 
