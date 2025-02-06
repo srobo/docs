@@ -114,11 +114,13 @@ As time in the simulator is part of the simulation itself, your code must regula
 To allow the simulation to be run at various speeds, `time.sleep` must not be used.
 Instead, `robot.sleep` should be used.
 This allows the simulator to simulate the time your robot would be sleeping for.
+For similar reasons, to obtain the current time, `robot.time` must be used over `time.time`.
 
 While the simulator does simulate the time taken for each call to our API, it does not simulate the time taken for general computation.
 This means that if you have a loop that does not contain a `robot.sleep`, the simulator will freeze as it waits for the loop to complete.
 If you find the timer is not advancing, or is very slow, you likely have a loop without a sleep.
 Generally, it is best practice to have a `robot.sleep` in every loop, even if it is a very short time.
+
 
 ### Reopening the Camera Overlay
 
