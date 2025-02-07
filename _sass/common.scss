@@ -33,11 +33,17 @@
   }
 }
 
-.highlight {
-  padding: 1rem;
+pre.highlight {
+  padding: 1.5rem;
 }
 
 .centered-content {
   display: flex;
   justify-content: center;
+}
+
+code.highlighter-rouge {
+  @extend .highlight;
+
+  padding: 0.1rem;
 }
