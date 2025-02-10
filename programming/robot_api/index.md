@@ -118,9 +118,9 @@ sleep(seconds)
 
     print("The robot just started.")
 
-    robot.sleep(3)
+    robot.sleep(2.5)
 
-    print("The robot has been running for 3 seconds.")
+    print("The robot has been running for 2.5 seconds.")
     ~~~~~
 
     This method is particularly useful in the simulator, where the simulation may be running faster than real-time. Whilst `time.sleep` will still work as expected on the physical robot, it's still recommended to use `robot.sleep` to ensure your code is portable.
