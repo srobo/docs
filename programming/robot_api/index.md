@@ -128,9 +128,9 @@ sleep(seconds)
     See [Simulation of Time]({{ site.baseurl }}/simulator/using_the_simulator#simulation-of-time) for more information.
 
 time()
-:   Returns the current time in seconds, measured since the [epoch](https://docs.python.org/3/library/time.html#epoch) (January 1, 1970, midnight). This method is similar to the built-in [`time.time`](https://docs.python.org/3/library/time.html#time.time) method.
+:   Returns the current time in seconds, measured since an [epoch](https://en.wikipedia.org/wiki/Epoch) (reference time). This method is similar to the built-in [`time.time`](https://docs.python.org/3/library/time.html#time.time) method.
 
-    The exact time on the robot will not be correct, however it can still be used to measure the duration between 2 events.
+    Whilst the exact time on the robot will not be correct (it won't match a clock), it will still progress as expected, making it useful to measure the duration between 2 points in time. The exact value of the time itself is meaningless.
 
     ~~~~~ python
     from sr.robot3 import Robot
