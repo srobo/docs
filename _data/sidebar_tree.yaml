@@ -52,10 +52,10 @@ tree:
     tree:
     #- url: /rules/code_of_conduct
     #  title: Code Of Conduct
-    #- url: /rules/safety_regulations
-    #  title: Safety Regulations
     - url: /rules/archive
       title: Game Rules Archive
+    - url: /rules/safety_regulations
+      title: Safety Regulations
     - url: /rules/pit_rules
       title: Pit Rules
   - url: /kit/
