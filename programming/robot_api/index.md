@@ -108,6 +108,43 @@ is_simulated
 :   A boolean value indicating whether or not the code is running in the simulator.
     This value is `True` when in the simulator and `False` when on the robot.
 
+sleep(seconds)
+:   A method, similar to the built-in [`time.sleep`](https://docs.python.org/3/library/time.html#time.sleep), which pauses the program's execution for a given number of seconds.
+
+    ~~~~~ python
+    from sr.robot3 import Robot
+
+    robot = Robot()
+
+    print("The robot just started.")
+
+    robot.sleep(2.5)
+
+    print("The robot has been running for 2.5 seconds.")
+    ~~~~~
+
+    This method is particularly useful in the simulator, where the simulation may be running faster than real-time. Whilst `time.sleep` will still work as expected on the physical robot, it's still recommended to use `robot.sleep` to ensure your code is portable.
+
+    See [Simulation of Time]({{ site.baseurl }}/simulator/using_the_simulator#simulation-of-time) for more information.
+
+time()
+:   Returns the current time in seconds, measured since an [epoch](https://en.wikipedia.org/wiki/Epoch) (reference time). This method is similar to the built-in [`time.time`](https://docs.python.org/3/library/time.html#time.time) method.
+
+    Whilst the exact time on the robot will not be correct (it won't match a clock), it will still progress as expected, making it useful to measure the duration between 2 points in time. The exact value of the time itself is meaningless.
+
+    ~~~~~ python
+    from sr.robot3 import Robot
+
+    robot = Robot()
+
+    start = robot.time()
+    do_expensive_operation()
+    end = robot.time()
+
+    duration = end - start
+
+    print(f"The expensive operation took {duration:.2f} seconds.")
+    ~~~~~
 
 ## Custom Robot Object Initialisation
 
