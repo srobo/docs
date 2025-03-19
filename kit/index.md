@@ -28,7 +28,7 @@ As well as the boards the kit also contains the following items.
 
 | Part                   | Qty | Specification                                      | Notes
 |------------------------|-----|----------------------------------------------------|-------
-| Battery Charger Supply | 1   | 12V 5A, 5.5mmx2.5mm barrel                         | For use with the battery charger
+| Battery Charger Supply | 1   | 12V 5A, 5.5mm × 2.5mm barrel                       | For use with the battery charger
 | Battery Charger        | 1   | iMAX B6 or HobbyKing E4                            | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
 | USB Hub                | 3   | 7-Port                                             | The hub does *not* require a power cable
 | USB Memory Stick       | 1   |                                                    |
