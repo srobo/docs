@@ -30,7 +30,7 @@ If you are not returning a complete kit, similar precautions should be used to e
 When shipping the kit with your courier of choice, they may require specific details about the kit:
 
 - Description: Robotics kit
-- Dimensions: 48cm x 39cm x 20cm
+- Dimensions: 48cm × 39cm × 20cm
 - Weight: 6kg (A kit weighs approx. 4.95kg; 6kg gives some headroom)
 - Value (for insurance): £500
 - Batteries: Lithium Ion. Packed with equipment. Batteries less than 100Wh.
