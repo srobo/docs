@@ -1,20 +1,30 @@
-{% for kit_version in site.data.kit_versions %}
-  {% assign version = kit_version.version %}
-  {% if forloop.first %}
-  <h2><code><strong>{{ version }}</strong> ({{ kit_version.released | date_to_string }})</code> </h2>
-  {% else %}
-  <h2><code>{{ version }} ({{ kit_version.released | date_to_string }})</code></h2>
-  {% endif %}
-  {% if kit_version.yanked %}
-  <p>This version is no longer available.</p>
-  {% else %}
-  <a class="kit-download-link" data-version="{{ version }}" href="{{ kit_version.link }}">
-      Download {{ version }}
-  </a>
-  {% endif %}
-  <ul>
-  {% for log in kit_version.changelog %}
-    <li>{{log }}</li>
-  {% endfor %}
-  </ul>
+{% assign grouped_kit_versions = site.data.kit_versions | group_by_exp: 'item', 'item.version | split: "." | first`' %}
+{% assign latest_version = site.data.kit_versions | first %}
+
+
+{% for group in grouped_kit_versions %}
+<h2>{{ group.name }}</h2>
+{% for kit_version in group.items %}
+{% assign version = kit_version.version %}
+{% if kit_version == latest_version %}
+<h3><code><strong>{{ version }}</strong> ({{ kit_version.released | date_to_string }})</code> </h3>
+{% else %}
+<h3><code>{{ version }} ({{ kit_version.released | date_to_string }})</code></h3>
+{% endif %}
+{% if kit_version.yanked %}
+<p>This version is no longer available.</p>
+{% else %}
+<a class="kit-download-link" data-version="{{ version }}" href="{{ kit_version.link }}">
+    Download {{ version }}
+</a>
+{% endif %}
+<ul>
+{% for log in kit_version.changelog %}
+  <li>{{ log }}</li>
+{% endfor %}
+</ul>
+{% endfor %}
+{% if forloop.first %}
+<div class="warning">Using a version from a previous competition may have unintended side-effects. Only install versions from the same competition year.</div>
+{% endif %}
 {% endfor %}
