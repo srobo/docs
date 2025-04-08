@@ -6,6 +6,11 @@
 #   changelog:
 #     - Changed something
 #     - Changed another thing too
+- version: 2025.0.0
+  released: 2024-09-01
+  link: https://github.com/srobo/robot-image/releases/download/2025.0.0/Student.Robotics.OS-image-2025.0.0.img.xz
+  changelog:
+    - Initial release for SR2025.
 - version: 2024.1.0
   released: 2023-09-14
   link: https://github.com/srobo/robot-image/releases/download/2024.1.0/Student.Robotics.OS-image-2024.1.0.img.xz
