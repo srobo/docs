@@ -184,11 +184,11 @@ jobs:
           } > ./comment.md
 
       - name: Post diff to PR
-        uses: thollander/actions-comment-pull-request@v2
+        uses: thollander/actions-comment-pull-request@v3
         if: always()
         with:
-          comment_tag: build-diff
-          filePath: ./comment.md
+          comment-tag: build-diff
+          file-path: ./comment.md
 
   deploy:
     name: Deploy to GitHub Pages
