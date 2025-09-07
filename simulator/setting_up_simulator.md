@@ -9,7 +9,7 @@ Setting up the Simulator
 ## Required Software
 
 In order to use the simulator a few set-up steps need to be done.
-First you need to install Python 3, between 3.9 and 3.12, and Webots R2023b.
+First you need to install Python 3, between 3.9 and 3.12, and Webots R2025a.
 Python 3.13 is not currently supported by the simulator.
 
 To install Python, you can download the latest version from the [Python website](https://www.python.org/downloads/). If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step.
@@ -22,11 +22,11 @@ To install Webots, you can download the latest version from the [Webots website]
 
 ## Simulator Bundle
 
-Once you have installed these, you need to download our [simulator bundle](https://github.com/srobo/sbot_simulator/releases/download/2025.1.1/sbot-simulator-2025.1.1.zip).
+Once you have installed these, you need to download our simulator bundle. The bundle for the main competition will be released at Kickstart.
 This is a zip file containing the arena and the necessary files to allow the sr-robot3 library to be used in the simulator.
 
 <div class="info" markdown="1">
-The simulator bundle used for the [Pre-Kickstart Activities]({{ site.baseurl }}/competitor_resources/pre_kickstart_activities) is available [here](https://github.com/srobo/sbot_simulator/releases/download/2025.0.1/sbot-simulator-2025.0.1.zip).
+The simulator bundle used for the [Pre-Kickstart Activities]({{ site.baseurl }}/competitor_resources/pre_kickstart_activities) is available [here](https://github.com/srobo/sbot_simulator/releases/download/2026.0.1/sbot-simulator-2026.0.1.zip).
 </div>
 
 Once this has downloaded, extract the contents to an empty folder.
