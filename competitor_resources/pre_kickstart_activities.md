@@ -11,3 +11,9 @@ We recommend you work through them as a team, so you can learn from each other.
 If you have any issues, just ask us on [Discord](/docs/tutorials/discord).
 
 This year's activities will be available shortly and we will contact all team supervisors when they are released.
+
+## The Simulated Robot
+
+The robot used for the pre-Kickstart activities differs from the robot used in the regular simulator to have more of a focus on sensing the environment around the robot and lacks any mechanisms for picking up other objects.
+
+All sensors attached to the Arduino are the same, but there are no sensors on this robot.
