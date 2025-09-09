@@ -257,7 +257,7 @@ from sr.robot3 import Robot
 
 # This is not supported nor recommended.
 class MyRobot(Robot):
-  ...
+    ...
 ~~~~~
 
 Subclassing like this can interfere with the general operating of the `Robot` object. Instead, we recommend using the examples above to wrap the existing `Robot` object.
