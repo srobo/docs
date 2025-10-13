@@ -12,7 +12,7 @@ The Arduino board allows you to connect the SR kit to your own electronics.
 For the SR kit we use a special Arduino called a Ruggeduino.
 This board acts the same as an Arduino Uno but comes with extra protection to stop it from being damaged.
 
-We also provide some screw terminal headers that convert the pin headers on the Arduino into screw terminals.
+We also provide some screw terminal headers that convert the pin headers on the Arduino into screw terminals. The screw terminals are electrically connected directly to the pin headers.
 This makes for easier connection of wires to the Arduino.
 
 The Arduino only needs to be connected to the kit over USB as it uses this for both power and communication.
