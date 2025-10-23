@@ -13,6 +13,30 @@ current competition year are available from the [main rules page][rules-page].
 
 [rules-page]: {{ site.baseurl }}/rules/
 
+[2025](#2025)
+-------------
+
+<img
+  src="{{ site.baseurl }}/images/content/rules/arena-2025.png"
+  alt="A diagram of the arena for the SR2025 game"
+  width="250"
+  height="250"
+  class="right"
+/>
+
+For SR2025 the game, _Urban Heights_, teams were hired by the city to shape
+its skyline! Their mission was to deliver vital pallets of building materials to
+designated districts. Pallets delivered to districts towards the outer edge of
+the arena were worth a single point, those in the intermediate districts two and
+in the central district three.
+
+Additionally the team with the highest pallet delivered within a district double
+the number of points they earned for that district. To aid with this, the
+intermediate and central districts featured high-rises which the pallets could
+be placed on top of.
+
+Full details of the 2025 game are available in the [rulebook]({{ site.baseurl }}/resources/2025/rulebook.html).
+
 [2024](#2024)
 -------------
 
