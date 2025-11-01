@@ -41,6 +41,8 @@ tree:
         title: PyCharm
       - url: /tutorials/editors/vscode
         title: Visual Studio Code
+      - url: /tutorials/editors/remote-debug
+        title: Remote Debugging
     - url: /tutorials/update_brain
       title: Updating your brain board
     - url: /tutorials/discord
