@@ -141,8 +141,8 @@ tree:
   - url: /competitor_resources/
     title: Resources
     tree:
-    - url: /competitor_resources/pre_kickstart_activities
-      title: Pre-Kickstart Activities
+    - url: /competitor_resources/simulator_activities
+      title: Simulator Activities
     - url: /competitor_resources/microgames
       title: Microgames
     - url: /competitor_resources/markers
