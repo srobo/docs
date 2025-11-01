@@ -21,3 +21,12 @@ This year's activities will be available shortly and we will contact all team su
 The robot used for the pre-Kickstart activities differs from the robot used in the regular simulator to have more of a focus on sensing the environment around the robot and lacks any mechanisms for picking up other objects.
 
 All sensors attached to the Arduino are the same, but there are no servos on this robot.
+
+## Example Game: Tin Can Rally
+
+To allow us to demonstrate the utility of various sensors, the simulator is set up for a game called Tin Can Rally.
+In this game, the robot must navigate around a course avoiding the tin cans placed around the course.
+
+Below is the diagram of the arena:
+
+![arena diagram]({{ site.baseurl}}/resources/simulator/fig-arena.svg)
