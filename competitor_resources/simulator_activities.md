@@ -12,7 +12,7 @@ They use a special version of our simulator for a set of activities intended to 
 These will teach some core concepts of robotics and introduce some basic sensors that teams could use on their physical robots.
 
 We recommend you work through them as a team, so you can learn from each other.
-If you have any issues, just ask us on [Discord](/docs/tutorials/discord).
+If you have any issues, just ask us on [Discord]({{ site.baseurl}}/tutorials/discord).
 
 This year's activities will be available shortly and we will contact all team supervisors when they are released.
 
