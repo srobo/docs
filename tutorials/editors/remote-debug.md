@@ -7,7 +7,7 @@ title: Remote Debugging
 When connected to the [robot's WiFi hotspot]({{ site.baseurl }}/kit/brain_board/web_interface), it is possible to attach VS Code's
 debugger to the robot by performing the following steps:
 
-1. Ensure the [Python extension](#python-extension) is installed.
+1. Ensure the [Python extension]({{ site.baseurl }}/tutorials/editors/vscode#python-extension) is installed.
 2. Open the Run and Debug panel.
 3. Click the cog icon at the top of the panel.
 4. Paste the following configuration:
