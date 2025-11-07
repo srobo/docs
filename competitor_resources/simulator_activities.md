@@ -18,7 +18,7 @@ You can access the [the activities here](https://drive.google.com/file/d/1HdddMf
 
 ## The Simulated Robot
 
-The robot used for the pre-Kickstart activities differs from the robot used in the regular simulator to have more of a focus on sensing the environment around the robot and lacks any mechanisms for picking up other objects.
+The robot used for the simulator activities differs from the robot used in the regular simulator to have more of a focus on sensing the environment around the robot and lacks any mechanisms for picking up other objects.
 
 All sensors attached to the Arduino are the same, but there are no servos on this robot.
 
