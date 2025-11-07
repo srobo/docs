@@ -14,7 +14,7 @@ These will teach some core concepts of robotics and introduce some basic sensors
 We recommend you work through them as a team, so you can learn from each other.
 If you have any issues, just ask us on [Discord]({{ site.baseurl}}/tutorials/discord).
 
-This year's activities will be available shortly and we will contact all team supervisors when they are released.
+You can access the [the activities here](https://drive.google.com/file/d/1HdddMfZFeciXrP_EHFU5HUefce51VO_7/preview).
 
 ## The Simulated Robot
 
