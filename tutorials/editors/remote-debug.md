@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Remote Debugging
+title: VS Code Remote Debugging
 ---
-# Remote Debugging
+# VS Code Remote Debugging
 
 When connected to the [robot's WiFi hotspot]({{ site.baseurl }}/kit/brain_board/web_interface), it is possible to attach VS Code's
 debugger to the robot by performing the following steps:
