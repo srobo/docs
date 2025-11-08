@@ -1,0 +1,791 @@
+<!doctypehtml><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible"content="IE=edge"><meta name="viewport"content="width=device-width,initial-scale=1"><title>Challenges 2026 | Student Robotics</title><style>@import url("data:text/css; charset=utf-8;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNDAwOwogIGZvbnQtc3RyZXRjaDogbm9ybWFsOwogIHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9vcGVuc2Fucy92NDQvbWVtU1lhR3MxMjZNaVpwQkEtVXZXYlgydlZuWEJiT2JqMk9WWnlPT1NyNGRWSldVZ3NqWjBCNGdhVmMudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0KQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNzAwOwogIGZvbnQtc3RyZXRjaDogbm9ybWFsOwogIHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9vcGVuc2Fucy92NDQvbWVtU1lhR3MxMjZNaVpwQkEtVXZXYlgydlZuWEJiT2JqMk9WWnlPT1NyNGRWSldVZ3NnLTF4NGdhVmMudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0KQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMgQ29uZGVuc2VkJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDcwMDsKICBzcmM6IHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvb3BlbnNhbnNjb25kZW5zZWQvdjI0L3o3TkZkUURuYlRrYWJaQUlPbDlpbF9PNktKajczZTdGZjBHbUR1WE1RZy50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ09zd2FsZCc7CiAgZm9udC1zdHlsZTogbm9ybWFsOwogIGZvbnQtd2VpZ2h0OiA0MDA7CiAgc3JjOiB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL29zd2FsZC92NTcvVEszX1drVUhIQUlqZzc1Y0ZSZjNiWEw4TElDczFfRnZzVVppWUEudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0KQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdPc3dhbGQnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNzAwOwogIHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9vc3dhbGQvdjU3L1RLM19Xa1VISEFJamc3NWNGUmYzYlhMOExJQ3MxeFpvc1VaaVlBLnR0ZikgZm9ybWF0KCd0cnVldHlwZScpOwp9Cg==");
+.desktop-only {
+  display: none; }
+  @media (min-width: 992px) {
+    .desktop-only {
+      display: inline; } }
+
+@media (min-width: 992px) {
+  .mobile-only {
+    display: none; } }
+
+.button {
+  border: 2px solid #3270ed;
+  border-radius: 3px;
+  color: #3270ed;
+  cursor: pointer;
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 1.0em 2.0em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+  @media (min-width: 992px) {
+    .button {
+      display: inline-block;
+      margin-right: 10px; } }
+  .button:hover {
+    background: #3270ed;
+    color: white; }
+
+.button-primary {
+  background: #3270ed;
+  border-color: #3270ed;
+  color: white; }
+  .button-primary:hover {
+    border-color: #de6400;
+    background: #de6400;
+    opacity: 1.0; }
+
+.button-hero {
+  border-color: white;
+  color: white;
+  opacity: 0.7; }
+  .button-hero:hover {
+    background: transparent;
+    opacity: 1.0; }
+
+.button-expand {
+  display: block;
+  margin-right: 0; }
+
+.button[disabled=disabled], .button:disabled, .button-disabled {
+  cursor: default;
+  border-color: #4c4c4c;
+  color: #4c4c4c;
+  opacity: 0.5; }
+  .button[disabled=disabled]:hover, .button:disabled:hover, .button-disabled:hover {
+    background: transparent;
+    color: #4c4c4c; }
+
+.row, footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+
+.column {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: 100%; }
+
+.d-1-12 {
+  width: 8.3333333333%; }
+
+.d-offset-1-12 {
+  margin-left: 8.3333333333%; }
+
+.d-2-12 {
+  width: 16.6666666667%; }
+
+.d-offset-2-12 {
+  margin-left: 16.6666666667%; }
+
+.d-3-12 {
+  width: 25%; }
+
+.d-offset-3-12 {
+  margin-left: 25%; }
+
+.d-4-12 {
+  width: 33.3333333333%; }
+
+.d-offset-4-12 {
+  margin-left: 33.3333333333%; }
+
+.d-5-12 {
+  width: 41.6666666667%; }
+
+.d-offset-5-12 {
+  margin-left: 41.6666666667%; }
+
+.d-6-12 {
+  width: 50%; }
+
+.d-offset-6-12 {
+  margin-left: 50%; }
+
+.d-7-12 {
+  width: 58.3333333333%; }
+
+.d-offset-7-12 {
+  margin-left: 58.3333333333%; }
+
+.d-8-12 {
+  width: 66.6666666667%; }
+
+.d-offset-8-12 {
+  margin-left: 66.6666666667%; }
+
+.d-9-12 {
+  width: 75%; }
+
+.d-offset-9-12 {
+  margin-left: 75%; }
+
+.d-10-12 {
+  width: 83.3333333333%; }
+
+.d-offset-10-12 {
+  margin-left: 83.3333333333%; }
+
+.d-11-12 {
+  width: 91.6666666667%; }
+
+.d-offset-11-12 {
+  margin-left: 91.6666666667%; }
+
+@media (min-width: 767px) {
+  .s-1-12 {
+    width: 8.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-offset-1-12 {
+    margin-left: 8.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-2-12 {
+    width: 16.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-offset-2-12 {
+    margin-left: 16.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-3-12 {
+    width: 25%; } }
+
+@media (min-width: 767px) {
+  .s-offset-3-12 {
+    margin-left: 25%; } }
+
+@media (min-width: 767px) {
+  .s-4-12 {
+    width: 33.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-offset-4-12 {
+    margin-left: 33.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-5-12 {
+    width: 41.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-offset-5-12 {
+    margin-left: 41.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-6-12 {
+    width: 50%; } }
+
+@media (min-width: 767px) {
+  .s-offset-6-12 {
+    margin-left: 50%; } }
+
+@media (min-width: 767px) {
+  .s-7-12 {
+    width: 58.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-offset-7-12 {
+    margin-left: 58.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-8-12 {
+    width: 66.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-offset-8-12 {
+    margin-left: 66.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-9-12 {
+    width: 75%; } }
+
+@media (min-width: 767px) {
+  .s-offset-9-12 {
+    margin-left: 75%; } }
+
+@media (min-width: 767px) {
+  .s-10-12 {
+    width: 83.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-offset-10-12 {
+    margin-left: 83.3333333333%; } }
+
+@media (min-width: 767px) {
+  .s-11-12 {
+    width: 91.6666666667%; } }
+
+@media (min-width: 767px) {
+  .s-offset-11-12 {
+    margin-left: 91.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-1-12 {
+    width: 8.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-offset-1-12 {
+    margin-left: 8.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-2-12 {
+    width: 16.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-offset-2-12 {
+    margin-left: 16.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-3-12 {
+    width: 25%; } }
+
+@media (min-width: 992px) {
+  .m-offset-3-12 {
+    margin-left: 25%; } }
+
+@media (min-width: 992px) {
+  .m-4-12 {
+    width: 33.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-offset-4-12 {
+    margin-left: 33.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-5-12 {
+    width: 41.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-offset-5-12 {
+    margin-left: 41.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-6-12 {
+    width: 50%; } }
+
+@media (min-width: 992px) {
+  .m-offset-6-12 {
+    margin-left: 50%; } }
+
+@media (min-width: 992px) {
+  .m-7-12 {
+    width: 58.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-offset-7-12 {
+    margin-left: 58.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-8-12 {
+    width: 66.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-offset-8-12 {
+    margin-left: 66.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-9-12 {
+    width: 75%; } }
+
+@media (min-width: 992px) {
+  .m-offset-9-12 {
+    margin-left: 75%; } }
+
+@media (min-width: 992px) {
+  .m-10-12 {
+    width: 83.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-offset-10-12 {
+    margin-left: 83.3333333333%; } }
+
+@media (min-width: 992px) {
+  .m-11-12 {
+    width: 91.6666666667%; } }
+
+@media (min-width: 992px) {
+  .m-offset-11-12 {
+    margin-left: 91.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-1-12 {
+    width: 8.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-1-12 {
+    margin-left: 8.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-2-12 {
+    width: 16.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-2-12 {
+    margin-left: 16.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-3-12 {
+    width: 25%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-3-12 {
+    margin-left: 25%; } }
+
+@media (min-width: 1200px) {
+  .l-4-12 {
+    width: 33.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-4-12 {
+    margin-left: 33.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-5-12 {
+    width: 41.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-5-12 {
+    margin-left: 41.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-6-12 {
+    width: 50%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-6-12 {
+    margin-left: 50%; } }
+
+@media (min-width: 1200px) {
+  .l-7-12 {
+    width: 58.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-7-12 {
+    margin-left: 58.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-8-12 {
+    width: 66.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-8-12 {
+    margin-left: 66.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-9-12 {
+    width: 75%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-9-12 {
+    margin-left: 75%; } }
+
+@media (min-width: 1200px) {
+  .l-10-12 {
+    width: 83.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-10-12 {
+    margin-left: 83.3333333333%; } }
+
+@media (min-width: 1200px) {
+  .l-11-12 {
+    width: 91.6666666667%; } }
+
+@media (min-width: 1200px) {
+  .l-offset-11-12 {
+    margin-left: 91.6666666667%; } }
+
+h1 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; }
+
+h2 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; }
+
+h3 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; }
+
+h4 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; }
+
+h5 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; }
+
+h6 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 2.625rem; }
+
+h2 {
+  font-size: 2.125rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.875rem; }
+
+p {
+  margin: 0 0 1rem 0; }
+
+.text-heavy {
+  font-weight: bold; }
+
+.text-subtext {
+  color: #4c4c4c;
+  font-size: 0.875rem; }
+
+.text-left {
+  text-align: left; }
+
+.text-center, .option h1, .option h2, .option h3, .option h4, .option h5, .option h6, .option img {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-justify {
+  text-align: justify; }
+
+.form input[type='email'], .form input[type='text'], .form select {
+  border: 1px solid #4c4c4c;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  padding: 12px;
+  background: white; }
+.form input, .form select {
+  margin-bottom: 1em;
+  width: 100%;
+  line-height: inherit; }
+  .form input[type='submit'], .form select[type='submit'] {
+    margin-right: 0; }
+  .form input:focus, .form select:focus {
+    outline: 2px solid #ffbf47; }
+  @media (min-width: 992px) {
+    .form input, .form select {
+      width: auto; } }
+.form label {
+  display: none; }
+.form.form-left {
+  text-align: left; }
+.form .explanation {
+  font-size: 0.875rem;
+  margin: 0.5em 0; }
+
+input.full-width, select.full-width {
+  width: 100%; }
+
+.show-labels label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: left; }
+
+.avatar img {
+  background-color: white;
+  border: 1px solid #ded7db;
+  width: 100%;
+  height: auto;
+  padding: 3px; }
+.avatar p {
+  font-size: 1rem;
+  color: #333333; }
+
+.circle-image {
+  border-radius: 50%; }
+
+.card {
+  border-top: 2px solid white;
+  background: white;
+  padding: 0.8em 1em;
+  margin-bottom: 0.5em; }
+  @media (min-width: 992px) {
+    .card {
+      margin-bottom: 1em; } }
+
+.dark-card {
+  background: #f5f3f4; }
+
+.thin-card {
+  padding: 0; }
+
+.highlight-card {
+  border-top-color: #3270ed; }
+
+.card-heading {
+  color: #4c4c4c;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.option h1 {
+  font-size: 1.5rem; }
+.option h2 {
+  font-size: 1.5rem; }
+.option h3 {
+  font-size: 1.5rem; }
+.option h4 {
+  font-size: 1.5rem; }
+.option h5 {
+  font-size: 1.5rem; }
+.option h6 {
+  font-size: 1.5rem; }
+.option img {
+  display: block;
+  margin: 0 auto 1em;
+  width: 80%; }
+
+.detail-list {
+  list-style: none; }
+  .detail-list li {
+    padding: 1em;
+    border-bottom: 1px solid #e0e0e0; }
+    .detail-list li:last-of-type {
+      border-bottom: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #f5f3f4;
+  margin: 0;
+  padding: 0; }
+
+.fixed-width {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 10px; }
+  @media (min-width: 1200px) {
+    .fixed-width {
+      padding: 0; } }
+
+.anchor {
+  visibility: hidden; }
+
+header {
+  background: #3270ed;
+  color: white;
+  padding: 0.5em 0; }
+  header h1 {
+    font-family: "Oswald", sans-serif; }
+    header h1 a {
+      color: white;
+      text-decoration: none; }
+      header h1 a:hover {
+        color: white;
+        text-decoration: underline; }
+  header h2 {
+    font-family: "Oswald", sans-serif; }
+    header h2 a {
+      color: white;
+      text-decoration: none; }
+      header h2 a:hover {
+        color: white;
+        text-decoration: underline; }
+  header h3 {
+    font-family: "Oswald", sans-serif; }
+    header h3 a {
+      color: white;
+      text-decoration: none; }
+      header h3 a:hover {
+        color: white;
+        text-decoration: underline; }
+  header h4 {
+    font-family: "Oswald", sans-serif; }
+    header h4 a {
+      color: white;
+      text-decoration: none; }
+      header h4 a:hover {
+        color: white;
+        text-decoration: underline; }
+  header h5 {
+    font-family: "Oswald", sans-serif; }
+    header h5 a {
+      color: white;
+      text-decoration: none; }
+      header h5 a:hover {
+        color: white;
+        text-decoration: underline; }
+  header h6 {
+    font-family: "Oswald", sans-serif; }
+    header h6 a {
+      color: white;
+      text-decoration: none; }
+      header h6 a:hover {
+        color: white;
+        text-decoration: underline; }
+
+section {
+  padding: 0.5em 10px 2em; }
+  section:nth-of-type(even) {
+    background: white; }
+
+.pull-right {
+  text-align: right; }
+
+.hero-text {
+  font-family: "Oswald", sans-serif; }
+
+h1 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h2 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h3 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h4 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h5 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h6 {
+  color: #3270ed;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+a {
+  color: #de6400; }
+  a:hover {
+    color: #3270ed; }
+
+figure {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 auto 10px; }
+  figure img {
+    width: 100%;
+    height: auto; }
+
+figcaption {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px; }
+
+.dark-bg {
+  background: #3270ed; }
+
+.color-swatch {
+  align-items: flex-end;
+  border: 5px solid white;
+  color: white;
+  display: inline-flex;
+  font-size: 0.8em;
+  height: 8em;
+  padding: 0.5em;
+  margin: 1em 1em 0 0;
+  width: 8em; }
+
+.color-swatch-dark-text {
+  color: #3270ed; }
+
+footer {
+  background: #1b1d1f;
+  color: #b9bdc1;
+  font-size: 0.75rem;
+  padding: 2em 1em; }
+  footer h1 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5em; }
+  footer h2 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5em; }
+  footer h3 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5em; }
+  footer h4 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5em; }
+  footer h5 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5em; }
+  footer h6 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    margin-bottom: 1.5em; }
+  footer h4 {
+    font-size: 0.75rem; }
+  footer p {
+    margin-bottom: 0; }
+  footer a {
+    color: #b9bdc1;
+    text-decoration: none; }
+    footer a:hover {
+      color: white; }
+
+.social-media-links {
+  font-size: 1.5rem; }
+  .social-media-links li {
+    display: inline-block;
+    margin: 0 0.2em; }
+
+.sitemap {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em; }
+  .sitemap li {
+    margin: 0.5em 0; }</style><link rel="shortcut icon"href="https://www.studentrobotics.org/style/images/favicon.ico"><style>table{margin:0;padding:0;width:100%}table td,table th{padding:.5em}table thead{color:#3270ed}table th{text-align:start;border-bottom:2px solid #3270ed}table tr:nth-child(2n){background-color:#f5f3f4}code{font-size:1rem}li{margin-block-start:0.2em}li li{margin-block-start:0.1em}img{display:block;margin-inline:auto;max-inline-size:100%;height:auto}#header{display:flex;align-items:center;justify-content:space-between}#header img{margin:0}span.monospace{font-family:monospace}</style></head><body><header><div class="fixed-width"><a class="anchor"id="top"></a><h1 id="header"><a href="https://www.studentrobotics.org/"><img width="333"alt="Student Robotics"src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjg3MHB4IiBoZWlnaHQ9IjQ4MHB4IiB2aWV3Qm94PSIwIDAgMjg3MCA0ODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjIgKDU3NTE5KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TeW1ib2wgYW5kIFRleHQgLSBXaGl0ZTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2wtYW5kLVRleHQtLS1XaGl0ZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTYyMiwzMjguNSBDNjA5Ljk5OTk0LDMyOC41IDU5OS4zMzMzOCwzMjcuMDAwMDE1IDU5MCwzMjQgQzU4MC42NjY2MiwzMjAuOTk5OTg1IDU3MS45MTY3MDgsMzE1LjkxNjcwMiA1NjMuNzUsMzA4Ljc1IEM1NTkuMjQ5OTc3LDMwNC43NDk5OCA1NTcsMzAwLjMzMzM1OCA1NTcsMjk1LjUgQzU1NywyOTEuNjY2NjQ4IDU1OC40MTY2NTMsMjg4LjI5MTY4MSA1NjEuMjUsMjg1LjM3NSBDNTY0LjA4MzM0NywyODIuNDU4MzE5IDU2Ny40OTk5OCwyODEgNTcxLjUsMjgxIEM1NzQuNjY2NjgyLDI4MSA1NzcuNDk5OTg3LDI4MS45OTk5OSA1ODAsMjg0IEM1ODYuNjY2NywyODkuNTAwMDI3IDU5My4xNjY2MzUsMjkzLjQ5OTk4NyA1OTkuNSwyOTYgQzYwNS44MzMzNjUsMjk4LjUwMDAxMyA2MTMuMzMzMjksMjk5Ljc1IDYyMiwyOTkuNzUgQzYzMS4zMzMzOCwyOTkuNzUgNjM5LjM3NDk2NiwyOTcuNjY2Njg3IDY0Ni4xMjUsMjkzLjUgQzY1Mi44NzUwMzQsMjg5LjMzMzMxMyA2NTYuMjUsMjg0LjE2NjY5NyA2NTYuMjUsMjc4IEM2NTYuMjUsMjcwLjQ5OTk2MyA2NTIuOTE2NywyNjQuNjI1MDIxIDY0Ni4yNSwyNjAuMzc1IEM2MzkuNTgzMywyNTYuMTI0OTc5IDYyOS4wMDAwNzIsMjUyLjkxNjY3NyA2MTQuNSwyNTAuNzUgQzU3Ny45OTk4MTcsMjQ1LjQxNjY0IDU1OS43NSwyMjguNDE2ODEgNTU5Ljc1LDE5OS43NSBDNTU5Ljc1LDE4OS4yNDk5NDcgNTYyLjQ5OTk3MywxODAuMTI1MDM5IDU2OCwxNzIuMzc1IEM1NzMuNTAwMDI3LDE2NC42MjQ5NjEgNTgwLjk5OTk1MiwxNTguNzA4MzU0IDU5MC41LDE1NC42MjUgQzYwMC4wMDAwNDcsMTUwLjU0MTY0NiA2MTAuNTgzMjc1LDE0OC41IDYyMi4yNSwxNDguNSBDNjMyLjc1MDA1MywxNDguNSA2NDIuNjI0OTU0LDE1MC4wODMzMTcgNjUxLjg3NSwxNTMuMjUgQzY2MS4xMjUwNDYsMTU2LjQxNjY4MyA2NjguODMzMzAyLDE2MC41ODMzMDcgNjc1LDE2NS43NSBDNjc5LjgzMzM1OCwxNjkuNTgzMzUyIDY4Mi4yNSwxNzMuOTk5OTc1IDY4Mi4yNSwxNzkgQzY4Mi4yNSwxODIuODMzMzUyIDY4MC44MzMzNDcsMTg2LjIwODMxOSA2NzgsMTg5LjEyNSBDNjc1LjE2NjY1MywxOTIuMDQxNjgxIDY3MS44MzMzNTMsMTkzLjUgNjY4LDE5My41IEM2NjUuNDk5OTg3LDE5My41IDY2My4yNTAwMSwxOTIuNzUwMDA4IDY2MS4yNSwxOTEuMjUgQzY1Ni45MTY2NDUsMTg3Ljc0OTk4MiA2NTAuODc1MDM5LDE4NC41NDE2ODEgNjQzLjEyNSwxODEuNjI1IEM2MzUuMzc0OTYxLDE3OC43MDgzMTkgNjI4LjQxNjY5OCwxNzcuMjUgNjIyLjI1LDE3Ny4yNSBDNjExLjc0OTk0NywxNzcuMjUgNjAzLjYyNTAyOSwxNzkuMjA4MzE0IDU5Ny44NzUsMTgzLjEyNSBDNTkyLjEyNDk3MSwxODcuMDQxNjg2IDU4OS4yNSwxOTIuMTY2NjM1IDU4OS4yNSwxOTguNSBDNTg5LjI1LDIwNS42NjY3MDIgNTkyLjIwODMwNCwyMTEuMDgzMzE1IDU5OC4xMjUsMjE0Ljc1IEM2MDQuMDQxNjk2LDIxOC40MTY2ODUgNjEzLjMzMzI3LDIyMS40MTY2NTUgNjI2LDIyMy43NSBDNjQwLjMzMzQwNSwyMjYuMjUwMDEyIDY1MS43OTE2MjQsMjI5LjQ1ODMxNCA2NjAuMzc1LDIzMy4zNzUgQzY2OC45NTgzNzYsMjM3LjI5MTY4NiA2NzUuNDE2NjQ1LDI0Mi42MjQ5NjYgNjc5Ljc1LDI0OS4zNzUgQzY4NC4wODMzNTUsMjU2LjEyNTAzNCA2ODYuMjUsMjY1LjA4MzI3OCA2ODYuMjUsMjc2LjI1IEM2ODYuMjUsMjg2Ljc1MDA1MyA2ODMuMjkxNjk2LDI5NS45NTgyOTQgNjc3LjM3NSwzMDMuODc1IEM2NzEuNDU4MzA0LDMxMS43OTE3MDYgNjYzLjU4MzM4MiwzMTcuODc0OTc5IDY1My43NSwzMjIuMTI1IEM2NDMuOTE2NjE4LDMyNi4zNzUwMjEgNjMzLjMzMzM5LDMyOC41IDYyMiwzMjguNSBaIE04MjIsMTUxIEM4MjYuNTAwMDIzLDE1MSA4MzAuMTY2NjUzLDE1Mi4zMzMzMiA4MzMsMTU1IEM4MzUuODMzMzQ3LDE1Ny42NjY2OCA4MzcuMjUsMTYxLjE2NjY0NSA4MzcuMjUsMTY1LjUgQzgzNy4yNSwxNjkuODMzMzU1IDgzNS44MzMzNDcsMTczLjI5MTY1NCA4MzMsMTc1Ljg3NSBDODMwLjE2NjY1MywxNzguNDU4MzQ2IDgyNi41MDAwMjMsMTc5Ljc1IDgyMiwxNzkuNzUgTDc4Mi43NSwxNzkuNzUgTDc4Mi43NSwzMTAuNzUgQzc4Mi43NSwzMTUuMDgzMzU1IDc4MS4xNjY2ODIsMzE4LjcwODMxOSA3NzgsMzIxLjYyNSBDNzc0LjgzMzMxOCwzMjQuNTQxNjgxIDc3MC45MTY2OSwzMjYgNzY2LjI1LDMyNiBDNzYxLjU4MzMxLDMyNiA3NTcuNzUwMDE1LDMyNC41NDE2ODEgNzU0Ljc1LDMyMS42MjUgQzc1MS43NDk5ODUsMzE4LjcwODMxOSA3NTAuMjUsMzE1LjA4MzM1NSA3NTAuMjUsMzEwLjc1IEw3NTAuMjUsMTc5Ljc1IEw3MTEsMTc5Ljc1IEM3MDYuNDk5OTc3LDE3OS43NSA3MDIuODMzMzQ3LDE3OC40MTY2OCA3MDAsMTc1Ljc1IEM2OTcuMTY2NjUzLDE3My4wODMzMiA2OTUuNzUsMTY5LjU4MzM1NSA2OTUuNzUsMTY1LjI1IEM2OTUuNzUsMTYxLjA4MzMxMiA2OTcuMjA4MzE5LDE1Ny42NjY2OCA3MDAuMTI1LDE1NSBDNzAzLjA0MTY4MSwxNTIuMzMzMzIgNzA2LjY2NjY0NSwxNTEgNzExLDE1MSBMODIyLDE1MSBaIE05NzkuNzUsMTUwLjc1IEM5ODQuMDgzMzU1LDE1MC43NSA5ODcuNTgzMzIsMTUyLjE2NjY1MiA5OTAuMjUsMTU1IEM5OTIuOTE2NjgsMTU3LjgzMzM0OCA5OTQuMjUsMTYxLjQ5OTk3NyA5OTQuMjUsMTY2IEw5OTQuMjUsMjU2LjUgQzk5NC4yNSwyNzAuMzMzNDAzIDk5MS4zMzMzNjMsMjgyLjU4MzI4IDk4NS41LDI5My4yNSBDOTc5LjY2NjYzNywzMDMuOTE2NzIgOTcxLjUwMDA1MywzMTIuMjQ5OTcgOTYxLDMxOC4yNSBDOTUwLjQ5OTk0NywzMjQuMjUwMDMgOTM4LjUwMDA2OCwzMjcuMjUgOTI1LDMyNy4yNSBDOTExLjQ5OTkzMiwzMjcuMjUgODk5LjQ1ODM4NiwzMjQuMjUwMDMgODg4Ljg3NSwzMTguMjUgQzg3OC4yOTE2MTQsMzEyLjI0OTk3IDg3MC4wODMzNjMsMzAzLjkxNjcyIDg2NC4yNSwyOTMuMjUgQzg1OC40MTY2MzcsMjgyLjU4MzI4IDg1NS41LDI3MC4zMzM0MDMgODU1LjUsMjU2LjUgTDg1NS41LDE2NiBDODU1LjUsMTYxLjY2NjY0NSA4NTYuOTk5OTg1LDE1OC4wNDE2ODEgODYwLDE1NS4xMjUgQzg2My4wMDAwMTUsMTUyLjIwODMxOSA4NjYuODMzMzEsMTUwLjc1IDg3MS41LDE1MC43NSBDODc1LjUwMDAyLDE1MC43NSA4NzguOTk5OTg1LDE1Mi4yMDgzMTkgODgyLDE1NS4xMjUgQzg4NS4wMDAwMTUsMTU4LjA0MTY4MSA4ODYuNSwxNjEuNjY2NjQ1IDg4Ni41LDE2NiBMODg2LjUsMjU2LjUgQzg4Ni41LDI2NC41MDAwNCA4ODguMjQ5OTgyLDI3MS42MjQ5NjkgODkxLjc1LDI3Ny44NzUgQzg5NS4yNTAwMTgsMjg0LjEyNTAzMSA4OTkuOTU4MzA0LDI4OC45MTY2NSA5MDUuODc1LDI5Mi4yNSBDOTExLjc5MTY5NiwyOTUuNTgzMzUgOTE4LjE2NjYzMiwyOTcuMjUgOTI1LDI5Ny4yNSBDOTMyLjE2NjcwMiwyOTcuMjUgOTM4Ljg3NDk2OSwyOTUuNTgzMzUgOTQ1LjEyNSwyOTIuMjUgQzk1MS4zNzUwMzEsMjg4LjkxNjY1IDk1Ni4zNzQ5ODEsMjg0LjEyNTAzMSA5NjAuMTI1LDI3Ny44NzUgQzk2My44NzUwMTksMjcxLjYyNDk2OSA5NjUuNzUsMjY0LjUwMDA0IDk2NS43NSwyNTYuNSBMOTY1Ljc1LDE2NiBDOTY1Ljc1LDE2MS40OTk5NzcgOTY2Ljk5OTk4OCwxNTcuODMzMzQ4IDk2OS41LDE1NSBDOTcyLjAwMDAxMywxNTIuMTY2NjUyIDk3NS40MTY2NDUsMTUwLjc1IDk3OS43NSwxNTAuNzUgWiBNMTA5OC43NSwxNTEgQzExMTQuNDE2NzQsMTUxIDExMjcuODc0OTQsMTU0Ljg3NDk2MSAxMTM5LjEyNSwxNjIuNjI1IEMxMTUwLjM3NTA2LDE3MC4zNzUwMzkgMTE1OC45NTgzLDE4MC44NzQ5MzQgMTE2NC44NzUsMTk0LjEyNSBDMTE3MC43OTE3LDIwNy4zNzUwNjYgMTE3My43NSwyMjIuMTY2NTg1IDExNzMuNzUsMjM4LjUgQzExNzMuNzUsMjU0LjgzMzQxNSAxMTcwLjc5MTcsMjY5LjYyNDkzNCAxMTY0Ljg3NSwyODIuODc1IEMxMTU4Ljk1ODMsMjk2LjEyNTA2NiAxMTUwLjM3NTA2LDMwNi42MjQ5NjEgMTEzOS4xMjUsMzE0LjM3NSBDMTEyNy44NzQ5NCwzMjIuMTI1MDM5IDExMTQuNDE2NzQsMzI2IDEwOTguNzUsMzI2IEwxMDM5LDMyNiBDMTAzNC42NjY2NSwzMjYgMTAzMS4wNDE2OCwzMjQuNTQxNjgxIDEwMjguMTI1LDMyMS42MjUgQzEwMjUuMjA4MzIsMzE4LjcwODMxOSAxMDIzLjc1LDMxNS4wODMzNTUgMTAyMy43NSwzMTAuNzUgTDEwMjMuNzUsMTY2LjI1IEMxMDIzLjc1LDE2MS45MTY2NDUgMTAyNS4yMDgzMiwxNTguMjkxNjgxIDEwMjguMTI1LDE1NS4zNzUgQzEwMzEuMDQxNjgsMTUyLjQ1ODMxOSAxMDM0LjY2NjY1LDE1MSAxMDM5LDE1MSBMMTA5OC43NSwxNTEgWiBNMTA5Ni4yNSwyOTcuMjUgQzExMTEuMjUwMDcsMjk3LjI1IDExMjIuNDk5OTYsMjkxLjcwODM4OSAxMTMwLDI4MC42MjUgQzExMzcuNTAwMDQsMjY5LjU0MTYxMSAxMTQxLjI1LDI1NS41MDAwODUgMTE0MS4yNSwyMzguNSBDMTE0MS4yNSwyMjEuNDk5OTE1IDExMzcuNDU4MzcsMjA3LjQ1ODM4OSAxMTI5Ljg3NSwxOTYuMzc1IEMxMTIyLjI5MTYzLDE4NS4yOTE2MTEgMTExMS4wODM0MSwxNzkuNzUgMTA5Ni4yNSwxNzkuNzUgTDEwNTUsMTc5Ljc1IEwxMDU1LDI5Ny4yNSBMMTA5Ni4yNSwyOTcuMjUgWiBNMTI5My41LDI5Ny4yNSBDMTI5Ny44MzMzNSwyOTcuMjUgMTMwMS40NTgzMiwyOTguNzA4MzE5IDEzMDQuMzc1LDMwMS42MjUgQzEzMDcuMjkxNjgsMzA0LjU0MTY4MSAxMzA4Ljc1LDMwNy45MTY2NDggMTMwOC43NSwzMTEuNzUgQzEzMDguNzUsMzE1LjkxNjY4NyAxMzA3LjI5MTY4LDMxOS4zMzMzMiAxMzA0LjM3NSwzMjIgQzEzMDEuNDU4MzIsMzI0LjY2NjY4IDEyOTcuODMzMzUsMzI2IDEyOTMuNSwzMjYgTDEyMDkuNzUsMzI2IEMxMjA1LjQxNjY1LDMyNiAxMjAxLjc5MTY4LDMyNC41NDE2ODEgMTE5OC44NzUsMzIxLjYyNSBDMTE5NS45NTgzMiwzMTguNzA4MzE5IDExOTQuNSwzMTUuMDgzMzU1IDExOTQuNSwzMTAuNzUgTDExOTQuNSwxNjYuMjUgQzExOTQuNSwxNjEuOTE2NjQ1IDExOTUuOTU4MzIsMTU4LjI5MTY4MSAxMTk4Ljg3NSwxNTUuMzc1IEMxMjAxLjc5MTY4LDE1Mi40NTgzMTkgMTIwNS40MTY2NSwxNTEgMTIwOS43NSwxNTEgTDEyOTMuNSwxNTEgQzEyOTcuODMzMzUsMTUxIDEzMDEuNDU4MzIsMTUyLjM3NDk4NiAxMzA0LjM3NSwxNTUuMTI1IEMxMzA3LjI5MTY4LDE1Ny44NzUwMTQgMTMwOC43NSwxNjEuNDE2NjQ1IDEzMDguNzUsMTY1Ljc1IEMxMzA4Ljc1LDE2OS45MTY2ODggMTMwNy4zMzMzNSwxNzMuMjkxNjU0IDEzMDQuNSwxNzUuODc1IEMxMzAxLjY2NjY1LDE3OC40NTgzNDYgMTI5OC4wMDAwMiwxNzkuNzUgMTI5My41LDE3OS43NSBMMTIyNS43NSwxNzkuNzUgTDEyMjUuNzUsMjIyLjI1IEwxMjgyLjI1LDIyMi4yNSBDMTI4Ni41ODMzNSwyMjIuMjUgMTI5MC4yMDgzMiwyMjMuNjI0OTg2IDEyOTMuMTI1LDIyNi4zNzUgQzEyOTYuMDQxNjgsMjI5LjEyNTAxNCAxMjk3LjUsMjMyLjY2NjY0NSAxMjk3LjUsMjM3IEMxMjk3LjUsMjQxLjE2NjY4NyAxMjk2LjA4MzM1LDI0NC41NDE2NTQgMTI5My4yNSwyNDcuMTI1IEMxMjkwLjQxNjY1LDI0OS43MDgzNDYgMTI4Ni43NTAwMiwyNTEgMTI4Mi4yNSwyNTEgTDEyMjUuNzUsMjUxIEwxMjI1Ljc1LDI5Ny4yNSBMMTI5My41LDI5Ny4yNSBaIE0xNDYyLjI1LDE1MSBDMTQ2Ni4yNTAwMiwxNTEgMTQ2OS40OTk5OSwxNTIuMzMzMzIgMTQ3MiwxNTUgQzE0NzQuNTAwMDEsMTU3LjY2NjY4IDE0NzUuNzUsMTYwLjk5OTk4IDE0NzUuNzUsMTY1IEwxNDc1Ljc1LDMxMC43NSBDMTQ3NS43NSwzMTUuMDgzMzU1IDE0NzQuMjkxNjgsMzE4LjcwODMxOSAxNDcxLjM3NSwzMjEuNjI1IEMxNDY4LjQ1ODMyLDMyNC41NDE2ODEgMTQ2NC44MzMzNSwzMjYgMTQ2MC41LDMyNiBDMTQ1OC4xNjY2NSwzMjYgMTQ1NS44NzUwMSwzMjUuNjI1MDA0IDE0NTMuNjI1LDMyNC44NzUgQzE0NTEuMzc0OTksMzI0LjEyNDk5NiAxNDQ5Ljc1MDAxLDMyMy4wODMzNCAxNDQ4Ljc1LDMyMS43NSBMMTM1NywyMDUuMjUgTDEzNTcsMzEyIEMxMzU3LDMxNi4wMDAwMiAxMzU1LjcwODM1LDMxOS4zMzMzMiAxMzUzLjEyNSwzMjIgQzEzNTAuNTQxNjUsMzI0LjY2NjY4IDEzNDcuMTY2NjksMzI2IDEzNDMsMzI2IEMxMzM4Ljk5OTk4LDMyNiAxMzM1Ljc1MDAxLDMyNC42NjY2OCAxMzMzLjI1LDMyMiBDMTMzMC43NDk5OSwzMTkuMzMzMzIgMTMyOS41LDMxNi4wMDAwMiAxMzI5LjUsMzEyIEwxMzI5LjUsMTY2LjI1IEMxMzI5LjUsMTYxLjkxNjY0NSAxMzMwLjk1ODMyLDE1OC4yOTE2ODEgMTMzMy44NzUsMTU1LjM3NSBDMTMzNi43OTE2OCwxNTIuNDU4MzE5IDEzNDAuNDE2NjUsMTUxIDEzNDQuNzUsMTUxIEMxMzQ3LjI1MDAxLDE1MSAxMzQ5LjcwODMyLDE1MS40OTk5OTUgMTM1Mi4xMjUsMTUyLjUgQzEzNTQuNTQxNjgsMTUzLjUwMDAwNSAxMzU2LjMzMzMzLDE1NC44MzMzMjUgMTM1Ny41LDE1Ni41IEwxNDQ4LjUsMjcyLjUgTDE0NDguNSwxNjUgQzE0NDguNSwxNjAuOTk5OTggMTQ0OS43OTE2NSwxNTcuNjY2NjggMTQ1Mi4zNzUsMTU1IEMxNDU0Ljk1ODM1LDE1Mi4zMzMzMiAxNDU4LjI0OTk4LDE1MSAxNDYyLjI1LDE1MSBaIE0xNjIwLjI1LDE1MSBDMTYyNC43NTAwMiwxNTEgMTYyOC40MTY2NSwxNTIuMzMzMzIgMTYzMS4yNSwxNTUgQzE2MzQuMDgzMzUsMTU3LjY2NjY4IDE2MzUuNSwxNjEuMTY2NjQ1IDE2MzUuNSwxNjUuNSBDMTYzNS41LDE2OS44MzMzNTUgMTYzNC4wODMzNSwxNzMuMjkxNjU0IDE2MzEuMjUsMTc1Ljg3NSBDMTYyOC40MTY2NSwxNzguNDU4MzQ2IDE2MjQuNzUwMDIsMTc5Ljc1IDE2MjAuMjUsMTc5Ljc1IEwxNTgxLDE3OS43NSBMMTU4MSwzMTAuNzUgQzE1ODEsMzE1LjA4MzM1NSAxNTc5LjQxNjY4LDMxOC43MDgzMTkgMTU3Ni4yNSwzMjEuNjI1IEMxNTczLjA4MzMyLDMyNC41NDE2ODEgMTU2OS4xNjY2OSwzMjYgMTU2NC41LDMyNiBDMTU1OS44MzMzMSwzMjYgMTU1Ni4wMDAwMiwzMjQuNTQxNjgxIDE1NTMsMzIxLjYyNSBDMTU0OS45OTk5OCwzMTguNzA4MzE5IDE1NDguNSwzMTUuMDgzMzU1IDE1NDguNSwzMTAuNzUgTDE1NDguNSwxNzkuNzUgTDE1MDkuMjUsMTc5Ljc1IEMxNTA0Ljc0OTk4LDE3OS43NSAxNTAxLjA4MzM1LDE3OC40MTY2OCAxNDk4LjI1LDE3NS43NSBDMTQ5NS40MTY2NSwxNzMuMDgzMzIgMTQ5NCwxNjkuNTgzMzU1IDE0OTQsMTY1LjI1IEMxNDk0LDE2MS4wODMzMTIgMTQ5NS40NTgzMiwxNTcuNjY2NjggMTQ5OC4zNzUsMTU1IEMxNTAxLjI5MTY4LDE1Mi4zMzMzMiAxNTA0LjkxNjY1LDE1MSAxNTA5LjI1LDE1MSBMMTYyMC4yNSwxNTEgWiBNMTg1MywzMDEuNSBDMTg1NS4xNjY2OCwzMDIuODMzMzQgMTg1Ni44NzQ5OSwzMDQuNTgzMzIzIDE4NTguMTI1LDMwNi43NSBDMTg1OS4zNzUwMSwzMDguOTE2Njc3IDE4NjAsMzExLjE2NjY1NSAxODYwLDMxMy41IEMxODYwLDMxNi41MDAwMTUgMTg1OS4wMDAwMSwzMTkuMjQ5OTg3IDE4NTcsMzIxLjc1IEMxODU0LjQ5OTk5LDMyNC43NTAwMTUgMTg1MC42NjY2OSwzMjYuMjUgMTg0NS41LDMyNi4yNSBDMTg0MS40OTk5OCwzMjYuMjUgMTgzNy44MzMzNSwzMjUuMzMzMzQzIDE4MzQuNSwzMjMuNSBDMTgyMi40OTk5NCwzMTYuNjY2NjMyIDE4MTYuNSwzMDIuNzUwMTA1IDE4MTYuNSwyODEuNzUgQzE4MTYuNSwyNzUuNzQ5OTcgMTgxNC41NDE2OSwyNzEuMDAwMDE4IDE4MTAuNjI1LDI2Ny41IEMxODA2LjcwODMxLDI2My45OTk5ODIgMTgwMS4wODMzNywyNjIuMjUgMTc5My43NSwyNjIuMjUgTDE3NDcsMjYyLjI1IEwxNzQ3LDMxMC43NSBDMTc0NywzMTUuMjUwMDIzIDE3NDUuNzkxNjgsMzE4LjkxNjY1MiAxNzQzLjM3NSwzMjEuNzUgQzE3NDAuOTU4MzIsMzI0LjU4MzM0OCAxNzM3Ljc1MDAyLDMyNiAxNzMzLjc1LDMyNiBDMTcyOC45MTY2NCwzMjYgMTcyNC43MDgzNSwzMjQuNTQxNjgxIDE3MjEuMTI1LDMyMS42MjUgQzE3MTcuNTQxNjUsMzE4LjcwODMxOSAxNzE1Ljc1LDMxNS4wODMzNTUgMTcxNS43NSwzMTAuNzUgTDE3MTUuNzUsMTY2LjI1IEMxNzE1Ljc1LDE2MS45MTY2NDUgMTcxNy4yMDgzMiwxNTguMjkxNjgxIDE3MjAuMTI1LDE1NS4zNzUgQzE3MjMuMDQxNjgsMTUyLjQ1ODMxOSAxNzI2LjY2NjY1LDE1MSAxNzMxLDE1MSBMMTgwMywxNTEgQzE4MTEuNjY2NzEsMTUxIDE4MTkuODMzMjksMTUzLjMzMzMxIDE4MjcuNSwxNTggQzE4MzUuMTY2NzEsMTYyLjY2NjY5IDE4NDEuMjkxNjQsMTY5LjA4MzI5MiAxODQ1Ljg3NSwxNzcuMjUgQzE4NTAuNDU4MzYsMTg1LjQxNjcwOCAxODUyLjc1LDE5NC41ODMyODIgMTg1Mi43NSwyMDQuNzUgQzE4NTIuNzUsMjEzLjA4MzM3NSAxODUwLjUwMDAyLDIyMS4yMDgyOTQgMTg0NiwyMjkuMTI1IEMxODQxLjQ5OTk4LDIzNy4wNDE3MDYgMTgzNS42NjY3LDI0My4zMzMzMSAxODI4LjUsMjQ4IEMxODM5LjAwMDA1LDI1NS4zMzMzNyAxODQ0Ljc1LDI2NS4xNjY2MDUgMTg0NS43NSwyNzcuNSBDMTg0Ni4yNSwyODAuMTY2NjggMTg0Ni41LDI4Mi43NDk5ODcgMTg0Ni41LDI4NS4yNSBDMTg0Ny4xNjY2NywyOTAuNDE2NjkzIDE4NDcuODMzMzMsMjk0LjEyNDk4OSAxODQ4LjUsMjk2LjM3NSBDMTg0OS4xNjY2NywyOTguNjI1MDExIDE4NTAuNjY2NjUsMzAwLjMzMzMyNyAxODUzLDMwMS41IFogTTE4MDEuNzUsMjM2LjUgQzE4MDQuNzUwMDIsMjM2LjUgMTgwNy42NjY2NSwyMzUuMDgzMzQ4IDE4MTAuNSwyMzIuMjUgQzE4MTMuMzMzMzUsMjI5LjQxNjY1MiAxODE1LjY2NjY2LDIyNS42MjUwMjQgMTgxNy41LDIyMC44NzUgQzE4MTkuMzMzMzQsMjE2LjEyNDk3NiAxODIwLjI1LDIxMS4wMDAwMjcgMTgyMC4yNSwyMDUuNSBDMTgyMC4yNSwyMDAuODMzMzEgMTgxOS4zMzMzNCwxOTYuNTQxNjg2IDE4MTcuNSwxOTIuNjI1IEMxODE1LjY2NjY2LDE4OC43MDgzMTQgMTgxMy4zMzMzNSwxODUuNTgzMzQ1IDE4MTAuNSwxODMuMjUgQzE4MDcuNjY2NjUsMTgwLjkxNjY1NSAxODA0Ljc1MDAyLDE3OS43NSAxODAxLjc1LDE3OS43NSBMMTc0NywxNzkuNzUgTDE3NDcsMjM2LjUgTDE4MDEuNzUsMjM2LjUgWiBNMjAzOCwyMzguNSBDMjAzOCwyNTUuMDAwMDgyIDIwMzQuMzMzMzcsMjcwLjEyNDkzMSAyMDI3LDI4My44NzUgQzIwMTkuNjY2NjMsMjk3LjYyNTA2OSAyMDA5LjU0MTczLDMwOC40OTk5NiAxOTk2LjYyNSwzMTYuNSBDMTk4My43MDgyNywzMjQuNTAwMDQgMTk2OS4xNjY3NSwzMjguNSAxOTUzLDMyOC41IEMxOTM2LjgzMzI1LDMyOC41IDE5MjIuMjkxNzMsMzI0LjUwMDA0IDE5MDkuMzc1LDMxNi41IEMxODk2LjQ1ODI3LDMwOC40OTk5NiAxODg2LjM3NTA0LDI5Ny42MjUwNjkgMTg3OS4xMjUsMjgzLjg3NSBDMTg3MS44NzQ5NiwyNzAuMTI0OTMxIDE4NjguMjUsMjU1LjAwMDA4MiAxODY4LjI1LDIzOC41IEMxODY4LjI1LDIyMS45OTk5MTggMTg3MS44NzQ5NiwyMDYuODc1MDY5IDE4NzkuMTI1LDE5My4xMjUgQzE4ODYuMzc1MDQsMTc5LjM3NDkzMSAxODk2LjQ1ODI3LDE2OC41MDAwNCAxOTA5LjM3NSwxNjAuNSBDMTkyMi4yOTE3MywxNTIuNDk5OTYgMTkzNi44MzMyNSwxNDguNSAxOTUzLDE0OC41IEMxOTY5LjE2Njc1LDE0OC41IDE5ODMuNzA4MjcsMTUyLjQ5OTk2IDE5OTYuNjI1LDE2MC41IEMyMDA5LjU0MTczLDE2OC41MDAwNCAyMDE5LjY2NjYzLDE3OS4zNzQ5MzEgMjAyNywxOTMuMTI1IEMyMDM0LjMzMzM3LDIwNi44NzUwNjkgMjAzOCwyMjEuOTk5OTE4IDIwMzgsMjM4LjUgWiBNMjAwNS41LDIzOC41IEMyMDA1LjUsMjI3LjMzMzI3OCAyMDAzLjI1MDAyLDIxNy4yMDgzNzkgMTk5OC43NSwyMDguMTI1IEMxOTk0LjI0OTk4LDE5OS4wNDE2MjEgMTk4OC4wMDAwNCwxOTEuODMzMzYgMTk4MCwxODYuNSBDMTk3MS45OTk5NiwxODEuMTY2NjQgMTk2My4wMDAwNSwxNzguNSAxOTUzLDE3OC41IEMxOTQyLjgzMzI4LDE3OC41IDE5MzMuNzkxNzEsMTgxLjEyNDk3NCAxOTI1Ljg3NSwxODYuMzc1IEMxOTE3Ljk1ODI5LDE5MS42MjUwMjYgMTkxMS43OTE2OSwxOTguODMzMjg4IDE5MDcuMzc1LDIwOCBDMTkwMi45NTgzMSwyMTcuMTY2NzEyIDE5MDAuNzUsMjI3LjMzMzI3OCAxOTAwLjc1LDIzOC41IEMxOTAwLjc1LDI0OS42NjY3MjIgMTkwMi45NTgzMSwyNTkuODMzMjg3IDE5MDcuMzc1LDI2OSBDMTkxMS43OTE2OSwyNzguMTY2NzEzIDE5MTcuOTU4MjksMjg1LjM3NDk3NCAxOTI1Ljg3NSwyOTAuNjI1IEMxOTMzLjc5MTcxLDI5NS44NzUwMjYgMTk0Mi44MzMyOCwyOTguNSAxOTUzLDI5OC41IEMxOTYzLjAwMDA1LDI5OC41IDE5NzEuOTk5OTYsMjk1LjgzMzM2IDE5ODAsMjkwLjUgQzE5ODguMDAwMDQsMjg1LjE2NjY0IDE5OTQuMjQ5OTgsMjc3Ljk1ODM3OSAxOTk4Ljc1LDI2OC44NzUgQzIwMDMuMjUwMDIsMjU5Ljc5MTYyMSAyMDA1LjUsMjQ5LjY2NjcyMiAyMDA1LjUsMjM4LjUgWiBNMjE2My43NSwyMjkgQzIxNzIuNTgzMzgsMjMyLjUwMDAxOCAyMTc5Ljc5MTY0LDIzNy44MzMyOTggMjE4NS4zNzUsMjQ1IEMyMTkwLjk1ODM2LDI1Mi4xNjY3MDIgMjE5My43NSwyNjEuNDE2NjEgMjE5My43NSwyNzIuNzUgQzIxOTMuNzUsMjkyLjU4MzQzMiAyMTg4LjA4MzM5LDMwNi40MTY2MjggMjE3Ni43NSwzMTQuMjUgQzIxNjUuNDE2NjEsMzIyLjA4MzM3MiAyMTUxLjkxNjc0LDMyNiAyMTM2LjI1LDMyNiBMMjA3NCwzMjYgQzIwNjkuNjY2NjUsMzI2IDIwNjYuMDQxNjgsMzI0LjU0MTY4MSAyMDYzLjEyNSwzMjEuNjI1IEMyMDYwLjIwODMyLDMxOC43MDgzMTkgMjA1OC43NSwzMTUuMDgzMzU1IDIwNTguNzUsMzEwLjc1IEwyMDU4Ljc1LDE2Ni4yNSBDMjA1OC43NSwxNjEuOTE2NjQ1IDIwNjAuMjA4MzIsMTU4LjI5MTY4MSAyMDYzLjEyNSwxNTUuMzc1IEMyMDY2LjA0MTY4LDE1Mi40NTgzMTkgMjA2OS42NjY2NSwxNTEgMjA3NCwxNTEgTDIxMzcsMTUxIEMyMTY4LjY2NjgzLDE1MSAyMTg0LjUsMTY1LjgzMzE4NSAyMTg0LjUsMTk1LjUgQzIxODQuNSwyMDMuMDAwMDM3IDIxODIuNzA4MzUsMjA5LjYyNDk3MSAyMTc5LjEyNSwyMTUuMzc1IEMyMTc1LjU0MTY1LDIyMS4xMjUwMjkgMjE3MC40MTY3LDIyNS42NjY2NSAyMTYzLjc1LDIyOSBaIE0yMTUyLDIwMSBDMjE1MiwxOTQuMTY2NjMyIDIxNTAuMjkxNjgsMTg5LjA0MTY4NCAyMTQ2Ljg3NSwxODUuNjI1IEMyMTQzLjQ1ODMyLDE4Mi4yMDgzMTYgMjEzOC42NjY3LDE4MC41IDIxMzIuNSwxODAuNSBMMjA5MS4yNSwxODAuNSBMMjA5MS4yNSwyMTkuNSBMMjEzMy4yNSwyMTkuNSBDMjEzOC4yNTAwMiwyMTkuNSAyMTQyLjYyNDk4LDIxNy44MzMzNSAyMTQ2LjM3NSwyMTQuNSBDMjE1MC4xMjUwMiwyMTEuMTY2NjUgMjE1MiwyMDYuNjY2Njk1IDIxNTIsMjAxIFogTTIxMzYuMjUsMjk3LjI1IEMyMTQ0LjA4MzM3LDI5Ny4yNSAyMTUwLjIwODMxLDI5NS4xNjY2ODcgMjE1NC42MjUsMjkxIEMyMTU5LjA0MTY5LDI4Ni44MzMzMTMgMjE2MS4yNSwyODAuNzUwMDQgMjE2MS4yNSwyNzIuNzUgQzIxNjEuMjUsMjYyLjkxNjYxOCAyMTU4LjY2NjY5LDI1Ni41MDAwMTUgMjE1My41LDI1My41IEMyMTQ4LjMzMzMxLDI1MC40OTk5ODUgMjE0Mi4wMDAwNCwyNDkgMjEzNC41LDI0OSBMMjA5MS4yNSwyNDkgTDIwOTEuMjUsMjk3LjI1IEwyMTM2LjI1LDI5Ny4yNSBaIE0yMzc1LjUsMjM4LjUgQzIzNzUuNSwyNTUuMDAwMDgyIDIzNzEuODMzMzcsMjcwLjEyNDkzMSAyMzY0LjUsMjgzLjg3NSBDMjM1Ny4xNjY2MywyOTcuNjI1MDY5IDIzNDcuMDQxNzMsMzA4LjQ5OTk2IDIzMzQuMTI1LDMxNi41IEMyMzIxLjIwODI3LDMyNC41MDAwNCAyMzA2LjY2Njc1LDMyOC41IDIyOTAuNSwzMjguNSBDMjI3NC4zMzMyNSwzMjguNSAyMjU5Ljc5MTczLDMyNC41MDAwNCAyMjQ2Ljg3NSwzMTYuNSBDMjIzMy45NTgyNywzMDguNDk5OTYgMjIyMy44NzUwNCwyOTcuNjI1MDY5IDIyMTYuNjI1LDI4My44NzUgQzIyMDkuMzc0OTYsMjcwLjEyNDkzMSAyMjA1Ljc1LDI1NS4wMDAwODIgMjIwNS43NSwyMzguNSBDMjIwNS43NSwyMjEuOTk5OTE4IDIyMDkuMzc0OTYsMjA2Ljg3NTA2OSAyMjE2LjYyNSwxOTMuMTI1IEMyMjIzLjg3NTA0LDE3OS4zNzQ5MzEgMjIzMy45NTgyNywxNjguNTAwMDQgMjI0Ni44NzUsMTYwLjUgQzIyNTkuNzkxNzMsMTUyLjQ5OTk2IDIyNzQuMzMzMjUsMTQ4LjUgMjI5MC41LDE0OC41IEMyMzA2LjY2Njc1LDE0OC41IDIzMjEuMjA4MjcsMTUyLjQ5OTk2IDIzMzQuMTI1LDE2MC41IEMyMzQ3LjA0MTczLDE2OC41MDAwNCAyMzU3LjE2NjYzLDE3OS4zNzQ5MzEgMjM2NC41LDE5My4xMjUgQzIzNzEuODMzMzcsMjA2Ljg3NTA2OSAyMzc1LjUsMjIxLjk5OTkxOCAyMzc1LjUsMjM4LjUgWiBNMjM0MywyMzguNSBDMjM0MywyMjcuMzMzMjc4IDIzNDAuNzUwMDIsMjE3LjIwODM3OSAyMzM2LjI1LDIwOC4xMjUgQzIzMzEuNzQ5OTgsMTk5LjA0MTYyMSAyMzI1LjUwMDA0LDE5MS44MzMzNiAyMzE3LjUsMTg2LjUgQzIzMDkuNDk5OTYsMTgxLjE2NjY0IDIzMDAuNTAwMDUsMTc4LjUgMjI5MC41LDE3OC41IEMyMjgwLjMzMzI4LDE3OC41IDIyNzEuMjkxNzEsMTgxLjEyNDk3NCAyMjYzLjM3NSwxODYuMzc1IEMyMjU1LjQ1ODI5LDE5MS42MjUwMjYgMjI0OS4yOTE2OSwxOTguODMzMjg4IDIyNDQuODc1LDIwOCBDMjI0MC40NTgzMSwyMTcuMTY2NzEyIDIyMzguMjUsMjI3LjMzMzI3OCAyMjM4LjI1LDIzOC41IEMyMjM4LjI1LDI0OS42NjY3MjIgMjI0MC40NTgzMSwyNTkuODMzMjg3IDIyNDQuODc1LDI2OSBDMjI0OS4yOTE2OSwyNzguMTY2NzEzIDIyNTUuNDU4MjksMjg1LjM3NDk3NCAyMjYzLjM3NSwyOTAuNjI1IEMyMjcxLjI5MTcxLDI5NS44NzUwMjYgMjI4MC4zMzMyOCwyOTguNSAyMjkwLjUsMjk4LjUgQzIzMDAuNTAwMDUsMjk4LjUgMjMwOS40OTk5NiwyOTUuODMzMzYgMjMxNy41LDI5MC41IEMyMzI1LjUwMDA0LDI4NS4xNjY2NCAyMzMxLjc0OTk4LDI3Ny45NTgzNzkgMjMzNi4yNSwyNjguODc1IEMyMzQwLjc1MDAyLDI1OS43OTE2MjEgMjM0MywyNDkuNjY2NzIyIDIzNDMsMjM4LjUgWiBNMjUwNi4yNSwxNTEgQzI1MTAuNzUwMDIsMTUxIDI1MTQuNDE2NjUsMTUyLjMzMzMyIDI1MTcuMjUsMTU1IEMyNTIwLjA4MzM1LDE1Ny42NjY2OCAyNTIxLjUsMTYxLjE2NjY0NSAyNTIxLjUsMTY1LjUgQzI1MjEuNSwxNjkuODMzMzU1IDI1MjAuMDgzMzUsMTczLjI5MTY1NCAyNTE3LjI1LDE3NS44NzUgQzI1MTQuNDE2NjUsMTc4LjQ1ODM0NiAyNTEwLjc1MDAyLDE3OS43NSAyNTA2LjI1LDE3OS43NSBMMjQ2NywxNzkuNzUgTDI0NjcsMzEwLjc1IEMyNDY3LDMxNS4wODMzNTUgMjQ2NS40MTY2OCwzMTguNzA4MzE5IDI0NjIuMjUsMzIxLjYyNSBDMjQ1OS4wODMzMiwzMjQuNTQxNjgxIDI0NTUuMTY2NjksMzI2IDI0NTAuNSwzMjYgQzI0NDUuODMzMzEsMzI2IDI0NDIuMDAwMDIsMzI0LjU0MTY4MSAyNDM5LDMyMS42MjUgQzI0MzUuOTk5OTksMzE4LjcwODMxOSAyNDM0LjUsMzE1LjA4MzM1NSAyNDM0LjUsMzEwLjc1IEwyNDM0LjUsMTc5Ljc1IEwyMzk1LjI1LDE3OS43NSBDMjM5MC43NDk5OCwxNzkuNzUgMjM4Ny4wODMzNSwxNzguNDE2NjggMjM4NC4yNSwxNzUuNzUgQzIzODEuNDE2NjUsMTczLjA4MzMyIDIzODAsMTY5LjU4MzM1NSAyMzgwLDE2NS4yNSBDMjM4MCwxNjEuMDgzMzEyIDIzODEuNDU4MzIsMTU3LjY2NjY4IDIzODQuMzc1LDE1NSBDMjM4Ny4yOTE2OCwxNTIuMzMzMzIgMjM5MC45MTY2NSwxNTEgMjM5NS4yNSwxNTEgTDI1MDYuMjUsMTUxIFogTTI1NzEsMzEwLjc1IEMyNTcxLDMxNS4wODMzNTUgMjU2OS40MTY2OCwzMTguNzA4MzE5IDI1NjYuMjUsMzIxLjYyNSBDMjU2My4wODMzMiwzMjQuNTQxNjgxIDI1NTkuNDE2NjksMzI2IDI1NTUuMjUsMzI2IEMyNTUwLjc0OTk4LDMyNiAyNTQ3LjA0MTY4LDMyNC41NDE2ODEgMjU0NC4xMjUsMzIxLjYyNSBDMjU0MS4yMDgzMiwzMTguNzA4MzE5IDI1MzkuNzUsMzE1LjA4MzM1NSAyNTM5Ljc1LDMxMC43NSBMMjUzOS43NSwxNjYuMjUgQzI1MzkuNzUsMTYxLjkxNjY0NSAyNTQxLjI0OTk4LDE1OC4yOTE2ODEgMjU0NC4yNSwxNTUuMzc1IEMyNTQ3LjI1MDAyLDE1Mi40NTgzMTkgMjU1MS4wODMzMSwxNTEgMjU1NS43NSwxNTEgQzI1NTkuOTE2NjksMTUxIDI1NjMuNDk5OTgsMTUyLjQ1ODMxOSAyNTY2LjUsMTU1LjM3NSBDMjU2OS41MDAwMiwxNTguMjkxNjgxIDI1NzEsMTYxLjkxNjY0NSAyNTcxLDE2Ni4yNSBMMjU3MSwzMTAuNzUgWiBNMjcyMywxNTkuNSBDMjcyOC4xNjY2OSwxNjIuMTY2NjggMjczMC43NSwxNjYuNDE2NjM4IDI3MzAuNzUsMTcyLjI1IEMyNzMwLjc1LDE3NS43NTAwMTcgMjcyOS41MDAwMSwxNzkuMTY2NjUgMjcyNywxODIuNSBDMjcyNC4zMzMzMiwxODYuMDAwMDE4IDI3MjAuOTE2NjksMTg3Ljc1IDI3MTYuNzUsMTg3Ljc1IEMyNzEzLjkxNjY1LDE4Ny43NSAyNzExLjA4MzM1LDE4Ny4wMDAwMDcgMjcwOC4yNSwxODUuNSBDMjcwMC4wODMyOSwxODEuNjY2NjQ4IDI2OTEuMjUwMDUsMTc5Ljc1IDI2ODEuNzUsMTc5Ljc1IEMyNjcwLjA4MzI3LDE3OS43NSAyNjU5LjkxNjcxLDE4Mi4yMDgzMDkgMjY1MS4yNSwxODcuMTI1IEMyNjQyLjU4MzI5LDE5Mi4wNDE2OTEgMjYzNS45MTY2OSwxOTguOTU4Mjg5IDI2MzEuMjUsMjA3Ljg3NSBDMjYyNi41ODMzMSwyMTYuNzkxNzExIDI2MjQuMjUsMjI2Ljk5OTk0MyAyNjI0LjI1LDIzOC41IEMyNjI0LjI1LDI1OC4xNjY3NjUgMjYyOS41NDE2MSwyNzMuMDgzMjgyIDI2NDAuMTI1LDI4My4yNSBDMjY1MC43MDgzOSwyOTMuNDE2NzE4IDI2NjQuNTgzMjUsMjk4LjUgMjY4MS43NSwyOTguNSBDMjY5MS45MTY3MiwyOTguNSAyNzAwLjc0OTk2LDI5Ni41ODMzNTIgMjcwOC4yNSwyOTIuNzUgQzI3MTEuMjUwMDIsMjkxLjQxNjY2IDI3MTMuOTE2NjUsMjkwLjc1IDI3MTYuMjUsMjkwLjc1IEMyNzIwLjU4MzM2LDI5MC43NSAyNzI0LjI0OTk4LDI5Mi41ODMzMTUgMjcyNy4yNSwyOTYuMjUgQzI3MjkuNzUwMDEsMjk5LjQxNjY4MiAyNzMxLDMwMi44MzMzMTUgMjczMSwzMDYuNSBDMjczMSwzMDkuMTY2NjggMjczMC4zMzMzNCwzMTEuNTgzMzIzIDI3MjksMzEzLjc1IEMyNzI3LjY2NjY2LDMxNS45MTY2NzcgMjcyNS43NTAwMSwzMTcuNTgzMzI3IDI3MjMuMjUsMzE4Ljc1IEMyNzEwLjI0OTkzLDMyNS4yNTAwMzIgMjY5Ni40MTY3NCwzMjguNSAyNjgxLjc1LDMyOC41IEMyNjY1LjQxNjU4LDMyOC41IDI2NTAuNDE2NzMsMzI1LjA0MTcwMSAyNjM2Ljc1LDMxOC4xMjUgQzI2MjMuMDgzMjcsMzExLjIwODI5OSAyNjEyLjE2NjcxLDMwMS4wMDAwNjggMjYwNCwyODcuNSBDMjU5NS44MzMyOSwyNzMuOTk5OTMyIDI1OTEuNzUsMjU3LjY2Njc2MyAyNTkxLjc1LDIzOC41IEMyNTkxLjc1LDIyMS40OTk5MTUgMjU5NS42MjQ5NiwyMDYuMjUwMDY4IDI2MDMuMzc1LDE5Mi43NSBDMjYxMS4xMjUwNCwxNzkuMjQ5OTMyIDI2MjEuODMzMjcsMTY4LjcwODM3MSAyNjM1LjUsMTYxLjEyNSBDMjY0OS4xNjY3MywxNTMuNTQxNjI5IDI2NjQuNTgzMjUsMTQ5Ljc1IDI2ODEuNzUsMTQ5Ljc1IEMyNjk2LjU4MzQxLDE0OS43NSAyNzEwLjMzMzI3LDE1Mi45OTk5NjcgMjcyMywxNTkuNSBaIE0yODA1LjUsMzI4LjUgQzI3OTMuNDk5OTQsMzI4LjUgMjc4Mi44MzMzOCwzMjcuMDAwMDE1IDI3NzMuNSwzMjQgQzI3NjQuMTY2NjIsMzIwLjk5OTk4NSAyNzU1LjQxNjcxLDMxNS45MTY3MDIgMjc0Ny4yNSwzMDguNzUgQzI3NDIuNzQ5OTgsMzA0Ljc0OTk4IDI3NDAuNSwzMDAuMzMzMzU4IDI3NDAuNSwyOTUuNSBDMjc0MC41LDI5MS42NjY2NDggMjc0MS45MTY2NSwyODguMjkxNjgxIDI3NDQuNzUsMjg1LjM3NSBDMjc0Ny41ODMzNSwyODIuNDU4MzE5IDI3NTAuOTk5OTgsMjgxIDI3NTUsMjgxIEMyNzU4LjE2NjY4LDI4MSAyNzYwLjk5OTk5LDI4MS45OTk5OSAyNzYzLjUsMjg0IEMyNzcwLjE2NjcsMjg5LjUwMDAyNyAyNzc2LjY2NjY0LDI5My40OTk5ODcgMjc4MywyOTYgQzI3ODkuMzMzMzYsMjk4LjUwMDAxMyAyNzk2LjgzMzI5LDI5OS43NSAyODA1LjUsMjk5Ljc1IEMyODE0LjgzMzM4LDI5OS43NSAyODIyLjg3NDk3LDI5Ny42NjY2ODcgMjgyOS42MjUsMjkzLjUgQzI4MzYuMzc1MDMsMjg5LjMzMzMxMyAyODM5Ljc1LDI4NC4xNjY2OTcgMjgzOS43NSwyNzggQzI4MzkuNzUsMjcwLjQ5OTk2MyAyODM2LjQxNjcsMjY0LjYyNTAyMSAyODI5Ljc1LDI2MC4zNzUgQzI4MjMuMDgzMywyNTYuMTI0OTc5IDI4MTIuNTAwMDcsMjUyLjkxNjY3NyAyNzk4LDI1MC43NSBDMjc2MS40OTk4MiwyNDUuNDE2NjQgMjc0My4yNSwyMjguNDE2ODEgMjc0My4yNSwxOTkuNzUgQzI3NDMuMjUsMTg5LjI0OTk0NyAyNzQ1Ljk5OTk3LDE4MC4xMjUwMzkgMjc1MS41LDE3Mi4zNzUgQzI3NTcuMDAwMDMsMTY0LjYyNDk2MSAyNzY0LjQ5OTk1LDE1OC43MDgzNTQgMjc3NCwxNTQuNjI1IEMyNzgzLjUwMDA1LDE1MC41NDE2NDYgMjc5NC4wODMyNywxNDguNSAyODA1Ljc1LDE0OC41IEMyODE2LjI1MDA1LDE0OC41IDI4MjYuMTI0OTUsMTUwLjA4MzMxNyAyODM1LjM3NSwxNTMuMjUgQzI4NDQuNjI1MDUsMTU2LjQxNjY4MyAyODUyLjMzMzMsMTYwLjU4MzMwNyAyODU4LjUsMTY1Ljc1IEMyODYzLjMzMzM2LDE2OS41ODMzNTIgMjg2NS43NSwxNzMuOTk5OTc1IDI4NjUuNzUsMTc5IEMyODY1Ljc1LDE4Mi44MzMzNTIgMjg2NC4zMzMzNSwxODYuMjA4MzE5IDI4NjEuNSwxODkuMTI1IEMyODU4LjY2NjY1LDE5Mi4wNDE2ODEgMjg1NS4zMzMzNSwxOTMuNSAyODUxLjUsMTkzLjUgQzI4NDguOTk5OTksMTkzLjUgMjg0Ni43NTAwMSwxOTIuNzUwMDA4IDI4NDQuNzUsMTkxLjI1IEMyODQwLjQxNjY0LDE4Ny43NDk5ODIgMjgzNC4zNzUwNCwxODQuNTQxNjgxIDI4MjYuNjI1LDE4MS42MjUgQzI4MTguODc0OTYsMTc4LjcwODMxOSAyODExLjkxNjcsMTc3LjI1IDI4MDUuNzUsMTc3LjI1IEMyNzk1LjI0OTk1LDE3Ny4yNSAyNzg3LjEyNTAzLDE3OS4yMDgzMTQgMjc4MS4zNzUsMTgzLjEyNSBDMjc3NS42MjQ5NywxODcuMDQxNjg2IDI3NzIuNzUsMTkyLjE2NjYzNSAyNzcyLjc1LDE5OC41IEMyNzcyLjc1LDIwNS42NjY3MDIgMjc3NS43MDgzLDIxMS4wODMzMTUgMjc4MS42MjUsMjE0Ljc1IEMyNzg3LjU0MTcsMjE4LjQxNjY4NSAyNzk2LjgzMzI3LDIyMS40MTY2NTUgMjgwOS41LDIyMy43NSBDMjgyMy44MzM0LDIyNi4yNTAwMTIgMjgzNS4yOTE2MiwyMjkuNDU4MzE0IDI4NDMuODc1LDIzMy4zNzUgQzI4NTIuNDU4MzgsMjM3LjI5MTY4NiAyODU4LjkxNjY1LDI0Mi42MjQ5NjYgMjg2My4yNSwyNDkuMzc1IEMyODY3LjU4MzM1LDI1Ni4xMjUwMzQgMjg2OS43NSwyNjUuMDgzMjc4IDI4NjkuNzUsMjc2LjI1IEMyODY5Ljc1LDI4Ni43NTAwNTMgMjg2Ni43OTE3LDI5NS45NTgyOTQgMjg2MC44NzUsMzAzLjg3NSBDMjg1NC45NTgzLDMxMS43OTE3MDYgMjg0Ny4wODMzOCwzMTcuODc0OTc5IDI4MzcuMjUsMzIyLjEyNSBDMjgyNy40MTY2MiwzMjYuMzc1MDIxIDI4MTYuODMzMzksMzI4LjUgMjgwNS41LDMyOC41IFoiIGlkPSJTVFVERU5ULVJPQk9USUNTIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTQyNy41MzE3MjEsMzg5Ljc3NzA0NiBDNDA5LjEyODMwOCw0MTIuODI1Mjc2IDM4Ni4zNjA3NzMsNDMyLjYyNjY5OSAzNjAuMDAwMDAxLDQ0Ny44NDYwOTcgQzI4NS43NDM3NDIsNDkwLjcxNzk2OCAxOTQuMjU2MjU4LDQ5MC43MTc5NjggMTE5Ljk5OTk5OSw0NDcuODQ2MDk3IEM5NC40MTMxMTgzLDQzMy4wNzM1MDUgNzIuMjExNTkyMiw0MTMuOTgzOTc0IDU0LjEwMDM4NzYsMzkxLjc5ODU0NCBDMTUwLjI2Njc2MiwyOTIuMDYyMTcxIDIyOS43Njk4MDMsMzE2LjM2MDAwMiAyMjkuNzY5ODAzLDI4MC45NDg4MzMgQzIyOS43Njk4MDMsMjQ0LjA1NzE5MSA5Mi42MDEyNTQsMjE5Ljc3NDY2MSA5Mi42MDEyNTQsMTk0LjE3OTI2MSBDOTIuNjAxMjU0LDE2OC42OTUyMjIgMTczLjE3Nzk0LDE0OS4zMzgxNjUgMjQxLjc5Nzc1MywxNDkuMTcwMjEgQzMxMC40MTc1NjYsMTQ5LjMzODE2NSAzOTAuOTk0MjUyLDE2OC42OTUyMjIgMzkwLjk5NDI1MiwxOTQuMTc5MjYxIEMzOTAuOTk0MjUyLDIxOS43NzQ2NjEgMjUzLjgyNTcwMywyNDQuMDU3MTkxIDI1My44MjU3MDMsMjgwLjk0ODgzMyBDMjUzLjgyNTcwMywzMTYuMTE4NzIxIDMzMi4yNDkwMTksMjkyLjM5MDUxNCA0MjcuNTMxNzExLDM4OS43NzcwNTggWiBNNDQ3LjQ5MDEyOSwzNjAuNjE0NDU4IEMzOTYuNDEzNTksMzE3LjgwOTk0MiAzNDguODYwMDkzLDI5MS4yNTQ3MzMgMzA0LjgyOTYzOCwyODAuOTQ4ODMzIEMzMjYuNjgwNDQzLDI2My4zMzE1NzYgNDQ5LjYxMjI3NiwyMTguNTE1NjQyIDQ0OS42MTIyNzYsMTk0LjUyNTgwMiBDNDQ5LjYxMjI3NiwxNzAuNjc3MjAyIDM0My45MDkxNDEsMTEzLjY3MDczOCAyNDIuNjk2NjI5LDExMy4wMDAzMTUgTDI0Mi42OTY2MjksMTEyLjk5NDM1IEMyNDIuMzk3MDQ4LDExMi45OTQzNSAyNDIuMDk3NDIxLDExMi45OTQ4NDkgMjQxLjc5Nzc1MywxMTIuOTk1ODQ0IEMyNDEuNDk4MDg0LDExMi45OTQ4NDkgMjQxLjE5ODQ1OCwxMTIuOTk0MzUgMjQwLjg5ODg3NiwxMTIuOTk0MzUgTDI0MC44OTg4NzYsMTEzLjAwMDMxNSBDMTM5LjY4NjM2NCwxMTMuNjcwNzM4IDMzLjk4MzIyOTcsMTcwLjY3NzIwMiAzMy45ODMyMjk3LDE5NC41MjU4MDIgQzMzLjk4MzIyOTcsMjE4LjUxNTY0MiAxNTYuOTE1MDYzLDI2My4zMzE1NzYgMTc4Ljc2NTg2OCwyODAuOTQ4ODMzIEMxMzQuMDQ1MSwyOTEuNDE2MzEgODUuNjg5OTU1MSwzMTguNjQ2NjA1IDMzLjcwMDQzMjcsMzYyLjYzOTcxOCBDMTIuMDA1NzcwMywzMjYuMTQ0NTY2IC05LjI1NjkyNDQ5ZS0wNywyODMuOTI3MDA4IDUuNjg0MzQxODllLTE0LDI0MCBDLTEuODA2OTE0MjFlLTA2LDE1NC4yNTYyNTkgNDUuNzQzNzM5NCw3NS4wMjU3NzQzIDExOS45OTk5OTksMzIuMTUzOTAzMyBDMTk0LjI1NjI1OCwtMTAuNzE3OTY3OCAyODUuNzQzNzQyLC0xMC43MTc5Njc4IDM2MC4wMDAwMDEsMzIuMTUzOTAzMyBDNDM0LjI1NjI2MSw3NS4wMjU3NzQzIDQ4MC4wMDAwMDIsMTU0LjI1NjI1OSA0ODAsMjQwIEM0ODAuMDAwMDAxLDI4My4xMTY3ODEgNDY4LjQzMzAzNSwzMjQuNTg2NTkgNDQ3LjQ5MDEyOSwzNjAuNjE0NDU4IFoiIGlkPSJDb21iaW5lZC1TaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg=="> </a><a href="#top">Challenges 2026</a></h1></div></header><section><div class="fixed-width"><h2>Table of Contents</h2><ol><li><a href="#introduction">Introduction</a></li><li><a href="#vision-challenge">Vision Challenge</a></li><li><a href="#movement-challenge">Movement Challenge</a></li><li><a href="#mechanics-challenge">Mechanics Challenge</a></li><li><a href="#sensing-challenge">Sensing Challenge</a></li><li><a href="#simulator-challenge">Simulator Challenge</a></li><li><a href="#transportation-challenge">Transportation Challenge</a></li><li><a href="#stopping-challenge">Stopping Challenge</a></li></ol></div></section><section><div class="fixed-width"><h2><a class="anchor"id="introduction"></a>Introduction</h2><p>There are seven challenges which teams may optionally complete during the competition year. League points are available for up to four of your choosing. See the main <a href="rulebook.html#comp-structure">rulebook</a> for details on how these relate to the overall competition and when the deadlines for completion are.</p><p>Throughout these challenges a “robot” need not be fully constructed, nor is it limited by the size limits which would apply in the competition arena. Robots may use whatever sensing mechanisms they like, as long as those mechanisms would be permitted in the competition arena.</p><p>However, robots must be <strong>safe</strong> (as specified in the <a href="rulebook.html#safety-regulations">regulations</a>) when completing these challenges.</p><p>Only the Simulator challenge may be completed in the simulator. The rest must be completed with a physical robot. When constructing components of the arena for use in challenges, they must match the specifications defined in the rules.</p><p>Submissions for each challenge should be made as a video on the web (e.g: on YouTube, Instagram, etc.) and linking this video in your Discord channel. When linking the video please use <code>@Challenges</code> so that your submission is seen. If a team’s challenge submission is not deemed successful, the team may attempt the challenge again. Feedback will be provided about why the submission was not successful.</p><p>Remember that you can also post in <a href="https://studentrobotics.org/docs/tutorials/discord">Discord</a> if you want some help.</p></div></section><section><div class="fixed-width"><h2><a class="anchor"id="vision-challenge"></a>Vision Challenge</h2><p>This challenge is to think about how your robot can use the camera to interpret the world around it.</p><p>To complete this challenge you will need to use the camera from your kit. The onboard LEDs will be used to indicate the robot’s state.</p><p>Certain sensors are more useful in certain situations, either due to their range, accuracy, or the information they provide. It is worth considering how you can use the sensors we’ve provided to you.</p><p>This challenge has two parts which can be submitted as separate videos, but both parts must be completed to earn the points.</p><p>To complete this challenge the two parts are:</p><ol type="a"><li>Distance sensing. Perform the following steps:<ul><li>Start with your robot centred on the wall marker about 2000 mm from the wall.</li><li>Move towards the wall until you are less than 100 mm from the wall, then move back to 2000 mm</li><li>During this, illuminate the LEDs based on the following conditions:<ol><li>LED B in red when the robot is more than 1500 mm from the wall.</li><li>LED B in blue when the robot is between 300 mm and 1500 mm from the wall.</li><li>LED B in green when the robot is less than 300 mm from the wall.</li></ol></li><li><strong>Note:</strong> distance should be measured from the centre of the sensor or camera.</li></ul></li><li>Angle sensing. Perform the following steps:<ul><li>Start with your robot centred on the wall marker and between 1 and 3 metres from the wall.</li><li>Turn your robot to the left, to the centre, then to the right, then reverse this.</li><li>During this, illuminate the LEDs based on the following conditions:<ol><li>LED A in blue when the marker is more than 15° left from square on.</li><li>LED B in red when the marker is approximately square on (within a 30° arc).</li><li>LED C in blue when the marker is more than 15° right from square on.</li></ol></li></ul></li></ol><p>The robot may move autonomously or may be moved manually to complete this challenge.</p><p><strong>Note:</strong> if moving the robot manually then it is recommended that the Motor and Servo boards be disconnected from the Power Board as well as any mechanical components secured for the duration of the demonstration.</p></div></section><section><div class="fixed-width"><h2><a class="anchor"id="movement-challenge"></a>Movement Challenge</h2><p>This challenge is designed to test the robot’s ability to perform repeated movements accurately.</p><p>This is a key feature for a robot as, due to manufacturing tolerances, no two motors are exactly the same. As such, your robot must account for the differences in the motors to move in a straight line. This is often achieved by adjusting the power of the motors or, in some cases, by using external references.</p><p>To complete this challenge, your robot must:</p><ul><li>Autonomously complete 3 continuous circuits of a triangular path, returning its starting position to within 300 mm.</li><li>The path must be an isosceles right-angled triangle with shorter side length of 1500±200 mm.</li><li>The direction of travel around the path and orientation of the robot are inconsequential.</li></ul><p>Teams are encouraged to include in their submission video objects which establish the scale of the path traversed by the robot, for example a metre ruler.</p></div></section><section><div class="fixed-width"><h2><a class="anchor"id="mechanics-challenge"></a>Mechanics Challenge</h2><p>This challenge is designed to test the robot’s ability to manipulate objects by lifting one of the objects from the game.</p><p>To move samples around, it is useful to be able to lift them. Using a mechanism that physically grabs the sides of the box to be able to pick it up is the most common approach, but they can also be lifted using vacuum suction or scoops that slide under the box.</p><p>To complete this challenge, your robot must:</p><ul><li>Lift a sample (as described in <a href="rulebook.html#sample-specification">the rulebook</a>) at least 130 mm off of the ground and hold it there for 5 seconds.</li></ul></div></section><section><div class="fixed-width"><h2><a class="anchor"id="sensing-challenge"></a>Sensing Challenge</h2><p>This challenge is designed to test the robot’s ability to use sensors other than its camera to detect objects in its environment.</p><p>To complete this challenge you will need to use a sensor (e.g., ultrasonic distance sensor, infrared distance sensor, bump switch, etc. but not the camera) to detect the presence—or absence—of an object. The object may be a sample box without its markers, a similar sized box, or a heavy book, etc. It must not have a marker on it.</p><p>You will need to show that the sensor can detect when the object is present and when it is absent. Light LED B in blue when an object is detected, and in red when an object is not.</p><p>To complete this challenge, complete the following steps:</p><ul><li>Hold the object near (within 200mm of) the sensor.</li><li>Show that LED B lights up in blue.</li><li>Move the object away from the sensor.</li><li>Show that LED B lights up in red.</li><li>Move the object back near (within 200mm of) the sensor.</li><li>Show that LED B lights up again in blue.</li></ul></div></section><section><div class="fixed-width"><h2><a class="anchor"id="simulator-challenge"></a>Simulator Challenge</h2><p>This challenge is designed to test your ability to program the robot, within the simulator environment.</p><p>The simulator reproduces the arena and many of the components of a physical robot. The simulated robots can play the same game as the real robots. In this challenge, you will demonstrate playing the game within the simulator.</p><p>To complete this challenge, your simulated robot must successfully bring two samples of the same type back to your laboratory in less than 150 seconds.</p><p>You can demonstrate this by either a screen capture video of the simulator running, or videoing the screen if that is not possible.</p></div></section><section><div class="fixed-width"><h2><a class="anchor"id="transportation-challenge"></a>Transportation Challenge</h2><p>This challenge is designed to test the robot’s ability to move samples from place to place.</p><p>To score points in the game, robots will need to be able to move samples into their laboratories. This challenge tests that ability.</p><p>To complete this challenge, you must mark out two locations on the ground at least 3m apart. One location is the starting location of a sample, and the other is the target location. Place your robot at least 1m away from both locations. Your robot must autonomously move a sample from the starting location to within 200mm of the target location, and then stop.</p></div></section><section><div class="fixed-width"><h2><a class="anchor"id="stopping-challenge"></a>Stopping Challenge</h2><p>This challenge is designed to test the robot’s ability to move precisely.</p><p>While it is possible to slowly move from one place to another adjusting as you go, it is very beneficial for a robot to be able to move both accurately and quickly.</p><p>To complete this challenge, place your robot 3m away from an arena wall marker. Your robot must drive towards the wall marker and stop within 100mm of it without touching it, and it must do so within 5 seconds of starting to move.</p></div></section><section><div class="fixed-width"><h2><a class="anchor"id="revisions"></a>Revisions</h2><p>From time to time Student Robotics may amend the challenges. When this happens, this document will be updated. Changes to the challenges will not affect existing submissions.</p></div></section><footer class="site-footer"><div class="row fixed-width"><div class="column d-6-12"><p>© Student Robotics 2025</p><p>Registered charity in England and Wales, number 1163168</p></div><div class="column text-right d-6-12"></div></div></footer></body></html>
