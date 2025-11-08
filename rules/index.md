@@ -8,17 +8,17 @@ SR2026 Rules
 ============
 
 {% if page.show_rulebook %}
-  [<img class="left" src="{{ site.baseurl }}/resources/2025/rulebook.png" />]({{ site.baseurl }}/resources/2026/rulebook.html)
   The rules, regulations and specifications for the SR2026 competition can be
-  found in the [rulebook]({{ site.baseurl }}/resources/2026/rulebook.html).
+  found in the rulebook:
 
-  The rules may be subject to changes, so please ensure you're using the most up-to-date version.
+  <a href="{{ site.baseurl }}/resources/2026/rulebook.html" class="button button-primary">Download rulebook</a>
+
+  The challenges for the SR2026 competition can be found in the challenges document:
+
+  <a href="{{ site.baseurl }}/resources/2026/challenges.html" class="button button-primary">Download challenges</a>
+
+  The rules and challenges may be subject to changes, so please ensure you're using the most up-to-date version.
   We will also let you know of any important changes by email.
-
-  <br>
-
-  [<img class="left" src="{{ site.baseurl }}/resources/2025/challenges.png" />]({{ site.baseurl }}/resources/2026/challenges.html)
-  The challenges for the SR2026 competition can be found in the [challenges document]({{ site.baseurl }}/resources/2026/challenges.html).
 {% else %}
   The rules, regulations and specifications for the SR2026 competition will be released at Kickstart.
 {% endif %}
