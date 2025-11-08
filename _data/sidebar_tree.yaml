@@ -41,6 +41,8 @@ tree:
         title: PyCharm
       - url: /tutorials/editors/vscode
         title: Visual Studio Code
+      - url: /tutorials/editors/remote-debug
+        title: VS Code Remote Debugging
     - url: /tutorials/update_brain
       title: Updating your brain board
     - url: /tutorials/discord
@@ -139,8 +141,8 @@ tree:
   - url: /competitor_resources/
     title: Resources
     tree:
-    - url: /competitor_resources/pre_kickstart_activities
-      title: Pre-Kickstart Activities
+    - url: /competitor_resources/simulator_activities
+      title: Simulator Activities
     - url: /competitor_resources/microgames
       title: Microgames
     - url: /competitor_resources/markers

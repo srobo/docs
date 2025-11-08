@@ -43,7 +43,7 @@ Board                                   | Power
 In order to connect the Brain, Motor and Servo Boards to the Power Board, you will need to create some power cables.
 This should be done using the provided red and black _power wire_ (this is the thicker wire provided in the kit) and a pair of green CamCon connectors.
 The blue power wire should only be used to connect motors to the motor board.
-_Remember you **must** use black wire for any ground connections as defined in the [Rules](/docs/rules)._
+_Remember you **should** use black wire for any ground connections as this will make debugging issues later much easier._
 
 When creating your power cables be sure to refer to the pages for each board so that you connect the wires the right way around.
 In our diagrams, the <span class="positive-connector">+</span> outputs from the the Power Board should be connected to the <span class="positive-connector">+</span> inputs on the board being powered.

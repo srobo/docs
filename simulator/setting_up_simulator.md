@@ -9,11 +9,14 @@ Setting up the Simulator
 ## Required Software
 
 In order to use the simulator a few set-up steps need to be done.
-First you need to install Python 3, between 3.9 and 3.12, and Webots R2025a.
-Python 3.13 is not currently supported by the simulator.
+First you need to install Python 3, between 3.10 and 3.13, and Webots R2025a.
+Python 3.14 is not currently supported by the simulator.
 
-To install Python, you can download the latest version from the [Python website](https://www.python.org/downloads/). If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step.
-![python download site]({{ site.baseurl }}/images/content/simulator/python-download.png)
+To install an appropriate version of Python from below. If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step, however please ensure the versions are compatible..
+
+- [MacOS Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-macos11.pkg)
+- [Windows x86 Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-amd64.exe)
+- [Windows ARM Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-arm64.exe)
 
 We recommend using **Python 3.11** as it is the version which is used on your physical robot.
 
@@ -22,11 +25,11 @@ To install Webots, you can download the latest version from the [Webots website]
 
 ## Simulator Bundle
 
-Once you have installed these, you need to download our simulator bundle. The bundle for the main competition will be released at Kickstart.
+Once you have installed these, you need to download our [simulator bundle](https://github.com/srobo/sbot_simulator/releases/download/2026.1.0/sbot-simulator-2026.1.0.zip). The bundle for the main competition will be released at Kickstart.
 This is a zip file containing the arena and the necessary files to allow the sr-robot3 library to be used in the simulator.
 
 <div class="info" markdown="1">
-The simulator bundle used for the [Pre-Kickstart Activities]({{ site.baseurl }}/competitor_resources/pre_kickstart_activities) is available [here](https://github.com/srobo/sbot_simulator/releases/download/2026.0.1/sbot-simulator-2026.0.1.zip).
+The simulator bundle used for the [Simulator Activities]({{ site.baseurl }}/competitor_resources/pre_kickstart_activities) is available [here](https://github.com/srobo/sbot_simulator/releases/download/2026.0.2/sbot-simulator-2026.0.2.zip).
 </div>
 
 Once this has downloaded, extract the contents to an empty folder.

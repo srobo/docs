@@ -1,0 +1,141 @@
+##        Student Robotics Simulator Activities Code         ##
+## To use each segment of code, copy it into a robot.py file ##
+###############################################################
+
+#### 3. Making a Move ####
+
+from sr.robot3 import Robot
+
+#Create the robot object
+robot = Robot()
+
+#set the left motor to 50% power and right motor to 0% power
+robot.motor_board.motors[0].power = 0.5
+robot.motor_board.motors[1].power = 0
+#Robot power goes off at end of code, so wait for 1 second
+robot.sleep(1)
+
+#### 3.1. Open Loop Control ####
+
+from sr.robot3 import Robot
+
+robot = Robot()
+
+#Go forward and backward at 50% power for 1 second 10 times, ending at the starting point
+for i in range(10):
+    robot.motor_board.motors[0].power = 0.5
+    robot.motor_board.motors[1].power = 0.5
+    robot.sleep(1)
+    robot.motor_board.motors[0].power = -0.5
+    robot.motor_board.motors[1].power = -0.5
+    robot.sleep(1)
+
+#### 4.2. Bump Switches ####
+
+from sr.robot3 import Robot
+
+robot = Robot()
+
+#pin 11 is the front right microswitch
+#Consult the docs for the other switch pins
+frontright = robot.arduino.pins[11].digital_read()
+
+#### 4.3. Ultrasound Distance Sensors ####
+
+from sr.robot3 import Robot
+
+robot = Robot()
+
+def set_motors(left,right):
+    robot.motor_board.motors[0].power = left
+    robot.motor_board.motors[1].power = right
+
+set_motors(0.2,0.2)
+while True:
+    distance_left = robot.arduino.ultrasound_measure(4, 5) #This is the left sensor
+    print(distance_left)
+
+#### 4.4. Infrared Reflectance Sensors ####
+
+from sr.robot3 import Robot, A0, A1, A2
+
+robot = Robot()
+
+while True:
+    left_IR = robot.arduino.pins[A0].analog_read()
+    centre_IR = robot.arduino.pins[A1].analog_read()
+    right_IR = robot.arduino.pins[A2].analog_read()
+    print(left_IR, centre_IR, right_IR)
+
+#### 4.4.1. Finite State Machines (Bang Bang Control) ####
+
+from sr.robot3 import Robot, A0, A1, A2
+
+robot = Robot()
+
+def set_motors(left,right):
+    robot.motor_board.motors[0].power = left
+    robot.motor_board.motors[1].power = right
+
+def set_state(state):
+    if state == "forward":
+        set_motors(0.2,0.2)
+    elif state == "left":
+        set_motors(0,0)  #Add your code here for left and right
+
+while True:
+    left_IR = robot.arduino.pins[A0].analog_read()
+    centre_IR = robot.arduino.pins[A1].analog_read()
+    right_IR = robot.arduino.pins[A2].analog_read()
+    print(left_IR, centre_IR, right_IR)
+    if left_IR < 1.2 and centre_IR > 3.5 and right_IR < 1.2:
+        current_state="forward"
+    #Add your code here for left and right
+    set_state(current_state)
+
+#### 4.5. Vision System ####
+
+from sr.robot3 import Robot
+
+robot = Robot()
+
+while True:
+    markerlist = robot.camera.see()
+    print(markerlist)
+    robot.sleep(1)
+
+#### 4.5.1. What's in a Marker? ####
+
+from sr.robot3 import Robot, A0, A1, A2
+
+robot = Robot()
+
+target_id = 100
+
+#Helper to set both motors
+def set_motors(left,right):
+    robot.motor_board.motors[0].power = left
+    robot.motor_board.motors[1].power = right
+
+#Helper to find the target marker in the list of markers
+def find_target(markerlist, target):
+    for marker in markerlist:
+        if marker.id == target:
+            return marker
+    return None
+
+while True:
+    markerlist = robot.camera.see()
+    targetmarker = find_target(markerlist, target_id)
+    if targetmarker != None:
+        angle_error = targetmarker.position.horizontal_angle
+        if angle_error > 0.2: #target is on the right, 0.2 radians is about 11°
+            set_motors(0.1,-0.1)
+        elif angle_error < -0.2: #target is on the left
+            set_motors(-0.1,0.1)
+        else: #target is straight ahead
+            set_motors(0.2,0.2)
+        robot.sleep(0.2)
+        set_motors(0,0) #stop to take a new photo
+    else: #can't see the target
+        set_motors(0,0)
