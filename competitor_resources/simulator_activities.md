@@ -7,7 +7,7 @@ title: Simulator Activities
 
 # Simulator Activities
 
-We have created a set of activities to introduce the concepts of autonomous robotics that can be completed prior to receiving your kit or this year's game being announced.
+We have created a set of activities to introduce the concepts of autonomous robotics that can be completed without a kit or this year's game being announced.
 They use a special version of our simulator for a set of activities intended to be completed between registration and Kickstart.
 These will teach some core concepts of robotics and introduce some basic sensors that teams could use on their physical robots.
 

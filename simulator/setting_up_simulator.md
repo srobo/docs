@@ -12,7 +12,7 @@ In order to use the simulator a few set-up steps need to be done.
 First you need to install Python 3, between 3.10 and 3.13, and Webots R2025a.
 Python 3.14 is not currently supported by the simulator.
 
-To install an appropriate version of Python from below. If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step.
+To install an appropriate version of Python from below. If you have already installed Python from a package manager, such as homebrew on MacOS, apt on Ubuntu, or the Windows store on Windows, you can skip this step, however please ensure the versions are compatible..
 
 - [MacOS Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-macos11.pkg)
 - [Windows x86 Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-amd64.exe)
