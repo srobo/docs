@@ -3,7 +3,7 @@
 // We communicate with the Arduino at 115200 baud.
 #define SERIAL_BAUD 115200
 
-#define FW_VER 2
+#define FW_VER 3
 
 void setup() {
   Serial.begin(SERIAL_BAUD);
@@ -61,7 +61,7 @@ void command_ultrasound() {
   digitalWrite(pulse, LOW);
 
   // measure the echo time on the echo pin
-  int duration = pulseIn(echo, HIGH, 60000);
+  long duration = pulseIn(echo, HIGH, 60000);
   Serial.print(microsecondsToMm(duration));
 }
 
