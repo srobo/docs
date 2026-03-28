@@ -61,7 +61,7 @@ void command_ultrasound() {
   digitalWrite(pulse, LOW);
 
   // measure the echo time on the echo pin
-  int duration = pulseIn(echo, HIGH, 60000);
+  long duration = pulseIn(echo, HIGH, 60000);
   Serial.print(microsecondsToMm(duration));
 }
 
