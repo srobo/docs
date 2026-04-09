@@ -11,11 +11,11 @@ SR2026 Rules
   The rules, regulations and specifications for the SR2026 competition can be
   found in the rulebook:
 
-  <a href="{{ site.baseurl }}/resources/2026/rulebook.html" class="button button-primary">Download rulebook</a>
+  <a href="{{ site.baseurl }}/resources/2026/rulebook.html" class="button button-primary">View rulebook</a>
 
   The challenges for the SR2026 competition can be found in the challenges document:
 
-  <a href="{{ site.baseurl }}/resources/2026/challenges.html" class="button button-primary">Download challenges</a>
+  <a href="{{ site.baseurl }}/resources/2026/challenges.html" class="button button-primary">View challenges</a>
 
   The rules and challenges may be subject to changes, so please ensure you're using the most up-to-date version.
   We will also let you know of any important changes by email.
