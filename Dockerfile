@@ -12,4 +12,9 @@ COPY . ./
 
 RUN rake dependencies
 
+# Install nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_current.x | bash && apt install nodejs --yes
+
+RUN npm ci
+
 CMD ["rake", "dev"]
