@@ -18,10 +18,15 @@ To install an appropriate version of Python from below. If you have already inst
 - [Windows x86 Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-amd64.exe)
 - [Windows ARM Installer](https://www.python.org/ftp/python/3.11.8/python-3.11.8-arm64.exe)
 
-We recommend using **Python 3.11** as it is the version which is used on your physical robot.
+We recommend using [**Python 3.11**](https://www.python.org/downloads/release/python-3119/) as it is the version which is used on your physical robot.
 
-To install Webots, you can download the latest version from the [Webots website](https://cyberbotics.com/#download). Use the default settings when installing Webots.
+To install Webots R2023b, you can download it from the [Webots GitHub](https://github.com/cyberbotics/webots/releases/tag/R2023b). Other versions may work, but this version will be used for the Virtual League.
+
+Use the default settings when installing Webots.
+
+
 ![webots download site]({{ site.baseurl }}/images/content/simulator/webots-download.png)
+
 
 ## Simulator Bundle
 
