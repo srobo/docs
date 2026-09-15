@@ -196,3 +196,70 @@ RobotMode.COMP.value == "COMP"  # True
 ~~~~~
 
 In general, the enum should be used and compared directly, rather than using its inner value.
+
+## Creating your own helpers
+
+The provided `Robot` object provides access to the boards provided with the kit. However, you may feel the urge to extend it to add your own methods to make development clearer.. However, this can introduce issues if the methods or properties you add interfere with the inner workings of the `Robot` object.
+
+Instead, you can wrap the `Robot` object with your own class:
+
+~~~~~ python
+from sr.robot3 import Robot
+import time
+
+class MyRobot:
+    def __init__(self):
+        self.robot = Robot()
+
+    def drive_forwards(self, seconds):
+        """
+        Drive forwards for a given number of seconds
+        """
+        robot.motor_boards["srABC1"].motors[0].power = 0.5
+        robot.motor_boards["srABC1"].motors[1].power = 0.5
+        time.sleep(seconds)
+        robot.motor_boards["srABC1"].motors[0].power = 0
+        robot.motor_boards["srABC1"].motors[1].power = 0
+
+# Now, use your class instead
+robot = MyRobot()
+robot.drive_forwards(3)
+~~~~~
+
+This is not the only way to design your own robot API. You may instead want to define helper functions:
+
+~~~~~ python
+from sr.robot3 import Robot
+import time
+
+def drive_forwards(robot, seconds):
+    """
+    Drive forwards for a given number of seconds
+    """
+    robot.motor_boards["srABC1"].motors[0].power = 0.5
+    robot.motor_boards["srABC1"].motors[1].power = 0.5
+    time.sleep(seconds)
+    robot.motor_boards["srABC1"].motors[0].power = 0
+    robot.motor_boards["srABC1"].motors[1].power = 0
+
+# Now, use your class instead
+robot = Robot()
+drive_forwards(robot, 3)
+~~~~~
+
+Both of these approaches are equally valid. Choosing which you want to use will likely come down to your own preferences.
+
+<div class="warning" markdown="1">
+Attempting to subclass the `Robot` class directly will raise an exception.
+
+~~~~~ python
+from sr.robot3 import Robot
+
+# This is not supported nor recommended.
+class MyRobot(Robot):
+    ...
+~~~~~
+
+Instead, we recommend using the examples above to wrap the existing `Robot` object.
+
+</div>
