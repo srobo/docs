@@ -12,7 +12,7 @@ jobs:
       # ruby/setup-ruby@v1 does not offer a way to change the cached gems path.
       # See https://github.com/ruby/setup-ruby/issues/291
       GLOBAL_GEMS: 1
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   docker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
 
@@ -42,7 +42,7 @@ jobs:
       run: docker compose run docs rake build
 
   changes:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: github.ref != 'refs/heads/main'
     outputs:
       build-system: ${{ steps.filter.outputs.build-system }}
@@ -66,7 +66,7 @@ jobs:
       # ruby/setup-ruby@v1 does not offer a way to change the cached gems path.
       # See https://github.com/ruby/setup-ruby/issues/291
       GLOBAL_GEMS: 1
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -88,7 +88,7 @@ jobs:
           name: build-from-main
 
   diff:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - build-validate
       - build-main
@@ -192,7 +192,7 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build-validate
     if: ${{ github.ref == 'refs/heads/main' }}
 
